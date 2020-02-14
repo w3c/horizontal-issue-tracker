@@ -1,4 +1,4 @@
-/* eslint=emv browser */
+/* eslint-env browser */
 
 "use strict";
 
