@@ -28,7 +28,6 @@ td {
 	padding: 0 .3em;
 	border: 1px solid #ccc;
 	}
-ul{ list-style-type: none; }
 .labels {
 	height: 11px;
 	width: 11px;
@@ -51,8 +50,17 @@ ul{ list-style-type: none; }
     vertical-align: top;
     font-size: 80%;
     }
+ul {
+	list-style-type: none;
+	}
 #filterList span {
     border-radius: 3px;
+    }
+li.selected {
+	list-style-type: disc;
+}
+li.selected a {
+    font-weight: bold;
     }
 tr:hover {
     background-color: antiquewhite;
@@ -86,7 +94,7 @@ tr:hover {
 		The link on the left of each line links directly to the issue where the discussion is taking place.
 		The date indicates when the <em>tracker</em> item was modified, and	the right-hand column links to the issue used
 		to track the discussion in the <a class='link_repo'></a> github repo</a>.</p>
-  <p>There are <span id="total">[Loading data...]</span> horizontal issues, filtered as against a specification.</p>
+  <p>There are <span id="total">[Loading data...]</span> horizontal issues, filtered as against a specification<span id='select-label'></span>.</p>
 	</section>
 
 <section id="rawdata" aria-live='polite'>

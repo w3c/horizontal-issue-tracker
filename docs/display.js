@@ -228,7 +228,7 @@ function buildFilters(repo_labels) {
     const span = domElement('span',
       {class:'labels',style: `background-color:#${label.color}`},
        ` ${String.fromCharCode(160)} `);
-    return domElement('li',
+    return domElement('li', {"data-label":`${label.name}`},
       domElement('a',{href:'#',onclick:`filterByLabel('${label.name}')`}, span, ` ${String.fromCharCode(160)} ${label.name}`));
   }
 
@@ -254,13 +254,20 @@ async function otherTrackingRepos() {
   let hr_issues = [];
 
   for (const repo of repos) {
-    ul.appendChild(domElement('li', domElement('a',{href:`?repo=${repo}`}, ` ${repo}`)));
+    const li = domElement('li', domElement('a',{href:`?repo=${repo}`}, ` ${repo}`));
+    if (config.repo === repo) {
+      li.classList.add('selected');
+    }
+    ul.appendChild(li);
   }
 }
 
 // invoke when selecting a filter in the menu
 function filterByLabel(label) {
   const rawdata = document.getElementById('rawdata');
+  const filterMenu = document.getElementById("filterList");
+
+  if (config.debug) console.log(`filterByLabel('${label}')`);
 
   // filters page contents to show only those items with label specified
   const sections = rawdata.querySelectorAll('section');
@@ -272,9 +279,13 @@ function filterByLabel(label) {
   for (const section of sections) {
     section.classList.remove('hidden');
   }
+  for (const li of filterMenu.querySelectorAll('li')) {
+    li.classList.remove('selected');
+  }
   if (label === 'clear') {
     let trsTotal = rawdata.querySelectorAll('tr');
     document.getElementById('total').textContent = trsTotal.length;
+    document.getElementById("select-label").textContent = '';
     return; // abort
   }
 
@@ -298,11 +309,18 @@ function filterByLabel(label) {
     }
   }
 
+  for (const li of filterMenu.querySelectorAll('li')) {
+    if (li.getAttribute('data-label') === label) {
+      li.classList.add('selected');
+    }
+  }
+
   // tally the issues on the page
   let trsTotal = document.querySelectorAll('tr')
   let trs = document.querySelectorAll('tr.hidden')
   let filteredIssues = trsTotal.length - trs.length
   document.getElementById('total').textContent = filteredIssues;
+  document.getElementById("select-label").textContent = `, with label '${label}'`;
 }
 
 
