@@ -104,12 +104,12 @@ async function ghRawRequest(url, options) {
  * pagination mode is useful for repositories with a large number of open issues
  */
 async function ghRequest(url, options) {
-  let url_options ="";
-  let data = [];
+  let data;
   if (config.max) {
     const responses = [];
-    let params = searchParams(options);
-    for (let page = 0; page < config.max / 100; page++) {
+    const params = searchParams(options);
+    const totalPages = config.max / 100;
+    for (const page = 1; page <= totalPages; page++) {
       const p = fetch(`${url}?page=${page}&${params}`)
         .then(response => response.json()).catch(e=>[]);
       responses.push(p);
