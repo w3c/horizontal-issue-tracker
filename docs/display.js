@@ -109,7 +109,7 @@ async function ghRequest(url, options) {
     const responses = [];
     const params = searchParams(options);
     const totalPages = config.max / 100;
-    for (const page = 1; page <= totalPages; page++) {
+    for (let page = 1; page <= totalPages; page++) {
       const p = fetch(`${url}?page=${page}&${params}`)
         .then(response => response.json()).catch(e=>[]);
       responses.push(p);
