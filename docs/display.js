@@ -142,7 +142,7 @@ async function getAllData() {
 
   for (const a of document.getElementsByClassName('link_repo')) {
     a.textContent = config.repo;
-    a.href = `https://github.com/${config.repo}/`;
+    a.href = `https://github.com/${config.repo}/issues`;
   }
 
   // here we go, request the open issues
