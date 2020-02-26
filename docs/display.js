@@ -229,7 +229,9 @@ function buildFilters(repo_labels) {
       {class:'labels',style: `background-color:#${label.color}`},
        ` ${String.fromCharCode(160)} `);
     return domElement('li', {"data-label":`${label.name}`},
-      domElement('a',{href:'#',onclick:`filterByLabel('${label.name}')`}, span, ` ${String.fromCharCode(160)} ${label.name}`));
+      domElement('a',
+        {href:'#', title:`${label.description}`, onclick:`filterByLabel('${label.name}')`},
+        span, ` ${String.fromCharCode(160)} ${label.name}`));
   }
 
   for (const label of config.labels) {
@@ -238,10 +240,11 @@ function buildFilters(repo_labels) {
       ul.appendChild(createLi(gh_label));
     }
   }
-  //
+
   const clear = domElement('li',
-  domElement('a',{href:"#",onclick:"filterByLabel('clear')"},
-    domElement("span", {class:'labels',style:"background-color: white"}, ` ${String.fromCharCode(160)} `),
+  domElement('a',{href:"#",title:'Clear all of the filters',onclick:"filterByLabel('clear')"},
+    domElement("span", {class:'labels',style:"background-color: white"},
+              ` ${String.fromCharCode(160)} `),
     ` ${String.fromCharCode(160)} Clear filter`));
   ul.appendChild(clear);
 }
