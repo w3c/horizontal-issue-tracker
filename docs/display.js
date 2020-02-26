@@ -137,6 +137,7 @@ async function getAllData() {
   let issues;
   const sections = {};
   const repo_labels = {};
+  const short_labels = [];
   const sprefix = 's:';
   const lFilter = l => l.name.startsWith(sprefix);
 
@@ -159,7 +160,7 @@ async function getAllData() {
         sections[label.name].push(issue);
       } else {
         sections[label.name] = [issue];
-        repo_labels[label.name] = label;
+        short_labels.push(label);
       }
     }
     for (const label of issue.labels) { // remember labels for buildFilters
@@ -168,7 +169,8 @@ async function getAllData() {
     }
   }
   for (const [header, fIssues] of Object.entries(sections)) {
-    displayRepo(header.substring(sprefix.length), fIssues);
+    const label = short_labels.find(l => l.name === header);
+    displayRepo(header.substring(sprefix.length), label, fIssues);
   }
 
   buildFilters(repo_labels);
@@ -181,11 +183,13 @@ async function getAllData() {
 }
 
 // Display repository information
-function displayRepo(header, issues) {
+function displayRepo(header, label, issues) {
   // Add a container to put the repository info and issues in
   let table, tr, td, a, updated, toc, span
   let labelSection = domElement('section',
-    domElement('h2', {id:header}, domElement('a', {'href':`#${header}`}, header)));
+    domElement('h2', {id:header},
+    domElement('a', {class:'self-link','aria-label':'§', href:`#${header}`}, ''),
+    domElement('a', {href:`${label.description}`}, header)));
 
   table = domElement('table');
 
