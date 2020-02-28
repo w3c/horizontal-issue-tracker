@@ -7,8 +7,7 @@ const config = {
   // the horizontal group repository
   repo: 'w3c/i18n-activity',
   debug: false,
-  // if we want to limit the max number of GH issues to display
-  // max: 500,
+  ttl: 15,
   // the labels to display on the page
   labels: 'pending,advice-requested,needs-review,needs-resolution,tracker,close?,waiting,deferred'
 };
@@ -18,12 +17,6 @@ const LABELS_URL = "https://w3c.github.io/hr-labels.json";
 // parse the URL to update the config
 for (const [key, value] of (new URL(window.location)).searchParams) {
   config[key] = value;
-}
-
-// give a boost for i18n by default
-// this will trigger our GH requests to be done in //
-if (config.repo.startsWith("w3c/i18n") && !config.max) {
-  config.max = 500;
 }
 
 // format a Date, "Aug 21, 2019"
@@ -86,10 +79,12 @@ function searchParams(params) {
   return s.join('&');
 }
 
+const GH_CACHE = "https://labs.w3.org/github-cache";
+
 /*
  * Grab GitHub data
  */
-async function ghRawRequest(url, options) {
+async function ghRequest(url, options) {
   let data = [];
   while (url) {
     const response = await fetch(url + '?' + searchParams(options));
@@ -99,27 +94,16 @@ async function ghRawRequest(url, options) {
   return data;
 }
 
-/*
- * Grab GitHub data, with a pagination mode if needed (config.max)
- * pagination mode is useful for repositories with a large number of open issues
- */
-async function ghRequest(url, options) {
-  let data;
-  if (config.max) {
-    const responses = [];
-    const params = searchParams(options);
-    const totalPages = config.max / 100;
-    for (let page = 1; page <= totalPages; page++) {
-      const p = fetch(`${url}?page=${page}&${params}`)
-        .then(response => response.json()).catch(e=>[]);
-      responses.push(p);
-    }
-    data = (await Promise.all(responses)).flat();
-  } else {
-    data = ghRawRequest(url, options);
-  }
-  return data;
-}
+
+const rtObserver = new PerformanceObserver(list => {
+  list.getEntries().forEach(entry => {
+      console.log(`Got ${entry.name}`);
+      if (entry.name.startsWith(GH_CACHE + '/v3')) {
+        navigator.sendBeacon(`${GH_CACHE}/monitor/beacon`, JSON.stringify(entry));
+      }
+    });
+});
+rtObserver.observe({entryTypes: ["resource"]});
 
 // BELOW IS WHERE THINGS STARTS HAPPENING
 
@@ -133,7 +117,7 @@ async function ghRequest(url, options) {
  * *
  */
 async function getAllData() {
-  const GH_URL = `https://api.github.com/repos/${config.repo}/issues`;
+  const GH_URL = `${GH_CACHE}/v3/repos/${config.repo}/issues`;
   let issues;
   const sections = {};
   const repo_labels = {};
@@ -147,7 +131,10 @@ async function getAllData() {
   }
 
   // here we go, request the open issues
-  issues = await ghRequest(GH_URL, {per_page: 100}); // might as well request the max
+  issues = await ghRequest(GH_URL, {
+    ttl: config.ttl,
+    fields: "body,html_url,labels,title,created_at,number"
+  }); // might as well request the max
 
   if (config.debug) console.log(`finished Issue length: ${issues.length}`);
 
