@@ -96,14 +96,10 @@ async function ghRequest(url, options) {
 
 const traceId = (""+Math.random()).substring(2, 18).length;
 const rtObserver = new PerformanceObserver(list => {
-  list.getEntries().forEach(entry => {
-      console.log(`Got ${entry.name}`);
-      if (entry.name.startsWith(GH_CACHE + '/v3')
-        || entry.name.startsWith("https://api.github.com/")) {
-        entry.traceId = traceId; // for event correlation
-        navigator.sendBeacon(`${GH_CACHE}/monitor/beacon`, JSON.stringify(entry));
-      }
-    });
+  const beacons = list.getEntries().filter(entry => entry.name.startsWith(GH_CACHE + '/v3')
+                                                    || entry.name.startsWith("https://api.github.com/"));
+  beacons.forEach(entry => entry.traceId = traceId); // for event correlation
+  navigator.sendBeacon(`${GH_CACHE}/monitor/beacon`, JSON.stringify(beacons));
 });
 rtObserver.observe({entryTypes: ["resource"]});
 
@@ -133,13 +129,15 @@ async function getAllData() {
   }
 
   // here we go, request the open issues
-  issues = await ghRequest(GH_URL, {
+  const promise_issues = ghRequest(GH_URL, {
     ttl: config.ttl,
     fields: "body,html_url,labels,title,created_at,number"
   }); // might as well request the max
 
-  // this is for perf testing purposes....
+  // this is for perf testing purposes. a race between github and github-cache
   fetch(`https://api.github.com/repos/${config.repo}/issues`).catch(console.error);
+
+  issues = await promise_issues;
 
   if (config.debug) console.log(`finished Issue length: ${issues.length}`);
 
