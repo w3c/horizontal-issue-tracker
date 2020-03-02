@@ -19,6 +19,12 @@ for (const [key, value] of (new URL(window.location)).searchParams) {
   config[key] = value;
 }
 
+function displayError(text) {
+  const log = document.getElementById('log')
+  const p = document.createElement('p');
+  p.textContent = "ERROR: " + text;
+}
+
 // format a Date, "Aug 21, 2019"
 function formatDate(date) {
   // date is a date object
@@ -86,10 +92,24 @@ const GH_CACHE = "https://labs.w3.org/github-cache";
  */
 async function ghRequest(url, options) {
   let data = [];
-  while (url) {
+  let errorText;
+  try {
     const response = await fetch(url + '?' + searchParams(options));
-    data = data.concat(await response.json());
-    url = ((response.headers.get("link") || "").match(/<([^>]+)>;\s*rel="next"/) || [])[1];
+    if (response.ok) {
+      data = await response.json();
+    } else {
+      if (response.status >= 500) {
+        errorText = `cache responded with HTTP '${response.status}'. Try again later.`;
+      } else {
+        errorText = `Unexpected cache response HTTP ${response.status}`;
+      }
+    }
+  } catch (err) {
+    errorText = err.message;
+  }
+  if (errorText) {
+    const error = { url, options, message: errorText };
+    navigator.sendBeacon(`${GH_CACHE}/monitor/beacon`, JSON.stringify({ traceId, error }));
   }
   return data;
 }
