@@ -97,10 +97,10 @@ async function ghRequest(url, options) {
 // telemetry for performance monitoring
 const traceId = (""+Math.random()).substring(2, 18); // for resource correlation
 const rtObserver = new PerformanceObserver(list => {
-  const resources = list.getEntries().filter(entry => entry.name.startsWith(CACHE + '/v3/repos')
+  const resources = list.getEntries().filter(entry => entry.name.startsWith(GH_CACHE + '/v3/repos')
                                                       || entry.name.startsWith("https://api.github.com/"));
   if (resources.length > 0) {
-    navigator.sendBeacon(`${CACHE}/monitor/beacon`, JSON.stringify({ traceId, resources }));
+    navigator.sendBeacon(`${GH_CACHE}/monitor/beacon`, JSON.stringify({ traceId, resources }));
   }
 });
 rtObserver.observe({entryTypes: ["resource"]});
