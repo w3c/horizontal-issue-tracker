@@ -94,12 +94,14 @@ async function ghRequest(url, options) {
   return data;
 }
 
-const traceId = (""+Math.random()).substring(2, 18).length;
+// telemetry for performance monitoring
+const traceId = (""+Math.random()).substring(2, 18); // for resource correlation
 const rtObserver = new PerformanceObserver(list => {
-  const beacons = list.getEntries().filter(entry => entry.name.startsWith(GH_CACHE + '/v3')
-                                                    || entry.name.startsWith("https://api.github.com/"));
-  beacons.forEach(entry => entry.traceId = traceId); // for event correlation
-  navigator.sendBeacon(`${GH_CACHE}/monitor/beacon`, JSON.stringify(beacons));
+  const resources = list.getEntries().filter(entry => entry.name.startsWith(CACHE + '/v3/repos')
+                                                      || entry.name.startsWith("https://api.github.com/"));
+  if (resources.length > 0) {
+    navigator.sendBeacon(`${CACHE}/monitor/beacon`, JSON.stringify({ traceId, resources }));
+  }
 });
 rtObserver.observe({entryTypes: ["resource"]});
 
