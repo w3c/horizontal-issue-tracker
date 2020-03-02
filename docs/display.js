@@ -98,7 +98,8 @@ async function ghRequest(url, options) {
 const rtObserver = new PerformanceObserver(list => {
   list.getEntries().forEach(entry => {
       console.log(`Got ${entry.name}`);
-      if (entry.name.startsWith(GH_CACHE + '/v3')) {
+      if (entry.name.startsWith(GH_CACHE + '/v3')
+        || entry.name.startsWith("https://api.github.com/")) {
         navigator.sendBeacon(`${GH_CACHE}/monitor/beacon`, JSON.stringify(entry));
       }
     });
@@ -135,6 +136,9 @@ async function getAllData() {
     ttl: config.ttl,
     fields: "body,html_url,labels,title,created_at,number"
   }); // might as well request the max
+
+  // this is for perf testing purposes....
+  fetch(`https://api.github.com/repos/${config.repo}/issues`).catch(console.error);
 
   if (config.debug) console.log(`finished Issue length: ${issues.length}`);
 
