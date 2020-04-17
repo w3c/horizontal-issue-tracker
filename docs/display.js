@@ -9,7 +9,8 @@ const config = {
   debug: false,
   ttl: 15,
   // the labels to display on the page
-  labels: 'pending,advice-requested,needs-review,needs-resolution,tracker,close?,waiting,deferred'
+  labels: 'pending,needs-resolution,tracker,close?',
+  extra_labels: 'advice-requested,needs-review,waiting,deferred'
 };
 
 const LABELS_URL = "https://w3c.github.io/hr-labels.json";
@@ -74,6 +75,8 @@ function linkTo(issue) {
 
 // might as well do this here, we'll use it as an array later
 config.labels = config.labels.split(',');
+config.extra_labels = config.extra_labels.split(',');
+config.all_labels = [].concat(config.labels, config.extra_labels);
 
 // for the parameters added to GH URLs
 function searchParams(params) {
@@ -209,7 +212,7 @@ function displayRepo(header, label, issues) {
     tr = domElement('tr');
     td = domElement('td');
     // find labels
-    for (const label of issue.labels.filter(l => config.labels.includes(l.name))) {
+    for (const label of issue.labels.filter(l => config.all_labels.includes(l.name))) {
       td.appendChild(domElement('span',
         {style: `background-color:#${label.color}`,
          title: label.name, class: 'labels right_labels'},
@@ -263,6 +266,19 @@ function buildFilters(repo_labels) {
               ` ${String.fromCharCode(160)} `),
     ` ${String.fromCharCode(160)} Clear filter`));
   ul.appendChild(clear);
+
+  let internalLine = false;
+  for (const extra_label of config.extra_labels) {
+    const gh_label = repo_labels[extra_label];
+    if (gh_label) {
+      if (!internalLine) {
+        ul.appendChild(domElement('li', "Internal group labels:"));
+        internalLine = true;
+      }
+      ul.appendChild(createLi(gh_label));
+    }
+  }
+
 }
 
 // build our menu
