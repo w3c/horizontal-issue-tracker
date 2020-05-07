@@ -12,3 +12,7 @@ If no arguments, it will fetch the list of repositories to check/set from [valid
 
 Note that, if you set a new one, [validate-repos](https://w3c.github.io/validate-repos/hr-repos.json) can take up to 24 hours to be updated.
 
+# node horizontal-task.js
+
+This will create and fix horizontal issues and specification issues as needed
+
