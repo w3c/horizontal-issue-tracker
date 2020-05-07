@@ -1,0 +1,27 @@
+{
+  "name": "horizontal-issue-tracker",
+  "version": "1.0.0",
+  "description": "Deal with horizontal issues and repositories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w3c/horizontal-issue-tracker.git"
+  },
+  "keywords": [
+    "w3c"
+  ],
+  "author": "plh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/w3c/horizontal-issue-tracker/issues"
+  },
+  "homepage": "https://github.com/w3c/horizontal-issue-tracker#readme",
+  "dependencies": {
+    "@octokit/core": "^2.5.0",
+    "@octokit/plugin-throttling": "^3.2.0",
+    "node-fetch": "^2.6.0"
+  }
+}
