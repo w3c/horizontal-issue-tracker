@@ -1,8 +1,7 @@
-Tools and pages to track horizontal issues
+Horizontal Review Tracker
 ==============================
 
-We're tracking specification repositories to ensure that horizontal comments raised during
-the wide review of W3C specifications get properly addressed overtime.
+Tools to ensure that issues raised during horizontal review are properly addressed.
 
 * [Accessibility tracker](https://w3c.github.io/horizontal-issue-tracker/?repo=w3c/a11y-review)
 * [Internationalization tracker](https://w3c.github.io/horizontal-issue-tracker/?repo=w3c/i18n-activity)
@@ -10,6 +9,7 @@ the wide review of W3C specifications get properly addressed overtime.
 * [Security tracker](https://w3c.github.io/horizontal-issue-tracker/?repo=w3c/security-review)
 * [TAG tracker](https://w3c.github.io/horizontal-issue-tracker/?repo=w3ctag/tracking-issues)
 
-All specification repositories get horizontal labels by default. A description of the [list of horizontal labels](https://w3c.github.io/issue-metadata.html#horizontal-reviews) is available.
+[How to use these tools](docs/HOWTO.md).
 
-See also the [how to](docs/HOWTO.md).
+A description of the [Github labels](https://w3c.github.io/issue-metadata.html#horizontal-reviews) used by these tools.
+
