@@ -15,4 +15,3 @@ Note that, if you set a new one, [validate-repos](https://w3c.github.io/validate
 # node horizontal-task.js
 
 This will create and fix horizontal issues and specification issues as needed
-

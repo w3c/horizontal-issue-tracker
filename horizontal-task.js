@@ -62,6 +62,7 @@ function createRepository(full_name) {
 
 
 // How we establish the link between an horizontal issue and its respective specification issues
+// HR issue <-> spec issues (one to many)
 function related(body) {
   body = (body || "");
   const matches = body.match(new RegExp(`${MAGIC_CHARACTER} ${LINK_REGEX}`, 'g'));
@@ -79,6 +80,7 @@ function needsHorizontalLabels(issue) {
 }
 
 // does the issue contain a given label?
+// label is a string
 function hasLabel(issue, label) {
   return (issue.labels.reduce((a, c) => a || c.name.includes(label), false));
 }
@@ -120,7 +122,7 @@ async function getHRIssues(repo) {
   for (const issue of issues) {
     // first look for the format used by i18n-activity
     issue.linkTo = related(issue.body);
-    // shortcut for later
+    // shortcut for later, one of "a11y, "i18n", "security", "privacy", "tag"
     issue.hr_prefix = repo.horizontalCategory;
     // grab the list of GH links in the issues for later (without the magic character)
     issue.links = (issue.body || "").match(new RegExp(LINK_REGEX, 'g'));
@@ -141,7 +143,7 @@ async function getHRIssues(repo) {
       issue.hr_label = "tracker";
     }
 
-    // if this HR issue links to one spec repo
+    // if this HR issue links to one spec repo, we're learning shortnames
     if (issue.linkTo && issue.linkTo.length === 1 && issue.labels) {
       // do we have a shortname label for it? If so, we're learning the shortname(s) for that spec repo
       for (const label of issue.labels.filter(l => l.name.startsWith("s:"))) {
