@@ -38,7 +38,7 @@ All specification repositories get those horizontal labels by default. A descrip
 
 A horizontal group may have raised, or is following an issue, and expects it to be resolved to their satisfaction before a transition. The *-needs-resolution label is added/applied only an the horizontal group, and should only be removed by the horizontal group. It may replace a *-tracker label.
 
-# The Director allowed a new Maturity level depiste open horizontal issue with *-needs-resolution?
+# The Director allowed a new Maturity level despite open horizontal issue with *-needs-resolution?
 
 As lead technical architect, the Director is tasked (among many things) to assess consensus within W3C for architectural issues and to decide on the outcome of [Formal Objections](https://www.w3.org/2019/Process-20190301/#FormalObjection). When a horizontal issue gets flagged as *-needs-resolution and a Group chooses to request a new Maturity level despite the lack of consensus with the horizontal group, it is the task of the Director to assess the issue and the outcome of the request. A horizontal group MAY choose to elevate an horizontal issue as a Formal Objection to elevate further the importance of an issue per the W3C Process.
 
