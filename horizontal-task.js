@@ -85,6 +85,33 @@ function hasLabel(issue, label) {
   return (issue.labels.reduce((a, c) => a || c.name.includes(label), false));
 }
 
+// remove a label from an issue (both on the JS object and on GH)
+function removeIssueLabel(repo, issue, label) {
+  const new_labels = [];
+  if (issue.labels) {
+    let found = false;
+    issue.labels.forEach(l => {
+      if (l.name !== label.name) {
+        new_labels.push(l);
+      } else {
+        found = true;
+      }
+    });
+    issue.labels = new_labels;
+    if (found) {
+      return repo.removeIssueLabel(issue, label);
+    }
+  }
+  return issue;
+}
+
+// set a label on an issue (both on the JS object and on GH)
+// WARNING: ar_labels is an array of string!
+function setIssueLabel(repo, issue, ar_labels) {
+  issue.labels = (issue.labels || []).concat(ar_labels.map(s => { name: s}));
+  return repo.setIssueLabel(issue, ar_labels);
+}
+
 // does the url matches the html URL of a GH repository
 // if yes, return the fullname of the repository
 function htmlRepoURL(url) {
