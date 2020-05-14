@@ -159,13 +159,6 @@ async function getHRIssues(repo) {
     // needs-resolution trumps tracker
     if (hasLabel(issue, "needs-resolution")) {
       issue.hr_label = "needs-resolution";
-
-      if (hasLabel(issue, "tracker")) {
-        // an issue shouldn't have needs-resolution and tracker at the same time
-        log(issue, `tracker label on a needs-resolution?`);
-        repo.removeIssueLabel(issue, { name: "tracker"});
-        // @@TODO remove tracker from issue.labels object as well?
-      }
     } else if (hasLabel(issue, "tracker")) {
       issue.hr_label = "tracker";
     }
@@ -187,6 +180,27 @@ async function getHRIssues(repo) {
         }
       }
     }
+    if (issue.linkTo) {
+      const spec_issues = []; // we load the associated specification issues
+      for (const link of issue.linkTo) {
+        const match = link.match(new RegExp(LINK_REGEX));
+        let issueRepo = createRepository(match[1]);
+        const issueNumber = Number.parseInt(match[3]);
+        const spec_issue = await issueRepo.getIssue(Number.parseInt(match[3]));
+        if (spec_issue) {
+          spec_issue.repoObject = issueRepo;
+          spec_issues.push(spec_issue);
+        } else {
+          error(issue, `redirected? ${link}`);
+        }
+      }
+      if (spec_issues.length > 0) {
+        issue.spec_issues = spec_issues;
+      }
+      if (issue.linkTo.length !== issue.spec_issues.length) {
+        error(issue, `loaded ${issue.spec_issues.length} issues instead of ${issue.linkTo.length}`);
+      }
+    }
   }
   return issues;
 }
@@ -194,12 +208,13 @@ async function getHRIssues(repo) {
 
 // We're checking each open horizontal issue with regards to its corresponding spec issues
 async function checkHRIssues(issues, labels) {
-
   // filter to issues with track
   // decorate the issues with their dependencies
   for (const issue of issues) {
+    const needs_resolution = issue.hr_prefix + "-needs-resolution";
+    const tracker = issue.hr_prefix + "-tracker";
 
-    if (!issue.linkTo) {
+    if (!issue.spec_issues) {
       if (issue.hr_label && issue.state === "open" && issue.hr_label === "needs-resolution") {
         // stay silent on "tracker" for now
         warn(issue, `doesn't link to a specification issue but has ${issue.hr_label}`);
@@ -207,20 +222,19 @@ async function checkHRIssues(issues, labels) {
     }
 
 
-    if (issue.linkTo && issue.hr_label && issue.state === "open") {
+    if (issue.spec_issues && issue.hr_label && issue.state === "open") {
       // ignore closed issues in horizontal repositories
       // issue.hr_label is "needs-resolution" or "tracker" (from getHRIssues)
 
-      // first, we're looking if shortname is correct or can be fixed
+      // first, we're looking to see a proper shortname, if needed
       if (issue.labels.findIndex(l => l.name.startsWith('s:')) === -1) {
-        for (const link of issue.linkTo) {
-          const repoName = htmlRepoURL(link);
-          const shortnames = (repoName) ? getShortlabel(repoName) : undefined;
+        for (const spec_issue of issue.spec_issues) {
+          const shortnames = getShortlabel(spec_issue.full_name);
           if (shortnames) {
             if (shortnames.length === 1) {
               if (repoName !== "w3c/sealreq") { // @@UGLY oh my. really?!?
                 log(issue, ` shortname match : ${shortnames[0]}`);
-                issue.repoObject.setIssueLabel(issue, [ shortnames[0] ]).catch(monitor.error);
+                setIssueLabel(issue.repoObject, issue, [ shortnames[0] ]).catch(monitor.error);
               }
             } else {
               error(issue, `multiple shortname matches : ${shortnames.join(',')}`);
@@ -234,41 +248,48 @@ async function checkHRIssues(issues, labels) {
         }
       }
 
-      // for all issues that are linking to spec issues
-      for (const link of issue.linkTo) {
-        const match = link.match(new RegExp(LINK_REGEX));
-        let issueRepo = match[1];
-        const issueNumber = Number.parseInt(match[3]);
-
-        issueRepo = createRepository(issueRepo);
-        const spec_issue = await issueRepo.getIssue(issueNumber);
-        if (spec_issue && spec_issue.state === "closed") {
-          // the WG closed their issue, so check that we have the label "close?" on the HR issue
-          const isClosed = (issue.labels && issue.labels.find(l => l.name === "close?"));
-          if (!isClosed) {
-            const hrRepo = htmlRepoURL(issue.html_url);
-            const label = labels.find(l => l.gh.full_name === hrRepo);
-            if (label) {
-              // create label close?
-              log(issue, `added label "close?"`);
-              await label.gh.setIssueLabel(issue, [ "close?" ]);
-            } else {
-              throw new Error(`We shouldn't be here! ${hrRepo}`);
+      // check if we need a needs-resolution on issue.hr_label
+      if (issue.hr_label === "tracker") {
+        for (const spec_issue of issue.spec_issues) {
+          if (hasLabel(spec_issue, needs_resolution)) {
+            warn(issue, `links to ${spec_issue.html_url} and needs to add needs-resolution`);
+            if (issue.hr_prefix !== "i18n") { // check with r12a first
+              await setIssueLabel(issue.repoObject, issue, [ "needs-resolution" ]);
             }
+            continue;
           }
-        }
-        if (spec_issue
-          && !hasLabel(spec_issue, issue.hr_prefix + '-' + issue.hr_label)) {
-          // the WG removed the horizontal label?
-          const name = issue.hr_prefix + '-' + issue.hr_label;
-          if (name !== "i18n-tracker") { // @@UGLY too much history here to touch this
-            warn(spec_issue, `links to ${issue.html_url} and was fixed to add ${name}`);
-            await issueRepo.setIssueLabel(spec_issue, [ issue.hr_prefix + '-' + issue.hr_label ]);
-          }
-        } else if (!spec_issue) {
-          monitor.error(`Redirected? ${link}`);
         }
       }
+
+      // for all issues that are linking to spec issues
+      for (const spec_issue of issue.spec_issues) {
+        if (spec_issue.state === "closed") {
+          // the WG closed their issue, so check that we have the label "close?" on the HR issue
+          const isClosed = hasLabel(issue, "close?");
+          if (!isClosed) {
+            log(issue, `added label "close?"`);
+            await setIssueLabel(issue.repoObject, issue, [ "close?" ]);
+          }
+        }
+
+        if (issue.hr_label === "needs-resolution") {
+          if (!hasLabel(spec_issue, needs_resolution)) {
+            warn(spec_issue, `links to ${issue.html_url} and needs to have ${needs_resolution}`);
+            await setIssueLabel(spec_issue.repoObject, spec_issue, [ needs_resolution ]);
+          }
+          if (hasLabel(spec_issue, tracker)) {
+            log(spec_issue, `links to ${issue.html_url} and needs to drop ${tracker}`);
+            await removeIssueLabel(spec_issue.repoObject, spec_issue, [ tracker ]);
+          }
+        }
+      }
+    }
+    // needs-resolution/tracker handling for the HR issue itself
+    // if needs-resolution and tracker, remove tracker
+    if (issue.hr_label === "needs-resolution" && hasLabel(issue, "tracker")) {
+      // an issue shouldn't have needs-resolution and tracker at the same time
+      log(issue, `dropping tracker label due to needs-resolution`);
+      removeIssueLabel(issue.repoObject, issue, { name: "tracker"});
     }
   }
   return true;
@@ -393,7 +414,7 @@ async function checkIssue(issue, labels, all_hr_issues) {
     if (needed.length > 0) {
       log(issue, `setting labels ${needed.map(l => l.name)}`);
       const repo = createRepository(htmlRepoURL(issue.html_url));
-      await repo.setIssueLabel(issue, needed.map(l => l.name));
+      await setIssueLabel(repo, issue, needed.map(l => l.name));
     }
   }
   if (hLabelFound.length === 0) {
