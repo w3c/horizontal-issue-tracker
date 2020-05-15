@@ -82,7 +82,7 @@ function needsHorizontalLabels(issue) {
 // does the issue contain a given label?
 // label is a string
 function hasLabel(issue, label) {
-  return (issue.labels.reduce((a, c) => a || c.name.includes(label), false));
+  return (issue.labels && issue.labels.reduce((a, c) => a || c.name.includes(label), false));
 }
 
 // remove a label from an issue (both on the JS object and on GH)
