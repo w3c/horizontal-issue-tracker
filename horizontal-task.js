@@ -256,10 +256,13 @@ async function checkHRIssues(issues, labels) {
         for (const spec_issue of issue.spec_issues) {
           if (hasLabel(spec_issue, needs_resolution)) {
             warn(issue, `links to ${spec_issue.html_url} and needs to add needs-resolution`);
+            /*
             if (issue.hr_prefix !== "i18n") { // check with r12a first
+              // we're taking option 2 https://github.com/w3c/horizontal-issue-tracker/issues/16
               await setIssueLabel(issue.repoObject, issue, [ "needs-resolution" ]);
             }
             continue;
+            */
           }
         }
       }
