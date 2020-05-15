@@ -375,15 +375,19 @@ async function createHRIssue(issue, hlabels) {
         + "\n   - add TYPE-INFO-REQUEST if a request for script/language expert advice"
         + "\n    - add I:...  label(s)";
     }
-    if (label.name === 'i18n-tracker') {
+    if (label.name === 'i18n-tracker' || label.name === 'i18n-needs-resolution') {
       // https://github.com/w3c/i18n-activity/wiki/Automation-requirements#3-automatic-creation-of-tracker-issues-for-wg-issues-being-tracked
+      let found = false;
       for (const ilabel of issue.labels) {
         const match = ilabel.name.match(/i18n-([a-zA-Z0-9]+lreq)/);
         if (match) {
           labels.push(match[1]);
+          found = true;
         }
       }
-      labels.push("spec-type-issue");
+      if (found) {
+        labels.push("spec-type-issue");
+      }
     }
     if (shortlabel) labels.push(shortlabel);
     log(issue, `creating a new horizontal issue ${label.gh.full_name} ${title} ${labels.join(',')}`);
