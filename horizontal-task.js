@@ -86,20 +86,23 @@ function hasLabel(issue, label) {
 }
 
 // remove a label from an issue (both on the JS object and on GH)
+// label is a string
 function removeIssueLabel(repo, issue, label) {
-  const new_labels = [];
   if (issue.labels) {
+    const new_labels = [];
     let found = false;
     issue.labels.forEach(l => {
-      if (l.name !== label.name) {
+      if (l.name !== label) {
         new_labels.push(l);
       } else {
         found = true;
       }
     });
-    issue.labels = new_labels;
     if (found) {
-      return repo.removeIssueLabel(issue, label);
+      issue.labels = new_labels;
+      return repo.removeIssueLabel(issue, {name: label } );
+    } else {
+      error(issue, `no label ${label} found, so it can't be removed`);
     }
   }
   return issue;
@@ -279,7 +282,7 @@ async function checkHRIssues(issues, labels) {
           }
           if (hasLabel(spec_issue, tracker)) {
             log(spec_issue, `links to ${issue.html_url} and needs to drop ${tracker}`);
-            await removeIssueLabel(spec_issue.repoObject, spec_issue, [ tracker ]);
+            await removeIssueLabel(spec_issue.repoObject, spec_issue, tracker);
           }
         }
       }
@@ -289,7 +292,7 @@ async function checkHRIssues(issues, labels) {
     if (issue.hr_label === "needs-resolution" && hasLabel(issue, "tracker")) {
       // an issue shouldn't have needs-resolution and tracker at the same time
       log(issue, `dropping tracker label due to needs-resolution`);
-      removeIssueLabel(issue.repoObject, issue, { name: "tracker"});
+      removeIssueLabel(issue.repoObject, issue, "tracker");
     }
   }
   return true;
