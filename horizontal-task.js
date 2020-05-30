@@ -82,7 +82,7 @@ function needsHorizontalLabels(issue) {
 // does the issue contain a given label?
 // label is a string
 function hasLabel(issue, label) {
-  return (issue.labels && issue.labels.reduce((a, c) => a || c.name.includes(label), false));
+  return (issue.labels && issue.labels.reduce((a, c) => a || (c && c.name.includes(label)), false));
 }
 
 // remove a label from an issue (both on the JS object and on GH)
@@ -100,7 +100,9 @@ function removeIssueLabel(repo, issue, label) {
     });
     if (found) {
       issue.labels = new_labels;
-      return repo.removeIssueLabel(issue, {name: label } );
+      return repo.removeIssueLabel(issue, {name: label } ).catch(err => {
+        monitor.error(`could not remove label "${label}" on ${issue.html_url} : ${err} `);
+      });
     } else {
       error(issue, `no label ${label} found, so it can't be removed`);
     }
@@ -199,9 +201,9 @@ async function getHRIssues(repo) {
       }
       if (spec_issues.length > 0) {
         issue.spec_issues = spec_issues;
-      }
-      if (issue.linkTo.length !== issue.spec_issues.length) {
-        error(issue, `loaded ${issue.spec_issues.length} issues instead of ${issue.linkTo.length}`);
+        if (issue.linkTo.length !== issue.spec_issues.length) {
+          error(issue, `loaded ${issue.spec_issues.length} issues instead of ${issue.linkTo.length}`);
+        }
       }
     }
   }
