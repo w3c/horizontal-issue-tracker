@@ -3,7 +3,7 @@ For Working Groups
 
 * Apply the *-tracker label in your own repository to draw a horiztontal review group's attention to an issue in one of your own repositories.  Horizontal review groups may also apply the label if they are interested in tracking a particular issue.
 
-* Horizontal review groups may apply the *-needs-resolution to issues they expect to be resolved before the specification moves to a new maturity level.  
+* Horizontal review groups may apply the *-needs-resolution to issues they expect to be resolved before the specification moves to a new maturity level.  Working Groups must not remove or add the *-needs-resolution label.
 
 * If *-needs-resolution is applied to an issue, automatic tooling will remove the *-tracker label.
 
