@@ -92,7 +92,9 @@ function removeIssueLabel(repo, issue, label) {
     const new_labels = [];
     let found = false;
     issue.labels.forEach(l => {
-      if (l.name !== label) {
+      if (!l) {
+        monitor.error(`@@invalid issue labels list (undefined label) for ${issue.html_url}`);
+      } else if (l.name !== label) {
         new_labels.push(l);
       } else {
         found = true;
