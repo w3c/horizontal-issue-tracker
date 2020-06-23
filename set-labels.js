@@ -79,7 +79,7 @@ async function run() {
       if (!used.description || used.description === "") {
         if (!l.description || l.description === "") {
           // here, we can't learn, so we're giving up on this one
-          monitor.error(`${used.repo} and ${l.repo} needs a description`);
+          monitor.error(`${used.repo}#${used.name} and ${l.repo}#${l.name} needs a label description`);
         } else {
           monitor.warn(`${used.repo} : ${l.name} needs ${l.description}`);
           used.description = l.description;
