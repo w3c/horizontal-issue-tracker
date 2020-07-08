@@ -239,14 +239,16 @@ async function checkHRIssues(issues, labels) {
           const shortnames = getShortlabel(spec_issue.full_name);
           if (shortnames) {
             if (shortnames.length === 1) {
+              const repoName = htmlRepoURL(issue.html_url);
               if (repoName !== "w3c/sealreq") { // @@UGLY oh my. really?!?
                 log(issue, ` shortname match : ${shortnames[0]}`);
                 setIssueLabel(issue.repoObject, issue, [ shortnames[0] ]).catch(monitor.error);
               }
             } else {
-              error(issue, `multiple shortname matches : ${shortnames.join(',')}`);
-              // this one is tricky, so just give up
-              // @@TODO handle the CSS logic
+              if (htmlRepoURL(spec_issue.html_url) !== "w3c/csswg-drafts") {
+                // this one is tricky, so just give up
+                error(issue, `multiple shortname matches : ${shortnames.join(',')}`);
+              }
             }
           } else {
             error(issue, "no shortname label found");
@@ -328,8 +330,16 @@ async function createHRIssue(issue, hlabels) {
     const shortnames = (repoName) ? getShortlabel(repoName) : undefined;
     if (shortnames) {
       if (shortnames.length === 1) {
-        return shortnames[0];
+        return shortnames;
       } else {
+        if (repoName === "w3c/csswg-drafts") {
+          // this is CSS, so let's play the guess game
+          let cssSpecs = issue.title.match(/\[([a-zA-Z_]+(-[a-zA-Z_]+)*)(-[0-9]+)?\]/g);
+          if (cssSpecs) { // if not null
+            return cssSpecs.map(s => s.replace('[', 's:').replace(']', '').replace(/-[0-9]+$/, ''));
+          }
+
+        }
         error(issue, `Too many labels :  ${shortnames.join(', ')}`);
       }
     } else {
@@ -349,14 +359,14 @@ async function createHRIssue(issue, hlabels) {
     // skip it
     return;
   }
-  const shortlabel = findShortlabel(issue);
+  const shortlabels = findShortlabel(issue);
 
   // for all horizontal labels, create the issue in the horizontal repo
   // @@what if the spec issue has tracker and needs-resolution, will we create a duplicate?
   for (const label of hlabels) {
     const title = issue.title;
     // label.subcategory is "tracker" or "needs-resolution"
-    const labels = [label.subcategory, "pending"];
+    let labels = [label.subcategory, "pending"];
 
     let body = "**This is a tracker issue.** Only discuss things here if they are "
       + label.category + " group internal meta-discussions about the issue. "
@@ -393,7 +403,7 @@ async function createHRIssue(issue, hlabels) {
         labels.push("spec-type-issue");
       }
     }
-    if (shortlabel) labels.push(shortlabel);
+    if (shortlabels) labels = labels.concat(shortlabels);
     log(issue, `creating a new horizontal issue ${label.gh.full_name} ${title} ${labels.join(',')}`);
     return label.gh.createIssue(title, body, labels);
   }
@@ -469,7 +479,7 @@ async function main() {
   monitor.log(`Loaded ${hr_issues.length} horizontal issues for ${labels.length} labels`);
 
   for (const [key, value] of Object.entries(REPO2SHORTNAMES)) {
-    if (value.length != 1) {
+    if (value.length != 1 && key !== "w3c/csswg-drafts") {
       console.log(`SHORTNAME: ${key} has ${value.join(',')}`);
     }
   }
