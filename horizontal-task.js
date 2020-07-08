@@ -11,7 +11,7 @@ const HR_REPOS_URL = "https://w3c.github.io/validate-repos/hr-repos.json",
 
 // those are repositories that aren't part of hr-repos.json and yet, we track them
   EXTRA_REPOSITORIES = ["whatwg/encoding", "whatwg/html", "whatwg/url", "whatwg/fetch",
-     "w3c/webcomponents", "w3c/note-respec-repo-template"],
+  "w3c/webcomponents", "mathml-refresh/mathml", "w3c/note-respec-repo-template"],
 
   LINK_REGEX = "https://github.com/([^/]+/[^/]+)/(issues|pull)/([0-9]+)",
 
