@@ -9,7 +9,7 @@ Tools to ensure that issues raised during horizontal review are properly address
 * [Security tracker](https://w3c.github.io/horizontal-issue-tracker/?repo=w3c/security-review)
 * [TAG tracker](https://w3c.github.io/horizontal-issue-tracker/?repo=w3ctag/tracking-issues)
 
-[How to use these tools](docs/HOWTO.md).
+[How to use these tools](docs/HOWTO).
 
 A description of the [Github labels](https://w3c.github.io/issue-metadata.html#horizontal-reviews) used by these tools.
 
