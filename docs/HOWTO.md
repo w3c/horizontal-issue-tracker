@@ -9,7 +9,7 @@ For Working Groups
 
 ## Do these labels replace the need to ask for horizontal review?
 
-No.  The is *-tracker label asks for input on a specific issue.  For through review, follow [the published process for requesting horitzontal review](https://www.w3.org/wiki/DocumentReview#How_to_get_horizontal_review)
+No.  The is *-tracker label asks for input on a specific issue.  For comprehensive review, follow [the published process for requesting horitzontal review](https://www.w3.org/wiki/DocumentReview#How_to_get_horizontal_review)
 
 
 For horizontal review groups
