@@ -1,0 +1,21 @@
+body {
+    max-width: 50em;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.label {
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+
+.needs-resolution,
+.needs-tracker {
+    background-color: #e394da;
+    color: white;
+}
+
+.pending {
+    background-color: red;
+    color: white;
+}
