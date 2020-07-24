@@ -1,0 +1,47 @@
+body { 
+  padding: 1em;
+  font-family: Raleway;
+  line-height: 1.6;
+  }
+h2 { 
+  margin-top: 3em;
+  }
+td { 
+  border: 1px solid #ccc;
+  padding: .75em;
+  }
+th {
+  vertical-align: top;
+  padding: .75em;
+  padding-top: 2em;
+  width: 28%;
+  text-align: start;
+  }
+.label {
+    border-radius: 10px;
+    padding: 2px 5px;
+	}
+.needs-resolution {
+    background-color: #e394da;
+    color: white;
+	}
+.pending {
+    background-color: red;
+    color: white;
+	}
+.spec {
+    background-color: #6bc5c6;
+    color: white;
+	}
+.close {
+    background-color: #9df9d4;
+    color: black;
+	}
+.recycle {
+    background-color: #047766;
+    color: white;
+	}
+.advice-requested {
+    background-color: #f48041;
+    color: white;
+	}
