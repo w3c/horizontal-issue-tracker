@@ -504,7 +504,7 @@ async function main() {
     });
   }
   */
-  monitor.log("We're loading the specification open issues");
+  monitor.log(`We're loading the specification open issues from ${repositories.length} repositories`);
   let all = [];
   for (let index = 0; index < repositories.length; index++) {
     const repo = repositories[index];
