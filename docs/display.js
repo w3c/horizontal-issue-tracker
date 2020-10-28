@@ -211,15 +211,30 @@ function displayRepo(header, label, issues) {
   for (const issue of issues) {
     tr = domElement('tr');
     td = domElement('td');
-    // find labels
+
     for (const label of issue.labels.filter(l => config.all_labels.includes(l.name))) {
-      td.appendChild(domElement('span',
-        {style: `background-color:#${label.color}`,
-         title: label.name, class: 'labels right_labels'},
-        `${label.name} `));
+      if (label.name == "tracker" || label.name == "needs-resolution") {
+        td.appendChild(domElement('span',
+          {style: `background-color:#${label.color}`,
+            title: label.name, class: 'labels' },
+           `${label.name} `));
+      }
     }
     //a.href = issueData['html_url']
     td.appendChild(domElement('a', {href:linkTo(issue),target:'_blank'}, issue.title));
+    tr.appendChild(td);
+
+    td = domElement('td');
+    td.className = 'issueType'
+    // find labels
+    for (const label of issue.labels.filter(l => config.all_labels.includes(l.name))) {
+      if (!(label.name == "tracker" || label.name == "needs-resolution")) {
+        td.appendChild(domElement('span',
+          {style: `background-color:#${label.color}`,
+            title: label.name, class: 'labels'},
+           `${label.name} `));
+      }
+    }
     tr.appendChild(td);
 
     tr.appendChild(domElement('td', {class:'date',title:'Date created'}, formatDate(new Date(issue.created_at))));
