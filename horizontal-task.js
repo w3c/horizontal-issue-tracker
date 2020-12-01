@@ -5,45 +5,34 @@
 const { Repository, GitHub } = require("./lib/github.js"),
   HorizontalRepositories = require("./lib/horizontal-repositories.js"),
   monitor = require("./lib/monitor.js"),
-  fetch = require("node-fetch");
+  fetch = require("node-fetch"),
+  email = require("./email.js");
 
 const HR_REPOS_URL = "https://w3c.github.io/validate-repos/hr-repos.json",
 
 // those are repositories that aren't part of hr-repos.json and yet, we track them
-  EXTRA_REPOSITORIES = ["whatwg/encoding", "whatwg/html", "whatwg/url", "whatwg/fetch",
-  "w3c/webcomponents", "mathml-refresh/mathml", "w3c/note-respec-repo-template"],
+  EXTRA_REPOSITORIES = ["whatwg/encoding", "whatwg/html", "whatwg/url", "whatwg/fetch", "whatwg/xhr",
+  "whatwg/dom", "whatwg/streams", "whatwg/notifications", "whatwg/console", "whatwg/fullscreen",
+  "whatwg/infra", "whatwg/storage", "whatwg/mimesniff", "whatwg/quirks",
+  "WICG/webcomponents", "mathml-refresh/mathml", "w3c/note-respec-repo-template"],
 
   LINK_REGEX = "https://github.com/([^/]+/[^/]+)/(issues|pull)/([0-9]+)",
 
   MAGIC_CHARACTER = "§"; // section character
 
-const allRepositories = new Map();
+let allRepositories; // initialized in main()
 
 // for reporting purposes
 
-const report = {};
-
-function getReportEntry(name) {
-  let entry = report[name];
-  if (!entry) {
-    entry = {logs: [], errors: [], warnings: []};
-  }
-  report[name] = entry;
-  return entry;
-}
-
 function log(issue, msg) {
-  getReportEntry(issue.html_url).logs.push(msg);
   monitor.log(`${issue.html_url} ${msg}`);
 }
 
 function error(issue, msg) {
-  getReportEntry(issue.html_url).errors.push(msg);
   monitor.error(`${issue.html_url} ${msg}`);
 }
 
 function warn(issue, msg) {
-  getReportEntry(issue.html_url).warnings.push(msg);
   monitor.warn(`${issue.html_url} ${msg}`);
 }
 
@@ -93,7 +82,7 @@ function removeIssueLabel(repo, issue, label) {
     let found = false;
     issue.labels.forEach(l => {
       if (!l) {
-        monitor.error(`@@invalid issue labels list (undefined label) for ${issue.html_url}`);
+        error(issue, `@@invalid issue labels list (undefined label)`);
       } else if (l.name !== label) {
         new_labels.push(l);
       } else {
@@ -103,7 +92,7 @@ function removeIssueLabel(repo, issue, label) {
     if (found) {
       issue.labels = new_labels;
       return repo.removeIssueLabel(issue, {name: label } ).catch(err => {
-        monitor.error(`could not remove label "${label}" on ${issue.html_url} : ${err} `);
+        error(issue, `could not remove label "${label}" : ${err} `);
       });
     } else {
       error(issue, `no label ${label} found, so it can't be removed`);
@@ -242,7 +231,7 @@ async function checkHRIssues(issues, labels) {
               const repoName = htmlRepoURL(issue.html_url);
               if (repoName !== "w3c/sealreq") { // @@UGLY oh my. really?!?
                 log(issue, ` shortname match : ${shortnames[0]}`);
-                setIssueLabel(issue.repoObject, issue, [ shortnames[0] ]).catch(monitor.error);
+                setIssueLabel(issue.repoObject, issue, [ shortnames[0] ]).catch(err => error(issue, err));
               }
             } else {
               if (htmlRepoURL(spec_issue.html_url) !== "w3c/csswg-drafts") {
@@ -454,17 +443,6 @@ async function checkIssue(issue, labels, all_hr_issues) {
     return // all horizontal labels have a corresponding HR issue
   }
   return createHRIssue(issue, create);
-  // see if something needs to be reused from this code
-        for (let index = 0; index < foundHR.length; index++) {
-          const fissue = foundHR[index];
-          const hLabel = hLabelFound[index];
-          if (!hasLabel(fissue, hLabel.subcategory)) {
-            monitor.log(`mismatched sublabel ${issue.html_url} and ${fissue.html_url} for ${hLabel.name}`);
-          }
-          if (fissue.hr_prefix !== hLabel.category) {
-            monitor.log(`mismatched horizontal ${issue.html_url} and ${fissue.html_url} for ${hLabel.name}`);
-          }
-        }
 }
 
 async function main() {
@@ -472,19 +450,20 @@ async function main() {
   const labels = await hr.labels;
   let hr_issues = [];
 
+  // reinitialize the repositories map
+  allRepositories = new Map();
+
   monitor.log("We're loading the horizontal issues");
   for (const repo of (await hr.repositories)) {
     hr_issues = hr_issues.concat(await getHRIssues(repo));
   }
-  monitor.log(`Loaded ${hr_issues.length} horizontal issues for ${labels.length} labels`);
+  monitor.log(`Loaded and checking ${hr_issues.length} horizontal issues for ${labels.length} labels`);
 
   for (const [key, value] of Object.entries(REPO2SHORTNAMES)) {
     if (value.length != 1 && key !== "w3c/csswg-drafts") {
-      console.log(`SHORTNAME: ${key} has ${value.join(',')}`);
+      monitor.log(`multiple potential shortnames found for ${key} : ${value.join(',')}`);
     }
   }
-
-  monitor.log("We're checking the horizontal issues");
 
   await checkHRIssues(hr_issues, labels);
 
@@ -504,7 +483,6 @@ async function main() {
     });
   }
   */
-  monitor.log(`We're loading the specification open issues from ${repositories.length} repositories`);
   let all = [];
   for (let index = 0; index < repositories.length; index++) {
     const repo = repositories[index];
@@ -512,18 +490,43 @@ async function main() {
   }
 
 
-  await Promise.all(all).then(issues => {
+  return Promise.all(all).then(issues => {
     issues = issues.flat();
     let total = issues.length;
-    monitor.log(`we're checking the ${total} specification open issues`);
+    monitor.log(`we're checking ${total} specification open issues from ${repositories.length} repositories`);
     const checks = [];
     for (let index = 0; index < issues.length; index++) {
       const issue = issues[index];
       checks.push(checkIssue(issue, labels, hr_issues));
     }
     return Promise.all(checks);
-  })
-
+  }).then(all => {
+    // we're done with everything
+    monitor.log("we're done and it seems nothing broke. Good luck.");
+  });
 }
 
-main();
+
+function loop() {
+  main().then(function () {
+    email(monitor.get_logs());
+  }).catch(function (err) {
+    monitor.error(`Something went wrong ${err}`);
+  });
+
+  setTimeout(loop, 60000 * 12); // every 12 hours
+}
+
+async function init() {
+  /// empty as far as I know
+  return "ok";
+}
+
+init().then(function () {
+  loop();
+}).catch(function (err) {
+  console.error("Error ocurred");
+  console.error(err);
+  console.error(err.stack);
+});
+
