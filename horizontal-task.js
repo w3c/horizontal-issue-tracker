@@ -350,6 +350,8 @@ async function createHRIssue(issue, hlabels) {
   }
   const shortlabels = findShortlabel(issue);
 
+  let all_creation = [];
+
   // for all horizontal labels, create the issue in the horizontal repo
   // @@what if the spec issue has tracker and needs-resolution, will we create a duplicate?
   for (const label of hlabels) {
@@ -394,8 +396,9 @@ async function createHRIssue(issue, hlabels) {
     }
     if (shortlabels) labels = labels.concat(shortlabels);
     log(issue, `creating a new horizontal issue ${label.gh.full_name} ${title} ${labels.join(',')}`);
-    return label.gh.createIssue(title, body, labels);
+    all_creation.push(label.gh.createIssue(title, body, labels));
   }
+  return Promise.all(all_creation);
 }
 
 // Check that a specification issue is proper
