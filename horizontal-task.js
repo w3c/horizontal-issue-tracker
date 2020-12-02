@@ -396,12 +396,8 @@ async function createHRIssue(issue, hlabels) {
     }
     if (shortlabels) labels = labels.concat(shortlabels);
     log(issue, `creating a new horizontal issue ${label.gh.full_name} ${title} ${labels.join(',')}`);
-    all_creation.push(label.gh.createIssue(title, body, labels).then(res => {
-      if (res.status === 201) {
-        log(res.data, `is a new horizontal issue for ${issue.html_url}`);
-      } else {
-        error(issue, `Unexpected ${res.status} return status when creating the new horizontal issue`);
-      }
+    all_creation.push(label.gh.createIssue(title, body, labels).then(new_issue => {
+        log(new_issue, `is a new horizontal issue for ${issue.html_url}`);
     }).catch(err => {
       error(issue, `Something went wrong ${err}`);
     }));
