@@ -187,7 +187,12 @@ async function getHRIssues(repo) {
           spec_issue.repoObject = issueRepo;
           spec_issues.push(spec_issue);
         } else {
-          error(issue, `redirected? ${link}`);
+          // label issue as moved since we couldn't find it anymore
+          if (!issue.hasLabel("moved?")) {
+            // this wasn't detected before, so add "moved?" and "pending"
+            log(issue, `moved? ${link}`);
+            setIssueLabel(issue.repoObject, issue, [ "moved?", "pending" ]).catch(monitor.error);
+          }
         }
       }
       if (spec_issues.length > 0) {
