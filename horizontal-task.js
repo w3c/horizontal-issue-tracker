@@ -526,7 +526,7 @@ function loop() {
     monitor.error(`Something went wrong ${err}`);
   });
 
-  setTimeout(loop, 60000 * 12); // every 12 hours
+  setTimeout(loop, 60000 * 60 * 12); // every 12 hours
 }
 
 async function init() {
