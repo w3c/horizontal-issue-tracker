@@ -188,7 +188,7 @@ async function getHRIssues(repo) {
           spec_issues.push(spec_issue);
         } else {
           // label issue as moved since we couldn't find it anymore
-          if (!issue.hasLabel("moved?")) {
+          if (!hasLabel(issue, "moved?")) {
             // this wasn't detected before, so add "moved?" and "pending"
             log(issue, `moved? ${link}`);
             setIssueLabel(issue.repoObject, issue, [ "moved?", "pending" ]).catch(monitor.error);
