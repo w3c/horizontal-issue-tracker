@@ -13,3 +13,4 @@ Tools to ensure that issues raised during horizontal review are properly address
 
 A description of the [Github labels](https://w3c.github.io/issue-metadata.html#horizontal-reviews) used by these tools.
 
+The horizontal tracker tool runs every 12 hours and generates a report sent by email.
