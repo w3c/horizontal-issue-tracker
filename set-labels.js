@@ -11,9 +11,37 @@ const HorizontalRepositories = require("./lib/horizontal-repositories.js"),
       fs = require('fs').promises,
       monitor = require("./lib/monitor.js");
 
+const W3C_APIKEY = require("./config.json").w3capikey;
 const HR_REPOS_URL = "https://w3c.github.io/validate-repos/hr-repos.json";
+const W3C_APIURL = "https://api.w3.org/";
 
 const SHORTNAME_COLOR = "6bc5c6";
+
+function fetchW3C(queryPath) {
+  if (!W3C_APIKEY) throw new ReferenceError("Missing W3C key")
+  const apiURL = new URL(queryPath, W3C_APIURL);
+  apiURL.searchParams.set("apikey", W3C_APIKEY);
+  apiURL.searchParams.set("embed", "1"); // grab everything
+  console.log(`fetch ${apiURL}`);
+  return fetch(apiURL).then(r => r.json()).then(data => {
+    if (data.error) return data;
+    if (data.pages && data.pages > 1 && data.page < data.pages) {
+      return fetchW3C(data._links.next.href).then(nextData => {
+        let key = Object.keys(data._embedded)[0];
+        let value = data._embedded[key];
+        return value.concat(nextData);
+      });
+    }
+    let value;
+    if (data._embedded) {
+      let key = Object.keys(data._embedded)[0];
+      value = data._embedded[key];
+    } else {
+      value = data;
+    }
+    return value;
+  });
+}
 
 async function run() {
   const hr = new HorizontalRepositories();
@@ -105,7 +133,41 @@ async function run() {
       }
     }
   })
-  fs.writeFile("shortnames.json", JSON.stringify(Array.from(map.values())));
+/*
+  const specifications = await fetchW3C("specifications");
+  fs.writeFile("w3c_tr.json", JSON.stringify(specifications));
+*/
+  const specifications = require("./w3c_tr.json");
+  const shortnames = Array.from(map.values());
+
+  function findSpec(link) {
+    let title;
+    let rspec;
+    specifications.forEach(spec => {
+      if (link === spec["editor-draft"]) {
+        if (!rspec) {
+          rspec = spec;
+        } else {
+          monitor.log(`We already found this specificaton: ${link}`);
+          console.log(rspec);
+        }
+      }
+    })
+    return rspec;
+  }
+  shortnames.forEach(short => {
+    if (short.description) {
+      const link = short.description;
+      const spec = findSpec(link);
+      if (spec) {
+        short.title = spec.title;
+      } else {
+        // we didn't find it (not yet publsihed, WICG, WHATWG, ...), so time to make some guessing
+        monitor.error(`${short.description} not found`);
+      }
+    }
+  })
+  fs.writeFile("shortnames.json", JSON.stringify(shortnames));
 }
 
 run();
