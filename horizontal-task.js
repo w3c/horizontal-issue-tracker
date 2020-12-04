@@ -6,7 +6,8 @@ const { Repository, GitHub } = require("./lib/github.js"),
   HorizontalRepositories = require("./lib/horizontal-repositories.js"),
   monitor = require("./lib/monitor.js"),
   fetch = require("node-fetch"),
-  email = require("./email.js");
+  email = require("./email.js"),
+  octokit = require("./lib/octokit-cache.js");
 
 const HR_REPOS_URL = "https://w3c.github.io/validate-repos/hr-repos.json",
 
@@ -182,16 +183,27 @@ async function getHRIssues(repo) {
         const match = link.match(new RegExp(LINK_REGEX));
         let issueRepo = createRepository(match[1]);
         const issueNumber = Number.parseInt(match[3]);
-        const spec_issue = await issueRepo.getIssue(Number.parseInt(match[3]));
+        let spec_issue = await issueRepo.getIssue(issueNumber);
         if (spec_issue) {
           spec_issue.repoObject = issueRepo;
           spec_issues.push(spec_issue);
         } else {
+          // we can't find: either the cache didn't refresh yet or the issue got moved
           // label issue as moved since we couldn't find it anymore
-          if (!hasLabel(issue, "moved?")) {
+          spec_issue = await octokit.request(`GET /repos/${issueRepo.full_name}/issues/${issueNumber}`)
+            .then(res => {
+              if (res.status === 201 || res.status === 200) {
+                return res.data;
+              } else {
+                return undefined;
+              }
+            });
+          if (spec_issue && spec_issue.html_url !== link && !hasLabel(issue, "moved?")) {
             // this wasn't detected before, so add "moved?" and "pending"
             log(issue, `moved? ${link}`);
             setIssueLabel(issue.repoObject, issue, [ "moved?", "pending" ]).catch(monitor.error);
+          } else {
+            error(issue, `invalid linked issue?`);
           }
         }
       }
