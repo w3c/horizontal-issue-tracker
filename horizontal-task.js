@@ -416,6 +416,7 @@ async function createHRIssue(issue, hlabels) {
     all_creation.push(label.gh.createIssue(title, body, labels).then(new_issue => {
         log(new_issue, `is a new horizontal issue for ${issue.html_url}`);
     }).catch(err => {
+      console.error(err);
       error(issue, `Something went wrong when creating a new issue in ${label.gh.full_name}: ${err.status} ${err}`);
     }));
   }
