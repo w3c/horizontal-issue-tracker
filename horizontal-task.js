@@ -533,15 +533,11 @@ async function main() {
 
 function loop() {
   main().then(function () {
-    email(monitor.get_logs()).catch(err => {
-      monitor.error(`Cannot send email ${err}`);
-    });
+    email(monitor.get_logs());
   }).catch(function (err) {
     console.error(err);
     monitor.error(`Something went wrong ${err}`);
-    email(monitor.get_logs()).catch(err => {
-      monitor.error(`Cannot send error email ${err}`);
-    });
+    email(monitor.get_logs());
   });
 
   setTimeout(loop, 60000 * 60 * 12); // every 12 hours

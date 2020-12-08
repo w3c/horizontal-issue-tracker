@@ -29,8 +29,8 @@ function email(logs) {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      sendError(error); // notify plh
-      return console.error(error);
+      console.error(error);
+      return sendError(error); // notify plh
     }
     console.log('Message sent: %s', info.messageId);
   });
@@ -46,7 +46,7 @@ function sendError(error) {
     text: "You might want to look at " + JSON.stringify(error)
   };
 
-  transporter.sendMail(mailOptions, (error, info) => {
+  return transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
         return console.error(JSON.stringify(error));
     }
