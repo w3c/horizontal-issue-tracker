@@ -7,20 +7,20 @@
 
 const HorizontalRepositories = require("./lib/horizontal-repositories.js"),
       {Repository} = require("./lib/github.js"),
+      config = require("./lib/config.js"),
       fetch = require("node-fetch"),
       fs = require('fs').promises,
       monitor = require("./lib/monitor.js");
 
-const W3C_APIKEY = require("./config.json").w3capikey;
 const HR_REPOS_URL = "https://w3c.github.io/validate-repos/hr-repos.json";
 const W3C_APIURL = "https://api.w3.org/";
 
 const SHORTNAME_COLOR = "6bc5c6";
 
 function fetchW3C(queryPath) {
-  if (!W3C_APIKEY) throw new ReferenceError("Missing W3C key")
+  if (!config.w3capikey) throw new ReferenceError("Missing W3C key")
   const apiURL = new URL(queryPath, W3C_APIURL);
-  apiURL.searchParams.set("apikey", W3C_APIKEY);
+  apiURL.searchParams.set("apikey", config.w3capikey);
   apiURL.searchParams.set("embed", "1"); // grab everything
   console.log(`fetch ${apiURL}`);
   return fetch(apiURL).then(r => r.json()).then(data => {
@@ -149,7 +149,7 @@ async function run() {
           rspec = spec;
         } else {
           monitor.log(`We already found this specificaton: ${link}`);
-          console.log(rspec);
+          // console.log(rspec);
         }
       }
     })
