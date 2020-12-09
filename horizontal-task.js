@@ -195,6 +195,7 @@ async function getHRIssues(repo) {
               if (res.status === 201 || res.status === 200) {
                 return res.data;
               } else {
+                console.error(res);
                 return undefined;
               }
             });
@@ -203,7 +204,9 @@ async function getHRIssues(repo) {
             log(issue, `moved? ${link}`);
             setIssueLabel(issue.repoObject, issue, [ "moved?", "pending" ]).catch(monitor.error);
           } else {
-            error(issue, `invalid linked issue?`);
+            if (issue.state === "open") {
+              error(issue, `invalid linked issue?`);
+            }
           }
         }
       }
@@ -253,11 +256,11 @@ async function checkHRIssues(issues, labels) {
             } else {
               if (htmlRepoURL(spec_issue.html_url) !== "w3c/csswg-drafts") {
                 // this one is tricky, so just give up
-                error(issue, `multiple shortname matches : ${shortnames.join(',')}`);
+                warn(issue, `multiple shortname matches : ${shortnames.join(',')}`);
               }
             }
           } else {
-            error(issue, "no shortname label found");
+            warn(issue, "no shortname label found");
             // we have no idea on what we're looking at, so give up
           }
         }
