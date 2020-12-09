@@ -63,10 +63,18 @@ function related(body) {
 
 // @@ DEPRECATE ME
 // This looks to see if a label is in the issue body
-function needsHorizontalLabels(issue) {
+function needsHorizontalLabels(issue, hr_labels) {
   const needs = (issue.body || "").toLowerCase().match(/\+([a-z0-9]+)-(tracker|needs-resolution)/g);
   if (!needs) return undefined;
-  return needs.map(s => { return { name: s.substring(1) }});
+  const rlabels = [];
+  needs.forEach(s => {
+    let fname = s.substring(1);
+    const hlabel = hr_labels.find(l => l.name === fname);
+    if (hlabel) {
+      rlabels.push(hlabel);
+    }
+  });
+  return rlabels;
 }
 
 // does the issue contain a given label?
@@ -428,7 +436,7 @@ async function createHRIssue(issue, hlabels) {
 
 // Check that a specification issue is proper
 async function checkIssue(issue, labels, all_hr_issues) {
-  const needed_labels = needsHorizontalLabels(issue); // @@deprecate me
+  const needed_labels = needsHorizontalLabels(issue, labels);
 
   if (!issue.labels && !needed_labels) {
     return; // no labels, we're done here
@@ -442,7 +450,7 @@ async function checkIssue(issue, labels, all_hr_issues) {
       }
     }
   }
-  // @@deprecate me
+
   if (needed_labels) {
     const needed = [];
     for (const l of needed_labels) {
@@ -453,9 +461,18 @@ async function checkIssue(issue, labels, all_hr_issues) {
       }
     }
     if (needed.length > 0) {
-      log(issue, `setting labels ${needed.map(l => l.name)}`);
+      log(issue, `setting ${needed.length} label(s): ${needed.map(l => l.name)}`);
       const repo = createRepository(htmlRepoURL(issue.html_url));
-      await setIssueLabel(repo, issue, needed.map(l => l.name));
+      const repo_labels = repo.getLabels();
+      needed.forEach(label => {
+        const f = labels.find(l => l.name === label.name);
+        if (!f) {
+          monitor.error(`repo.full_name is missing horizontal labels! Couldn't find ${label.name}`);
+        }
+      })
+      await setIssueLabel(repo, issue, needed.map(l => l.name)).then(() => {
+        needed.forEach(l => issue.labels.push(l)); // update the issue in memory
+      });
     }
   }
   if (hLabelFound.length === 0) {
