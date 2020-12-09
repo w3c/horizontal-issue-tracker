@@ -424,12 +424,23 @@ async function createHRIssue(issue, hlabels) {
     }
     if (shortlabels) labels = labels.concat(shortlabels);
     log(issue, `creating a new horizontal issue ${label.gh.full_name} ${title} ${labels.join(',')}`);
-    all_creation.push(label.gh.createIssue(title, body, labels).then(new_issue => {
-        log(new_issue, `is a new horizontal issue for ${issue.html_url}`);
-    }).catch(err => {
-      console.error(err);
-      error(issue, `Something went wrong when creating a new issue in ${label.gh.full_name}: ${err.status} ${err}`);
-    }));
+    // let's check if the labels are there...
+    label.gh.getLabels().then(repo_labels => {
+      labels.forEach(label => {
+        const f = repo_labels.find(l => l.name === label.name);
+        if (!f) {
+          monitor.warn(`${label.gh.full_name} is missing the label ${label.name}`);
+        }
+      }).catch(monitor.error)
+      .then(() => {
+      all_creation.push(label.gh.createIssue(title, body, labels).then(new_issue => {
+          log(new_issue, `is a new horizontal issue for ${issue.html_url}`);
+        }).catch(err => {
+          console.error(err);
+          error(issue, `Something went wrong when creating a new issue in ${label.gh.full_name}: ${err.status} ${err}`);
+        }))
+      });
+    });
   }
   return Promise.all(all_creation);
 }
@@ -476,7 +487,7 @@ async function checkIssue(issue, labels, all_hr_issues) {
       needed.forEach(label => {
         const f = labels.find(l => l.name === label.name);
         if (!f) {
-          monitor.error(`repo.full_name is missing horizontal labels! Couldn't find ${label.name}`);
+          monitor.warn(`${repo.full_name} is missing horizontal labels! Couldn't find ${label.name}`);
         }
       })
       await setIssueLabel(repo, issue, needed.map(l => l.name)).then(() => {
