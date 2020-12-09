@@ -454,10 +454,19 @@ async function checkIssue(issue, labels, all_hr_issues) {
   if (needed_labels) {
     const needed = [];
     for (const l of needed_labels) {
-      const f = hLabelFound.find(lh => lh.name === l.name);
+      let f = hLabelFound.find(lh => lh.name === l.name);
       if (!f) {
-        hLabelFound.push(l);
-        needed.push(l);
+        if (f.subcategory === "tracker") {
+          const sl = f.category + "-needs-resolution";
+          f = hLabelFound.find(lh => lh.name === sl);
+          if (!f) {
+            hLabelFound.push(l);
+            needed.push(l);
+          }
+        } else { /// it's a needs-resolution
+          hLabelFound.push(l);
+          needed.push(l);
+        }
       }
     }
     if (needed.length > 0) {
