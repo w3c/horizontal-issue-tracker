@@ -513,8 +513,7 @@ async function main() {
   */
   let all = [];
   for (let index = 0; index < repositories.length; index++) {
-    const repo = repositories[index];
-    all.push(await repo.getOpenIssues());
+    all.push(await repositories[index].getIssues());
   }
 
 
