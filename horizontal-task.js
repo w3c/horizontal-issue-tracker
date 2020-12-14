@@ -425,27 +425,38 @@ async function createHRIssue(issue, hlabels) {
       }
     }
     if (shortlabels) labels = labels.concat(shortlabels);
-    log(issue, `creating a new horizontal issue ${label.gh.full_name} ${title} ${labels.join(',')}`);
-    // let's check if the labels are there...
-    label.gh.getLabels().then(repo_labels => {
-      console.log("going here")
-      labels.forEach(label => {
-        const f = repo_labels.find(l => l.name === label.name);
-        if (!f) {
-          monitor.warn(`${label.gh.full_name} is missing the label ${label.name}`);
-        }
+
+    const horizontal_repo = label.gh;
+    log(issue, `creating a new horizontal issue ${horizontal_repo.full_name} ${title} ${labels.join(',')}`);
+    all_creation.push(
+      // let's check if the shortname labels are there...
+      horizontal_repo.getLabels().then(repo_labels => {
+        const request_labels = [];
+        shortlabels.forEach(clabel => {
+          const f = repo_labels.find(l => l.name === clabel.name);
+          if (!f) {
+            request_labels.push(horizontal_repo.setLabel(clabel)
+              .then(() =>
+                monitor.log(`${horizontal_repo.full_name} got the new label ${clabel.name}`))
+              .then(err => {
+                monitor.warn(`${horizontal_repo.full_name} failed to create the new label ${clabel.name}`);
+                console.log(err);
+              })
+            );
+          }
+        })
+        return Promise.all(request_labels);
       })
-    })
-    .catch(monitor.error)
-    .then(() => {
-      all_creation.push(label.gh.createIssue(title, body, labels).then(new_issue => {
-          log(new_issue, `is a new horizontal issue for ${issue.html_url}`);
-        }).catch(err => {
-          console.error(err);
-          error(issue, `Something went wrong when creating a new issue in ${label.gh.full_name}: ${err.status} ${err}`);
-        }))
-      });
-  }
+      .catch(monitor.error) // ignore those issues
+      .then(() => label.gh.createIssue(title, body, labels))
+      .then(new_issue => {
+        log(new_issue, `is a new horizontal issue for ${issue.html_url}`);
+      }).catch(err => {
+        console.error(err);
+        error(issue, `Something went wrong when creating a new issue in ${label.gh.full_name}: ${err.status} ${err}`);
+      })
+    ); // all_creation.push
+  } // for (const label of hlabels)
   return Promise.all(all_creation);
 }
 
