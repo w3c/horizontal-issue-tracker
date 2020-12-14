@@ -268,7 +268,9 @@ async function checkHRIssues(issues, labels) {
               }
             }
           } else {
-            warn(issue, "no shortname label found");
+            if (!hasLabel(issue, "pending")) {
+              warn(issue, "no shortname label found");
+            }
             // we have no idea on what we're looking at, so give up
           }
         }
