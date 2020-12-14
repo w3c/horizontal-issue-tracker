@@ -426,13 +426,16 @@ async function createHRIssue(issue, hlabels) {
     log(issue, `creating a new horizontal issue ${label.gh.full_name} ${title} ${labels.join(',')}`);
     // let's check if the labels are there...
     label.gh.getLabels().then(repo_labels => {
+      console.log("going here")
       labels.forEach(label => {
         const f = repo_labels.find(l => l.name === label.name);
         if (!f) {
           monitor.warn(`${label.gh.full_name} is missing the label ${label.name}`);
         }
-      }).catch(monitor.error)
-      .then(() => {
+      })
+    })
+    .catch(monitor.error)
+    .then(() => {
       all_creation.push(label.gh.createIssue(title, body, labels).then(new_issue => {
           log(new_issue, `is a new horizontal issue for ${issue.html_url}`);
         }).catch(err => {
@@ -440,7 +443,6 @@ async function createHRIssue(issue, hlabels) {
           error(issue, `Something went wrong when creating a new issue in ${label.gh.full_name}: ${err.status} ${err}`);
         }))
       });
-    });
   }
   return Promise.all(all_creation);
 }
