@@ -71,7 +71,9 @@ function needsHorizontalLabels(issue, hr_labels) {
     let fname = s.substring(1);
     const hlabel = hr_labels.find(l => l.name === fname);
     if (hlabel) {
-      rlabels.push(hlabel);
+      if (hlabel.name !== "a11y-needs-resolution") {
+        rlabels.push(hlabel);
+      }
     }
   });
   return rlabels;
