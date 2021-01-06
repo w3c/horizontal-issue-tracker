@@ -578,7 +578,7 @@ async function main() {
   return Promise.all(all).then(issues => {
     issues = issues.flat();
     let total = issues.length;
-    monitor.log(`we're checking ${total} specification open issues from ${repositories.length} repositories`);
+    monitor.log(`we're checking ${total} specification open and closed issues from ${repositories.length} repositories`);
     const checks = [];
     for (let index = 0; index < issues.length; index++) {
       const issue = issues[index];
