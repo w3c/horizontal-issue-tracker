@@ -11,7 +11,7 @@ let transporter = nodemailer.createTransport({
 let MAILING_LIST, SENDER_EMAIL;
 
 if (process.env.NODE_ENV == 'production') {
-  MAILING_LIST = "plh@w3.org";
+  MAILING_LIST = ["plh@w3.org", "w3t-archive@w3.org"];
   SENDER_EMAIL = "plh@w3.org";
 } else {
   MAILING_LIST = "plh@w3.org";
@@ -43,7 +43,7 @@ function sendError(error) {
     from: "Notifier <" + SENDER_EMAIL + ">",
     to: "plh@w3.org",
     subject: "We've got an error on the horizontal tracker issue email",
-    text: "You might want to look at " + JSON.stringify(error)
+    text: "You might want to look at this JSON object:\n" + JSON.stringify(error)
   };
 
   return transporter.sendMail(mailOptions, (error, info) => {

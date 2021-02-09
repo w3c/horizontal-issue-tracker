@@ -84,7 +84,7 @@ async function run() {
   // @@continue
   const hrRepos = await hr.repositories;
   let labels = [].concat(...(await Promise.all(hrRepos.map(repo => {
-    return repo.getLabels().then(labels => {
+    return repo.getLabels(-1).then(labels => {
       labels.forEach(l => {
         // we decorate the labels with the repo name and their repo object
         l.repo = repo.full_name;
@@ -137,8 +137,8 @@ async function run() {
   const specifications = await fetchW3C("specifications");
   fs.writeFile("w3c_tr.json", JSON.stringify(specifications));
 */
-  const specifications = require("./w3c_tr.json");
-  const shortnames = Array.from(map.values());
+const specifications = require("./w3c_tr.json");
+const shortnames = Array.from(map.values());
 
   function findSpec(link) {
     let title;

@@ -441,7 +441,7 @@ async function createHRIssue(issue, hlabels) {
               request_labels.push(horizontal_repo.setLabel(clabel)
                 .then(() =>
                   monitor.log(`${horizontal_repo.full_name} got the new label ${clabel.name}`))
-                .then(err => {
+                .catch(err => {
                   monitor.warn(`${horizontal_repo.full_name} failed to create the new label ${clabel.name}`);
                   console.log(err);
                 })
@@ -531,6 +531,11 @@ async function checkIssue(issue, labels, all_hr_issues) {
   return createHRIssue(issue, create);
 }
 
+// pretty formatting of numbers
+function fn(n) {
+  return new Intl.NumberFormat().format(n);
+}
+
 async function main() {
   const hr = new HorizontalRepositories();
   const labels = await hr.labels;
@@ -539,11 +544,11 @@ async function main() {
   // reinitialize the repositories map
   allRepositories = new Map();
 
-  monitor.log("We're loading the horizontal issues");
+  monitor.log("Loading the horizontal issues");
   for (const repo of (await hr.repositories)) {
     hr_issues = hr_issues.concat(await getHRIssues(repo));
   }
-  monitor.log(`Loaded and checking ${hr_issues.length} horizontal issues for ${labels.length} labels`);
+  monitor.log(`Loaded and checking ${fn(hr_issues.length)} horizontal issues for ${labels.length} labels`);
 
   for (const [key, value] of Object.entries(REPO2SHORTNAMES)) {
     if (value.length != 1 && key !== "w3c/csswg-drafts") {
@@ -574,11 +579,18 @@ async function main() {
     all.push(await repositories[index].getIssues());
   }
 
+  await Promise.all(all).then(issues => {
+    issues = issues.flat();
+    let total = issues.length;
+    let open = issues.filter(issue => issue.state === "open").length;
+    monitor.log(`Loading issues from ${repositories.length} repositories`);
+    monitor.log(`Found ${fn(total)} issues (${fn(total - open)} closed and ${fn(open)} open)`);
+    // return undefined;
+  }).catch(monitor.error);
 
   return Promise.all(all).then(issues => {
     issues = issues.flat();
     let total = issues.length;
-    monitor.log(`we're checking ${total} specification open and closed issues from ${repositories.length} repositories`);
     const checks = [];
     for (let index = 0; index < issues.length; index++) {
       const issue = issues[index];
