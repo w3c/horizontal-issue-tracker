@@ -488,8 +488,8 @@ async function checkIssue(issue, labels, all_hr_issues) {
     for (const l of needed_labels) {
       let f = hLabelFound.find(lh => lh.name === l.name);
       if (!f) {
-        if (f.subcategory === "tracker") {
-          const sl = f.category + "-needs-resolution";
+        if (l.subcategory === "tracker") {
+          const sl = l.category + "-needs-resolution";
           f = hLabelFound.find(lh => lh.name === sl);
           if (!f) {
             hLabelFound.push(l);
