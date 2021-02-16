@@ -438,14 +438,19 @@ async function createHRIssue(issue, hlabels) {
           shortlabels.forEach(clabel => {
             const f = repo_labels.find(l => l.name === clabel.name);
             if (!f) {
-              request_labels.push(horizontal_repo.setLabel(clabel)
-                .then(() =>
-                  monitor.log(`${horizontal_repo.full_name} got the new label ${clabel.name}`))
-                .catch(err => {
-                  monitor.warn(`${horizontal_repo.full_name} failed to create the new label ${clabel.name}`);
-                  console.log(err);
-                })
-              );
+              if (clabel.name) {
+                request_labels.push(horizontal_repo.setLabel(clabel)
+                  .then(() =>
+                    monitor.log(`${horizontal_repo.full_name} got the new label ${clabel.name}`))
+                  .catch(err => {
+                    monitor.warn(`${horizontal_repo.full_name} failed to create the new label ${clabel.name}`);
+                    console.log(err);
+                  })
+                );
+              } else {
+                monitor.error(`Can't an undefined label in ${horizontal_repo.full_name}`);
+                monitor.error(JSON.stringify(clabel));
+              }
             }
           })
           return Promise.all(request_labels);
