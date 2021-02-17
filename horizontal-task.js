@@ -436,21 +436,15 @@ async function createHRIssue(issue, hlabels) {
         const request_labels = [];
         if (shortlabels) {
           shortlabels.forEach(clabel => {
-            const f = repo_labels.find(l => l.name === clabel.name);
+            const f = repo_labels.find(l => l.name === clabel);
             if (!f) {
-              if (clabel.name) {
-                request_labels.push(horizontal_repo.setLabel(clabel)
-                  .then(() =>
-                    monitor.log(`${horizontal_repo.full_name} got the new label ${clabel.name}`))
-                  .catch(err => {
-                    monitor.warn(`${horizontal_repo.full_name} failed to create the new label ${clabel.name}`);
-                    console.log(err);
-                  })
-                );
-              } else {
-                monitor.error(`Can't an undefined label in ${horizontal_repo.full_name}`);
-                monitor.error(JSON.stringify(clabel));
-              }
+              request_labels.push(horizontal_repo.setLabel({ name: clabel, color: "#6bc5c6", description: "missing link"})
+                .then(() =>
+                  monitor.log(`${horizontal_repo.full_name} got the new label ${clabel}. Update the link?`))
+                .catch(err => {
+                  monitor.warn(`${horizontal_repo.full_name} failed to create the new label ${clabel}`);
+                  console.log(err);
+                }));
             }
           })
           return Promise.all(request_labels);
