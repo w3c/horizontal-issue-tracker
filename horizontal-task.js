@@ -103,7 +103,7 @@ function removeIssueLabel(repo, issue, label) {
     if (found) {
       issue.labels = new_labels;
       return repo.removeIssueLabel(issue, {name: label } ).catch(err => {
-        error(issue, `could not remove label "${label}" : ${err} `);
+       error(issue, `could not remove label "${label}" : ${err} `);
       });
     } else {
       error(issue, `no label ${label} found, so it can't be removed`);
@@ -544,8 +544,17 @@ async function main() {
   allRepositories = new Map();
 
   monitor.log("Loading the horizontal issues");
+  let good = true;
   for (const repo of (await hr.repositories)) {
+    let issues = await getHRIssues(repo);
+    if (!issues || !issues.length) {
+      good = false;
+      throw new Error(`Error while retrieving ${repo.full_name}`);
+    }
     hr_issues = hr_issues.concat(await getHRIssues(repo));
+  }
+  if (!good) {
+    throw new Error("unreachable statement");
   }
   monitor.log(`Loaded and checking ${fn(hr_issues.length)} horizontal issues for ${labels.length} labels`);
 
@@ -608,7 +617,7 @@ function loop() {
     email(monitor.get_logs());
   }).catch(function (err) {
     console.error(err);
-    monitor.error(`Something went wrong ${err}`);
+    monitor.error(`Something went wrong: ${err}`);
     email(monitor.get_logs());
   });
 
@@ -627,4 +636,3 @@ init().then(function () {
   console.error(err);
   console.error(err.stack);
 });
-
