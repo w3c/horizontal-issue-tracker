@@ -143,18 +143,24 @@ const shortnames = Array.from(map.values());
   function findSpec(link) {
     let title;
     let rspec;
+    if (link.match("https://drafts.csswg.org/[-0a-zA-Z]+/")
+        || link.match("https://drafts.css-houdini.org/[-0a-zA-Z]+/")
+        || link.match("https://drafts.fxtf.org/[-0a-zA-Z]+/")) {
+       link = link.substring(0, link.length-1) + "(-[0-9]+)?/";
+    }
     specifications.forEach(spec => {
-      if (link === spec["editor-draft"]) {
+      if (spec["editor-draft"] && spec["editor-draft"].match(link)) {
         if (!rspec) {
           rspec = spec;
         } else {
-          monitor.log(`We already found this specificaton: ${link}`);
+          // monitor.log(`We already found this specificaton: ${link}`);
           // console.log(rspec);
         }
       }
     })
     return rspec;
   }
+  const domains = new Set();
   shortnames.forEach(short => {
     if (short.description) {
       const link = short.description;
@@ -165,8 +171,13 @@ const shortnames = Array.from(map.values());
         // we didn't find it (not yet publsihed, WICG, WHATWG, ...), so time to make some guessing
         monitor.error(`${short.description} not found`);
       }
+      const matches = link.match(new RegExp("https://([^/]+)/"));
+      if (matches) {
+        domains.add(matches[1]);
+      }
     }
   })
+  console.log(domains);
   fs.writeFile("shortnames.json", JSON.stringify(shortnames));
 }
 
