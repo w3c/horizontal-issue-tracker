@@ -4,8 +4,7 @@
 
 // Define the repository
 const config = {
-  // the horizontal group repository
-  repo: 'w3c/i18n-activity',
+  shortname: 'html',
   debug: false,
   ttl: 15,
   // the labels to display on the page
@@ -140,78 +139,70 @@ rtObserver.observe({entryTypes: ["resource"]});
  * *
  */
 async function getAllData() {
-  const GH_URL = `${GH_CACHE}/v3/repos/${config.repo}/issues`;
-  let issues;
-  const sections = {};
-  const repo_labels = {};
-  const short_labels = [];
-  const sprefix = 's:';
-  const lFilter = l => l.name.startsWith(sprefix);
-
-  for (const a of document.getElementsByClassName('link_repo')) {
-    a.textContent = config.repo;
-    a.href = `https://github.com/${config.repo}/issues`;
-  }
-
-  // here we go, request the open issues
-  const promise_issues = ghRequest(GH_URL, {
-    ttl: config.ttl,
-    fields: "body,html_url,labels,title,created_at,number"
-  }); // might as well request the max
-
-  // this is for perf testing purposes. a race between github and github-cache
-  fetch(`https://api.github.com/repos/${config.repo}/issues`).catch(console.error);
-
-  issues = await promise_issues;
+  const slabel = `s:${config.shortname}`;
+  const labels = await fetch(LABELS_URL).then(data => data.json());
+  const repos = [...new Set(labels.map(l => l.repo))].sort();
+  let ipromises = [];
+  repos.forEach(repo => {
+    const GH_URL = `${GH_CACHE}/v3/repos/${repo}/issues`;
+    ipromises.push(ghRequest(GH_URL, {
+      state: 'all',
+      ttl: config.ttl,
+      fields: "body,html_url,state,labels,title,created_at,number"
+    })); // might as well request the max
+  });
+  let issues = await Promise.all(ipromises)
+  .then(r => {
+    let nt = [];
+    r.forEach((hrepo, index) => {
+      let entry = {
+        repo: repos[index],
+        issues: hrepo.filter(issue => issue.labels && issue.labels.find(l => l.name === slabel))
+      }
+      nt.push(entry);
+    })
+    return nt;
+  })
 
   if (config.debug) console.log(`finished Issue length: ${issues.length}`);
 
-  issues = issues.filter(issue => issue.labels); // filter out issues with no labels
-
-  // group issues by label, adding to the labels array
-  for (const issue of issues) {  // for each issue with labels grabbed from GH
-    for (const label of issue.labels.filter(lFilter)) { // for each shortname label in that issue
-      if (sections[label.name]) {
-        sections[label.name].push(issue);
-      } else {
-        sections[label.name] = [issue];
-        short_labels.push(label);
-      }
+  let link;
+  issues.forEach(entry => {
+    let issue = entry.issues[0];
+    if (!link && issue) {
+      link =  issue.labels.find(l => l.name === slabel).description;
     }
-    for (const label of issue.labels) { // remember labels for buildFilters
-      if (config.debug) console.log(label.name);
-      repo_labels[label.name] = label;
-    }
-  }
-  for (const [header, fIssues] of Object.entries(sections)) {
-    const label = short_labels.find(l => l.name === header);
-    displayRepo(header.substring(sprefix.length), label, fIssues);
+  })
+  if (link) {
+    document.getElementById('spec_link').href = link;
   }
 
-  buildFilters(repo_labels);
+  issues.forEach(entry => {
+    displayRepo(entry.repo, entry.issues);
+  });
 
   // tally the issues on the page
   const trs = document.querySelectorAll('tr')
   document.getElementById('total').textContent = trs.length;
 
-  otherTrackingRepos();
+  document.getElementById('shortname').textContent = config.shortname;
+  document.getElementById('spec_link').textContent = config.shortname;
 }
 
 // Display repository information
-function displayRepo(header, label, issues) {
+function displayRepo(repo, issues) {
   // Add a container to put the repository info and issues in
   let table, tr, td, a, updated, toc, span
   let labelSection = domElement('section',
-    domElement('h2', {id:header},
-    domElement('a', {class:'self-link','aria-label':'§', href:`#${header}`}, ''),
-    domElement('a', {href:`${label.description}`}, header),
-    " (",
-    domElement('a', {href:`review.html?shortname=${header}`}, "filter"),
-    ")"));
+    domElement('h2', {id:repo},
+    domElement('a', {class:'self-link','aria-label':'§', href:`#${repo}`}, ''),
+    domElement('a', {href: `https://github.com/${repo}/issues?q=label:s:${config.shortname}`}, repo)));
 
   table = domElement('table');
+  const open_issues = issues.filter(issue => issue.state === 'open');
+  const closed_issues = issues.filter(issue => issue.state === 'closed');
 
-  for (const issue of issues) {
+  for (const issue of open_issues) {
     tr = domElement('tr');
     td = domElement('td');
 
@@ -244,7 +235,7 @@ function displayRepo(header, label, issues) {
 
     td = domElement('td',{title:'Issue number in the tracker repo',class:'trackerId'},
       domElement('a',
-        {href:`https://github.com/${config.repo}/issues/${issue.number}`,target:'_blank'},
+        {href:`https://github.com/${repo}/issues/${issue.number}`,target:'_blank'},
          issue.number));
     //td.textContent = issueData.number
     tr.appendChild(td)
@@ -252,7 +243,15 @@ function displayRepo(header, label, issues) {
     table.appendChild(tr)
   }
 
-  labelSection.appendChild(table)
+  if (open_issues.length) {
+    labelSection.appendChild(table);
+  } else {
+    labelSection.appendChild(domElement('p', 'No open horizontal issues found.'));
+  }
+
+  labelSection.appendChild(domElement('p', `${closed_issues.length} closed horizontal issues found.`));
+
+
   // Add the label header to the DOM
   document.getElementById("rawdata").appendChild(labelSection)
 }
@@ -297,83 +296,6 @@ function buildFilters(repo_labels) {
     }
   }
 
-}
-
-// build our menu
-async function otherTrackingRepos() {
-  const ul = document.getElementById("otherReposList");
-  const labels = await fetch(LABELS_URL).then(data => data.json());
-  const repos = [...new Set(labels.map(l => l.repo))].sort();
-  let hr_issues = [];
-
-  for (const repo of repos) {
-    const li = domElement('li', domElement('a',{href:`?repo=${repo}`}, ` ${repo}`));
-    if (config.repo === repo) {
-      li.classList.add('selected');
-    }
-    ul.appendChild(li);
-  }
-}
-
-// invoke when selecting a filter in the menu
-function filterByLabel(label) {
-  const rawdata = document.getElementById('rawdata');
-  const filterMenu = document.getElementById("filterList");
-
-  if (config.debug) console.log(`filterByLabel('${label}')`);
-
-  // filters page contents to show only those items with label specified
-  const sections = rawdata.querySelectorAll('section');
-
-  // clear all previous filters
-  for (const tr of rawdata.querySelectorAll('tr')) {
-    tr.classList.remove('hidden');
-  }
-  for (const section of sections) {
-    section.classList.remove('hidden');
-  }
-  for (const li of filterMenu.querySelectorAll('li')) {
-    li.classList.remove('selected');
-  }
-  if (label === 'clear') {
-    let trsTotal = rawdata.querySelectorAll('tr');
-    document.getElementById('total').textContent = trsTotal.length;
-    document.getElementById("select-label").textContent = '';
-    return; // abort
-  }
-
-  for (const section of sections) {
-    let secLabelFound = false;
-    for (const issue of section.querySelectorAll('tr')) {
-      let labelFound = false;
-      for (const span of issue.querySelectorAll('span')) {
-        if (span.title === label) {
-          labelFound = true;
-        }
-      }
-      if (!labelFound) {
-        issue.classList.add('hidden')
-      } else {
-        secLabelFound = true;
-      }
-    }
-    if (!secLabelFound) {
-      section.classList.add('hidden')
-    }
-  }
-
-  for (const li of filterMenu.querySelectorAll('li')) {
-    if (li.getAttribute('data-label') === label) {
-      li.classList.add('selected');
-    }
-  }
-
-  // tally the issues on the page
-  let trsTotal = document.querySelectorAll('tr')
-  let trs = document.querySelectorAll('tr.hidden')
-  let filteredIssues = trsTotal.length - trs.length
-  document.getElementById('total').textContent = filteredIssues;
-  document.getElementById("select-label").textContent = `, with label '${label}'`;
 }
 
 
