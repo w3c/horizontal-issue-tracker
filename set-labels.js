@@ -17,12 +17,13 @@ const W3C_APIURL = "https://api.w3.org/";
 
 const SHORTNAME_COLOR = "6bc5c6";
 
+const postfixes = [".", ":", "Level", "0", "1", "2", "3", "Revision", "Version", "Module", "-"];
+
 function fetchW3C(queryPath) {
   if (!config.w3capikey) throw new ReferenceError("Missing W3C key")
   const apiURL = new URL(queryPath, W3C_APIURL);
   apiURL.searchParams.set("apikey", config.w3capikey);
   apiURL.searchParams.set("embed", "1"); // grab everything
-  console.log(`fetch ${apiURL}`);
   return fetch(apiURL).then(r => r.json()).then(data => {
     if (data.error) return data;
     if (data.pages && data.pages > 1 && data.page < data.pages) {
@@ -97,6 +98,144 @@ async function run() {
   // filter out the labels that aren't for shortnames
   labels = labels.filter(l => l.name.startsWith('s:'));
 
+  /*
+    const specifications = await fetchW3C("specifications");
+    fs.writeFile("w3c_tr.json", JSON.stringify(specifications));
+  */
+  const specifications = require("./w3c_tr.json");
+
+  function common_substring(strings) {
+    if (strings.length === 1) {
+      return strings[0];
+    }
+    let r = '';
+    let i = -1;
+    let found = true;
+    do {
+      i++;
+      let cc = strings[0][i];
+      found = strings.reduce((a, v) => a && (cc === v[i]), true);
+    } while (found);
+    return strings[0].substring(0, i);
+  }
+
+  function cleanTitle(titles) {
+    let title = common_substring(titles).trim();
+    if (title) {
+      let found;
+      do {
+        found = false;
+        postfixes.forEach(p => {
+          if (title.endsWith(p)) {
+            title = title.substring(0, title.length - p.length).trim();
+            found = true;
+          }
+        });
+      } while (found);
+    }
+    return title;
+  }
+
+  function findSpecByLink(link) {
+    let rspec;
+    let titles = [];
+    let links = [];
+    if (link.match("https://drafts.csswg.org/[-0a-zA-Z]+/")
+        || link.match("https://drafts.css-houdini.org/[-0a-zA-Z]+/")
+        || link.match("https://drafts.fxtf.org/[-0a-zA-Z]+/")) {
+       link = link.substring(0, link.length-1) + "(-[0-9]+)?/";
+    }
+    specifications.forEach(spec => {
+      if (spec["editor-draft"] && spec["editor-draft"].match(link)) {
+        if (!rspec) {
+          rspec = spec;
+          titles.push(spec.title);
+          if (spec["editor-draft"]) links.push(spec["editor-draft"]);
+        } else {
+          if (!titles.includes(spec.title)) {
+            titles.push(spec.title);
+          }
+          if (spec["editor-draft"] && !links.includes(spec["editor-draft"])) {
+            links.push(spec["editor-draft"]);
+          }
+          // monitor.log(`We already found this specification: ${link}`);
+          // console.log(rspec);
+        }
+      }
+    })
+    let s = {};
+    if (titles.length >= 1) {
+      let title = cleanTitle(titles);
+      if (title) {
+        s.title = title;
+      } else {
+        if (link === "https://html.spec.whatwg.org/multipage/") {
+          s.title = "HTML";
+        } else {
+          monitor.error(`Can't find ${link}`);
+        }
+      }
+    }
+    if (links.length >= 1) {
+      s["editor-draft"] = links[0];
+    }
+    if (!s.title) return undefined;
+    return s;
+  }
+
+  function findSpecBySerie(serie) {
+    let rspec;
+    let titles = [];
+    let links = [];
+    let ns = {};
+    serie = serie.toLowerCase();
+
+    const whatwgspecs = [ "HTML", "DOM", "Storage", "Fetch" ];
+    whatwgspecs.forEach(t => {
+      if (t.toLowerCase() === serie) {
+        ns.title = t;
+        ns["editor-draft"] = `https://${t.toLowerCase()}.spec.whatwg.org/`
+      }
+    });
+    if (ns.title) return ns;
+
+    specifications.forEach(spec => {
+      let s = spec._links.series.href.match("specification-series/(.+)")[1];
+      if (s) s = s.toLowerCase();
+      if (s === serie) {
+        if (!rspec) {
+          rspec = spec;
+          titles.push(spec.title);
+          if (spec["editor-draft"]) links.push(spec["editor-draft"]);
+        } else {
+          if (!titles.includes(spec.title)) {
+            titles.push(spec.title);
+          }
+          if (spec["editor-draft"] && !links.includes(spec["editor-draft"])) {
+            links.push(spec["editor-draft"]);
+          }
+          // monitor.log(`We already found this specification: ${link}`);
+          // console.log(rspec);
+        }
+      }
+    })
+    if (titles.length >= 1) {
+      let title = cleanTitle(titles);
+      if (title) {
+        ns.title = title;
+      } else {
+        if (!ns.title) {
+          monitor.error(`Can't find ${link}`);
+        }
+      }
+    }
+    if (links.length >= 1) {
+      ns["editor-draft"] = links[0];
+    }
+    if (!ns.title) return undefined;
+    return ns;
+  }
+
   const map = new Map();
   // we run through the labels and make sure they are consistent across repositories
   // The labels are learning from each other, thus setting it properly on one will fix the others.
@@ -133,52 +272,81 @@ async function run() {
       }
     }
   })
-/*
-  const specifications = await fetchW3C("specifications");
-  fs.writeFile("w3c_tr.json", JSON.stringify(specifications));
-*/
-const specifications = require("./w3c_tr.json");
-const shortnames = Array.from(map.values());
 
-  function findSpec(link) {
-    let title;
-    let rspec;
-    if (link.match("https://drafts.csswg.org/[-0a-zA-Z]+/")
-        || link.match("https://drafts.css-houdini.org/[-0a-zA-Z]+/")
-        || link.match("https://drafts.fxtf.org/[-0a-zA-Z]+/")) {
-       link = link.substring(0, link.length-1) + "(-[0-9]+)?/";
-    }
-    specifications.forEach(spec => {
-      if (spec["editor-draft"] && spec["editor-draft"].match(link)) {
-        if (!rspec) {
-          rspec = spec;
-        } else {
-          // monitor.log(`We already found this specificaton: ${link}`);
-          // console.log(rspec);
+  const shortnames = Array.from(map.values());
+
+
+  const domains = new Set();
+  const dump_shortnames = {};
+  shortnames.forEach(short => {
+    const serie = short.name.substring(2);
+    let nshort = { link: short.description };
+    let spec = findSpecBySerie(serie);
+    if (spec) {
+      if (spec["editor-draft"] && !short.description) {
+        nshort.link = spec["editor-draft"];
+        short.repoObject.updateLabel({
+          name: short.name,
+          color: SHORTNAME_COLOR,
+          description: spec["editor-draft"]
+        }).then(e =>
+          monitor.log(`We added ${spec["editor-draft"]} to ${short.repoObject.full_name}/${short.name}`)
+        ).catch(err =>
+          monitor.error(`Failed adding ${spec["editor-draft"]} to ${short.repoObject.full_name}/${short.name} : ${err}`)
+        )
+      }
+    } else {
+      if (short.description) {
+        const link = short.description;
+        spec = findSpecByLink(link);
+        const matches = link.match(new RegExp("https://([^/]+)/"));
+        if (matches) {
+          domains.add(matches[1]);
         }
       }
-    })
-    return rspec;
-  }
-  const domains = new Set();
-  shortnames.forEach(short => {
-    if (short.description) {
-      const link = short.description;
-      const spec = findSpec(link);
-      if (spec) {
-        short.title = spec.title;
-      } else {
-        // we didn't find it (not yet publsihed, WICG, WHATWG, ...), so time to make some guessing
-        monitor.error(`${short.description} not found`);
+    }
+
+    if (spec) {
+      nshort.title = spec.title;
+    } else {
+      // we didn't find it (not yet published, WICG, WHATWG, ...), so time to make some guessing
+      if (!short.description) {
+        nshort = undefined;
+        monitor.error(`(${short.name})[${short.name}] not found`);
       }
-      const matches = link.match(new RegExp("https://([^/]+)/"));
-      if (matches) {
-        domains.add(matches[1]);
+    }
+    if (nshort) {
+      if (!nshort.link) {
+        monitor.error(`Discarding entry for ${serie} (no editor draft)`);
+      } else if (!dump_shortnames[serie]) {
+          dump_shortnames[serie] = nshort;
+      } else {
+        monitor.error(`Duplicate shortname entry for ${serie}`);
       }
     }
   })
-  console.log(domains);
-  fs.writeFile("shortnames.json", JSON.stringify(shortnames));
+  for (const [key, value] of Object.entries(dump_shortnames)) {
+    if (!value.title) {
+      dump_shortnames[key] = undefined;
+      monitor.error(`Discarding entry for ${key} [${value.link}] (no title)`)
+    }
+  }
+  // console.log(domains);
+  return (new Repository("horizontal-issue-tracker")).createContent(
+    "docs/shortnames.json", "Shortnames snapshot", JSON.stringify(dump_shortnames), "main").then(res => {
+    switch (res.status) {
+      case 200:
+        monitor.log(`Updated shortnames`);
+        break;
+      case 201:
+        monitor.log(`Created shortnames`);
+        break;
+      default:
+        monitor.error(`Unexpected status ${res.status} shortnames.json}`);
+        throw new Error(`Unexpected status ${res.status} shortnames.json`);
+    }
+    return res;
+  });
 }
 
 run();
