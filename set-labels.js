@@ -44,6 +44,45 @@ function fetchW3C(queryPath) {
   });
 }
 
+const GH = "https://github.com/\([^/]+/[^/]+\)/blob/\([^/]+\)/\(.*\)";
+
+const LOCATION = "https://github.com/w3c/horizontal-issue-tracker/blob/main/docs/shortnames.json";
+
+async function save_document(location, content) {
+  if (location.startsWith("https://github.com/")) {
+    let branch;
+    let path;
+    let repo;
+    let match = location.match(GH);
+    if (match) {
+      repo = match[1];
+      branch = match[2];
+      path = match[3];
+    } else {
+      monitor.error(`not a valid location ${location}`);
+      return;
+    }
+    repo = new Repository(repo);
+    return repo.createContent(path, "Snapshot", content, branch).then(res => {
+      switch (res.status) {
+        case 200:
+          monitor.log(`Updated into ${location}`);
+          break;
+        case 201:
+          monitor.log(`Created into ${location}`);
+          break;
+        default:
+          monitor.error(`Unexpected status ${res.status}`);
+          throw new Error(`Unexpected status ${res.status}`);
+      }
+      return res;
+    });
+  } else {
+    throw new Error(`not a valid location ${location}`);
+  }
+}
+
+
 async function run() {
   const hr = new HorizontalRepositories();
 
@@ -332,20 +371,8 @@ async function run() {
     }
   }
   // console.log(domains);
-  return (new Repository("horizontal-issue-tracker")).createContent(
-    "docs/shortnames.json", "Shortnames snapshot", JSON.stringify(dump_shortnames), "main").then(res => {
-    switch (res.status) {
-      case 200:
-        monitor.log(`Updated shortnames`);
-        break;
-      case 201:
-        monitor.log(`Created shortnames`);
-        break;
-      default:
-        monitor.error(`Unexpected status ${res.status} shortnames.json}`);
-        throw new Error(`Unexpected status ${res.status} shortnames.json`);
-    }
-    return res;
+  return save_document(LOCATION, JSON.stringify(dump_shortnames)).catch(err => {
+    console.log(err.status)
   });
 }
 
