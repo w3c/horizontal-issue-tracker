@@ -177,9 +177,19 @@ async function getAllData() {
     document.getElementById('spec_link').href = link;
   }
 
+  // group issues by label, adding to the labels array
+  let repo_labels = [];
   issues.forEach(entry => {
+    entry.issues.forEach(issue => {
+      for (const label of issue.labels) { // remember labels for buildFilters
+        if (config.debug) console.log(label.name);
+          repo_labels[label.name] = label;
+      }
+    });
     displayRepo(entry.repo, entry.issues);
   });
+
+  buildFilters(repo_labels);
 
   // tally the issues on the page
   const trs = document.querySelectorAll('tr')
@@ -265,8 +275,7 @@ function buildFilters(repo_labels) {
       {class:'labels',style: `background-color:#${label.color}`},
        ` ${String.fromCharCode(160)} `);
     return domElement('li', {"data-label":`${label.name}`},
-      domElement('a',
-        {href:'#', title:`${label.description}`, onclick:`filterByLabel('${label.name}')`},
+      domElement('span',
         span, ` ${String.fromCharCode(160)} ${label.name}`));
   }
 
@@ -276,13 +285,6 @@ function buildFilters(repo_labels) {
       ul.appendChild(createLi(gh_label));
     }
   }
-
-  const clear = domElement('li',
-  domElement('a',{href:"#",title:'Clear all of the filters',onclick:"filterByLabel('clear')"},
-    domElement("span", {class:'labels',style:"background-color: white"},
-              ` ${String.fromCharCode(160)} `),
-    ` ${String.fromCharCode(160)} Clear filter`));
-  ul.appendChild(clear);
 
   let internalLine = false;
   for (const extra_label of config.extra_labels) {
