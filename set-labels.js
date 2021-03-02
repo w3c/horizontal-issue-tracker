@@ -47,8 +47,8 @@ function fetchW3C(queryPath) {
 const GH = "https://github.com/\([^/]+/[^/]+\)/blob/\([^/]+\)/\(.*\)";
 
 const LOCATION = "https://github.com/w3c/horizontal-issue-tracker/blob/main/docs/shortnames.json";
-
-async function save_document(location, content) {
+const CACHE_FILE = "cache.json";
+async function save_document_github(location, content) {
   if (location.startsWith("https://github.com/")) {
     let branch;
     let path;
@@ -82,6 +82,21 @@ async function save_document(location, content) {
   }
 }
 
+async function save_document(location, content) {
+  fs.readFile(CACHE_FILE)
+  .then(JSON.parse)
+  .then(cache => {
+    if (cache[location] && cache[location] === content) {
+      monitor.log(`Content already saved ${location}`);
+      return true;
+    } else {
+      cache[location] = content;
+      return save_document_github(location, content).then(res =>
+        fs.writeFile(CACHE_FILE, JSON.stringify(cache))
+      );
+    }
+  });
+}
 
 async function run() {
   const hr = new HorizontalRepositories();
