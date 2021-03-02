@@ -65,12 +65,17 @@ function domElement(name, attrs, ...content) {
 // get the url of the actual issue, if there is a § marker
 function linkTo(issue) {
   // get the url of the actual issue, if there is a § marker
-  const match = issue.body.match(/§ [^\r\n$]+/g);
+  let match = issue.body.match(/§ [^\r\n$]+/g);
   if (match) {
-    return match[0].substring(2).trim().split(' ')[0];
-  } else {
-    return issue.html_url;
+    match = match[0].substring(2).trim().split(' ')[0];
+    if (match.indexOf('http') !== 0) {
+      match = undefined;
+    }
   }
+  if (!match) {
+    match = issue.html_url;
+  }
+  return match;
 }
 
 // might as well do this here, we'll use it as an array later
