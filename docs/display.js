@@ -14,6 +14,7 @@ const config = {
 };
 
 const LABELS_URL = "https://w3c.github.io/hr-labels.json";
+const SHORTNAMES = fetch("shortnames.json").then(r => r.json());
 
 // parse the URL to update the config
 for (const [key, value] of (new URL(window.location)).searchParams) {
@@ -190,7 +191,17 @@ async function getAllData() {
   }
   for (const [header, fIssues] of Object.entries(sections)) {
     const label = short_labels.find(l => l.name === header);
-    displayRepo(header.substring(sprefix.length), label, fIssues);
+    let shortname = header.substring(sprefix.length);
+    SHORTNAMES.then(data => {
+      let name = data[shortname];
+      let title = shortname;
+      if (name && name.title) {
+        title = name.title;
+      }
+      displayRepo(title, label, fIssues);
+    }).catch(err => {
+      displayRepo(header.substring(sprefix.length), label, fIssues);
+    });
   }
 
   buildFilters(repo_labels);

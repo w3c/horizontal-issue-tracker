@@ -13,6 +13,7 @@ const config = {
 };
 
 const LABELS_URL = "https://w3c.github.io/hr-labels.json";
+const SHORTNAMES = fetch("shortnames.json").then(r => r.json());
 
 // parse the URL to update the config
 for (const [key, value] of (new URL(window.location)).searchParams) {
@@ -146,6 +147,7 @@ rtObserver.observe({entryTypes: ["resource"]});
 async function getAllData() {
   const slabel = `s:${config.shortname}`;
   const labels = await fetch(LABELS_URL).then(data => data.json());
+
   const repos = [...new Set(labels.map(l => l.repo))].sort();
   let ipromises = [];
   repos.forEach(repo => {
@@ -202,6 +204,20 @@ async function getAllData() {
 
   document.getElementById('shortname').textContent = config.shortname;
   document.getElementById('spec_link').textContent = config.shortname;
+
+  SHORTNAMES.then(data => {
+    console.log(data)
+    let name = data[config.shortname];
+    console.log(name)
+    if (name && name.title) {
+      document.getElementById('shortname').textContent = name.title;
+      document.getElementById('spec_link').textContent = name.title;
+    } else {
+      console.log("hu?")
+    }
+  }).catch(err => {
+    console.error(err)
+  });
 }
 
 // Display repository information
