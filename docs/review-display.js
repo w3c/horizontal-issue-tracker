@@ -265,8 +265,10 @@ function displayRepo(repo, issues) {
   }
 
   let plurial = 's';
-  if (closed_issues.length === 1) plurial = '';
-  labelSection.appendChild(domElement('p', `${closed_issues.length} closed horizontal `,
+  let n = closed_issues.length;
+  if (n === 1) plurial = '';
+  if (n === 0) n = 'No';
+  labelSection.appendChild(domElement('p', `${n} closed horizontal `,
   `issue${plurial} found.`));
 
 
