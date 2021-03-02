@@ -191,16 +191,16 @@ async function getAllData() {
   }
   for (const [header, fIssues] of Object.entries(sections)) {
     const label = short_labels.find(l => l.name === header);
-    let shortname = header.substring(sprefix.length);
+    let short_label = header.substring(sprefix.length);
     SHORTNAMES.then(data => {
-      let name = data[shortname];
-      let title = shortname;
+      let name = data[short_label];
+      let title = short_label;
       if (name && name.title) {
         title = name.title;
       }
-      displayRepo(title, label, fIssues);
+      displayRepo(title, short_label, label, fIssues);
     }).catch(err => {
-      displayRepo(header.substring(sprefix.length), label, fIssues);
+      displayRepo(short_label, short_label, label, fIssues);
     });
   }
 
@@ -214,7 +214,7 @@ async function getAllData() {
 }
 
 // Display repository information
-function displayRepo(header, label, issues) {
+function displayRepo(header, short_label, label, issues) {
   // Add a container to put the repository info and issues in
   let table, tr, td, a, updated, toc, span
   let labelSection = domElement('section',
@@ -222,7 +222,7 @@ function displayRepo(header, label, issues) {
     domElement('a', {class:'self-link','aria-label':'§', href:`#${header}`}, ''),
     domElement('a', {href:`${label.description}`}, header),
     " (",
-    domElement('a', {href:`review.html?shortname=${header}`}, "filter"),
+    domElement('a', {href:`review.html?shortname=${short_label}`}, "filter"),
     ")"));
 
   table = domElement('table');
