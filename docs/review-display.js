@@ -264,7 +264,10 @@ function displayRepo(repo, issues) {
     labelSection.appendChild(domElement('p', 'No open horizontal issues found.'));
   }
 
-  labelSection.appendChild(domElement('p', `${closed_issues.length} closed horizontal issues found.`));
+  let plurial = 's';
+  if (closed_issues.length === 1) plurial = '';
+  labelSection.appendChild(domElement('p', `${closed_issues.length} closed horizontal `,
+  `issue${plurial} found.`));
 
 
   // Add the label header to the DOM
