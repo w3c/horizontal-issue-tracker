@@ -194,6 +194,19 @@ function getSerieTitle(specs, serie) {
   // return undefined
 }
 
+function getSerieRetired(specs, serie) {
+  const status = [];
+  serie = serie.toLowerCase(); // just to make sure
+  specs.forEach(spec => {
+    const s = getSerie(spec); // this is already in lowercase
+    if (s === serie) {
+      const st = spec._links["latest-version"].title; // this is already in lowercase
+      status.push(st);
+    }
+  });
+  return status.reduce((a, v) => a && v === "Retired", true);
+}
+
 
 async function run() {
   const hr = new HorizontalRepositories();
@@ -507,6 +520,7 @@ async function run() {
     const serie = getSerie(spec);
 
     if (serie) {
+      const retired = getSerieRetired(specifications, serie);
       let entry = dump_shortnames[serie];
       if (!entry && !all_series.includes(serie)) {
           let title = getSerieTitle(specifications, serie);
@@ -521,7 +535,19 @@ async function run() {
             link  : spec["editor-draft"],
             serie : serie
           };
+          if (retired) {
+            dump_shortnames[serie].retired = true;
+          }
+      } else if (!entry) {
+        for (const [key, value] of Object.entries(dump_shortnames)) {
+          if (value.serie && value.serie === serie) {
+            entry = value;
+          }
         }
+      }
+      if (entry && retired) {
+        entry.retired = true;
+      }
     }
   })
 
