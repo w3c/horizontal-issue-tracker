@@ -458,7 +458,7 @@
  },
  "wai-aria-practices": {
   "link": "https://w3c.github.io/aria-practices/",
-  "title": "WAI-ARIA",
+  "title": "WAI-ARIA Authoring Practices",
   "serie": "wai-aria-practices"
  },
  "wcag": {
@@ -3834,7 +3834,7 @@
   "serie": "wcag-techs"
  },
  "voicexml": {
-  "title": "Voice",
+  "title": "Voice Extensible Markup Language (VoiceXML)",
   "serie": "voicexml"
  },
  "visual-marks": {
