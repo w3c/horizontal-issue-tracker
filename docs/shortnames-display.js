@@ -80,6 +80,13 @@ async function getAllData() {
       value.key = key;
       if (!value.title) {
         value.title = key;
+        if (config.debug && value.link) {
+          ulReport.appendChild(domElement("li", { "id": `report-title-${value.key}` },
+          `No title for `, domElement("code", value.key), ". See ",
+          domElement("a", {
+            href: `${value.link}`
+          }, value.link)));
+        }
       }
       value.sortKey = value.title.toLowerCase();
       if (value.sortKey.startsWith('"')) {
@@ -113,8 +120,8 @@ async function getAllData() {
           `Consider replacing `,
           domElement("a", {
             href: `review.html?shortname=${value.key}`
-          }, value.key),
-          ` with ${value.serie}`
+          }, domElement("code", value.key)),
+          ` with `, domElement("code", value.serie)
           ));
         }
     });
