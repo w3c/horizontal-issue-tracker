@@ -14,11 +14,14 @@ const HorizontalRepositories = require("./lib/horizontal-repositories.js"),
 
 const HR_REPOS_URL = "https://w3c.github.io/validate-repos/hr-repos.json";
 const W3C_APIURL = "https://api.w3.org/";
-
+const SERIE_REGEXP = new RegExp("https://api.w3.org/specification-series/([^]+)$");
 const SHORTNAME_COLOR = "6bc5c6";
 
 const postfixes = [".", ":", "Level", "0", "1", "2", "3", "Revision", "Version", "Module", "-"];
 
+config.debug = false;
+
+// to get information out of the W3C API
 function fetchW3C(queryPath) {
   if (!config.w3capikey) throw new ReferenceError("Missing W3C key")
   const apiURL = new URL(queryPath, W3C_APIURL);
@@ -48,7 +51,33 @@ const GH = "https://github.com/\([^/]+/[^/]+\)/blob/\([^/]+\)/\(.*\)";
 
 const LOCATION = "https://github.com/w3c/horizontal-issue-tracker/blob/main/docs/shortnames.json";
 const CACHE_FILE = "cache.json";
+const CACHE = fs.readFile(CACHE_FILE).then(JSON.parse);
+
+
+const TR_COPY = "./w3c_tr.json";
+
+// used by getSpecifications to load the list of specifications from W3C
+async function getSpecificationsInternal() {
+  return fetchW3C("specifications").then(specs => {
+    fs.writeFile(TR_COPY, JSON.stringify(specs, null, " ")).catch(console.error);
+    return specs;
+  });
+}
+// get the list of specifications of W3C
+async function getSpecifications() {
+  if (config.debug) {
+    return fs.readFile(TR_COPY).then(JSON.parse).catch(err => getSpecificationsInternal());
+  } else {
+    return getSpecificationsInternal();
+  }
+}
+
+// save the content into a github.com location
 async function save_document_github(location, content) {
+  if (config.debug) {
+    monitor.warn(`In DEBUG mode. Not saving ${location}`);
+    return;
+  }
   if (location.startsWith("https://github.com/")) {
     let branch;
     let path;
@@ -82,21 +111,89 @@ async function save_document_github(location, content) {
   }
 }
 
-async function save_document(location, content) {
-  fs.readFile(CACHE_FILE)
-  .then(JSON.parse)
-  .then(cache => {
-    if (cache[location] && cache[location] === content) {
-      monitor.log(`Content already saved ${location}`);
+// load our shortnames DB
+async function getShortNames() {
+  return CACHE.then(cache => {
+    if (cache[LOCATION])
+      return JSON.parse(cache[LOCATION]);
+    else
+      return {};
+  });
+}
+
+// save our shortnames DB
+async function save_cache(content) {
+  CACHE.then(cache => {
+    if (cache[LOCATION] === content) {
+      monitor.log(`Content already saved ${LOCATION}`);
       return true;
     } else {
-      cache[location] = content;
-      return save_document_github(location, content).then(res =>
-        fs.writeFile(CACHE_FILE, JSON.stringify(cache, null, " "))
-      );
+      cache[LOCATION] = content;
+      return save_document_github(LOCATION, content).then(res => {
+        if (!config.debug)
+          fs.writeFile(CACHE_FILE, JSON.stringify(cache, null, " "))
+      });
     }
   });
 }
+
+// take an array of strings and return the longest common starting string
+// eg [ "fon", "fons", "fond"] will return "fon"
+function common_substring(strings) {
+  if (strings.length === 1) {
+    return strings[0];
+  }
+  let r = '';
+  let i = -1;
+  let found = true;
+  do {
+    i++;
+    let cc = strings[0][i];
+    found = strings.reduce((a, v) => a && (cc === v[i]), true);
+  } while (found);
+  return strings[0].substring(0, i);
+}
+
+// take an array of specification titles and extract the common title
+// eg [ "CSS Fonts Level 2", "CSS Fonts Level 3"] will return "CSS Fonts"
+function cleanTitle(titles) {
+  let title = common_substring(titles).trim();
+  if (title) {
+    let found;
+    do {
+      found = false;
+      postfixes.forEach(p => {
+        if (title.endsWith(p)) {
+          title = title.substring(0, title.length - p.length).trim();
+          found = true;
+        }
+      });
+    } while (found);
+  }
+  return title;
+}
+
+// extract the serie out of a W3C TR specification
+// or returns undefined if it can't find one
+function getSerie(spec) {
+  return spec._links.series.href.match(SERIE_REGEXP)[1].toLowerCase();
+}
+
+function getSerieTitle(specs, serie) {
+  const titles = [];
+  serie = serie.toLowerCase(); // just to make sure
+  specs.forEach(spec => {
+    const s = getSerie(spec); // this is already in lowercase
+    if (s === serie) {
+      titles.push(spec.title);
+    }
+  });
+  if (titles.length >= 1) {
+    return cleanTitle(titles);
+  }
+  // return undefined
+}
+
 
 async function run() {
   const hr = new HorizontalRepositories();
@@ -152,42 +249,9 @@ async function run() {
   // filter out the labels that aren't for shortnames
   labels = labels.filter(l => l.name.startsWith('s:'));
 
-const specifications = await fetchW3C("specifications");
-fs.writeFile("w3c_tr.json", JSON.stringify(specifications, null, " "));
-//  const specifications = require("./w3c_tr.json");
+  const debug = true;
 
-  function common_substring(strings) {
-    if (strings.length === 1) {
-      return strings[0];
-    }
-    let r = '';
-    let i = -1;
-    let found = true;
-    do {
-      i++;
-      let cc = strings[0][i];
-      found = strings.reduce((a, v) => a && (cc === v[i]), true);
-    } while (found);
-    return strings[0].substring(0, i);
-  }
-
-  function cleanTitle(titles) {
-    let title = common_substring(titles).trim();
-    if (title) {
-      let found;
-      do {
-        found = false;
-        postfixes.forEach(p => {
-          if (title.endsWith(p)) {
-            title = title.substring(0, title.length - p.length).trim();
-            found = true;
-          }
-        });
-      } while (found);
-    }
-    return title;
-  }
-
+  const specifications = await getSpecifications();
   function findSpecByLink(link) {
     let rspec;
     let titles = [];
@@ -232,7 +296,7 @@ fs.writeFile("w3c_tr.json", JSON.stringify(specifications, null, " "));
       ns["editor-draft"] = links[0];
     }
     if (rspec) {
-      ns["TR"] = rspec._links.series.href;
+      ns["serie"] = getSerie(rspec);
     }
     if (!ns.title) return undefined;
     return ns;
@@ -250,13 +314,15 @@ fs.writeFile("w3c_tr.json", JSON.stringify(specifications, null, " "));
       if (t.toLowerCase() === serie) {
         ns.title = t;
         ns["editor-draft"] = `https://${t.toLowerCase()}.spec.whatwg.org/`
+        if (["html", "dom"].includes(serie)) {
+          ns.w3c_serie = serie;
+        }
       }
     });
     if (ns.title) return ns;
 
     specifications.forEach(spec => {
-      let s = spec._links.series.href.match("specification-series/(.+)")[1];
-      if (s) s = s.toLowerCase();
+      let s = getSerie(spec);
       if (s === serie) {
         if (!rspec) {
           rspec = spec;
@@ -269,8 +335,6 @@ fs.writeFile("w3c_tr.json", JSON.stringify(specifications, null, " "));
           if (spec["editor-draft"] && !links.includes(spec["editor-draft"])) {
             links.push(spec["editor-draft"]);
           }
-          // monitor.log(`We already found this specification: ${link}`);
-          // console.log(rspec);
         }
       }
     })
@@ -285,7 +349,7 @@ fs.writeFile("w3c_tr.json", JSON.stringify(specifications, null, " "));
       }
     }
     if (rspec) {
-      ns["TR"] = rspec._links.series.href;
+      ns["serie"] = getSerie(rspec);
     }
     if (links.length >= 1) {
       ns["editor-draft"] = links[0];
@@ -366,7 +430,7 @@ fs.writeFile("w3c_tr.json", JSON.stringify(specifications, null, " "));
 
     if (spec) {
       nshort.title = spec.title;
-      nshort.TR = spec.TR;
+      nshort.serie = spec.serie;
     } else {
       // we didn't find it (not yet published, WICG, WHATWG, ...), so time to make some guessing
       if (!short.description) {
@@ -384,14 +448,81 @@ fs.writeFile("w3c_tr.json", JSON.stringify(specifications, null, " "));
       }
     }
   })
+
+  // if changes are made in GH, we'll pick it up here
+  const cached = await getShortNames();
+  for (const [key, value] of Object.entries(cached)) {
+    let entry = dump_shortnames[key];
+    if (!entry) {
+      dump_shortnames[key] = value;
+    } else {
+      if (!entry.title && value.title) {
+        entry.title = value.title;
+      }
+      if (!entry.link && value.link) {
+        entry.link = value.link;
+      }
+      if (!entry.serie && value.serie) {
+        entry.serie = value.serie;
+      }
+    }
+  }
+
+  // gather all of the series we found (serie is not yet equivalent to shortnames :/ )
+  let all_series = [];
+  for (const [key, value] of Object.entries(dump_shortnames)) {
+    if (value.serie) {
+      all_series.push(value.serie);
+    }
+  }
+
+  // if W3C knows about some series, we'll pick it up here
+  specifications.forEach(spec => {
+    const serie = getSerie(spec);
+
+    if (serie) {
+      let entry = dump_shortnames[serie];
+      if (!entry && !all_series.includes(serie)) {
+          let title = getSerieTitle(specifications, serie);
+          if (title && title.length < 2) {
+            // that's way too short for a title
+            monitor.error(`Discarding title from ${serie} [${title}] (too short)`);
+            title = null;
+          }
+          monitor.log(`Adding from W3C: ${serie} [${title}]`);
+          dump_shortnames[serie] = {
+            title : title,
+            link  : spec["editor-draft"],
+            serie : serie
+          };
+        }
+    }
+  })
+
+  /*
+  const wicg = await fetch("https://wicg.github.io/tracking.json")
+    .then(res => res.json())
+    .then(data =>
+      data.sheets.map(s => s.rows).flat().map(row => {
+        return {
+          repo: `${row[0].toLowerCase()}`
+        };
+      })
+    ).then(repos => {
+      console.log(repos.length);
+    })
+  */
+
   for (const [key, value] of Object.entries(dump_shortnames)) {
     if (!value.title) {
-      dump_shortnames[key] = undefined;
-      monitor.error(`Discarding entry for ${key} [${value.link}] (no title)`)
+      monitor.warn(`Missing title for ${key} [${value.link}]`)
+    }
+    if (value.serie && value.serie !== key) {
+      monitor.warn(`Mismatched serie and shortname ${key} serie: ${value.serie}`)
     }
   }
   // console.log(domains);
-  return save_document(LOCATION, JSON.stringify(dump_shortnames, null, " ")).catch(err => {
+  return save_cache(JSON.stringify(dump_shortnames, null, " ")).catch(err => {
     console.log(err.status)
   });
 }
