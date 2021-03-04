@@ -2,207 +2,207 @@
  "accname": {
   "link": "https://w3c.github.io/accname/",
   "title": "Accessible Name and Description Computation",
-  "TR": "https://api.w3.org/specification-series/accname"
+  "serie": "accname"
  },
  "activitypub": {
   "link": "https://w3c.github.io/activitypub/",
   "title": "ActivityPub",
-  "TR": "https://api.w3.org/specification-series/activitypub"
+  "serie": "activitypub"
  },
  "activitystreams-core": {
   "link": "https://w3c.github.io/activitystreams/core/",
   "title": "Activity Streams",
-  "TR": "https://api.w3.org/specification-series/activitystreams-core"
+  "serie": "activitystreams-core"
  },
  "annotation-model": {
   "link": "https://w3c.github.io/web-annotation/",
   "title": "Web Annotation Data Model",
-  "TR": "https://api.w3.org/specification-series/annotation-model"
+  "serie": "annotation-model"
  },
  "annotation-protocol": {
   "link": "https://w3c.github.io/web-annotation/protocol/wd/",
   "title": "Web Annotation Protocol",
-  "TR": "https://api.w3.org/specification-series/annotation-protocol"
+  "serie": "annotation-protocol"
  },
  "annotation-vocab": {
   "link": "https://w3c.github.io/web-annotation/",
   "title": "Web Annotation Vocabulary",
-  "TR": "https://api.w3.org/specification-series/annotation-vocab"
+  "serie": "annotation-vocab"
  },
  "appmanifest": {
   "link": "https://w3c.github.io/manifest/",
   "title": "Web Application Manifest",
-  "TR": "https://api.w3.org/specification-series/appmanifest"
+  "serie": "appmanifest"
  },
  "baggage": {
   "link": "https://w3c.github.io/baggage/",
   "title": "Propagation format for distributed trace context: Baggage",
-  "TR": "https://api.w3.org/specification-series/baggage"
+  "serie": "baggage"
  },
  "coga-usable": {
   "link": "https://w3c.github.io/coga/content-usable/",
   "title": "Making content usable for people with cognitive and learning disabilities",
-  "TR": "https://api.w3.org/specification-series/coga-usable"
+  "serie": "coga-usable"
  },
  "css-align": {
   "link": "https://drafts.csswg.org/css-align/",
   "title": "CSS Box Alignment",
-  "TR": "https://api.w3.org/specification-series/css-align"
+  "serie": "css-align"
  },
  "css-backgrounds": {
   "link": "https://drafts.csswg.org/css-backgrounds/",
   "title": "CSS Backgrounds and Borders",
-  "TR": "https://api.w3.org/specification-series/css-backgrounds"
+  "serie": "css-backgrounds"
  },
  "css-box": {
   "link": "https://drafts.csswg.org/css-box/",
   "title": "CSS Box Model",
-  "TR": "https://api.w3.org/specification-series/css-box"
+  "serie": "css-box"
  },
  "css-break": {
   "link": "https://drafts.csswg.org/css-break/",
   "title": "CSS Fragmentation",
-  "TR": "https://api.w3.org/specification-series/css-break"
+  "serie": "css-break"
  },
  "css-cascade": {
   "link": "https://drafts.csswg.org/css-cascade/",
   "title": "CSS Cascading and Inheritance",
-  "TR": "https://api.w3.org/specification-series/css-cascade"
+  "serie": "css-cascade"
  },
  "css-color": {
   "link": "https://drafts.csswg.org/css-color/",
   "title": "CSS Color",
-  "TR": "https://api.w3.org/specification-series/css-color"
+  "serie": "css-color"
  },
  "css-conditional": {
   "link": "https://drafts.csswg.org/css-conditional/",
   "title": "CSS Conditional Rules",
-  "TR": "https://api.w3.org/specification-series/css-conditional"
+  "serie": "css-conditional"
  },
  "css-content": {
   "link": "https://drafts.csswg.org/css-content/",
   "title": "CSS Generated Content",
-  "TR": "https://api.w3.org/specification-series/css-content"
+  "serie": "css-content"
  },
  "css-counter-styles": {
   "link": "https://drafts.csswg.org/css-counter-styles/",
   "title": "CSS Counter Styles",
-  "TR": "https://api.w3.org/specification-series/css-counter-styles"
+  "serie": "css-counter-styles"
  },
  "css-flexbox": {
   "link": "https://drafts.csswg.org/css-flexbox/",
   "title": "CSS Flexible Box Layout",
-  "TR": "https://api.w3.org/specification-series/css-flexbox"
+  "serie": "css-flexbox"
  },
  "css-fonts": {
   "link": "https://drafts.csswg.org/css-fonts/",
   "title": "CSS Fonts",
-  "TR": "https://api.w3.org/specification-series/css-fonts"
+  "serie": "css-fonts"
  },
  "css-gcpm": {
   "link": "https://drafts.csswg.org/css-gcpm/",
   "title": "CSS Generated Content for Paged Media",
-  "TR": "https://api.w3.org/specification-series/css-gcpm"
+  "serie": "css-gcpm"
  },
  "css-grid": {
   "link": "https://drafts.csswg.org/css-grid/",
   "title": "CSS Grid Layout",
-  "TR": "https://api.w3.org/specification-series/css-grid"
+  "serie": "css-grid"
  },
  "css-highlight-api": {
   "link": "https://drafts.csswg.org/css-highlight-api/",
   "title": "CSS Custom Highlight API",
-  "TR": "https://api.w3.org/specification-series/css-highlight-api"
+  "serie": "css-highlight-api"
  },
  "css-inline": {
   "link": "https://drafts.csswg.org/css-inline/",
   "title": "CSS Inline Layout",
-  "TR": "https://api.w3.org/specification-series/css-inline"
+  "serie": "css-inline"
  },
  "css-line-grid": {
   "link": "https://drafts.csswg.org/css-line-grid/",
   "title": "CSS Line Grid",
-  "TR": "https://api.w3.org/specification-series/css-line-grid"
+  "serie": "css-line-grid"
  },
  "css-lists": {
   "link": "https://drafts.csswg.org/css-lists/",
   "title": "CSS Lists",
-  "TR": "https://api.w3.org/specification-series/css-lists"
+  "serie": "css-lists"
  },
  "css-logical": {
   "link": "https://drafts.csswg.org/css-logical/",
   "title": "CSS Logical Properties and Values",
-  "TR": "https://api.w3.org/specification-series/css-logical"
+  "serie": "css-logical"
  },
  "css-paint-api": {
   "link": "https://drafts.css-houdini.org/css-paint-api/",
   "title": "CSS Painting API",
-  "TR": "https://api.w3.org/specification-series/css-paint-api"
+  "serie": "css-paint-api"
  },
  "css-pseudo": {
   "link": "https://drafts.csswg.org/css-pseudo/",
   "title": "CSS Pseudo-Elements Module Level 4",
-  "TR": "https://api.w3.org/specification-series/css-pseudo"
+  "serie": "css-pseudo"
  },
  "css-rhythm": {
   "link": "https://drafts.csswg.org/css-rhythm/",
   "title": "CSS Rhythmic Sizing",
-  "TR": "https://api.w3.org/specification-series/css-rhythm"
+  "serie": "css-rhythm"
  },
  "css-ruby": {
   "link": "https://drafts.csswg.org/css-ruby/",
   "title": "CSS Ruby Layout",
-  "TR": "https://api.w3.org/specification-series/css-ruby"
+  "serie": "css-ruby"
  },
  "css-scroll-snap": {
   "link": "https://drafts.csswg.org/css-scroll-snap/",
   "title": "CSS Scroll Snap",
-  "TR": "https://api.w3.org/specification-series/css-scroll-snap"
+  "serie": "css-scroll-snap"
  },
  "css-sizing": {
   "link": "https://drafts.csswg.org/css-sizing/",
   "title": "CSS Box Sizing",
-  "TR": "https://api.w3.org/specification-series/css-sizing"
+  "serie": "css-sizing"
  },
  "css-syntax": {
   "link": "https://drafts.csswg.org/css-syntax/",
   "title": "CSS Syntax",
-  "TR": "https://api.w3.org/specification-series/css-syntax"
+  "serie": "css-syntax"
  },
  "css-text": {
   "link": "https://drafts.csswg.org/css-text/",
   "title": "CSS Text",
-  "TR": "https://api.w3.org/specification-series/css-text"
+  "serie": "css-text"
  },
  "css-text-decor": {
   "link": "https://drafts.csswg.org/css-text-decor/",
   "title": "CSS Text Decoration",
-  "TR": "https://api.w3.org/specification-series/css-text-decor"
+  "serie": "css-text-decor"
  },
  "css-ui": {
   "link": "https://drafts.csswg.org/css-ui/",
   "title": "CSS Basic User Interface",
-  "TR": "https://api.w3.org/specification-series/css-ui"
+  "serie": "css-ui"
  },
  "css-variables": {
   "link": "https://drafts.csswg.org/css-variables/",
   "title": "CSS Custom Properties for Cascading Variables",
-  "TR": "https://api.w3.org/specification-series/css-variables"
+  "serie": "css-variables"
  },
  "css-writing-modes": {
   "link": "https://drafts.csswg.org/css-writing-modes/",
   "title": "CSS Writing Modes",
-  "TR": "https://api.w3.org/specification-series/css-writing-modes"
+  "serie": "css-writing-modes"
  },
  "css2": {
   "link": "https://drafts.csswg.org/css2/",
   "title": "Cascading Style Sheets",
-  "TR": "https://api.w3.org/specification-series/CSS"
+  "serie": "css"
  },
  "did-core": {
   "link": "https://w3c.github.io/did-core/",
   "title": "Decentralized Identifiers (DIDs) v",
-  "TR": "https://api.w3.org/specification-series/did-core"
+  "serie": "did-core"
  },
  "dom": {
   "link": "https://dom.spec.whatwg.org/",
@@ -211,42 +211,48 @@
  "dpub-annotation-uc": {
   "link": "https://w3c.github.io/dpub-annotation/",
   "title": "Digital Publishing Annotation Use Cases",
-  "TR": "https://api.w3.org/specification-series/dpub-annotation-uc"
+  "serie": "dpub-annotation-uc"
  },
  "dpub-aria": {
   "link": "https://w3c.github.io/dpub-aria/",
   "title": "Digital Publishing WAI-ARIA",
-  "TR": "https://api.w3.org/specification-series/dpub-aria"
+  "serie": "dpub-aria"
  },
  "dpub-css-priorities": {
   "link": "https://w3c.github.io/dpub-pagination/priorities.html",
   "title": "Priorities for CSS from the Digital Publishing Interest Group",
-  "TR": "https://api.w3.org/specification-series/dpub-css-priorities"
+  "serie": "dpub-css-priorities"
  },
  "dwbp": {
   "link": "https://w3c.github.io/dwbp/bp.html",
   "title": "Data on the Web Best Practices",
-  "TR": "https://api.w3.org/specification-series/dwbp"
+  "serie": "dwbp"
  },
  "encoding": {
   "link": "https://encoding.spec.whatwg.org/",
   "title": "Encoding",
-  "TR": "https://api.w3.org/specification-series/encoding"
+  "serie": "encoding"
  },
  "epub": {
   "link": "https://w3c.github.io/epub-specs/epub33/core/",
   "title": "EPUB",
-  "TR": "https://api.w3.org/specification-series/epub"
+  "serie": "epub"
+ },
+ "epub-packages": {
+  "link": "https://www.w3.org/publishing/epub/epub-packages.html"
  },
  "findtext": {
   "link": "https://w3c.github.io/findtext/",
   "title": "FindText API",
-  "TR": "https://api.w3.org/specification-series/findtext"
+  "serie": "findtext"
+ },
+ "font-metrics-api": {
+  "link": "https://drafts.css-houdini.org/font-metrics-api/"
  },
  "geolocation-api": {
   "link": "https://w3c.github.io/geolocation-api/",
   "title": "Geolocation API Specification",
-  "TR": "https://api.w3.org/specification-series/geolocation-API"
+  "serie": "geolocation-api"
  },
  "html": {
   "link": "https://html.spec.whatwg.org/multipage/",
@@ -255,469 +261,5293 @@
  "indexeddb": {
   "link": "https://w3c.github.io/IndexedDB/",
   "title": "Indexed Database API",
-  "TR": "https://api.w3.org/specification-series/IndexedDB"
+  "serie": "indexeddb"
  },
  "input-events": {
   "link": "https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html",
   "title": "Input Events",
-  "TR": "https://api.w3.org/specification-series/input-events"
+  "serie": "input-events"
  },
  "intersection-observer": {
   "link": "https://w3c.github.io/IntersectionObserver/",
   "title": "Intersection Observer",
-  "TR": "https://api.w3.org/specification-series/intersection-observer"
+  "serie": "intersection-observer"
  },
  "json-ld": {
   "link": "https://w3c.github.io/json-ld-syntax/",
   "title": "JSON-LD",
-  "TR": "https://api.w3.org/specification-series/json-ld"
+  "serie": "json-ld"
  },
  "ldn": {
   "link": "https://linkedresearch.org/ldn/",
   "title": "Linked Data Notifications",
-  "TR": "https://api.w3.org/specification-series/ldn"
+  "serie": "ldn"
  },
  "low-vision-needs": {
   "link": "https://w3c.github.io/low-vision-a11y-tf/requirements.html",
   "title": "Accessibility Requirements for People with Low Vision",
-  "TR": "https://api.w3.org/specification-series/low-vision-needs"
+  "serie": "low-vision-needs"
  },
  "mediacapture-streams": {
   "link": "https://w3c.github.io/mediacapture-main/",
   "title": "Media Capture and Streams",
-  "TR": "https://api.w3.org/specification-series/mediacapture-streams"
+  "serie": "mediacapture-streams"
  },
  "microdata": {
   "link": "https://w3c.github.io/microdata/",
   "title": "HTML Microdata",
-  "TR": "https://api.w3.org/specification-series/microdata"
+  "serie": "microdata"
  },
  "micropub": {
   "link": "https://micropub.net/draft/",
   "title": "Micropub",
-  "TR": "https://api.w3.org/specification-series/micropub"
+  "serie": "micropub"
  },
  "mst-content-hint": {
   "link": "https://w3c.github.io/mst-content-hint/",
   "title": "MediaStreamTrack Content Hints",
-  "TR": "https://api.w3.org/specification-series/mst-content-hint"
+  "serie": "mst-content-hint"
+ },
+ "open-ui": {
+  "link": "https://open-ui.org/"
  },
  "owl-time": {
   "link": "https://w3c.github.io/sdw/time/",
   "title": "Time Ontology in OWL",
-  "TR": "https://api.w3.org/specification-series/owl-time"
+  "serie": "owl-time"
  },
  "payment-method-basic-card": {
   "link": "https://w3c.github.io/payment-method-basic-card/",
   "title": "Payment Method: Basic Card",
-  "TR": "https://api.w3.org/specification-series/payment-method-basic-card"
+  "serie": "payment-method-basic-card"
  },
  "payment-method-id": {
   "link": "https://w3c.github.io/payment-method-id/",
   "title": "Payment Method Identifiers",
-  "TR": "https://api.w3.org/specification-series/payment-method-id"
+  "serie": "payment-method-id"
  },
  "payment-request": {
   "link": "https://w3c.github.io/payment-request/",
   "title": "Payment Request API",
-  "TR": "https://api.w3.org/specification-series/payment-request"
+  "serie": "payment-request"
  },
  "personalization-semantics": {
   "link": "https://w3c.github.io/personalization-semantics/content/",
   "title": "Personalization Semantics Explainer",
-  "TR": "https://api.w3.org/specification-series/personalization-semantics"
+  "serie": "personalization-semantics"
  },
  "presentation-api": {
   "link": "https://w3c.github.io/presentation-api/",
   "title": "Presentation API",
-  "TR": "https://api.w3.org/specification-series/presentation-api"
+  "serie": "presentation-api"
  },
  "pronunciation-gap-analysis": {
   "link": "https://w3c.github.io/pronunciation/gap-analysis",
   "title": "Pronunciation Gap Analysis",
-  "TR": "https://api.w3.org/specification-series/pronunciation-gap-analysis"
+  "serie": "pronunciation-gap-analysis"
  },
  "pronunciation-use-cases": {
   "link": "https://w3c.github.io/pronunciation/use-cases",
   "title": "Pronunciation Use Cases",
-  "TR": "https://api.w3.org/specification-series/pronunciation-use-cases"
+  "serie": "pronunciation-use-cases"
  },
  "pub-manifest": {
   "link": "https://w3c.github.io/pub-manifest/",
   "title": "Publication Manifest",
-  "TR": "https://api.w3.org/specification-series/pub-manifest"
+  "serie": "pub-manifest"
  },
  "push-api": {
   "link": "https://w3c.github.io/push-api/",
   "title": "Push API",
-  "TR": "https://api.w3.org/specification-series/push-api"
+  "serie": "push-api"
  },
  "remote-playback": {
   "link": "https://w3c.github.io/remote-playback/",
   "title": "Remote Playback API",
-  "TR": "https://api.w3.org/specification-series/remote-playback"
+  "serie": "remote-playback"
  },
  "screen-capture": {
   "link": "https://w3c.github.io/mediacapture-screen-share/",
   "title": "Screen Capture",
-  "TR": "https://api.w3.org/specification-series/screen-capture"
+  "serie": "screen-capture"
  },
  "selectors": {
   "link": "https://drafts.csswg.org/selectors/",
   "title": "Selectors",
-  "TR": "https://api.w3.org/specification-series/selectors"
+  "serie": "selectors"
  },
  "serviceworker": {
   "link": "https://w3c.github.io/ServiceWorker/",
   "title": "Service Workers",
-  "TR": "https://api.w3.org/specification-series/service-workers"
+  "serie": "service-workers"
  },
  "shacl": {
   "link": "https://w3c.github.io/data-shapes/shacl/",
   "title": "Shapes Constraint Language (SHACL)",
-  "TR": "https://api.w3.org/specification-series/shacl"
+  "serie": "shacl"
  },
  "svg": {
   "link": "https://svgwg.org/svg2-draft/",
   "title": "Scalable Vector Graphics (SVG)",
-  "TR": "https://api.w3.org/specification-series/SVG"
+  "serie": "svg"
  },
  "tracking-compliance": {
   "link": "https://www.w3.org/2011/tracking-protection/drafts/tracking-compliance.html",
   "title": "Tracking Compliance and Scope",
-  "TR": "https://api.w3.org/specification-series/tracking-compliance"
+  "serie": "tracking-compliance"
  },
  "tracking-dnt": {
   "link": "https://w3c.github.io/dnt/drafts/tracking-dnt.html",
   "title": "Tracking Preference Expression (DNT)",
-  "TR": "https://api.w3.org/specification-series/tracking-dnt"
+  "serie": "tracking-dnt"
  },
  "ttml": {
   "link": "https://w3c.github.io/ttml2/",
   "title": "Timed Text Markup Language",
-  "TR": "https://api.w3.org/specification-series/ttml"
+  "serie": "ttml"
  },
  "ttml-imsc": {
   "link": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html",
   "title": "TTML Profiles for Internet Media Subtitles and Captions",
-  "TR": "https://api.w3.org/specification-series/ttml-imsc"
+  "serie": "ttml-imsc"
  },
  "turingtest": {
   "link": "https://w3c.github.io/apa/captcha/",
   "title": "Inaccessibility of CAPTCHA",
-  "TR": "https://api.w3.org/specification-series/turingtest"
+  "serie": "turingtest"
  },
  "uievents": {
   "link": "https://w3c.github.io/uievents/",
   "title": "UI Events",
-  "TR": "https://api.w3.org/specification-series/uievents"
+  "serie": "uievents"
  },
  "uievents-code": {
   "link": "https://w3c.github.io/uievents-code/",
   "title": "UI Events KeyboardEvent code Values",
-  "TR": "https://api.w3.org/specification-series/uievents-code"
+  "serie": "uievents-code"
  },
  "uievents-key": {
   "link": "https://w3c.github.io/uievents-key/",
   "title": "UI Events KeyboardEvent key Values",
-  "TR": "https://api.w3.org/specification-series/uievents-key"
+  "serie": "uievents-key"
  },
  "url": {
   "link": "https://url.spec.whatwg.org/",
   "title": "URL",
-  "TR": "https://api.w3.org/specification-series/url"
+  "serie": "url"
  },
  "vc-data-model": {
   "link": "https://w3c.github.io/vc-data-model/",
   "title": "Verifiable Credentials Data Model",
-  "TR": "https://api.w3.org/specification-series/vc-data-model"
+  "serie": "vc-data-model"
  },
  "vocab-dcat": {
   "link": "https://w3c.github.io/dxwg/dcat/",
   "title": "Data Catalog Vocabulary (DCAT)",
-  "TR": "https://api.w3.org/specification-series/vocab-dcat"
+  "serie": "vocab-dcat"
  },
  "vocab-duv": {
   "link": "https://w3c.github.io/dwbp/vocab-du.html",
   "title": "Data on the Web Best Practices: Dataset Usage Vocabulary",
-  "TR": "https://api.w3.org/specification-series/vocab-duv"
+  "serie": "vocab-duv"
  },
  "wai-aria": {
   "link": "https://w3c.github.io/aria/",
   "title": "Accessible Rich Internet Applications (WAI-ARIA)",
-  "TR": "https://api.w3.org/specification-series/wai-aria"
+  "serie": "wai-aria"
  },
  "wai-aria-practices": {
   "link": "https://w3c.github.io/aria-practices/",
   "title": "WAI-ARIA",
-  "TR": "https://api.w3.org/specification-series/wai-aria-practices"
+  "serie": "wai-aria-practices"
  },
  "wcag": {
   "link": "https://w3c.github.io/wcag/guidelines/",
   "title": "W",
-  "TR": "https://api.w3.org/specification-series/WCAG"
+  "serie": "wcag"
  },
  "web-share": {
   "link": "https://w3c.github.io/web-share/",
   "title": "Web Share API",
-  "TR": "https://api.w3.org/specification-series/web-share"
+  "serie": "web-share"
  },
  "webaudio": {
   "link": "https://webaudio.github.io/web-audio-api/",
   "title": "Web Audio API",
-  "TR": "https://api.w3.org/specification-series/webaudio"
+  "serie": "webaudio"
  },
  "webauthn": {
   "link": "https://w3c.github.io/webauthn/",
   "title": "Web Authentication",
-  "TR": "https://api.w3.org/specification-series/webauthn"
+  "serie": "webauthn"
  },
  "webdriver": {
   "link": "https://w3c.github.io/webdriver/",
   "title": "WebDriver",
-  "TR": "https://api.w3.org/specification-series/webdriver"
+  "serie": "webdriver"
  },
  "webmention": {
   "link": "https://webmention.net/draft/",
   "title": "Webmention",
-  "TR": "https://api.w3.org/specification-series/webmention"
+  "serie": "webmention"
  },
  "webrtc": {
   "link": "https://w3c.github.io/webrtc-pc/",
   "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
-  "TR": "https://api.w3.org/specification-series/webrtc"
+  "serie": "webrtc"
  },
  "webrtc-svc": {
   "link": "https://w3c.github.io/webrtc-svc/",
   "title": "Scalable Video Coding (SVC) Extension for WebRTC",
-  "TR": "https://api.w3.org/specification-series/webrtc-svc"
+  "serie": "webrtc-svc"
  },
  "websub": {
   "link": "https://websub.net/draft",
   "title": "WebSub",
-  "TR": "https://api.w3.org/specification-series/websub"
+  "serie": "websub"
  },
  "webvtt": {
   "link": "https://w3c.github.io/webvtt/",
   "title": "WebVTT: The Web Video Text Tracks Format",
-  "TR": "https://api.w3.org/specification-series/webvtt"
+  "serie": "webvtt"
  },
  "webxr": {
   "link": "https://immersive-web.github.io/webxr/",
   "title": "WebXR Device API",
-  "TR": "https://api.w3.org/specification-series/webxr"
+  "serie": "webxr"
  },
  "wot-thing-description": {
   "link": "https://w3c.github.io/wot-thing-description/",
   "title": "Web of Things (WoT) Thing Description",
-  "TR": "https://api.w3.org/specification-series/wot-thing-description"
+  "serie": "wot-thing-description"
+ },
+ "ScrollToTextFragment": {
+  "link": "https://wicg.github.io/ScrollToTextFragment/"
  },
  "accelerometer": {
   "link": "https://w3c.github.io/accelerometer/",
   "title": "Accelerometer",
-  "TR": "https://api.w3.org/specification-series/accelerometer"
+  "serie": "accelerometer"
  },
  "battery": {
   "link": "https://w3c.github.io/battery/",
   "title": "Battery Status API",
-  "TR": "https://api.w3.org/specification-series/battery-status"
+  "serie": "battery-status"
+ },
+ "content-index": {
+  "link": "https://wicg.github.io/content-index/spec/"
+ },
+ "crash-reporting": {
+  "link": "https://wicg.github.io/crash-reporting/"
  },
  "css-color-adjust": {
   "link": "https://drafts.csswg.org/css-color-adjust/",
   "title": "CSS Color Adjustment",
-  "TR": "https://api.w3.org/specification-series/css-color-adjust"
+  "serie": "css-color-adjust"
  },
  "css-values": {
   "link": "https://drafts.csswg.org/css-values/",
   "title": "CSS Values and Units",
-  "TR": "https://api.w3.org/specification-series/css-values"
+  "serie": "css-values"
+ },
+ "deprecation-reporting": {
+  "link": "https://wicg.github.io/deprecation-reporting/"
+ },
+ "file-system-access": {
+  "link": "https://wicg.github.io/file-system-access/"
  },
  "fileapi": {
   "link": "https://w3c.github.io/FileAPI/",
   "title": "File API",
-  "TR": "https://api.w3.org/specification-series/FileAPI"
+  "serie": "fileapi"
+ },
+ "floc": {
+  "link": "https://github.com/WICG/floc"
  },
  "gamepad": {
   "link": "https://w3c.github.io/gamepad/",
   "title": "Gamepad",
-  "TR": "https://api.w3.org/specification-series/gamepad"
+  "serie": "gamepad"
  },
  "generic-sensors": {
   "link": "https://w3c.github.io/sensors/",
   "title": "Generic Sensor API",
-  "TR": "https://api.w3.org/specification-series/generic-sensor"
+  "serie": "generic-sensor"
  },
  "geolocation-sensor": {
   "link": "https://w3c.github.io/geolocation-sensor/",
   "title": "Geolocation Sensor",
-  "TR": "https://api.w3.org/specification-series/geolocation-sensor"
+  "serie": "geolocation-sensor"
  },
  "gyroscope": {
   "link": "https://w3c.github.io/gyroscope/",
   "title": "Gyroscope",
-  "TR": "https://api.w3.org/specification-series/gyroscope"
+  "serie": "gyroscope"
  },
  "hr-time": {
   "link": "https://w3c.github.io/hr-time/",
   "title": "High Resolution Time",
-  "TR": "https://api.w3.org/specification-series/hr-time"
+  "serie": "hr-time"
+ },
+ "intervention-reporting": {
+  "link": "https://wicg.github.io/intervention-reporting/"
  },
  "mathml": {
   "link": "https://w3c.github.io/mathml/",
   "title": "Mathematical Markup Language (MathML)",
-  "TR": "https://api.w3.org/specification-series/MathML"
+  "serie": "mathml"
  },
  "mediacapture-fromelement": {
   "link": "https://w3c.github.io/mediacapture-fromelement/",
   "title": "Media Capture from DOM Elements",
-  "TR": "https://api.w3.org/specification-series/mediacapture-fromelement"
+  "serie": "mediacapture-fromelement"
  },
  "mediacapture-image": {
   "link": "https://w3c.github.io/mediacapture-image/",
   "title": "MediaStream Image Capture",
-  "TR": "https://api.w3.org/specification-series/image-capture"
+  "serie": "image-capture"
  },
  "mediacapture-output": {
   "link": "https://w3c.github.io/mediacapture-output/",
   "title": "Audio Output Devices API",
-  "TR": "https://api.w3.org/specification-series/audio-output"
+  "serie": "audio-output"
  },
  "mediacapture-record": {
   "link": "https://w3c.github.io/mediacapture-record/",
   "title": "MediaStream Recording",
-  "TR": "https://api.w3.org/specification-series/mediastream-recording"
+  "serie": "mediastream-recording"
  },
  "mediasession": {
   "link": "https://w3c.github.io/mediasession/",
   "title": "Media Session Standard",
-  "TR": "https://api.w3.org/specification-series/mediasession"
+  "serie": "mediasession"
  },
  "orientation-event": {
   "link": "https://w3c.github.io/deviceorientation/",
   "title": "DeviceOrientation Event Specification",
-  "TR": "https://api.w3.org/specification-series/orientation-event"
+  "serie": "orientation-event"
  },
  "payment-handler": {
   "link": "https://w3c.github.io/payment-handler",
   "title": "Payment Handler API",
-  "TR": "https://api.w3.org/specification-series/payment-handler"
+  "serie": "payment-handler"
  },
  "proximity-sensor": {
   "link": "https://w3c.github.io/proximity/",
   "title": "Proximity Sensor",
-  "TR": "https://api.w3.org/specification-series/proximity"
+  "serie": "proximity"
  },
  "reporting": {
   "link": "https://w3c.github.io/reporting/",
   "title": "Reporting API",
-  "TR": "https://api.w3.org/specification-series/reporting"
+  "serie": "reporting"
  },
  "resource-timing": {
   "link": "https://w3c.github.io/resource-timing/",
   "title": "Resource Timing",
-  "TR": "https://api.w3.org/specification-series/resource-timing"
+  "serie": "resource-timing"
  },
  "screen-fold": {
   "link": "https://w3c.github.io/screen-fold/",
   "title": "The Screen Fold API",
-  "TR": "https://api.w3.org/specification-series/screen-fold"
+  "serie": "screen-fold"
  },
  "screen-wake-lock": {
   "link": "https://w3c.github.io/screen-wake-lock/",
   "title": "Screen Wake Lock API",
-  "TR": "https://api.w3.org/specification-series/screen-wake-lock"
+  "serie": "screen-wake-lock"
  },
  "storage": {
   "link": "https://storage.spec.whatwg.org/",
   "title": "Storage"
  },
+ "system-wake-lock": {
+  "link": "https://w3c.github.io/system-wake-lock/"
+ },
  "trace-context": {
   "link": "https://w3c.github.io/trace-context/",
   "title": "Trace Context",
-  "TR": "https://api.w3.org/specification-series/trace-context"
+  "serie": "trace-context"
+ },
+ "visual-viewport": {
+  "link": "https://wicg.github.io/visual-viewport/"
+ },
+ "webnn": {
+  "link": "https://webmachinelearning.github.io/webnn/"
+ },
+ "webrtc-extensions": {
+  "link": "https://w3c.github.io/webrtc-extensions/"
  },
  "webrtc-stats": {
   "link": "https://w3c.github.io/webrtc-stats/",
   "title": "Identifiers for WebRTC's Statistics API",
-  "TR": "https://api.w3.org/specification-series/webrtc-stats"
+  "serie": "webrtc-stats"
+ },
+ "webtransport": {
+  "link": "https://w3c.github.io/webtransport/"
  },
  "webxr-hand-input": {
   "link": "https://immersive-web.github.io/webxr-hand-input/",
   "title": "WebXR Hand Input",
-  "TR": "https://api.w3.org/specification-series/webxr-hand-input"
+  "serie": "webxr-hand-input"
  },
  "webxrlayers": {
   "link": "https://immersive-web.github.io/layers/",
   "title": "WebXR Layers API",
-  "TR": "https://api.w3.org/specification-series/webxrlayers"
+  "serie": "webxrlayers"
  },
  "wot-architecture": {
   "link": "https://w3c.github.io/wot-architecture/",
   "title": "Web of Things (WoT) Architecture",
-  "TR": "https://api.w3.org/specification-series/wot-architecture"
+  "serie": "wot-architecture"
  },
  "fetch": {
   "link": "https://fetch.spec.whatwg.org/",
   "title": "Fetch"
  },
+ "openscreenprotocol": {
+  "link": "https://w3c.github.io/openscreenprotocol/"
+ },
  "pointerevents": {
   "link": "https://w3c.github.io/pointerevents/",
   "title": "Pointer Events",
-  "TR": "https://api.w3.org/specification-series/pointerevents"
+  "serie": "pointerevents"
  },
  "webcrypto": {
   "link": "https://w3c.github.io/webcrypto/",
   "title": "Web Cryptography API",
-  "TR": "https://api.w3.org/specification-series/WebCryptoAPI"
+  "serie": "webcryptoapi"
  },
  "wot-discovery": {
   "link": "https://w3c.github.io/wot-discovery/",
   "title": "Web of Things (WoT) Discovery",
-  "TR": "https://api.w3.org/specification-series/wot-discovery"
+  "serie": "wot-discovery"
  },
  "css-display": {
   "link": "https://drafts.csswg.org/css-display/",
   "title": "CSS Display",
-  "TR": "https://api.w3.org/specification-series/css-display"
+  "serie": "css-display"
  },
  "css-filter-effects": {
   "link": "https://drafts.fxtf.org/filter-effects/",
   "title": "Filter Effects",
-  "TR": "https://api.w3.org/specification-series/filter-effects"
+  "serie": "filter-effects"
  },
  "css-scrollbars": {
   "link": "https://drafts.csswg.org/css-scrollbars/",
   "title": "CSS Scrollbars",
-  "TR": "https://api.w3.org/specification-series/css-scrollbars"
+  "serie": "css-scrollbars"
  },
  "css-speech": {
   "link": "https://drafts.csswg.org/css-speech/",
   "title": "CSS Speech",
-  "TR": "https://api.w3.org/specification-series/css-speech"
+  "serie": "css-speech"
  },
  "html-aam": {
   "link": "https://w3c.github.io/html-aam/",
   "title": "HTML Accessibility API Mappings",
-  "TR": "https://api.w3.org/specification-series/html-aam"
+  "serie": "html-aam"
  },
  "mediaqueries": {
   "link": "https://drafts.csswg.org/mediaqueries/",
   "title": "Media Queries",
-  "TR": "https://api.w3.org/specification-series/mediaqueries"
+  "serie": "mediaqueries"
  },
  "picture-in-picture": {
   "link": "https://w3c.github.io/picture-in-picture/",
   "title": "Picture-in-Picture",
-  "TR": "https://api.w3.org/specification-series/picture-in-picture"
+  "serie": "picture-in-picture"
+ },
+ "cookie-store": {
+  "link": "https://wicg.github.io/cookie-store/"
  },
  "cssom": {
   "link": "https://drafts.csswg.org/cssom/",
   "title": "CSS Object Model (CSSOM)",
-  "TR": "https://api.w3.org/specification-series/cssom"
+  "serie": "cssom"
+ },
+ "web-codecs": {
+  "link": "https://wicg.github.io/web-codecs/"
+ },
+ "web-nfc": {
+  "link": "https://w3c.github.io/web-nfc/"
  },
  "webxr-gamepads-module": {
   "link": "https://immersive-web.github.io/webxr-gamepads-module/",
   "title": "WebXR Gamepads",
-  "TR": "https://api.w3.org/specification-series/webxr-gamepads-module"
+  "serie": "webxr-gamepads-module"
+ },
+ "as": {
+  "title": "Action Sheets: A Modular Way of Defining Behavior for XML and HTML",
+  "serie": "as"
+ },
+ "compacthtml": {
+  "title": "Compact HTML for Small Information Appliances",
+  "serie": "compacthtml"
+ },
+ "atag": {
+  "title": "Authoring Tool Accessibility Guidelines",
+  "serie": "atag"
+ },
+ "authentform": {
+  "title": "User Agent Authentication Forms",
+  "serie": "authentform"
+ },
+ "acss": {
+  "title": "Aural Cascading Style Sheets (ACSS) Specification",
+  "serie": "acss"
+ },
+ "becss": {
+  "title": "Behavioral Extensions to CSS",
+  "link": "https://dev.w3.org/2006/xbl2/css-module.html",
+  "serie": "becss"
+ },
+ "charmod": {
+  "title": "Character Model for the World Wide Web 1.0: Fundamentals",
+  "serie": "charmod"
+ },
+ "charcol": {
+  "title": "A Notation for Character Collections for the WWW",
+  "serie": "charcol"
+ },
+ "aert": {
+  "title": "Techniques For Accessibility Evaluation And Repair Tools",
+  "serie": "aert"
+ },
+ "ccpp-ra": {
+  "title": "Composite Capabilities/Preference Profiles: Requirements and Architecture",
+  "serie": "ccpp-ra"
+ },
+ "ccpp-ta": {
+  "title": "Composite Capabilities/Preference Profiles: Terminology and Abbreviations",
+  "serie": "ccpp-ta"
+ },
+ "ccpp-coordination": {
+  "title": "CC/PP Implementors Guide: Harmonization with Existing Vocabularies and Content Transformation Heuristics",
+  "serie": "ccpp-coordination"
+ },
+ "ccpp-trust": {
+  "title": "CC/PP Implementors Guide: Privacy and Protocols",
+  "serie": "ccpp-trust"
+ },
+ "call-control-reqs": {
+  "title": "Call Control Requirements in a Voice Browser Framework",
+  "serie": "call-control-reqs"
+ },
+ "acdi": {
+  "title": "Authoring Challenges for Device Independence",
+  "serie": "acdi"
+ },
+ "ccxml": {
+  "title": "Voice Browser Call Control: CCXML",
+  "serie": "ccxml"
+ },
+ "chips": {
+  "title": "Common HTTP Implementation Problems",
+  "serie": "chips"
+ },
+ "cpc-req": {
+  "title": "Core Presentation Characteristics: Requirements and Use Cases",
+  "serie": "cpc-req"
+ },
+ "charmod-resid": {
+  "title": "Character Model for the World Wide Web 1.0: Resource Identifiers",
+  "serie": "charmod-resid"
+ },
+ "charmod-norm": {
+  "title": "Character Model for the World Wide Web: String Matching",
+  "link": "https://w3c.github.io/charmod-norm/",
+  "serie": "charmod-norm"
+ },
+ "cselection": {
+  "title": "Content Selection for Device Independence (DISelect)",
+  "serie": "cselection"
+ },
+ "cdrreqs": {
+  "title": "Compound Document by Reference Use Cases and Requirements",
+  "serie": "cdrreqs"
+ },
+ "cdfreqs": {
+  "title": "Compound Document Use Cases and Requirements",
+  "serie": "cdfreqs"
+ },
+ "cdr": {
+  "title": "Compound Document by Reference Framework",
+  "serie": "cdr"
+ },
+ "c14n-issues": {
+  "title": "Known Issues with Canonical XML 1.0 (C14N/1.0)",
+  "serie": "c14n-issues"
+ },
+ "arabic-math": {
+  "title": "Arabic mathematical notation",
+  "serie": "arabic-math"
+ },
+ "backplane": {
+  "title": "Rich Web Application Backplane",
+  "serie": "backplane"
+ },
+ "clipboard-apis": {
+  "title": "Clipboard API and events",
+  "link": "https://w3c.github.io/clipboard-apis/",
+  "serie": "clipboard-apis"
+ },
+ "cselection-primer": {
+  "title": "Content Selection Primer",
+  "serie": "cselection-primer"
+ },
+ "cselection-xaf": {
+  "title": "Delivery Context: XPath Access Functions",
+  "serie": "cselection-xaf"
+ },
+ "cooluris": {
+  "title": "Cool URIs for the Semantic Web",
+  "serie": "cooluris"
+ },
+ "wai-aria-roadmap": {
+  "title": "Roadmap for Accessible Rich Internet Applications (WAI-ARIA Roadmap)",
+  "serie": "wai-aria-roadmap"
+ },
+ "charreq": {
+  "title": "Requirements for String Identity Matching and String Indexing",
+  "serie": "charreq"
+ },
+ "content-in-rdf": {
+  "title": "Representing Content in RDF",
+  "serie": "content-in-rdf"
+ },
+ "cors": {
+  "title": "Cross-Origin Resource Sharing",
+  "serie": "cors"
+ },
+ "css-animations": {
+  "title": "CSS Animations",
+  "link": "https://drafts.csswg.org/css-animations/",
+  "serie": "css-animations"
+ },
+ "2dcontext": {
+  "title": "HTML Canvas 2D Context",
+  "serie": "2dcontext"
+ },
+ "api-perms": {
+  "title": "Permissions for Device API Access",
+  "link": "https://dev.w3.org/2009/dap/api-perms/",
+  "serie": "api-perms"
+ },
+ "contacts-api": {
+  "title": "Pick Contacts Intent",
+  "serie": "contacts-api"
+ },
+ "html-media-capture": {
+  "title": "HTML Media Capture",
+  "link": "https://w3c.github.io/html-media-capture/",
+  "serie": "html-media-capture"
+ },
+ "csp": {
+  "title": "Content Security Policy",
+  "link": "https://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-1.0-specification.html",
+  "serie": "csp"
+ },
+ "animation-timing": {
+  "title": "Timing control for script-based animations",
+  "link": "https://w3c.github.io/animation-timing/",
+  "serie": "animation-timing"
+ },
+ "app-privacy-bp": {
+  "title": "Web Application Privacy Best Practices",
+  "serie": "app-privacy-bp"
+ },
+ "audioproc": {
+  "title": "Audio Processing API",
+  "serie": "audioproc"
+ },
+ "calendar-api": {
+  "title": "Calendar API",
+  "serie": "calendar-api"
+ },
+ "api-design": {
+  "title": "Web API Design Cookbook",
+  "serie": "api-design"
+ },
+ "accessibility-metrics-report": {
+  "title": "Research Report on Web Accessibility Metrics",
+  "serie": "accessibility-metrics-report"
+ },
+ "ambient-light": {
+  "title": "Ambient Light Sensor",
+  "link": "https://w3c.github.io/ambient-light/",
+  "serie": "ambient-light"
+ },
+ "capture-scenarios": {
+  "title": "MediaStream Capture Scenarios",
+  "serie": "capture-scenarios"
+ },
+ "components-intro": {
+  "title": "Introduction to Web Components",
+  "link": "https://w3c.github.io/webcomponents/explainer/",
+  "serie": "components-intro"
+ },
+ "compositing": {
+  "title": "Compositing and Blending",
+  "link": "https://drafts.fxtf.org/compositing-1/",
+  "serie": "compositing"
+ },
+ "app-uri": {
+  "title": "The app: URL Scheme",
+  "link": "https://app-uri.sysapps.org/",
+  "serie": "app-uri"
+ },
+ "using-aria": {
+  "title": "Using ARIA",
+  "link": "https://w3c.github.io/using-aria/",
+  "serie": "using-aria"
+ },
+ "contacts-manager-api": {
+  "title": "Contacts Manager API",
+  "link": "https://www.w3.org/2012/sysapps/contacts-manager-api/",
+  "serie": "contacts-manager-api"
+ },
+ "beacon": {
+  "title": "Beacon",
+  "link": "https://w3c.github.io/beacon/",
+  "serie": "beacon"
+ },
+ "abstract-ui": {
+  "title": "MBUI - Abstract User Interface Models",
+  "serie": "abstract-ui"
+ },
+ "capability-urls": {
+  "title": "Good Practices for Capability URLs",
+  "link": "https://w3ctag.github.io/capability-urls/",
+  "serie": "capability-urls"
+ },
+ "core-aam": {
+  "title": "Core Accessibility API Mappings",
+  "link": "https://w3c.github.io/core-aam/",
+  "serie": "core-aam"
+ },
+ "activitystreams-vocabulary": {
+  "title": "Activity Vocabulary",
+  "link": "https://w3c.github.io/activitystreams/vocabulary/",
+  "serie": "activitystreams-vocabulary"
+ },
+ "coga-user-research": {
+  "title": "Cognitive Accessibility User Research",
+  "link": "https://w3c.github.io/coga/user-research/",
+  "serie": "coga-user-research"
+ },
+ "csp-pinning": {
+  "title": "Content Security Policy Pinning",
+  "link": "https://w3c.github.io/webappsec-csp/pinning/",
+  "serie": "csp-pinning"
+ },
+ "credential-management": {
+  "title": "Credential Management",
+  "link": "https://w3c.github.io/webappsec-credential-management/",
+  "serie": "credential-management"
+ },
+ "clreq": {
+  "title": "Requirements for Chinese Text Layout中文排版需求",
+  "link": "https://w3c.github.io/clreq/",
+  "serie": "clreq"
+ },
+ "clear-site-data": {
+  "title": "Clear Site Data",
+  "link": "https://w3c.github.io/webappsec-clear-site-data/",
+  "serie": "clear-site-data"
+ },
+ "cowl": {
+  "title": "Confinement with Origin Web Labels",
+  "link": "https://w3c.github.io/webappsec-cowl/",
+  "serie": "cowl"
+ },
+ "csp-cookies": {
+  "title": "Content Security Policy: Cookie Controls",
+  "link": "https://w3c.github.io/webappsec-csp/cookies/",
+  "serie": "csp-cookies"
+ },
+ "csp-embedded-enforcement": {
+  "title": "Content Security Policy: Embedded Enforcement",
+  "link": "https://w3c.github.io/webappsec-cspee/",
+  "serie": "csp-embedded-enforcement"
+ },
+ "annotation-html": {
+  "title": "Embedding Web Annotations in HTML",
+  "link": "https://w3c.github.io/web-annotation/serialization-html-note/",
+  "serie": "annotation-html"
+ },
+ "act-rules-format": {
+  "title": "Accessibility Conformance Testing (ACT) Rules Format",
+  "link": "https://w3c.github.io/wcag-act/act-rules-format.html",
+  "serie": "act-rules-format"
+ },
+ "covjson-overview": {
+  "title": "Overview of the CoverageJSON format",
+  "link": "https://w3c.github.io/sdw/coverage-json/",
+  "serie": "covjson-overview"
+ },
+ "cloud-browser-arch": {
+  "title": "Cloud Browser Architecture",
+  "link": "https://w3c.github.io/Web-and-TV-IG/cloud-browser-tf/",
+  "serie": "cloud-browser-arch"
+ },
+ "alreq": {
+  "title": "Text Layout Requirements for the Arabic Script",
+  "link": "https://w3c.github.io/alreq/",
+  "serie": "alreq"
+ },
+ "css-animation-worklet": {
+  "title": "CSS Animation Worklet API",
+  "link": "https://drafts.css-houdini.org/css-animationworklet-1/",
+  "serie": "css-animation-worklet"
+ },
+ "accessibility-conformance-challenges": {
+  "title": "Challenges with Accessibility Guidelines Conformance and Testing, and Approaches for Mitigating Them",
+  "link": "https://w3c.github.io/wcag/conformance-challenges/",
+  "serie": "accessibility-conformance-challenges"
+ },
+ "css-namespaces": {
+  "title": "CSS Namespaces",
+  "link": "https://drafts.csswg.org/css-namespaces/",
+  "serie": "css-namespaces"
+ },
+ "css-multicol": {
+  "title": "CSS Multi-column Layout",
+  "link": "https://drafts.csswg.org/css-multicol/",
+  "serie": "css-multicol"
+ },
+ "css-page": {
+  "title": "CSS Paged Media",
+  "link": "https://drafts.csswg.org/css-page-3/",
+  "serie": "css-page"
+ },
+ "css-potential": {
+  "title": "List of suggested extensions to CSS",
+  "serie": "css-potential"
+ },
+ "css-smil": {
+  "title": "Displaying SMIL Basic Layout with a CSS2 Rendering engine",
+  "serie": "css-smil"
+ },
+ "css-mobile": {
+  "title": "CSS Mobile Profile",
+  "serie": "css-mobile"
+ },
+ "css-style-attr": {
+  "title": "CSS Style Attributes",
+  "link": "https://drafts.csswg.org/css-style-attr/",
+  "serie": "css-style-attr"
+ },
+ "css-tv": {
+  "title": "CSS TV Profile",
+  "serie": "css-tv"
+ },
+ "css-print": {
+  "title": "CSS Print Profile",
+  "serie": "css-print"
+ },
+ "css-preslev": {
+  "title": "CSS Presentation Levels",
+  "serie": "css-preslev"
+ },
+ "css-hyperlinks": {
+  "title": "CSS3 Hyperlink Presentation",
+  "serie": "css-hyperlinks"
+ },
+ "css-reader": {
+  "title": "The CSS ‘Reader’ Media Type",
+  "serie": "css-reader"
+ },
+ "css-template": {
+  "title": "CSS Template Layout",
+  "link": "https://drafts.csswg.org/css-template/",
+  "serie": "css-template"
+ },
+ "css-beijing": {
+  "title": "Cascading Style Sheets (CSS) Snapshot 2007",
+  "serie": "css-beijing"
+ },
+ "ct-landscape": {
+  "title": "Content Transformation Landscape",
+  "serie": "ct-landscape"
+ },
+ "css-marquee": {
+  "title": "CSS Marquee",
+  "serie": "css-marquee"
+ },
+ "cssom-view": {
+  "title": "CSSOM View",
+  "link": "https://drafts.csswg.org/cssom-view/",
+  "serie": "cssom-view"
+ },
+ "ct-guidelines": {
+  "title": "Guidelines for Web Content Transformation Proxies",
+  "serie": "ct-guidelines"
+ },
+ "css-images": {
+  "title": "CSS Image",
+  "link": "https://drafts.csswg.org/css-images-3/",
+  "serie": "css-images"
+ },
+ "css-transitions": {
+  "title": "CSS Transitions",
+  "link": "https://drafts.csswg.org/css-transitions/",
+  "serie": "css-transitions"
+ },
+ "css-device-adapt": {
+  "title": "CSS Device Adaptation",
+  "link": "https://drafts.csswg.org/css-device-adapt/",
+  "serie": "css-device-adapt"
+ },
+ "css-exclusions": {
+  "title": "CSS Exclusions",
+  "link": "https://drafts.csswg.org/css-exclusions/",
+  "serie": "css-exclusions"
+ },
+ "css-regions": {
+  "title": "CSS Regions",
+  "link": "https://drafts.csswg.org/css-regions/",
+  "serie": "css-regions"
+ },
+ "css-masking": {
+  "title": "CSS Masking",
+  "link": "https://drafts.fxtf.org/css-masking-1/",
+  "serie": "css-masking"
+ },
+ "css-position": {
+  "title": "CSS Positioned Layout",
+  "link": "https://drafts.csswg.org/css-position/",
+  "serie": "css-position"
+ },
+ "css-transforms": {
+  "title": "CSS Transforms",
+  "link": "https://drafts.csswg.org/css-transforms/",
+  "serie": "css-transforms"
+ },
+ "css-overflow": {
+  "title": "CSS Overflow",
+  "link": "https://drafts.csswg.org/css-overflow-3/",
+  "serie": "css-overflow"
+ },
+ "css-shapes": {
+  "title": "CSS Shapes",
+  "link": "https://drafts.csswg.org/css-shapes/",
+  "serie": "css-shapes"
+ },
+ "css-font-loading": {
+  "title": "CSS Font Loading",
+  "link": "https://drafts.csswg.org/css-font-loading/",
+  "serie": "css-font-loading"
+ },
+ "csvw-ucr": {
+  "title": "CSV on the Web: Use Cases and Requirements",
+  "link": "https://w3c.github.io/csvw/use-cases-and-requirements/",
+  "serie": "csvw-ucr"
+ },
+ "css-scoping": {
+  "title": "CSS Scoping",
+  "link": "https://drafts.csswg.org/css-scoping/",
+  "serie": "css-scoping"
+ },
+ "css-will-change": {
+  "title": "CSS Will Change",
+  "link": "https://drafts.csswg.org/css-will-change/",
+  "serie": "css-will-change"
+ },
+ "csv2json": {
+  "title": "Generating JSON from Tabular Data on the Web",
+  "link": "https://w3c.github.io/csvw/csv2json/",
+  "serie": "csv2json"
+ },
+ "csv2rdf": {
+  "title": "Generating RDF from Tabular Data on the Web",
+  "link": "https://w3c.github.io/csvw/csv2rdf/",
+  "serie": "csv2rdf"
+ },
+ "css-page-floats": {
+  "title": "CSS Page Floats",
+  "link": "https://drafts.csswg.org/css-page-floats/",
+  "serie": "css-page-floats"
+ },
+ "css-round-display": {
+  "title": "CSS Round Display",
+  "link": "https://drafts.csswg.org/css-round-display/",
+  "serie": "css-round-display"
+ },
+ "csvw-html": {
+  "title": "Embedding Tabular Metadata in HTML",
+  "link": "https://w3c.github.io/csvw/html-note/",
+  "serie": "csvw-html"
+ },
+ "css-properties-values-api": {
+  "title": "CSS Properties and Values API",
+  "link": "https://drafts.css-houdini.org/css-properties-values-api-1/",
+  "serie": "css-properties-values-api"
+ },
+ "css-typed-om": {
+  "title": "CSS Typed OM",
+  "link": "https://drafts.css-houdini.org/css-typed-om-1/",
+  "serie": "css-typed-om"
+ },
+ "css-tables": {
+  "title": "CSS Table",
+  "link": "https://drafts.csswg.org/css-tables-3/",
+  "serie": "css-tables"
+ },
+ "css-easing": {
+  "title": "CSS Easing Functions",
+  "link": "https://drafts.csswg.org/css-easing/",
+  "serie": "css-easing"
+ },
+ "css-contain": {
+  "title": "CSS Containment",
+  "link": "https://drafts.csswg.org/css-contain-1/",
+  "serie": "css-contain"
+ },
+ "css-layout-api": {
+  "title": "CSS Layout API",
+  "link": "https://drafts.css-houdini.org/css-layout-api-1/",
+  "serie": "css-layout-api"
+ },
+ "css-shadow-parts": {
+  "title": "CSS Shadow Parts",
+  "link": "https://drafts.csswg.org/css-shadow-parts/",
+  "serie": "css-shadow-parts"
+ },
+ "css-nav": {
+  "title": "CSS Spatial Navigation",
+  "link": "https://drafts.csswg.org/css-nav-1/",
+  "serie": "css-nav"
+ },
+ "css-overscroll": {
+  "title": "CSS Overscroll Behavior",
+  "link": "https://drafts.csswg.org/css-overscroll-1/",
+  "serie": "css-overscroll"
+ },
+ "css-scroll-anchoring": {
+  "title": "CSS Scroll Anchoring",
+  "link": "https://drafts.csswg.org/css-scroll-anchoring/",
+  "serie": "css-scroll-anchoring"
+ },
+ "datetime": {
+  "title": "Date and Time Formats",
+  "serie": "datetime"
+ },
+ "dcd": {
+  "title": "Document Content Description for XML (DCD)",
+  "serie": "dcd"
+ },
+ "drawml": {
+  "title": "DrawML Specification",
+  "serie": "drawml"
+ },
+ "dsig-label": {
+  "title": "PICS Signed Labels (DSig) 1.0 Specification",
+  "serie": "dsig-label"
+ },
+ "ddml": {
+  "title": "Document Definition Markup Language (DDML) Specification,",
+  "serie": "ddml"
+ },
+ "ec-related-activities": {
+  "title": "W3C and Electronic Commerce",
+  "serie": "ec-related-activities"
+ },
+ "dt4dtd": {
+  "title": "Datatypes for DTDs (DT4DTD)",
+  "serie": "dt4dtd"
+ },
+ "dom-content-models-and-load-save": {
+  "title": "Document Object Model (DOM) Level 3 Load and Save Specification",
+  "serie": "dom-content-models-and-load-save"
+ },
+ "dom-level--views": {
+  "title": "Document Object Model (DOM) Level 3 Views and Formatting Specification",
+  "serie": "dom-level--views"
+ },
+ "cx": {
+  "title": "Component Extension (CX) API requirements",
+  "serie": "cx"
+ },
+ "cuap": {
+  "title": "Common User Agent Problems",
+  "serie": "cuap"
+ },
+ "data-extraction": {
+  "title": "DEL - Data Extraction Language",
+  "serie": "data-extraction"
+ },
+ "edge-arch": {
+  "title": "Edge Architecture Specification",
+  "serie": "edge-arch"
+ },
+ "esi-invp": {
+  "title": "ESI Invalidation Protocol",
+  "serie": "esi-invp"
+ },
+ "esi-lang": {
+  "title": "ESI Language Specification",
+  "serie": "esi-lang"
+ },
+ "dom-level--xpath": {
+  "title": "Document Object Model (DOM) Level 3 XPath Specification",
+  "serie": "dom-level--xpath"
+ },
+ "di-princ": {
+  "title": "Device Independence Principles",
+  "serie": "di-princ"
+ },
+ "dom-level--as": {
+  "title": "Document Object Model (DOM) Level 3 Abstract Schemas Specification",
+  "serie": "dom-level--as"
+ },
+ "egix": {
+  "title": "Embedding Glyph Identifiers in XML Documents",
+  "serie": "egix"
+ },
+ "dom-val": {
+  "title": "Document Object Model (DOM) Level 3 Validation Specification",
+  "serie": "dom-val"
+ },
+ "di-dco": {
+  "title": "Delivery Context Overview for Device Independence",
+  "serie": "di-dco"
+ },
+ "emmareqs": {
+  "title": "Requirements for EMMA",
+  "serie": "emmareqs"
+ },
+ "di-atdi": {
+  "title": "Authoring Techniques for Device Independence",
+  "serie": "di-atdi"
+ },
+ "di-gloss": {
+  "title": "Glossary of Terms for Device Independence",
+  "serie": "di-gloss"
+ },
+ "emma": {
+  "title": "EMMA: Extensible MultiModal Annotation markup language",
+  "serie": "emma"
+ },
+ "dpf": {
+  "title": "Delivery Context: Client Interfaces (DCCI)",
+  "serie": "dpf"
+ },
+ "earl-requirements": {
+  "title": "Requirements for the Evaluation and Report Language (EARL)",
+  "serie": "earl-requirements"
+ },
+ "earl-schema": {
+  "title": "Evaluation and Report Language (EARL) 1.0 Schema",
+  "serie": "earl-schema"
+ },
+ "dd-ecosystem": {
+  "title": "Device Description Ecosystem",
+  "serie": "dd-ecosystem"
+ },
+ "dsig-usage": {
+  "title": "Using XML Digital Signatures in the 2006 XML Environment",
+  "serie": "dsig-usage"
+ },
+ "ddr-requirements": {
+  "title": "Device Description Repository Requirements",
+  "serie": "ddr-requirements"
+ },
+ "dd-landscape": {
+  "title": "Device Description Landscape",
+  "serie": "dd-landscape"
+ },
+ "dial": {
+  "title": "Device Independent Authoring Language (DIAL)",
+  "serie": "dial"
+ },
+ "dial-primer": {
+  "title": "DIAL Part 0: Primer",
+  "serie": "dial-primer"
+ },
+ "exi-measurements": {
+  "title": "Efficient XML Interchange Measurements Note",
+  "serie": "exi-measurements"
+ },
+ "dfaui": {
+  "title": "Declarative Formats for Applications and User Interfaces",
+  "serie": "dfaui"
+ },
+ "curie": {
+  "title": "CURIE Syntax",
+  "serie": "curie"
+ },
+ "dcontology": {
+  "title": "Delivery Context Ontology",
+  "serie": "dcontology"
+ },
+ "ddr-core-vocabulary": {
+  "title": "Device Description Repository Core Vocabulary",
+  "serie": "ddr-core-vocabulary"
+ },
+ "exi": {
+  "title": "Efficient XML Interchange (EXI) Format 1.0 (Second Edition)",
+  "serie": "exi"
+ },
+ "exi-best-practices": {
+  "title": "Efficient XML Interchange (EXI) Best Practices",
+  "serie": "exi-best-practices"
+ },
+ "exi-primer": {
+  "title": "Efficient XML Interchange (EXI) Primer",
+  "serie": "exi-primer"
+ },
+ "ddr-simple-api": {
+  "title": "Device Description Repository Simple API",
+  "serie": "ddr-simple-api"
+ },
+ "dd-structures": {
+  "title": "Device Description Structures",
+  "serie": "dd-structures"
+ },
+ "exi-evaluation": {
+  "title": "Efficient XML Interchange Evaluation",
+  "serie": "exi-evaluation"
+ },
+ "exi-impacts": {
+  "title": "Efficient XML Interchange (EXI) Impacts",
+  "serie": "exi-impacts"
+ },
+ "dap-api-reqs": {
+  "title": "Device APIs Requirements",
+  "serie": "dap-api-reqs"
+ },
+ "di-testing": {
+  "title": "Guidelines for writing device independent tests",
+  "serie": "di-testing"
+ },
+ "egov-improving": {
+  "title": "Improving Access to Government through Better Use of the Web",
+  "serie": "egov-improving"
+ },
+ "emma-usecases": {
+  "title": "Use Cases for Possible Future EMMA Features",
+  "serie": "emma-usecases"
+ },
+ "datacache": {
+  "title": "Programmable HTTP Caching and Serving",
+  "serie": "datacache"
+ },
+ "earl-guide": {
+  "title": "Developer Guide for Evaluation and Report Language (EARL)",
+  "serie": "earl-guide"
+ },
+ "emotionml": {
+  "title": "Emotion Markup Language (EmotionML)",
+  "serie": "emotionml"
+ },
+ "eventsource": {
+  "title": "Server-Sent Events",
+  "link": "https://html.spec.whatwg.org/multipage/server-sent-events.html",
+  "serie": "eventsource"
+ },
+ "dap-policy-reqs": {
+  "title": "Device API Access Control Use Cases and Requirements",
+  "serie": "dap-policy-reqs"
+ },
+ "dap-privacy-reqs": {
+  "title": "Device API Privacy Requirements",
+  "serie": "dap-privacy-reqs"
+ },
+ "emotion-voc": {
+  "title": "Vocabularies for EmotionML",
+  "serie": "emotion-voc"
+ },
+ "exi-profile": {
+  "title": "Efficient XML Interchange (EXI) Profile for limiting usage of dynamic memory",
+  "serie": "exi-profile"
+ },
+ "dom-parsing": {
+  "title": "DOM Parsing and Serialization",
+  "link": "https://w3c.github.io/DOM-Parsing/",
+  "serie": "dom-parsing"
+ },
+ "discovery-api": {
+  "title": "Network Service Discovery",
+  "link": "https://dvcs.w3.org/hg/dap/raw-file/tip/discovery-api/Overview.html",
+  "serie": "discovery-api"
+ },
+ "custom-elements": {
+  "title": "Custom Elements",
+  "link": "https://w3c.github.io/webcomponents/spec/custom/",
+  "serie": "custom-elements"
+ },
+ "encrypted-media": {
+  "title": "Encrypted Media Extensions",
+  "link": "https://w3c.github.io/encrypted-media/",
+  "serie": "encrypted-media"
+ },
+ "exi-c14n": {
+  "title": "Canonical EXI",
+  "serie": "exi-c14n"
+ },
+ "dpub-latinreq": {
+  "title": "Requirements for Latin Text Layout and Pagination",
+  "link": "https://w3c.github.io/dpub-pagination/",
+  "serie": "dpub-latinreq"
+ },
+ "dwbp-ucr": {
+  "title": "Data on the Web Best Practices Use Cases & Requirements",
+  "link": "https://w3c.github.io/dwbp/usecasesv1.html",
+  "serie": "dwbp-ucr"
+ },
+ "dpub-metadata": {
+  "title": "DPUB IG Metadata Task Force Report",
+  "link": "https://w3c.github.io/dpub-metadata/",
+  "serie": "dpub-metadata"
+ },
+ "epr": {
+  "title": "Entry Point Regulation",
+  "link": "https://w3c.github.io/webappsec-epr/",
+  "serie": "epr"
+ },
+ "scxml-dom-iop": {
+  "title": "DOM Event I/O Processor for SCXML",
+  "serie": "scxml-dom-iop"
+ },
+ "dpub-aam": {
+  "title": "Digital Publishing Accessibility API Mappings",
+  "link": "https://w3c.github.io/dpub-aam/",
+  "serie": "dpub-aam"
+ },
+ "exi-for-json": {
+  "title": "EXI for JSON (EXI4JSON)",
+  "serie": "exi-for-json"
+ },
+ "dpub-accessibility": {
+  "title": "Digital Publishing and Accessibility in W3C Documents",
+  "link": "https://w3c.github.io/dpub-accessibility/",
+  "serie": "dpub-accessibility"
+ },
+ "eme-initdata-registry": {
+  "title": "Encrypted Media Extensions Initialization Data Format Registry",
+  "link": "https://w3c.github.io/encrypted-media/format-registry/initdata/",
+  "serie": "eme-initdata-registry"
+ },
+ "eme-initdata-keyids": {
+  "title": "\"keyids\" Initialization Data Format",
+  "link": "https://w3c.github.io/encrypted-media/format-registry/initdata/keyids.html",
+  "serie": "eme-initdata-keyids"
+ },
+ "eme-initdata-webm": {
+  "title": "\"webm\" Initialization Data Format",
+  "link": "https://w3c.github.io/encrypted-media/format-registry/initdata/webm.html",
+  "serie": "eme-initdata-webm"
+ },
+ "eme-initdata-cenc": {
+  "title": "\"cenc\" Initialization Data Format",
+  "link": "https://w3c.github.io/encrypted-media/format-registry/initdata/cenc.html",
+  "serie": "eme-initdata-cenc"
+ },
+ "eme-stream-registry": {
+  "title": "Encrypted Media Extensions Stream Format Registry",
+  "link": "https://w3c.github.io/encrypted-media/format-registry/stream/",
+  "serie": "eme-stream-registry"
+ },
+ "eme-stream-webm": {
+  "title": "WebM Stream Format",
+  "link": "https://w3c.github.io/encrypted-media/format-registry/stream/webm.html",
+  "serie": "eme-stream-webm"
+ },
+ "elreq": {
+  "title": "Ethiopic Layout Requirements",
+  "link": "https://w3c.github.io/elreq/",
+  "serie": "elreq"
+ },
+ "eo-qb": {
+  "title": "Publishing and Using Earth Observation Data with the RDF Data Cube and the Discrete Global Grid System",
+  "link": "https://w3c.github.io/sdw/eo-qb/",
+  "serie": "eo-qb"
+ },
+ "dcat-ucr": {
+  "title": "Dataset Exchange Use Cases and Requirements",
+  "link": "https://w3c.github.io/dxwg/ucr/",
+  "serie": "dcat-ucr"
+ },
+ "device-memory": {
+  "title": "Device Memory",
+  "link": "https://w3c.github.io/device-memory/",
+  "serie": "device-memory"
+ },
+ "dx-prof": {
+  "title": "The Profiles Ontology",
+  "link": "https://w3c.github.io/dxwg/prof/",
+  "serie": "dx-prof"
+ },
+ "dx-prof-conneg": {
+  "title": "Content Negotiation by Profile",
+  "link": "https://w3c.github.io/dxwg/connegp/",
+  "serie": "dx-prof-conneg"
+ },
+ "permissions-policy": {
+  "title": "Permissions Policy",
+  "link": "https://w3c.github.io/webappsec-permissions-policy/",
+  "serie": "permissions-policy"
+ },
+ "fetch-metadata": {
+  "title": "Fetch Metadata Request Headers",
+  "link": "https://w3c.github.io/webappsec-fetch-metadata/",
+  "serie": "fetch-metadata"
+ },
+ "did-use-cases": {
+  "title": "Use Cases and Requirements for Decentralized Identifiers",
+  "link": "https://w3c.github.io/did-use-cases/",
+  "serie": "did-use-cases"
+ },
+ "hgml": {
+  "title": "Hyper Graphics Markup Language (HGML)",
+  "serie": "hgml"
+ },
+ "htmlcomponents": {
+  "title": "HTML Components",
+  "serie": "htmlcomponents"
+ },
+ "htmlplustime": {
+  "title": "Timed Interactive Multimedia Extensions for HTML (HTML+TIME)",
+  "serie": "htmlplustime"
+ },
+ "http-ng-testbed": {
+  "title": "Design of HTTP-ng Testbed",
+  "serie": "http-ng-testbed"
+ },
+ "html-lan": {
+  "title": "Primary Language in HTML",
+  "serie": "html-lan"
+ },
+ "ice": {
+  "title": "The Information and Content Exchange (ICE) Protocol",
+  "serie": "ice"
+ },
+ "http-ng-architecture": {
+  "title": "HTTP-ng Architectural Model",
+  "serie": "http-ng-architecture"
+ },
+ "http-ng-goals": {
+  "title": "Short- and Long-Term Goals for the HTTP-NG Project",
+  "serie": "http-ng-goals"
+ },
+ "http-ng-interfaces": {
+  "title": "HTTP-ng Web Interfaces",
+  "serie": "http-ng-interfaces"
+ },
+ "http-ng-wire": {
+  "title": "HTTP-ng Binary Wire Protocol",
+  "serie": "http-ng-wire"
+ },
+ "html-mobile": {
+  "title": "HTML 4.0 Guidelines for Mobile Access",
+  "serie": "html-mobile"
+ },
+ "implementing-atag": {
+  "title": "",
+  "serie": "implementing-atag"
+ },
+ "speech-grammar": {
+  "title": "Speech Recognition Grammar Specification",
+  "serie": "speech-grammar"
+ },
+ "hlink": {
+  "title": "HLink",
+  "serie": "hlink"
+ },
+ "i18n-guide-framework": {
+  "title": "Framework Document for i18n Guidelines",
+  "serie": "i18n-guide-framework"
+ },
+ "grddl": {
+  "title": "Gleaning Resource Descriptions from Dialects of Languages (GRDDL)",
+  "serie": "grddl"
+ },
+ "i18n-html-tech-bidi": {
+  "title": "Authoring HTML: Handling Right-to-left Scripts",
+  "link": "https://www.w3.org/International/docs/bp-html-bidi/",
+  "serie": "i18n-html-tech-bidi"
+ },
+ "i18n-html-tech-char": {
+  "title": "Authoring Techniques for XHTML & HTML Internationalization: Characters and Encodings",
+  "serie": "i18n-html-tech-char"
+ },
+ "i18n-html-tech-lang": {
+  "title": "Authoring HTML: Language declarations",
+  "link": "https://www.w3.org/International/docs/bp-html-lang/",
+  "serie": "i18n-html-tech-lang"
+ },
+ "grddl-primer": {
+  "title": "GRDDL Primer",
+  "serie": "grddl-primer"
+ },
+ "grddl-scenarios": {
+  "title": "GRDDL Use Cases: Scenarios of extracting RDF data from XML documents",
+  "serie": "grddl-scenarios"
+ },
+ "grddl-tests": {
+  "title": "GRDDL Test Cases",
+  "serie": "grddl-tests"
+ },
+ "html-design-principles": {
+  "title": "HTML Design Principles",
+  "serie": "html-design-principles"
+ },
+ "hcls-kb": {
+  "title": "A Prototype Knowledge Base for the Life Sciences",
+  "serie": "hcls-kb"
+ },
+ "hcls-senselab": {
+  "title": "Experiences with the conversion of SenseLab databases to RDF/OWL",
+  "serie": "hcls-senselab"
+ },
+ "html-pubnotes": {
+  "title": "HTML 5 Publication Notes",
+  "serie": "html-pubnotes"
+ },
+ "html-diff": {
+  "title": "HTML5 Differences from HTML4",
+  "serie": "html-diff"
+ },
+ "hcls-sioc": {
+  "title": "SIOC, SIOC Types and Health Care and Life Sciences",
+  "serie": "hcls-sioc"
+ },
+ "hcls-swan": {
+  "title": "Semantic Web Applications in Neuromedicine (SWAN) Ontology",
+  "serie": "hcls-swan"
+ },
+ "hcls-swansioc": {
+  "title": "SWAN/SIOC: Alignment Between the SWAN and SIOC Ontologies",
+  "serie": "hcls-swansioc"
+ },
+ "http-in-rdf": {
+  "title": "HTTP Vocabulary in RDF",
+  "serie": "http-in-rdf"
+ },
+ "gov-data": {
+  "title": "Publishing Open Government Data",
+  "serie": "gov-data"
+ },
+ "hash-in-uri": {
+  "title": "Usage Patterns For Client-Side URI parameters",
+  "serie": "hash-in-uri"
+ },
+ "file-system-api": {
+  "title": "File API: Directories and System",
+  "link": "https://dev.w3.org/2009/dap/file-system/file-dir-sys.html",
+  "serie": "file-system-api"
+ },
+ "file-writer-api": {
+  "title": "File API: Writer",
+  "link": "https://dev.w3.org/2009/dap/file-system/file-writer.html",
+  "serie": "file-writer-api"
+ },
+ "html-alt-techniques": {
+  "title": "HTML5: Techniques for providing useful text alternatives",
+  "serie": "html-alt-techniques"
+ },
+ "html-bidi": {
+  "title": "Additional Requirements for Bidi in HTML & CSS",
+  "serie": "html-bidi"
+ },
+ "html-markup": {
+  "title": "HTML: The Markup Language (an HTML language reference)",
+  "serie": "html-markup"
+ },
+ "html-polyglot": {
+  "title": "Polyglot Markup: A robust profile of the HTML5 vocabulary",
+  "link": "https://dev.w3.org/html5/html-polyglot/html-polyglot.html",
+  "serie": "html-polyglot"
+ },
+ "hcls-orb": {
+  "title": "Ontology of Rhetorical Blocks (ORB)",
+  "serie": "hcls-orb"
+ },
+ "hnreq": {
+  "title": "Requirements for Home Networking Scenarios",
+  "serie": "hnreq"
+ },
+ "from-origin": {
+  "title": "The From-Origin Header",
+  "serie": "from-origin"
+ },
+ "html-aapi": {
+  "title": "HTML to Platform Accessibility APIs Implementation Guide",
+  "serie": "html-aapi"
+ },
+ "html-author": {
+  "title": "HTML5: Edition for Web Authors",
+  "serie": "html-author"
+ },
+ "html-data-guide": {
+  "title": "HTML Data Guide",
+  "serie": "html-data-guide"
+ },
+ "html-xml-tf-report": {
+  "title": "HTML/XML Task Force Report",
+  "serie": "html-xml-tf-report"
+ },
+ "fragid-best-practices": {
+  "title": "Best Practices for Fragment Identifiers and Media Type Definitions",
+  "serie": "fragid-best-practices"
+ },
+ "fullscreen": {
+  "title": "Fullscreen",
+  "serie": "fullscreen"
+ },
+ "gallery": {
+  "title": "Pick Media Intent",
+  "serie": "gallery"
+ },
+ "html-main-element": {
+  "title": "main element - an HTML5 extension specification",
+  "serie": "html-main-element"
+ },
+ "ime-api": {
+  "title": "Input Method Editor API",
+  "link": "https://w3c.github.io/ime-api/",
+  "serie": "ime-api"
+ },
+ "html-imports": {
+  "title": "HTML Imports",
+  "link": "https://w3c.github.io/webcomponents/spec/imports/",
+  "serie": "html-imports"
+ },
+ "html-longdesc": {
+  "title": "HTML5 Image Description Extension (longdesc)",
+  "serie": "html-longdesc"
+ },
+ "html-picture-element": {
+  "title": "The picture Element",
+  "serie": "html-picture-element"
+ },
+ "html-srcset": {
+  "title": "The srcset attribute",
+  "serie": "html-srcset"
+ },
+ "html-templates": {
+  "title": "HTML Templates",
+  "link": "https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/templates/index.html",
+  "serie": "html-templates"
+ },
+ "html-ruby-extensions": {
+  "title": "W3C HTML Ruby Markup Extensions",
+  "link": "https://darobin.github.com/html-ruby/",
+  "serie": "html-ruby-extensions"
+ },
+ "geometry": {
+  "title": "Geometry Interfaces",
+  "link": "https://drafts.fxtf.org/geometry/",
+  "serie": "geometry"
+ },
+ "html-json-forms": {
+  "title": "W3C HTML JSON form submission",
+  "serie": "html-json-forms"
+ },
+ "form-http-extensions": {
+  "title": "W3C HTML Form HTTP Extensions",
+  "serie": "form-http-extensions"
+ },
+ "ilreq": {
+  "title": "Indic Layout Requirements",
+  "link": "https://w3c.github.io/ilreq/",
+  "serie": "ilreq"
+ },
+ "frame-timing": {
+  "title": "Frame Timing",
+  "link": "https://wicg.github.io/frame-timing/",
+  "serie": "frame-timing"
+ },
+ "html-aria": {
+  "title": "ARIA in HTML",
+  "link": "https://w3c.github.io/html-aria/",
+  "serie": "html-aria"
+ },
+ "hcls-dataset": {
+  "title": "Dataset Descriptions: HCLS Community Profile",
+  "serie": "hcls-dataset"
+ },
+ "geofencing": {
+  "title": "Geofencing API",
+  "link": "https://w3c.github.io/geofencing-api/",
+  "serie": "geofencing"
+ },
+ "html-transcript-src": {
+  "title": "A transcript extension for HTML",
+  "link": "https://w3c.github.io/html-transcript/html-transcript-src.html",
+  "serie": "html-transcript-src"
+ },
+ "fingerprinting-guidance": {
+  "title": "Fingerprinting Guidance for Web Specification Authors (Draft)",
+  "serie": "fingerprinting-guidance"
+ },
+ "graphics-aria": {
+  "title": "WAI-ARIA Graphics",
+  "link": "https://w3c.github.io/graphics-aria/",
+  "serie": "graphics-aria"
+ },
+ "graphics-aam": {
+  "title": "Graphics Accessibility API Mappings",
+  "link": "https://w3c.github.io/graphics-aam/",
+  "serie": "graphics-aam"
+ },
+ "fill-stroke": {
+  "title": "CSS Fill and Stroke",
+  "link": "https://drafts.fxtf.org/fill-stroke/",
+  "serie": "fill-stroke"
+ },
+ "imsc-reqs": {
+  "title": "IMSC1.1 Requirements",
+  "link": "https://w3c.github.io/imsc-vnext-reqs/",
+  "serie": "imsc-reqs"
+ },
+ "image-resource": {
+  "title": "Image Resource",
+  "link": "https://w3c.github.io/image-resource/",
+  "serie": "image-resource"
+ },
+ "md-policy-design": {
+  "title": "Eskimo Snow and Scottish Rain: Legal Considerations of Schema Design",
+  "serie": "md-policy-design"
+ },
+ "micropayment-markup": {
+  "title": "Common Markup for micropayment per-fee-links",
+  "serie": "micropayment-markup"
+ },
+ "japanese-xml": {
+  "title": "XML Japanese Profile",
+  "serie": "japanese-xml"
+ },
+ "jsgf": {
+  "title": "JSpeech Grammar Format",
+  "serie": "jsgf"
+ },
+ "jsml": {
+  "title": "JSpeech Markup Language",
+  "serie": "jsml"
+ },
+ "lexicon-reqs": {
+  "title": "Pronunciation Lexicon Specification (PLS) Version 1.0 Requirements",
+  "serie": "lexicon-reqs"
+ },
+ "mmi-framework": {
+  "title": "W3C Multimodal Interaction Framework",
+  "serie": "mmi-framework"
+ },
+ "mmi-use-cases": {
+  "title": "Multimodal Interaction Use Cases",
+  "serie": "mmi-use-cases"
+ },
+ "inkreqs": {
+  "title": "Requirements for the Ink Markup Language",
+  "serie": "inkreqs"
+ },
+ "lbase": {
+  "title": "LBase: Semantics for Languages of the Semantic Web",
+  "serie": "lbase"
+ },
+ "mathml-bvar": {
+  "title": "Bound Variables in MathML",
+  "serie": "mathml-bvar"
+ },
+ "mathml-types": {
+  "title": "Structured Types in MathML",
+  "serie": "mathml-types"
+ },
+ "mathml-units": {
+  "title": "Units in MathML",
+  "serie": "mathml-units"
+ },
+ "mmi-reqs": {
+  "title": "Multimodal Interaction Requirements",
+  "serie": "mmi-reqs"
+ },
+ "inkml": {
+  "title": "Ink Markup Language (InkML)",
+  "serie": "inkml"
+ },
+ "modality-interface": {
+  "title": "Modality Component to Host Environment DOM Requirements and Capabilities Assessment",
+  "serie": "modality-interface"
+ },
+ "mobile-bp-scope": {
+  "title": "Scope of Mobile Web Best Practices",
+  "serie": "mobile-bp-scope"
+ },
+ "its": {
+  "title": "Internationalization Tag Set (ITS)",
+  "serie": "its"
+ },
+ "itsreq": {
+  "title": "",
+  "serie": "itsreq"
+ },
+ "mmi-arch": {
+  "title": "Multimodal Architecture and Interfaces",
+  "serie": "mmi-arch"
+ },
+ "mobile-bp": {
+  "title": "Mobile Web Best Practices",
+  "serie": "mobile-bp"
+ },
+ "mmi-dev-feedback": {
+  "title": "Multimodal Application Developer Feedback",
+  "serie": "mmi-dev-feedback"
+ },
+ "mmi-suggestions": {
+  "title": "Common Sense Suggestions for Developing Multimodal User Interfaces",
+  "serie": "mmi-suggestions"
+ },
+ "mediaaccessevents": {
+  "title": "Media Access Events",
+  "serie": "mediaaccessevents"
+ },
+ "ltli": {
+  "title": "Language Tags and Locale Identifiers for the World Wide Web",
+  "link": "https://w3c.github.io/ltli/",
+  "serie": "ltli"
+ },
+ "mobileok": {
+  "title": "W3C mobileOK Scheme",
+  "serie": "mobileok"
+ },
+ "mobileok-basic-tests": {
+  "title": "W3C mobileOK Basic Tests",
+  "serie": "mobileok-basic-tests"
+ },
+ "mathml-for-css": {
+  "title": "A MathML for CSS Profile",
+  "serie": "mathml-for-css"
+ },
+ "leiri": {
+  "title": "Legacy extended IRIs for XML resource identification",
+  "serie": "leiri"
+ },
+ "mmi-auth": {
+  "title": "Authoring Applications for the Multimodal Architecture",
+  "serie": "mmi-auth"
+ },
+ "jlreq": {
+  "title": "Requirements for Japanese Text Layout",
+  "link": "https://w3c.github.io/jlreq/",
+  "serie": "jlreq"
+ },
+ "media-annot-reqs": {
+  "title": "Use Cases and Requirements for Ontology and API for Media Resource",
+  "serie": "media-annot-reqs"
+ },
+ "media-frags": {
+  "title": "Media Fragments URI 1.0 (basic)",
+  "serie": "media-frags"
+ },
+ "media-frags-reqs": {
+  "title": "Use cases and requirements for Media Fragments",
+  "serie": "media-frags-reqs"
+ },
+ "mediaont": {
+  "title": "Ontology for Media Resources",
+  "serie": "mediaont"
+ },
+ "mediaont-api": {
+  "title": "Metadata API for Media Resources",
+  "serie": "mediaont-api"
+ },
+ "media-capture-api": {
+  "title": "The Media Capture API",
+  "serie": "media-capture-api"
+ },
+ "messaging-api": {
+  "title": "The Messaging API",
+  "serie": "messaging-api"
+ },
+ "mmi-mcbp": {
+  "title": "Best practices for creating MMI Modality Components",
+  "serie": "mmi-mcbp"
+ },
+ "media-frags-recipes": {
+  "title": "Protocol for Media Fragments 1.0 Resolution in HTTP",
+  "serie": "media-frags-recipes"
+ },
+ "microdata-rdf": {
+  "title": "Microdata to RDF – Second Edition",
+  "link": "https://w3c.github.io/microdata-rdf/",
+  "serie": "microdata-rdf"
+ },
+ "mmi-discovery": {
+  "title": "Registration & Discovery of Multimodal Modality Components in Multimodal Systems: Use Cases and Requirements",
+  "serie": "mmi-discovery"
+ },
+ "mmi-interop": {
+  "title": "MMI interoperability test report",
+  "serie": "mmi-interop"
+ },
+ "json-ld-api": {
+  "title": "JSON-LD",
+  "serie": "json-ld-api"
+ },
+ "ldp": {
+  "title": "Linked Data Platform",
+  "link": "https://www.w3.org/2012/ldp/hg/ldp.html",
+  "serie": "ldp"
+ },
+ "media-accessibility-reqs": {
+  "title": "Media Accessibility User Requirements",
+  "link": "https://w3c.github.io/pfwg/media-accessibility-reqs/",
+  "serie": "media-accessibility-reqs"
+ },
+ "indie-ui-events": {
+  "title": "IndieUI: Events",
+  "link": "https://w3c.github.io/indie-ui/indie-ui-events.html",
+  "serie": "indie-ui-events"
+ },
+ "klreq": {
+  "title": "Requirements for Hangul Text Layout and Typography 한국어 텍스트 레이아웃 및 타이포그래피를 위한 요구사항",
+  "link": "https://w3c.github.io/klreq/",
+  "serie": "klreq"
+ },
+ "ldp-ucr": {
+  "title": "Linked Data Platform Use Cases and Requirements",
+  "link": "https://www.w3.org/2012/ldp/hg/ldp-ucr.html",
+  "serie": "ldp-ucr"
+ },
+ "media-source": {
+  "title": "Media Source Extensions™",
+  "link": "https://w3c.github.io/media-source/",
+  "serie": "media-source"
+ },
+ "messaging": {
+  "title": "Messaging API",
+  "link": "https://www.w3.org/2012/sysapps/messaging/",
+  "serie": "messaging"
+ },
+ "mlw-metadata-us-impl": {
+  "title": "Metadata for the Multilingual Web - Usage Scenarios and Implementations",
+  "link": "https://w3c.github.io/mlw-metadata-us-impl/",
+  "serie": "mlw-metadata-us-impl"
+ },
+ "ld-glossary": {
+  "title": "Linked Data Glossary",
+  "serie": "ld-glossary"
+ },
+ "matrix": {
+  "title": "DOMMatrix interface",
+  "link": "https://drafts.fxtf.org/matrix/",
+  "serie": "matrix"
+ },
+ "mbui-intro": {
+  "title": "Introduction to Model-Based User Interfaces",
+  "link": "https://www.w3.org/2011/mbui/drafts/mbui-intro/",
+  "serie": "mbui-intro"
+ },
+ "mbui-glossary": {
+  "title": "MBUI - Glossary",
+  "serie": "mbui-glossary"
+ },
+ "ld-bp": {
+  "title": "Best Practices for Publishing Linked Data",
+  "serie": "ld-bp"
+ },
+ "indie-ui-requirements": {
+  "title": "Requirements for IndieUI: Events 1.0 and IndieUI: User Context",
+  "link": "https://dvcs.w3.org/hg/IndieUI/raw-file/default/src/indie-ui-requirements.html",
+  "serie": "indie-ui-requirements"
+ },
+ "indie-ui-context": {
+  "title": "IndieUI: User Context",
+  "link": "https://w3c.github.io/indie-ui/indie-ui-context.html",
+  "serie": "indie-ui-context"
+ },
+ "ldp-primer": {
+  "title": "Linked Data Platform 1.0 Primer",
+  "link": "https://www.w3.org/2012/ldp/hg/ldp-primer/ldp-primer.html",
+  "serie": "ldp-primer"
+ },
+ "mixed-content": {
+  "title": "Mixed Content",
+  "link": "https://w3c.github.io/webappsec-mixed-content/",
+  "serie": "mixed-content"
+ },
+ "ldp-bp": {
+  "title": "Linked Data Platform Best Practices and Guidelines",
+  "link": "https://dvcs.w3.org/hg/ldpwg/raw-file/default/ldp-bp/ldp-bp.html",
+  "serie": "ldp-bp"
+ },
+ "ldp-paging": {
+  "title": "Linked Data Platform Paging",
+  "link": "https://www.w3.org/2012/ldp/hg/ldp-paging.html",
+  "serie": "ldp-paging"
+ },
+ "ldp-acr": {
+  "title": "LDP Access Control",
+  "link": "https://dvcs.w3.org/hg/ldpwg/raw-file/default/ldp-acr.html",
+  "serie": "ldp-acr"
+ },
+ "ldpatch": {
+  "title": "Linked Data Patch Format",
+  "link": "https://dvcs.w3.org/hg/ldpwg/raw-file/ldpatch/ldpatch.html",
+  "serie": "ldpatch"
+ },
+ "mediacapture-depth": {
+  "title": "Media Capture Depth Stream Extensions",
+  "link": "https://w3c.github.io/mediacapture-depth/",
+  "serie": "mediacapture-depth"
+ },
+ "mobile-accessibility-mapping": {
+  "title": "Mobile Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Mobile",
+  "link": "https://w3c.github.io/Mobile-A11y-TF-Note/",
+  "serie": "mobile-accessibility-mapping"
+ },
+ "mmi-mc-discovery": {
+  "title": "Discovery & Registration of Multimodal Modality Components",
+  "serie": "mmi-mc-discovery"
+ },
+ "international-specs": {
+  "title": "Internationalization Best Practices for Spec Developers",
+  "link": "https://w3c.github.io/bp-i18n-specdev/",
+  "serie": "international-specs"
+ },
+ "magnetometer": {
+  "title": "Magnetometer",
+  "link": "https://w3c.github.io/magnetometer/",
+  "serie": "magnetometer"
+ },
+ "longtasks": {
+  "title": "Long Tasks API",
+  "link": "https://w3c.github.io/longtasks/",
+  "serie": "longtasks"
+ },
+ "indieauth": {
+  "title": "IndieAuth",
+  "link": "https://indieauth.spec.indieweb.org/",
+  "serie": "indieauth"
+ },
+ "json-ld-framing": {
+  "title": "JSON-LD 1.1 Framing",
+  "link": "https://w3c.github.io/json-ld-framing/",
+  "serie": "json-ld-framing"
+ },
+ "mini-app-white-paper": {
+  "title": "MiniApp Standardization White Paper",
+  "link": "https://w3c.github.io/mini-app-white-paper/",
+  "serie": "mini-app-white-paper"
+ },
+ "lpf": {
+  "title": "Lightweight Packaging Format (LPF)",
+  "link": "https://w3c.github.io/lpf/",
+  "serie": "lpf"
+ },
+ "media-capabilities": {
+  "title": "Media Capabilities",
+  "link": "https://w3c.github.io/media-capabilities/",
+  "serie": "media-capabilities"
+ },
+ "json-ld-streaming": {
+  "title": "Streaming JSON-LD",
+  "link": "https://w3c.github.io/json-ld-streaming/",
+  "serie": "json-ld-streaming"
+ },
+ "p3p-cacm": {
+  "title": "The Platform for Privacy Preferences",
+  "serie": "p3p-cacm"
+ },
+ "p3p-protocols": {
+  "title": "P3P Protocol and Data Transport Working Group Draft White Paper",
+  "serie": "p3p-protocols"
+ },
+ "p3p-principles": {
+  "title": "P3P Guiding Principles",
+  "serie": "p3p-principles"
+ },
+ "pgml": {
+  "title": "Precision Graphics Markup Language (PGML)",
+  "serie": "pgml"
+ },
+ "pics-statement": {
+  "title": "Statement on the Intent and Use of PICS: Using PICS Well",
+  "serie": "pics-statement"
+ },
+ "p3p": {
+  "title": "The Platform for Privacy Preferences",
+  "serie": "p3p"
+ },
+ "p3p-preferences": {
+  "title": "A P3P Preference Exchange Language 1.0 (APPEL1.0)",
+  "serie": "p3p-preferences"
+ },
+ "mux": {
+  "title": "SMUX Protocol Specification",
+  "serie": "mux"
+ },
+ "nvml": {
+  "title": "NaVigation Markup Language (NVML)",
+  "serie": "nvml"
+ },
+ "p3p-analysis": {
+  "title": "Analysis of P3P and US Patent 5,862,325",
+  "serie": "p3p-analysis"
+ },
+ "p3p-for-ecommerce": {
+  "title": "Using P3P for E-Commerce",
+  "serie": "p3p-for-ecommerce"
+ },
+ "pidl": {
+  "title": "Personalized Information Description Language (PIDL)",
+  "serie": "pidl"
+ },
+ "photo-rdf": {
+  "title": "Describing and retrieving photos using RDF and HTTP",
+  "serie": "photo-rdf"
+ },
+ "multimodal-reqs": {
+  "title": "Multimodal Requirements for Voice Markup Languages",
+  "serie": "multimodal-reqs"
+ },
+ "nl-spec": {
+  "title": "Natural Language Semantics Markup Language for the Speech Interface Framework",
+  "serie": "nl-spec"
+ },
+ "newline": {
+  "title": "The [NEL] Newline Character",
+  "serie": "newline"
+ },
+ "ngram-spec": {
+  "title": "Stochastic Language Models (N-Gram) Specification",
+  "serie": "ngram-spec"
+ },
+ "odrl": {
+  "title": "Open Digital Rights Language (ODRL)",
+  "serie": "odrl"
+ },
+ "p3p-rdfschema": {
+  "title": "An RDF Schema for P3P",
+  "serie": "p3p-rdfschema"
+ },
+ "p3pdeployment": {
+  "title": "The Platform for Privacy Preferences 1.0 Deployment Guide",
+  "serie": "p3pdeployment"
+ },
+ "patent-practice": {
+  "title": "Current Patent Practice",
+  "serie": "patent-practice"
+ },
+ "owl-features": {
+  "title": "OWL Web Ontology Language Overview",
+  "serie": "owl-features"
+ },
+ "owl-guide": {
+  "title": "OWL Web Ontology Language Guide",
+  "serie": "owl-guide"
+ },
+ "owl-ref": {
+  "title": "OWL Web Ontology Language Reference",
+  "serie": "owl-ref"
+ },
+ "owl-direct-semantics": {
+  "title": "OWL",
+  "serie": "owl-direct-semantics"
+ },
+ "owl-conformance": {
+  "title": "OWL",
+  "serie": "owl-conformance"
+ },
+ "owl-xmlsyntax": {
+  "title": "OWL Web Ontology Language XML Presentation Syntax",
+  "serie": "owl-xmlsyntax"
+ },
+ "png": {
+  "title": "Portable Network Graphics (PNG) Specification (Second Edition)",
+  "serie": "png"
+ },
+ "owl-parsing": {
+  "title": "OWL Web Ontology Language Parsing OWL in RDF/XML",
+  "serie": "owl-parsing"
+ },
+ "namespacestate": {
+  "title": "The Disposition of Names in an XML Namespace",
+  "serie": "namespacestate"
+ },
+ "offline-webapps": {
+  "title": "Offline Web Applications",
+  "serie": "offline-webapps"
+ },
+ "mwabp": {
+  "title": "Mobile Web Application Best Practices",
+  "serie": "mwabp"
+ },
+ "mwbp-wcag": {
+  "title": "Relationship between Mobile Web Best Practices (MWBP) and Web Content Accessibility Guidelines (WCAG)",
+  "serie": "mwbp-wcag"
+ },
+ "owl-manchester-syntax": {
+  "title": "OWL 2 Web Ontology Language Manchester Syntax (Second Edition)",
+  "serie": "owl-manchester-syntax"
+ },
+ "owl-mapping-to-rdf": {
+  "title": "OWL 2 Web Ontology Language Mapping to RDF Graphs (Second Edition)",
+  "serie": "owl-mapping-to-rdf"
+ },
+ "owl-new-features": {
+  "title": "OWL 2 Web Ontology Language New Features and Rationale (Second Edition)",
+  "serie": "owl-new-features"
+ },
+ "owl-primer": {
+  "title": "OWL 2 Web Ontology Language Primer (Second Edition)",
+  "serie": "owl-primer"
+ },
+ "owl-profiles": {
+  "title": "OWL 2 Web Ontology Language Profiles (Second Edition)",
+  "serie": "owl-profiles"
+ },
+ "owl-quick-reference": {
+  "title": "OWL 2 Web Ontology Language Quick Reference Guide (Second Edition)",
+  "serie": "owl-quick-reference"
+ },
+ "owl-rdf-based-semantics": {
+  "title": "OWL 2 Web Ontology Language RDF-Based Semantics (Second Edition)",
+  "serie": "owl-rdf-based-semantics"
+ },
+ "owl-syntax": {
+  "title": "OWL 2 Web Ontology Language Structural Specification and Functional-Style Syntax (Second Edition)",
+  "serie": "owl-syntax"
+ },
+ "owl-xml-serialization": {
+  "title": "OWL 2 Web Ontology Language XML Serialization (Second Edition)",
+  "serie": "owl-xml-serialization"
+ },
+ "mw4d-roadmap": {
+  "title": "Mobile Web for Social Development Roadmap",
+  "serie": "mw4d-roadmap"
+ },
+ "mwbp-guidelines": {
+  "title": "Extended Guidelines for Mobile Web Best Practices",
+  "serie": "mwbp-guidelines"
+ },
+ "owl-dr-linear": {
+  "title": "OWL 2 Web Ontology Language Data Range Extension: Linear Equations (Second Edition)",
+  "serie": "owl-dr-linear"
+ },
+ "owl-overview": {
+  "title": "OWL 2 Web Ontology Language Document Overview (Second Edition)",
+  "serie": "owl-overview"
+ },
+ "pics-labels": {
+  "title": "PICS 1.1 Label Distribution -- Label Syntax and Communication Protocols",
+  "serie": "pics-labels"
+ },
+ "pics-services": {
+  "title": "PICS 1.1 Rating Services and Rating Systems -- and Their Machine Readable Descriptions",
+  "serie": "pics-services"
+ },
+ "picsrules": {
+  "title": "PICSRules 1.1 Specification",
+  "serie": "picsrules"
+ },
+ "pointers-in-rdf": {
+  "title": "Pointer Methods in RDF",
+  "serie": "pointers-in-rdf"
+ },
+ "navigation-timing": {
+  "title": "Navigation Timing",
+  "serie": "navigation-timing"
+ },
+ "netinfo-api": {
+  "title": "The Network Information API",
+  "link": "https://dvcs.w3.org/hg/dap/raw-file/tip/network-api/Overview.html",
+  "serie": "netinfo-api"
+ },
+ "notifications": {
+  "title": "Web Notifications",
+  "serie": "notifications"
+ },
+ "page-visibility": {
+  "title": "Page Visibility",
+  "serie": "page-visibility"
+ },
+ "performance-timeline": {
+  "title": "Performance Timeline",
+  "serie": "performance-timeline"
+ },
+ "poi-core": {
+  "title": "Points of Interest Core",
+  "serie": "poi-core"
+ },
+ "pointerlock": {
+  "title": "Pointer Lock",
+  "link": "https://w3c.github.io/pointerlock/",
+  "serie": "pointerlock"
+ },
+ "n-quads": {
+  "title": "RDF 1.1 N-Quads",
+  "serie": "n-quads"
+ },
+ "n-triples": {
+  "title": "RDF 1.1 N-Triples",
+  "serie": "n-triples"
+ },
+ "nfc": {
+  "title": "Web NFC API",
+  "serie": "nfc"
+ },
+ "network-error-logging": {
+  "title": "Network Error Logging",
+  "link": "https://w3c.github.io/network-error-logging/",
+  "serie": "network-error-logging"
+ },
+ "netinfo-usecases": {
+  "title": "Review of apps that use network information",
+  "link": "https://w3c-webmob.github.io/netinfo-usecases/",
+  "serie": "netinfo-usecases"
+ },
+ "permissions": {
+  "title": "Permissions",
+  "link": "https://w3c.github.io/permissions/",
+  "serie": "permissions"
+ },
+ "motion": {
+  "title": "Motion Path",
+  "link": "https://drafts.fxtf.org/motion-1/",
+  "serie": "motion"
+ },
+ "odrl-model": {
+  "title": "ODRL Information Model",
+  "link": "https://w3c.github.io/poe/model/",
+  "serie": "odrl-model"
+ },
+ "odrl-vocab": {
+  "title": "ODRL Vocabulary & Expression",
+  "link": "https://w3c.github.io/poe/vocab/",
+  "serie": "odrl-vocab"
+ },
+ "poe-ucr": {
+  "title": "POE Use Cases and Requirements",
+  "link": "https://w3c.github.io/poe/ucr/",
+  "serie": "poe-ucr"
+ },
+ "mse-byte-stream-format-registry": {
+  "title": "Media Source Extensions Byte Stream Format Registry",
+  "link": "https://w3c.github.io/media-source/byte-stream-format-registry.html",
+  "serie": "mse-byte-stream-format-registry"
+ },
+ "mse-byte-stream-format-mp2t": {
+  "title": "MPEG-2 TS Byte Stream Format",
+  "link": "https://w3c.github.io/media-source/mp2t-byte-stream-format.html",
+  "serie": "mse-byte-stream-format-mp2t"
+ },
+ "mse-byte-stream-format-mpeg-audio": {
+  "title": "MPEG Audio Byte Stream Format",
+  "link": "https://w3c.github.io/media-source/mpeg-audio-byte-stream-format.html",
+  "serie": "mse-byte-stream-format-mpeg-audio"
+ },
+ "mse-byte-stream-format-isobmff": {
+  "title": "ISO BMFF Byte Stream Format",
+  "link": "https://w3c.github.io/media-source/isobmff-byte-stream-format.html",
+  "serie": "mse-byte-stream-format-isobmff"
+ },
+ "mse-byte-stream-format-webm": {
+  "title": "WebM Byte Stream Format",
+  "link": "https://w3c.github.io/media-source/webm-byte-stream-format.html",
+  "serie": "mse-byte-stream-format-webm"
+ },
+ "orientation-sensor": {
+  "title": "Orientation Sensor",
+  "link": "https://w3c.github.io/orientation-sensor/",
+  "serie": "orientation-sensor"
+ },
+ "motion-sensors": {
+  "title": "Motion Sensors Explainer",
+  "link": "https://w3c.github.io/motion-sensors/",
+  "serie": "motion-sensors"
+ },
+ "png-hdr-pq": {
+  "title": "Using the ITU BT.2100 PQ EOTF with the PNG Format",
+  "link": "https://w3c.github.io/png-hdr-pq/",
+  "serie": "png-hdr-pq"
+ },
+ "paint-timing": {
+  "title": "Paint Timing",
+  "link": "https://w3c.github.io/paint-timing/",
+  "serie": "paint-timing"
+ },
+ "payment-method-manifest": {
+  "title": "Payment Method Manifest",
+  "link": "https://w3c.github.io/payment-method-manifest/",
+  "serie": "payment-method-manifest"
+ },
+ "personalization-semantics-content": {
+  "title": "Personalization Semantics Content",
+  "link": "https://w3c.github.io/personalization-semantics/content/",
+  "serie": "personalization-semantics-content"
+ },
+ "personalization-semantics-help": {
+  "title": "Personalization Help and Support",
+  "link": "https://w3c.github.io/personalization-semantics/help/",
+  "serie": "personalization-semantics-help"
+ },
+ "personalization-semantics-tools": {
+  "title": "Personalization Tools",
+  "link": "https://w3c.github.io/personalization-semantics/tools/",
+  "serie": "personalization-semantics-tools"
+ },
+ "personalization-semantics-requirements": {
+  "title": "Requirements for Personalization Semantics",
+  "link": "https://w3c.github.io/personalization-semantics/requirements/",
+  "serie": "personalization-semantics-requirements"
+ },
+ "rdf-uml": {
+  "title": "A Discussion of the Relationship Between RDF-Schema and UML",
+  "serie": "rdf-uml"
+ },
+ "rdf-schema": {
+  "title": "RDF Schema",
+  "serie": "rdf-schema"
+ },
+ "rdf-syntax": {
+  "title": "RDF/XML Syntax Specification (Revised)",
+  "serie": "rdf-syntax"
+ },
+ "positioning": {
+  "title": "Positioning HTML Elements with Cascading Style Sheets",
+  "serie": "positioning"
+ },
+ "print": {
+  "title": "CSS Printing Extensions",
+  "serie": "print"
+ },
+ "rdf-pics": {
+  "title": "PICS Rating Vocabularies in XML/RDF",
+  "serie": "rdf-pics"
+ },
+ "reusable-dialog-reqs": {
+  "title": "Reusable Dialog Requirements for Voice Markup Language",
+  "serie": "reusable-dialog-reqs"
+ },
+ "rdf-mt": {
+  "title": "RDF",
+  "serie": "rdf-mt"
+ },
+ "rdf-syntax-grammar": {
+  "title": "RDF 1.1 XML Syntax",
+  "serie": "rdf-syntax-grammar"
+ },
+ "rdf-testcases": {
+  "title": "RDF",
+  "serie": "rdf-testcases"
+ },
+ "qaframe-ops-extech": {
+  "title": "QA Framework: Operational Examples & Techniques",
+  "serie": "qaframe-ops-extech"
+ },
+ "qaframe-spec": {
+  "title": "QA Framework: Specification Guidelines",
+  "serie": "qaframe-spec"
+ },
+ "qaframe-test": {
+  "title": "QA Framework: Test Guidelines",
+  "serie": "qaframe-test"
+ },
+ "rdf-concepts": {
+  "title": null,
+  "serie": "rdf-concepts"
+ },
+ "rdf-primer": {
+  "title": "RDF",
+  "serie": "rdf-primer"
+ },
+ "xquery-semantics": {
+  "title": "XQuery 1.0 and XPath 2.0 Formal Semantics (Second Edition)",
+  "serie": "xquery-semantics"
+ },
+ "proc-model-req": {
+  "title": "XML Processing Model Requirements",
+  "serie": "proc-model-req"
+ },
+ "qa-handbook": {
+  "title": "The QA Handbook",
+  "serie": "qa-handbook"
+ },
+ "rdf-dawg-uc": {
+  "title": "RDF Data Access Use Cases and Requirements",
+  "serie": "rdf-dawg-uc"
+ },
+ "rdf-sparql-xmlres": {
+  "title": "SPARQL Query Results XML Format (Second Edition)",
+  "serie": "rdf-sparql-xmlres"
+ },
+ "rdf-sparql-query": {
+  "title": "SPARQL Query Language for RDF",
+  "serie": "rdf-sparql-query"
+ },
+ "rdfcal": {
+  "title": "RDF Calendar - an application of the Resource Description Framework to iCalendar Data",
+  "serie": "rdfcal"
+ },
+ "pronunciation-lexicon": {
+  "title": "Pronunciation Lexicon Specification (PLS)",
+  "serie": "pronunciation-lexicon"
+ },
+ "rdf-sparql-protocol": {
+  "title": "SPARQL Protocol for RDF",
+  "serie": "rdf-sparql-protocol"
+ },
+ "rdftm-survey": {
+  "title": "A Survey of RDF/Topic Maps Interoperability Proposals",
+  "serie": "rdftm-survey"
+ },
+ "rdf-sparql-json-res": {
+  "title": "Serializing SPARQL Query Results in JSON",
+  "serie": "rdf-sparql-json-res"
+ },
+ "rex-reqs": {
+  "title": "Remote Events for XML (REX) Requirements",
+  "serie": "rex-reqs"
+ },
+ "rex": {
+  "title": "Remote Events for XML (REX)",
+  "serie": "rex"
+ },
+ "powder-use-cases": {
+  "title": "POWDER: Use Cases and Requirements",
+  "serie": "powder-use-cases"
+ },
+ "powder-grouping": {
+  "title": "Protocol for Web Description Resources (POWDER): Grouping of Resources",
+  "serie": "powder-grouping"
+ },
+ "powder-voc": {
+  "title": "Protocol for Web Description Resources (POWDER): Web Description Resources (WDR) Vocabulary",
+  "serie": "powder-voc"
+ },
+ "powder-xsd": {
+  "title": "Protocol for Web Description Resources (POWDER): Web Description Resources Datatypes (WDRD)",
+  "serie": "powder-xsd"
+ },
+ "progress-events": {
+  "title": "Progress Events",
+  "link": "https://xhr.spec.whatwg.org/",
+  "serie": "progress-events"
+ },
+ "powder-dr": {
+  "title": "Protocol for Web Description Resources (POWDER): Description Resources",
+  "serie": "powder-dr"
+ },
+ "powder-formal": {
+  "title": "Protocol for Web Description Resources (POWDER): Formal Semantics",
+  "serie": "powder-formal"
+ },
+ "powder-primer": {
+  "title": "Protocol for Web Description Resources (POWDER): Primer",
+  "serie": "powder-primer"
+ },
+ "powder-test": {
+  "title": "Protocol for Web Description Resources (POWDER): Test Suite",
+  "serie": "powder-test"
+ },
+ "rdf-plain-literal": {
+  "title": "rdf:PlainLiteral: A Datatype for RDF Plain Literals (Second Edition)",
+  "serie": "rdf-plain-literal"
+ },
+ "r2rml": {
+  "title": "R2RML: RDB to RDF Mapping Language",
+  "serie": "r2rml"
+ },
+ "rdb-direct-mapping": {
+  "title": "A Direct Mapping of Relational Data to RDF",
+  "serie": "rdb-direct-mapping"
+ },
+ "rdb2rdf-ucr": {
+  "title": "Use Cases and Requirements for Mapping Relational Databases to RDF",
+  "serie": "rdb2rdf-ucr"
+ },
+ "rdfa-api": {
+  "title": "RDFa API",
+  "serie": "rdfa-api"
+ },
+ "rdfa-core": {
+  "title": "RDFa Core 1.1 - Third Edition",
+  "serie": "rdfa-core"
+ },
+ "prov-dm": {
+  "title": "PROV-DM: The PROV Data Model",
+  "serie": "prov-dm"
+ },
+ "prov-o": {
+  "title": "PROV-O: The PROV Ontology",
+  "serie": "prov-o"
+ },
+ "rdf-interfaces": {
+  "title": "RDF Interfaces",
+  "serie": "rdf-interfaces"
+ },
+ "rdfa-lite": {
+  "title": "RDFa Lite 1.1 - Second Edition",
+  "serie": "rdfa-lite"
+ },
+ "prov-constraints": {
+  "title": "Constraints of the PROV Data Model",
+  "serie": "prov-constraints"
+ },
+ "prov-n": {
+  "title": "PROV-N: The Provenance Notation",
+  "serie": "prov-n"
+ },
+ "rdb2rdf-implementations": {
+  "title": "RDB2RDF Implementation Report",
+  "serie": "rdb2rdf-implementations"
+ },
+ "rdb2rdf-test-cases": {
+  "title": "R2RML and Direct Mapping Test Cases",
+  "serie": "rdb2rdf-test-cases"
+ },
+ "rdf-api": {
+  "title": "RDF API",
+  "serie": "rdf-api"
+ },
+ "prov-aq": {
+  "title": "PROV-AQ: Provenance Access and Query",
+  "serie": "prov-aq"
+ },
+ "prov-dc": {
+  "title": "Dublin Core to PROV Mapping",
+  "serie": "prov-dc"
+ },
+ "prov-links": {
+  "title": "Linking Across Provenance Bundles",
+  "serie": "prov-links"
+ },
+ "prov-overview": {
+  "title": "PROV-Overview",
+  "serie": "prov-overview"
+ },
+ "prov-primer": {
+  "title": "PROV Model Primer",
+  "serie": "prov-primer"
+ },
+ "prov-xml": {
+  "title": "PROV-XML: The PROV XML Schema",
+  "serie": "prov-xml"
+ },
+ "publishing-linking": {
+  "title": "Publishing and Linking on the Web",
+  "serie": "publishing-linking"
+ },
+ "quota-api": {
+  "title": "Quota Management API",
+  "link": "https://w3c.github.io/quota-api/",
+  "serie": "quota-api"
+ },
+ "prov-dictionary": {
+  "title": "PROV-Dictionary: Modeling Provenance for Dictionary Data Structures",
+  "serie": "prov-dictionary"
+ },
+ "prov-implementations": {
+  "title": "PROV Implementation Report",
+  "serie": "prov-implementations"
+ },
+ "prov-sem": {
+  "title": "Semantics of the PROV Data Model",
+  "serie": "prov-sem"
+ },
+ "html-rdfa": {
+  "title": "HTML+RDFa 1.1 - Second Edition",
+  "serie": "html-rdfa"
+ },
+ "tcp-udp-sockets": {
+  "title": "TCP and UDP Socket API",
+  "link": "https://www.w3.org/2012/sysapps/tcp-udp-sockets/",
+  "serie": "tcp-udp-sockets"
+ },
+ "respimg-usecases": {
+  "title": "Use Cases and Requirements for Standardizing Responsive Images",
+  "link": "https://usecases.responsiveimages.org",
+  "serie": "respimg-usecases"
+ },
+ "predefined-counter-styles": {
+  "title": "Ready-made Counter Styles",
+  "link": "https://w3c.github.io/predefined-counter-styles/",
+  "serie": "predefined-counter-styles"
+ },
+ "resource-priorities": {
+  "title": "Resource Priorities",
+  "serie": "resource-priorities"
+ },
+ "rdf-json": {
+  "title": "RDF 1.1 JSON Alternate Serialization (RDF/JSON)",
+  "serie": "rdf-json"
+ },
+ "rdf-new": {
+  "title": "What’s New in RDF",
+  "serie": "rdf-new"
+ },
+ "rdf-datasets": {
+  "title": "RDF 1.1: On Semantics of RDF Datasets",
+  "serie": "rdf-datasets"
+ },
+ "referrer-policy": {
+  "title": "Referrer Policy",
+  "link": "https://w3c.github.io/webappsec-referrer-policy/",
+  "serie": "referrer-policy"
+ },
+ "resource-hints": {
+  "title": "Resource Hints",
+  "link": "https://w3c.github.io/resource-hints/",
+  "serie": "resource-hints"
+ },
+ "secure-contexts": {
+  "title": "Secure Contexts",
+  "link": "https://w3c.github.io/webappsec-secure-contexts/",
+  "serie": "secure-contexts"
+ },
+ "preload": {
+  "title": "Preload",
+  "link": "https://w3c.github.io/preload/",
+  "serie": "preload"
+ },
+ "requestidlecallback": {
+  "title": "Cooperative Scheduling of Background Tasks",
+  "link": "https://w3c.github.io/requestidlecallback/",
+  "serie": "requestidlecallback"
+ },
+ "pwp": {
+  "title": "Web Publications for the Open Web Platform: Vision And Technical Challenges",
+  "link": "https://w3c.github.io/dpub-pwp/",
+  "serie": "pwp"
+ },
+ "post-type-discovery": {
+  "title": "Post Type Discovery",
+  "link": "https://ptd.spec.indieweb.org/",
+  "serie": "post-type-discovery"
+ },
+ "pwp-ucr": {
+  "title": "Web Publications Use Cases and Requirements",
+  "link": "https://w3c.github.io/dpub-pwp-ucr/",
+  "serie": "pwp-ucr"
+ },
+ "qb4st": {
+  "title": "QB4ST: RDF Data Cube extensions for spatio-temporal components",
+  "link": "https://w3c.github.io/sdw/qb4st/",
+  "serie": "qb4st"
+ },
+ "pwpub": {
+  "title": "Packaged Web Publications",
+  "link": "https://w3c.github.io/pwpub/",
+  "serie": "pwpub"
+ },
+ "pronunciation-user-scenarios": {
+  "title": "Pronunciation User Scenarios",
+  "link": "https://w3c.github.io/pronunciation/user-scenarios",
+  "serie": "pronunciation-user-scenarios"
+ },
+ "resize-observer": {
+  "title": "Resize Observer",
+  "link": "https://drafts.csswg.org/resize-observer/",
+  "serie": "resize-observer"
+ },
+ "pronunciation-explainer": {
+  "title": "Explainer: Improving Spoken Presentation on the Web",
+  "link": "https://w3c.github.io/pronunciation/explainer",
+  "serie": "pronunciation-explainer"
+ },
+ "pronunciation-gap-analysis-and-use-cases": {
+  "title": "Pronunciation Gap Analysis and Use Cases",
+  "link": "https://w3c.github.io/pronunciation/gap-analysis_and_use-case",
+  "serie": "pronunciation-gap-analysis-and-use-cases"
+ },
+ "raur": {
+  "title": "RTC Accessibility User Requirements",
+  "link": "https://w3c.github.io/apa/raur/",
+  "serie": "raur"
+ },
+ "smil-authext": {
+  "title": "SMIL 2.0 Extension for Professional Multimedia Authoring - Preliminary Investigation",
+  "serie": "smil-authext"
+ },
+ "sdml": {
+  "title": "Signed Document Markup Language (SDML)",
+  "serie": "sdml"
+ },
+ "smil": {
+  "title": "Synchronized Multimedia Integration Language (SMIL",
+  "serie": "smil"
+ },
+ "ruby": {
+  "title": "Ruby Annotation",
+  "serie": "ruby"
+ },
+ "smil-access": {
+  "title": "Accessibility Features of SMIL",
+  "serie": "smil-access"
+ },
+ "schema-arch": {
+  "title": "The Cambridge Communiqué",
+  "serie": "schema-arch"
+ },
+ "smil-animation": {
+  "title": "SMIL Animation",
+  "serie": "smil-animation"
+ },
+ "sac": {
+  "title": "SAC: Simple API for CSS",
+  "serie": "sac"
+ },
+ "soap": {
+  "title": null,
+  "serie": "soap"
+ },
+ "soap-attachments": {
+  "title": "SOAP Messages with Attachments",
+  "serie": "soap-attachments"
+ },
+ "shoplogfileformat": {
+  "title": "Shop Log File Format",
+  "serie": "shoplogfileformat"
+ },
+ "speechobjects": {
+  "title": "SpeechObjects Specification V",
+  "serie": "speechobjects"
+ },
+ "smil-boston-dom": {
+  "title": "Synchronized Multimedia Integration Language Document Object Model",
+  "serie": "smil-boston-dom"
+ },
+ "speech-synthesis": {
+  "title": "Speech Synthesis Markup Language (SSML)",
+  "serie": "speech-synthesis"
+ },
+ "soap-dsig": {
+  "title": "SOAP Security Extensions: Digital Signature",
+  "serie": "soap-dsig"
+ },
+ "ruby-implementation": {
+  "title": "Implementing the Ruby",
+  "serie": "ruby-implementation"
+ },
+ "semantic-interpretation": {
+  "title": "Semantic Interpretation for Speech Recognition (SISR)",
+  "serie": "semantic-interpretation"
+ },
+ "srml": {
+  "title": "SRML - Simulation Reference Markup Language",
+  "serie": "srml"
+ },
+ "soap-email": {
+  "title": "SOAP Version 1.2 Email Binding",
+  "serie": "soap-email"
+ },
+ "soap-af": {
+  "title": "SOAP 1.2 Attachment Feature",
+  "serie": "soap-af"
+ },
+ "soap-testcollection": {
+  "title": "SOAP Version 1.2 Specification Assertions and Test Collection (Second Edition)",
+  "serie": "soap-testcollection"
+ },
+ "soap-n11n": {
+  "title": "SOAP Version 1.2 Message Normalization",
+  "serie": "soap-n11n"
+ },
+ "soap-mtom": {
+  "title": "SOAP Message Transmission Optimization Mechanism",
+  "serie": "soap-mtom"
+ },
+ "soap-os-ucr": {
+  "title": "SOAP Optimized Serialization Use Cases and Requirements",
+  "serie": "soap-os-ucr"
+ },
+ "soap-rep": {
+  "title": "Resource Representation SOAP Header Block",
+  "serie": "soap-rep"
+ },
+ "spec-variability": {
+  "title": "Variability in Specifications",
+  "serie": "spec-variability"
+ },
+ "ssml-sayas": {
+  "title": "SSML 1.0 say-as attribute values",
+  "serie": "ssml-sayas"
+ },
+ "scxml": {
+  "title": "State Chart XML (SCXML): State Machine Notation for Control Abstraction",
+  "serie": "scxml"
+ },
+ "sprot": {
+  "title": "SPARQL Protocol for RDF Using WSDL",
+  "serie": "sprot"
+ },
+ "soap-ror-httpbinding": {
+  "title": "SOAP 1.1 Request Optional Response HTTP Binding",
+  "serie": "soap-ror-httpbinding"
+ },
+ "rif-ucr": {
+  "title": "RIF Use Cases and Requirements (Second Edition)",
+  "serie": "rif-ucr"
+ },
+ "sawsdl": {
+  "title": "Semantic Annotations for WSDL and XML Schema",
+  "serie": "sawsdl"
+ },
+ "sawsdl-guide": {
+  "title": "Semantic Annotations for WSDL and XML Schema — Usage Guide",
+  "serie": "sawsdl-guide"
+ },
+ "ssmlreqs": {
+  "title": "Speech Synthesis Markup Language Version 1.1 Requirements",
+  "serie": "ssmlreqs"
+ },
+ "rif-bld": {
+  "title": "RIF Basic Logic Dialect (Second Edition)",
+  "serie": "rif-bld"
+ },
+ "rif-core": {
+  "title": "RIF Core Dialect (Second Edition)",
+  "serie": "rif-core"
+ },
+ "rif-rdf-owl": {
+  "title": "RIF RDF and OWL Compatibility (Second Edition)",
+  "serie": "rif-rdf-owl"
+ },
+ "skos-ucr": {
+  "title": "SKOS Use Cases and Requirements",
+  "serie": "skos-ucr"
+ },
+ "sml": {
+  "title": "Service Modeling Language,",
+  "serie": "sml"
+ },
+ "sml-if": {
+  "title": "Service Modeling Language Interchange Format",
+  "serie": "sml-if"
+ },
+ "soap-mtom-policy": {
+  "title": "MTOM Serialization Policy Assertion",
+  "serie": "soap-mtom-policy"
+ },
+ "rif-dtb": {
+  "title": "RIF Datatypes and Built-Ins 1.0 (Second Edition)",
+  "serie": "rif-dtb"
+ },
+ "rif-fld": {
+  "title": "RIF Framework for Logic Dialects (Second Edition)",
+  "serie": "rif-fld"
+ },
+ "rif-prd": {
+  "title": "RIF Production Rule Dialect (Second Edition)",
+  "serie": "rif-prd"
+ },
+ "rif-test": {
+  "title": "RIF Test Cases (Second Edition)",
+  "serie": "rif-test"
+ },
+ "skos-primer": {
+  "title": "SKOS Simple Knowledge Organization System Primer",
+  "serie": "skos-primer"
+ },
+ "skos-reference": {
+  "title": "SKOS Simple Knowledge Organization System Reference",
+  "serie": "skos-reference"
+ },
+ "soapjms": {
+  "title": "SOAP over Java Message Service",
+  "serie": "soapjms"
+ },
+ "sml-epr-ref-scheme": {
+  "title": "Framework for SML EPR-Based Reference Schemes",
+  "serie": "sml-epr-ref-scheme"
+ },
+ "sml-xlink-ref-scheme": {
+  "title": "The SML XLink Reference Scheme",
+  "serie": "sml-xlink-ref-scheme"
+ },
+ "rif-overview": {
+  "title": "RIF Overview (Second Edition)",
+  "serie": "rif-overview"
+ },
+ "rif-owl-rl": {
+  "title": "OWL 2 RL in RIF (Second Edition)",
+  "serie": "rif-owl-rl"
+ },
+ "rif-xml-data": {
+  "title": "RIF Combination with XML data (Second Edition)",
+  "serie": "rif-xml-data"
+ },
+ "sparql-features": {
+  "title": "SPARQL New Features and Rationale",
+  "serie": "sparql-features"
+ },
+ "sparql-entailment": {
+  "title": "SPARQL 1.1 Entailment Regimes",
+  "serie": "sparql-entailment"
+ },
+ "sparql-http-rdf-update": {
+  "title": "SPARQL 1.1 Graph Store HTTP Protocol",
+  "serie": "sparql-http-rdf-update"
+ },
+ "sparql-protocol": {
+  "title": "SPARQL 1.1 Protocol",
+  "serie": "sparql-protocol"
+ },
+ "sparql-query": {
+  "title": "SPARQL 1.1 Query Language",
+  "serie": "sparql-query"
+ },
+ "sparql-service-description": {
+  "title": "SPARQL 1.1 Service Description",
+  "serie": "sparql-service-description"
+ },
+ "sparql-update": {
+  "title": "SPARQL 1.1 Update",
+  "serie": "sparql-update"
+ },
+ "rif-in-rdf": {
+  "title": "RIF In RDF (Second Edition)",
+  "serie": "rif-in-rdf"
+ },
+ "role-attribute": {
+  "title": "Role Attribute",
+  "serie": "role-attribute"
+ },
+ "selectors-api": {
+  "title": "Selectors API",
+  "link": "https://dev.w3.org/2006/webapi/selectors-api2/",
+  "serie": "selectors-api"
+ },
+ "sparql-federated-query": {
+  "title": "SPARQL 1.1 Federated Query",
+  "serie": "sparql-federated-query"
+ },
+ "sparql-property-paths": {
+  "title": "SPARQL 1.1 Property Paths",
+  "serie": "sparql-property-paths"
+ },
+ "sparql-overview": {
+  "title": "SPARQL 1.1 Overview",
+  "serie": "sparql-overview"
+ },
+ "sparql-results-csv-tsv": {
+  "title": "SPARQL 1.1 Query Results CSV and TSV Formats",
+  "serie": "sparql-results-csv-tsv"
+ },
+ "sparql-results-json": {
+  "title": "SPARQL 1.1 Query Results JSON Format",
+  "serie": "sparql-results-json"
+ },
+ "streamproc": {
+  "title": "MediaStream Processing API",
+  "serie": "streamproc"
+ },
+ "rif-primer": {
+  "title": "RIF Primer (Second Edition)",
+  "serie": "rif-primer"
+ },
+ "ruby-use-cases": {
+  "title": "Use Cases & Exploratory Approaches for Ruby Markup",
+  "link": "https://www.w3.org/International/docs/ruby/",
+  "serie": "ruby-use-cases"
+ },
+ "screen-orientation": {
+  "title": "The Screen Orientation API",
+  "link": "https://w3c.github.io/screen-orientation/",
+  "serie": "screen-orientation"
+ },
+ "shadow-dom": {
+  "title": "Shadow DOM",
+  "link": "https://w3c.github.io/webcomponents/spec/shadow/",
+  "serie": "shadow-dom"
+ },
+ "runtime": {
+  "title": "Runtime and Security Model for Web Applications",
+  "serie": "runtime"
+ },
+ "streams-api": {
+  "title": "Streams API",
+  "link": "https://streams.spec.whatwg.org/",
+  "serie": "streams-api"
+ },
+ "sri": {
+  "title": "Subresource Integrity",
+  "link": "https://w3c.github.io/webappsec-subresource-integrity/",
+  "serie": "sri"
+ },
+ "selectors-nonelement": {
+  "title": "Non-element Selectors",
+  "link": "https://drafts.csswg.org/selectors-nonelement/",
+  "serie": "selectors-nonelement"
+ },
+ "selection-api": {
+  "title": "Selection API",
+  "link": "https://w3c.github.io/selection-api/",
+  "serie": "selection-api"
+ },
+ "server-timing": {
+  "title": "Server Timing",
+  "link": "https://w3c.github.io/server-timing/",
+  "serie": "server-timing"
+ },
+ "shacl-ucr": {
+  "title": "SHACL Use Cases and Requirements",
+  "serie": "shacl-ucr"
+ },
+ "sdw-ucr": {
+  "title": "Spatial Data on the Web Use Cases & Requirements",
+  "link": "https://w3c.github.io/sdw/UseCases/SDWUseCasesAndRequirements.html",
+  "serie": "sdw-ucr"
+ },
+ "security-privacy-questionnaire": {
+  "title": "Self-Review Questionnaire: Security and Privacy",
+  "link": "https://w3ctag.github.io/security-questionnaire/",
+  "serie": "security-privacy-questionnaire"
+ },
+ "social-web-protocols": {
+  "title": "Social Web Protocols",
+  "link": "https://w3c-social.github.io/social-web-protocols",
+  "serie": "social-web-protocols"
+ },
+ "sdw-bp": {
+  "title": "Spatial Data on the Web Best Practices",
+  "link": "https://w3c.github.io/sdw/bp/",
+  "serie": "sdw-bp"
+ },
+ "shacl-abstract-syntax": {
+  "title": "SHACL Abstract Syntax -- Note on Status of Obsolete Proposal",
+  "serie": "shacl-abstract-syntax"
+ },
+ "selectors-states": {
+  "title": "Selectors and States",
+  "link": "https://w3c.github.io/web-annotation/selector-note/",
+  "serie": "selectors-states"
+ },
+ "shacl-af": {
+  "title": "SHACL Advanced Features",
+  "link": "https://w3c.github.io/data-shapes/shacl-af/",
+  "serie": "shacl-af"
+ },
+ "shacl-js": {
+  "title": "SHACL JavaScript Extensions",
+  "link": "https://w3c.github.io/data-shapes/shacl-js/",
+  "serie": "shacl-js"
+ },
+ "svgreq": {
+  "title": "Scalable Vector Graphics (SVG) Requirements",
+  "serie": "svgreq"
+ },
+ "uaag": {
+  "title": "User Agent Accessibility Guidelines",
+  "serie": "uaag"
+ },
+ "symm-modules": {
+  "title": "Synchronized Multimedia Modules based upon SMIL",
+  "serie": "symm-modules"
+ },
+ "tvweb-uri-requirements": {
+  "title": "TV Broadcast URI Schemes Requirements",
+  "serie": "tvweb-uri-requirements"
+ },
+ "uclp": {
+  "title": "Universal Commerce Language and Protocol (UCLP)",
+  "serie": "uclp"
+ },
+ "svg-access": {
+  "title": "Accessibility Features of SVG",
+  "serie": "svg-access"
+ },
+ "tenthold": {
+  "title": "Tentative Hold Protocol Part",
+  "serie": "tenthold"
+ },
+ "uri-clarification": {
+  "title": "URIs, URLs, and URNs: Clarifications and Recommendations",
+  "serie": "uri-clarification"
+ },
+ "urispace": {
+  "title": "URISpace",
+  "serie": "urispace"
+ },
+ "svgreqs": {
+  "title": "SVG 1.1/1.2/2.0 Requirements",
+  "serie": "svgreqs"
+ },
+ "svgtiny": {
+  "title": "",
+  "serie": "svgtiny"
+ },
+ "svgmobilereqs": {
+  "title": "SVG Mobile Requirements",
+  "serie": "svgmobilereqs"
+ },
+ "uaag-techs": {
+  "title": "Techniques for User Agent Accessibility Guidelines",
+  "serie": "uaag-techs"
+ },
+ "unicode-xml": {
+  "title": "Unicode in XML and other Markup Languages",
+  "link": "https://w3c.github.io/unicode-xml/",
+  "serie": "unicode-xml"
+ },
+ "vbi-reqs": {
+  "title": "Voice Browser Interoperation: Requirements",
+  "serie": "vbi-reqs"
+ },
+ "svgprintreqs": {
+  "title": "SVG Printing Requirements",
+  "serie": "svgprintreqs"
+ },
+ "svgtinyreqs": {
+  "title": "SVGT 1.2 Requirements",
+  "serie": "svgtinyreqs"
+ },
+ "sxbl": {
+  "title": "SVG's XML Binding Language (sXBL)",
+  "serie": "sxbl"
+ },
+ "swbp-classes-as-values": {
+  "title": "Representing Classes As Property Values on the Semantic Web",
+  "serie": "swbp-classes-as-values"
+ },
+ "swbp-n-aryrelations": {
+  "title": "Defining N-ary Relations on the Semantic Web",
+  "serie": "swbp-n-aryrelations"
+ },
+ "swbp-specified-values": {
+  "title": "Representing Specified Values in OWL: \"value partitions\" and \"value sets\"",
+  "serie": "swbp-specified-values"
+ },
+ "test-metadata": {
+  "title": "Test Metadata",
+  "serie": "test-metadata"
+ },
+ "timezone": {
+  "title": "Working with Time Zones",
+  "serie": "timezone"
+ },
+ "understanding-wcag": {
+  "title": "Understanding WCAG",
+  "serie": "understanding-wcag"
+ },
+ "swbp-thesaurus-pubguide": {
+  "title": "Quick Guide to Publishing a Thesaurus on the Semantic Web",
+  "serie": "swbp-thesaurus-pubguide"
+ },
+ "swbp-xsch-datatypes": {
+  "title": "XML Schema Datatypes in RDF and OWL",
+  "serie": "swbp-xsch-datatypes"
+ },
+ "sw-oosd-primer": {
+  "title": "A Semantic Web Primer for Object-Oriented Software Developers",
+  "serie": "sw-oosd-primer"
+ },
+ "ttaf-req": {
+  "title": "Timed Text (TT) Authoring Format 1.0 Use Cases and Requirements",
+  "serie": "ttaf-req"
+ },
+ "swbp-image-annotation": {
+  "title": "Image Annotation on the Semantic Web",
+  "serie": "swbp-image-annotation"
+ },
+ "swbp-vocab-pub": {
+  "title": "Best Practice Recipes for Publishing RDF Vocabularies",
+  "serie": "swbp-vocab-pub"
+ },
+ "svgfilter": {
+  "title": "SVG Filters 1.2, Part 2: Language",
+  "serie": "svgfilter"
+ },
+ "svgfilterprimer": {
+  "title": "SVG Filters 1.2, Part 1: Primer",
+  "serie": "svgfilterprimer"
+ },
+ "svgfilterreqs": {
+  "title": "SVG Filter Requirements",
+  "serie": "svgfilterreqs"
+ },
+ "svgprint": {
+  "title": "SVG Print 1.2, Part 2: Language",
+  "serie": "svgprint"
+ },
+ "svgprintprimer": {
+  "title": "SVG Print 1.2, Part 1: Primer",
+  "serie": "svgprintprimer"
+ },
+ "uaag-requirements": {
+  "title": "User Agent Accessibility Guidelines 2.0 Requirements",
+  "serie": "uaag-requirements"
+ },
+ "timesheets": {
+  "title": "SMIL Timesheets",
+  "serie": "timesheets"
+ },
+ "uwa-personalization-roadmap": {
+  "title": "W3C Personalization Roadmap: Ubiquitous Web Integration of AccessForAll",
+  "serie": "uwa-personalization-roadmap"
+ },
+ "svg-transforms": {
+  "title": "SVG Transforms 1.0, Part 2: Language",
+  "serie": "svg-transforms"
+ },
+ "svgcolor": {
+  "title": "SVG Color 1.2, Part 2: Language",
+  "serie": "svgcolor"
+ },
+ "svgcolorprimer": {
+  "title": "SVG Color 1.2, Part 1: Primer",
+  "serie": "svgcolorprimer"
+ },
+ "svgparam": {
+  "title": "SVG Parameters 1.0, Part 2: Language",
+  "serie": "svgparam"
+ },
+ "svgparamprimer": {
+  "title": "SVG Parameters 1.0, Part 1: Primer",
+  "serie": "svgparamprimer"
+ },
+ "test-methodology": {
+  "title": "A Method for Writing Testable Conformance Requirements",
+  "serie": "test-methodology"
+ },
+ "uaag-reference": {
+  "title": "UAAG 2.0 Reference: Explanations, Examples, and Resources for User Agent Accessibility Guidelines",
+  "serie": "uaag-reference"
+ },
+ "ump": {
+  "title": "Uniform Messaging Policy, Level One",
+  "serie": "ump"
+ },
+ "system-info-api": {
+  "title": "The System Information API",
+  "serie": "system-info-api"
+ },
+ "touch-events": {
+  "title": "Touch Events",
+  "link": "https://w3c.github.io/touch-events/",
+  "serie": "touch-events"
+ },
+ "turtle": {
+  "title": "RDF 1.1 Turtle",
+  "serie": "turtle"
+ },
+ "user-timing": {
+  "title": "User Timing",
+  "serie": "user-timing"
+ },
+ "vibration": {
+  "title": "Vibration API (Second Edition)",
+  "link": "https://w3c.github.io/vibration/",
+  "serie": "vibration"
+ },
+ "task-models": {
+  "title": "MBUI - Task Models",
+  "serie": "task-models"
+ },
+ "ttml-sdp-us": {
+  "title": "TTML Simple Delivery Profile for Closed Captions (US)",
+  "serie": "ttml-sdp-us"
+ },
+ "uisecurity": {
+  "title": "User Interface Security and the Visibility API",
+  "link": "https://w3c.github.io/webappsec-uisecurity/index.html",
+  "serie": "uisecurity"
+ },
+ "trig": {
+  "title": "RDF 1.1 TriG",
+  "serie": "trig"
+ },
+ "urls-in-data": {
+  "title": "URLs in Data Primer",
+  "serie": "urls-in-data"
+ },
+ "vcard-rdf": {
+  "title": "vCard Ontology - for describing People and Organizations",
+  "serie": "vcard-rdf"
+ },
+ "telephony": {
+  "title": "Web Telephony API",
+  "link": "https://www.w3.org/2012/sysapps/telephony/",
+  "serie": "telephony"
+ },
+ "touch-events-extensions": {
+  "title": "Touch Events Extensions",
+  "link": "https://dvcs.w3.org/hg/webevents/raw-file/default/touchevents.html",
+  "serie": "touch-events-extensions"
+ },
+ "tabular-data-model": {
+  "title": "Model for Tabular Data and Metadata on the Web",
+  "link": "https://w3c.github.io/csvw/syntax/",
+  "serie": "tabular-data-model"
+ },
+ "svg-integration": {
+  "title": "SVG Integration",
+  "link": "https://svgwg.org/specs/integration/",
+  "serie": "svg-integration"
+ },
+ "tabular-metadata": {
+  "title": "Metadata Vocabulary for Tabular Data",
+  "link": "https://w3c.github.io/csvw/metadata/",
+  "serie": "tabular-metadata"
+ },
+ "upgrade-insecure-requests": {
+  "title": "Upgrade Insecure Requests",
+  "link": "https://w3c.github.io/webappsec-upgrade-insecure-requests/",
+  "serie": "upgrade-insecure-requests"
+ },
+ "svg-aam": {
+  "title": "SVG Accessibility API Mappings",
+  "link": "https://w3c.github.io/svg-aam/",
+  "serie": "svg-aam"
+ },
+ "svg-markers": {
+  "title": "SVG Markers",
+  "link": "https://svgwg.org/specs/markers/",
+  "serie": "svg-markers"
+ },
+ "svg-strokes": {
+  "title": "SVG Strokes",
+  "link": "https://svgwg.org/specs/strokes/",
+  "serie": "svg-strokes"
+ },
+ "vehicle-information-api": {
+  "title": "Vehicle Information API Specification",
+  "link": "https://w3c.github.io/automotive/vehicle_information_api/vehicle_information_api_specification.html",
+  "serie": "vehicle-information-api"
+ },
+ "vehicle-data": {
+  "title": "Vehicle Data",
+  "link": "https://w3c.github.io/automotive/vehicle_data/data_spec.html",
+  "serie": "vehicle-data"
+ },
+ "svg-paths": {
+  "title": "SVG Paths",
+  "link": "https://svgwg.org/specs/paths/",
+  "serie": "svg-paths"
+ },
+ "tabular-data-primer": {
+  "title": "CSV on the Web: A Primer",
+  "link": "https://w3c.github.io/csvw/primer/",
+  "serie": "tabular-data-primer"
+ },
+ "ttml-profile-registry": {
+  "title": "TTML Media Type Definition and Profile Registry",
+  "link": "https://w3c.github.io/tt-profile-registry/",
+  "serie": "ttml-profile-registry"
+ },
+ "tvcontrol-api": {
+  "title": "TV Control API Specification",
+  "link": "https://w3c.github.io/tvcontrol-api/",
+  "serie": "tvcontrol-api"
+ },
+ "vehicle-information-service": {
+  "title": "Vehicle Information Service Specification",
+  "link": "https://w3c.github.io/automotive/vehicle_data/vehicle_information_service.html",
+  "serie": "vehicle-information-service"
+ },
+ "typography": {
+  "title": "International text layout and typography index",
+  "link": "https://w3c.github.io/typography/",
+  "serie": "typography"
+ },
+ "vc-use-cases": {
+  "title": "Verifiable Credentials Use Cases",
+  "link": "https://w3c.github.io/vc-use-cases/",
+  "serie": "vc-use-cases"
+ },
+ "trace-context-protocols-registry": {
+  "title": "Trace Context Protocols Registry",
+  "link": "https://w3c.github.io/trace-context-protocols-registry/",
+  "serie": "trace-context-protocols-registry"
+ },
+ "timing-entrytypes-registry": {
+  "title": "Timing Entry Names Registry",
+  "link": "https://w3c.github.io/timing-entrytypes-registry/",
+  "serie": "timing-entrytypes-registry"
+ },
+ "vc-imp-guide": {
+  "title": "Verifiable Credentials Implementation Guidelines",
+  "link": "https://w3c.github.io/vc-imp-guide/",
+  "serie": "vc-imp-guide"
+ },
+ "vml": {
+  "title": "Vector Markup Language (VML)",
+  "serie": "vml"
+ },
+ "wap": {
+  "title": "WAP Forum - W3C Cooperation White Paper",
+  "serie": "wap"
+ },
+ "webcgm": {
+  "title": "WebCGM",
+  "serie": "webcgm"
+ },
+ "voice": {
+  "title": "Voice Browsers",
+  "serie": "voice"
+ },
+ "webarch-extlang": {
+  "title": "Web Architecture: Extensible Languages",
+  "serie": "webarch-extlang"
+ },
+ "webbroker": {
+  "title": "WebBroker: Distributed Object Communication on the Web",
+  "serie": "webbroker"
+ },
+ "wca": {
+  "title": "Web Characterization: From working group to activity",
+  "serie": "wca"
+ },
+ "voice-architecture": {
+  "title": "Model Architecture for Voice Browser Systems",
+  "serie": "voice-architecture"
+ },
+ "voice-dialog-reqs": {
+  "title": "Dialog Requirements for Voice Markup Languages",
+  "serie": "voice-dialog-reqs"
+ },
+ "voice-grammar-reqs": {
+  "title": "Grammar Representation Requirements for Voice Markup Languages",
+  "serie": "voice-grammar-reqs"
+ },
+ "voice-intro": {
+  "title": "Voice Browsers, Introduction",
+  "serie": "voice-intro"
+ },
+ "voice-nlu-reqs": {
+  "title": "Natural Language Processing Requirements for Voice Markup Languages",
+  "serie": "voice-nlu-reqs"
+ },
+ "voice-tts-reqs": {
+  "title": "Speech Synthesis Markup Requirements for Voice Markup Languages",
+  "serie": "voice-tts-reqs"
+ },
+ "wcag-core-techs": {
+  "title": "Core Techniques for Web Content Accessibility Guidelines",
+  "serie": "wcag-core-techs"
+ },
+ "wcag-techs": {
+  "title": "",
+  "serie": "wcag-techs"
+ },
+ "voicexml": {
+  "title": "Voice",
+  "serie": "voicexml"
+ },
+ "visual-marks": {
+  "title": "Clear, Secure, and Portable Visual Marks for the Cyber World",
+  "serie": "visual-marks"
+ },
+ "wcag-req": {
+  "title": "Requirements for WCAG",
+  "serie": "wcag-req"
+ },
+ "webarch": {
+  "title": "Architecture of the World Wide Web, Volume One",
+  "serie": "webarch"
+ },
+ "webont-req": {
+  "title": "OWL Web Ontology Language Use Cases and Requirements",
+  "serie": "webont-req"
+ },
+ "wcag-tech-req": {
+  "title": "Requirements for WCAG 2.0 Checklists and Techniques",
+  "serie": "wcag-tech-req"
+ },
+ "wcag-gateway": {
+  "title": "Gateway to Techniques for WCAG",
+  "serie": "wcag-gateway"
+ },
+ "widgets-reqs": {
+  "title": "Requirement For Standardizing Widgets",
+  "serie": "widgets-reqs"
+ },
+ "webidl": {
+  "title": "WebIDL",
+  "link": "https://heycam.github.io/webidl/",
+  "serie": "webidl"
+ },
+ "vxmlreqs": {
+  "title": "Voice Extensible Markup Language (VoiceXML) 3.0 Requirements",
+  "serie": "vxmlreqs"
+ },
+ "wai-age-literature": {
+  "title": "Web Accessibility for Older Users: A Literature Review",
+  "serie": "wai-age-literature"
+ },
+ "wai-aria-primer": {
+  "title": "WAI-ARIA 1.0 Primer",
+  "serie": "wai-aria-primer"
+ },
+ "wai-aria-implementation": {
+  "title": "WAI-ARIA 1.0 User Agent Implementation Guide",
+  "serie": "wai-aria-implementation"
+ },
+ "webdatabase": {
+  "title": "Web SQL Database",
+  "serie": "webdatabase"
+ },
+ "webmessaging": {
+  "title": "HTML5 Web Messaging",
+  "link": "https://html.spec.whatwg.org/multipage/web-messaging.html",
+  "serie": "webmessaging"
+ },
+ "void": {
+  "title": "Describing Linked Datasets with the VoID Vocabulary",
+  "serie": "void"
+ },
+ "wcag-em": {
+  "title": "Website Accessibility Conformance Evaluation Methodology (WCAG-EM)",
+  "serie": "wcag-em"
+ },
+ "webidl-java": {
+  "title": "Java language binding for Web IDL",
+  "serie": "webidl-java"
+ },
+ "vocab-data-cube": {
+  "title": "The RDF Data Cube Vocabulary",
+  "serie": "vocab-data-cube"
+ },
+ "vocab-org": {
+  "title": "The Organization Ontology",
+  "serie": "vocab-org"
+ },
+ "vocab-people": {
+  "title": "Terms for describing people",
+  "serie": "vocab-people"
+ },
+ "wcag2ict": {
+  "title": "Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)",
+  "link": "https://www.w3.org/WAI/GL/wcag2ict/",
+  "serie": "wcag2ict"
+ },
+ "web-intents": {
+  "title": "Web Intents",
+  "serie": "web-intents"
+ },
+ "webaudio-usecases": {
+  "title": "Web Audio Processing: Use Cases and Requirements",
+  "serie": "webaudio-usecases"
+ },
+ "webintents-local-services": {
+  "title": "Web Intents Addendum - Local Services",
+  "serie": "webintents-local-services"
+ },
+ "webmidi": {
+  "title": "Web MIDI API",
+  "link": "https://webaudio.github.io/web-midi-api/",
+  "serie": "webmidi"
+ },
+ "vocab-adms": {
+  "title": "Asset Description Metadata Schema (ADMS)",
+  "serie": "vocab-adms"
+ },
+ "vocab-regorg": {
+  "title": "Registered Organization Vocabulary",
+  "serie": "vocab-regorg"
+ },
+ "task-scheduler": {
+  "title": "Task Scheduler API Specification",
+  "link": "https://www.w3.org/2012/sysapps/web-alarms/",
+  "serie": "task-scheduler"
+ },
+ "webcrypto-key-discovery": {
+  "title": "WebCrypto Key Discovery",
+  "link": "https://dvcs.w3.org/hg/webcrypto-keydiscovery/raw-file/tip/Overview.html",
+  "serie": "webcrypto-key-discovery"
+ },
+ "webcrypto-usecases": {
+  "title": "Web Cryptography API Use Cases",
+  "link": "https://dvcs.w3.org/hg/webcrypto-usecases/raw-file/tip/Overview.html",
+  "serie": "webcrypto-usecases"
+ },
+ "web-animations": {
+  "title": "Web Animations",
+  "link": "https://drafts.csswg.org/web-animations-1/",
+  "serie": "web-animations"
+ },
+ "vocab-data-cube-use-cases": {
+  "title": "Use Cases and Lessons for the Data Cube Vocabulary",
+  "serie": "vocab-data-cube-use-cases"
+ },
+ "waet": {
+  "title": "Developers' Guide to Features of Web Accessibility Evaluation Tools",
+  "serie": "waet"
+ },
+ "wake-lock-use-cases": {
+  "title": "Wake Lock: Use cases",
+  "link": "https://w3c-webmob.github.io/wake-lock-use-cases/",
+  "serie": "wake-lock-use-cases"
+ },
+ "web-packaging": {
+  "title": "Packaging on the Web",
+  "link": "https://w3ctag.github.io/packaging-on-the-web/",
+  "serie": "web-packaging"
+ },
+ "web-payments-use-cases": {
+  "title": "Web Payments Use Cases",
+  "serie": "web-payments-use-cases"
+ },
+ "vocab-dqv": {
+  "title": "Data on the Web Best Practices: Data Quality Vocabulary",
+  "link": "https://w3c.github.io/dwbp/vocab-dqg.html",
+  "serie": "vocab-dqv"
+ },
+ "wcag-ext-req": {
+  "title": "Requirements for WCAG 2.0 Extensions",
+  "link": "https://w3c.github.io/wcag/wcag20/extensions/requirements.html",
+  "serie": "wcag-ext-req"
+ },
+ "vocab-ssn": {
+  "title": "Semantic Sensor Network Ontology",
+  "link": "https://w3c.github.io/sdw/ssn/",
+  "serie": "vocab-ssn"
+ },
+ "webpayments-http-messages": {
+  "title": "Web Payments HTTP Messages",
+  "link": "https://w3c.github.io/webpayments-http-messages/",
+  "serie": "webpayments-http-messages"
+ },
+ "webpayments-http-api": {
+  "title": "Web Payments HTTP API",
+  "link": "https://w3c.github.io/webpayments-http-api/",
+  "serie": "webpayments-http-api"
+ },
+ "webpayments-overview": {
+  "title": "Web Payments Overview",
+  "link": "https://w3c.github.io/webpayments-overview/",
+  "serie": "webpayments-overview"
+ },
+ "wasm-core": {
+  "title": "WebAssembly Core Specification",
+  "link": "https://webassembly.github.io/spec/core/bikeshed/",
+  "serie": "wasm-core"
+ },
+ "wasm-js-api": {
+  "title": "WebAssembly JavaScript Interface",
+  "link": "https://webassembly.github.io/spec/js-api/",
+  "serie": "wasm-js-api"
+ },
+ "wasm-web-api": {
+  "title": "WebAssembly Web API",
+  "link": "https://webassembly.github.io/spec/web-api/",
+  "serie": "wasm-web-api"
+ },
+ "webrtc-priority": {
+  "title": "WebRTC Priority Control API",
+  "link": "https://w3c.github.io/webrtc-priority/",
+  "serie": "webrtc-priority"
+ },
+ "webrtc-identity": {
+  "title": "Identity for WebRTC",
+  "link": "https://w3c.github.io/webrtc-identity/identity.html",
+  "serie": "webrtc-identity"
+ },
+ "vocab-ssn-ext": {
+  "title": "Extensions to the Semantic Sensor Network Ontology",
+  "link": "https://w3c.github.io/sdw/ssn-extensions/",
+  "serie": "vocab-ssn-ext"
+ },
+ "webrtc-nv-use-cases": {
+  "title": "WebRTC Next Version Use Cases",
+  "link": "https://w3c.github.io/webrtc-nv-use-cases/",
+  "serie": "webrtc-nv-use-cases"
+ },
+ "webschematics": {
+  "title": "Web Schematics on the World Wide Web",
+  "serie": "webschematics"
+ },
+ "xfdl": {
+  "title": "Extensible Forms Description Language (XFDL) 4",
+  "serie": "xfdl"
+ },
+ "xh": {
+  "title": "XML in HTML Meeting Report",
+  "serie": "xh"
+ },
+ "xhtml-basic": {
+  "title": "XHTML™ Basic 1.1 - Second Edition",
+  "serie": "xhtml-basic"
+ },
+ "xhtml-forms-req": {
+  "title": "XForms Requirements",
+  "serie": "xhtml-forms-req"
+ },
+ "xdnl": {
+  "title": "XML Document Navigation Language",
+  "serie": "xdnl"
+ },
+ "xexpr": {
+  "title": "XEXPR - A Scripting Language for XML",
+  "serie": "xexpr"
+ },
+ "xhtml-building": {
+  "title": "Building XHTML™ Modules",
+  "serie": "xhtml-building"
+ },
+ "wsdl": {
+  "title": "Web Services Description Language (WSDL)",
+  "serie": "wsdl"
+ },
+ "xbl": {
+  "title": "XBL",
+  "serie": "xbl"
+ },
+ "xhtml+voice": {
+  "title": "XHTML+Voice Profile",
+  "serie": "xhtml+voice"
+ },
+ "wsci": {
+  "title": "Web Service Choreography Interface (WSCI)",
+  "serie": "wsci"
+ },
+ "wscl": {
+  "title": "Web Services Conversation Language (WSCL)",
+  "serie": "wscl"
+ },
+ "ws-arch": {
+  "title": "Web Services Architecture",
+  "serie": "ws-arch"
+ },
+ "ws-arch-scenarios": {
+  "title": "Web Services Architecture Usage Scenarios",
+  "serie": "ws-arch-scenarios"
+ },
+ "ws-desc-reqs": {
+  "title": "Web Services Description Requirements",
+  "serie": "ws-desc-reqs"
+ },
+ "ws-desc-usecases": {
+  "title": "Web Service Description Usage Scenarios",
+  "serie": "ws-desc-usecases"
+ },
+ "ws-gloss": {
+  "title": "Web Services Glossary",
+  "serie": "ws-gloss"
+ },
+ "ws-i18n-scenarios": {
+  "title": "Web Services Internationalization Usage Scenarios",
+  "serie": "ws-i18n-scenarios"
+ },
+ "wsa-reqs": {
+  "title": "Web Services Architecture Requirements",
+  "serie": "wsa-reqs"
+ },
+ "xframes": {
+  "title": "XFrames",
+  "serie": "xframes"
+ },
+ "xforms-basic": {
+  "title": "XForms 1.0 Basic Profile",
+  "serie": "xforms-basic"
+ },
+ "xades": {
+  "title": "XML Advanced Electronic Signatures (XAdES)",
+  "serie": "xades"
+ },
+ "ws-chor-reqs": {
+  "title": "Web Services Choreography Requirements",
+  "serie": "ws-chor-reqs"
+ },
+ "ws-i18n-req": {
+  "title": "Requirements for the Internationalization of Web Services",
+  "serie": "ws-i18n-req"
+ },
+ "wslc": {
+  "title": "Web Service Management: Service Life Cycle",
+  "serie": "wslc"
+ },
+ "xforms-req": {
+  "title": "XForms 1.1 Requirements",
+  "serie": "xforms-req"
+ },
+ "ws-addr-core": {
+  "title": "Web Services Addressing 1.0 - Core",
+  "serie": "ws-addr-core"
+ },
+ "ws-addr-soap": {
+  "title": "Web Services Addressing 1.0 - SOAP Binding",
+  "serie": "ws-addr-soap"
+ },
+ "ws-cdl": {
+  "title": "Web Services Choreography Description Language",
+  "serie": "ws-cdl"
+ },
+ "ws-chor-model": {
+  "title": "WS Choreography Model Overview",
+  "serie": "ws-chor-model"
+ },
+ "wsdl-primer": {
+  "title": "Web Services Description Language (WSDL) Version 2.0 Part 0: Primer",
+  "serie": "wsdl-primer"
+ },
+ "xbc-properties": {
+  "title": "XML Binary Characterization Properties",
+  "serie": "xbc-properties"
+ },
+ "xbc-use-cases": {
+  "title": "XML Binary Characterization Use Cases",
+  "serie": "xbc-use-cases"
+ },
+ "xforms": {
+  "title": "XForms",
+  "serie": "xforms"
+ },
+ "wsdl-altschemalangs": {
+  "title": "Discussion of Alternative Schema Languages and Type System Support in WSDL",
+  "serie": "wsdl-altschemalangs"
+ },
+ "xbc-characterization": {
+  "title": "XML Binary Characterization",
+  "serie": "xbc-characterization"
+ },
+ "xbc-measurement": {
+  "title": "XML Binary Characterization Measurement Methodologies",
+  "serie": "xbc-measurement"
+ },
+ "wicd": {
+  "title": "WICD Core",
+  "serie": "wicd"
+ },
+ "wicdfull": {
+  "title": "WICD Full",
+  "serie": "wicdfull"
+ },
+ "wicdmobile": {
+  "title": "WICD Mobile",
+  "serie": "wicdmobile"
+ },
+ "ws-i18n": {
+  "title": "Web Services Internationalization (WS-I18N)",
+  "serie": "ws-i18n"
+ },
+ "wsdl-adjuncts": {
+  "title": "Web Services Description Language (WSDL) Version 2.0 Part 2: Adjuncts",
+  "serie": "wsdl-adjuncts"
+ },
+ "wsdl-rdf": {
+  "title": "Web Services Description Language (WSDL) Version 2.0: RDF Mapping",
+  "serie": "wsdl-rdf"
+ },
+ "wsdl-soap-binding": {
+  "title": "Web Services Description Language (WSDL) Version 2.0 SOAP 1.1 Binding",
+  "serie": "wsdl-soap-binding"
+ },
+ "widgets": {
+  "title": "Packaged Web Apps (Widgets) - Packaging and XML Configuration (Second Edition)",
+  "serie": "widgets"
+ },
+ "wordnet-rdf": {
+  "title": "RDF/OWL Representation of WordNet",
+  "serie": "wordnet-rdf"
+ },
+ "ws-cdl-primer": {
+  "title": "Web Services Choreography Description Language: Primer",
+  "serie": "ws-cdl-primer"
+ },
+ "ws-policy": {
+  "title": "Web Services Policy 1.5 - Framework",
+  "serie": "ws-policy"
+ },
+ "ws-policy-attach": {
+  "title": "Web Services Policy 1.5 - Attachment",
+  "serie": "ws-policy-attach"
+ },
+ "ws-policy-guidelines": {
+  "title": "Web Services Policy 1.5 - Guidelines for Policy Assertion Authors",
+  "serie": "ws-policy-guidelines"
+ },
+ "ws-policy-primer": {
+  "title": "Web Services Policy 1.5 - Primer",
+  "serie": "ws-policy-primer"
+ },
+ "wsc-threats": {
+  "title": "Web User Interaction: Threat Trees",
+  "serie": "wsc-threats"
+ },
+ "wsdlelementidentifiers": {
+  "title": "WSDL 1.1 Element Identifiers",
+  "serie": "wsdlelementidentifiers"
+ },
+ "wsdl-additional-meps": {
+  "title": "Web Services Description Language (WSDL) Version 2.0: Additional MEPs",
+  "serie": "wsdl-additional-meps"
+ },
+ "ws-addr-metadata": {
+  "title": "Web Services Addressing 1.0 - Metadata",
+  "serie": "ws-addr-metadata"
+ },
+ "wsc-usecases": {
+  "title": "Web Security Experience, Indicators and Trust: Scope and Use Cases",
+  "serie": "wsc-usecases"
+ },
+ "xbl-primer": {
+  "title": "XBL 2.0 Primer: An Introduction for Developers",
+  "serie": "xbl-primer"
+ },
+ "xforms-for-html": {
+  "title": "XForms for HTML",
+  "serie": "xforms-for-html"
+ },
+ "widgets-digsig": {
+  "title": "XML Digital Signatures for Widgets",
+  "serie": "widgets-digsig"
+ },
+ "widgets-land": {
+  "title": "Widgets 1.0: The Widget Landscape (Q1 2008)",
+  "serie": "widgets-land"
+ },
+ "widgets-updates": {
+  "title": "Widget Updates",
+  "serie": "widgets-updates"
+ },
+ "wsc-ui": {
+  "title": "Web Security Context: User Interface Guidelines",
+  "serie": "wsc-ui"
+ },
+ "xhtml-access": {
+  "title": "XHTML Access",
+  "serie": "xhtml-access"
+ },
+ "widgets-apis": {
+  "title": "Widget Interface",
+  "serie": "widgets-apis"
+ },
+ "websockets": {
+  "title": "The WebSocket API",
+  "serie": "websockets"
+ },
+ "webstorage": {
+  "title": "Web Storage (Second Edition)",
+  "link": "https://w3c.github.io/webstorage/",
+  "serie": "webstorage"
+ },
+ "widgets-access": {
+  "title": "Widget Access Request Policy",
+  "serie": "widgets-access"
+ },
+ "widgets-uri": {
+  "title": "Widget URI scheme",
+  "serie": "widgets-uri"
+ },
+ "workers": {
+  "title": "Web Workers",
+  "link": "https://html.spec.whatwg.org/multipage/workers.html",
+  "serie": "workers"
+ },
+ "ws-enumeration": {
+  "title": "Web Services Enumeration (WS-Enumeration)",
+  "serie": "ws-enumeration"
+ },
+ "ws-eventing": {
+  "title": "Web Services Eventing (WS-Eventing)",
+  "serie": "ws-eventing"
+ },
+ "ws-fragment": {
+  "title": "Web Services Fragment (WS-Fragment)",
+  "serie": "ws-fragment"
+ },
+ "ws-metadata-exchange": {
+  "title": "Web Services Metadata Exchange (WS-MetadataExchange)",
+  "serie": "ws-metadata-exchange"
+ },
+ "ws-resource-transfer": {
+  "title": "Web Services Resource Transfer (WS-RT)",
+  "serie": "ws-resource-transfer"
+ },
+ "ws-transfer": {
+  "title": "Web Services Transfer (WS-Transfer)",
+  "serie": "ws-transfer"
+ },
+ "view-mode": {
+  "title": "The 'view-mode' Media Feature",
+  "serie": "view-mode"
+ },
+ "woff": {
+  "title": "WOFF File Format",
+  "serie": "woff"
+ },
+ "ws-event-descriptions": {
+  "title": "Web Services Event Descriptions (WS-EventDescriptions)",
+  "serie": "ws-event-descriptions"
+ },
+ "ws-soap-assertions": {
+  "title": "Web Services SOAP Assertions (WS-SOAPAssertions)",
+  "serie": "ws-soap-assertions"
+ },
+ "xforms-xpath": {
+  "title": "XForms 2.0: XPath expression module",
+  "serie": "xforms-xpath"
+ },
+ "woffer": {
+  "title": "WOFF 2.0 Evaluation Report",
+  "link": "https://www.w3.org/Fonts/WG/WOFF2ER/",
+  "serie": "woffer"
+ },
+ "worklets": {
+  "title": "Worklets",
+  "link": "https://drafts.css-houdini.org/worklets/",
+  "serie": "worklets"
+ },
+ "wot-scripting-api": {
+  "title": "Web of Things (WoT) Scripting API",
+  "link": "https://w3c.github.io/wot-scripting-api/",
+  "serie": "wot-scripting-api"
+ },
+ "wot-security": {
+  "title": "Web of Things (WoT) Security and Privacy Considerations",
+  "link": "https://w3c.github.io/wot-security/",
+  "serie": "wot-security"
+ },
+ "wpub": {
+  "title": "Web Publications",
+  "link": "https://w3c.github.io/wpub/",
+  "serie": "wpub"
+ },
+ "wpub-ann": {
+  "title": "Web Annotation Extensions for Web Publications",
+  "link": "https://w3c.github.io/wpub-ann/",
+  "serie": "wpub-ann"
+ },
+ "wot-binding-templates": {
+  "title": "Web of Things (WoT) Protocol Binding Templates",
+  "link": "https://w3c.github.io/wot-binding-templates/",
+  "serie": "wot-binding-templates"
+ },
+ "webxr-ar-module": {
+  "title": "WebXR Augmented Reality",
+  "link": "https://immersive-web.github.io/webxr-ar-module/",
+  "serie": "webxr-ar-module"
+ },
+ "xaur": {
+  "title": "XR Accessibility User Requirements",
+  "link": "https://w3c.github.io/apa/xaur/",
+  "serie": "xaur"
+ },
+ "xmlschema": {
+  "title": "",
+  "serie": "xmlschema"
+ },
+ "xlink": {
+  "title": "XML Linking Language (XLink)",
+  "serie": "xlink"
+ },
+ "xml-c14n": {
+  "title": "Canonical XML",
+  "serie": "xml-c14n"
+ },
+ "xmldsig-core": {
+  "title": "XML Signature Syntax and Processing",
+  "serie": "xmldsig-core"
+ },
+ "xml-frag-req": {
+  "title": "XML Fragment Interchange Requirements,",
+  "serie": "xml-frag-req"
+ },
+ "xlink-principles": {
+  "title": "XML Linking Language (XLink) Design Principles",
+  "serie": "xlink-principles"
+ },
+ "xml-ql": {
+  "title": "XML-QL: A Query Language for XML",
+  "serie": "xml-ql"
+ },
+ "xinclude": {
+  "title": "XML Inclusions (XInclude)",
+  "serie": "xinclude"
+ },
+ "xlink-req": {
+  "title": "XML XLink Requirements",
+  "serie": "xlink-req"
+ },
+ "xml-canonical-req": {
+  "title": "XML Canonicalization Requirements",
+  "serie": "xml-canonical-req"
+ },
+ "xml-infoset-req": {
+  "title": "XML Information Set Requirements",
+  "serie": "xml-infoset-req"
+ },
+ "xml-schema-req": {
+  "title": "XML Schema Requirements",
+  "serie": "xml-schema-req"
+ },
+ "xhtml-modularization": {
+  "title": "XHTML™ Modularization 1.1 - Second Edition",
+  "serie": "xhtml-modularization"
+ },
+ "xhtml-prof-req": {
+  "title": "XHTML™ Document Profile Requirements",
+  "serie": "xhtml-prof-req"
+ },
+ "xml-infoset": {
+  "title": "XML Information Set (Second Edition)",
+  "serie": "xml-infoset"
+ },
+ "xmlbase": {
+  "title": "XML Base (Second Edition)",
+  "serie": "xmlbase"
+ },
+ "xhtml-roadmap": {
+  "title": "HTML Working Group Roadmap",
+  "serie": "xhtml-roadmap"
+ },
+ "xlink-naming": {
+  "title": "XLink Markup Name Control",
+  "serie": "xlink-naming"
+ },
+ "xlink2rdf": {
+  "title": "Harvesting RDF Statements from XLinks",
+  "serie": "xlink2rdf"
+ },
+ "xkms": {
+  "title": "XML Key Management Specification (XKMS",
+  "serie": "xkms"
+ },
+ "xml-infoset-rdfs": {
+  "title": "An RDF Schema for the XML Information Set",
+  "serie": "xml-infoset-rdfs"
+ },
+ "xml-link-style": {
+  "title": "XML Linking and Style",
+  "serie": "xml-link-style"
+ },
+ "xmldsig-p3p-profile": {
+  "title": "A P3P Assurance Signature Profile",
+  "serie": "xmldsig-p3p-profile"
+ },
+ "xml-blueberry-req": {
+  "title": "XML Blueberry Requirements",
+  "serie": "xml-blueberry-req"
+ },
+ "xml-exc-c14n": {
+  "title": "Exclusive XML Canonicalization",
+  "serie": "xml-exc-c14n"
+ },
+ "xml": {
+  "title": "Extensible Markup Language (XML)",
+  "serie": "xml"
+ },
+ "xmlenc-decrypt": {
+  "title": "Decryption Transform for XML Signature",
+  "serie": "xmlenc-decrypt"
+ },
+ "xag": {
+  "title": "XML Accessibility Guidelines",
+  "serie": "xag"
+ },
+ "xmlp-am": {
+  "title": "XML Protocol Abstract Model",
+  "serie": "xmlp-am"
+ },
+ "xmlp-scenarios": {
+  "title": "SOAP Version 1.2 Usage Scenarios",
+  "serie": "xmlp-scenarios"
+ },
+ "xmlschema-formal": {
+  "title": "XML Schema: Formal Description",
+  "serie": "xmlschema-formal"
+ },
+ "xml-names": {
+  "title": "Namespaces in XML",
+  "serie": "xml-names"
+ },
+ "xmldsig-filter": {
+  "title": "XML-Signature XPath Filter",
+  "serie": "xmldsig-filter"
+ },
+ "xhtmlplussmil": {
+  "title": "XHTML+SMIL Profile",
+  "serie": "xhtmlplussmil"
+ },
+ "xhtml-media-types": {
+  "title": "XHTML Media Types - Second Edition",
+  "serie": "xhtml-media-types"
+ },
+ "xhtml-schema": {
+  "title": "XHTML 1.0 in XML Schema",
+  "serie": "xhtml-schema"
+ },
+ "xmcl": {
+  "title": "XMCL - the eXtensible Media Commerce Language",
+  "serie": "xmcl"
+ },
+ "xml-encryption-req": {
+  "title": "XML Encryption Requirements",
+  "serie": "xml-encryption-req"
+ },
+ "xml-pipeline": {
+  "title": "XML Pipeline Definition Language",
+  "serie": "xml-pipeline"
+ },
+ "xhtmlplusmathmlplussvg": {
+  "title": "An XHTML + MathML + SVG Profile",
+  "serie": "xhtmlplusmathmlplussvg"
+ },
+ "xkms-bindings": {
+  "title": "XML Key Management Specification (XKMS 2.0) Bindings",
+  "serie": "xkms-bindings"
+ },
+ "xkms-req": {
+  "title": "XML Key Management (XKMS 2.0) Requirements",
+  "serie": "xkms-req"
+ },
+ "xkms-xbulk": {
+  "title": "XML Key Management Specification Bulk Operation (X-BULK)",
+  "serie": "xkms-xbulk"
+ },
+ "xml-names-req": {
+  "title": "Namespaces in XML 1.1 Requirements",
+  "serie": "xml-names-req"
+ },
+ "xindirect": {
+  "title": "XML Indirection Facility",
+  "serie": "xindirect"
+ },
+ "xml-fragid": {
+  "title": "Proposal for XML Fragment Identifier Syntax 0.9",
+  "serie": "xml-fragid"
+ },
+ "xhtml-print": {
+  "title": "XHTML-Print - Second Edition",
+  "serie": "xhtml-print"
+ },
+ "xml-id-req": {
+  "title": "xml:id Requirements",
+  "serie": "xml-id-req"
+ },
+ "xmlschema-req": {
+  "title": "Requirements for XML Schema",
+  "serie": "xmlschema-req"
+ },
+ "xmlschema-ref": {
+  "title": "W3C XML Schema Definition Language (XSD): Component Designators",
+  "serie": "xmlschema-ref"
+ },
+ "xml-id": {
+  "title": "xml:id",
+  "serie": "xml-id"
+ },
+ "xml-media-types": {
+  "title": "Describing Media Content of Binary Data in XML",
+  "serie": "xml-media-types"
+ },
+ "xkms-pgp": {
+  "title": "Using XKMS with PGP",
+  "serie": "xkms-pgp"
+ },
+ "xkms-wsdl": {
+  "title": "A WSDL 1.1 description for XKMS",
+  "serie": "xkms-wsdl"
+ },
+ "xlink-ext": {
+  "title": "Extending XLink",
+  "serie": "xlink-ext"
+ },
+ "xmlhttprequest": {
+  "title": "XMLHttpRequest",
+  "link": "https://xhr.spec.whatwg.org/",
+  "serie": "xmlhttprequest"
+ },
+ "xhtml-role": {
+  "title": "XHTML Role Attribute",
+  "serie": "xhtml-role"
+ },
+ "xml-i18n-bp": {
+  "title": "Best Practices for XML Internationalization",
+  "serie": "xml-i18n-bp"
+ },
+ "xmlschema-guide2versioning": {
+  "title": "Guide to Versioning XML Languages using new XML Schema 1.1 features",
+  "serie": "xmlschema-guide2versioning"
+ },
+ "xmlschema-patterns": {
+  "title": "Basic XML Schema Patterns for Databinding",
+  "serie": "xmlschema-patterns"
+ },
+ "xmlschema-patterns-advanced": {
+  "title": "Advanced XML Schema Patterns for Databinding",
+  "serie": "xmlschema-patterns-advanced"
+ },
+ "xhtml-rdfa-scenarios": {
+  "title": "RDFa Use Cases: Scenarios for Embedding RDF in HTML",
+  "serie": "xhtml-rdfa-scenarios"
+ },
+ "xml-entity-names": {
+  "title": "XML Entity Definitions for Characters (2nd Edition)",
+  "serie": "xml-entity-names"
+ },
+ "xpath-full-text-requirements": {
+  "title": "XQuery and XPath Full Text 1.0 Requirements",
+  "serie": "xpath-full-text-requirements"
+ },
+ "xpath-full-text-use-cases": {
+  "title": "XQuery and XPath Full Text 1.0 Use Cases",
+  "serie": "xpath-full-text-use-cases"
+ },
+ "xmldsiged-tests": {
+  "title": "Test Cases for C14N 1.1 and XMLDSig Interoperability",
+  "serie": "xmldsiged-tests"
+ },
+ "xmldsig-bestpractices": {
+  "title": "XML Signature Best Practices",
+  "serie": "xmldsig-bestpractices"
+ },
+ "xmldsig-properties": {
+  "title": "XML Signature Properties",
+  "serie": "xmldsig-properties"
+ },
+ "xmldsig-simplify": {
+  "title": "XML Signature Transform Simplification: Requirements and Design",
+  "serie": "xmldsig-simplify"
+ },
+ "xmlenc-core": {
+  "title": "XML Encryption Syntax and Processing",
+  "serie": "xmlenc-core"
+ },
+ "xmlsec-algorithms": {
+  "title": "XML Security Algorithm Cross-Reference",
+  "serie": "xmlsec-algorithms"
+ },
+ "xml-events": {
+  "title": "XML Events",
+  "serie": "xml-events"
+ },
+ "xml-model": {
+  "title": "Associating Schemas with XML documents 1.0 (Third Edition)",
+  "serie": "xml-model"
+ },
+ "xhtml-rdfa": {
+  "title": "XHTML+RDFa 1.1 - Third Edition",
+  "serie": "xhtml-rdfa"
+ },
+ "xml-proc-profiles": {
+  "title": "XML processor profiles",
+  "serie": "xml-proc-profiles"
+ },
+ "xmldsig-xpath": {
+  "title": "XML Signature Streaming Profile of XPath",
+  "serie": "xmldsig-xpath"
+ },
+ "rdfa-primer": {
+  "title": "RDFa 1.1 Primer - Third Edition",
+  "link": "https://www.w3.org/2010/02/rdfa/sources/rdfa-primer/Overview-src.html",
+  "serie": "rdfa-primer"
+ },
+ "xmlenc-transform": {
+  "title": "XML Encryption 1.1 CipherReference Processing using 2.0 Transforms",
+  "serie": "xmlenc-transform"
+ },
+ "xinclude-requirements": {
+  "title": "XInclude 1.1 Requirement and Use Cases",
+  "serie": "xinclude-requirements"
+ },
+ "xmldsig-core-explain": {
+  "title": "Functional Explanation of Changes in XML Signature",
+  "serie": "xmldsig-core-explain"
+ },
+ "xmldsig-core-interop": {
+  "title": "XML Signature 1.1 Interop Test Report",
+  "serie": "xmldsig-core-interop"
+ },
+ "xmlenc-core-explain": {
+  "title": "Functional Explanation of Changes in XML Encryption",
+  "serie": "xmlenc-core-explain"
+ },
+ "xmlenc-core-interop": {
+  "title": "XML Encryption 1.1 Interop Test Report",
+  "serie": "xmlenc-core-interop"
+ },
+ "xml-c14n-testcases": {
+  "title": "Test cases for Canonical XML",
+  "link": "https://www.w3.org/2008/xmlsec/Drafts/c14n-20/test-cases/",
+  "serie": "xml-c14n-testcases"
+ },
+ "xhtml-pubid": {
+  "title": "Public Identifiers for entity resolution in XHTML",
+  "link": "https://www.w3.org/2003/entities/2007doc/xhtml-pubid.html",
+  "serie": "xhtml-pubid"
+ },
+ "editing": {
+  "title": "Editing the Web: Detecting the Lost Update Problem Using Unreserved Checkout",
+  "serie": "editing"
+ },
+ "wca-terms": {
+  "title": "Web Characterization Terminology & Definitions Sheet",
+  "serie": "wca-terms"
+ },
+ "xfa-formcalc": {
+  "title": "XFA-FormCalc",
+  "serie": "xfa-formcalc"
+ },
+ "xfa-template": {
+  "title": "XFA-Template",
+  "serie": "xfa-template"
+ },
+ "webdata": {
+  "title": "Web Architecture: Describing and Exchanging Data",
+  "serie": "webdata"
+ },
+ "ccppexchange": {
+  "title": "CC/PP exchange protocol based on HTTP Extension Framework",
+  "serie": "ccppexchange"
+ },
+ "poix": {
+  "title": "POIX: Point Of Interest eXchange Language Specification",
+  "serie": "poix"
+ },
+ "wbxml": {
+  "title": "WAP Binary XML Content Format",
+  "serie": "wbxml"
+ },
+ "xml-stylesheet": {
+  "title": "Associating Style Sheets with XML documents 1.0 (Second Edition)",
+  "serie": "xml-stylesheet"
+ },
+ "xml-fragment": {
+  "title": "XML Fragment Interchange",
+  "serie": "xml-fragment"
+ },
+ "ccpp": {
+  "title": "Composite Capability/Preference Profiles (CC/PP): A user side framework for content negotiation",
+  "serie": "ccpp"
+ },
+ "sox": {
+  "title": "Schema for Object-oriented XML",
+  "serie": "sox"
+ },
+ "annot": {
+  "title": "Annotation of Web Content for Transcoding",
+  "serie": "annot"
+ },
+ "device-upload": {
+  "title": "Form-based Device Input and Upload in HTML",
+  "serie": "device-upload"
+ },
+ "xpath": {
+  "title": "XML Path Language (XPath)",
+  "serie": "xpath"
+ },
+ "xptr-element": {
+  "title": "XPointer element() Scheme",
+  "serie": "xptr-element"
+ },
+ "xslt": {
+  "title": "XSL Transformations (XSLT)",
+  "serie": "xslt"
+ },
+ "css-access": {
+  "title": "Accessibility Features of CSS",
+  "serie": "css-access"
+ },
+ "xmldsig-requirements": {
+  "title": "XML-Signature Requirements",
+  "serie": "xmldsig-requirements"
+ },
+ "proposals": {
+  "title": "Proposals for Gathering Consumer Demographics",
+  "serie": "proposals"
+ },
+ "jigsaw-performance": {
+  "title": "Jigsaw performance evaluation",
+  "serie": "jigsaw-performance"
+ },
+ "jigsaw-wp": {
+  "title": "Jigsaw: An Object Oriented Server",
+  "serie": "jigsaw-wp"
+ },
+ "markup-specification": {
+  "title": "Giving Information About Other Resources in HTML",
+  "serie": "markup-specification"
+ },
+ "markup-doctypes": {
+  "title": "HTML Dialects: Internet Medial and SGML Document Types",
+  "serie": "markup-doctypes"
+ },
+ "charset-harmful": {
+  "title": "\"Character Set\" Considered Harmful",
+  "serie": "charset-harmful"
+ },
+ "http-performance-pipeline": {
+  "title": "Network Performance Effects of HTTP/1.1, CSS1, and PNG",
+  "serie": "http-performance-pipeline"
+ },
+ "xsl-and-css": {
+  "title": "Using XSL and CSS together",
+  "serie": "xsl-and-css"
+ },
+ "xslreq": {
+  "title": "XSL Requirements Summary",
+  "serie": "xslreq"
+ },
+ "xptr-infoset-liaison": {
+  "title": "XPointer-Information Set Liaison Statement",
+  "serie": "xptr-infoset-liaison"
+ },
+ "xptr-req": {
+  "title": "XML XPointer Requirements",
+  "serie": "xptr-req"
+ },
+ "xsl": {
+  "title": "Extensible Stylesheet Language (XSL)",
+  "serie": "xsl"
+ },
+ "xmsg": {
+  "title": "XMSG - XML Messaging Specification",
+  "serie": "xmsg"
+ },
+ "xtnd": {
+  "title": "XTND - XML Transition Network Definition",
+  "serie": "xtnd"
+ },
+ "xmlp-reqs": {
+  "title": "XML Protocol (XMLP) Requirements",
+  "serie": "xmlp-reqs"
+ },
+ "xsltreq": {
+  "title": "XSL",
+  "serie": "xsltreq"
+ },
+ "xpathreq": {
+  "title": "XPath Requirements",
+  "serie": "xpathreq"
+ },
+ "xquery": {
+  "title": "XQuery",
+  "serie": "xquery"
+ },
+ "xpath-functions": {
+  "title": null,
+  "serie": "xpath-functions"
+ },
+ "xqueryx": {
+  "title": null,
+  "serie": "xqueryx"
+ },
+ "xup": {
+  "title": "XUP - Extensible User Interface Protocol",
+  "serie": "xup"
+ },
+ "xptr-framework": {
+  "title": "XPointer Framework",
+  "serie": "xptr-framework"
+ },
+ "xptr-xmlns": {
+  "title": "XPointer xmlns() Scheme",
+  "serie": "xptr-xmlns"
+ },
+ "xptr-xpointer": {
+  "title": "XPointer xpointer() Scheme",
+  "serie": "xptr-xpointer"
+ },
+ "xpath-datamodel": {
+  "title": "XQuery",
+  "serie": "xpath-datamodel"
+ },
+ "xquery-requirements": {
+  "title": null,
+  "serie": "xquery-requirements"
+ },
+ "xquery-use-cases": {
+  "title": null,
+  "serie": "xquery-use-cases"
+ },
+ "xsl-req": {
+  "title": "Extensible Stylesheet Language (XSL) Version 1.1 Requirements",
+  "serie": "xsl-req"
+ },
+ "xslt-xquery-serialization": {
+  "title": "XSLT",
+  "serie": "xslt-xquery-serialization"
+ },
+ "xop": {
+  "title": "XML-binary Optimized Packaging",
+  "serie": "xop"
+ },
+ "xopinc-faq": {
+  "title": "XOP Inclusion Mechanism - Frequently Asked Questions",
+  "serie": "xopinc-faq"
+ },
+ "xquery-xpath-parsing": {
+  "title": "Building a Tokenizer for XPath or XQuery",
+  "serie": "xquery-xpath-parsing"
+ },
+ "xproc": {
+  "title": "XProc",
+  "serie": "xproc"
+ },
+ "xproc-requirements": {
+  "title": "XML Processing Model Requirements and Use Cases",
+  "serie": "xproc-requirements"
+ },
+ "xpath-full-text": {
+  "title": "XQuery and XPath Full Text",
+  "serie": "xpath-full-text"
+ },
+ "xquery-sx-requirements": {
+  "title": "XQuery Scripting Extension 1.0 Requirements",
+  "serie": "xquery-sx-requirements"
+ },
+ "xquery-update": {
+  "title": "XQuery Update Facility",
+  "serie": "xquery-update"
+ },
+ "xquery-update-requirements": {
+  "title": "XQuery Update Facility 1.0 Requirements",
+  "serie": "xquery-update-requirements"
+ },
+ "xquery-update-use-cases": {
+  "title": "XQuery Update Facility 1.0 Use Cases",
+  "serie": "xquery-update-use-cases"
+ },
+ "xquery-sx": {
+  "title": "XQuery Scripting Extension",
+  "serie": "xquery-sx"
+ },
+ "xquery-sx-use-cases": {
+  "title": "XQuery Scripting Extension 1.0 Use Cases",
+  "serie": "xquery-sx-use-cases"
+ },
+ "xslfo-req": {
+  "title": "Extensible Stylesheet Language (XSL) Requirements",
+  "serie": "xslfo-req"
+ },
+ "xmlsec-derivedkeys": {
+  "title": "XML Security Derived Keys",
+  "serie": "xmlsec-derivedkeys"
+ },
+ "xmlsec-generic-hybrid": {
+  "title": "XML Security Generic Hybrid Ciphers",
+  "serie": "xmlsec-generic-hybrid"
+ },
+ "xmlsec-reqs": {
+  "title": "XML Security",
+  "serie": "xmlsec-reqs"
+ },
+ "xslfo": {
+  "title": "Extensible Stylesheet Language (XSL)",
+  "serie": "xslfo"
+ },
+ "xmlsec-rngschema": {
+  "title": "XML Security RELAX NG Schemas",
+  "serie": "xmlsec-rngschema"
+ },
+ "xslt-requirements": {
+  "title": "Requirements and Use Cases for XSLT",
+  "serie": "xslt-requirements"
+ },
+ "xproc-template": {
+  "title": "Document Templating Steps for XProc",
+  "serie": "xproc-template"
+ },
+ "xsd-precisiondecimal": {
+  "title": "An XSD datatype for IEEE floating-point decimal",
+  "serie": "xsd-precisiondecimal"
+ },
+ "xsd-unicode-blocknames": {
+  "title": "Unicode block names for use in XSD regular expressions",
+  "serie": "xsd-unicode-blocknames"
+ },
+ "xpath-full-text-requirements-use-cases": {
+  "title": "XQuery and XPath Full Text 3.0 Requirements and Use Cases",
+  "serie": "xpath-full-text-requirements-use-cases"
+ },
+ "xquery-update-requirements-use-cases": {
+  "title": "XQuery Update Facility 3.0 Requirements and Use Cases",
+  "serie": "xquery-update-requirements-use-cases"
+ },
+ "xproc-req": {
+  "title": "XProc V2.0 Requirements",
+  "serie": "xproc-req"
+ },
+ "xproc-steps": {
+  "title": "XProc 2.0: Standard Step Library",
+  "serie": "xproc-steps"
+ },
+ "scxml-xpath-dm": {
+  "title": "XPath Data Model for SCXML",
+  "serie": "scxml-xpath-dm"
+ },
+ "s6group2": {
+  "title": "A Proposed Convention for Embedding Metadata in HTML",
+  "serie": "s6group2"
+ },
+ "htmlthreading": {
+  "title": "HTML Threading: Conventions for use of HTML in email",
+  "serie": "htmlthreading"
+ },
+ "stts": {
+  "title": "Simple Tree Transformation Sheets",
+  "serie": "stts"
+ },
+ "xml-data": {
+  "title": "XML Data",
+  "serie": "xml-data"
+ },
+ "dom-requirements": {
+  "title": "Document Object Model (DOM) Requirements",
+  "serie": "dom-requirements"
+ },
+ "ccpp-struct-vocab": {
+  "title": "Composite Capability/Preference Profiles (CC/PP): Structure and Vocabularies",
+  "serie": "ccpp-struct-vocab"
+ },
+ "daml+oil-axioms": {
+  "title": "An Axiomatic Semantics for RDF, RDF-S, and DAML+OIL (March 2001)",
+  "serie": "daml+oil-axioms"
+ },
+ "daml+oil-model": {
+  "title": "A Model-Theoretic Semantics for DAML+OIL (March 2001)",
+  "serie": "daml+oil-model"
+ },
+ "daml+oil-reference": {
+  "title": "DAML+OIL (March 2001) Reference Description",
+  "serie": "daml+oil-reference"
+ },
+ "daml+oil-walkthru": {
+  "title": "Annotated DAML+OIL Ontology Markup",
+  "serie": "daml+oil-walkthru"
+ },
+ "wcag-checklist-linear": {
+  "title": "Web Content Accessibility Guidelines 2.0 Checklist",
+  "serie": "wcag-checklist-linear"
+ },
+ "wcag-checklist": {
+  "title": "Web Content Accessibility Guidelines 2.0 Checklist",
+  "serie": "wcag-checklist"
+ },
+ "cdfsubmit": {
+  "title": "Channel Definition Format (CDF)",
+  "serie": "cdfsubmit"
+ },
+ "ipwg-practices": {
+  "title": "Internet Privacy Working Group Privacy Practices for the Web",
+  "serie": "ipwg-practices"
+ },
+ "mcf-xml": {
+  "title": "Meta Content Framework using XML",
+  "serie": "mcf-xml"
+ },
+ "ops-framework": {
+  "title": "Proposal for an Open Profiling Standard",
+  "serie": "ops-framework"
+ },
+ "ops-overhttp": {
+  "title": "Implementation of OPS Over HTTP",
+  "serie": "ops-overhttp"
+ },
+ "ops-standardpractices": {
+  "title": "Standard Practices for OPS Systems",
+  "serie": "ops-standardpractices"
+ },
+ "osd": {
+  "title": "The Open Software Description Format (OSD)",
+  "serie": "osd"
+ },
+ "pics-cookie-extension": {
+  "title": "PICS Extension for HTTP Cookies",
+  "serie": "pics-cookie-extension"
+ },
+ "hdml": {
+  "title": "",
+  "serie": "hdml"
+ },
+ "tprc": {
+  "title": "Designing a Social Protocol: Lessons Learned from the Platform for Privacy Preferences",
+  "serie": "tprc"
+ },
+ "web-privacy": {
+  "title": "Privacy and Profiling on the Web",
+  "serie": "web-privacy"
+ },
+ "xmlsubmit": {
+  "title": "Web Collections using XML",
+  "serie": "xmlsubmit"
+ },
+ "agent-attributes": {
+  "title": "Client-Specific Web Services by Using User Agent Attributes",
+  "serie": "agent-attributes"
+ },
+ "amaya": {
+  "title": "An Introduction to Amaya",
+  "serie": "amaya"
+ },
+ "cgm": {
+  "title": "Use of CGM as a Scalable Graphics Format",
+  "serie": "cgm"
+ },
+ "drp": {
+  "title": "The HTTP Distribution and Replication Protocol",
+  "serie": "drp"
+ },
+ "eu-conf": {
+  "title": "W3C Activities Related to the \"Global Information Networks\" Ministerial Conference Meeting in Bonn, Germany",
+  "serie": "eu-conf"
+ },
+ "expamaya": {
+  "title": "Amaya Testbed Environments: the Java and ILU versions of Amaya",
+  "serie": "expamaya"
+ },
+ "framework": {
+  "title": "W3C Activities Related to the US \"Framework for Global Electronic Commerce\"",
+  "serie": "framework"
+ },
+ "gdiff": {
+  "title": "Generic Diff Format Specification",
+  "serie": "gdiff"
+ },
+ "http-edit-dist-scenarios": {
+  "title": "HTTP-based Distributed Content Editing Scenarios",
+  "serie": "http-edit-dist-scenarios"
+ },
+ "imagemap": {
+  "title": "Imagemapped Images and Image-Incapable User Agents",
+  "serie": "imagemap"
+ },
+ "jepi": {
+  "title": "White Paper: Joint Electronic Payment Initiative",
+  "serie": "jepi"
+ },
+ "layout": {
+  "title": "Frame-based layout via Style Sheets",
+  "serie": "layout"
+ },
+ "link": {
+  "title": "Navigation through LINK elements in HTML",
+  "serie": "link"
+ },
+ "pics-ng-metadata": {
+  "title": "PICS-NG Metadata Model and Label Syntax",
+  "serie": "pics-ng-metadata"
+ },
+ "rdf-simple-intro": {
+  "title": "Introduction to RDF Metadata",
+  "serie": "rdf-simple-intro"
+ },
+ "rdfarch": {
+  "title": "W3C Data Formats",
+  "serie": "rdfarch"
+ },
+ "rdm": {
+  "title": "Resource Description Messages (RDM)",
+  "serie": "rdm"
+ },
+ "sgml-xml": {
+  "title": "Comparison of SGML and XML",
+  "serie": "sgml-xml"
+ },
+ "widl": {
+  "title": "Web Interface Definition Language (WIDL)",
+  "serie": "widl"
+ },
+ "dsig-label-arch": {
+  "title": "Digital Signature Label Architecture",
+  "serie": "dsig-label-arch"
+ },
+ "p3p-arch": {
+  "title": "P3P Architecture Working Group: General Overview of the P3P Architecture",
+  "serie": "p3p-arch"
+ },
+ "p3p-grammar": {
+  "title": "P3P Vocabulary Working Group: Grammatical Model and Data Design Model",
+  "serie": "p3p-grammar"
+ },
+ "http-pep": {
+  "title": "PEP Specification: an Extension Mechanism for HTTP",
+  "serie": "http-pep"
+ },
+ "ilu-requestor": {
+  "title": "The ILU Requester: Object Services in HTTP Servers",
+  "serie": "ilu-requestor"
+ },
+ "jepi-uppflow": {
+  "title": "Selecting Payment Mechanisms Over HTTP",
+  "serie": "jepi-uppflow"
+ },
+ "logfile": {
+  "title": "Extended Log File Format",
+  "serie": "logfile"
+ },
+ "mptp": {
+  "title": "Micro Payment Transfer Protocol (MPTP)",
+  "serie": "mptp"
+ },
+ "proxy": {
+  "title": "Notification for Proxy Caches",
+  "serie": "proxy"
+ },
+ "session-id": {
+  "title": "Session Identification URI",
+  "serie": "session-id"
+ },
+ "sgml-lex": {
+  "title": "A Lexical Analyzer for HTML and Basic SGML",
+  "serie": "sgml-lex"
+ },
+ "wwwicn": {
+  "title": "HTML predefined icon-like symbols",
+  "serie": "wwwicn"
+ },
+ "eme-stream-mp4": {
+  "title": "ISO Common Encryption ('cenc') Protection Scheme for ISO Base Media File Format Stream Format",
+  "link": "https://w3c.github.io/encrypted-media/format-registry/stream/mp4.html",
+  "serie": "eme-stream-mp4"
+ },
+ "jf2": {
+  "title": "JF2 Post Serialization Format",
+  "link": "https://jf2.spec.indieweb.org/",
+  "serie": "jf2"
+ },
+ "coga-gap-analysis": {
+  "title": "Cognitive Accessibility Roadmap and Gap Analysis",
+  "link": "https://w3c.github.io/coga/gap-analysis/",
+  "serie": "coga-gap-analysis"
+ },
+ "string-meta": {
+  "title": "Strings on the Web: Language and Direction Metadata",
+  "link": "https://w3c.github.io/string-meta/",
+  "serie": "string-meta"
+ },
+ "act-rules-aspects": {
+  "title": "Accessibility Conformance Testing (ACT) Rules: Common Input Aspects",
+  "link": "https://w3c.github.io/wcag-act/NOTE-act-rules-common-aspects.html",
+  "serie": "act-rules-aspects"
+ },
+ "media-timed-events": {
+  "title": "Media Timed Events",
+  "link": "https://w3c.github.io/me-media-timed-events/",
+  "serie": "media-timed-events"
+ },
+ "audiobooks": {
+  "title": "Audiobooks",
+  "link": "https://w3c.github.io/audiobooks/",
+  "serie": "audiobooks"
+ },
+ "simple-ruby": {
+  "title": "Rules for Simple Placement of Japanese Ruby",
+  "link": "https://w3c.github.io/simple-ruby/",
+  "serie": "simple-ruby"
+ },
+ "latn-nl-gap": {
+  "title": "Dutch Gap Analysis",
+  "link": "https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap",
+  "serie": "latn-nl-gap"
+ },
+ "elreq-gap": {
+  "title": "Ethiopic Layout Gap Analysis",
+  "link": "https://w3c.github.io/elreq/gap-analysis/",
+  "serie": "elreq-gap"
+ },
+ "geor-gap": {
+  "title": "Georgian Gap Analysis",
+  "link": "https://w3c.github.io/eurlreq/gap-analysis/geor-gap.html",
+  "serie": "geor-gap"
+ },
+ "grek-gap": {
+  "title": "Modern Greek Gap Analysis",
+  "link": "https://w3c.github.io/eurlreq/gap-analysis/grek-gap",
+  "serie": "grek-gap"
+ },
+ "latn-hu-gap": {
+  "title": "Hungarian Gap Analysis",
+  "link": "https://w3c.github.io/eurlreq/gap-analysis/latn-hu-gap",
+  "serie": "latn-hu-gap"
+ },
+ "alreq-gap": {
+  "title": "Arabic and Persian Gap Analysis",
+  "link": "https://w3c.github.io/alreq/gap-analysis/",
+  "serie": "alreq-gap"
+ },
+ "clreq-gap": {
+  "title": "Chinese Layout Gap Analysis",
+  "link": "https://w3c.github.io/clreq/gap-analysis/",
+  "serie": "clreq-gap"
+ },
+ "beng-gap": {
+  "title": "Bengali Gap Analysis",
+  "link": "https://w3c.github.io/iip/gap-analysis/beng-gap",
+  "serie": "beng-gap"
+ },
+ "deva-gap": {
+  "title": "Devanagari Gap Analysis",
+  "link": "https://w3c.github.io/iip/gap-analysis/deva-gap",
+  "serie": "deva-gap"
+ },
+ "guru-gap": {
+  "title": "Gurmukhi Gap Analysis",
+  "link": "https://w3c.github.io/iip/gap-analysis/guru-gap",
+  "serie": "guru-gap"
+ },
+ "gujr-gap": {
+  "title": "Gujarati Gap Analysis",
+  "link": "https://w3c.github.io/iip/gap-analysis/gujr-gap",
+  "serie": "gujr-gap"
+ },
+ "taml-gap": {
+  "title": "Tamil Gap Analysis",
+  "link": "https://w3c.github.io/iip/gap-analysis/taml-gap",
+  "serie": "taml-gap"
+ },
+ "jpan-gap": {
+  "title": "Japanese Gap Analysis",
+  "link": "https://w3c.github.io/jlreq/gap-analysis/",
+  "serie": "jpan-gap"
+ },
+ "cans-iu-cr-gap": {
+  "title": "Inuktitut & Cree Gap Analysis",
+  "link": "https://w3c.github.io/amlreq/gap-analysis/iu-cr-gap",
+  "serie": "cans-iu-cr-gap"
+ },
+ "cher-gap": {
+  "title": "Cherokee Gap Analysis",
+  "link": "https://w3c.github.io/amlreq/gap-analysis/chr-gap.html",
+  "serie": "cher-gap"
+ },
+ "laoo-gap": {
+  "title": "Lao Gap Analysis",
+  "link": "https://w3c.github.io/sealreq/gap-analysis/laoo-gap",
+  "serie": "laoo-gap"
+ },
+ "khmr-gap": {
+  "title": "Khmer Gap Analysis",
+  "link": "https://w3c.github.io/sealreq/gap-analysis/khmr-gap",
+  "serie": "khmr-gap"
+ },
+ "java-gap": {
+  "title": "Javanese Script Gap Analysis",
+  "link": "https://w3c.github.io/sealreq/gap-analysis/java-gap",
+  "serie": "java-gap"
+ },
+ "thai-gap": {
+  "title": "Thai Gap Analysis",
+  "link": "https://w3c.github.io/sealreq/gap-analysis/thai-gap",
+  "serie": "thai-gap"
+ },
+ "mong-gap": {
+  "title": "Mongolian Gap Analysis",
+  "link": "https://w3c.github.io/mlreq/gap-analysis/",
+  "serie": "mong-gap"
+ },
+ "tibt-gap": {
+  "title": "Tibetan Gap Analysis",
+  "link": "https://w3c.github.io/tlreq/gap-analysis/",
+  "serie": "tibt-gap"
+ },
+ "ilreq-taml": {
+  "title": "Tamil Layout Requirements",
+  "link": "https://w3c.github.io/iip/tamil/",
+  "serie": "ilreq-taml"
+ },
+ "mlreq": {
+  "title": "Mongolian Layout Requirements",
+  "link": "https://w3c.github.io/mlreq/",
+  "serie": "mlreq"
+ },
+ "tlreq": {
+  "title": "Requirements for Tibetan Text Layout and Typography",
+  "link": "https://w3c.github.io/tlreq/",
+  "serie": "tlreq"
+ },
+ "did-spec-registries": {
+  "title": "DID Specification Registries",
+  "link": "https://w3c.github.io/did-spec-registries/",
+  "serie": "did-spec-registries"
+ },
+ "vocab-owl-time-rel": {
+  "title": "Extensions to the OWL-Time Ontology - entity relations",
+  "link": "https://w3c.github.io/sdw/time-entity-relations/",
+  "serie": "vocab-owl-time-rel"
+ },
+ "vocab-owl-time-agg": {
+  "title": "Extensions to the OWL-Time Ontology - temporal aggregates",
+  "link": "https://w3c.github.io/sdw/time-aggregates/",
+  "serie": "vocab-owl-time-agg"
+ },
+ "manifest-app-info": {
+  "title": "Web App Manifest - Application Information",
+  "link": "https://w3c.github.io/manifest-app-info/",
+  "serie": "manifest-app-info"
+ },
+ "pfe-evaluation": {
+  "title": "Progressive Font Enrichment: Evaluation Report",
+  "link": "https://w3c.github.io/PFE-analysis/report/evaluation-report.html",
+  "serie": "pfe-evaluation"
+ },
+ "htr": {
+  "title": "How EMVCo, FIDO, and W3C Technologies Relate",
+  "serie": "htr"
+ },
+ "design-principles": {
+  "title": "Web Platform Design Principles",
+  "link": "https://w3ctag.github.io/design-principles/",
+  "serie": "design-principles"
+ },
+ "wot-profile": {
+  "title": "Web of Things (WoT) Profile",
+  "link": "https://w3c.github.io/wot-profile/",
+  "serie": "wot-profile"
+ },
+ "merchant-validation": {
+  "title": "The MerchantValidationEvent interface",
+  "link": "https://w3c.github.io/merchant-validation/",
+  "serie": "merchant-validation"
+ },
+ "epub-rs": {
+  "title": "EPUB 3.3 Reading Systems",
+  "link": "https://w3c.github.io/epub-specs/epub33/rs/",
+  "serie": "epub-rs"
+ },
+ "epub-overview": {
+  "title": "EPUB 3 Overview",
+  "link": "https://w3c.github.io/epub-specs/epub33/overview/",
+  "serie": "epub-overview"
+ },
+ "epub-multi-rend": {
+  "title": "EPUB Multiple-Rendition Publications",
+  "link": "https://w3c.github.io/epub-specs/epub33/multi-rend/",
+  "serie": "epub-multi-rend"
+ },
+ "responsible-use-spatial": {
+  "title": "The Responsible Use of Spatial Data",
+  "link": "https://w3c.github.io/sdw/responsible-use/",
+  "serie": "responsible-use-spatial"
+ },
+ "wcag-requirements": {
+  "title": "Requirements for WCAG",
+  "link": "https://w3c.github.io/silver/requirements/",
+  "serie": "wcag-requirements"
+ },
+ "adlm-gap": {
+  "title": "Adlam Gap Analysis",
+  "link": "https://w3c.github.io/afrlreq/gap-analysis/adlm-gap",
+  "serie": "adlm-gap"
+ },
+ "hebr-gap": {
+  "title": "Hebrew Gap Analysis",
+  "link": "https://w3c.github.io/hlreq/gap-analysis/",
+  "serie": "hebr-gap"
+ },
+ "latn-de-gap": {
+  "title": "German Gap Analysis",
+  "link": "https://w3c.github.io/eurlreq/gap-analysis/latn-de-gap",
+  "serie": "latn-de-gap"
+ },
+ "latn-fr-gap": {
+  "title": "French Gap Analysis",
+  "link": "https://w3c.github.io/eurlreq/gap-analysis/latn-fr-gap",
+  "serie": "latn-fr-gap"
+ },
+ "nkoo-gap": {
+  "title": "N’Ko Gap Analysis",
+  "link": "https://w3c.github.io/afrlreq/gap-analysis/nkoo-gap",
+  "serie": "nkoo-gap"
+ },
+ "osge-osa-gap": {
+  "title": "Osage Gap Analysis",
+  "link": "https://w3c.github.io/amlreq/gap-analysis/osge-osa-gap",
+  "serie": "osge-osa-gap"
+ },
+ "epub-a11y": {
+  "title": "EPUB Accessibility",
+  "link": "https://w3c.github.io/epub-specs/epub33/a11y/",
+  "serie": "epub-a11y"
+ },
+ "epub-a11y-tech": {
+  "title": "EPUB Accessibility Techniques",
+  "link": "https://w3c.github.io/epub-specs/epub33/a11y-tech/",
+  "serie": "epub-a11y-tech"
  }
 }
