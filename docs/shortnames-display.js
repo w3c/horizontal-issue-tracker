@@ -69,7 +69,8 @@ function domElement(name, attrs, ...content) {
  * *
  */
 async function getAllData() {
-  const ul = domElement("ul");
+  const ulData = domElement("ul");
+  const ulReport = domElement("ul");
 
   SHORTNAMES.then(data => {
 
@@ -100,19 +101,32 @@ async function getAllData() {
     entries.sort(sortEntries);
 
     entries.forEach(value => {
-      const li = domElement("li", { "id": value.key },
+      ulData.appendChild(domElement("li", { "id": value.key },
         domElement("a", {
           href: `review.html?shortname=${value.key}`
         },
         (value.title)? value.title : value.key
         )
-      );
-      ul.appendChild(li);
+      ));
+      if (config.debug && value.serie && value.key !== value.serie) {
+          ulReport.appendChild(domElement("li", { "id": `report-${value.key}` },
+          `Consider replacing `,
+          domElement("a", {
+            href: `review.html?shortname=${value.key}`
+          }, value.key),
+          ` with ${value.serie}`
+          ));
+        }
     });
+
   }).catch(err => {
     console.error(err)
   });
-  document.getElementById("rawdata").appendChild(ul);
+  document.getElementById("rawdata").appendChild(ulData);
+  if (config.debug) {
+    document.getElementById("report").appendChild(domElement("h2", "Debug"));
+    document.getElementById("report").appendChild(ulReport);
+  }
 }
 
 // the script is defer, so just go for it when you're ready
