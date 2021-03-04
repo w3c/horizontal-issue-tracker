@@ -466,6 +466,11 @@
   "title": "Web Content Accessibility Guidelines",
   "serie": "wcag"
  },
+ "web-payments-use-cases": {
+  "link": "",
+  "title": "Web Payments Use Cases",
+  "serie": "web-payments-use-cases"
+ },
  "web-share": {
   "link": "https://w3c.github.io/web-share/",
   "title": "Web Share API",
@@ -520,6 +525,11 @@
   "link": "https://w3c.github.io/wot-thing-description/",
   "title": "Web of Things (WoT) Thing Description",
   "serie": "wot-thing-description"
+ },
+ "xslt": {
+  "link": "",
+  "title": "XSL Transformations (XSLT)",
+  "serie": "xslt"
  },
  "ScrollToTextFragment": {
   "link": "https://wicg.github.io/ScrollToTextFragment/"
@@ -728,11 +738,6 @@
   "title": "CSS Display",
   "serie": "css-display"
  },
- "css-filter-effects": {
-  "link": "https://drafts.fxtf.org/filter-effects/",
-  "title": "Filter Effects",
-  "serie": "filter-effects"
- },
  "css-scrollbars": {
   "link": "https://drafts.csswg.org/css-scrollbars/",
   "title": "CSS Scrollbars",
@@ -742,6 +747,11 @@
   "link": "https://drafts.csswg.org/css-speech/",
   "title": "CSS Speech",
   "serie": "css-speech"
+ },
+ "filter-effects": {
+  "link": "https://drafts.fxtf.org/filter-effects/",
+  "title": "Filter Effects",
+  "serie": "filter-effects"
  },
  "html-aam": {
   "link": "https://w3c.github.io/html-aam/",
@@ -3977,10 +3987,6 @@
   "link": "https://w3ctag.github.io/packaging-on-the-web/",
   "serie": "web-packaging"
  },
- "web-payments-use-cases": {
-  "title": "Web Payments Use Cases",
-  "serie": "web-payments-use-cases"
- },
  "vocab-dqv": {
   "title": "Data on the Web Best Practices: Data Quality Vocabulary",
   "link": "https://w3c.github.io/dwbp/vocab-dqg.html",
@@ -4824,10 +4830,6 @@
  "xptr-element": {
   "title": "XPointer element() Scheme",
   "serie": "xptr-element"
- },
- "xslt": {
-  "title": "XSL Transformations (XSLT)",
-  "serie": "xslt"
  },
  "css-access": {
   "title": "Accessibility Features of CSS",
