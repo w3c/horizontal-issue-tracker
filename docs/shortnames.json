@@ -141,7 +141,7 @@
  },
  "css-pseudo": {
   "link": "https://drafts.csswg.org/css-pseudo/",
-  "title": "CSS Pseudo-Elements Module Level 4",
+  "title": "CSS Pseudo-Elements Module",
   "serie": "css-pseudo"
  },
  "css-rhythm": {
@@ -201,7 +201,7 @@
  },
  "did-core": {
   "link": "https://w3c.github.io/did-core/",
-  "title": "Decentralized Identifiers (DIDs) v",
+  "title": "Decentralized Identifiers (DIDs)",
   "serie": "did-core"
  },
  "dom": {
@@ -1368,11 +1368,11 @@
   "serie": "dt4dtd"
  },
  "dom-content-models-and-load-save": {
-  "title": "Document Object Model (DOM) Level 3 Load and Save Specification",
+  "title": "Document Object Model (DOM) Load and Save",
   "serie": "dom-content-models-and-load-save"
  },
- "dom-level--views": {
-  "title": "Document Object Model (DOM) Level 3 Views and Formatting Specification",
+ "dom-views": {
+  "title": "Document Object Model (DOM) Views and Formatting",
   "serie": "dom-level--views"
  },
  "cx": {
@@ -1399,16 +1399,16 @@
   "title": "ESI Language Specification",
   "serie": "esi-lang"
  },
- "dom-level--xpath": {
-  "title": "Document Object Model (DOM) Level 3 XPath Specification",
+ "dom-xpath": {
+  "title": "Document Object Model (DOM) XPath",
   "serie": "dom-level--xpath"
  },
  "di-princ": {
   "title": "Device Independence Principles",
   "serie": "di-princ"
  },
- "dom-level--as": {
-  "title": "Document Object Model (DOM) Level 3 Abstract Schemas Specification",
+ "dom-as": {
+  "title": "Document Object Model (DOM) Abstract Schemas",
   "serie": "dom-level--as"
  },
  "egix": {
@@ -1416,7 +1416,7 @@
   "serie": "egix"
  },
  "dom-val": {
-  "title": "Document Object Model (DOM) Level 3 Validation Specification",
+  "title": "Document Object Model (DOM) Validation",
   "serie": "dom-val"
  },
  "di-dco": {
@@ -3141,19 +3141,19 @@
   "serie": "srml"
  },
  "soap-email": {
-  "title": "SOAP Version 1.2 Email Binding",
+  "title": "SOAP Email Binding",
   "serie": "soap-email"
  },
  "soap-af": {
-  "title": "SOAP 1.2 Attachment Feature",
+  "title": "SOAP Attachment Feature",
   "serie": "soap-af"
  },
  "soap-testcollection": {
-  "title": "SOAP Version 1.2 Specification Assertions and Test Collection",
+  "title": "SOAP Assertions and Test Collection",
   "serie": "soap-testcollection"
  },
  "soap-n11n": {
-  "title": "SOAP Version 1.2 Message Normalization",
+  "title": "SOAP Message Normalization",
   "serie": "soap-n11n"
  },
  "soap-mtom": {
@@ -3201,7 +3201,7 @@
   "serie": "sawsdl-guide"
  },
  "ssmlreqs": {
-  "title": "Speech Synthesis Markup Language Version 1.1 Requirements",
+  "title": "Speech Synthesis Markup Language Requirements",
   "serie": "ssmlreqs"
  },
  "rif-bld": {
@@ -3590,23 +3590,23 @@
   "serie": "uwa-personalization-roadmap"
  },
  "svg-transforms": {
-  "title": "SVG Transforms 1.0, Part 2: Language",
+  "title": "SVG Transforms, Part 2: Language",
   "serie": "svg-transforms"
  },
  "svgcolor": {
-  "title": "SVG Color 1.2, Part 2: Language",
+  "title": "SVG Color, Part 2: Language",
   "serie": "svgcolor"
  },
  "svgcolorprimer": {
-  "title": "SVG Color 1.2, Part 1: Primer",
+  "title": "SVG Color, Part 1: Primer",
   "serie": "svgcolorprimer"
  },
  "svgparam": {
-  "title": "SVG Parameters 1.0, Part 2: Language",
+  "title": "SVG Parameters, Part 2: Language",
   "serie": "svgparam"
  },
  "svgparamprimer": {
-  "title": "SVG Parameters 1.0, Part 1: Primer",
+  "title": "SVG Parameters, Part 1: Primer",
   "serie": "svgparamprimer"
  },
  "test-methodology": {
@@ -3618,7 +3618,7 @@
   "serie": "uaag-reference"
  },
  "ump": {
-  "title": "Uniform Messaging Policy, Level One",
+  "title": "Uniform Messaging Policy",
   "serie": "ump"
  },
  "system-info-api": {
