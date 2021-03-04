@@ -17,7 +17,7 @@ const W3C_APIURL = "https://api.w3.org/";
 const SERIE_REGEXP = new RegExp("https://api.w3.org/specification-series/([^]+)$");
 const SHORTNAME_COLOR = "6bc5c6";
 
-const postfixes = [".", ":", "Level", "0", "1", "2", "3", "Revision", "Version", "Module", "-"];
+const postfixes = [".", ":", "Level", "0", "1", "2", "3", "(Second Edition)", "(Revised)", "Revision", "Version", "Module", "-"];
 
 config.debug = false;
 
@@ -49,10 +49,10 @@ function fetchW3C(queryPath) {
 
 const GH = "https://github.com/\([^/]+/[^/]+\)/blob/\([^/]+\)/\(.*\)";
 
+const GH_SHORTNAMES = "https://www.w3.org/PM/horizontal/shortnames.json";
 const LOCATION = "https://github.com/w3c/horizontal-issue-tracker/blob/main/docs/shortnames.json";
 const CACHE_FILE = "cache.json";
 const CACHE = fs.readFile(CACHE_FILE).then(JSON.parse);
-
 
 const TR_COPY = "./w3c_tr.json";
 
@@ -439,9 +439,7 @@ async function run() {
       }
     }
     if (nshort) {
-      if (!nshort.link) {
-        monitor.error(`Discarding entry for ${serie} (no editor draft)`);
-      } else if (!dump_shortnames[serie]) {
+      if (!dump_shortnames[serie]) {
           dump_shortnames[serie] = nshort;
       } else {
         monitor.error(`Duplicate shortname entry for ${serie}`);
@@ -449,27 +447,55 @@ async function run() {
     }
   })
 
+  // gather all of the series we found (serie is not yet equivalent to shortnames :/ )
+  let all_series = [];
+  for (const [key, value] of Object.entries(dump_shortnames)) {
+    if (value.serie) {
+      all_series.push(value.serie);
+    }
+  }
+
   // if changes are made in GH, we'll pick it up here
-  const cached = await getShortNames();
+  const cached = await fetch(GH_SHORTNAMES).then(res => res.json());
   for (const [key, value] of Object.entries(cached)) {
     let entry = dump_shortnames[key];
     if (!entry) {
-      dump_shortnames[key] = value;
+      if (value.serie) {
+        if (!all_series.includes(value.serie)) {
+          dump_shortnames[key] = value;
+        } else {
+          monitor.error(`key ${key} missing but exists as a serie ${value.serie}. Discarded`)
+        }
+      } else {
+        dump_shortnames[key] = value;
+      }
     } else {
       if (!entry.title && value.title) {
+        entry.title = value.title;
+      }
+      if (entry.title && value.title && entry.title !== value.title) {
+        monitor.log(`GH Update (title): "${entry.title}" -> "${value.title}"`);
         entry.title = value.title;
       }
       if (!entry.link && value.link) {
         entry.link = value.link;
       }
+      if (entry.link && value.link && entry.link !== value.link) {
+        monitor.log(`GH Update (link): "${entry.link}" -> "${value.link}"`);
+        entry.link = value.link;
+      }
       if (!entry.serie && value.serie) {
+        entry.serie = value.serie;
+      }
+      if (entry.serie && value.serie && entry.serie !== value.serie) {
+        monitor.log(`GH Update (serie): "${entry.serie}" -> "${value.serie}"`);
         entry.serie = value.serie;
       }
     }
   }
 
   // gather all of the series we found (serie is not yet equivalent to shortnames :/ )
-  let all_series = [];
+  all_series = [];
   for (const [key, value] of Object.entries(dump_shortnames)) {
     if (value.serie) {
       all_series.push(value.serie);
