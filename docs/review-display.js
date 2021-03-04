@@ -12,7 +12,7 @@ const config = {
   extra_labels: 'advice-requested,needs-review,waiting,deferred'
 };
 
-const LABELS_URL = "https://w3c.github.io/hr-labels.json";
+const HR_LABELS = fetch("https://w3c.github.io/hr-labels.json").then(res => res.json());
 const SHORTNAMES = fetch("shortnames.json").then(r => r.json());
 
 // parse the URL to update the config
@@ -146,10 +146,11 @@ rtObserver.observe({entryTypes: ["resource"]});
  */
 async function getAllData() {
   const slabel = `s:${config.shortname}`;
-  const labels = await fetch(LABELS_URL).then(data => data.json());
+  const labels = await HR_LABELS;
 
   const repos = [...new Set(labels.map(l => l.repo))].sort();
   let ipromises = [];
+
   repos.forEach(repo => {
     const GH_URL = `${GH_CACHE}/v3/repos/${repo}/issues`;
     ipromises.push(ghRequest(GH_URL, {
@@ -173,6 +174,7 @@ async function getAllData() {
 
   if (config.debug) console.log(`finished Issue length: ${issues.length}`);
 
+
   let link;
   issues.forEach(entry => {
     let issue = entry.issues[0];
@@ -193,7 +195,9 @@ async function getAllData() {
           repo_labels[label.name] = label;
       }
     });
-    displayRepo(entry.repo, entry.issues);
+    displayRepo(entry.repo,
+      (labels.find(r => r.repo === entry.repo)).groupname,
+       entry.issues);
   });
 
   buildFilters(repo_labels);
@@ -202,18 +206,18 @@ async function getAllData() {
   const trs = document.querySelectorAll('tr')
   document.getElementById('total').textContent = trs.length;
 
-  document.getElementById('shortname').textContent = config.shortname;
+  for (const e of document.getElementsByClassName('shortname')) {
+    e.textContent = config.shortname;
+  }
   document.getElementById('spec_link').textContent = config.shortname;
 
   SHORTNAMES.then(data => {
-    console.log(data)
     let name = data[config.shortname];
-    console.log(name)
     if (name && name.title) {
-      document.getElementById('shortname').textContent = name.title;
+      for (const e of document.getElementsByClassName('shortname')) {
+        e.textContent = name.title;
+      }
       document.getElementById('spec_link').textContent = name.title;
-    } else {
-      console.log("hu?")
     }
   }).catch(err => {
     console.error(err)
@@ -221,13 +225,13 @@ async function getAllData() {
 }
 
 // Display repository information
-function displayRepo(repo, issues) {
+function displayRepo(repo, groupname, issues) {
   // Add a container to put the repository info and issues in
   let table, tr, td, a, updated, toc, span
   let labelSection = domElement('section',
     domElement('h2', {id:repo},
     domElement('a', {class:'self-link','aria-label':'§', href:`#${repo}`}, ''),
-    domElement('a', {href: `https://github.com/${repo}/issues?q=label:s:${config.shortname}`}, repo)));
+    domElement('a', {href: `https://github.com/${repo}/issues?q=label:s:${config.shortname}`}, groupname)));
 
   table = domElement('table');
   const open_issues = issues.filter(issue => issue.state === 'open');
