@@ -231,7 +231,8 @@
  "encoding": {
   "link": "https://encoding.spec.whatwg.org/",
   "title": "Encoding",
-  "serie": "encoding"
+  "serie": "encoding",
+  "retired": true
  },
  "epub": {
   "link": "https://w3c.github.io/epub-specs/epub33/core/",
@@ -244,7 +245,8 @@
  "findtext": {
   "link": "https://w3c.github.io/findtext/",
   "title": "FindText API",
-  "serie": "findtext"
+  "serie": "findtext",
+  "retired": true
  },
  "font-metrics-api": {
   "link": "https://drafts.css-houdini.org/font-metrics-api/"
@@ -296,7 +298,8 @@
  "microdata": {
   "link": "https://w3c.github.io/microdata/",
   "title": "HTML Microdata",
-  "serie": "microdata"
+  "serie": "microdata",
+  "retired": true
  },
  "micropub": {
   "link": "https://micropub.net/draft/",
@@ -344,12 +347,14 @@
  "pronunciation-gap-analysis": {
   "link": "https://w3c.github.io/pronunciation/gap-analysis",
   "title": "Pronunciation Gap Analysis",
-  "serie": "pronunciation-gap-analysis"
+  "serie": "pronunciation-gap-analysis",
+  "retired": true
  },
  "pronunciation-use-cases": {
   "link": "https://w3c.github.io/pronunciation/use-cases",
   "title": "Pronunciation Use Cases",
-  "serie": "pronunciation-use-cases"
+  "serie": "pronunciation-use-cases",
+  "retired": true
  },
  "pub-manifest": {
   "link": "https://w3c.github.io/pub-manifest/",
@@ -394,12 +399,14 @@
  "tracking-compliance": {
   "link": "https://www.w3.org/2011/tracking-protection/drafts/tracking-compliance.html",
   "title": "Tracking Compliance and Scope",
-  "serie": "tracking-compliance"
+  "serie": "tracking-compliance",
+  "retired": true
  },
  "tracking-dnt": {
   "link": "https://w3c.github.io/dnt/drafts/tracking-dnt.html",
   "title": "Tracking Preference Expression (DNT)",
-  "serie": "tracking-dnt"
+  "serie": "tracking-dnt",
+  "retired": true
  },
  "ttml": {
   "link": "https://w3c.github.io/ttml2/",
@@ -434,7 +441,8 @@
  "url": {
   "link": "https://url.spec.whatwg.org/",
   "title": "URL",
-  "serie": "url"
+  "serie": "url",
+  "retired": true
  },
  "vc-data-model": {
   "link": "https://w3c.github.io/vc-data-model/",
@@ -469,7 +477,8 @@
  "web-payments-use-cases": {
   "link": "https://w3c.github.io/webpayments-ig/latest/use-cases/index.html",
   "title": "Web Payments Use Cases",
-  "serie": "web-payments-use-cases"
+  "serie": "web-payments-use-cases",
+  "retired": true
  },
  "web-share": {
   "link": "https://w3c.github.io/web-share/",
@@ -805,12 +814,14 @@
  },
  "acss": {
   "title": "Aural Cascading Style Sheets (ACSS)",
-  "serie": "acss"
+  "serie": "acss",
+  "retired": true
  },
  "becss": {
   "title": "Behavioral Extensions to CSS",
   "link": "https://dev.w3.org/2006/xbl2/css-module.html",
-  "serie": "becss"
+  "serie": "becss",
+  "retired": true
  },
  "charmod": {
   "title": "Character Model for the World Wide Web: Fundamentals",
@@ -822,15 +833,18 @@
  },
  "aert": {
   "title": "Techniques For Accessibility Evaluation And Repair Tools",
-  "serie": "aert"
+  "serie": "aert",
+  "retired": true
  },
  "ccpp-ra": {
   "title": "Composite Capabilities/Preference Profiles: Requirements and Architecture",
-  "serie": "ccpp-ra"
+  "serie": "ccpp-ra",
+  "retired": true
  },
  "ccpp-ta": {
   "title": "Composite Capabilities/Preference Profiles: Terminology and Abbreviations",
-  "serie": "ccpp-ta"
+  "serie": "ccpp-ta",
+  "retired": true
  },
  "ccpp-coordination": {
   "title": "CC/PP Implementors Guide: Harmonization with Existing Vocabularies and Content Transformation Heuristics",
@@ -838,11 +852,13 @@
  },
  "ccpp-trust": {
   "title": "CC/PP Implementors Guide: Privacy and Protocols",
-  "serie": "ccpp-trust"
+  "serie": "ccpp-trust",
+  "retired": true
  },
  "call-control-reqs": {
   "title": "Call Control Requirements in a Voice Browser Framework",
-  "serie": "call-control-reqs"
+  "serie": "call-control-reqs",
+  "retired": true
  },
  "acdi": {
   "title": "Authoring Challenges for Device Independence",
@@ -858,11 +874,13 @@
  },
  "cpc-req": {
   "title": "Core Presentation Characteristics: Requirements and Use Cases",
-  "serie": "cpc-req"
+  "serie": "cpc-req",
+  "retired": true
  },
  "charmod-resid": {
   "title": "Character Model for the World Wide Web: Resource Identifiers",
-  "serie": "charmod-resid"
+  "serie": "charmod-resid",
+  "retired": true
  },
  "charmod-norm": {
   "title": "Character Model for the World Wide Web: String Matching",
@@ -871,7 +889,8 @@
  },
  "cselection": {
   "title": "Content Selection for Device Independence (DISelect)",
-  "serie": "cselection"
+  "serie": "cselection",
+  "retired": true
  },
  "cdrreqs": {
   "title": "Compound Document by Reference Use Cases and Requirements",
@@ -883,7 +902,8 @@
  },
  "cdr": {
   "title": "Compound Document by Reference Framework",
-  "serie": "cdr"
+  "serie": "cdr",
+  "retired": true
  },
  "c14n-issues": {
   "title": "Known Issues with Canonical XML 1.0 (C14N/1.0)",
@@ -904,11 +924,13 @@
  },
  "cselection-primer": {
   "title": "Content Selection Primer",
-  "serie": "cselection-primer"
+  "serie": "cselection-primer",
+  "retired": true
  },
  "cselection-xaf": {
   "title": "Delivery Context: XPath Access Functions",
-  "serie": "cselection-xaf"
+  "serie": "cselection-xaf",
+  "retired": true
  },
  "cooluris": {
   "title": "Cool URIs for the Semantic Web",
@@ -928,7 +950,8 @@
  },
  "cors": {
   "title": "Cross-Origin Resource Sharing",
-  "serie": "cors"
+  "serie": "cors",
+  "retired": true
  },
  "css-animations": {
   "title": "CSS Animations",
@@ -937,16 +960,19 @@
  },
  "2dcontext": {
   "title": "HTML Canvas 2D Context",
-  "serie": "2dcontext"
+  "serie": "2dcontext",
+  "retired": true
  },
  "api-perms": {
   "title": "Permissions for Device API Access",
   "link": "https://dev.w3.org/2009/dap/api-perms/",
-  "serie": "api-perms"
+  "serie": "api-perms",
+  "retired": true
  },
  "contacts-api": {
   "title": "Pick Contacts Intent",
-  "serie": "contacts-api"
+  "serie": "contacts-api",
+  "retired": true
  },
  "html-media-capture": {
   "title": "HTML Media Capture",
@@ -961,7 +987,8 @@
  "animation-timing": {
   "title": "Timing control for script-based animations",
   "link": "https://w3c.github.io/animation-timing/",
-  "serie": "animation-timing"
+  "serie": "animation-timing",
+  "retired": true
  },
  "app-privacy-bp": {
   "title": "Web Application Privacy Best Practices",
@@ -973,7 +1000,8 @@
  },
  "calendar-api": {
   "title": "Calendar API",
-  "serie": "calendar-api"
+  "serie": "calendar-api",
+  "retired": true
  },
  "api-design": {
   "title": "Web API Design Cookbook",
@@ -995,7 +1023,8 @@
  "components-intro": {
   "title": "Introduction to Web Components",
   "link": "https://w3c.github.io/webcomponents/explainer/",
-  "serie": "components-intro"
+  "serie": "components-intro",
+  "retired": true
  },
  "compositing": {
   "title": "Compositing and Blending",
@@ -1005,7 +1034,8 @@
  "app-uri": {
   "title": "The app: URL Scheme",
   "link": "https://app-uri.sysapps.org/",
-  "serie": "app-uri"
+  "serie": "app-uri",
+  "retired": true
  },
  "using-aria": {
   "title": "Using ARIA",
@@ -1015,7 +1045,8 @@
  "contacts-manager-api": {
   "title": "Contacts Manager API",
   "link": "https://www.w3.org/2012/sysapps/contacts-manager-api/",
-  "serie": "contacts-manager-api"
+  "serie": "contacts-manager-api",
+  "retired": true
  },
  "beacon": {
   "title": "Beacon",
@@ -1024,7 +1055,8 @@
  },
  "abstract-ui": {
   "title": "MBUI - Abstract User Interface Models",
-  "serie": "abstract-ui"
+  "serie": "abstract-ui",
+  "retired": true
  },
  "capability-urls": {
   "title": "Good Practices for Capability URLs",
@@ -1049,7 +1081,8 @@
  "csp-pinning": {
   "title": "Content Security Policy Pinning",
   "link": "https://w3c.github.io/webappsec-csp/pinning/",
-  "serie": "csp-pinning"
+  "serie": "csp-pinning",
+  "retired": true
  },
  "credential-management": {
   "title": "Credential Management",
@@ -1074,7 +1107,8 @@
  "csp-cookies": {
   "title": "Content Security Policy: Cookie Controls",
   "link": "https://w3c.github.io/webappsec-csp/cookies/",
-  "serie": "csp-cookies"
+  "serie": "csp-cookies",
+  "retired": true
  },
  "csp-embedded-enforcement": {
   "title": "Content Security Policy: Embedded Enforcement",
@@ -1133,7 +1167,8 @@
  },
  "css-potential": {
   "title": "List of suggested extensions to CSS",
-  "serie": "css-potential"
+  "serie": "css-potential",
+  "retired": true
  },
  "css-smil": {
   "title": "Displaying SMIL Basic Layout with a CSS2 Rendering engine",
@@ -1141,7 +1176,8 @@
  },
  "css-mobile": {
   "title": "CSS Mobile Profile",
-  "serie": "css-mobile"
+  "serie": "css-mobile",
+  "retired": true
  },
  "css-style-attr": {
   "title": "CSS Style Attributes",
@@ -1150,23 +1186,28 @@
  },
  "css-tv": {
   "title": "CSS TV Profile",
-  "serie": "css-tv"
+  "serie": "css-tv",
+  "retired": true
  },
  "css-print": {
   "title": "CSS Print Profile",
-  "serie": "css-print"
+  "serie": "css-print",
+  "retired": true
  },
  "css-preslev": {
   "title": "CSS Presentation Levels",
-  "serie": "css-preslev"
+  "serie": "css-preslev",
+  "retired": true
  },
  "css-hyperlinks": {
   "title": "CSS3 Hyperlink Presentation",
-  "serie": "css-hyperlinks"
+  "serie": "css-hyperlinks",
+  "retired": true
  },
  "css-reader": {
   "title": "The CSS ‘Reader’ Media Type",
-  "serie": "css-reader"
+  "serie": "css-reader",
+  "retired": true
  },
  "css-template": {
   "title": "CSS Template Layout",
@@ -1175,7 +1216,8 @@
  },
  "css-beijing": {
   "title": "Cascading Style Sheets (CSS) Snapshot 2007",
-  "serie": "css-beijing"
+  "serie": "css-beijing",
+  "retired": true
  },
  "ct-landscape": {
   "title": "Content Transformation Landscape",
@@ -1183,7 +1225,8 @@
  },
  "css-marquee": {
   "title": "CSS Marquee",
-  "serie": "css-marquee"
+  "serie": "css-marquee",
+  "retired": true
  },
  "cssom-view": {
   "title": "CSSOM View",
@@ -1192,7 +1235,8 @@
  },
  "ct-guidelines": {
   "title": "Guidelines for Web Content Transformation Proxies",
-  "serie": "ct-guidelines"
+  "serie": "ct-guidelines",
+  "retired": true
  },
  "css-images": {
   "title": "CSS Image",
@@ -1361,7 +1405,8 @@
  },
  "ec-related-activities": {
   "title": "W3C and Electronic Commerce",
-  "serie": "ec-related-activities"
+  "serie": "ec-related-activities",
+  "retired": true
  },
  "dt4dtd": {
   "title": "Datatypes for DTDs (DT4DTD)",
@@ -1373,7 +1418,8 @@
  },
  "dom-views": {
   "title": "Document Object Model (DOM) Views and Formatting",
-  "serie": "dom-level--views"
+  "serie": "dom-level--views",
+  "retired": true
  },
  "cx": {
   "title": "Component Extension (CX) API requirements",
@@ -1401,7 +1447,8 @@
  },
  "dom-xpath": {
   "title": "Document Object Model (DOM) XPath",
-  "serie": "dom-level--xpath"
+  "serie": "dom-level--xpath",
+  "retired": true
  },
  "di-princ": {
   "title": "Device Independence Principles",
@@ -1409,7 +1456,8 @@
  },
  "dom-as": {
   "title": "Document Object Model (DOM) Abstract Schemas",
-  "serie": "dom-level--as"
+  "serie": "dom-level--as",
+  "retired": true
  },
  "egix": {
   "title": "Embedding Glyph Identifiers in XML Documents",
@@ -1433,7 +1481,8 @@
  },
  "di-gloss": {
   "title": "Glossary of Terms for Device Independence",
-  "serie": "di-gloss"
+  "serie": "di-gloss",
+  "retired": true
  },
  "emma": {
   "title": "EMMA: Extensible MultiModal Annotation markup language",
@@ -1441,7 +1490,8 @@
  },
  "dpf": {
   "title": "Delivery Context: Client Interfaces (DCCI)",
-  "serie": "dpf"
+  "serie": "dpf",
+  "retired": true
  },
  "earl-requirements": {
   "title": "Requirements for the Evaluation and Report Language (EARL)",
@@ -1469,11 +1519,13 @@
  },
  "dial": {
   "title": "Device Independent Authoring Language (DIAL)",
-  "serie": "dial"
+  "serie": "dial",
+  "retired": true
  },
  "dial-primer": {
   "title": "DIAL Part 0: Primer",
-  "serie": "dial-primer"
+  "serie": "dial-primer",
+  "retired": true
  },
  "exi-measurements": {
   "title": "Efficient XML Interchange Measurements Note",
@@ -1481,15 +1533,18 @@
  },
  "dfaui": {
   "title": "Declarative Formats for Applications and User Interfaces",
-  "serie": "dfaui"
+  "serie": "dfaui",
+  "retired": true
  },
  "curie": {
   "title": "CURIE Syntax",
-  "serie": "curie"
+  "serie": "curie",
+  "retired": true
  },
  "dcontology": {
   "title": "Delivery Context Ontology",
-  "serie": "dcontology"
+  "serie": "dcontology",
+  "retired": true
  },
  "ddr-core-vocabulary": {
   "title": "Device Description Repository Core Vocabulary",
@@ -1541,7 +1596,8 @@
  },
  "datacache": {
   "title": "Programmable HTTP Caching and Serving",
-  "serie": "datacache"
+  "serie": "datacache",
+  "retired": true
  },
  "earl-guide": {
   "title": "Developer Guide for Evaluation and Report Language (EARL)",
@@ -1554,7 +1610,8 @@
  "eventsource": {
   "title": "Server-Sent Events",
   "link": "https://html.spec.whatwg.org/multipage/server-sent-events.html",
-  "serie": "eventsource"
+  "serie": "eventsource",
+  "retired": true
  },
  "dap-policy-reqs": {
   "title": "Device API Access Control Use Cases and Requirements",
@@ -1580,12 +1637,14 @@
  "discovery-api": {
   "title": "Network Service Discovery",
   "link": "https://dvcs.w3.org/hg/dap/raw-file/tip/discovery-api/Overview.html",
-  "serie": "discovery-api"
+  "serie": "discovery-api",
+  "retired": true
  },
  "custom-elements": {
   "title": "Custom Elements",
   "link": "https://w3c.github.io/webcomponents/spec/custom/",
-  "serie": "custom-elements"
+  "serie": "custom-elements",
+  "retired": true
  },
  "encrypted-media": {
   "title": "Encrypted Media Extensions",
@@ -1614,7 +1673,8 @@
  "epr": {
   "title": "Entry Point Regulation",
   "link": "https://w3c.github.io/webappsec-epr/",
-  "serie": "epr"
+  "serie": "epr",
+  "retired": true
  },
  "scxml-dom-iop": {
   "title": "DOM Event I/O Processor for SCXML",
@@ -1723,11 +1783,13 @@
  },
  "http-ng-testbed": {
   "title": "Design of HTTP-ng Testbed",
-  "serie": "http-ng-testbed"
+  "serie": "http-ng-testbed",
+  "retired": true
  },
  "html-lan": {
   "title": "Primary Language in HTML",
-  "serie": "html-lan"
+  "serie": "html-lan",
+  "retired": true
  },
  "ice": {
   "title": "The Information and Content Exchange (ICE) Protocol",
@@ -1735,19 +1797,23 @@
  },
  "http-ng-architecture": {
   "title": "HTTP-ng Architectural Model",
-  "serie": "http-ng-architecture"
+  "serie": "http-ng-architecture",
+  "retired": true
  },
  "http-ng-goals": {
   "title": "Short- and Long-Term Goals for the HTTP-NG Project",
-  "serie": "http-ng-goals"
+  "serie": "http-ng-goals",
+  "retired": true
  },
  "http-ng-interfaces": {
   "title": "HTTP-ng Web Interfaces",
-  "serie": "http-ng-interfaces"
+  "serie": "http-ng-interfaces",
+  "retired": true
  },
  "http-ng-wire": {
   "title": "HTTP-ng Binary Wire Protocol",
-  "serie": "http-ng-wire"
+  "serie": "http-ng-wire",
+  "retired": true
  },
  "html-mobile": {
   "title": "HTML 4.0 Guidelines for Mobile Access",
@@ -1763,11 +1829,13 @@
  },
  "hlink": {
   "title": "HLink",
-  "serie": "hlink"
+  "serie": "hlink",
+  "retired": true
  },
  "i18n-guide-framework": {
   "title": "Framework Document for i18n Guidelines",
-  "serie": "i18n-guide-framework"
+  "serie": "i18n-guide-framework",
+  "retired": true
  },
  "grddl": {
   "title": "Gleaning Resource Descriptions from Dialects of Languages (GRDDL)",
@@ -1780,7 +1848,8 @@
  },
  "i18n-html-tech-char": {
   "title": "Authoring Techniques for XHTML & HTML Internationalization: Characters and Encodings",
-  "serie": "i18n-html-tech-char"
+  "serie": "i18n-html-tech-char",
+  "retired": true
  },
  "i18n-html-tech-lang": {
   "title": "Authoring HTML: Language declarations",
@@ -1813,7 +1882,8 @@
  },
  "html-pubnotes": {
   "title": "HTML 5 Publication Notes",
-  "serie": "html-pubnotes"
+  "serie": "html-pubnotes",
+  "retired": true
  },
  "html-diff": {
   "title": "HTML5 Differences from HTML4",
@@ -1841,21 +1911,25 @@
  },
  "hash-in-uri": {
   "title": "Usage Patterns For Client-Side URI parameters",
-  "serie": "hash-in-uri"
+  "serie": "hash-in-uri",
+  "retired": true
  },
  "file-system-api": {
   "title": "File API: Directories and System",
   "link": "https://dev.w3.org/2009/dap/file-system/file-dir-sys.html",
-  "serie": "file-system-api"
+  "serie": "file-system-api",
+  "retired": true
  },
  "file-writer-api": {
   "title": "File API: Writer",
   "link": "https://dev.w3.org/2009/dap/file-system/file-writer.html",
-  "serie": "file-writer-api"
+  "serie": "file-writer-api",
+  "retired": true
  },
  "html-alt-techniques": {
   "title": "HTML5: Techniques for providing useful text alternatives",
-  "serie": "html-alt-techniques"
+  "serie": "html-alt-techniques",
+  "retired": true
  },
  "html-bidi": {
   "title": "Additional Requirements for Bidi in HTML & CSS",
@@ -1868,7 +1942,8 @@
  "html-polyglot": {
   "title": "Polyglot Markup: A robust profile of the HTML5 vocabulary",
   "link": "https://dev.w3.org/html5/html-polyglot/html-polyglot.html",
-  "serie": "html-polyglot"
+  "serie": "html-polyglot",
+  "retired": true
  },
  "hcls-orb": {
   "title": "Ontology of Rhetorical Blocks (ORB)",
@@ -1880,11 +1955,13 @@
  },
  "from-origin": {
   "title": "The From-Origin Header",
-  "serie": "from-origin"
+  "serie": "from-origin",
+  "retired": true
  },
  "html-aapi": {
   "title": "HTML to Platform Accessibility APIs Implementation Guide",
-  "serie": "html-aapi"
+  "serie": "html-aapi",
+  "retired": true
  },
  "html-author": {
   "title": "HTML5: Edition for Web Authors",
@@ -1904,11 +1981,13 @@
  },
  "fullscreen": {
   "title": "Fullscreen",
-  "serie": "fullscreen"
+  "serie": "fullscreen",
+  "retired": true
  },
  "gallery": {
   "title": "Pick Media Intent",
-  "serie": "gallery"
+  "serie": "gallery",
+  "retired": true
  },
  "html-main-element": {
   "title": "main element - an HTML5 extension",
@@ -1917,7 +1996,8 @@
  "ime-api": {
   "title": "Input Method Editor API",
   "link": "https://w3c.github.io/ime-api/",
-  "serie": "ime-api"
+  "serie": "ime-api",
+  "retired": true
  },
  "html-imports": {
   "title": "HTML Imports",
@@ -1930,11 +2010,13 @@
  },
  "html-picture-element": {
   "title": "The picture Element",
-  "serie": "html-picture-element"
+  "serie": "html-picture-element",
+  "retired": true
  },
  "html-srcset": {
   "title": "The srcset attribute",
-  "serie": "html-srcset"
+  "serie": "html-srcset",
+  "retired": true
  },
  "html-templates": {
   "title": "HTML Templates",
@@ -1953,11 +2035,13 @@
  },
  "html-json-forms": {
   "title": "W3C HTML JSON form submission",
-  "serie": "html-json-forms"
+  "serie": "html-json-forms",
+  "retired": true
  },
  "form-http-extensions": {
   "title": "W3C HTML Form HTTP Extensions",
-  "serie": "form-http-extensions"
+  "serie": "form-http-extensions",
+  "retired": true
  },
  "ilreq": {
   "title": "Indic Layout Requirements",
@@ -1967,7 +2051,8 @@
  "frame-timing": {
   "title": "Frame Timing",
   "link": "https://wicg.github.io/frame-timing/",
-  "serie": "frame-timing"
+  "serie": "frame-timing",
+  "retired": true
  },
  "html-aria": {
   "title": "ARIA in HTML",
@@ -1981,12 +2066,14 @@
  "geofencing": {
   "title": "Geofencing API",
   "link": "https://w3c.github.io/geofencing-api/",
-  "serie": "geofencing"
+  "serie": "geofencing",
+  "retired": true
  },
  "html-transcript-src": {
   "title": "A transcript extension for HTML",
   "link": "https://w3c.github.io/html-transcript/html-transcript-src.html",
-  "serie": "html-transcript-src"
+  "serie": "html-transcript-src",
+  "retired": true
  },
  "fingerprinting-guidance": {
   "title": "Fingerprinting Guidance for Web Specification Authors (Draft)",
@@ -2023,7 +2110,8 @@
  },
  "micropayment-markup": {
   "title": "Common Markup for micropayment per-fee-links",
-  "serie": "micropayment-markup"
+  "serie": "micropayment-markup",
+  "retired": true
  },
  "japanese-xml": {
   "title": "XML Japanese Profile",
@@ -2039,7 +2127,8 @@
  },
  "lexicon-reqs": {
   "title": "Pronunciation Lexicon Specification (PLS) Requirements",
-  "serie": "lexicon-reqs"
+  "serie": "lexicon-reqs",
+  "retired": true
  },
  "mmi-framework": {
   "title": "W3C Multimodal Interaction Framework",
@@ -2091,7 +2180,8 @@
  },
  "itsreq": {
   "title": "Internationalization and Localization Markup Requirements",
-  "serie": "itsreq"
+  "serie": "itsreq",
+  "retired": true
  },
  "mmi-arch": {
   "title": "Multimodal Architecture and Interfaces",
@@ -2111,7 +2201,8 @@
  },
  "mediaaccessevents": {
   "title": "Media Access Events",
-  "serie": "mediaaccessevents"
+  "serie": "mediaaccessevents",
+  "retired": true
  },
  "ltli": {
   "title": "Language Tags and Locale Identifiers for the World Wide Web",
@@ -2165,11 +2256,13 @@
  },
  "media-capture-api": {
   "title": "The Media Capture API",
-  "serie": "media-capture-api"
+  "serie": "media-capture-api",
+  "retired": true
  },
  "messaging-api": {
   "title": "The Messaging API",
-  "serie": "messaging-api"
+  "serie": "messaging-api",
+  "retired": true
  },
  "mmi-mcbp": {
   "title": "Best practices for creating MMI Modality Components",
@@ -2229,12 +2322,14 @@
  "messaging": {
   "title": "Messaging API",
   "link": "https://www.w3.org/2012/sysapps/messaging/",
-  "serie": "messaging"
+  "serie": "messaging",
+  "retired": true
  },
  "mlw-metadata-us-impl": {
   "title": "Metadata for the Multilingual Web - Usage Scenarios and Implementations",
   "link": "https://w3c.github.io/mlw-metadata-us-impl/",
-  "serie": "mlw-metadata-us-impl"
+  "serie": "mlw-metadata-us-impl",
+  "retired": true
  },
  "ld-glossary": {
   "title": "Linked Data Glossary",
@@ -2243,7 +2338,8 @@
  "matrix": {
   "title": "DOMMatrix interface",
   "link": "https://drafts.fxtf.org/matrix/",
-  "serie": "matrix"
+  "serie": "matrix",
+  "retired": true
  },
  "mbui-intro": {
   "title": "Introduction to Model-Based User Interfaces",
@@ -2310,7 +2406,8 @@
  },
  "mmi-mc-discovery": {
   "title": "Discovery & Registration of Multimodal Modality Components",
-  "serie": "mmi-mc-discovery"
+  "serie": "mmi-mc-discovery",
+  "retired": true
  },
  "international-specs": {
   "title": "Internationalization Best Practices for Spec Developers",
@@ -2363,11 +2460,13 @@
  },
  "p3p-protocols": {
   "title": "P3P Protocol and Data Transport Working Group Draft White Paper",
-  "serie": "p3p-protocols"
+  "serie": "p3p-protocols",
+  "retired": true
  },
  "p3p-principles": {
   "title": "P3P Guiding Principles",
-  "serie": "p3p-principles"
+  "serie": "p3p-principles",
+  "retired": true
  },
  "pgml": {
   "title": "Precision Graphics Markup Language (PGML)",
@@ -2379,15 +2478,18 @@
  },
  "p3p": {
   "title": "The Platform for Privacy Preferences",
-  "serie": "p3p"
+  "serie": "p3p",
+  "retired": true
  },
  "p3p-preferences": {
   "title": "A P3P Preference Exchange Language 1.0 (APPEL1.0)",
-  "serie": "p3p-preferences"
+  "serie": "p3p-preferences",
+  "retired": true
  },
  "mux": {
   "title": "SMUX Protocol",
-  "serie": "mux"
+  "serie": "mux",
+  "retired": true
  },
  "nvml": {
   "title": "NaVigation Markup Language (NVML)",
@@ -2411,11 +2513,13 @@
  },
  "multimodal-reqs": {
   "title": "Multimodal Requirements for Voice Markup Languages",
-  "serie": "multimodal-reqs"
+  "serie": "multimodal-reqs",
+  "retired": true
  },
  "nl-spec": {
   "title": "Natural Language Semantics Markup Language for the Speech Interface Framework",
-  "serie": "nl-spec"
+  "serie": "nl-spec",
+  "retired": true
  },
  "newline": {
   "title": "The [NEL] Newline Character",
@@ -2423,7 +2527,8 @@
  },
  "ngram-spec": {
   "title": "Stochastic Language Models (N-Gram)",
-  "serie": "ngram-spec"
+  "serie": "ngram-spec",
+  "retired": true
  },
  "odrl": {
   "title": "Open Digital Rights Language (ODRL)",
@@ -2431,11 +2536,13 @@
  },
  "p3p-rdfschema": {
   "title": "An RDF Schema for P3P",
-  "serie": "p3p-rdfschema"
+  "serie": "p3p-rdfschema",
+  "retired": true
  },
  "p3pdeployment": {
   "title": "The Platform for Privacy Preferences Deployment Guide",
-  "serie": "p3pdeployment"
+  "serie": "p3pdeployment",
+  "retired": true
  },
  "patent-practice": {
   "title": "Current Patent Practice",
@@ -2531,7 +2638,8 @@
  },
  "mwbp-guidelines": {
   "title": "Extended Guidelines for Mobile Web Best Practices",
-  "serie": "mwbp-guidelines"
+  "serie": "mwbp-guidelines",
+  "retired": true
  },
  "owl-dr-linear": {
   "title": "OWL 2 Web Ontology Language Data Range Extension: Linear Equations",
@@ -2564,11 +2672,13 @@
  "netinfo-api": {
   "title": "The Network Information API",
   "link": "https://dvcs.w3.org/hg/dap/raw-file/tip/network-api/Overview.html",
-  "serie": "netinfo-api"
+  "serie": "netinfo-api",
+  "retired": true
  },
  "notifications": {
   "title": "Web Notifications",
-  "serie": "notifications"
+  "serie": "notifications",
+  "retired": true
  },
  "page-visibility": {
   "title": "Page Visibility",
@@ -2597,7 +2707,8 @@
  },
  "nfc": {
   "title": "Web NFC API",
-  "serie": "nfc"
+  "serie": "nfc",
+  "retired": true
  },
  "network-error-logging": {
   "title": "Network Error Logging",
@@ -2718,11 +2829,13 @@
  },
  "positioning": {
   "title": "Positioning HTML Elements with Cascading Style Sheets",
-  "serie": "positioning"
+  "serie": "positioning",
+  "retired": true
  },
  "print": {
   "title": "CSS Printing Extensions",
-  "serie": "print"
+  "serie": "print",
+  "retired": true
  },
  "rdf-pics": {
   "title": "PICS Rating Vocabularies in XML/RDF",
@@ -2730,7 +2843,8 @@
  },
  "reusable-dialog-reqs": {
   "title": "Reusable Dialog Requirements for Voice Markup Language",
-  "serie": "reusable-dialog-reqs"
+  "serie": "reusable-dialog-reqs",
+  "retired": true
  },
  "rdf-mt": {
   "title": "RDF Semantics",
@@ -2746,7 +2860,8 @@
  },
  "qaframe-ops-extech": {
   "title": "QA Framework: Operational Examples & Techniques",
-  "serie": "qaframe-ops-extech"
+  "serie": "qaframe-ops-extech",
+  "retired": true
  },
  "qaframe-spec": {
   "title": "QA Framework: Specification Guidelines",
@@ -2754,7 +2869,8 @@
  },
  "qaframe-test": {
   "title": "QA Framework: Test Guidelines",
-  "serie": "qaframe-test"
+  "serie": "qaframe-test",
+  "retired": true
  },
  "rdf-concepts": {
   "title": "Resource Description Framework (RDF): Concepts and Abstract Syntax",
@@ -2778,7 +2894,8 @@
  },
  "rdf-dawg-uc": {
   "title": "RDF Data Access Use Cases and Requirements",
-  "serie": "rdf-dawg-uc"
+  "serie": "rdf-dawg-uc",
+  "retired": true
  },
  "rdf-sparql-xmlres": {
   "title": "SPARQL Query Results XML Format",
@@ -2814,7 +2931,8 @@
  },
  "rex": {
   "title": "Remote Events for XML (REX)",
-  "serie": "rex"
+  "serie": "rex",
+  "retired": true
  },
  "powder-use-cases": {
   "title": "POWDER: Use Cases and Requirements",
@@ -2826,16 +2944,19 @@
  },
  "powder-voc": {
   "title": "Protocol for Web Description Resources (POWDER): Web Description Resources (WDR) Vocabulary",
-  "serie": "powder-voc"
+  "serie": "powder-voc",
+  "retired": true
  },
  "powder-xsd": {
   "title": "Protocol for Web Description Resources (POWDER): Web Description Resources Datatypes (WDRD)",
-  "serie": "powder-xsd"
+  "serie": "powder-xsd",
+  "retired": true
  },
  "progress-events": {
   "title": "Progress Events",
   "link": "https://xhr.spec.whatwg.org/",
-  "serie": "progress-events"
+  "serie": "progress-events",
+  "retired": true
  },
  "powder-dr": {
   "title": "Protocol for Web Description Resources (POWDER): Description Resources",
@@ -2871,7 +2992,8 @@
  },
  "rdfa-api": {
   "title": "RDFa API",
-  "serie": "rdfa-api"
+  "serie": "rdfa-api",
+  "retired": true
  },
  "rdfa-core": {
   "title": "RDFa Core",
@@ -2887,7 +3009,8 @@
  },
  "rdf-interfaces": {
   "title": "RDF Interfaces",
-  "serie": "rdf-interfaces"
+  "serie": "rdf-interfaces",
+  "retired": true
  },
  "rdfa-lite": {
   "title": "RDFa Lite",
@@ -2911,7 +3034,8 @@
  },
  "rdf-api": {
   "title": "RDF API",
-  "serie": "rdf-api"
+  "serie": "rdf-api",
+  "retired": true
  },
  "prov-aq": {
   "title": "PROV-AQ: Provenance Access and Query",
@@ -2944,7 +3068,8 @@
  "quota-api": {
   "title": "Quota Management API",
   "link": "https://w3c.github.io/quota-api/",
-  "serie": "quota-api"
+  "serie": "quota-api",
+  "retired": true
  },
  "prov-dictionary": {
   "title": "PROV-Dictionary: Modeling Provenance for Dictionary Data Structures",
@@ -2965,7 +3090,8 @@
  "tcp-udp-sockets": {
   "title": "TCP and UDP Socket API",
   "link": "https://www.w3.org/2012/sysapps/tcp-udp-sockets/",
-  "serie": "tcp-udp-sockets"
+  "serie": "tcp-udp-sockets",
+  "retired": true
  },
  "respimg-usecases": {
   "title": "Use Cases and Requirements for Standardizing Responsive Images",
@@ -2979,7 +3105,8 @@
  },
  "resource-priorities": {
   "title": "Resource Priorities",
-  "serie": "resource-priorities"
+  "serie": "resource-priorities",
+  "retired": true
  },
  "rdf-json": {
   "title": "RDF 1.1 JSON Alternate Serialization (RDF/JSON)",
@@ -3031,7 +3158,8 @@
  "pwp-ucr": {
   "title": "Web Publications Use Cases and Requirements",
   "link": "https://w3c.github.io/dpub-pwp-ucr/",
-  "serie": "pwp-ucr"
+  "serie": "pwp-ucr",
+  "retired": true
  },
  "qb4st": {
   "title": "QB4ST: RDF Data Cube extensions for spatio-temporal components",
@@ -3041,7 +3169,8 @@
  "pwpub": {
   "title": "Packaged Web Publications",
   "link": "https://w3c.github.io/pwpub/",
-  "serie": "pwpub"
+  "serie": "pwpub",
+  "retired": true
  },
  "pronunciation-user-scenarios": {
   "title": "Pronunciation User Scenarios",
@@ -3118,7 +3247,8 @@
  },
  "smil-boston-dom": {
   "title": "Synchronized Multimedia Integration Language Document Object Model",
-  "serie": "smil-boston-dom"
+  "serie": "smil-boston-dom",
+  "retired": true
  },
  "speech-synthesis": {
   "title": "Speech Synthesis Markup Language (SSML)",
@@ -3162,7 +3292,8 @@
  },
  "soap-os-ucr": {
   "title": "SOAP Optimized Serialization Use Cases and Requirements",
-  "serie": "soap-os-ucr"
+  "serie": "soap-os-ucr",
+  "retired": true
  },
  "soap-rep": {
   "title": "Resource Representation SOAP Header Block",
@@ -3182,7 +3313,8 @@
  },
  "sprot": {
   "title": "SPARQL Protocol for RDF Using WSDL",
-  "serie": "sprot"
+  "serie": "sprot",
+  "retired": true
  },
  "soap-ror-httpbinding": {
   "title": "SOAP 1.1 Request Optional Response HTTP Binding",
@@ -3230,7 +3362,8 @@
  },
  "soap-mtom-policy": {
   "title": "MTOM Serialization Policy Assertion",
-  "serie": "soap-mtom-policy"
+  "serie": "soap-mtom-policy",
+  "retired": true
  },
  "rif-dtb": {
   "title": "RIF Datatypes and Built-Ins",
@@ -3319,7 +3452,8 @@
  "selectors-api": {
   "title": "Selectors API",
   "link": "https://dev.w3.org/2006/webapi/selectors-api2/",
-  "serie": "selectors-api"
+  "serie": "selectors-api",
+  "retired": true
  },
  "sparql-federated-query": {
   "title": "SPARQL 1.1 Federated Query",
@@ -3343,7 +3477,8 @@
  },
  "streamproc": {
   "title": "MediaStream Processing API",
-  "serie": "streamproc"
+  "serie": "streamproc",
+  "retired": true
  },
  "rif-primer": {
   "title": "RIF Primer",
@@ -3362,16 +3497,19 @@
  "shadow-dom": {
   "title": "Shadow DOM",
   "link": "https://w3c.github.io/webcomponents/spec/shadow/",
-  "serie": "shadow-dom"
+  "serie": "shadow-dom",
+  "retired": true
  },
  "runtime": {
   "title": "Runtime and Security Model for Web Applications",
-  "serie": "runtime"
+  "serie": "runtime",
+  "retired": true
  },
  "streams-api": {
   "title": "Streams API",
   "link": "https://streams.spec.whatwg.org/",
-  "serie": "streams-api"
+  "serie": "streams-api",
+  "retired": true
  },
  "sri": {
   "title": "Subresource Integrity",
@@ -3381,7 +3519,8 @@
  "selectors-nonelement": {
   "title": "Non-element Selectors",
   "link": "https://drafts.csswg.org/selectors-nonelement/",
-  "serie": "selectors-nonelement"
+  "serie": "selectors-nonelement",
+  "retired": true
  },
  "selection-api": {
   "title": "Selection API",
@@ -3419,7 +3558,8 @@
  },
  "shacl-abstract-syntax": {
   "title": "SHACL Abstract Syntax -- Note on Status of Obsolete Proposal",
-  "serie": "shacl-abstract-syntax"
+  "serie": "shacl-abstract-syntax",
+  "retired": true
  },
  "selectors-states": {
   "title": "Selectors and States",
@@ -3438,7 +3578,8 @@
  },
  "svgreq": {
   "title": "Scalable Vector Graphics (SVG) Requirements",
-  "serie": "svgreq"
+  "serie": "svgreq",
+  "retired": true
  },
  "uaag": {
   "title": "User Agent Accessibility Guidelines",
@@ -3482,7 +3623,8 @@
  },
  "svgmobilereqs": {
   "title": "SVG Mobile Requirements",
-  "serie": "svgmobilereqs"
+  "serie": "svgmobilereqs",
+  "retired": true
  },
  "uaag-techs": {
   "title": "Techniques for User Agent Accessibility Guidelines",
@@ -3491,23 +3633,28 @@
  "unicode-xml": {
   "title": "Unicode in XML and other Markup Languages",
   "link": "https://w3c.github.io/unicode-xml/",
-  "serie": "unicode-xml"
+  "serie": "unicode-xml",
+  "retired": true
  },
  "vbi-reqs": {
   "title": "Voice Browser Interoperation: Requirements",
-  "serie": "vbi-reqs"
+  "serie": "vbi-reqs",
+  "retired": true
  },
  "svgprintreqs": {
   "title": "SVG Printing Requirements",
-  "serie": "svgprintreqs"
+  "serie": "svgprintreqs",
+  "retired": true
  },
  "svgtinyreqs": {
   "title": "SVGT 1.2 Requirements",
-  "serie": "svgtinyreqs"
+  "serie": "svgtinyreqs",
+  "retired": true
  },
  "sxbl": {
   "title": "SVG's XML Binding Language (sXBL)",
-  "serie": "sxbl"
+  "serie": "sxbl",
+  "retired": true
  },
  "swbp-classes-as-values": {
   "title": "Representing Classes As Property Values on the Semantic Web",
@@ -3535,7 +3682,8 @@
  },
  "swbp-thesaurus-pubguide": {
   "title": "Quick Guide to Publishing a Thesaurus on the Semantic Web",
-  "serie": "swbp-thesaurus-pubguide"
+  "serie": "swbp-thesaurus-pubguide",
+  "retired": true
  },
  "swbp-xsch-datatypes": {
   "title": "XML Schema Datatypes in RDF and OWL",
@@ -3551,7 +3699,8 @@
  },
  "swbp-image-annotation": {
   "title": "Image Annotation on the Semantic Web",
-  "serie": "swbp-image-annotation"
+  "serie": "swbp-image-annotation",
+  "retired": true
  },
  "swbp-vocab-pub": {
   "title": "Best Practice Recipes for Publishing RDF Vocabularies",
@@ -3567,15 +3716,18 @@
  },
  "svgfilterreqs": {
   "title": "SVG Filter Requirements",
-  "serie": "svgfilterreqs"
+  "serie": "svgfilterreqs",
+  "retired": true
  },
  "svgprint": {
   "title": "SVG Print 1.2, Part 2: Language",
-  "serie": "svgprint"
+  "serie": "svgprint",
+  "retired": true
  },
  "svgprintprimer": {
   "title": "SVG Print 1.2, Part 1: Primer",
-  "serie": "svgprintprimer"
+  "serie": "svgprintprimer",
+  "retired": true
  },
  "uaag-requirements": {
   "title": "User Agent Accessibility Guidelines 2.0 Requirements",
@@ -3583,11 +3735,13 @@
  },
  "timesheets": {
   "title": "SMIL Timesheets",
-  "serie": "timesheets"
+  "serie": "timesheets",
+  "retired": true
  },
  "uwa-personalization-roadmap": {
   "title": "W3C Personalization Roadmap: Ubiquitous Web Integration of AccessForAll",
-  "serie": "uwa-personalization-roadmap"
+  "serie": "uwa-personalization-roadmap",
+  "retired": true
  },
  "svg-transforms": {
   "title": "SVG Transforms, Part 2: Language",
@@ -3619,11 +3773,13 @@
  },
  "ump": {
   "title": "Uniform Messaging Policy",
-  "serie": "ump"
+  "serie": "ump",
+  "retired": true
  },
  "system-info-api": {
   "title": "The System Information API",
-  "serie": "system-info-api"
+  "serie": "system-info-api",
+  "retired": true
  },
  "touch-events": {
   "title": "Touch Events",
@@ -3645,7 +3801,8 @@
  },
  "task-models": {
   "title": "MBUI - Task Models",
-  "serie": "task-models"
+  "serie": "task-models",
+  "retired": true
  },
  "ttml-sdp-us": {
   "title": "TTML Simple Delivery Profile for Closed Captions (US)",
@@ -3671,12 +3828,14 @@
  "telephony": {
   "title": "Web Telephony API",
   "link": "https://www.w3.org/2012/sysapps/telephony/",
-  "serie": "telephony"
+  "serie": "telephony",
+  "retired": true
  },
  "touch-events-extensions": {
   "title": "Touch Events Extensions",
   "link": "https://dvcs.w3.org/hg/webevents/raw-file/default/touchevents.html",
-  "serie": "touch-events-extensions"
+  "serie": "touch-events-extensions",
+  "retired": true
  },
  "tabular-data-model": {
   "title": "Model for Tabular Data and Metadata on the Web",
@@ -3716,12 +3875,14 @@
  "vehicle-information-api": {
   "title": "Vehicle Information API",
   "link": "https://w3c.github.io/automotive/vehicle_information_api/vehicle_information_api_specification.html",
-  "serie": "vehicle-information-api"
+  "serie": "vehicle-information-api",
+  "retired": true
  },
  "vehicle-data": {
   "title": "Vehicle Data",
   "link": "https://w3c.github.io/automotive/vehicle_data/data_spec.html",
-  "serie": "vehicle-data"
+  "serie": "vehicle-data",
+  "retired": true
  },
  "svg-paths": {
   "title": "SVG Paths",
@@ -3741,7 +3902,8 @@
  "tvcontrol-api": {
   "title": "TV Control API",
   "link": "https://w3c.github.io/tvcontrol-api/",
-  "serie": "tvcontrol-api"
+  "serie": "tvcontrol-api",
+  "retired": true
  },
  "vehicle-information-service": {
   "title": "Vehicle Information Service",
@@ -3803,27 +3965,33 @@
  },
  "voice-architecture": {
   "title": "Model Architecture for Voice Browser Systems",
-  "serie": "voice-architecture"
+  "serie": "voice-architecture",
+  "retired": true
  },
  "voice-dialog-reqs": {
   "title": "Dialog Requirements for Voice Markup Languages",
-  "serie": "voice-dialog-reqs"
+  "serie": "voice-dialog-reqs",
+  "retired": true
  },
  "voice-grammar-reqs": {
   "title": "Grammar Representation Requirements for Voice Markup Languages",
-  "serie": "voice-grammar-reqs"
+  "serie": "voice-grammar-reqs",
+  "retired": true
  },
  "voice-intro": {
   "title": "Voice Browsers, Introduction",
-  "serie": "voice-intro"
+  "serie": "voice-intro",
+  "retired": true
  },
  "voice-nlu-reqs": {
   "title": "Natural Language Processing Requirements for Voice Markup Languages",
-  "serie": "voice-nlu-reqs"
+  "serie": "voice-nlu-reqs",
+  "retired": true
  },
  "voice-tts-reqs": {
   "title": "Speech Synthesis Markup Requirements for Voice Markup Languages",
-  "serie": "voice-tts-reqs"
+  "serie": "voice-tts-reqs",
+  "retired": true
  },
  "wcag-core-techs": {
   "title": "Core Techniques for Web Content Accessibility Guidelines",
@@ -3855,7 +4023,8 @@
  },
  "wcag-tech-req": {
   "title": "Requirements for WCAG 2.0 Checklists and Techniques",
-  "serie": "wcag-tech-req"
+  "serie": "wcag-tech-req",
+  "retired": true
  },
  "wcag-gateway": {
   "title": "Gateway to Techniques for WCAG",
@@ -3880,7 +4049,8 @@
  },
  "wai-aria-primer": {
   "title": "WAI-ARIA Primer",
-  "serie": "wai-aria-primer"
+  "serie": "wai-aria-primer",
+  "retired": true
  },
  "wai-aria-implementation": {
   "title": "WAI-ARIA User Agent Implementation Guide",
@@ -3888,12 +4058,14 @@
  },
  "webdatabase": {
   "title": "Web SQL Database",
-  "serie": "webdatabase"
+  "serie": "webdatabase",
+  "retired": true
  },
  "webmessaging": {
   "title": "HTML5 Web Messaging",
   "link": "https://html.spec.whatwg.org/multipage/web-messaging.html",
-  "serie": "webmessaging"
+  "serie": "webmessaging",
+  "retired": true
  },
  "void": {
   "title": "Describing Linked Datasets with the VoID Vocabulary",
@@ -3926,7 +4098,8 @@
  },
  "web-intents": {
   "title": "Web Intents",
-  "serie": "web-intents"
+  "serie": "web-intents",
+  "retired": true
  },
  "webaudio-usecases": {
   "title": "Web Audio Processing: Use Cases and Requirements",
@@ -3934,7 +4107,8 @@
  },
  "webintents-local-services": {
   "title": "Web Intents Addendum - Local Services",
-  "serie": "webintents-local-services"
+  "serie": "webintents-local-services",
+  "retired": true
  },
  "webmidi": {
   "title": "Web MIDI API",
@@ -3952,12 +4126,14 @@
  "task-scheduler": {
   "title": "Task Scheduler API",
   "link": "https://www.w3.org/2012/sysapps/web-alarms/",
-  "serie": "task-scheduler"
+  "serie": "task-scheduler",
+  "retired": true
  },
  "webcrypto-key-discovery": {
   "title": "WebCrypto Key Discovery",
   "link": "https://dvcs.w3.org/hg/webcrypto-keydiscovery/raw-file/tip/Overview.html",
-  "serie": "webcrypto-key-discovery"
+  "serie": "webcrypto-key-discovery",
+  "retired": true
  },
  "webcrypto-usecases": {
   "title": "Web Cryptography API Use Cases",
@@ -3985,7 +4161,8 @@
  "web-packaging": {
   "title": "Packaging on the Web",
   "link": "https://w3ctag.github.io/packaging-on-the-web/",
-  "serie": "web-packaging"
+  "serie": "web-packaging",
+  "retired": true
  },
  "vocab-dqv": {
   "title": "Data on the Web Best Practices: Data Quality Vocabulary",
@@ -4005,12 +4182,14 @@
  "webpayments-http-messages": {
   "title": "Web Payments HTTP Messages",
   "link": "https://w3c.github.io/webpayments-http-messages/",
-  "serie": "webpayments-http-messages"
+  "serie": "webpayments-http-messages",
+  "retired": true
  },
  "webpayments-http-api": {
   "title": "Web Payments HTTP API",
   "link": "https://w3c.github.io/webpayments-http-api/",
-  "serie": "webpayments-http-api"
+  "serie": "webpayments-http-api",
+  "retired": true
  },
  "webpayments-overview": {
   "title": "Web Payments Overview",
@@ -4066,7 +4245,8 @@
  },
  "xhtml-basic": {
   "title": "XHTML™ Basic",
-  "serie": "xhtml-basic"
+  "serie": "xhtml-basic",
+  "retired": true
  },
  "xhtml-forms-req": {
   "title": "XForms Requirements",
@@ -4082,7 +4262,8 @@
  },
  "xhtml-building": {
   "title": "Building XHTML™ Modules",
-  "serie": "xhtml-building"
+  "serie": "xhtml-building",
+  "retired": true
  },
  "wsdl": {
   "title": "Web Services Description Language (WSDL)",
@@ -4090,7 +4271,8 @@
  },
  "xbl": {
   "title": "XBL",
-  "serie": "xbl"
+  "serie": "xbl",
+  "retired": true
  },
  "xhtml+voice": {
   "title": "XHTML+Voice Profile",
@@ -4114,11 +4296,13 @@
  },
  "ws-desc-reqs": {
   "title": "Web Services Description Requirements",
-  "serie": "ws-desc-reqs"
+  "serie": "ws-desc-reqs",
+  "retired": true
  },
  "ws-desc-usecases": {
   "title": "Web Service Description Usage Scenarios",
-  "serie": "ws-desc-usecases"
+  "serie": "ws-desc-usecases",
+  "retired": true
  },
  "ws-gloss": {
   "title": "Web Services Glossary",
@@ -4134,7 +4318,8 @@
  },
  "xframes": {
   "title": "XFrames",
-  "serie": "xframes"
+  "serie": "xframes",
+  "retired": true
  },
  "xforms-basic": {
   "title": "XForms Basic Profile",
@@ -4146,7 +4331,8 @@
  },
  "ws-chor-reqs": {
   "title": "Web Services Choreography Requirements",
-  "serie": "ws-chor-reqs"
+  "serie": "ws-chor-reqs",
+  "retired": true
  },
  "ws-i18n-req": {
   "title": "Requirements for the Internationalization of Web Services",
@@ -4170,11 +4356,13 @@
  },
  "ws-cdl": {
   "title": "Web Services Choreography Description Language",
-  "serie": "ws-cdl"
+  "serie": "ws-cdl",
+  "retired": true
  },
  "ws-chor-model": {
   "title": "WS Choreography Model Overview",
-  "serie": "ws-chor-model"
+  "serie": "ws-chor-model",
+  "retired": true
  },
  "wsdl-primer": {
   "title": "Web Services Description Language (WSDL) Part 0: Primer",
@@ -4206,19 +4394,23 @@
  },
  "wicd": {
   "title": "WICD Core",
-  "serie": "wicd"
+  "serie": "wicd",
+  "retired": true
  },
  "wicdfull": {
   "title": "WICD Full",
-  "serie": "wicdfull"
+  "serie": "wicdfull",
+  "retired": true
  },
  "wicdmobile": {
   "title": "WICD Mobile",
-  "serie": "wicdmobile"
+  "serie": "wicdmobile",
+  "retired": true
  },
  "ws-i18n": {
   "title": "Web Services Internationalization (WS-I18N)",
-  "serie": "ws-i18n"
+  "serie": "ws-i18n",
+  "retired": true
  },
  "wsdl-adjuncts": {
   "title": "Web Services Description Language (WSDL) Part 2: Adjuncts",
@@ -4234,15 +4426,18 @@
  },
  "widgets": {
   "title": "Packaged Web Apps (Widgets) - Packaging and XML Configuration",
-  "serie": "widgets"
+  "serie": "widgets",
+  "retired": true
  },
  "wordnet-rdf": {
   "title": "RDF/OWL Representation of WordNet",
-  "serie": "wordnet-rdf"
+  "serie": "wordnet-rdf",
+  "retired": true
  },
  "ws-cdl-primer": {
   "title": "Web Services Choreography Description Language: Primer",
-  "serie": "ws-cdl-primer"
+  "serie": "ws-cdl-primer",
+  "retired": true
  },
  "ws-policy": {
   "title": "Web Services Policy 1.5 - Framework",
@@ -4290,7 +4485,8 @@
  },
  "widgets-digsig": {
   "title": "XML Digital Signatures for Widgets",
-  "serie": "widgets-digsig"
+  "serie": "widgets-digsig",
+  "retired": true
  },
  "widgets-land": {
   "title": "Widgets: The Widget Landscape",
@@ -4298,7 +4494,8 @@
  },
  "widgets-updates": {
   "title": "Widget Updates",
-  "serie": "widgets-updates"
+  "serie": "widgets-updates",
+  "retired": true
  },
  "wsc-ui": {
   "title": "Web Security Context: User Interface Guidelines",
@@ -4306,24 +4503,29 @@
  },
  "xhtml-access": {
   "title": "XHTML Access",
-  "serie": "xhtml-access"
+  "serie": "xhtml-access",
+  "retired": true
  },
  "widgets-apis": {
   "title": "Widget Interface",
-  "serie": "widgets-apis"
+  "serie": "widgets-apis",
+  "retired": true
  },
  "websockets": {
   "title": "The WebSocket API",
-  "serie": "websockets"
+  "serie": "websockets",
+  "retired": true
  },
  "webstorage": {
   "title": "Web Storage",
   "link": "https://w3c.github.io/webstorage/",
-  "serie": "webstorage"
+  "serie": "webstorage",
+  "retired": true
  },
  "widgets-access": {
   "title": "Widget Access Request Policy",
-  "serie": "widgets-access"
+  "serie": "widgets-access",
+  "retired": true
  },
  "widgets-uri": {
   "title": "Widget URI scheme",
@@ -4332,7 +4534,8 @@
  "workers": {
   "title": "Web Workers",
   "link": "https://html.spec.whatwg.org/multipage/workers.html",
-  "serie": "workers"
+  "serie": "workers",
+  "retired": true
  },
  "ws-enumeration": {
   "title": "Web Services Enumeration (WS-Enumeration)",
@@ -4352,7 +4555,8 @@
  },
  "ws-resource-transfer": {
   "title": "Web Services Resource Transfer (WS-RT)",
-  "serie": "ws-resource-transfer"
+  "serie": "ws-resource-transfer",
+  "retired": true
  },
  "ws-transfer": {
   "title": "Web Services Transfer (WS-Transfer)",
@@ -4360,7 +4564,8 @@
  },
  "view-mode": {
   "title": "The 'view-mode' Media Feature",
-  "serie": "view-mode"
+  "serie": "view-mode",
+  "retired": true
  },
  "woff": {
   "title": "WOFF File Format",
@@ -4401,12 +4606,14 @@
  "wpub": {
   "title": "Web Publications",
   "link": "https://w3c.github.io/wpub/",
-  "serie": "wpub"
+  "serie": "wpub",
+  "retired": true
  },
  "wpub-ann": {
   "title": "Web Annotation Extensions for Web Publications",
   "link": "https://w3c.github.io/wpub-ann/",
-  "serie": "wpub-ann"
+  "serie": "wpub-ann",
+  "retired": true
  },
  "wot-binding-templates": {
   "title": "Web of Things (WoT) Protocol Binding Templates",
@@ -4473,11 +4680,13 @@
  },
  "xhtml-modularization": {
   "title": "XHTML™ Modularization",
-  "serie": "xhtml-modularization"
+  "serie": "xhtml-modularization",
+  "retired": true
  },
  "xhtml-prof-req": {
   "title": "XHTML™ Document Profile Requirements",
-  "serie": "xhtml-prof-req"
+  "serie": "xhtml-prof-req",
+  "retired": true
  },
  "xml-infoset": {
   "title": "XML Information Set",
@@ -4489,7 +4698,8 @@
  },
  "xhtml-roadmap": {
   "title": "HTML Working Group Roadmap",
-  "serie": "xhtml-roadmap"
+  "serie": "xhtml-roadmap",
+  "retired": true
  },
  "xlink-naming": {
   "title": "XLink Markup Name Control",
@@ -4517,7 +4727,8 @@
  },
  "xml-blueberry-req": {
   "title": "XML Blueberry Requirements",
-  "serie": "xml-blueberry-req"
+  "serie": "xml-blueberry-req",
+  "retired": true
  },
  "xml-exc-c14n": {
   "title": "Exclusive XML Canonicalization",
@@ -4537,7 +4748,8 @@
  },
  "xmlp-am": {
   "title": "XML Protocol Abstract Model",
-  "serie": "xmlp-am"
+  "serie": "xmlp-am",
+  "retired": true
  },
  "xmlp-scenarios": {
   "title": "SOAP Usage Scenarios",
@@ -4545,7 +4757,8 @@
  },
  "xmlschema-formal": {
   "title": "XML Schema: Formal Description",
-  "serie": "xmlschema-formal"
+  "serie": "xmlschema-formal",
+  "retired": true
  },
  "xml-names": {
   "title": "Namespaces in XML",
@@ -4581,7 +4794,8 @@
  },
  "xhtmlplusmathmlplussvg": {
   "title": "An XHTML + MathML + SVG Profile",
-  "serie": "xhtmlplusmathmlplussvg"
+  "serie": "xhtmlplusmathmlplussvg",
+  "retired": true
  },
  "xkms-bindings": {
   "title": "XML Key Management Specification (XKMS 2.0) Bindings",
@@ -4593,11 +4807,13 @@
  },
  "xkms-xbulk": {
   "title": "XML Key Management Specification Bulk Operation (X-BULK)",
-  "serie": "xkms-xbulk"
+  "serie": "xkms-xbulk",
+  "retired": true
  },
  "xml-names-req": {
   "title": "Namespaces in XML 1.1 Requirements",
-  "serie": "xml-names-req"
+  "serie": "xml-names-req",
+  "retired": true
  },
  "xindirect": {
   "title": "XML Indirection Facility",
@@ -4605,19 +4821,23 @@
  },
  "xml-fragid": {
   "title": "Proposal for XML Fragment Identifier Syntax 0.9",
-  "serie": "xml-fragid"
+  "serie": "xml-fragid",
+  "retired": true
  },
  "xhtml-print": {
   "title": "XHTML-Print",
-  "serie": "xhtml-print"
+  "serie": "xhtml-print",
+  "retired": true
  },
  "xml-id-req": {
   "title": "xml:id Requirements",
-  "serie": "xml-id-req"
+  "serie": "xml-id-req",
+  "retired": true
  },
  "xmlschema-req": {
   "title": "Requirements for XML Schema",
-  "serie": "xmlschema-req"
+  "serie": "xmlschema-req",
+  "retired": true
  },
  "xmlschema-ref": {
   "title": "W3C XML Schema Definition Language (XSD): Component Designators",
@@ -4646,11 +4866,13 @@
  "xmlhttprequest": {
   "title": "XMLHttpRequest",
   "link": "https://xhr.spec.whatwg.org/",
-  "serie": "xmlhttprequest"
+  "serie": "xmlhttprequest",
+  "retired": true
  },
  "xhtml-role": {
   "title": "XHTML Role Attribute",
-  "serie": "xhtml-role"
+  "serie": "xhtml-role",
+  "retired": true
  },
  "xml-i18n-bp": {
   "title": "Best Practices for XML Internationalization",
@@ -4670,7 +4892,8 @@
  },
  "xhtml-rdfa-scenarios": {
   "title": "RDFa Use Cases: Scenarios for Embedding RDF in HTML",
-  "serie": "xhtml-rdfa-scenarios"
+  "serie": "xhtml-rdfa-scenarios",
+  "retired": true
  },
  "xml-entity-names": {
   "title": "XML Entity Definitions for Characters",
@@ -4765,7 +4988,8 @@
  "xhtml-pubid": {
   "title": "Public Identifiers for entity resolution in XHTML",
   "link": "https://www.w3.org/2003/entities/2007doc/xhtml-pubid.html",
-  "serie": "xhtml-pubid"
+  "serie": "xhtml-pubid",
+  "retired": true
  },
  "editing": {
   "title": "Editing the Web: Detecting the Lost Update Problem Using Unreserved Checkout",
@@ -4773,7 +4997,8 @@
  },
  "wca-terms": {
   "title": "Web Characterization Terminology & Definitions Sheet",
-  "serie": "wca-terms"
+  "serie": "wca-terms",
+  "retired": true
  },
  "xfa-formcalc": {
   "title": "XFA-FormCalc",
@@ -4805,7 +5030,8 @@
  },
  "xml-fragment": {
   "title": "XML Fragment Interchange",
-  "serie": "xml-fragment"
+  "serie": "xml-fragment",
+  "retired": true
  },
  "ccpp": {
   "title": "Composite Capability/Preference Profiles (CC/PP): A user side framework for content negotiation",
@@ -4837,7 +5063,8 @@
  },
  "xmldsig-requirements": {
   "title": "XML-Signature Requirements",
-  "serie": "xmldsig-requirements"
+  "serie": "xmldsig-requirements",
+  "retired": true
  },
  "proposals": {
   "title": "Proposals for Gathering Consumer Demographics",
@@ -4873,7 +5100,8 @@
  },
  "xslreq": {
   "title": "XSL Requirements Summary",
-  "serie": "xslreq"
+  "serie": "xslreq",
+  "retired": true
  },
  "xptr-infoset-liaison": {
   "title": "XPointer-Information Set Liaison Statement",
@@ -4901,11 +5129,13 @@
  },
  "xsltreq": {
   "title": "XSL Transformations Requirements",
-  "serie": "xsltreq"
+  "serie": "xsltreq",
+  "retired": true
  },
  "xpathreq": {
   "title": "XPath Requirements",
-  "serie": "xpathreq"
+  "serie": "xpathreq",
+  "retired": true
  },
  "xquery": {
   "title": "XQuery",
@@ -4933,7 +5163,8 @@
  },
  "xptr-xpointer": {
   "title": "XPointer xpointer() Scheme",
-  "serie": "xptr-xpointer"
+  "serie": "xptr-xpointer",
+  "retired": true
  },
  "xpath-datamodel": {
   "title": "XQuery and XPath Data Model",
@@ -4949,7 +5180,8 @@
  },
  "xsl-req": {
   "title": "Extensible Stylesheet Language (XSL) Requirements",
-  "serie": "xsl-req"
+  "serie": "xsl-req",
+  "retired": true
  },
  "xslt-xquery-serialization": {
   "title": "XSLT",
@@ -4965,7 +5197,8 @@
  },
  "xquery-xpath-parsing": {
   "title": "Building a Tokenizer for XPath or XQuery",
-  "serie": "xquery-xpath-parsing"
+  "serie": "xquery-xpath-parsing",
+  "retired": true
  },
  "xproc": {
   "title": "XProc",
@@ -5009,7 +5242,8 @@
  },
  "xmlsec-derivedkeys": {
   "title": "XML Security Derived Keys",
-  "serie": "xmlsec-derivedkeys"
+  "serie": "xmlsec-derivedkeys",
+  "retired": true
  },
  "xmlsec-generic-hybrid": {
   "title": "XML Security Generic Hybrid Ciphers",
@@ -5081,7 +5315,8 @@
  },
  "dom-requirements": {
   "title": "Document Object Model (DOM) Requirements",
-  "serie": "dom-requirements"
+  "serie": "dom-requirements",
+  "retired": true
  },
  "ccpp-struct-vocab": {
   "title": "Composite Capability/Preference Profiles (CC/PP): Structure and Vocabularies",
@@ -5237,27 +5472,33 @@
  },
  "dsig-label-arch": {
   "title": "Digital Signature Label Architecture",
-  "serie": "dsig-label-arch"
+  "serie": "dsig-label-arch",
+  "retired": true
  },
  "p3p-arch": {
   "title": "P3P Architecture Working Group: General Overview of the P3P Architecture",
-  "serie": "p3p-arch"
+  "serie": "p3p-arch",
+  "retired": true
  },
  "p3p-grammar": {
   "title": "P3P Vocabulary Working Group: Grammatical Model and Data Design Model",
-  "serie": "p3p-grammar"
+  "serie": "p3p-grammar",
+  "retired": true
  },
  "http-pep": {
   "title": "PEP Specification: an Extension Mechanism for HTTP",
-  "serie": "http-pep"
+  "serie": "http-pep",
+  "retired": true
  },
  "ilu-requestor": {
   "title": "The ILU Requester: Object Services in HTTP Servers",
-  "serie": "ilu-requestor"
+  "serie": "ilu-requestor",
+  "retired": true
  },
  "jepi-uppflow": {
   "title": "Selecting Payment Mechanisms Over HTTP",
-  "serie": "jepi-uppflow"
+  "serie": "jepi-uppflow",
+  "retired": true
  },
  "logfile": {
   "title": "Extended Log File Format",
@@ -5277,7 +5518,8 @@
  },
  "sgml-lex": {
   "title": "A Lexical Analyzer for HTML and Basic SGML",
-  "serie": "sgml-lex"
+  "serie": "sgml-lex",
+  "retired": true
  },
  "wwwicn": {
   "title": "HTML predefined icon-like symbols",
