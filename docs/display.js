@@ -13,7 +13,7 @@ const config = {
   extra_labels: 'advice-requested,needs-review,waiting,deferred'
 };
 
-const LABELS_URL = "https://w3c.github.io/hr-labels.json";
+const HR_LABELS = fetch("https://w3c.github.io/hr-labels.json").then(res => res.json());
 const SHORTNAMES = fetch("shortnames.json").then(r => r.json());
 
 // parse the URL to update the config
@@ -146,6 +146,7 @@ rtObserver.observe({entryTypes: ["resource"]});
  * *
  */
 async function getAllData() {
+  const hr_repos = await HR_LABELS;
   const GH_URL = `${GH_CACHE}/v3/repos/${config.repo}/issues`;
   let issues;
   const sections = {};
@@ -154,9 +155,16 @@ async function getAllData() {
   const sprefix = 's:';
   const lFilter = l => l.name.startsWith(sprefix);
 
+  console.log(hr_repos.find(r => r.repo === config.repo));
+  config.groupname = (hr_repos.find(r => r.repo === config.repo)).groupname;
+
   for (const a of document.getElementsByClassName('link_repo')) {
     a.textContent = config.repo;
     a.href = `https://github.com/${config.repo}/issues`;
+  }
+
+  for (const e of document.getElementsByClassName('groupname')) {
+    e.textContent = config.groupname;
   }
 
   // here we go, request the open issues
@@ -318,7 +326,7 @@ function buildFilters(repo_labels) {
 // build our menu
 async function otherTrackingRepos() {
   const ul = document.getElementById("otherReposList");
-  const labels = await fetch(LABELS_URL).then(data => data.json());
+  const labels = await HR_LABELS;
   const repos = [...new Set(labels.map(l => l.repo))].sort();
   let hr_issues = [];
 
