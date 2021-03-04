@@ -463,7 +463,7 @@
  },
  "wcag": {
   "link": "https://w3c.github.io/wcag/guidelines/",
-  "title": "W",
+  "title": "Web Content Accessibility Guidelines",
   "serie": "wcag"
  },
  "web-share": {
