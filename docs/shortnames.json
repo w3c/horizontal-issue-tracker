@@ -2747,7 +2747,7 @@
   "serie": "qaframe-test"
  },
  "rdf-concepts": {
-  "title": null,
+  "title": "Resource Description Framework (RDF): Concepts and Abstract Syntax",
   "serie": "rdf-concepts"
  },
  "rdf-primer": {
@@ -3091,7 +3091,7 @@
   "serie": "sac"
  },
  "soap": {
-  "title": null,
+  "title": "SOAP",
   "serie": "soap"
  },
  "soap-attachments": {
@@ -4418,7 +4418,7 @@
   "serie": "xaur"
  },
  "xmlschema": {
-  "title": "",
+  "title": "W3C XML Schema Definition Language (XSD)",
   "serie": "xmlschema"
  },
  "xlink": {
@@ -4910,11 +4910,11 @@
   "serie": "xquery"
  },
  "xpath-functions": {
-  "title": null,
+  "title": "XPath and XQuery Functions and Operators",
   "serie": "xpath-functions"
  },
  "xqueryx": {
-  "title": null,
+  "title": "XQueryX",
   "serie": "xqueryx"
  },
  "xup": {
@@ -4938,11 +4938,11 @@
   "serie": "xpath-datamodel"
  },
  "xquery-requirements": {
-  "title": null,
+  "title": "XML Query (XQuery) Requirements",
   "serie": "xquery-requirements"
  },
  "xquery-use-cases": {
-  "title": null,
+  "title": "XML Query Use Cases",
   "serie": "xquery-use-cases"
  },
  "xsl-req": {
