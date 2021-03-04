@@ -116,14 +116,19 @@ async function getAllData() {
         )
       ));
       if (config.debug && value.serie && value.key !== value.serie) {
-          ulReport.appendChild(domElement("li", { "id": `report-${value.key}` },
+        ulReport.appendChild(domElement("li", { "id": `report-${value.key}` },
           `Consider replacing `,
           domElement("a", {
             href: `review.html?shortname=${value.key}`
           }, domElement("code", value.key)),
           ` with `, domElement("code", value.serie)
           ));
-        }
+      }
+      if (config.debug && config.link && !value.link) {
+        ulReport.appendChild(domElement("li", { "id": `report-link-${value.key}` },
+          "No editor's draft link for ", domElement("code", value.key)
+          ));
+      }
     });
 
   }).catch(err => {
@@ -132,6 +137,9 @@ async function getAllData() {
   document.getElementById("rawdata").appendChild(ulData);
   if (config.debug) {
     document.getElementById("report").appendChild(domElement("h2", "Debug"));
+    document.getElementById("report").appendChild(domElement("p",
+    "Edit the file ",
+    domElement("a", { href: "https://github.com/w3c/horizontal-issue-tracker/blob/main/docs/shortnames.json"}, "shortnames.json")));
     document.getElementById("report").appendChild(ulReport);
   }
 }
