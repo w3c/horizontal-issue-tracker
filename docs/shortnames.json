@@ -4900,7 +4900,7 @@
   "serie": "xmlp-reqs"
  },
  "xsltreq": {
-  "title": "XSL",
+  "title": "XSL Transformations Requirements",
   "serie": "xsltreq"
  },
  "xpathreq": {
@@ -4936,7 +4936,7 @@
   "serie": "xptr-xpointer"
  },
  "xpath-datamodel": {
-  "title": "XQuery",
+  "title": "XQuery and XPath Data Model",
   "serie": "xpath-datamodel"
  },
  "xquery-requirements": {
