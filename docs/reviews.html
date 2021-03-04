@@ -72,38 +72,27 @@ h2 > a.self-link::before {
   text-decoration: none;
 }
 </style>
-<script src="review-display.js" defer></script>
+<script src="shortnames-display.js" defer></script>
 
 </head>
 
 <body>
 <div class='head'>
 		<a class='logo' href="https://www.w3.org/"><img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C" height="48" width="72"></a>
-		<h1>Review comment tracker</h1>
-		<h2>Tracking the issues in <a class='link_repo'>GitHub</a> for <cite class='shortname'>[loading data]</cite></h2>
+		<h1>Known specifications</h1>
     <hr title="Separator for header">
 </div>
 <nav id="toc">
 	<ul>
-		<li>Labels:
-			<ul id="filterList">
-			</ul>
-		</li>
 		<li>
 			<a href='./'>Horizontal issues trackers</a>
 		</li>
-  </ul>
+	</ul>
 </nav>
+
 <section id='abstract' style='clear: both'>
-  <p>This page tracks comments made by horizontal groups on the <cite class='shortname'>[loading data]</cite> specification. It only shows tracker issues the Group has not closed.
-		(Issues may remain open in the Group tracker even if closed by the other WG in their repo.)</p>
-  <p>The sections and items within those sections are ordered by the last modified date of the items
-		in the <em>tracker</em> repository (not the discussions). The mostly recently changed items appear highest.
-		The link on the left of each line links directly to the issue where the discussion is taking place.
-		The date indicates when the <em>tracker</em> item was modified, and	the right-hand column links to the issue used
-		to track the discussion in the <a class='link_repo'></a> github repo</a>.</p>
-  <p>There are <span id="total">[Loading data...]</span> horizontal issues, filtered as against the <a id=spec_link href='https://www.w3.org/TR/'></a> specification<span id='select-label'></span>.</p>
-	</section>
+  <p>This page lists all specifications known to the horizontal review system.</p>
+</section>
 
 <section id="rawdata" aria-live='polite'>
 </section>
@@ -111,7 +100,6 @@ h2 > a.self-link::before {
 <footer>
 	<hr>
 	<p>This tool is developed on <a href="https://github.com/w3c/horizontal-issue-tracker">GitHub</a>.</p>
-	<p>Kudos to the <a href="https://w3c.github.io/i18n-activity/reviews/">i18n Working Group</a> for their process and help.</p>
 </footer>
 </body>
 </html>
