@@ -1754,7 +1754,7 @@
   "serie": "html-mobile"
  },
  "implementing-atag": {
-  "title": "",
+  "title": "Implementing ATAG",
   "serie": "implementing-atag"
  },
  "speech-grammar": {
@@ -2090,7 +2090,7 @@
   "serie": "its"
  },
  "itsreq": {
-  "title": "",
+  "title": "Internationalization and Localization Markup Requirements",
   "serie": "itsreq"
  },
  "mmi-arch": {
@@ -3477,7 +3477,7 @@
   "serie": "svgreqs"
  },
  "svgtiny": {
-  "title": "",
+  "title": "Mobile SVG Profiles: SVG Tiny and SVG Basic",
   "serie": "svgtiny"
  },
  "svgmobilereqs": {
@@ -3830,7 +3830,7 @@
   "serie": "wcag-core-techs"
  },
  "wcag-techs": {
-  "title": "",
+  "title": "Techniques for WCAG 2.0",
   "serie": "wcag-techs"
  },
  "voicexml": {
@@ -5144,7 +5144,7 @@
   "serie": "pics-cookie-extension"
  },
  "hdml": {
-  "title": "",
+  "title": "Handheld Device Markup Language",
   "serie": "hdml"
  },
  "tprc": {
