@@ -467,7 +467,7 @@
   "serie": "wcag"
  },
  "web-payments-use-cases": {
-  "link": "",
+  "link": "https://w3c.github.io/webpayments-ig/latest/use-cases/index.html",
   "title": "Web Payments Use Cases",
   "serie": "web-payments-use-cases"
  },
@@ -527,7 +527,7 @@
   "serie": "wot-thing-description"
  },
  "xslt": {
-  "link": "",
+  "link": "https://htmlpreview.github.io/?https://github.com/w3c/qtspecs/blob/master/specifications/xslt-30/html/Overview.html",
   "title": "XSL Transformations (XSLT)",
   "serie": "xslt"
  },
