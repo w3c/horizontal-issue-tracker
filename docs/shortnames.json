@@ -1486,7 +1486,7 @@
   "serie": "ddr-core-vocabulary"
  },
  "exi": {
-  "title": "Efficient XML Interchange (EXI) Format 1.0 (Second Edition)",
+  "title": "Efficient XML Interchange (EXI) Format 1.0",
   "serie": "exi"
  },
  "exi-best-practices": {
@@ -2444,11 +2444,11 @@
   "serie": "owl-ref"
  },
  "owl-direct-semantics": {
-  "title": "OWL",
+  "title": "OWL 2 Web Ontology Language Direct Semantics",
   "serie": "owl-direct-semantics"
  },
  "owl-conformance": {
-  "title": "OWL",
+  "title": "OWL 2 Web Ontology Language Conformance",
   "serie": "owl-conformance"
  },
  "owl-xmlsyntax": {
@@ -2456,7 +2456,7 @@
   "serie": "owl-xmlsyntax"
  },
  "png": {
-  "title": "Portable Network Graphics (PNG) Specification (Second Edition)",
+  "title": "Portable Network Graphics (PNG) Specification",
   "serie": "png"
  },
  "owl-parsing": {
@@ -2480,39 +2480,39 @@
   "serie": "mwbp-wcag"
  },
  "owl-manchester-syntax": {
-  "title": "OWL 2 Web Ontology Language Manchester Syntax (Second Edition)",
+  "title": "OWL 2 Web Ontology Language Manchester Syntax",
   "serie": "owl-manchester-syntax"
  },
  "owl-mapping-to-rdf": {
-  "title": "OWL 2 Web Ontology Language Mapping to RDF Graphs (Second Edition)",
+  "title": "OWL 2 Web Ontology Language Mapping to RDF Graphs",
   "serie": "owl-mapping-to-rdf"
  },
  "owl-new-features": {
-  "title": "OWL 2 Web Ontology Language New Features and Rationale (Second Edition)",
+  "title": "OWL 2 Web Ontology Language New Features and Rationale",
   "serie": "owl-new-features"
  },
  "owl-primer": {
-  "title": "OWL 2 Web Ontology Language Primer (Second Edition)",
+  "title": "OWL 2 Web Ontology Language Primer",
   "serie": "owl-primer"
  },
  "owl-profiles": {
-  "title": "OWL 2 Web Ontology Language Profiles (Second Edition)",
+  "title": "OWL 2 Web Ontology Language Profiles",
   "serie": "owl-profiles"
  },
  "owl-quick-reference": {
-  "title": "OWL 2 Web Ontology Language Quick Reference Guide (Second Edition)",
+  "title": "OWL 2 Web Ontology Language Quick Reference Guide",
   "serie": "owl-quick-reference"
  },
  "owl-rdf-based-semantics": {
-  "title": "OWL 2 Web Ontology Language RDF-Based Semantics (Second Edition)",
+  "title": "OWL 2 Web Ontology Language RDF-Based Semantics",
   "serie": "owl-rdf-based-semantics"
  },
  "owl-syntax": {
-  "title": "OWL 2 Web Ontology Language Structural Specification and Functional-Style Syntax (Second Edition)",
+  "title": "OWL 2 Web Ontology Language Structural Specification and Functional-Style Syntax",
   "serie": "owl-syntax"
  },
  "owl-xml-serialization": {
-  "title": "OWL 2 Web Ontology Language XML Serialization (Second Edition)",
+  "title": "OWL 2 Web Ontology Language XML Serialization",
   "serie": "owl-xml-serialization"
  },
  "mw4d-roadmap": {
@@ -2524,11 +2524,11 @@
   "serie": "mwbp-guidelines"
  },
  "owl-dr-linear": {
-  "title": "OWL 2 Web Ontology Language Data Range Extension: Linear Equations (Second Edition)",
+  "title": "OWL 2 Web Ontology Language Data Range Extension: Linear Equations",
   "serie": "owl-dr-linear"
  },
  "owl-overview": {
-  "title": "OWL 2 Web Ontology Language Document Overview (Second Edition)",
+  "title": "OWL 2 Web Ontology Language Document Overview",
   "serie": "owl-overview"
  },
  "pics-labels": {
@@ -2703,7 +2703,7 @@
   "serie": "rdf-schema"
  },
  "rdf-syntax": {
-  "title": "RDF/XML Syntax Specification (Revised)",
+  "title": "RDF/XML Syntax Specification",
   "serie": "rdf-syntax"
  },
  "positioning": {
@@ -2723,7 +2723,7 @@
   "serie": "reusable-dialog-reqs"
  },
  "rdf-mt": {
-  "title": "RDF",
+  "title": "RDF Semantics",
   "serie": "rdf-mt"
  },
  "rdf-syntax-grammar": {
@@ -2731,7 +2731,7 @@
   "serie": "rdf-syntax-grammar"
  },
  "rdf-testcases": {
-  "title": "RDF",
+  "title": "RDF Test Cases",
   "serie": "rdf-testcases"
  },
  "qaframe-ops-extech": {
@@ -2751,11 +2751,11 @@
   "serie": "rdf-concepts"
  },
  "rdf-primer": {
-  "title": "RDF",
+  "title": "RDF Primer",
   "serie": "rdf-primer"
  },
  "xquery-semantics": {
-  "title": "XQuery 1.0 and XPath 2.0 Formal Semantics (Second Edition)",
+  "title": "XQuery 1.0 and XPath 2.0 Formal Semantics",
   "serie": "xquery-semantics"
  },
  "proc-model-req": {
@@ -2771,7 +2771,7 @@
   "serie": "rdf-dawg-uc"
  },
  "rdf-sparql-xmlres": {
-  "title": "SPARQL Query Results XML Format (Second Edition)",
+  "title": "SPARQL Query Results XML Format",
   "serie": "rdf-sparql-xmlres"
  },
  "rdf-sparql-query": {
@@ -2844,7 +2844,7 @@
   "serie": "powder-test"
  },
  "rdf-plain-literal": {
-  "title": "rdf:PlainLiteral: A Datatype for RDF Plain Literals (Second Edition)",
+  "title": "rdf:PlainLiteral: A Datatype for RDF Plain Literals",
   "serie": "rdf-plain-literal"
  },
  "r2rml": {
@@ -3139,7 +3139,7 @@
   "serie": "soap-af"
  },
  "soap-testcollection": {
-  "title": "SOAP Version 1.2 Specification Assertions and Test Collection (Second Edition)",
+  "title": "SOAP Version 1.2 Specification Assertions and Test Collection",
   "serie": "soap-testcollection"
  },
  "soap-n11n": {
@@ -3179,7 +3179,7 @@
   "serie": "soap-ror-httpbinding"
  },
  "rif-ucr": {
-  "title": "RIF Use Cases and Requirements (Second Edition)",
+  "title": "RIF Use Cases and Requirements",
   "serie": "rif-ucr"
  },
  "sawsdl": {
@@ -3195,15 +3195,15 @@
   "serie": "ssmlreqs"
  },
  "rif-bld": {
-  "title": "RIF Basic Logic Dialect (Second Edition)",
+  "title": "RIF Basic Logic Dialect",
   "serie": "rif-bld"
  },
  "rif-core": {
-  "title": "RIF Core Dialect (Second Edition)",
+  "title": "RIF Core Dialect",
   "serie": "rif-core"
  },
  "rif-rdf-owl": {
-  "title": "RIF RDF and OWL Compatibility (Second Edition)",
+  "title": "RIF RDF and OWL Compatibility",
   "serie": "rif-rdf-owl"
  },
  "skos-ucr": {
@@ -3223,19 +3223,19 @@
   "serie": "soap-mtom-policy"
  },
  "rif-dtb": {
-  "title": "RIF Datatypes and Built-Ins 1.0 (Second Edition)",
+  "title": "RIF Datatypes and Built-Ins 1.0",
   "serie": "rif-dtb"
  },
  "rif-fld": {
-  "title": "RIF Framework for Logic Dialects (Second Edition)",
+  "title": "RIF Framework for Logic Dialects",
   "serie": "rif-fld"
  },
  "rif-prd": {
-  "title": "RIF Production Rule Dialect (Second Edition)",
+  "title": "RIF Production Rule Dialect",
   "serie": "rif-prd"
  },
  "rif-test": {
-  "title": "RIF Test Cases (Second Edition)",
+  "title": "RIF Test Cases",
   "serie": "rif-test"
  },
  "skos-primer": {
@@ -3259,15 +3259,15 @@
   "serie": "sml-xlink-ref-scheme"
  },
  "rif-overview": {
-  "title": "RIF Overview (Second Edition)",
+  "title": "RIF Overview",
   "serie": "rif-overview"
  },
  "rif-owl-rl": {
-  "title": "OWL 2 RL in RIF (Second Edition)",
+  "title": "OWL 2 RL in RIF",
   "serie": "rif-owl-rl"
  },
  "rif-xml-data": {
-  "title": "RIF Combination with XML data (Second Edition)",
+  "title": "RIF Combination with XML data",
   "serie": "rif-xml-data"
  },
  "sparql-features": {
@@ -3299,7 +3299,7 @@
   "serie": "sparql-update"
  },
  "rif-in-rdf": {
-  "title": "RIF In RDF (Second Edition)",
+  "title": "RIF In RDF",
   "serie": "rif-in-rdf"
  },
  "role-attribute": {
@@ -3336,7 +3336,7 @@
   "serie": "streamproc"
  },
  "rif-primer": {
-  "title": "RIF Primer (Second Edition)",
+  "title": "RIF Primer",
   "serie": "rif-primer"
  },
  "ruby-use-cases": {
@@ -3629,7 +3629,7 @@
   "serie": "user-timing"
  },
  "vibration": {
-  "title": "Vibration API (Second Edition)",
+  "title": "Vibration API",
   "link": "https://w3c.github.io/vibration/",
   "serie": "vibration"
  },
@@ -4227,7 +4227,7 @@
   "serie": "wsdl-soap-binding"
  },
  "widgets": {
-  "title": "Packaged Web Apps (Widgets) - Packaging and XML Configuration (Second Edition)",
+  "title": "Packaged Web Apps (Widgets) - Packaging and XML Configuration",
   "serie": "widgets"
  },
  "wordnet-rdf": {
@@ -4311,7 +4311,7 @@
   "serie": "websockets"
  },
  "webstorage": {
-  "title": "Web Storage (Second Edition)",
+  "title": "Web Storage",
   "link": "https://w3c.github.io/webstorage/",
   "serie": "webstorage"
  },
@@ -4474,11 +4474,11 @@
   "serie": "xhtml-prof-req"
  },
  "xml-infoset": {
-  "title": "XML Information Set (Second Edition)",
+  "title": "XML Information Set",
   "serie": "xml-infoset"
  },
  "xmlbase": {
-  "title": "XML Base (Second Edition)",
+  "title": "XML Base",
   "serie": "xmlbase"
  },
  "xhtml-roadmap": {
@@ -4794,7 +4794,7 @@
   "serie": "wbxml"
  },
  "xml-stylesheet": {
-  "title": "Associating Style Sheets with XML documents 1.0 (Second Edition)",
+  "title": "Associating Style Sheets with XML documents 1.0",
   "serie": "xml-stylesheet"
  },
  "xml-fragment": {
