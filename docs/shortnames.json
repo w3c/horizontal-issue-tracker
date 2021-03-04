@@ -2183,7 +2183,7 @@
   "serie": "mmi-interop"
  },
  "json-ld-api": {
-  "title": "JSON-LD",
+  "title": "JSON-LD Processing Algorithms and API",
   "serie": "json-ld-api"
  },
  "ldp": {
@@ -2323,7 +2323,7 @@
   "serie": "indieauth"
  },
  "json-ld-framing": {
-  "title": "JSON-LD 1.1 Framing",
+  "title": "JSON-LD Framing",
   "link": "https://w3c.github.io/json-ld-framing/",
   "serie": "json-ld-framing"
  },

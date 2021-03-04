@@ -219,7 +219,14 @@ async function getAllData() {
       }
       document.getElementById('spec_link').textContent = name.title;
     }
-  }).catch(err => {
+    if (name) {
+      if (name.serie) {
+        document.getElementById('spec_link').href = `https://www.w3.org/TR/${name.serie}`;
+      } else if (name.link) {
+        document.getElementById('spec_link').href = name.link;
+      }
+    }
+}).catch(err => {
     console.error(err)
   });
 }
