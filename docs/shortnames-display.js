@@ -108,13 +108,15 @@ async function getAllData() {
     entries.sort(sortEntries);
 
     entries.forEach(value => {
-      ulData.appendChild(domElement("li", { "id": value.key },
-        domElement("a", {
-          href: `review.html?shortname=${value.key}`
-        },
-        (value.title)? value.title : value.key
-        )
-      ));
+      if (config.retired || !value.retired) {
+        ulData.appendChild(domElement("li", { "id": value.key },
+          domElement("a", {
+            href: `review.html?shortname=${value.key}`
+          },
+          (value.title)? value.title : value.key
+          )
+        ));
+      }
       if (config.debug && value.serie && value.key !== value.serie) {
         ulReport.appendChild(domElement("li", { "id": `report-${value.key}` },
           `Consider replacing `,
