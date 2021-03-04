@@ -92,7 +92,7 @@ async function save_document(location, content) {
     } else {
       cache[location] = content;
       return save_document_github(location, content).then(res =>
-        fs.writeFile(CACHE_FILE, JSON.stringify(cache))
+        fs.writeFile(CACHE_FILE, JSON.stringify(cache, null, " "))
       );
     }
   });
@@ -152,11 +152,9 @@ async function run() {
   // filter out the labels that aren't for shortnames
   labels = labels.filter(l => l.name.startsWith('s:'));
 
-  /*
-    const specifications = await fetchW3C("specifications");
-    fs.writeFile("w3c_tr.json", JSON.stringify(specifications));
-  */
-  const specifications = require("./w3c_tr.json");
+const specifications = await fetchW3C("specifications");
+fs.writeFile("w3c_tr.json", JSON.stringify(specifications, null, " "));
+//  const specifications = require("./w3c_tr.json");
 
   function common_substring(strings) {
     if (strings.length === 1) {
@@ -217,24 +215,27 @@ async function run() {
         }
       }
     })
-    let s = {};
+    let ns = {};
     if (titles.length >= 1) {
       let title = cleanTitle(titles);
       if (title) {
-        s.title = title;
+        ns.title = title;
       } else {
         if (link === "https://html.spec.whatwg.org/multipage/") {
-          s.title = "HTML";
+          ns.title = "HTML";
         } else {
           monitor.error(`Can't find ${link}`);
         }
       }
     }
     if (links.length >= 1) {
-      s["editor-draft"] = links[0];
+      ns["editor-draft"] = links[0];
     }
-    if (!s.title) return undefined;
-    return s;
+    if (rspec) {
+      ns["TR"] = rspec._links.series.href;
+    }
+    if (!ns.title) return undefined;
+    return ns;
   }
 
   function findSpecBySerie(serie) {
@@ -282,6 +283,9 @@ async function run() {
           monitor.error(`Can't find ${link}`);
         }
       }
+    }
+    if (rspec) {
+      ns["TR"] = rspec._links.series.href;
     }
     if (links.length >= 1) {
       ns["editor-draft"] = links[0];
@@ -362,6 +366,7 @@ async function run() {
 
     if (spec) {
       nshort.title = spec.title;
+      nshort.TR = spec.TR;
     } else {
       // we didn't find it (not yet published, WICG, WHATWG, ...), so time to make some guessing
       if (!short.description) {
@@ -386,7 +391,7 @@ async function run() {
     }
   }
   // console.log(domains);
-  return save_document(LOCATION, JSON.stringify(dump_shortnames)).catch(err => {
+  return save_document(LOCATION, JSON.stringify(dump_shortnames, null, " ")).catch(err => {
     console.log(err.status)
   });
 }
