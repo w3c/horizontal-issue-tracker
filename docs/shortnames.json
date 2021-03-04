@@ -251,7 +251,7 @@
  },
  "geolocation-api": {
   "link": "https://w3c.github.io/geolocation-api/",
-  "title": "Geolocation API Specification",
+  "title": "Geolocation API",
   "serie": "geolocation-api"
  },
  "html": {
@@ -498,7 +498,7 @@
  },
  "webrtc": {
   "link": "https://w3c.github.io/webrtc-pc/",
-  "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+  "title": "WebRTC: Real-Time Communication Between Browsers",
   "serie": "webrtc"
  },
  "webrtc-svc": {
@@ -634,7 +634,7 @@
  },
  "orientation-event": {
   "link": "https://w3c.github.io/deviceorientation/",
-  "title": "DeviceOrientation Event Specification",
+  "title": "DeviceOrientation Event",
   "serie": "orientation-event"
  },
  "payment-handler": {
@@ -804,7 +804,7 @@
   "serie": "authentform"
  },
  "acss": {
-  "title": "Aural Cascading Style Sheets (ACSS) Specification",
+  "title": "Aural Cascading Style Sheets (ACSS)",
   "serie": "acss"
  },
  "becss": {
@@ -813,7 +813,7 @@
   "serie": "becss"
  },
  "charmod": {
-  "title": "Character Model for the World Wide Web 1.0: Fundamentals",
+  "title": "Character Model for the World Wide Web: Fundamentals",
   "serie": "charmod"
  },
  "charcol": {
@@ -861,7 +861,7 @@
   "serie": "cpc-req"
  },
  "charmod-resid": {
-  "title": "Character Model for the World Wide Web 1.0: Resource Identifiers",
+  "title": "Character Model for the World Wide Web: Resource Identifiers",
   "serie": "charmod-resid"
  },
  "charmod-norm": {
@@ -1348,11 +1348,11 @@
   "serie": "dcd"
  },
  "drawml": {
-  "title": "DrawML Specification",
+  "title": "DrawML",
   "serie": "drawml"
  },
  "dsig-label": {
-  "title": "PICS Signed Labels (DSig) 1.0 Specification",
+  "title": "PICS Signed Labels (DSig)",
   "serie": "dsig-label"
  },
  "ddml": {
@@ -1388,7 +1388,7 @@
   "serie": "data-extraction"
  },
  "edge-arch": {
-  "title": "Edge Architecture Specification",
+  "title": "Edge Architecture",
   "serie": "edge-arch"
  },
  "esi-invp": {
@@ -1396,7 +1396,7 @@
   "serie": "esi-invp"
  },
  "esi-lang": {
-  "title": "ESI Language Specification",
+  "title": "ESI Language",
   "serie": "esi-lang"
  },
  "dom-xpath": {
@@ -1448,7 +1448,7 @@
   "serie": "earl-requirements"
  },
  "earl-schema": {
-  "title": "Evaluation and Report Language (EARL) 1.0 Schema",
+  "title": "Evaluation and Report Language (EARL) Schema",
   "serie": "earl-schema"
  },
  "dd-ecosystem": {
@@ -1496,7 +1496,7 @@
   "serie": "ddr-core-vocabulary"
  },
  "exi": {
-  "title": "Efficient XML Interchange (EXI) Format 1.0",
+  "title": "Efficient XML Interchange (EXI) Format",
   "serie": "exi"
  },
  "exi-best-practices": {
@@ -1758,7 +1758,7 @@
   "serie": "implementing-atag"
  },
  "speech-grammar": {
-  "title": "Speech Recognition Grammar Specification",
+  "title": "Speech Recognition Grammar",
   "serie": "speech-grammar"
  },
  "hlink": {
@@ -1911,7 +1911,7 @@
   "serie": "gallery"
  },
  "html-main-element": {
-  "title": "main element - an HTML5 extension specification",
+  "title": "main element - an HTML5 extension",
   "serie": "html-main-element"
  },
  "ime-api": {
@@ -2038,7 +2038,7 @@
   "serie": "jsml"
  },
  "lexicon-reqs": {
-  "title": "Pronunciation Lexicon Specification (PLS) Version 1.0 Requirements",
+  "title": "Pronunciation Lexicon Specification (PLS) Requirements",
   "serie": "lexicon-reqs"
  },
  "mmi-framework": {
@@ -2148,7 +2148,7 @@
   "serie": "media-annot-reqs"
  },
  "media-frags": {
-  "title": "Media Fragments URI 1.0 (basic)",
+  "title": "Media Fragments URI (basic)",
   "serie": "media-frags"
  },
  "media-frags-reqs": {
@@ -2176,11 +2176,11 @@
   "serie": "mmi-mcbp"
  },
  "media-frags-recipes": {
-  "title": "Protocol for Media Fragments 1.0 Resolution in HTTP",
+  "title": "Protocol for Media Fragments Resolution in HTTP",
   "serie": "media-frags-recipes"
  },
  "microdata-rdf": {
-  "title": "Microdata to RDF – Second Edition",
+  "title": "Microdata to RDF",
   "link": "https://w3c.github.io/microdata-rdf/",
   "serie": "microdata-rdf"
  },
@@ -2269,7 +2269,7 @@
   "serie": "indie-ui-context"
  },
  "ldp-primer": {
-  "title": "Linked Data Platform 1.0 Primer",
+  "title": "Linked Data Platform Primer",
   "link": "https://www.w3.org/2012/ldp/hg/ldp-primer/ldp-primer.html",
   "serie": "ldp-primer"
  },
@@ -2386,7 +2386,7 @@
   "serie": "p3p-preferences"
  },
  "mux": {
-  "title": "SMUX Protocol Specification",
+  "title": "SMUX Protocol",
   "serie": "mux"
  },
  "nvml": {
@@ -2422,7 +2422,7 @@
   "serie": "newline"
  },
  "ngram-spec": {
-  "title": "Stochastic Language Models (N-Gram) Specification",
+  "title": "Stochastic Language Models (N-Gram)",
   "serie": "ngram-spec"
  },
  "odrl": {
@@ -2434,7 +2434,7 @@
   "serie": "p3p-rdfschema"
  },
  "p3pdeployment": {
-  "title": "The Platform for Privacy Preferences 1.0 Deployment Guide",
+  "title": "The Platform for Privacy Preferences Deployment Guide",
   "serie": "p3pdeployment"
  },
  "patent-practice": {
@@ -2466,7 +2466,7 @@
   "serie": "owl-xmlsyntax"
  },
  "png": {
-  "title": "Portable Network Graphics (PNG) Specification",
+  "title": "Portable Network Graphics (PNG)",
   "serie": "png"
  },
  "owl-parsing": {
@@ -2550,7 +2550,7 @@
   "serie": "pics-services"
  },
  "picsrules": {
-  "title": "PICSRules 1.1 Specification",
+  "title": "PICSRules 1.1",
   "serie": "picsrules"
  },
  "pointers-in-rdf": {
@@ -2713,7 +2713,7 @@
   "serie": "rdf-schema"
  },
  "rdf-syntax": {
-  "title": "RDF/XML Syntax Specification",
+  "title": "RDF/XML Syntax",
   "serie": "rdf-syntax"
  },
  "positioning": {
@@ -2874,7 +2874,7 @@
   "serie": "rdfa-api"
  },
  "rdfa-core": {
-  "title": "RDFa Core 1.1 - Third Edition",
+  "title": "RDFa Core",
   "serie": "rdfa-core"
  },
  "prov-dm": {
@@ -2890,7 +2890,7 @@
   "serie": "rdf-interfaces"
  },
  "rdfa-lite": {
-  "title": "RDFa Lite 1.1 - Second Edition",
+  "title": "RDFa Lite",
   "serie": "rdfa-lite"
  },
  "prov-constraints": {
@@ -2959,7 +2959,7 @@
   "serie": "prov-sem"
  },
  "html-rdfa": {
-  "title": "HTML+RDFa 1.1 - Second Edition",
+  "title": "HTML+RDFa",
   "serie": "html-rdfa"
  },
  "tcp-udp-sockets": {
@@ -3173,7 +3173,7 @@
   "serie": "spec-variability"
  },
  "ssml-sayas": {
-  "title": "SSML 1.0 say-as attribute values",
+  "title": "SSML say-as attribute values",
   "serie": "ssml-sayas"
  },
  "scxml": {
@@ -3233,7 +3233,7 @@
   "serie": "soap-mtom-policy"
  },
  "rif-dtb": {
-  "title": "RIF Datatypes and Built-Ins 1.0",
+  "title": "RIF Datatypes and Built-Ins",
   "serie": "rif-dtb"
  },
  "rif-fld": {
@@ -3546,7 +3546,7 @@
   "serie": "sw-oosd-primer"
  },
  "ttaf-req": {
-  "title": "Timed Text (TT) Authoring Format 1.0 Use Cases and Requirements",
+  "title": "Timed Text (TT) Authoring Format Use Cases and Requirements",
   "serie": "ttaf-req"
  },
  "swbp-image-annotation": {
@@ -3714,7 +3714,7 @@
   "serie": "svg-strokes"
  },
  "vehicle-information-api": {
-  "title": "Vehicle Information API Specification",
+  "title": "Vehicle Information API",
   "link": "https://w3c.github.io/automotive/vehicle_information_api/vehicle_information_api_specification.html",
   "serie": "vehicle-information-api"
  },
@@ -3739,12 +3739,12 @@
   "serie": "ttml-profile-registry"
  },
  "tvcontrol-api": {
-  "title": "TV Control API Specification",
+  "title": "TV Control API",
   "link": "https://w3c.github.io/tvcontrol-api/",
   "serie": "tvcontrol-api"
  },
  "vehicle-information-service": {
-  "title": "Vehicle Information Service Specification",
+  "title": "Vehicle Information Service",
   "link": "https://w3c.github.io/automotive/vehicle_data/vehicle_information_service.html",
   "serie": "vehicle-information-service"
  },
@@ -3830,7 +3830,7 @@
   "serie": "wcag-core-techs"
  },
  "wcag-techs": {
-  "title": "Techniques for WCAG 2.0",
+  "title": "Techniques for WCAG",
   "serie": "wcag-techs"
  },
  "voicexml": {
@@ -3879,11 +3879,11 @@
   "serie": "wai-age-literature"
  },
  "wai-aria-primer": {
-  "title": "WAI-ARIA 1.0 Primer",
+  "title": "WAI-ARIA Primer",
   "serie": "wai-aria-primer"
  },
  "wai-aria-implementation": {
-  "title": "WAI-ARIA 1.0 User Agent Implementation Guide",
+  "title": "WAI-ARIA User Agent Implementation Guide",
   "serie": "wai-aria-implementation"
  },
  "webdatabase": {
@@ -3950,7 +3950,7 @@
   "serie": "vocab-regorg"
  },
  "task-scheduler": {
-  "title": "Task Scheduler API Specification",
+  "title": "Task Scheduler API",
   "link": "https://www.w3.org/2012/sysapps/web-alarms/",
   "serie": "task-scheduler"
  },
@@ -4018,7 +4018,7 @@
   "serie": "webpayments-overview"
  },
  "wasm-core": {
-  "title": "WebAssembly Core Specification",
+  "title": "WebAssembly Core",
   "link": "https://webassembly.github.io/spec/core/bikeshed/",
   "serie": "wasm-core"
  },
@@ -4065,7 +4065,7 @@
   "serie": "xh"
  },
  "xhtml-basic": {
-  "title": "XHTML™ Basic 1.1 - Second Edition",
+  "title": "XHTML™ Basic",
   "serie": "xhtml-basic"
  },
  "xhtml-forms-req": {
@@ -4137,7 +4137,7 @@
   "serie": "xframes"
  },
  "xforms-basic": {
-  "title": "XForms 1.0 Basic Profile",
+  "title": "XForms Basic Profile",
   "serie": "xforms-basic"
  },
  "xades": {
@@ -4161,11 +4161,11 @@
   "serie": "xforms-req"
  },
  "ws-addr-core": {
-  "title": "Web Services Addressing 1.0 - Core",
+  "title": "Web Services Addressing - Core",
   "serie": "ws-addr-core"
  },
  "ws-addr-soap": {
-  "title": "Web Services Addressing 1.0 - SOAP Binding",
+  "title": "Web Services Addressing - SOAP Binding",
   "serie": "ws-addr-soap"
  },
  "ws-cdl": {
@@ -4177,7 +4177,7 @@
   "serie": "ws-chor-model"
  },
  "wsdl-primer": {
-  "title": "Web Services Description Language (WSDL) Version 2.0 Part 0: Primer",
+  "title": "Web Services Description Language (WSDL) Part 0: Primer",
   "serie": "wsdl-primer"
  },
  "xbc-properties": {
@@ -4221,15 +4221,15 @@
   "serie": "ws-i18n"
  },
  "wsdl-adjuncts": {
-  "title": "Web Services Description Language (WSDL) Version 2.0 Part 2: Adjuncts",
+  "title": "Web Services Description Language (WSDL) Part 2: Adjuncts",
   "serie": "wsdl-adjuncts"
  },
  "wsdl-rdf": {
-  "title": "Web Services Description Language (WSDL) Version 2.0: RDF Mapping",
+  "title": "Web Services Description Language (WSDL): RDF Mapping",
   "serie": "wsdl-rdf"
  },
  "wsdl-soap-binding": {
-  "title": "Web Services Description Language (WSDL) Version 2.0 SOAP 1.1 Binding",
+  "title": "Web Services Description Language (WSDL) SOAP Binding",
   "serie": "wsdl-soap-binding"
  },
  "widgets": {
@@ -4269,11 +4269,11 @@
   "serie": "wsdlelementidentifiers"
  },
  "wsdl-additional-meps": {
-  "title": "Web Services Description Language (WSDL) Version 2.0: Additional MEPs",
+  "title": "Web Services Description Language (WSDL): Additional MEPs",
   "serie": "wsdl-additional-meps"
  },
  "ws-addr-metadata": {
-  "title": "Web Services Addressing 1.0 - Metadata",
+  "title": "Web Services Addressing - Metadata",
   "serie": "ws-addr-metadata"
  },
  "wsc-usecases": {
@@ -4293,7 +4293,7 @@
   "serie": "widgets-digsig"
  },
  "widgets-land": {
-  "title": "Widgets 1.0: The Widget Landscape (Q1 2008)",
+  "title": "Widgets: The Widget Landscape",
   "serie": "widgets-land"
  },
  "widgets-updates": {
@@ -4472,7 +4472,7 @@
   "serie": "xml-schema-req"
  },
  "xhtml-modularization": {
-  "title": "XHTML™ Modularization 1.1 - Second Edition",
+  "title": "XHTML™ Modularization",
   "serie": "xhtml-modularization"
  },
  "xhtml-prof-req": {
@@ -4540,7 +4540,7 @@
   "serie": "xmlp-am"
  },
  "xmlp-scenarios": {
-  "title": "SOAP Version 1.2 Usage Scenarios",
+  "title": "SOAP Usage Scenarios",
   "serie": "xmlp-scenarios"
  },
  "xmlschema-formal": {
@@ -4560,11 +4560,11 @@
   "serie": "xhtmlplussmil"
  },
  "xhtml-media-types": {
-  "title": "XHTML Media Types - Second Edition",
+  "title": "XHTML Media Types",
   "serie": "xhtml-media-types"
  },
  "xhtml-schema": {
-  "title": "XHTML 1.0 in XML Schema",
+  "title": "XHTML in XML Schema",
   "serie": "xhtml-schema"
  },
  "xmcl": {
@@ -4608,7 +4608,7 @@
   "serie": "xml-fragid"
  },
  "xhtml-print": {
-  "title": "XHTML-Print - Second Edition",
+  "title": "XHTML-Print",
   "serie": "xhtml-print"
  },
  "xml-id-req": {
@@ -4673,15 +4673,15 @@
   "serie": "xhtml-rdfa-scenarios"
  },
  "xml-entity-names": {
-  "title": "XML Entity Definitions for Characters (2nd Edition)",
+  "title": "XML Entity Definitions for Characters",
   "serie": "xml-entity-names"
  },
  "xpath-full-text-requirements": {
-  "title": "XQuery and XPath Full Text 1.0 Requirements",
+  "title": "XQuery and XPath Full Text Requirements",
   "serie": "xpath-full-text-requirements"
  },
  "xpath-full-text-use-cases": {
-  "title": "XQuery and XPath Full Text 1.0 Use Cases",
+  "title": "XQuery and XPath Full Text Use Cases",
   "serie": "xpath-full-text-use-cases"
  },
  "xmldsiged-tests": {
@@ -4713,11 +4713,11 @@
   "serie": "xml-events"
  },
  "xml-model": {
-  "title": "Associating Schemas with XML documents 1.0 (Third Edition)",
+  "title": "Associating Schemas with XML documents",
   "serie": "xml-model"
  },
  "xhtml-rdfa": {
-  "title": "XHTML+RDFa 1.1 - Third Edition",
+  "title": "XHTML+RDFa",
   "serie": "xhtml-rdfa"
  },
  "xml-proc-profiles": {
@@ -4729,7 +4729,7 @@
   "serie": "xmldsig-xpath"
  },
  "rdfa-primer": {
-  "title": "RDFa 1.1 Primer - Third Edition",
+  "title": "RDFa Primer",
   "link": "https://www.w3.org/2010/02/rdfa/sources/rdfa-primer/Overview-src.html",
   "serie": "rdfa-primer"
  },
@@ -4792,7 +4792,7 @@
   "serie": "ccppexchange"
  },
  "poix": {
-  "title": "POIX: Point Of Interest eXchange Language Specification",
+  "title": "POIX: Point Of Interest eXchange Language",
   "serie": "poix"
  },
  "wbxml": {
@@ -4800,7 +4800,7 @@
   "serie": "wbxml"
  },
  "xml-stylesheet": {
-  "title": "Associating Style Sheets with XML documents 1.0",
+  "title": "Associating Style Sheets with XML documents",
   "serie": "xml-stylesheet"
  },
  "xml-fragment": {
@@ -4888,7 +4888,7 @@
   "serie": "xsl"
  },
  "xmsg": {
-  "title": "XMSG - XML Messaging Specification",
+  "title": "XMSG - XML Messaging",
   "serie": "xmsg"
  },
  "xtnd": {
@@ -4948,7 +4948,7 @@
   "serie": "xquery-use-cases"
  },
  "xsl-req": {
-  "title": "Extensible Stylesheet Language (XSL) Version 1.1 Requirements",
+  "title": "Extensible Stylesheet Language (XSL) Requirements",
   "serie": "xsl-req"
  },
  "xslt-xquery-serialization": {
@@ -4980,7 +4980,7 @@
   "serie": "xpath-full-text"
  },
  "xquery-sx-requirements": {
-  "title": "XQuery Scripting Extension 1.0 Requirements",
+  "title": "XQuery Scripting Extension Requirements",
   "serie": "xquery-sx-requirements"
  },
  "xquery-update": {
@@ -4988,11 +4988,11 @@
   "serie": "xquery-update"
  },
  "xquery-update-requirements": {
-  "title": "XQuery Update Facility 1.0 Requirements",
+  "title": "XQuery Update Facility Requirements",
   "serie": "xquery-update-requirements"
  },
  "xquery-update-use-cases": {
-  "title": "XQuery Update Facility 1.0 Use Cases",
+  "title": "XQuery Update Facility Use Cases",
   "serie": "xquery-update-use-cases"
  },
  "xquery-sx": {
@@ -5000,7 +5000,7 @@
   "serie": "xquery-sx"
  },
  "xquery-sx-use-cases": {
-  "title": "XQuery Scripting Extension 1.0 Use Cases",
+  "title": "XQuery Scripting Extension Use Cases",
   "serie": "xquery-sx-use-cases"
  },
  "xslfo-req": {
@@ -5188,7 +5188,7 @@
   "serie": "framework"
  },
  "gdiff": {
-  "title": "Generic Diff Format Specification",
+  "title": "Generic Diff Format",
   "serie": "gdiff"
  },
  "http-edit-dist-scenarios": {
