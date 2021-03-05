@@ -535,9 +535,7 @@ async function run() {
             link  : spec["editor-draft"],
             serie : serie
           };
-          if (retired) {
-            dump_shortnames[serie].retired = true;
-          }
+          entry = dump_shortnames[serie];
       } else if (!entry) {
         for (const [key, value] of Object.entries(dump_shortnames)) {
           if (value.serie && value.serie === serie) {
