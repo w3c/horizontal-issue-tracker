@@ -4710,7 +4710,7 @@
   "serie": "xlink2rdf"
  },
  "xkms": {
-  "title": "XML Key Management Specification (XKMS",
+  "title": "XML Key Management Specification (XKMS)",
   "serie": "xkms"
  },
  "xml-infoset-rdfs": {
@@ -4820,7 +4820,7 @@
   "serie": "xindirect"
  },
  "xml-fragid": {
-  "title": "Proposal for XML Fragment Identifier Syntax 0.9",
+  "title": "Proposal for XML Fragment Identifier Syntax",
   "serie": "xml-fragid",
   "retired": true
  },
@@ -5730,12 +5730,12 @@
   "serie": "merchant-validation"
  },
  "epub-rs": {
-  "title": "EPUB 3.3 Reading Systems",
+  "title": "EPUB Reading Systems",
   "link": "https://w3c.github.io/epub-specs/epub33/rs/",
   "serie": "epub-rs"
  },
  "epub-overview": {
-  "title": "EPUB 3 Overview",
+  "title": "EPUB Overview",
   "link": "https://w3c.github.io/epub-specs/epub33/overview/",
   "serie": "epub-overview"
  },
