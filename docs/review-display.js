@@ -8,8 +8,15 @@ const config = {
   debug: false,
   ttl: 15,
   // the labels to display on the page
-  labels: 'pending,needs-resolution,tracker,close?',
-  extra_labels: 'advice-requested,needs-review,waiting,deferred'
+  labels: [{
+    name: 'needs-resolution',
+    color: 'red'
+  },
+  {
+    name: 'tracker',
+    color: 'blue'
+  }],
+  extra_labels: ''
 };
 
 const HR_LABELS = fetch("https://w3c.github.io/hr-labels.json").then(res => res.json());
@@ -79,9 +86,8 @@ function linkTo(issue) {
 }
 
 // might as well do this here, we'll use it as an array later
-config.labels = config.labels.split(',');
 config.extra_labels = config.extra_labels.split(',');
-config.all_labels = [].concat(config.labels, config.extra_labels);
+config.all_labels = [].concat(config.labels.map(l => l.name), config.extra_labels);
 
 // for the parameters added to GH URLs
 function searchParams(params) {
@@ -165,7 +171,9 @@ async function getAllData() {
     r.forEach((hrepo, index) => {
       let entry = {
         repo: repos[index],
-        issues: hrepo.filter(issue => issue.labels && issue.labels.find(l => l.name === slabel))
+        issues: hrepo.filter(issue => issue.labels
+          && (issue.labels.find(l => l.name === "tracker") || issue.labels.find(l => l.name === "needs-resolution"))
+          && issue.labels.find(l => l.name === slabel))
       }
       nt.push(entry);
     })
@@ -188,8 +196,14 @@ async function getAllData() {
 
   // group issues by label, adding to the labels array
   let repo_labels = [];
+  let issuesCounter = 0;
+  let needsResolutionCounter = 0;
   issues.forEach(entry => {
     entry.issues.forEach(issue => {
+      if (issue.labels.find(l => l.name === "needs-resolution")) {
+        needsResolutionCounter++;
+      }
+      issuesCounter++;
       for (const label of issue.labels) { // remember labels for buildFilters
         if (config.debug) console.log(label.name);
           repo_labels[label.name] = label;
@@ -205,6 +219,12 @@ async function getAllData() {
   // tally the issues on the page
   const trs = document.querySelectorAll('tr')
   document.getElementById('total').textContent = trs.length;
+  if (needsResolutionCounter > 0) {
+    document.getElementById('blocker').textContent = needsResolutionCounter;
+    document.getElementById('status').textContent = '🛑';
+  } else if (issuesCounter > 0) {
+    document.getElementById('status').textContent = '✅';
+  }
 
   for (const e of document.getElementsByClassName('shortname')) {
     e.textContent = config.shortname;
@@ -250,27 +270,15 @@ function displayRepo(repo, groupname, issues) {
 
     for (const label of issue.labels.filter(l => config.all_labels.includes(l.name))) {
       if (label.name == "tracker" || label.name == "needs-resolution") {
+        const l = config.labels.find(l => l.name === label.name);
         td.appendChild(domElement('span',
-          {style: `background-color:#${label.color}`,
-            title: label.name, class: 'labels' },
-           `${label.name} `));
+          {style: `background-color:${l.color}`,
+            title: l.name, class: 'labels' },
+           `${l.name} `));
       }
     }
     //a.href = issueData['html_url']
     td.appendChild(domElement('a', {href:linkTo(issue),target:'_blank'}, issue.title));
-    tr.appendChild(td);
-
-    td = domElement('td');
-    td.className = 'issueType'
-    // find labels
-    for (const label of issue.labels.filter(l => config.all_labels.includes(l.name))) {
-      if (!(label.name == "tracker" || label.name == "needs-resolution")) {
-        td.appendChild(domElement('span',
-          {style: `background-color:#${label.color}`,
-            title: label.name, class: 'labels'},
-           `${label.name} `));
-      }
-    }
     tr.appendChild(td);
 
     tr.appendChild(domElement('td', {class:'date',title:'Date created'}, formatDate(new Date(issue.created_at))));
@@ -309,7 +317,7 @@ function buildFilters(repo_labels) {
 
   function createLi(label) {
     const span = domElement('span',
-      {class:'labels',style: `background-color:#${label.color}`},
+      {class:'labels',style: `background-color:${label.color}`},
        ` ${String.fromCharCode(160)} `);
     return domElement('li', {"data-label":`${label.name}`},
       domElement('span',
@@ -317,9 +325,9 @@ function buildFilters(repo_labels) {
   }
 
   for (const label of config.labels) {
-    const gh_label = repo_labels[label];
+    const gh_label = repo_labels[label.name];
     if (gh_label) {
-      ul.appendChild(createLi(gh_label));
+      ul.appendChild(createLi(label));
     }
   }
 
