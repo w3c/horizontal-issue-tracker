@@ -692,7 +692,8 @@
   "link": "https://wicg.github.io/visual-viewport/"
  },
  "webnn": {
-  "link": "https://webmachinelearning.github.io/webnn/"
+  "link": "https://webmachinelearning.github.io/webnn/",
+  "title": "Web Neural Network API"
  },
  "webrtc-extensions": {
   "link": "https://w3c.github.io/webrtc-extensions/"
