@@ -88,7 +88,7 @@ async function getAllData() {
           }, value.link)));
         }
       }
-      value.sortKey = value.title.toLowerCase();
+      value.sortKey = value.title.toLowerCase().replace(' ', '');
       if (value.sortKey.startsWith('"')) {
         value.sortKey = value.sortKey.substring(1);
       }
