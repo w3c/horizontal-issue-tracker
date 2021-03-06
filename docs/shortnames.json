@@ -410,7 +410,7 @@
  },
  "ttml": {
   "link": "https://w3c.github.io/ttml2/",
-  "title": "Timed Text Markup Language",
+  "title": "Timed Text Markup Language (TTML)",
   "serie": "ttml"
  },
  "ttml-imsc": {
@@ -3206,7 +3206,7 @@
   "serie": "sdml"
  },
  "smil": {
-  "title": "Synchronized Multimedia Integration Language (SMIL",
+  "title": "Synchronized Multimedia Integration Language (SMIL)",
   "serie": "smil"
  },
  "ruby": {
@@ -3694,7 +3694,7 @@
   "serie": "sw-oosd-primer"
  },
  "ttaf-req": {
-  "title": "Timed Text (TT) Authoring Format Use Cases and Requirements",
+  "title": "Timed Text (TTML) Authoring Format Use Cases and Requirements",
   "serie": "ttaf-req"
  },
  "swbp-image-annotation": {
@@ -3707,11 +3707,11 @@
   "serie": "swbp-vocab-pub"
  },
  "svgfilter": {
-  "title": "SVG Filters 1.2, Part 2: Language",
+  "title": "SVG Filters, Part 2: Language",
   "serie": "svgfilter"
  },
  "svgfilterprimer": {
-  "title": "SVG Filters 1.2, Part 1: Primer",
+  "title": "SVG Filters, Part 1: Primer",
   "serie": "svgfilterprimer"
  },
  "svgfilterreqs": {
@@ -3720,17 +3720,17 @@
   "retired": true
  },
  "svgprint": {
-  "title": "SVG Print 1.2, Part 2: Language",
+  "title": "SVG Print, Part 2: Language",
   "serie": "svgprint",
   "retired": true
  },
  "svgprintprimer": {
-  "title": "SVG Print 1.2, Part 1: Primer",
+  "title": "SVG Print, Part 1: Primer",
   "serie": "svgprintprimer",
   "retired": true
  },
  "uaag-requirements": {
-  "title": "User Agent Accessibility Guidelines 2.0 Requirements",
+  "title": "User Agent Accessibility Guidelines Requirements",
   "serie": "uaag-requirements"
  },
  "timesheets": {
