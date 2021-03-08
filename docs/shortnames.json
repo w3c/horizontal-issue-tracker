@@ -306,6 +306,15 @@
   "title": "Micropub",
   "serie": "micropub"
  },
+ "miniapp-addressing": {
+  "link": "https://w3c.github.io/miniapp-addressing/"
+ },
+ "miniapp-manifest": {
+  "link": "https://w3c.github.io/miniapp-manifest/"
+ },
+ "miniapp-packaging": {
+  "link": "https://w3c.github.io/miniapp-packaging/"
+ },
  "mst-content-hint": {
   "link": "https://w3c.github.io/mst-content-hint/",
   "title": "MediaStreamTrack Content Hints",
