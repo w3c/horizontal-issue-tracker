@@ -307,13 +307,20 @@
   "serie": "micropub"
  },
  "miniapp-addressing": {
-  "link": "https://w3c.github.io/miniapp-addressing/"
+  "link": "https://w3c.github.io/miniapp-addressing/",
+  "title": "MiniApp URI Scheme"
  },
  "miniapp-manifest": {
-  "link": "https://w3c.github.io/miniapp-manifest/"
+  "link": "https://w3c.github.io/miniapp-manifest/",
+  "title": "MiniApp Manifest"
  },
  "miniapp-packaging": {
-  "link": "https://w3c.github.io/miniapp-packaging/"
+  "link": "https://w3c.github.io/miniapp-packaging/",
+  "title": "MiniApp Packaging"
+ },
+ "miniapp-lifecycle": {
+  "link": "https://w3c.github.io/miniapp-lifecycle/",
+  "title": "MiniApp Lifecycle"
  },
  "mst-content-hint": {
   "link": "https://w3c.github.io/mst-content-hint/",
