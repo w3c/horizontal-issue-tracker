@@ -215,7 +215,21 @@ async function run() {
   // add a few more repositories, such as the repository template
   repositories = repositories.concat(["w3c/note-respec-repo-template"]);
 
-  // in case we need to add a new repository in the system, use the command line
+  const wicgRepos = await fetch("https://labs.w3.org/github-cache/extra/repos/80485")
+  .then(res => res.json())
+  .then(repos => repos.filter(repo => repo.w3c
+    && repo.w3c["repo-type"]
+    && repo.w3c["repo-type"].find(t => t === "cg-report")));
+
+  const inProgress = wicgRepos.map(repo => {
+    if (!repositories.find(r => r === repo.full_name)) {
+      monitor.log("Adding new WICG repository");
+      repositories.push(repo.full_name);
+    }
+    return { repo: repo.full_name };
+  });
+
+// in case we need to add a new repository in the system, use the command line
   if (process.argv.length > 2) {
     repositories = [];
     for (let index = 2; index < process.argv.length; index++) {

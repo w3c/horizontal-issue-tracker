@@ -7,7 +7,8 @@ const { Repository, GitHub } = require("./lib/github.js"),
   monitor = require("./lib/monitor.js"),
   fetch = require("node-fetch"),
   email = require("./email.js"),
-  octokit = require("./lib/octokit-cache.js");
+  octokit = require("./lib/octokit-cache.js"),
+  config = require("./lib/config.js");
 
 const HR_REPOS_URL = "https://w3c.github.io/validate-repos/hr-repos.json",
 
@@ -430,6 +431,10 @@ async function createHRIssue(issue, hlabels) {
 
     const horizontal_repo = label.gh;
     log(issue, `creating a new horizontal issue ${horizontal_repo.full_name} ${title} ${labels.join(',')}`);
+    if (config.debug) {
+      log(issue, `DEBUG mode so abort`);
+      return;
+    }
     all_creation.push(
       // let's check if the shortname labels are there...
       horizontal_repo.getLabels().then(repo_labels => {
@@ -545,6 +550,8 @@ async function main() {
 
   monitor.log("Loading the horizontal issues");
   let good = true;
+  REPO2SHORTNAMES = {}; // reset shortnames
+
   for (const repo of (await hr.repositories)) {
     let issues = await getHRIssues(repo);
     if (!issues || !issues.length) {
@@ -614,14 +621,19 @@ async function main() {
 
 function loop() {
   main().then(function () {
-    email(monitor.get_logs());
+    if (!config.debug)
+      email(monitor.get_logs());
   }).catch(function (err) {
     console.error(err);
-    monitor.error(`Something went wrong: ${err}`);
-    email(monitor.get_logs());
+    if (!config.debug) {
+      monitor.error(`Something went wrong: ${err}`);
+      email(monitor.get_logs());
+    }
   });
 
-  setTimeout(loop, 60000 * 60 * 12); // every 12 hours
+  if (!config.debug) {
+    setTimeout(loop, 60000 * 60 * 12); // every 12 hours
+  }
 }
 
 async function init() {
