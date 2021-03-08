@@ -560,7 +560,7 @@
   "serie": "xslt"
  },
  "ScrollToTextFragment": {
-  "link": "https://wicg.github.io/ScrollToTextFragment/".
+  "link": "https://wicg.github.io/ScrollToTextFragment/",
   "title": "Text Fragments"
  },
  "accelerometer": {
@@ -748,7 +748,7 @@
   "title": "Fetch"
  },
  "openscreenprotocol": {
-  "link": "https://w3c.github.io/openscreenprotocol/".
+  "link": "https://w3c.github.io/openscreenprotocol/",
   "title": "Open Screen Protocol"
  },
  "pointerevents": {
@@ -2905,8 +2905,8 @@
   "serie": "rdf-primer"
  },
  "xquery-semantics": {
-  "link": "https://htmlpreview.github.io/?https://github.com/w3c/qtspecs/blob/master/specifications/xpath-semantics-30/html/Overview.html"
-  "title": "XQuery 1.0 and XPath 2.0 Formal Semantics",
+  "link": "https://htmlpreview.github.io/?https://github.com/w3c/qtspecs/blob/master/specifications/xpath-semantics-30/html/Overview.html",
+  "title": "XQuery and XPath Formal Semantics",
   "serie": "xquery-semantics"
  },
  "proc-model-req": {
