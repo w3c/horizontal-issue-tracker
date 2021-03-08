@@ -128,7 +128,7 @@ function htmlRepoURL(url) {
 
 // This is used to do how shortnames magic
 // populated in getHRissues(repo)
-const REPO2SHORTNAMES = {};
+let REPO2SHORTNAMES = {}; // this gets reset at each run
 // one label per repo
 function getShortlabel(repo) {
   return REPO2SHORTNAMES[repo];
