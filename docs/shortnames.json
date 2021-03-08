@@ -240,7 +240,8 @@
   "serie": "epub"
  },
  "epub-packages": {
-  "link": "https://www.w3.org/publishing/epub/epub-packages.html"
+  "link": "https://www.w3.org/publishing/epub/epub-packages.html",
+  "title": "EPUB Packages"
  },
  "findtext": {
   "link": "https://w3c.github.io/findtext/",
@@ -249,7 +250,8 @@
   "retired": true
  },
  "font-metrics-api": {
-  "link": "https://drafts.css-houdini.org/font-metrics-api/"
+  "link": "https://drafts.css-houdini.org/font-metrics-api/",
+  "title": "Font Metrics API"
  },
  "geolocation-api": {
   "link": "https://w3c.github.io/geolocation-api/",
@@ -328,7 +330,8 @@
   "serie": "mst-content-hint"
  },
  "open-ui": {
-  "link": "https://open-ui.org/"
+  "link": "https://open-ui.org/",
+  "title": "Open UI"
  },
  "owl-time": {
   "link": "https://w3c.github.io/sdw/time/",
@@ -557,7 +560,8 @@
   "serie": "xslt"
  },
  "ScrollToTextFragment": {
-  "link": "https://wicg.github.io/ScrollToTextFragment/"
+  "link": "https://wicg.github.io/ScrollToTextFragment/".
+  "title": "Text Fragments"
  },
  "accelerometer": {
   "link": "https://w3c.github.io/accelerometer/",
@@ -597,7 +601,8 @@
   "serie": "fileapi"
  },
  "floc": {
-  "link": "https://github.com/WICG/floc"
+  "link": "https://github.com/WICG/floc",
+  "title": "Federated Learning of Cohorts (FLoC)"
  },
  "gamepad": {
   "link": "https://w3c.github.io/gamepad/",
@@ -712,7 +717,8 @@
   "title": "Web Neural Network API"
  },
  "webrtc-extensions": {
-  "link": "https://w3c.github.io/webrtc-extensions/"
+  "link": "https://w3c.github.io/webrtc-extensions/",
+  "title": "WebRTC Extensions"
  },
  "webrtc-stats": {
   "link": "https://w3c.github.io/webrtc-stats/",
@@ -742,7 +748,8 @@
   "title": "Fetch"
  },
  "openscreenprotocol": {
-  "link": "https://w3c.github.io/openscreenprotocol/"
+  "link": "https://w3c.github.io/openscreenprotocol/".
+  "title": "Open Screen Protocol"
  },
  "pointerevents": {
   "link": "https://w3c.github.io/pointerevents/",
