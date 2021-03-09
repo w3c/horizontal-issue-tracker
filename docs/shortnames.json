@@ -354,6 +354,11 @@
   "title": "Personalization Semantics Explainer",
   "serie": "personalization-semantics"
  },
+ "personalization-semantics-content": {
+  "link": "https://w3c.github.io/personalization-semantics/content/",
+  "title": "Personalization Semantics Content",
+  "serie": "personalization-semantics-content"
+ },
  "presentation-api": {
   "link": "https://w3c.github.io/presentation-api/",
   "title": "Presentation API",
@@ -2830,11 +2835,6 @@
   "title": "Payment Method Manifest",
   "link": "https://w3c.github.io/payment-method-manifest/",
   "serie": "payment-method-manifest"
- },
- "personalization-semantics-content": {
-  "title": "Personalization Semantics Content",
-  "link": "https://w3c.github.io/personalization-semantics/content/",
-  "serie": "personalization-semantics-content"
  },
  "personalization-semantics-help": {
   "title": "Personalization Help and Support",
