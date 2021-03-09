@@ -200,7 +200,7 @@ async function getAllData() {
   let needsResolutionCounter = 0;
   issues.forEach(entry => {
     entry.issues.forEach(issue => {
-      if (issue.labels.find(l => l.name === "needs-resolution")) {
+      if (issue.state == "open" && issue.labels.find(l => l.name === "needs-resolution")) {
         needsResolutionCounter++;
       }
       issuesCounter++;
