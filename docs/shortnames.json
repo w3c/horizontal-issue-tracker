@@ -2691,15 +2691,15 @@
   "serie": "owl-overview"
  },
  "pics-labels": {
-  "title": "PICS 1.1 Label Distribution -- Label Syntax and Communication Protocols",
+  "title": "PICS Label Distribution -- Label Syntax and Communication Protocols",
   "serie": "pics-labels"
  },
  "pics-services": {
-  "title": "PICS 1.1 Rating Services and Rating Systems -- and Their Machine Readable Descriptions",
+  "title": "PICS Rating Services and Rating Systems -- and Their Machine Readable Descriptions",
   "serie": "pics-services"
  },
  "picsrules": {
-  "title": "PICSRules 1.1",
+  "title": "PICSRules",
   "serie": "picsrules"
  },
  "pointers-in-rdf": {
@@ -2739,11 +2739,11 @@
   "serie": "pointerlock"
  },
  "n-quads": {
-  "title": "RDF 1.1 N-Quads",
+  "title": "RDF N-Quads",
   "serie": "n-quads"
  },
  "n-triples": {
-  "title": "RDF 1.1 N-Triples",
+  "title": "RDF N-Triples",
   "serie": "n-triples"
  },
  "nfc": {
@@ -2887,7 +2887,7 @@
   "serie": "rdf-mt"
  },
  "rdf-syntax-grammar": {
-  "title": "RDF 1.1 XML Syntax",
+  "title": "RDF XML Syntax",
   "serie": "rdf-syntax-grammar"
  },
  "rdf-testcases": {
@@ -3146,7 +3146,7 @@
   "retired": true
  },
  "rdf-json": {
-  "title": "RDF 1.1 JSON Alternate Serialization (RDF/JSON)",
+  "title": "RDF JSON Alternate Serialization (RDF/JSON)",
   "serie": "rdf-json"
  },
  "rdf-new": {
@@ -3154,7 +3154,7 @@
   "serie": "rdf-new"
  },
  "rdf-datasets": {
-  "title": "RDF 1.1: On Semantics of RDF Datasets",
+  "title": "RDF: On Semantics of RDF Datasets",
   "serie": "rdf-datasets"
  },
  "referrer-policy": {
@@ -3354,7 +3354,7 @@
   "retired": true
  },
  "soap-ror-httpbinding": {
-  "title": "SOAP 1.1 Request Optional Response HTTP Binding",
+  "title": "SOAP Request Optional Response HTTP Binding",
   "serie": "soap-ror-httpbinding"
  },
  "rif-ucr": {
@@ -3455,27 +3455,27 @@
   "serie": "sparql-features"
  },
  "sparql-entailment": {
-  "title": "SPARQL 1.1 Entailment Regimes",
+  "title": "SPARQL Entailment Regimes",
   "serie": "sparql-entailment"
  },
  "sparql-http-rdf-update": {
-  "title": "SPARQL 1.1 Graph Store HTTP Protocol",
+  "title": "SPARQL Graph Store HTTP Protocol",
   "serie": "sparql-http-rdf-update"
  },
  "sparql-protocol": {
-  "title": "SPARQL 1.1 Protocol",
+  "title": "SPARQL Protocol",
   "serie": "sparql-protocol"
  },
  "sparql-query": {
-  "title": "SPARQL 1.1 Query Language",
+  "title": "SPARQL Query Language",
   "serie": "sparql-query"
  },
  "sparql-service-description": {
-  "title": "SPARQL 1.1 Service Description",
+  "title": "SPARQL Service Description",
   "serie": "sparql-service-description"
  },
  "sparql-update": {
-  "title": "SPARQL 1.1 Update",
+  "title": "SPARQL Update",
   "serie": "sparql-update"
  },
  "rif-in-rdf": {
@@ -3493,23 +3493,23 @@
   "retired": true
  },
  "sparql-federated-query": {
-  "title": "SPARQL 1.1 Federated Query",
+  "title": "SPARQL Federated Query",
   "serie": "sparql-federated-query"
  },
  "sparql-property-paths": {
-  "title": "SPARQL 1.1 Property Paths",
+  "title": "SPARQL Property Paths",
   "serie": "sparql-property-paths"
  },
  "sparql-overview": {
-  "title": "SPARQL 1.1 Overview",
+  "title": "SPARQL Overview",
   "serie": "sparql-overview"
  },
  "sparql-results-csv-tsv": {
-  "title": "SPARQL 1.1 Query Results CSV and TSV Formats",
+  "title": "SPARQL Query Results CSV and TSV Formats",
   "serie": "sparql-results-csv-tsv"
  },
  "sparql-results-json": {
-  "title": "SPARQL 1.1 Query Results JSON Format",
+  "title": "SPARQL Query Results JSON Format",
   "serie": "sparql-results-json"
  },
  "streamproc": {
@@ -4982,11 +4982,11 @@
   "serie": "rdfa-primer"
  },
  "xmlenc-transform": {
-  "title": "XML Encryption 1.1 CipherReference Processing using 2.0 Transforms",
+  "title": "XML Encryption CipherReference Processing using 2.0 Transforms",
   "serie": "xmlenc-transform"
  },
  "xinclude-requirements": {
-  "title": "XInclude 1.1 Requirement and Use Cases",
+  "title": "XInclude Requirement and Use Cases",
   "serie": "xinclude-requirements"
  },
  "xmldsig-core-explain": {
@@ -4994,7 +4994,7 @@
   "serie": "xmldsig-core-explain"
  },
  "xmldsig-core-interop": {
-  "title": "XML Signature 1.1 Interop Test Report",
+  "title": "XML Signature Interop Test Report",
   "serie": "xmldsig-core-interop"
  },
  "xmlenc-core-explain": {
@@ -5002,7 +5002,7 @@
   "serie": "xmlenc-core-explain"
  },
  "xmlenc-core-interop": {
-  "title": "XML Encryption 1.1 Interop Test Report",
+  "title": "XML Encryption Interop Test Report",
   "serie": "xmlenc-core-interop"
  },
  "xml-c14n-testcases": {
