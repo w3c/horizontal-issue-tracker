@@ -4465,19 +4465,19 @@
   "retired": true
  },
  "ws-policy": {
-  "title": "Web Services Policy 1.5 - Framework",
+  "title": "Web Services Policy - Framework",
   "serie": "ws-policy"
  },
  "ws-policy-attach": {
-  "title": "Web Services Policy 1.5 - Attachment",
+  "title": "Web Services Policy - Attachment",
   "serie": "ws-policy-attach"
  },
  "ws-policy-guidelines": {
-  "title": "Web Services Policy 1.5 - Guidelines for Policy Assertion Authors",
+  "title": "Web Services Policy - Guidelines for Policy Assertion Authors",
   "serie": "ws-policy-guidelines"
  },
  "ws-policy-primer": {
-  "title": "Web Services Policy 1.5 - Primer",
+  "title": "Web Services Policy - Primer",
   "serie": "ws-policy-primer"
  },
  "wsc-threats": {
@@ -4485,7 +4485,7 @@
   "serie": "wsc-threats"
  },
  "wsdlelementidentifiers": {
-  "title": "WSDL 1.1 Element Identifiers",
+  "title": "Web Services Description Language (WSDL) Element Identifiers",
   "serie": "wsdlelementidentifiers"
  },
  "wsdl-additional-meps": {
@@ -4501,7 +4501,7 @@
   "serie": "wsc-usecases"
  },
  "xbl-primer": {
-  "title": "XBL 2.0 Primer: An Introduction for Developers",
+  "title": "XBL Primer: An Introduction for Developers",
   "serie": "xbl-primer"
  },
  "xforms-for-html": {
