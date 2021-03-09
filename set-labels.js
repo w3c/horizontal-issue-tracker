@@ -18,6 +18,7 @@ const SERIE_REGEXP = new RegExp("https://api.w3.org/specification-series/([^]+)$
 const SHORTNAME_COLOR = "6bc5c6";
 
 const postfixes = [".", ":", "Level", "0", "1", "2", "3", "(Second Edition)", "(Revised)", "Revision", "Version", "Module", "-"];
+const prefixes = ["The"];
 
 config.debug = false;
 
@@ -165,6 +166,15 @@ function cleanTitle(titles) {
       postfixes.forEach(p => {
         if (title.endsWith(p)) {
           title = title.substring(0, title.length - p.length).trim();
+          found = true;
+        }
+      });
+    } while (found);
+    do {
+      found = false;
+      prefixes.forEach(p => {
+        if (title.startsWith(p)) {
+          title = title.substring(p.length).trim();
           found = true;
         }
       });
