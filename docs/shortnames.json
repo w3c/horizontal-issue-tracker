@@ -702,7 +702,7 @@
  },
  "screen-fold": {
   "link": "https://w3c.github.io/screen-fold/",
-  "title": "The Screen Fold API",
+  "title": "Screen Fold API",
   "serie": "screen-fold"
  },
  "screen-wake-lock": {
@@ -869,7 +869,7 @@
   "serie": "charmod"
  },
  "charcol": {
-  "title": "A Notation for Character Collections for the WWW",
+  "title": "Notation for Character Collections for the WWW",
   "serie": "charcol"
  },
  "aert": {
@@ -1073,7 +1073,7 @@
   "serie": "compositing"
  },
  "app-uri": {
-  "title": "The app: URL Scheme",
+  "title": "app: URL Scheme",
   "link": "https://app-uri.sysapps.org/",
   "serie": "app-uri",
   "retired": true
@@ -1246,7 +1246,7 @@
   "retired": true
  },
  "css-reader": {
-  "title": "The CSS ‘Reader’ Media Type",
+  "title": "CSS ‘Reader’ Media Type",
   "serie": "css-reader",
   "retired": true
  },
@@ -1786,7 +1786,7 @@
   "serie": "device-memory"
  },
  "dx-prof": {
-  "title": "The Profiles Ontology",
+  "title": "Profiles Ontology",
   "link": "https://w3c.github.io/dxwg/prof/",
   "serie": "dx-prof"
  },
@@ -1833,7 +1833,7 @@
   "retired": true
  },
  "ice": {
-  "title": "The Information and Content Exchange (ICE) Protocol",
+  "title": "Information and Content Exchange (ICE) Protocol",
   "serie": "ice"
  },
  "http-ng-architecture": {
@@ -1914,7 +1914,7 @@
   "serie": "html-design-principles"
  },
  "hcls-kb": {
-  "title": "A Prototype Knowledge Base for the Life Sciences",
+  "title": "Prototype Knowledge Base for the Life Sciences",
   "serie": "hcls-kb"
  },
  "hcls-senselab": {
@@ -1995,7 +1995,7 @@
   "serie": "hnreq"
  },
  "from-origin": {
-  "title": "The From-Origin Header",
+  "title": "From-Origin Header",
   "serie": "from-origin",
   "retired": true
  },
@@ -2050,12 +2050,12 @@
   "serie": "html-longdesc"
  },
  "html-picture-element": {
-  "title": "The picture Element",
+  "title": "picture Element",
   "serie": "html-picture-element",
   "retired": true
  },
  "html-srcset": {
-  "title": "The srcset attribute",
+  "title": "srcset attribute",
   "serie": "html-srcset",
   "retired": true
  },
@@ -2111,7 +2111,7 @@
   "retired": true
  },
  "html-transcript-src": {
-  "title": "A transcript extension for HTML",
+  "title": "transcript extension for HTML",
   "link": "https://w3c.github.io/html-transcript/html-transcript-src.html",
   "serie": "html-transcript-src",
   "retired": true
@@ -2259,7 +2259,7 @@
   "serie": "mobileok-basic-tests"
  },
  "mathml-for-css": {
-  "title": "A MathML for CSS Profile",
+  "title": "MathML for CSS Profile",
   "serie": "mathml-for-css"
  },
  "leiri": {
@@ -2296,12 +2296,12 @@
   "serie": "mediaont-api"
  },
  "media-capture-api": {
-  "title": "The Media Capture API",
+  "title": "Media Capture API",
   "serie": "media-capture-api",
   "retired": true
  },
  "messaging-api": {
-  "title": "The Messaging API",
+  "title": "Messaging API",
   "serie": "messaging-api",
   "retired": true
  },
@@ -2496,7 +2496,7 @@
   "serie": "json-ld-streaming"
  },
  "p3p-cacm": {
-  "title": "The Platform for Privacy Preferences",
+  "title": "Platform for Privacy Preferences",
   "serie": "p3p-cacm"
  },
  "p3p-protocols": {
@@ -2518,12 +2518,12 @@
   "serie": "pics-statement"
  },
  "p3p": {
-  "title": "The Platform for Privacy Preferences",
+  "title": "Platform for Privacy Preferences",
   "serie": "p3p",
   "retired": true
  },
  "p3p-preferences": {
-  "title": "A P3P Preference Exchange Language 1.0 (APPEL1.0)",
+  "title": "P3P Preference Exchange Language 1.0 (APPEL1.0)",
   "serie": "p3p-preferences",
   "retired": true
  },
@@ -2563,7 +2563,7 @@
   "retired": true
  },
  "newline": {
-  "title": "The [NEL] Newline Character",
+  "title": "[NEL] Newline Character",
   "serie": "newline"
  },
  "ngram-spec": {
@@ -2576,12 +2576,12 @@
   "serie": "odrl"
  },
  "p3p-rdfschema": {
-  "title": "An RDF Schema for P3P",
+  "title": "RDF Schema for P3P",
   "serie": "p3p-rdfschema",
   "retired": true
  },
  "p3pdeployment": {
-  "title": "The Platform for Privacy Preferences Deployment Guide",
+  "title": "Platform for Privacy Preferences Deployment Guide",
   "serie": "p3pdeployment",
   "retired": true
  },
@@ -2622,7 +2622,7 @@
   "serie": "owl-parsing"
  },
  "namespacestate": {
-  "title": "The Disposition of Names in an XML Namespace",
+  "title": "Disposition of Names in an XML Namespace",
   "serie": "namespacestate"
  },
  "offline-webapps": {
@@ -2711,7 +2711,7 @@
   "serie": "navigation-timing"
  },
  "netinfo-api": {
-  "title": "The Network Information API",
+  "title": "Network Information API",
   "link": "https://dvcs.w3.org/hg/dap/raw-file/tip/network-api/Overview.html",
   "serie": "netinfo-api",
   "retired": true
@@ -2852,7 +2852,7 @@
   "serie": "personalization-semantics-requirements"
  },
  "rdf-uml": {
-  "title": "A Discussion of the Relationship Between RDF-Schema and UML",
+  "title": "Discussion of the Relationship Between RDF-Schema and UML",
   "serie": "rdf-uml"
  },
  "rdf-schema": {
@@ -2926,7 +2926,7 @@
   "serie": "proc-model-req"
  },
  "qa-handbook": {
-  "title": "The QA Handbook",
+  "title": "QA Handbook",
   "serie": "qa-handbook"
  },
  "rdf-dawg-uc": {
@@ -2955,7 +2955,7 @@
   "serie": "rdf-sparql-protocol"
  },
  "rdftm-survey": {
-  "title": "A Survey of RDF/Topic Maps Interoperability Proposals",
+  "title": "Survey of RDF/Topic Maps Interoperability Proposals",
   "serie": "rdftm-survey"
  },
  "rdf-sparql-json-res": {
@@ -3020,7 +3020,7 @@
   "serie": "r2rml"
  },
  "rdb-direct-mapping": {
-  "title": "A Direct Mapping of Relational Data to RDF",
+  "title": "Direct Mapping of Relational Data to RDF",
   "serie": "rdb-direct-mapping"
  },
  "rdb2rdf-ucr": {
@@ -3255,7 +3255,7 @@
   "serie": "smil-access"
  },
  "schema-arch": {
-  "title": "The Cambridge Communiqué",
+  "title": "Cambridge Communiqué",
   "serie": "schema-arch"
  },
  "smil-animation": {
@@ -3435,7 +3435,7 @@
   "serie": "sml-epr-ref-scheme"
  },
  "sml-xlink-ref-scheme": {
-  "title": "The SML XLink Reference Scheme",
+  "title": "SML XLink Reference Scheme",
   "serie": "sml-xlink-ref-scheme"
  },
  "rif-overview": {
@@ -3527,7 +3527,7 @@
   "serie": "ruby-use-cases"
  },
  "screen-orientation": {
-  "title": "The Screen Orientation API",
+  "title": "Screen Orientation API",
   "link": "https://w3c.github.io/screen-orientation/",
   "serie": "screen-orientation"
  },
@@ -3727,7 +3727,7 @@
   "serie": "swbp-xsch-datatypes"
  },
  "sw-oosd-primer": {
-  "title": "A Semantic Web Primer for Object-Oriented Software Developers",
+  "title": "Semantic Web Primer for Object-Oriented Software Developers",
   "serie": "sw-oosd-primer"
  },
  "ttaf-req": {
@@ -3801,7 +3801,7 @@
   "serie": "svgparamprimer"
  },
  "test-methodology": {
-  "title": "A Method for Writing Testable Conformance Requirements",
+  "title": "Method for Writing Testable Conformance Requirements",
   "serie": "test-methodology"
  },
  "uaag-reference": {
@@ -3814,7 +3814,7 @@
   "retired": true
  },
  "system-info-api": {
-  "title": "The System Information API",
+  "title": "System Information API",
   "serie": "system-info-api",
   "retired": true
  },
@@ -4105,11 +4105,11 @@
   "serie": "webidl-java"
  },
  "vocab-data-cube": {
-  "title": "The RDF Data Cube Vocabulary",
+  "title": "RDF Data Cube Vocabulary",
   "serie": "vocab-data-cube"
  },
  "vocab-org": {
-  "title": "The Organization Ontology",
+  "title": "Organization Ontology",
   "serie": "vocab-org"
  },
  "vocab-people": {
@@ -4537,7 +4537,7 @@
   "retired": true
  },
  "websockets": {
-  "title": "The WebSocket API",
+  "title": "WebSocket API",
   "serie": "websockets",
   "retired": true
  },
@@ -4588,7 +4588,7 @@
   "serie": "ws-transfer"
  },
  "view-mode": {
-  "title": "The 'view-mode' Media Feature",
+  "title": "'view-mode' Media Feature",
   "serie": "view-mode",
   "retired": true
  },
@@ -4739,7 +4739,7 @@
   "serie": "xkms"
  },
  "xml-infoset-rdfs": {
-  "title": "An RDF Schema for the XML Information Set",
+  "title": "RDF Schema for the XML Information Set",
   "serie": "xml-infoset-rdfs"
  },
  "xml-link-style": {
@@ -4747,7 +4747,7 @@
   "serie": "xml-link-style"
  },
  "xmldsig-p3p-profile": {
-  "title": "A P3P Assurance Signature Profile",
+  "title": "P3P Assurance Signature Profile",
   "serie": "xmldsig-p3p-profile"
  },
  "xml-blueberry-req": {
@@ -4806,7 +4806,7 @@
   "serie": "xhtml-schema"
  },
  "xmcl": {
-  "title": "XMCL - the eXtensible Media Commerce Language",
+  "title": "eXtensible Media Commerce Language (XMCL)",
   "serie": "xmcl"
  },
  "xml-encryption-req": {
@@ -4818,7 +4818,7 @@
   "serie": "xml-pipeline"
  },
  "xhtmlplusmathmlplussvg": {
-  "title": "An XHTML + MathML + SVG Profile",
+  "title": "XHTML + MathML + SVG Profile",
   "serie": "xhtmlplusmathmlplussvg",
   "retired": true
  },
@@ -4881,7 +4881,7 @@
   "serie": "xkms-pgp"
  },
  "xkms-wsdl": {
-  "title": "A WSDL 1.1 description for XKMS",
+  "title": "WSDL 1.1 description for XKMS",
   "serie": "xkms-wsdl"
  },
  "xlink-ext": {
@@ -5295,7 +5295,7 @@
   "serie": "xproc-template"
  },
  "xsd-precisiondecimal": {
-  "title": "An XSD datatype for IEEE floating-point decimal",
+  "title": "XSD datatype for IEEE floating-point decimal",
   "serie": "xsd-precisiondecimal"
  },
  "xsd-unicode-blocknames": {
@@ -5323,7 +5323,7 @@
   "serie": "scxml-xpath-dm"
  },
  "s6group2": {
-  "title": "A Proposed Convention for Embedding Metadata in HTML",
+  "title": "Proposed Convention for Embedding Metadata in HTML",
   "serie": "s6group2"
  },
  "htmlthreading": {
@@ -5348,11 +5348,11 @@
   "serie": "ccpp-struct-vocab"
  },
  "daml+oil-axioms": {
-  "title": "An Axiomatic Semantics for RDF, RDF-S, and DAML+OIL (March 2001)",
+  "title": "Axiomatic Semantics for RDF, RDF-S, and DAML+OIL (March 2001)",
   "serie": "daml+oil-axioms"
  },
  "daml+oil-model": {
-  "title": "A Model-Theoretic Semantics for DAML+OIL (March 2001)",
+  "title": "Model-Theoretic Semantics for DAML+OIL (March 2001)",
   "serie": "daml+oil-model"
  },
  "daml+oil-reference": {
@@ -5396,7 +5396,7 @@
   "serie": "ops-standardpractices"
  },
  "osd": {
-  "title": "The Open Software Description Format (OSD)",
+  "title": "Open Software Description Format (OSD)",
   "serie": "osd"
  },
  "pics-cookie-extension": {
@@ -5424,7 +5424,7 @@
   "serie": "agent-attributes"
  },
  "amaya": {
-  "title": "An Introduction to Amaya",
+  "title": "Introduction to Amaya",
   "serie": "amaya"
  },
  "cgm": {
@@ -5432,7 +5432,7 @@
   "serie": "cgm"
  },
  "drp": {
-  "title": "The HTTP Distribution and Replication Protocol",
+  "title": "HTTP Distribution and Replication Protocol",
   "serie": "drp"
  },
  "eu-conf": {
@@ -5516,7 +5516,7 @@
   "retired": true
  },
  "ilu-requestor": {
-  "title": "The ILU Requester: Object Services in HTTP Servers",
+  "title": "ILU Requester: Object Services in HTTP Servers",
   "serie": "ilu-requestor",
   "retired": true
  },
@@ -5542,7 +5542,7 @@
   "serie": "session-id"
  },
  "sgml-lex": {
-  "title": "A Lexical Analyzer for HTML and Basic SGML",
+  "title": "Lexical Analyzer for HTML and Basic SGML",
   "serie": "sgml-lex",
   "retired": true
  },
@@ -5750,7 +5750,7 @@
   "serie": "wot-profile"
  },
  "merchant-validation": {
-  "title": "The MerchantValidationEvent interface",
+  "title": "MerchantValidationEvent interface",
   "link": "https://w3c.github.io/merchant-validation/",
   "serie": "merchant-validation"
  },
@@ -5770,7 +5770,7 @@
   "serie": "epub-multi-rend"
  },
  "responsible-use-spatial": {
-  "title": "The Responsible Use of Spatial Data",
+  "title": "Responsible Use of Spatial Data",
   "link": "https://w3c.github.io/sdw/responsible-use/",
   "serie": "responsible-use-spatial"
  },
