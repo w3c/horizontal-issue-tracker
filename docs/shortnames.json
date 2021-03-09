@@ -4881,7 +4881,7 @@
   "serie": "xkms-pgp"
  },
  "xkms-wsdl": {
-  "title": "WSDL 1.1 description for XKMS",
+  "title": "Web Services Description Language (WSDL) description for XKMS",
   "serie": "xkms-wsdl"
  },
  "xlink-ext": {
