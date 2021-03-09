@@ -320,10 +320,6 @@
   "link": "https://w3c.github.io/miniapp-packaging/",
   "title": "MiniApp Packaging"
  },
- "miniapp-lifecycle": {
-  "link": "https://w3c.github.io/miniapp-lifecycle/",
-  "title": "MiniApp Lifecycle"
- },
  "mst-content-hint": {
   "link": "https://w3c.github.io/mst-content-hint/",
   "title": "MediaStreamTrack Content Hints",
@@ -467,6 +463,18 @@
   "link": "https://w3c.github.io/vc-data-model/",
   "title": "Verifiable Credentials Data Model",
   "serie": "vc-data-model"
+ },
+ "vehicle-data": {
+  "link": "https://w3c.github.io/automotive/vehicle_data/data_spec.html",
+  "title": "Vehicle Data",
+  "serie": "vehicle-data",
+  "retired": true
+ },
+ "vehicle-information-api": {
+  "link": "https://w3c.github.io/automotive/vehicle_information_api/vehicle_information_api_specification.html",
+  "title": "Vehicle Information API",
+  "serie": "vehicle-information-api",
+  "retired": true
  },
  "vocab-dcat": {
   "link": "https://w3c.github.io/dxwg/dcat/",
@@ -819,6 +827,10 @@
   "link": "https://immersive-web.github.io/webxr-gamepads-module/",
   "title": "WebXR Gamepads",
   "serie": "webxr-gamepads-module"
+ },
+ "miniapp-lifecycle": {
+  "link": "https://w3c.github.io/miniapp-lifecycle/",
+  "title": "MiniApp Lifecycle"
  },
  "as": {
   "title": "Action Sheets: A Modular Way of Defining Behavior for XML and HTML",
@@ -3896,18 +3908,6 @@
   "title": "SVG Strokes",
   "link": "https://svgwg.org/specs/strokes/",
   "serie": "svg-strokes"
- },
- "vehicle-information-api": {
-  "title": "Vehicle Information API",
-  "link": "https://w3c.github.io/automotive/vehicle_information_api/vehicle_information_api_specification.html",
-  "serie": "vehicle-information-api",
-  "retired": true
- },
- "vehicle-data": {
-  "title": "Vehicle Data",
-  "link": "https://w3c.github.io/automotive/vehicle_data/data_spec.html",
-  "serie": "vehicle-data",
-  "retired": true
  },
  "svg-paths": {
   "title": "SVG Paths",
