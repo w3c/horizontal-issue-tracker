@@ -700,9 +700,9 @@
   "title": "Resource Timing",
   "serie": "resource-timing"
  },
- "screen-fold": {
-  "link": "https://w3c.github.io/screen-fold/",
-  "title": "Screen Fold API",
+ "device-posture": {
+  "link": "https://w3c.github.io/device-posture/",
+  "title": "Device Posture API",
   "serie": "screen-fold"
  },
  "screen-wake-lock": {
