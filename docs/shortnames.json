@@ -605,6 +605,11 @@
  "deprecation-reporting": {
   "link": "https://wicg.github.io/deprecation-reporting/"
  },
+ "device-posture": {
+  "link": "https://w3c.github.io/device-posture/",
+  "title": "Device Posture API",
+  "serie": "screen-fold"
+ },
  "file-system-access": {
   "link": "https://wicg.github.io/file-system-access/"
  },
@@ -699,11 +704,6 @@
   "link": "https://w3c.github.io/resource-timing/",
   "title": "Resource Timing",
   "serie": "resource-timing"
- },
- "device-posture": {
-  "link": "https://w3c.github.io/device-posture/",
-  "title": "Device Posture API",
-  "serie": "screen-fold"
  },
  "screen-wake-lock": {
   "link": "https://w3c.github.io/screen-wake-lock/",
