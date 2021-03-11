@@ -665,11 +665,6 @@
   "title": "Media Capture from DOM Elements",
   "serie": "mediacapture-fromelement"
  },
- "mediacapture-output": {
-  "link": "https://w3c.github.io/mediacapture-output/",
-  "title": "Audio Output Devices API",
-  "serie": "audio-output"
- },
  "mediasession": {
   "link": "https://w3c.github.io/mediasession/",
   "title": "Media Session Standard",
@@ -821,16 +816,6 @@
   "link": "https://drafts.csswg.org/cssom/",
   "title": "CSS Object Model (CSSOM)",
   "serie": "cssom"
- },
- "mediacapture-image": {
-  "link": "https://w3c.github.io/mediacapture-image/",
-  "title": "MediaStream Image Capture",
-  "serie": "image-capture"
- },
- "mediacapture-record": {
-  "link": "https://w3c.github.io/mediacapture-record/",
-  "title": "MediaStream Recording",
-  "serie": "mediastream-recording"
  },
  "web-codecs": {
   "link": "https://wicg.github.io/web-codecs/"
