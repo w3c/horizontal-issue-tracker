@@ -581,7 +581,7 @@
   "title": "Accelerometer",
   "serie": "accelerometer"
  },
- "battery": {
+ "battery-status": {
   "link": "https://w3c.github.io/battery/",
   "title": "Battery Status API",
   "serie": "battery-status"
@@ -627,7 +627,7 @@
   "title": "Gamepad",
   "serie": "gamepad"
  },
- "generic-sensors": {
+ "generic-sensor": {
   "link": "https://w3c.github.io/sensors/",
   "title": "Generic Sensor API",
   "serie": "generic-sensor"
@@ -647,6 +647,11 @@
   "title": "High Resolution Time",
   "serie": "hr-time"
  },
+ "image-capture": {
+  "link": "https://w3c.github.io/mediacapture-image/",
+  "title": "MediaStream Image Capture",
+  "serie": "image-capture"
+ },
  "intervention-reporting": {
   "link": "https://wicg.github.io/intervention-reporting/"
  },
@@ -660,25 +665,20 @@
   "title": "Media Capture from DOM Elements",
   "serie": "mediacapture-fromelement"
  },
- "mediacapture-image": {
-  "link": "https://w3c.github.io/mediacapture-image/",
-  "title": "MediaStream Image Capture",
-  "serie": "image-capture"
- },
  "mediacapture-output": {
   "link": "https://w3c.github.io/mediacapture-output/",
   "title": "Audio Output Devices API",
   "serie": "audio-output"
  },
- "mediacapture-record": {
-  "link": "https://w3c.github.io/mediacapture-record/",
-  "title": "MediaStream Recording",
-  "serie": "mediastream-recording"
- },
  "mediasession": {
   "link": "https://w3c.github.io/mediasession/",
   "title": "Media Session Standard",
   "serie": "mediasession"
+ },
+ "mediastream-recording": {
+  "link": "https://w3c.github.io/mediacapture-record/",
+  "title": "MediaStream Recording",
+  "serie": "mediastream-recording"
  },
  "orientation-event": {
   "link": "https://w3c.github.io/deviceorientation/",
@@ -821,6 +821,16 @@
   "link": "https://drafts.csswg.org/cssom/",
   "title": "CSS Object Model (CSSOM)",
   "serie": "cssom"
+ },
+ "mediacapture-image": {
+  "link": "https://w3c.github.io/mediacapture-image/",
+  "title": "MediaStream Image Capture",
+  "serie": "image-capture"
+ },
+ "mediacapture-record": {
+  "link": "https://w3c.github.io/mediacapture-record/",
+  "title": "MediaStream Recording",
+  "serie": "mediastream-recording"
  },
  "web-codecs": {
   "link": "https://wicg.github.io/web-codecs/"
