@@ -10,9 +10,9 @@ const HorizontalRepositories = require("./lib/horizontal-repositories.js"),
       config = require("./lib/config.js"),
       fetch = require("node-fetch"),
       fs = require('fs').promises,
+      tracked_repositories = require("./lib/repositories.js"),
       monitor = require("./lib/monitor.js");
 
-const HR_REPOS_URL = "https://w3c.github.io/validate-repos/hr-repos.json";
 const W3C_APIURL = "https://api.w3.org/";
 const SERIE_REGEXP = new RegExp("https://api.w3.org/specification-series/([^]+)$");
 const SHORTNAME_COLOR = "6bc5c6";
@@ -221,7 +221,10 @@ function getSerieRetired(specs, serie) {
 async function run() {
   const hr = new HorizontalRepositories();
 
-  let repositories = await fetch(HR_REPOS_URL).then(data => data.json());
+  let repositories = await tracked_repositories.w3c();
+
+  repositories.concat(await tracked_repositories.extra());
+
   // add a few more repositories, such as the repository template
   repositories = repositories.concat(["w3c/note-respec-repo-template"]);
 
@@ -231,15 +234,15 @@ async function run() {
     && repo.w3c["repo-type"]
     && repo.w3c["repo-type"].find(t => t === "cg-report")));
 
-  const inProgress = wicgRepos.map(repo => {
-    if (!repositories.find(r => r === repo.full_name)) {
-      monitor.log("Adding new WICG repository");
-      repositories.push(repo.full_name);
+  wicgRepos.forEach(repo => {
+    let name = repo.full_name.toLowerCase();
+    if (!repositories.find(r => r === name)) {
+      monitor.log(`Adding new WICG repository ${name}`);
+      repositories.push(name);
     }
-    return { repo: repo.full_name };
   });
 
-// in case we need to add a new repository in the system, use the command line
+  // in case we need to add a new repository in the system, use the command line
   if (process.argv.length > 2) {
     repositories = [];
     for (let index = 2; index < process.argv.length; index++) {
@@ -247,7 +250,6 @@ async function run() {
     }
     monitor.log(`Process new repositories: ${repositories.join(",")}`)
   }
-
   // transform the list of repositories into actual Repository objects
   repositories = repositories.map(r => new Repository(r));
   // we check for labels
@@ -418,18 +420,17 @@ async function run() {
       } else if (l.description && l.description !== "" && l.description !== used.description) {
         // this is inconsistent, so we're giving up
         monitor.error(`${l.name} : [${l.repo} ${l.description}] != [${used.repo} ${used.description}]`);
-      } else if (l.color !== SHORTNAME_COLOR) {
-        // just in case
-        monitor.warn(`${l.repo} : wrong color for ${l.name}`);
       }
     } else {
       // first time we're seeing it, so just add it
-      map.set(l.name, {name: l.name, description: l.description, repo: l.repo, repoObject: l.repoObject});
-      if (l.color !== SHORTNAME_COLOR) {
-        // just in case
-        monitor.warn(`${l.repo} : wrong color for ${l.name}`);
-      }
+      map.set(l.name, {name: l.name, description: l.description, color: l.color, repo: l.repo, repoObject: l.repoObject});
     }
+    if (l.color !== SHORTNAME_COLOR) {
+      // just in case
+      monitor.warn(`${l.repo} : wrong color for ${l.name}`);
+    }
+
+
   })
 
   const shortnames = Array.from(map.values());
@@ -572,20 +573,6 @@ async function run() {
       }
     }
   })
-
-  /*
-  const wicg = await fetch("https://wicg.github.io/tracking.json")
-    .then(res => res.json())
-    .then(data =>
-      data.sheets.map(s => s.rows).flat().map(row => {
-        return {
-          repo: `${row[0].toLowerCase()}`
-        };
-      })
-    ).then(repos => {
-      console.log(repos.length);
-    })
-  */
 
   for (const [key, value] of Object.entries(dump_shortnames)) {
     if (!value.title) {
