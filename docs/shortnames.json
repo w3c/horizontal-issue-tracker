@@ -401,7 +401,7 @@
   "title": "Selectors",
   "serie": "selectors"
  },
- "serviceworker": {
+ "service-workers": {
   "link": "https://w3c.github.io/ServiceWorker/",
   "title": "Service Workers",
   "serie": "service-workers"
