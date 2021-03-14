@@ -637,6 +637,9 @@
   "title": "Geolocation Sensor",
   "serie": "geolocation-sensor"
  },
+ "get-installed-related-apps": {
+  "link": "https://wicg.github.io/get-installed-related-apps/spec/"
+ },
  "gyroscope": {
   "link": "https://w3c.github.io/gyroscope/",
   "title": "Gyroscope",
@@ -664,6 +667,11 @@
   "link": "https://w3c.github.io/mediacapture-fromelement/",
   "title": "Media Capture from DOM Elements",
   "serie": "mediacapture-fromelement"
+ },
+ "mediacapture-output": {
+  "link": "https://w3c.github.io/mediacapture-output/",
+  "title": "Audio Output Devices API",
+  "serie": "audio-output"
  },
  "mediasession": {
   "link": "https://w3c.github.io/mediasession/",
@@ -709,6 +717,9 @@
   "link": "https://storage.spec.whatwg.org/",
   "title": "Storage"
  },
+ "storage-buckets": {
+  "link": "https://wicg.github.io/storage-buckets/"
+ },
  "system-wake-lock": {
   "link": "https://w3c.github.io/system-wake-lock/"
  },
@@ -740,6 +751,9 @@
   "link": "https://immersive-web.github.io/webxr-hand-input/",
   "title": "WebXR Hand Input",
   "serie": "webxr-hand-input"
+ },
+ "webxr-hit-test": {
+  "link": "https://immersive-web.github.io/hit-test/"
  },
  "webxrlayers": {
   "link": "https://immersive-web.github.io/layers/",
@@ -816,6 +830,16 @@
   "link": "https://drafts.csswg.org/cssom/",
   "title": "CSS Object Model (CSSOM)",
   "serie": "cssom"
+ },
+ "mediacapture-image": {
+  "link": "https://w3c.github.io/mediacapture-image/",
+  "title": "MediaStream Image Capture",
+  "serie": "image-capture"
+ },
+ "mediacapture-record": {
+  "link": "https://w3c.github.io/mediacapture-record/",
+  "title": "MediaStream Recording",
+  "serie": "mediastream-recording"
  },
  "web-codecs": {
   "link": "https://wicg.github.io/web-codecs/"
