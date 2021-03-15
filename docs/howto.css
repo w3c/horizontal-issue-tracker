@@ -21,6 +21,10 @@ th {
     border-radius: 10px;
     padding: 2px 5px;
 	}
+.tracker {
+    background-color: #eeeeee;
+    color: black;
+	}
 .needs-resolution {
     background-color: #e394da;
     color: white;

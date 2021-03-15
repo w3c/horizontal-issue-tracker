@@ -32,10 +32,10 @@
 <p>The table describes a set of scenarios, and provides a set of fairly detailed information about what to do given that scenario.</p>
 <table>
 <tr>
-<th>Someone adds a <span class="label needs-resolution">*-tracker</span> label to an issue in a WG repo.</th>
+<th>Someone adds a <span class="label tracker">*-tracker</span> label to an issue in a WG repo.</th>
 <td><ol>
-<li>The tooling creates a tracker issue in the HR repo, and applies the following labels:  <span class="label pending">pending</span>,  <span class="label spec">s:xxx</span>, <span class="label needs-resolution">tracker</span>.</li>
-<li>The HR group looks at the issue and decides whether it should continue with the <span class="label needs-resolution">tracker</span> label.</li>
+<li>The tooling creates a tracker issue in the HR repo, and applies the following labels:  <span class="label pending">pending</span>,  <span class="label spec">s:xxx</span>, <span class="label tracker">tracker</span>.</li>
+<li>The HR group looks at the issue and decides whether it should continue with the <span class="label tracker">tracker</span> label.</li>
 <li><em>If the HR group wants to see a particular resolution to the issue:</em> they indicate that desired resolution in the WG repo, and change the labels in both repos to <span class="label needs-resolution">*-needs-resolution</span>.</li>
 <li>The HR group removes the <span class="label pending">pending</span> label from the issue in the HR repo.</li>
 </ol></td>
@@ -88,7 +88,7 @@
 <li>The tooling will add a <span class="label close">Close?</span> label to the issue in the HR repo, signalling that the HR group should consider whether to stop tracking that issue.</li>
 <li>The HR group discusses the current status.</li>
 <li><em>If uncontroversial:</em> the HR group closes the issue in the HR repo at their leisure. (No need to remove <span class="label close">Close?</span> label, but ok if you want to.)</li>
-<li><em>If the resolution of the WG issue is problematic:</em> the HR group may decide to reopen the issue in the WG repo with a comment indicating their concerns. In this case, it would probably be appropriate to change the <span class="label needs-resolution">*-tracker</span> label to a <span class="label needs-resolution">*-needs-resolution</span> label in both the WG and HR repos.</li>
+<li><em>If the resolution of the WG issue is problematic:</em> the HR group may decide to reopen the issue in the WG repo with a comment indicating their concerns. In this case, it would probably be appropriate to change the <span class="label tracker">*-tracker</span> label to a <span class="label needs-resolution">*-needs-resolution</span> label in both the WG and HR repos.</li>
 </ol></td>
 </tr>
 <tr>
@@ -104,13 +104,13 @@
 <th>The HR group decides to change a *-tracker label to *-needs-resolution.</th>
 <td><ol>
 <li>Make a comment in the WG repo issue to indicate what resolution you are looking for.</li>
-<li>Change the <span class="label needs-resolution">*-tracker</span> label to <span class="label needs-resolution">*-needs-resolution</span> in both the WG and HR repos.</li>
+<li>Change the <span class="label tracker">*-tracker</span> label to <span class="label needs-resolution">*-needs-resolution</span> in both the WG and HR repos.</li>
 </ol></td>
 </tr>
 <tr>
 <th>The HR group decides to change a *-needs-resolution issue to *-tracker.</th>
 <td><ol>
-<li>Change the <span class="label needs-resolution">*-needs-resolution</span> label to <span class="label needs-resolution">*-tracker</span> in both the WG and HR repos.</li>
+<li>Change the <span class="label needs-resolution">*-needs-resolution</span> label to <span class="label tracker">*-tracker</span> in both the WG and HR repos.</li>
 </ol></td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@
 <th>A spec WG  requests a transition call.</th>
 <td>
 <p>The spec WG should have checked with the HR group that all issues with a <span class="label needs-resolution">*-needs-resolution</span> label have been resolved, and each issue should describe that resolution. </p>
-<p>The spec WG does NOT need to reach agreement with the HR group for issues that are only marked with a <span class="label needs-resolution">*-tracker</span> label.</p>
+<p>The spec WG does NOT need to reach agreement with the HR group for issues that are only marked with a <span class="label tracker">*-tracker</span> label.</p>
 <p>Prior to the transition call, the Director  will run a tool to check whether the HR group repos have unclosed issues with the <span class="label needs-resolution">*-needs-resolution</span> label. If there are some, they will have to take a decision about whether or not the lack of resolution will prevent the spec from progressing to the next stage. This may require consultation with the HR group.</p></td>
 </tr>
 </table>
