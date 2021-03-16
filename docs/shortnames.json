@@ -5550,7 +5550,7 @@
   },
   "title": "Audio Output Devices API"
  },
- "dom-level-views": {
+ "dom-views": {
   "w3c": {
    "serie": "dom-level--views",
    "shortnames": [
@@ -5560,7 +5560,7 @@
   "title": "Document Object Model (DOM) Level 3 Views and Formatting Specification",
   "retired": true
  },
- "dom-level-xpath": {
+ "dom-xpath": {
   "w3c": {
    "serie": "dom-level--xpath",
    "shortnames": [
@@ -5570,7 +5570,7 @@
   "title": "Document Object Model (DOM) Level 3 XPath Specification",
   "retired": true
  },
- "dom-level-as": {
+ "dom-as": {
   "w3c": {
    "serie": "dom-level--as",
    "shortnames": [
