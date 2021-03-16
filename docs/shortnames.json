@@ -2,544 +2,337 @@
  "accname": {
   "link": "https://w3c.github.io/accname/",
   "title": "Accessible Name and Description Computation",
-  "serie": "accname",
-  "w3c_serie": {
-   "shortnames": [
-    "accname-1.1",
-    "accname-1.2"
-   ],
+  "serie": {
    "serie": "accname"
   }
  },
  "activitypub": {
   "link": "https://w3c.github.io/activitypub/",
   "title": "ActivityPub",
-  "serie": "activitypub",
-  "w3c_serie": {
-   "shortnames": [
-    "activitypub"
-   ],
+  "serie": {
    "serie": "activitypub"
   }
  },
  "activitystreams-core": {
   "link": "https://w3c.github.io/activitystreams/core/",
   "title": "Activity Streams",
-  "serie": "activitystreams-core",
-  "w3c_serie": {
-   "shortnames": [
-    "activitystreams-core"
-   ],
+  "serie": {
    "serie": "activitystreams-core"
   }
  },
  "annotation-model": {
   "link": "https://w3c.github.io/web-annotation/",
   "title": "Web Annotation Data Model",
-  "serie": "annotation-model",
-  "w3c_serie": {
-   "shortnames": [
-    "annotation-model"
-   ],
+  "serie": {
    "serie": "annotation-model"
   }
  },
  "annotation-protocol": {
   "link": "https://w3c.github.io/web-annotation/protocol/wd/",
   "title": "Web Annotation Protocol",
-  "serie": "annotation-protocol",
-  "w3c_serie": {
-   "shortnames": [
-    "annotation-protocol"
-   ],
+  "serie": {
    "serie": "annotation-protocol"
   }
  },
  "annotation-vocab": {
   "link": "https://w3c.github.io/web-annotation/",
   "title": "Web Annotation Vocabulary",
-  "serie": "annotation-vocab",
-  "w3c_serie": {
-   "shortnames": [
-    "annotation-vocab"
-   ],
+  "serie": {
    "serie": "annotation-vocab"
   }
  },
  "appmanifest": {
   "link": "https://w3c.github.io/manifest/",
   "title": "Web Application Manifest",
-  "serie": "appmanifest",
-  "w3c_serie": {
-   "shortnames": [
-    "appmanifest"
-   ],
+  "serie": {
    "serie": "appmanifest"
   }
  },
  "baggage": {
   "link": "https://w3c.github.io/baggage/",
   "title": "Propagation format for distributed trace context: Baggage",
-  "serie": "baggage",
-  "w3c_serie": {
-   "shortnames": [
-    "baggage"
-   ],
+  "serie": {
    "serie": "baggage"
   }
  },
  "coga-usable": {
   "link": "https://w3c.github.io/coga/content-usable/",
   "title": "Making content usable for people with cognitive and learning disabilities",
-  "serie": "coga-usable",
-  "w3c_serie": {
-   "shortnames": [
-    "coga-usable"
-   ],
+  "serie": {
    "serie": "coga-usable"
   }
  },
  "css-align": {
   "link": "https://drafts.csswg.org/css-align/",
   "title": "CSS Box Alignment",
-  "serie": "css-align",
-  "w3c_serie": {
-   "shortnames": [
-    "css-align-3"
-   ],
+  "serie": {
    "serie": "css-align"
   }
  },
  "css-backgrounds": {
   "link": "https://drafts.csswg.org/css-backgrounds/",
   "title": "CSS Backgrounds and Borders",
-  "serie": "css-backgrounds",
-  "w3c_serie": {
-   "shortnames": [
-    "css-backgrounds-3"
-   ],
+  "serie": {
    "serie": "css-backgrounds"
   }
  },
  "css-box": {
   "link": "https://drafts.csswg.org/css-box/",
   "title": "CSS Box Model",
-  "serie": "css-box",
-  "w3c_serie": {
-   "shortnames": [
-    "css-box-3",
-    "css-box-4"
-   ],
+  "serie": {
    "serie": "css-box"
   }
  },
  "css-break": {
   "link": "https://drafts.csswg.org/css-break/",
   "title": "CSS Fragmentation",
-  "serie": "css-break",
-  "w3c_serie": {
-   "shortnames": [
-    "css-break-3",
-    "css-break-4"
-   ],
+  "serie": {
    "serie": "css-break"
   }
  },
  "css-cascade": {
   "link": "https://drafts.csswg.org/css-cascade/",
   "title": "CSS Cascading and Inheritance",
-  "serie": "css-cascade",
-  "w3c_serie": {
-   "shortnames": [
-    "css-cascade-3",
-    "css-cascade-4",
-    "css-cascade-5"
-   ],
+  "serie": {
    "serie": "css-cascade"
   }
  },
  "css-color": {
   "link": "https://drafts.csswg.org/css-color/",
   "title": "CSS Color",
-  "serie": "css-color",
-  "w3c_serie": {
-   "shortnames": [
-    "css-color-3",
-    "css-color-4",
-    "css-color-5"
-   ],
+  "serie": {
    "serie": "css-color"
   }
  },
  "css-conditional": {
   "link": "https://drafts.csswg.org/css-conditional/",
   "title": "CSS Conditional Rules",
-  "serie": "css-conditional",
-  "w3c_serie": {
-   "shortnames": [
-    "css-conditional-3",
-    "css-conditional-4"
-   ],
+  "serie": {
    "serie": "css-conditional"
   }
  },
  "css-content": {
   "link": "https://drafts.csswg.org/css-content/",
   "title": "CSS Generated Content",
-  "serie": "css-content",
-  "w3c_serie": {
-   "shortnames": [
-    "css-content-3"
-   ],
+  "serie": {
    "serie": "css-content"
   }
  },
  "css-counter-styles": {
   "link": "https://drafts.csswg.org/css-counter-styles/",
   "title": "CSS Counter Styles",
-  "serie": "css-counter-styles",
-  "w3c_serie": {
-   "shortnames": [
-    "css-counter-styles-3"
-   ],
+  "serie": {
    "serie": "css-counter-styles"
   }
  },
  "css-flexbox": {
   "link": "https://drafts.csswg.org/css-flexbox/",
   "title": "CSS Flexible Box Layout",
-  "serie": "css-flexbox",
-  "w3c_serie": {
-   "shortnames": [
-    "css-flexbox-1"
-   ],
+  "serie": {
    "serie": "css-flexbox"
   }
  },
  "css-fonts": {
   "link": "https://drafts.csswg.org/css-fonts/",
   "title": "CSS Fonts",
-  "serie": "css-fonts",
-  "w3c_serie": {
-   "shortnames": [
-    "css-fonts-3",
-    "css-fonts-4"
-   ],
+  "serie": {
    "serie": "css-fonts"
   }
  },
  "css-gcpm": {
   "link": "https://drafts.csswg.org/css-gcpm/",
   "title": "CSS Generated Content for Paged Media",
-  "serie": "css-gcpm",
-  "w3c_serie": {
-   "shortnames": [
-    "css-gcpm-3"
-   ],
+  "serie": {
    "serie": "css-gcpm"
   }
  },
  "css-grid": {
   "link": "https://drafts.csswg.org/css-grid/",
   "title": "CSS Grid Layout",
-  "serie": "css-grid",
-  "w3c_serie": {
-   "shortnames": [
-    "css-grid-1",
-    "css-grid-2"
-   ],
+  "serie": {
    "serie": "css-grid"
   }
  },
  "css-highlight-api": {
   "link": "https://drafts.csswg.org/css-highlight-api/",
   "title": "CSS Custom Highlight API",
-  "serie": "css-highlight-api",
-  "w3c_serie": {
-   "shortnames": [
-    "css-highlight-api-1"
-   ],
+  "serie": {
    "serie": "css-highlight-api"
   }
  },
  "css-inline": {
   "link": "https://drafts.csswg.org/css-inline/",
   "title": "CSS Inline Layout",
-  "serie": "css-inline",
-  "w3c_serie": {
-   "shortnames": [
-    "css-inline-3"
-   ],
+  "serie": {
    "serie": "css-inline"
   }
  },
  "css-line-grid": {
   "link": "https://drafts.csswg.org/css-line-grid/",
   "title": "CSS Line Grid",
-  "serie": "css-line-grid",
-  "w3c_serie": {
-   "shortnames": [
-    "css-line-grid-1"
-   ],
+  "serie": {
    "serie": "css-line-grid"
   }
  },
  "css-lists": {
   "link": "https://drafts.csswg.org/css-lists/",
   "title": "CSS Lists",
-  "serie": "css-lists",
-  "w3c_serie": {
-   "shortnames": [
-    "css-lists-3"
-   ],
+  "serie": {
    "serie": "css-lists"
   }
  },
  "css-logical": {
   "link": "https://drafts.csswg.org/css-logical/",
   "title": "CSS Logical Properties and Values",
-  "serie": "css-logical",
-  "w3c_serie": {
-   "shortnames": [
-    "css-logical-1"
-   ],
+  "serie": {
    "serie": "css-logical"
   }
  },
  "css-paint-api": {
   "link": "https://drafts.css-houdini.org/css-paint-api/",
   "title": "CSS Painting API",
-  "serie": "css-paint-api",
-  "w3c_serie": {
-   "shortnames": [
-    "css-paint-api-1"
-   ],
+  "serie": {
    "serie": "css-paint-api"
   }
  },
  "css-pseudo": {
   "link": "https://drafts.csswg.org/css-pseudo/",
   "title": "CSS Pseudo-Elements Module",
-  "serie": "css-pseudo",
-  "w3c_serie": {
-   "shortnames": [
-    "css-pseudo-4"
-   ],
+  "serie": {
    "serie": "css-pseudo"
   }
  },
  "css-rhythm": {
   "link": "https://drafts.csswg.org/css-rhythm/",
   "title": "CSS Rhythmic Sizing",
-  "serie": "css-rhythm",
-  "w3c_serie": {
-   "shortnames": [
-    "css-rhythm-1"
-   ],
+  "serie": {
    "serie": "css-rhythm"
   }
  },
  "css-ruby": {
   "link": "https://drafts.csswg.org/css-ruby/",
   "title": "CSS Ruby Layout",
-  "serie": "css-ruby",
-  "w3c_serie": {
-   "shortnames": [
-    "css-ruby-1"
-   ],
+  "serie": {
    "serie": "css-ruby"
   }
  },
  "css-scroll-snap": {
   "link": "https://drafts.csswg.org/css-scroll-snap/",
   "title": "CSS Scroll Snap",
-  "serie": "css-scroll-snap",
-  "w3c_serie": {
-   "shortnames": [
-    "css-scroll-snap-1"
-   ],
+  "serie": {
    "serie": "css-scroll-snap"
   }
  },
  "css-sizing": {
   "link": "https://drafts.csswg.org/css-sizing/",
   "title": "CSS Box Sizing",
-  "serie": "css-sizing",
-  "w3c_serie": {
-   "shortnames": [
-    "css-sizing-3",
-    "css-sizing-4"
-   ],
+  "serie": {
    "serie": "css-sizing"
   }
  },
  "css-syntax": {
   "link": "https://drafts.csswg.org/css-syntax/",
   "title": "CSS Syntax",
-  "serie": "css-syntax",
-  "w3c_serie": {
-   "shortnames": [
-    "css-syntax-3"
-   ],
+  "serie": {
    "serie": "css-syntax"
   }
  },
  "css-text": {
   "link": "https://drafts.csswg.org/css-text/",
   "title": "CSS Text",
-  "serie": "css-text",
-  "w3c_serie": {
-   "shortnames": [
-    "css-text-3",
-    "css-text-4"
-   ],
+  "serie": {
    "serie": "css-text"
   }
  },
  "css-text-decor": {
   "link": "https://drafts.csswg.org/css-text-decor/",
   "title": "CSS Text Decoration",
-  "serie": "css-text-decor",
-  "w3c_serie": {
-   "shortnames": [
-    "css-text-decor-3",
-    "css-text-decor-4"
-   ],
+  "serie": {
    "serie": "css-text-decor"
   }
  },
  "css-ui": {
   "link": "https://drafts.csswg.org/css-ui/",
   "title": "CSS Basic User Interface",
-  "serie": "css-ui",
-  "w3c_serie": {
-   "shortnames": [
-    "css-ui-3",
-    "css-ui-4"
-   ],
+  "serie": {
    "serie": "css-ui"
   }
  },
  "css-variables": {
   "link": "https://drafts.csswg.org/css-variables/",
   "title": "CSS Custom Properties for Cascading Variables",
-  "serie": "css-variables",
-  "w3c_serie": {
-   "shortnames": [
-    "css-variables-1"
-   ],
+  "serie": {
    "serie": "css-variables"
   }
  },
  "css-writing-modes": {
   "link": "https://drafts.csswg.org/css-writing-modes/",
   "title": "CSS Writing Modes",
-  "serie": "css-writing-modes",
-  "w3c_serie": {
-   "shortnames": [
-    "css-writing-modes-3",
-    "css-writing-modes-4"
-   ],
+  "serie": {
    "serie": "css-writing-modes"
   }
  },
  "css2": {
   "link": "https://drafts.csswg.org/css2/",
   "title": "Cascading Style Sheets",
-  "serie": "css",
-  "w3c_serie": {
-   "shortnames": [
-    "CSS1",
-    "CSS21",
-    "css-2010",
-    "css-2015",
-    "CSS22",
-    "css-2017",
-    "css-2018",
-    "css-2020"
-   ],
-   "serie": "css"
+  "serie": {
+   "serie": "css2"
   }
  },
  "did-core": {
   "link": "https://w3c.github.io/did-core/",
   "title": "Decentralized Identifiers (DIDs)",
-  "serie": "did-core",
-  "w3c_serie": {
-   "shortnames": [
-    "did-core"
-   ],
+  "serie": {
    "serie": "did-core"
   }
  },
  "dom": {
   "link": "https://dom.spec.whatwg.org/",
-  "title": "DOM"
+  "title": "DOM",
+  "serie": {
+   "serie": "dom"
+  }
  },
  "dpub-annotation-uc": {
   "link": "https://w3c.github.io/dpub-annotation/",
   "title": "Digital Publishing Annotation Use Cases",
-  "serie": "dpub-annotation-uc",
-  "w3c_serie": {
-   "shortnames": [
-    "dpub-annotation-uc"
-   ],
+  "serie": {
    "serie": "dpub-annotation-uc"
   }
  },
  "dpub-aria": {
   "link": "https://w3c.github.io/dpub-aria/",
   "title": "Digital Publishing WAI-ARIA",
-  "serie": "dpub-aria",
-  "w3c_serie": {
-   "shortnames": [
-    "dpub-aria-1.0"
-   ],
+  "serie": {
    "serie": "dpub-aria"
   }
  },
  "dpub-css-priorities": {
   "link": "https://w3c.github.io/dpub-pagination/priorities.html",
   "title": "Priorities for CSS from the Digital Publishing Interest Group",
-  "serie": "dpub-css-priorities",
-  "w3c_serie": {
-   "shortnames": [
-    "dpub-css-priorities"
-   ],
+  "serie": {
    "serie": "dpub-css-priorities"
   }
  },
  "dwbp": {
   "link": "https://w3c.github.io/dwbp/bp.html",
   "title": "Data on the Web Best Practices",
-  "serie": "dwbp",
-  "w3c_serie": {
-   "shortnames": [
-    "dwbp"
-   ],
+  "serie": {
    "serie": "dwbp"
   }
  },
  "encoding": {
   "link": "https://encoding.spec.whatwg.org/",
   "title": "Encoding",
-  "serie": "encoding",
-  "retired": true,
-  "w3c_serie": {
-   "shortnames": [
-    "encoding"
-   ],
+  "serie": {
    "serie": "encoding"
-  }
+  },
+  "retired": true
  },
  "epub": {
   "link": "https://w3c.github.io/epub-specs/epub33/core/",
   "title": "EPUB",
-  "serie": "epub",
-  "w3c_serie": {
-   "shortnames": [
-    "epub-33"
-   ],
+  "serie": {
    "serie": "epub"
   }
  },
@@ -550,14 +343,10 @@
  "findtext": {
   "link": "https://w3c.github.io/findtext/",
   "title": "FindText API",
-  "serie": "findtext",
-  "retired": true,
-  "w3c_serie": {
-   "shortnames": [
-    "findtext"
-   ],
+  "serie": {
    "serie": "findtext"
-  }
+  },
+  "retired": true
  },
  "font-metrics-api": {
   "link": "https://drafts.css-houdini.org/font-metrics-api/",
@@ -566,131 +355,85 @@
  "geolocation-api": {
   "link": "https://w3c.github.io/geolocation-api/",
   "title": "Geolocation API",
-  "serie": "geolocation-api",
-  "w3c_serie": {
-   "shortnames": [
-    "geolocation-API",
-    "geolocation-API-v2"
-   ],
+  "serie": {
    "serie": "geolocation-api"
   }
  },
  "html": {
   "link": "https://html.spec.whatwg.org/multipage/",
-  "title": "HTML"
+  "title": "HTML",
+  "serie": {
+   "serie": "html"
+  }
  },
  "html-aria": {
   "link": "https://w3c.github.io/html-aria/",
   "title": "ARIA in HTML",
-  "serie": "html-aria",
-  "w3c_serie": {
-   "shortnames": [
-    "html-aria"
-   ],
+  "serie": {
    "serie": "html-aria"
   }
  },
  "indexeddb": {
   "link": "https://w3c.github.io/IndexedDB/",
   "title": "Indexed Database API",
-  "serie": "indexeddb",
-  "w3c_serie": {
-   "shortnames": [
-    "IndexedDB",
-    "IndexedDB-2",
-    "IndexedDB-3"
-   ],
+  "serie": {
    "serie": "indexeddb"
   }
  },
  "input-events": {
   "link": "https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html",
   "title": "Input Events",
-  "serie": "input-events",
-  "w3c_serie": {
-   "shortnames": [
-    "input-events-1",
-    "input-events-2"
-   ],
+  "serie": {
    "serie": "input-events"
   }
  },
  "intersection-observer": {
   "link": "https://w3c.github.io/IntersectionObserver/",
   "title": "Intersection Observer",
-  "serie": "intersection-observer",
-  "w3c_serie": {
-   "shortnames": [
-    "intersection-observer"
-   ],
+  "serie": {
    "serie": "intersection-observer"
   }
  },
  "json-ld": {
   "link": "https://w3c.github.io/json-ld-syntax/",
   "title": "JSON-LD",
-  "serie": "json-ld",
-  "w3c_serie": {
-   "shortnames": [
-    "json-ld",
-    "json-ld11"
-   ],
+  "serie": {
    "serie": "json-ld"
   }
  },
  "ldn": {
   "link": "https://linkedresearch.org/ldn/",
   "title": "Linked Data Notifications",
-  "serie": "ldn",
-  "w3c_serie": {
-   "shortnames": [
-    "ldn"
-   ],
+  "serie": {
    "serie": "ldn"
   }
  },
  "low-vision-needs": {
   "link": "https://w3c.github.io/low-vision-a11y-tf/requirements.html",
   "title": "Accessibility Requirements for People with Low Vision",
-  "serie": "low-vision-needs",
-  "w3c_serie": {
-   "shortnames": [
-    "low-vision-needs"
-   ],
+  "serie": {
    "serie": "low-vision-needs"
   }
  },
  "mediacapture-streams": {
   "link": "https://w3c.github.io/mediacapture-main/",
   "title": "Media Capture and Streams",
-  "serie": "mediacapture-streams",
-  "w3c_serie": {
-   "shortnames": [
-    "mediacapture-streams"
-   ],
+  "serie": {
    "serie": "mediacapture-streams"
   }
  },
  "microdata": {
   "link": "https://w3c.github.io/microdata/",
   "title": "HTML Microdata",
-  "serie": "microdata",
-  "retired": true,
-  "w3c_serie": {
-   "shortnames": [
-    "microdata"
-   ],
+  "serie": {
    "serie": "microdata"
-  }
+  },
+  "retired": true
  },
  "micropub": {
   "link": "https://micropub.net/draft/",
   "title": "Micropub",
-  "serie": "micropub",
-  "w3c_serie": {
-   "shortnames": [
-    "micropub"
-   ],
+  "serie": {
    "serie": "micropub"
   }
  },
@@ -709,11 +452,7 @@
  "mst-content-hint": {
   "link": "https://w3c.github.io/mst-content-hint/",
   "title": "MediaStreamTrack Content Hints",
-  "serie": "mst-content-hint",
-  "w3c_serie": {
-   "shortnames": [
-    "mst-content-hint"
-   ],
+  "serie": {
    "serie": "mst-content-hint"
   }
  },
@@ -724,549 +463,337 @@
  "owl-time": {
   "link": "https://w3c.github.io/sdw/time/",
   "title": "Time Ontology in OWL",
-  "serie": "owl-time",
-  "w3c_serie": {
-   "shortnames": [
-    "owl-time"
-   ],
+  "serie": {
    "serie": "owl-time"
   }
  },
  "payment-method-basic-card": {
   "link": "https://w3c.github.io/payment-method-basic-card/",
   "title": "Payment Method: Basic Card",
-  "serie": "payment-method-basic-card",
-  "w3c_serie": {
-   "shortnames": [
-    "payment-method-basic-card"
-   ],
+  "serie": {
    "serie": "payment-method-basic-card"
   }
  },
  "payment-method-id": {
   "link": "https://w3c.github.io/payment-method-id/",
   "title": "Payment Method Identifiers",
-  "serie": "payment-method-id",
-  "w3c_serie": {
-   "shortnames": [
-    "payment-method-id"
-   ],
+  "serie": {
    "serie": "payment-method-id"
   }
  },
  "payment-request": {
   "link": "https://w3c.github.io/payment-request/",
   "title": "Payment Request API",
-  "serie": "payment-request",
-  "w3c_serie": {
-   "shortnames": [
-    "payment-request"
-   ],
+  "serie": {
    "serie": "payment-request"
   }
  },
  "personalization-semantics": {
   "link": "https://w3c.github.io/personalization-semantics/content/",
   "title": "Personalization Semantics Explainer",
-  "serie": "personalization-semantics",
-  "w3c_serie": {
-   "shortnames": [
-    "personalization-semantics-1.0"
-   ],
+  "serie": {
    "serie": "personalization-semantics"
   }
  },
  "personalization-semantics-content": {
   "link": "https://w3c.github.io/personalization-semantics/content/",
   "title": "Personalization Semantics Content",
-  "serie": "personalization-semantics-content",
-  "w3c_serie": {
-   "shortnames": [
-    "personalization-semantics-content-1.0"
-   ],
+  "serie": {
    "serie": "personalization-semantics-content"
   }
  },
  "presentation-api": {
   "link": "https://w3c.github.io/presentation-api/",
   "title": "Presentation API",
-  "serie": "presentation-api",
-  "w3c_serie": {
-   "shortnames": [
-    "presentation-api"
-   ],
+  "serie": {
    "serie": "presentation-api"
   }
  },
  "pronunciation-gap-analysis": {
   "link": "https://w3c.github.io/pronunciation/gap-analysis",
   "title": "Pronunciation Gap Analysis",
-  "serie": "pronunciation-gap-analysis",
-  "retired": true,
-  "w3c_serie": {
-   "shortnames": [
-    "pronunciation-gap-analysis"
-   ],
+  "serie": {
    "serie": "pronunciation-gap-analysis"
-  }
+  },
+  "retired": true
  },
  "pronunciation-use-cases": {
   "link": "https://w3c.github.io/pronunciation/use-cases",
   "title": "Pronunciation Use Cases",
-  "serie": "pronunciation-use-cases",
-  "retired": true,
-  "w3c_serie": {
-   "shortnames": [
-    "pronunciation-use-cases"
-   ],
+  "serie": {
    "serie": "pronunciation-use-cases"
-  }
+  },
+  "retired": true
  },
  "pub-manifest": {
   "link": "https://w3c.github.io/pub-manifest/",
   "title": "Publication Manifest",
-  "serie": "pub-manifest",
-  "w3c_serie": {
-   "shortnames": [
-    "pub-manifest"
-   ],
+  "serie": {
    "serie": "pub-manifest"
   }
  },
  "push-api": {
   "link": "https://w3c.github.io/push-api/",
   "title": "Push API",
-  "serie": "push-api",
-  "w3c_serie": {
-   "shortnames": [
-    "push-api"
-   ],
+  "serie": {
    "serie": "push-api"
   }
  },
  "remote-playback": {
   "link": "https://w3c.github.io/remote-playback/",
   "title": "Remote Playback API",
-  "serie": "remote-playback",
-  "w3c_serie": {
-   "shortnames": [
-    "remote-playback"
-   ],
+  "serie": {
    "serie": "remote-playback"
   }
  },
  "screen-capture": {
   "link": "https://w3c.github.io/mediacapture-screen-share/",
   "title": "Screen Capture",
-  "serie": "screen-capture",
-  "w3c_serie": {
-   "shortnames": [
-    "screen-capture"
-   ],
+  "serie": {
    "serie": "screen-capture"
   }
  },
  "selectors": {
   "link": "https://drafts.csswg.org/selectors/",
   "title": "Selectors",
-  "serie": "selectors",
-  "w3c_serie": {
-   "shortnames": [
-    "selectors-3",
-    "selectors-4"
-   ],
+  "serie": {
    "serie": "selectors"
   }
  },
  "service-workers": {
   "link": "https://w3c.github.io/ServiceWorker/",
   "title": "Service Workers",
-  "serie": "service-workers",
-  "w3c_serie": {
-   "shortnames": [
-    "service-workers-1"
-   ],
+  "serie": {
    "serie": "service-workers"
   }
  },
  "shacl": {
   "link": "https://w3c.github.io/data-shapes/shacl/",
   "title": "Shapes Constraint Language (SHACL)",
-  "serie": "shacl",
-  "w3c_serie": {
-   "shortnames": [
-    "shacl"
-   ],
+  "serie": {
    "serie": "shacl"
   }
  },
  "svg": {
   "link": "https://svgwg.org/svg2-draft/",
   "title": "Scalable Vector Graphics (SVG)",
-  "serie": "svg",
-  "w3c_serie": {
-   "shortnames": [
-    "SVG11",
-    "SVG12",
-    "SVG2"
-   ],
+  "serie": {
    "serie": "svg"
   }
  },
  "tracking-compliance": {
   "link": "https://www.w3.org/2011/tracking-protection/drafts/tracking-compliance.html",
   "title": "Tracking Compliance and Scope",
-  "serie": "tracking-compliance",
-  "retired": true,
-  "w3c_serie": {
-   "shortnames": [
-    "tracking-compliance"
-   ],
+  "serie": {
    "serie": "tracking-compliance"
-  }
+  },
+  "retired": true
  },
  "tracking-dnt": {
   "link": "https://w3c.github.io/dnt/drafts/tracking-dnt.html",
   "title": "Tracking Preference Expression (DNT)",
-  "serie": "tracking-dnt",
-  "retired": true,
-  "w3c_serie": {
-   "shortnames": [
-    "tracking-dnt"
-   ],
+  "serie": {
    "serie": "tracking-dnt"
-  }
+  },
+  "retired": true
  },
  "ttml": {
   "link": "https://w3c.github.io/ttml2/",
   "title": "Timed Text Markup Language (TTML)",
-  "serie": "ttml",
-  "w3c_serie": {
-   "shortnames": [
-    "ttml1",
-    "ttml2"
-   ],
+  "serie": {
    "serie": "ttml"
   }
  },
  "ttml-imsc": {
   "link": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html",
   "title": "TTML Profiles for Internet Media Subtitles and Captions",
-  "serie": "ttml-imsc",
-  "w3c_serie": {
-   "shortnames": [
-    "ttml-imsc1",
-    "ttml-imsc1.0.1",
-    "ttml-imsc1.1",
-    "ttml-imsc1.2"
-   ],
+  "serie": {
    "serie": "ttml-imsc"
   }
  },
  "turingtest": {
   "link": "https://w3c.github.io/apa/captcha/",
   "title": "Inaccessibility of CAPTCHA",
-  "serie": "turingtest",
-  "w3c_serie": {
-   "shortnames": [
-    "turingtest"
-   ],
+  "serie": {
    "serie": "turingtest"
   }
  },
  "uievents": {
   "link": "https://w3c.github.io/uievents/",
   "title": "UI Events",
-  "serie": "uievents",
-  "w3c_serie": {
-   "shortnames": [
-    "uievents",
-    "uievents-old"
-   ],
+  "serie": {
    "serie": "uievents"
   }
  },
  "uievents-code": {
   "link": "https://w3c.github.io/uievents-code/",
   "title": "UI Events KeyboardEvent code Values",
-  "serie": "uievents-code",
-  "w3c_serie": {
-   "shortnames": [
-    "uievents-code"
-   ],
+  "serie": {
    "serie": "uievents-code"
   }
  },
  "uievents-key": {
   "link": "https://w3c.github.io/uievents-key/",
   "title": "UI Events KeyboardEvent key Values",
-  "serie": "uievents-key",
-  "w3c_serie": {
-   "shortnames": [
-    "uievents-key"
-   ],
+  "serie": {
    "serie": "uievents-key"
   }
  },
  "url": {
   "link": "https://url.spec.whatwg.org/",
   "title": "URL",
-  "serie": "url",
-  "retired": true,
-  "w3c_serie": {
-   "shortnames": [
-    "url-1"
-   ],
+  "serie": {
    "serie": "url"
-  }
+  },
+  "retired": true
  },
  "vc-data-model": {
   "link": "https://w3c.github.io/vc-data-model/",
   "title": "Verifiable Credentials Data Model",
-  "serie": "vc-data-model",
-  "w3c_serie": {
-   "shortnames": [
-    "vc-data-model"
-   ],
+  "serie": {
    "serie": "vc-data-model"
   }
  },
  "vehicle-data": {
   "link": "https://w3c.github.io/automotive/vehicle_data/data_spec.html",
   "title": "Vehicle Data",
-  "serie": "vehicle-data",
-  "retired": true,
-  "w3c_serie": {
-   "shortnames": [
-    "vehicle-data"
-   ],
+  "serie": {
    "serie": "vehicle-data"
-  }
+  },
+  "retired": true
  },
  "vehicle-information-api": {
   "link": "https://w3c.github.io/automotive/vehicle_information_api/vehicle_information_api_specification.html",
   "title": "Vehicle Information API",
-  "serie": "vehicle-information-api",
-  "retired": true,
-  "w3c_serie": {
-   "shortnames": [
-    "vehicle-information-api"
-   ],
+  "serie": {
    "serie": "vehicle-information-api"
-  }
+  },
+  "retired": true
  },
  "vocab-dcat": {
   "link": "https://w3c.github.io/dxwg/dcat/",
   "title": "Data Catalog Vocabulary (DCAT)",
-  "serie": "vocab-dcat",
-  "w3c_serie": {
-   "shortnames": [
-    "vocab-dcat-1",
-    "vocab-dcat-2",
-    "vocab-dcat-3"
-   ],
+  "serie": {
    "serie": "vocab-dcat"
   }
  },
  "vocab-duv": {
   "link": "https://w3c.github.io/dwbp/vocab-du.html",
   "title": "Data on the Web Best Practices: Dataset Usage Vocabulary",
-  "serie": "vocab-duv",
-  "w3c_serie": {
-   "shortnames": [
-    "vocab-duv"
-   ],
+  "serie": {
    "serie": "vocab-duv"
   }
  },
  "wai-aria": {
   "link": "https://w3c.github.io/aria/",
   "title": "Accessible Rich Internet Applications (WAI-ARIA)",
-  "serie": "wai-aria",
-  "w3c_serie": {
-   "shortnames": [
-    "wai-aria",
-    "wai-aria-1.1",
-    "wai-aria-1.2"
-   ],
+  "serie": {
    "serie": "wai-aria"
   }
  },
  "wai-aria-practices": {
   "link": "https://w3c.github.io/aria-practices/",
   "title": "WAI-ARIA Authoring Practices",
-  "serie": "wai-aria-practices",
-  "w3c_serie": {
-   "shortnames": [
-    "wai-aria-practices",
-    "wai-aria-practices-1.1",
-    "wai-aria-practices-1.2"
-   ],
+  "serie": {
    "serie": "wai-aria-practices"
   }
  },
  "wcag": {
   "link": "https://w3c.github.io/wcag/guidelines/",
   "title": "Web Content Accessibility Guidelines",
-  "serie": "wcag",
-  "w3c_serie": {
-   "shortnames": [
-    "WAI-WEBCONTENT",
-    "WCAG20",
-    "WCAG21",
-    "WCAG22",
-    "wcag-3.0"
-   ],
+  "serie": {
    "serie": "wcag"
   }
  },
  "web-payments-use-cases": {
   "link": "https://w3c.github.io/webpayments-ig/latest/use-cases/index.html",
   "title": "Web Payments Use Cases",
-  "serie": "web-payments-use-cases",
-  "retired": true,
-  "w3c_serie": {
-   "shortnames": [
-    "web-payments-use-cases"
-   ],
+  "serie": {
    "serie": "web-payments-use-cases"
-  }
+  },
+  "retired": true
  },
  "web-share": {
   "link": "https://w3c.github.io/web-share/",
   "title": "Web Share API",
-  "serie": "web-share",
-  "w3c_serie": {
-   "shortnames": [
-    "web-share"
-   ],
+  "serie": {
    "serie": "web-share"
   }
  },
  "webaudio": {
   "link": "https://webaudio.github.io/web-audio-api/",
   "title": "Web Audio API",
-  "serie": "webaudio",
-  "w3c_serie": {
-   "shortnames": [
-    "webaudio"
-   ],
+  "serie": {
    "serie": "webaudio"
   }
  },
  "webauthn": {
   "link": "https://w3c.github.io/webauthn/",
   "title": "Web Authentication",
-  "serie": "webauthn",
-  "w3c_serie": {
-   "shortnames": [
-    "webauthn-1",
-    "webauthn-2"
-   ],
+  "serie": {
    "serie": "webauthn"
   }
  },
  "webdriver": {
   "link": "https://w3c.github.io/webdriver/",
   "title": "WebDriver",
-  "serie": "webdriver",
-  "w3c_serie": {
-   "shortnames": [
-    "webdriver1",
-    "webdriver2"
-   ],
+  "serie": {
    "serie": "webdriver"
   }
  },
  "webmention": {
   "link": "https://webmention.net/draft/",
   "title": "Webmention",
-  "serie": "webmention",
-  "w3c_serie": {
-   "shortnames": [
-    "webmention"
-   ],
+  "serie": {
    "serie": "webmention"
   }
  },
  "webrtc": {
   "link": "https://w3c.github.io/webrtc-pc/",
   "title": "WebRTC: Real-Time Communication Between Browsers",
-  "serie": "webrtc",
-  "w3c_serie": {
-   "shortnames": [
-    "webrtc"
-   ],
+  "serie": {
    "serie": "webrtc"
   }
  },
  "webrtc-svc": {
   "link": "https://w3c.github.io/webrtc-svc/",
   "title": "Scalable Video Coding (SVC) Extension for WebRTC",
-  "serie": "webrtc-svc",
-  "w3c_serie": {
-   "shortnames": [
-    "webrtc-svc"
-   ],
+  "serie": {
    "serie": "webrtc-svc"
   }
  },
  "websub": {
   "link": "https://websub.net/draft",
   "title": "WebSub",
-  "serie": "websub",
-  "w3c_serie": {
-   "shortnames": [
-    "websub"
-   ],
+  "serie": {
    "serie": "websub"
   }
  },
  "webvtt": {
   "link": "https://w3c.github.io/webvtt/",
   "title": "WebVTT: The Web Video Text Tracks Format",
-  "serie": "webvtt",
-  "w3c_serie": {
-   "shortnames": [
-    "webvtt1"
-   ],
+  "serie": {
    "serie": "webvtt"
   }
  },
  "webxr": {
   "link": "https://immersive-web.github.io/webxr/",
   "title": "WebXR Device API",
-  "serie": "webxr",
-  "w3c_serie": {
-   "shortnames": [
-    "webxr"
-   ],
+  "serie": {
    "serie": "webxr"
   }
  },
  "wot-thing-description": {
   "link": "https://w3c.github.io/wot-thing-description/",
   "title": "Web of Things (WoT) Thing Description",
-  "serie": "wot-thing-description",
-  "w3c_serie": {
-   "shortnames": [
-    "wot-thing-description10",
-    "wot-thing-description11"
-   ],
+  "serie": {
    "serie": "wot-thing-description"
   }
  },
  "xslt": {
   "link": "https://htmlpreview.github.io/?https://github.com/w3c/qtspecs/blob/master/specifications/xslt-30/html/Overview.html",
   "title": "XSL Transformations (XSLT)",
-  "serie": "xslt",
-  "w3c_serie": {
-   "shortnames": [
-    "xslt",
-    "xslt11",
-    "xslt20",
-    "xslt-30"
-   ],
+  "serie": {
    "serie": "xslt"
   }
  },
@@ -1277,22 +804,14 @@
  "accelerometer": {
   "link": "https://w3c.github.io/accelerometer/",
   "title": "Accelerometer",
-  "serie": "accelerometer",
-  "w3c_serie": {
-   "shortnames": [
-    "accelerometer"
-   ],
+  "serie": {
    "serie": "accelerometer"
   }
  },
  "battery-status": {
   "link": "https://w3c.github.io/battery/",
   "title": "Battery Status API",
-  "serie": "battery-status",
-  "w3c_serie": {
-   "shortnames": [
-    "battery-status"
-   ],
+  "serie": {
    "serie": "battery-status"
   }
  },
@@ -1305,23 +824,14 @@
  "css-color-adjust": {
   "link": "https://drafts.csswg.org/css-color-adjust/",
   "title": "CSS Color Adjustment",
-  "serie": "css-color-adjust",
-  "w3c_serie": {
-   "shortnames": [
-    "css-color-adjust-1"
-   ],
+  "serie": {
    "serie": "css-color-adjust"
   }
  },
  "css-values": {
   "link": "https://drafts.csswg.org/css-values/",
   "title": "CSS Values and Units",
-  "serie": "css-values",
-  "w3c_serie": {
-   "shortnames": [
-    "css-values-3",
-    "css-values-4"
-   ],
+  "serie": {
    "serie": "css-values"
   }
  },
@@ -1330,14 +840,7 @@
  },
  "device-posture": {
   "link": "https://w3c.github.io/device-posture/",
-  "title": "Device Posture API",
-  "serie": "screen-fold",
-  "w3c_serie": {
-   "shortnames": [
-    "screen-fold"
-   ],
-   "serie": "screen-fold"
-  }
+  "title": "Device Posture API"
  },
  "file-system-access": {
   "link": "https://wicg.github.io/file-system-access/"
@@ -1345,11 +848,7 @@
  "fileapi": {
   "link": "https://w3c.github.io/FileAPI/",
   "title": "File API",
-  "serie": "fileapi",
-  "w3c_serie": {
-   "shortnames": [
-    "FileAPI"
-   ],
+  "serie": {
    "serie": "fileapi"
   }
  },
@@ -1360,33 +859,21 @@
  "gamepad": {
   "link": "https://w3c.github.io/gamepad/",
   "title": "Gamepad",
-  "serie": "gamepad",
-  "w3c_serie": {
-   "shortnames": [
-    "gamepad"
-   ],
+  "serie": {
    "serie": "gamepad"
   }
  },
  "generic-sensor": {
   "link": "https://w3c.github.io/sensors/",
   "title": "Generic Sensor API",
-  "serie": "generic-sensor",
-  "w3c_serie": {
-   "shortnames": [
-    "generic-sensor"
-   ],
+  "serie": {
    "serie": "generic-sensor"
   }
  },
  "geolocation-sensor": {
   "link": "https://w3c.github.io/geolocation-sensor/",
   "title": "Geolocation Sensor",
-  "serie": "geolocation-sensor",
-  "w3c_serie": {
-   "shortnames": [
-    "geolocation-sensor"
-   ],
+  "serie": {
    "serie": "geolocation-sensor"
   }
  },
@@ -1396,35 +883,21 @@
  "gyroscope": {
   "link": "https://w3c.github.io/gyroscope/",
   "title": "Gyroscope",
-  "serie": "gyroscope",
-  "w3c_serie": {
-   "shortnames": [
-    "gyroscope"
-   ],
+  "serie": {
    "serie": "gyroscope"
   }
  },
  "hr-time": {
   "link": "https://w3c.github.io/hr-time/",
   "title": "High Resolution Time",
-  "serie": "hr-time",
-  "w3c_serie": {
-   "shortnames": [
-    "hr-time-1",
-    "hr-time-2",
-    "hr-time-3"
-   ],
+  "serie": {
    "serie": "hr-time"
   }
  },
  "image-capture": {
   "link": "https://w3c.github.io/mediacapture-image/",
   "title": "MediaStream Image Capture",
-  "serie": "image-capture",
-  "w3c_serie": {
-   "shortnames": [
-    "image-capture"
-   ],
+  "serie": {
    "serie": "image-capture"
   }
  },
@@ -1434,130 +907,86 @@
  "mathml": {
   "link": "https://w3c.github.io/mathml/",
   "title": "Mathematical Markup Language (MathML)",
-  "serie": "mathml",
-  "w3c_serie": {
-   "shortnames": [
-    "REC-MathML",
-    "MathML2",
-    "MathML3"
-   ],
+  "serie": {
    "serie": "mathml"
   }
  },
  "mediacapture-fromelement": {
   "link": "https://w3c.github.io/mediacapture-fromelement/",
   "title": "Media Capture from DOM Elements",
-  "serie": "mediacapture-fromelement",
-  "w3c_serie": {
-   "shortnames": [
-    "mediacapture-fromelement"
-   ],
+  "serie": {
    "serie": "mediacapture-fromelement"
   }
  },
  "mediacapture-output": {
   "link": "https://w3c.github.io/mediacapture-output/",
   "title": "Audio Output Devices API",
-  "serie": "audio-output",
-  "w3c_serie": {
-   "shortnames": [
-    "audio-output"
-   ],
-   "serie": "audio-output"
+  "serie": {
+   "serie": "mediacapture-output"
   }
  },
  "mediasession": {
   "link": "https://w3c.github.io/mediasession/",
   "title": "Media Session Standard",
-  "serie": "mediasession",
-  "w3c_serie": {
-   "shortnames": [
-    "mediasession"
-   ],
+  "serie": {
    "serie": "mediasession"
   }
  },
  "mediastream-recording": {
   "link": "https://w3c.github.io/mediacapture-record/",
   "title": "MediaStream Recording",
-  "serie": "mediastream-recording",
-  "w3c_serie": {
-   "shortnames": [
-    "mediastream-recording"
-   ],
+  "serie": {
    "serie": "mediastream-recording"
   }
  },
  "orientation-event": {
   "link": "https://w3c.github.io/deviceorientation/",
   "title": "DeviceOrientation Event",
-  "serie": "orientation-event",
-  "w3c_serie": {
-   "shortnames": [
-    "orientation-event"
-   ],
+  "serie": {
    "serie": "orientation-event"
   }
  },
  "payment-handler": {
   "link": "https://w3c.github.io/payment-handler",
   "title": "Payment Handler API",
-  "serie": "payment-handler",
-  "w3c_serie": {
-   "shortnames": [
-    "payment-handler"
-   ],
+  "serie": {
    "serie": "payment-handler"
   }
  },
  "proximity-sensor": {
   "link": "https://w3c.github.io/proximity/",
   "title": "Proximity Sensor",
-  "serie": "proximity",
-  "w3c_serie": {
-   "shortnames": [
-    "proximity"
-   ],
-   "serie": "proximity"
+  "serie": {
+   "serie": "proximity-sensor"
   }
  },
  "reporting": {
   "link": "https://w3c.github.io/reporting/",
   "title": "Reporting API",
-  "serie": "reporting",
-  "w3c_serie": {
-   "shortnames": [
-    "reporting-1"
-   ],
+  "serie": {
    "serie": "reporting"
   }
  },
  "resource-timing": {
   "link": "https://w3c.github.io/resource-timing/",
   "title": "Resource Timing",
-  "serie": "resource-timing",
-  "w3c_serie": {
-   "shortnames": [
-    "resource-timing-1",
-    "resource-timing-2"
-   ],
+  "serie": {
    "serie": "resource-timing"
   }
  },
  "screen-wake-lock": {
   "link": "https://w3c.github.io/screen-wake-lock/",
   "title": "Screen Wake Lock API",
-  "serie": "screen-wake-lock",
-  "w3c_serie": {
-   "shortnames": [
-    "screen-wake-lock"
-   ],
+  "serie": {
    "serie": "screen-wake-lock"
   }
  },
  "storage": {
   "link": "https://storage.spec.whatwg.org/",
-  "title": "Storage"
+  "title": "Storage",
+  "serie": {
+   "serie": "storage"
+  }
  },
  "storage-buckets": {
   "link": "https://wicg.github.io/storage-buckets/"
@@ -1568,11 +997,7 @@
  "trace-context": {
   "link": "https://w3c.github.io/trace-context/",
   "title": "Trace Context",
-  "serie": "trace-context",
-  "w3c_serie": {
-   "shortnames": [
-    "trace-context-1"
-   ],
+  "serie": {
    "serie": "trace-context"
   }
  },
@@ -1590,11 +1015,7 @@
  "webrtc-stats": {
   "link": "https://w3c.github.io/webrtc-stats/",
   "title": "Identifiers for WebRTC's Statistics API",
-  "serie": "webrtc-stats",
-  "w3c_serie": {
-   "shortnames": [
-    "webrtc-stats"
-   ],
+  "serie": {
    "serie": "webrtc-stats"
   }
  },
@@ -1604,11 +1025,7 @@
  "webxr-hand-input": {
   "link": "https://immersive-web.github.io/webxr-hand-input/",
   "title": "WebXR Hand Input",
-  "serie": "webxr-hand-input",
-  "w3c_serie": {
-   "shortnames": [
-    "webxr-hand-input-1"
-   ],
+  "serie": {
    "serie": "webxr-hand-input"
   }
  },
@@ -1618,29 +1035,23 @@
  "webxrlayers": {
   "link": "https://immersive-web.github.io/layers/",
   "title": "WebXR Layers API",
-  "serie": "webxrlayers",
-  "w3c_serie": {
-   "shortnames": [
-    "webxrlayers-1"
-   ],
+  "serie": {
    "serie": "webxrlayers"
   }
  },
  "wot-architecture": {
   "link": "https://w3c.github.io/wot-architecture/",
   "title": "Web of Things (WoT) Architecture",
-  "serie": "wot-architecture",
-  "w3c_serie": {
-   "shortnames": [
-    "wot-architecture10",
-    "wot-architecture11"
-   ],
+  "serie": {
    "serie": "wot-architecture"
   }
  },
  "fetch": {
   "link": "https://fetch.spec.whatwg.org/",
-  "title": "Fetch"
+  "title": "Fetch",
+  "serie": {
+   "serie": "fetch"
+  }
  },
  "openscreenprotocol": {
   "link": "https://w3c.github.io/openscreenprotocol/",
@@ -1649,114 +1060,70 @@
  "pointerevents": {
   "link": "https://w3c.github.io/pointerevents/",
   "title": "Pointer Events",
-  "serie": "pointerevents",
-  "w3c_serie": {
-   "shortnames": [
-    "pointerevents",
-    "pointerevents2",
-    "pointerevents3"
-   ],
+  "serie": {
    "serie": "pointerevents"
   }
  },
  "webcrypto": {
   "link": "https://w3c.github.io/webcrypto/",
   "title": "Web Cryptography API",
-  "serie": "webcryptoapi",
-  "w3c_serie": {
-   "shortnames": [
-    "WebCryptoAPI"
-   ],
-   "serie": "webcryptoapi"
+  "serie": {
+   "serie": "webcrypto"
   }
  },
  "wot-discovery": {
   "link": "https://w3c.github.io/wot-discovery/",
   "title": "Web of Things (WoT) Discovery",
-  "serie": "wot-discovery",
-  "w3c_serie": {
-   "shortnames": [
-    "wot-discovery"
-   ],
+  "serie": {
    "serie": "wot-discovery"
   }
  },
  "css-display": {
   "link": "https://drafts.csswg.org/css-display/",
   "title": "CSS Display",
-  "serie": "css-display",
-  "w3c_serie": {
-   "shortnames": [
-    "css-display-3"
-   ],
+  "serie": {
    "serie": "css-display"
   }
  },
  "css-scrollbars": {
   "link": "https://drafts.csswg.org/css-scrollbars/",
   "title": "CSS Scrollbars",
-  "serie": "css-scrollbars",
-  "w3c_serie": {
-   "shortnames": [
-    "css-scrollbars-1"
-   ],
+  "serie": {
    "serie": "css-scrollbars"
   }
  },
  "css-speech": {
   "link": "https://drafts.csswg.org/css-speech/",
   "title": "CSS Speech",
-  "serie": "css-speech",
-  "w3c_serie": {
-   "shortnames": [
-    "css-speech-1"
-   ],
+  "serie": {
    "serie": "css-speech"
   }
  },
  "filter-effects": {
   "link": "https://drafts.fxtf.org/filter-effects/",
   "title": "Filter Effects",
-  "serie": "filter-effects",
-  "w3c_serie": {
-   "shortnames": [
-    "filter-effects-1"
-   ],
+  "serie": {
    "serie": "filter-effects"
   }
  },
  "html-aam": {
   "link": "https://w3c.github.io/html-aam/",
   "title": "HTML Accessibility API Mappings",
-  "serie": "html-aam",
-  "w3c_serie": {
-   "shortnames": [
-    "html-aam-1.0"
-   ],
+  "serie": {
    "serie": "html-aam"
   }
  },
  "mediaqueries": {
   "link": "https://drafts.csswg.org/mediaqueries/",
   "title": "Media Queries",
-  "serie": "mediaqueries",
-  "w3c_serie": {
-   "shortnames": [
-    "css3-mediaqueries",
-    "mediaqueries-4",
-    "mediaqueries-5"
-   ],
+  "serie": {
    "serie": "mediaqueries"
   }
  },
  "picture-in-picture": {
   "link": "https://w3c.github.io/picture-in-picture/",
   "title": "Picture-in-Picture",
-  "serie": "picture-in-picture",
-  "w3c_serie": {
-   "shortnames": [
-    "picture-in-picture"
-   ],
+  "serie": {
    "serie": "picture-in-picture"
   }
  },
@@ -1766,34 +1133,22 @@
  "cssom": {
   "link": "https://drafts.csswg.org/cssom/",
   "title": "CSS Object Model (CSSOM)",
-  "serie": "cssom",
-  "w3c_serie": {
-   "shortnames": [
-    "cssom-1"
-   ],
+  "serie": {
    "serie": "cssom"
   }
  },
  "mediacapture-image": {
   "link": "https://w3c.github.io/mediacapture-image/",
   "title": "MediaStream Image Capture",
-  "serie": "image-capture",
-  "w3c_serie": {
-   "shortnames": [
-    "image-capture"
-   ],
-   "serie": "image-capture"
+  "serie": {
+   "serie": "mediacapture-image"
   }
  },
  "mediacapture-record": {
   "link": "https://w3c.github.io/mediacapture-record/",
   "title": "MediaStream Recording",
-  "serie": "mediastream-recording",
-  "w3c_serie": {
-   "shortnames": [
-    "mediastream-recording"
-   ],
-   "serie": "mediastream-recording"
+  "serie": {
+   "serie": "mediacapture-record"
   }
  },
  "web-codecs": {
@@ -1805,11 +1160,7 @@
  "webxr-gamepads-module": {
   "link": "https://immersive-web.github.io/webxr-gamepads-module/",
   "title": "WebXR Gamepads",
-  "serie": "webxr-gamepads-module",
-  "w3c_serie": {
-   "shortnames": [
-    "webxr-gamepads-module-1"
-   ],
+  "serie": {
    "serie": "webxr-gamepads-module"
   }
  },
@@ -13535,5 +12886,91 @@
    ],
    "serie": "post-spectre-webdev"
   }
+ },
+ "css": {
+  "title": null,
+  "w3c": {
+   "serie": "css"
+  },
+  "shortnames": [
+   "CSS1",
+   "CSS21",
+   "css-2010",
+   "css-2015",
+   "CSS22",
+   "css-2017",
+   "css-2018",
+   "css-2020"
+  ]
+ },
+ "audio-output": {
+  "title": "Audio Output Devices API",
+  "link": "https://w3c.github.io/mediacapture-output/",
+  "w3c": {
+   "serie": "audio-output"
+  },
+  "shortnames": [
+   "audio-output"
+  ]
+ },
+ "dom-level--views": {
+  "title": "Document Object Model (DOM) Level 3 Views and Formatting Specification",
+  "w3c": {
+   "serie": "dom-level--views"
+  },
+  "retired": true,
+  "shortnames": [
+   "DOM-Level-3-Views"
+  ]
+ },
+ "dom-level--xpath": {
+  "title": "Document Object Model (DOM) Level 3 XPath Specification",
+  "w3c": {
+   "serie": "dom-level--xpath"
+  },
+  "retired": true,
+  "shortnames": [
+   "DOM-Level-3-XPath"
+  ]
+ },
+ "dom-level--as": {
+  "title": "Document Object Model (DOM) Level 3 Abstract Schemas Specification",
+  "w3c": {
+   "serie": "dom-level--as"
+  },
+  "retired": true,
+  "shortnames": [
+   "DOM-Level-3-AS"
+  ]
+ },
+ "proximity": {
+  "title": "Proximity Sensor",
+  "link": "https://w3c.github.io/proximity/",
+  "w3c": {
+   "serie": "proximity"
+  },
+  "shortnames": [
+   "proximity"
+  ]
+ },
+ "webcryptoapi": {
+  "title": "Web Cryptography API",
+  "link": "https://w3c.github.io/webcrypto/",
+  "w3c": {
+   "serie": "webcryptoapi"
+  },
+  "shortnames": [
+   "WebCryptoAPI"
+  ]
+ },
+ "screen-fold": {
+  "title": "Screen Fold API",
+  "link": "https://w3c.github.io/screen-fold/",
+  "w3c": {
+   "serie": "screen-fold"
+  },
+  "shortnames": [
+   "screen-fold"
+  ]
  }
 }
