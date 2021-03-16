@@ -12914,7 +12914,7 @@
   "title": "Audio Output Devices API",
   "link": "https://w3c.github.io/mediacapture-output/",
   "w3c": {
-   "serie": "audio-output"
+   "serie": "audio-output",
    "shortnames": [
      "audio-output"
    ]
