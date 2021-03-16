@@ -1443,9 +1443,7 @@
  },
  "storage": {
   "link": "https://storage.spec.whatwg.org/",
-  "w3c": {
-   "serie": "storage"
-  },
+  "w3c": {},
   "title": "Storage"
  },
  "storage-buckets": {
@@ -1524,9 +1522,7 @@
  },
  "fetch": {
   "link": "https://fetch.spec.whatwg.org/",
-  "w3c": {
-   "serie": "fetch"
-  },
+  "w3c": {},
   "title": "Fetch"
  },
  "openscreenprotocol": {
@@ -1650,13 +1646,6 @@
   },
   "title": "CSS Object Model (CSSOM)"
  },
- "mediacapture-image": {
-  "link": "https://w3c.github.io/mediacapture-image/",
-  "w3c": {
-   "serie": "mediacapture-image"
-  },
-  "title": "MediaStream Image Capture"
- },
  "web-codecs": {
   "link": "https://wicg.github.io/web-codecs/"
  },
@@ -1672,6 +1661,13 @@
    ]
   },
   "title": "WebXR Gamepads"
+ },
+ "mediacapture-image": {
+  "link": "https://w3c.github.io/mediacapture-image/",
+  "w3c": {
+   "serie": "mediacapture-image"
+  },
+  "title": "MediaStream Image Capture"
  },
  "miniapp-lifecycle": {
   "link": "https://w3c.github.io/miniapp-lifecycle/",
