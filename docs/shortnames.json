@@ -155,10 +155,6 @@
   "link": "https://drafts.csswg.org/css-writing-modes/",
   "title": "CSS Writing Modes"
  },
- "css2": {
-  "link": "https://drafts.csswg.org/css2/",
-  "title": "Cascading Style Sheets"
- },
  "did-core": {
   "link": "https://w3c.github.io/did-core/",
   "title": "Decentralized Identifiers (DIDs)"
@@ -578,10 +574,6 @@
   "link": "https://w3c.github.io/payment-handler",
   "title": "Payment Handler API"
  },
- "proximity-sensor": {
-  "link": "https://w3c.github.io/proximity/",
-  "title": "Proximity Sensor"
- },
  "reporting": {
   "link": "https://w3c.github.io/reporting/",
   "title": "Reporting API"
@@ -652,10 +644,6 @@
  "pointerevents": {
   "link": "https://w3c.github.io/pointerevents/",
   "title": "Pointer Events"
- },
- "webcrypto": {
-  "link": "https://w3c.github.io/webcrypto/",
-  "title": "Web Cryptography API"
  },
  "wot-discovery": {
   "link": "https://w3c.github.io/wot-discovery/",
@@ -4592,7 +4580,9 @@
   "link": "https://w3c.github.io/webappsec-post-spectre-webdev/",
   "title": "Post-Spectre Web Development"
  },
- "css": {
+ "css2": {
+  "link": "https://drafts.csswg.org/css2/",
+  "title": "Cascading Style Sheets",
   "w3c": {
    "serie": "css",
    "shortnames": [
@@ -4617,7 +4607,7 @@
   },
   "title": "Audio Output Devices API"
  },
- "dom-level--views": {
+ "dom-level-views": {
   "w3c": {
    "serie": "dom-level--views",
    "shortnames": [
@@ -4627,7 +4617,7 @@
   "title": "Document Object Model (DOM) Level 3 Views and Formatting Specification",
   "retired": true
  },
- "dom-level--xpath": {
+ "dom-level-xpath": {
   "w3c": {
    "serie": "dom-level--xpath",
    "shortnames": [
@@ -4637,7 +4627,7 @@
   "title": "Document Object Model (DOM) Level 3 XPath Specification",
   "retired": true
  },
- "dom-level--as": {
+ "dom-level-as": {
   "w3c": {
    "serie": "dom-level--as",
    "shortnames": [
@@ -4647,7 +4637,7 @@
   "title": "Document Object Model (DOM) Level 3 Abstract Schemas Specification",
   "retired": true
  },
- "proximity": {
+ "proximity-sensor": {
   "link": "https://w3c.github.io/proximity/",
   "w3c": {
    "serie": "proximity",
@@ -4657,7 +4647,7 @@
   },
   "title": "Proximity Sensor"
  },
- "webcryptoapi": {
+ "webcrypto": {
   "link": "https://w3c.github.io/webcrypto/",
   "w3c": {
    "serie": "webcryptoapi",
