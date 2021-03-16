@@ -840,7 +840,14 @@
  },
  "device-posture": {
   "link": "https://w3c.github.io/device-posture/",
-  "title": "Device Posture API"
+  "title": "Device Posture API",
+  "w3c": {
+   "serie": "screen-fold",
+   "shortnames": [
+    "screen-fold"
+   ]
+   }
+ }
  },
  "file-system-access": {
   "link": "https://wicg.github.io/file-system-access/"
@@ -12908,10 +12915,10 @@
   "link": "https://w3c.github.io/mediacapture-output/",
   "w3c": {
    "serie": "audio-output"
-  },
-  "shortnames": [
-   "audio-output"
-  ]
+   "shortnames": [
+     "audio-output"
+   ]
+  }
  },
  "dom-level--views": {
   "title": "Document Object Model (DOM) Level 3 Views and Formatting Specification",
@@ -12961,16 +12968,6 @@
   },
   "shortnames": [
    "WebCryptoAPI"
-  ]
- },
- "screen-fold": {
-  "title": "Screen Fold API",
-  "link": "https://w3c.github.io/screen-fold/",
-  "w3c": {
-   "serie": "screen-fold"
-  },
-  "shortnames": [
-   "screen-fold"
   ]
  }
 }
