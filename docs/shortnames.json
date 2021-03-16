@@ -1360,13 +1360,6 @@
   },
   "title": "Media Capture from DOM Elements"
  },
- "mediacapture-output": {
-  "link": "https://w3c.github.io/mediacapture-output/",
-  "w3c": {
-   "serie": "mediacapture-output"
-  },
-  "title": "Audio Output Devices API"
- },
  "mediasession": {
   "link": "https://w3c.github.io/mediasession/",
   "w3c": {
