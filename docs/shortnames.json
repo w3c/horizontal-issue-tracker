@@ -1664,13 +1664,6 @@
   },
   "title": "MediaStream Image Capture"
  },
- "mediacapture-record": {
-  "link": "https://w3c.github.io/mediacapture-record/",
-  "w3c": {
-   "serie": "mediacapture-record"
-  },
-  "title": "MediaStream Recording"
- },
  "web-codecs": {
   "link": "https://wicg.github.io/web-codecs/"
  },
