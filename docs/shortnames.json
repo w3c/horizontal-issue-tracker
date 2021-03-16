@@ -2145,7 +2145,7 @@
   "title": "PICS Signed Labels (DSig)"
  },
  "ddml": {
-  "title": "Document Definition Markup Language (DDML) Specification,"
+  "title": "Document Definition Markup Language (DDML)"
  },
  "ec-related-activities": {
   "title": "W3C and Electronic Commerce",
@@ -2164,7 +2164,7 @@
     "DOM-Level-3-Views"
    ]
   },
-  "title": "Document Object Model (DOM) Level 3 Views and Formatting Specification",
+  "title": "Document Object Model (DOM) Views and Formatting",
   "retired": true
  },
  "cx": {
@@ -2192,7 +2192,7 @@
     "DOM-Level-3-XPath"
    ]
   },
-  "title": "Document Object Model (DOM) Level 3 XPath Specification",
+  "title": "Document Object Model (DOM) XPath",
   "retired": true
  },
  "di-princ": {
@@ -2205,7 +2205,7 @@
     "DOM-Level-3-AS"
    ]
   },
-  "title": "Document Object Model (DOM) Level 3 Abstract Schemas Specification",
+  "title": "Document Object Model (DOM) Abstract Schemas",
   "retired": true
  },
  "egix": {
@@ -3589,7 +3589,7 @@
   "title": "Shop Log File Format"
  },
  "speechobjects": {
-  "title": "SpeechObjects Specification"
+  "title": "SpeechObjects"
  },
  "smil-boston-dom": {
   "title": "Synchronized Multimedia Integration Language Document Object Model",
@@ -5309,7 +5309,7 @@
   "retired": true
  },
  "http-pep": {
-  "title": "PEP Specification: an Extension Mechanism for HTTP",
+  "title": "PEP: an Extension Mechanism for HTTP",
   "retired": true
  },
  "ilu-requestor": {
