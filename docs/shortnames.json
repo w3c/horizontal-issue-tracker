@@ -262,6 +262,11 @@
   "link": "https://html.spec.whatwg.org/multipage/",
   "title": "HTML"
  },
+ "html-aria": {
+  "link": "https://w3c.github.io/html-aria/",
+  "title": "ARIA in HTML",
+  "serie": "html-aria"
+ },
  "indexeddb": {
   "link": "https://w3c.github.io/IndexedDB/",
   "title": "Indexed Database API",
@@ -2113,11 +2118,6 @@
   "link": "https://wicg.github.io/frame-timing/",
   "serie": "frame-timing",
   "retired": true
- },
- "html-aria": {
-  "title": "ARIA in HTML",
-  "link": "https://w3c.github.io/html-aria/",
-  "serie": "html-aria"
  },
  "hcls-dataset": {
   "title": "Dataset Descriptions: HCLS Community Profile",
@@ -5837,5 +5837,10 @@
   "title": "EPUB Accessibility Techniques",
   "link": "https://w3c.github.io/epub-specs/epub33/a11y-tech/",
   "serie": "epub-a11y-tech"
+ },
+ "post-spectre-webdev": {
+  "title": "Post-Spectre Web Development",
+  "link": "https://w3c.github.io/webappsec-post-spectre-webdev/",
+  "serie": "post-spectre-webdev"
  }
 }
