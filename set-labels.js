@@ -186,9 +186,10 @@ function cleanTitle(titles) {
 // extract the serie out of a W3C TR specification
 // or returns undefined if it can't find one
 function getSerie(spec) {
-  return spec._links.series.href.match(SERIE_REGEXP)[1].toLowerCase();
+  return (spec.serie) ? spec.serie : spec.serie = spec._links.series.href.match(SERIE_REGEXP)[1].toLowerCase();
 }
 
+// find the title for a given serie
 function getSerieTitle(specs, serie) {
   const titles = [];
   serie = serie.toLowerCase(); // just to make sure
@@ -204,7 +205,21 @@ function getSerieTitle(specs, serie) {
   // return undefined
 }
 
-function getSerieRetired(specs, serie) {
+// find all of the shortnames for a given serie
+function getSerieShortname(specs, serie) {
+  const shortnames = new Set();
+  serie = serie.toLowerCase(); // just to make sure
+  specs.forEach(spec => {
+    const s = getSerie(spec); // this is already in lowercase
+    if (s === serie) {
+      shortnames.add(spec.shortname);
+    }
+  });
+  return [...shortnames];
+}
+
+// true if the serie latest-version is retired
+function isSerieRetired(specs, serie) {
   const status = [];
   serie = serie.toLowerCase(); // just to make sure
   specs.forEach(spec => {
@@ -354,7 +369,7 @@ async function run() {
         ns.title = t;
         ns["editor-draft"] = `https://${t.toLowerCase()}.spec.whatwg.org/`
         if (["html", "dom"].includes(serie)) {
-          ns.w3c_serie = serie;
+          ns.serie = serie;
         }
       }
     });
@@ -427,7 +442,19 @@ async function run() {
     }
     if (l.color !== SHORTNAME_COLOR) {
       // just in case
-      monitor.warn(`${l.repo} : wrong color for ${l.name}`);
+      if (l.description) {
+        const r = new Repository(l.repo);
+        l.color = SHORTNAME_COLOR;
+        r.updateLabel(l).then(() => {
+          monitor.log(`Fixed color for ${l.repo} / ${l.name}`);
+        }).catch(err => {
+          console.log(err);
+          monitor.error(`Failed to fix color for ${l.repo} / ${l.name}: ${err}`);
+        });
+      } else {
+        monitor.warn(`${l.repo} : wrong color for ${l.name} and no description`);
+      }
+      //promises.push(repo.updateLabel(l));
     }
 
 
@@ -468,7 +495,9 @@ async function run() {
 
     if (spec) {
       nshort.title = spec.title;
-      nshort.serie = spec.serie;
+      nshort.w3c = {
+        serie: spec.serie
+      };
     } else {
       // we didn't find it (not yet published, WICG, WHATWG, ...), so time to make some guessing
       if (!short.description) {
@@ -488,8 +517,8 @@ async function run() {
   // gather all of the series we found (serie is not yet equivalent to shortnames :/ )
   let all_series = [];
   for (const [key, value] of Object.entries(dump_shortnames)) {
-    if (value.serie) {
-      all_series.push(value.serie);
+    if (value.w3c && value.w3c.serie) {
+      all_series.push(value.w3c.serie);
     }
   }
 
@@ -498,8 +527,8 @@ async function run() {
   for (const [key, value] of Object.entries(cached)) {
     let entry = dump_shortnames[key];
     if (!entry) {
-      if (value.serie) {
-        if (!all_series.includes(value.serie)) {
+      if (value.w3c && value.w3c.serie) {
+        if (!all_series.includes(value.w3c.serie)) {
           dump_shortnames[key] = value;
         } else {
           monitor.error(`key ${key} missing but exists as a serie ${value.serie}. Discarded`)
@@ -520,14 +549,14 @@ async function run() {
       }
       if (entry.link && value.link && entry.link !== value.link) {
         monitor.log(`GH Update (link): "${entry.link}" -> "${value.link}"`);
-        entry.link = value.link;
+        // entry.link = value.link;
       }
-      if (!entry.serie && value.serie) {
-        entry.serie = value.serie;
+      if (!entry.w3c && value.w3c) {
+        entry.w3c = value.w3c;
       }
-      if (entry.serie && value.serie && entry.serie !== value.serie) {
-        monitor.log(`GH Update (serie): "${entry.serie}" -> "${value.serie}"`);
-        entry.serie = value.serie;
+      if (entry.w3c && entry.w3c.serie && value.w3c && value.w3c.serie && entry.w3c.serie !== value.w3c.serie) {
+        monitor.log(`GH Update (serie): "${entry.w3c.serie}" -> "${value.w3c.serie}"`);
+        entry.w3c.serie = value.w3c.serie;
       }
     }
   }
@@ -535,17 +564,16 @@ async function run() {
   // gather all of the series we found (serie is not yet equivalent to shortnames :/ )
   all_series = [];
   for (const [key, value] of Object.entries(dump_shortnames)) {
-    if (value.serie) {
-      all_series.push(value.serie);
+    if (value.w3c && value.w3c.serie) {
+      all_series.push(value.w3c.serie);
     }
   }
 
   // if W3C knows about some series, we'll pick it up here
   specifications.forEach(spec => {
     const serie = getSerie(spec);
-
     if (serie) {
-      const retired = getSerieRetired(specifications, serie);
+      const retired = isSerieRetired(specifications, serie);
       let entry = dump_shortnames[serie];
       if (!entry && !all_series.includes(serie)) {
           let title = getSerieTitle(specifications, serie);
@@ -558,12 +586,14 @@ async function run() {
           dump_shortnames[serie] = {
             title : title,
             link  : spec["editor-draft"],
-            serie : serie
+            w3c: {
+              serie : serie
+            }
           };
           entry = dump_shortnames[serie];
       } else if (!entry) {
         for (const [key, value] of Object.entries(dump_shortnames)) {
-          if (value.serie && value.serie === serie) {
+          if (value.w3c && value.w3c.serie === serie) {
             entry = value;
           }
         }
@@ -578,14 +608,20 @@ async function run() {
     if (!value.title) {
       monitor.warn(`Missing title for ${key} [${value.link}]`)
     }
-    if (value.serie && value.serie !== key) {
-      monitor.warn(`Mismatched serie and shortname ${key} serie: ${value.serie}`)
+    if (value.w3c && value.w3c.serie && value.w3c.serie !== key) {
+      monitor.warn(`Mismatched serie and shortname ${key} serie: ${value.w3c.serie}`)
+    }
+    if (value.w3c && value.w3c.serie) {
+      const shortnames = getSerieShortname(specifications, value.w3c.serie);
+      if (shortnames.length > 0) {
+        value.w3c.shortnames = shortnames;
+      }
     }
   }
-  // console.log(domains);
   return save_cache(JSON.stringify(dump_shortnames, null, " ")).catch(err => {
     console.log(err.status)
   });
+
 }
 
 run();
