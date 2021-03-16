@@ -2158,7 +2158,13 @@
   "title": "Document Object Model (DOM) Load and Save"
  },
  "dom-views": {
-  "title": "Document Object Model (DOM) Views and Formatting",
+  "w3c": {
+   "serie": "dom-level--views",
+   "shortnames": [
+    "DOM-Level-3-Views"
+   ]
+  },
+  "title": "Document Object Model (DOM) Level 3 Views and Formatting Specification",
   "retired": true
  },
  "cx": {
@@ -2180,14 +2186,26 @@
   "title": "ESI Language"
  },
  "dom-xpath": {
-  "title": "Document Object Model (DOM) XPath",
+  "w3c": {
+   "serie": "dom-level--xpath",
+   "shortnames": [
+    "DOM-Level-3-XPath"
+   ]
+  },
+  "title": "Document Object Model (DOM) Level 3 XPath Specification",
   "retired": true
  },
  "di-princ": {
   "title": "Device Independence Principles"
  },
  "dom-as": {
-  "title": "Document Object Model (DOM) Abstract Schemas",
+  "w3c": {
+   "serie": "dom-level--as",
+   "shortnames": [
+    "DOM-Level-3-AS"
+   ]
+  },
+  "title": "Document Object Model (DOM) Level 3 Abstract Schemas Specification",
   "retired": true
  },
  "egix": {
@@ -5549,35 +5567,5 @@
    ]
   },
   "title": "Audio Output Devices API"
- },
- "dom-views": {
-  "w3c": {
-   "serie": "dom-level--views",
-   "shortnames": [
-    "DOM-Level-3-Views"
-   ]
-  },
-  "title": "Document Object Model (DOM) Level 3 Views and Formatting Specification",
-  "retired": true
- },
- "dom-xpath": {
-  "w3c": {
-   "serie": "dom-level--xpath",
-   "shortnames": [
-    "DOM-Level-3-XPath"
-   ]
-  },
-  "title": "Document Object Model (DOM) Level 3 XPath Specification",
-  "retired": true
- },
- "dom-as": {
-  "w3c": {
-   "serie": "dom-level--as",
-   "shortnames": [
-    "DOM-Level-3-AS"
-   ]
-  },
-  "title": "Document Object Model (DOM) Level 3 Abstract Schemas Specification",
-  "retired": true
  }
 }
