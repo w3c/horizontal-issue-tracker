@@ -1662,13 +1662,6 @@
   },
   "title": "WebXR Gamepads"
  },
- "mediacapture-image": {
-  "link": "https://w3c.github.io/mediacapture-image/",
-  "w3c": {
-   "serie": "mediacapture-image"
-  },
-  "title": "MediaStream Image Capture"
- },
  "miniapp-lifecycle": {
   "link": "https://w3c.github.io/miniapp-lifecycle/",
   "title": "MiniApp Lifecycle"
