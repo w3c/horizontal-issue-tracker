@@ -5534,5 +5534,44 @@
    ]
   },
   "title": "Audio Output Devices API"
+ },
+ "dom-views": {
+  "title": "Document Object Model (DOM) Level 3 Views and Formatting Specification",
+  "w3c": {
+   "serie": "dom-views",
+   "shortnames": [
+    "DOM-Level-3-Views"
+   ]
+  },
+  "retired": true
+ },
+ "dom-xpath": {
+  "title": "Document Object Model (DOM) Level 3 XPath Specification",
+  "w3c": {
+   "serie": "dom-xpath",
+   "shortnames": [
+    "DOM-Level-3-XPath"
+   ]
+  },
+  "retired": true
+ },
+ "di-princ": {
+  "title": "Device Independence Principles",
+  "w3c": {
+   "serie": "di-princ",
+   "shortnames": [
+    "di-princ"
+   ]
+  }
+ },
+ "dom-as": {
+  "title": "Document Object Model (DOM) Level 3 Abstract Schemas Specification",
+  "w3c": {
+   "serie": "dom-as",
+   "shortnames": [
+    "DOM-Level-3-AS"
+   ]
+  },
+  "retired": true
  }
 }
