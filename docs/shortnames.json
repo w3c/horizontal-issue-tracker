@@ -2157,16 +2157,6 @@
  "dom-content-models-and-load-save": {
   "title": "Document Object Model (DOM) Load and Save"
  },
- "dom-views": {
-  "w3c": {
-   "serie": "dom-level--views",
-   "shortnames": [
-    "DOM-Level-3-Views"
-   ]
-  },
-  "title": "Document Object Model (DOM) Views and Formatting",
-  "retired": true
- },
  "cx": {
   "title": "Component Extension (CX) API requirements"
  },
@@ -2184,29 +2174,6 @@
  },
  "esi-lang": {
   "title": "ESI Language"
- },
- "dom-xpath": {
-  "w3c": {
-   "serie": "dom-level--xpath",
-   "shortnames": [
-    "DOM-Level-3-XPath"
-   ]
-  },
-  "title": "Document Object Model (DOM) XPath",
-  "retired": true
- },
- "di-princ": {
-  "title": "Device Independence Principles"
- },
- "dom-as": {
-  "w3c": {
-   "serie": "dom-level--as",
-   "shortnames": [
-    "DOM-Level-3-AS"
-   ]
-  },
-  "title": "Document Object Model (DOM) Abstract Schemas",
-  "retired": true
  },
  "egix": {
   "title": "Embedding Glyph Identifiers in XML Documents"
