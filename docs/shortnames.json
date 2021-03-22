@@ -1247,10 +1247,7 @@
   "link": "https://w3c.github.io/device-posture/",
   "title": "Device Posture API",
   "w3c": {
-   "serie": "screen-fold",
-   "shortnames": [
-    "screen-fold"
-   ]
+   "serie": "screen-fold"
   }
  },
  "file-system-access": {
@@ -1347,6 +1344,16 @@
     "REC-MathML",
     "MathML2",
     "MathML3"
+   ]
+  }
+ },
+ "media-capabilities": {
+  "link": "https://w3c.github.io/media-capabilities/",
+  "title": "Media Capabilities",
+  "w3c": {
+   "serie": "media-capabilities",
+   "shortnames": [
+    "media-capabilities"
    ]
   }
  },
@@ -1527,7 +1534,13 @@
  },
  "openscreenprotocol": {
   "link": "https://w3c.github.io/openscreenprotocol/",
-  "title": "Open Screen Protocol"
+  "title": "Open Screen Protocol",
+  "w3c": {
+   "serie": "openscreenprotocol",
+   "shortnames": [
+    "openscreenprotocol"
+   ]
+  }
  },
  "pointerevents": {
   "link": "https://w3c.github.io/pointerevents/",
@@ -1558,6 +1571,17 @@
    "serie": "wot-discovery",
    "shortnames": [
     "wot-discovery"
+   ]
+  }
+ },
+ "css-contain": {
+  "link": "https://drafts.csswg.org/css-contain-1/",
+  "title": "CSS Containment",
+  "w3c": {
+   "serie": "css-contain",
+   "shortnames": [
+    "css-contain-1",
+    "css-contain-2"
    ]
   }
  },
@@ -2107,10 +2131,6 @@
  "css-easing": {
   "link": "https://drafts.csswg.org/css-easing/",
   "title": "CSS Easing Functions"
- },
- "css-contain": {
-  "link": "https://drafts.csswg.org/css-contain-1/",
-  "title": "CSS Containment"
  },
  "css-layout-api": {
   "link": "https://drafts.css-houdini.org/css-layout-api-1/",
@@ -2940,10 +2960,6 @@
  "lpf": {
   "link": "https://w3c.github.io/lpf/",
   "title": "Lightweight Packaging Format (LPF)"
- },
- "media-capabilities": {
-  "link": "https://w3c.github.io/media-capabilities/",
-  "title": "Media Capabilities"
  },
  "json-ld-streaming": {
   "link": "https://w3c.github.io/json-ld-streaming/",
