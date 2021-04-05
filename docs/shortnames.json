@@ -1250,7 +1250,10 @@
   "link": "https://w3c.github.io/device-posture/",
   "title": "Device Posture API",
   "w3c": {
-   "serie": "device-posture"
+   "serie": "device-posture",
+   "shortnames": [
+    "device-posture"
+   ]
   }
  },
  "file-system-access": {
