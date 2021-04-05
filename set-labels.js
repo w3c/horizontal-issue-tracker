@@ -243,19 +243,23 @@ async function run() {
   // add a few more repositories, such as the repository template
   repositories = repositories.concat(["w3c/note-respec-repo-template"]);
 
-  const wicgRepos = await fetch("https://labs.w3.org/github-cache/extra/repos/80485")
-  .then(res => res.json())
-  .then(repos => repos.filter(repo => repo.w3c
-    && repo.w3c["repo-type"]
-    && repo.w3c["repo-type"].find(t => t === "cg-report")));
+  const CGs = [ "80485", "87846" ];
+  let idx = 0;
+  while (idx < CGs.length) {
+    const repos = await fetch(`https://labs.w3.org/github-cache/extra/repos/${CGs[idx++]}`)
+      .then(res => res.json())
+      .then(repos => repos.filter(repo => repo.w3c
+        && repo.w3c["repo-type"]
+        && repo.w3c["repo-type"].find(t => t === "cg-report")));
 
-  wicgRepos.forEach(repo => {
-    let name = repo.full_name.toLowerCase();
-    if (!repositories.find(r => r === name)) {
-      monitor.log(`Adding new WICG repository ${name}`);
-      repositories.push(name);
-    }
-  });
+    repos.forEach(repo => {
+      let name = repo.full_name.toLowerCase();
+      if (!repositories.find(r => r === name)) {
+        monitor.log(`Adding new WICG repository ${name}`);
+        repositories.push(name);
+      }
+    });
+  }
 
   // in case we need to add a new repository in the system, use the command line
   if (process.argv.length > 2) {
