@@ -960,6 +960,9 @@
   },
   "retired": true
  },
+ "urlpattern": {
+  "link": "https://github.com/WICG/urlpattern"
+ },
  "vc-data-model": {
   "link": "https://w3c.github.io/vc-data-model/",
   "title": "Verifiable Credentials Data Model",
@@ -1670,11 +1673,11 @@
    ]
   }
  },
- "web-codecs": {
-  "link": "https://wicg.github.io/web-codecs/"
- },
  "web-nfc": {
   "link": "https://w3c.github.io/web-nfc/"
+ },
+ "webcodecs": {
+  "link": "https://w3c.github.io/webcodecs/"
  },
  "webxr-gamepads-module": {
   "link": "https://immersive-web.github.io/webxr-gamepads-module/",
@@ -1685,6 +1688,9 @@
     "webxr-gamepads-module-1"
    ]
   }
+ },
+ "web-codecs": {
+  "link": "https://wicg.github.io/web-codecs/"
  },
  "miniapp-lifecycle": {
   "link": "https://w3c.github.io/miniapp-lifecycle/",
