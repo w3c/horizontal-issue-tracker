@@ -1677,7 +1677,8 @@
   "link": "https://w3c.github.io/web-nfc/"
  },
  "webcodecs": {
-  "link": "https://w3c.github.io/webcodecs/"
+  "link": "https://w3c.github.io/webcodecs/",
+  "title": "WebCodecs"
  },
  "webxr-gamepads-module": {
   "link": "https://immersive-web.github.io/webxr-gamepads-module/",
@@ -1688,9 +1689,6 @@
     "webxr-gamepads-module-1"
    ]
   }
- },
- "web-codecs": {
-  "link": "https://wicg.github.io/web-codecs/"
  },
  "miniapp-lifecycle": {
   "link": "https://w3c.github.io/miniapp-lifecycle/",
