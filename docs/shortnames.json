@@ -1250,7 +1250,7 @@
   "link": "https://w3c.github.io/device-posture/",
   "title": "Device Posture API",
   "w3c": {
-   "serie": "screen-fold"
+   "serie": "device-posture"
   }
  },
  "file-system-access": {
