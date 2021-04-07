@@ -1641,6 +1641,16 @@
    ]
   }
  },
+ "image-resource": {
+  "link": "https://w3c.github.io/image-resource/",
+  "title": "Image Resource",
+  "w3c": {
+   "serie": "image-resource",
+   "shortnames": [
+    "image-resource"
+   ]
+  }
+ },
  "mediaqueries": {
   "link": "https://drafts.csswg.org/mediaqueries/",
   "title": "Media Queries",
@@ -2698,10 +2708,6 @@
  "imsc-reqs": {
   "link": "https://w3c.github.io/imsc-vnext-reqs/",
   "title": "IMSC1.1 Requirements"
- },
- "image-resource": {
-  "link": "https://w3c.github.io/image-resource/",
-  "title": "Image Resource"
  },
  "md-policy-design": {
   "title": "Eskimo Snow and Scottish Rain: Legal Considerations of Schema Design"
