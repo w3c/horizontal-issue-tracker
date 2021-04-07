@@ -1269,6 +1269,9 @@
    ]
   }
  },
+ "first-party-sets": {
+  "link": "https://github.com/privacycg/first-party-sets/blob/main/README.md"
+ },
  "floc": {
   "link": "https://github.com/WICG/floc",
   "title": "Federated Learning of Cohorts (FLoC)"
@@ -1451,6 +1454,16 @@
    "serie": "screen-wake-lock",
    "shortnames": [
     "screen-wake-lock"
+   ]
+  }
+ },
+ "selection-api": {
+  "link": "https://w3c.github.io/selection-api/",
+  "title": "Selection API",
+  "w3c": {
+   "serie": "selection-api",
+   "shortnames": [
+    "selection-api"
    ]
   }
  },
@@ -3798,10 +3811,6 @@
   "link": "https://drafts.csswg.org/selectors-nonelement/",
   "title": "Non-element Selectors",
   "retired": true
- },
- "selection-api": {
-  "link": "https://w3c.github.io/selection-api/",
-  "title": "Selection API"
  },
  "server-timing": {
   "link": "https://w3c.github.io/server-timing/",
