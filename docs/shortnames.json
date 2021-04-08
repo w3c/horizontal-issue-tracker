@@ -1546,6 +1546,16 @@
    ]
   }
  },
+ "clipboard-apis": {
+  "link": "https://w3c.github.io/clipboard-apis/",
+  "title": "Clipboard API and events",
+  "w3c": {
+   "serie": "clipboard-apis",
+   "shortnames": [
+    "clipboard-apis"
+   ]
+  }
+ },
  "fetch": {
   "link": "https://fetch.spec.whatwg.org/",
   "title": "Fetch",
@@ -1704,7 +1714,13 @@
  },
  "webcodecs": {
   "link": "https://w3c.github.io/webcodecs/",
-  "title": "WebCodecs"
+  "title": "WebCodecs",
+  "w3c": {
+   "serie": "webcodecs",
+   "shortnames": [
+    "webcodecs"
+   ]
+  }
  },
  "webxr-gamepads-module": {
   "link": "https://immersive-web.github.io/webxr-gamepads-module/",
@@ -1813,10 +1829,6 @@
  },
  "backplane": {
   "title": "Rich Web Application Backplane"
- },
- "clipboard-apis": {
-  "link": "https://w3c.github.io/clipboard-apis/",
-  "title": "Clipboard API and events"
  },
  "cselection-primer": {
   "title": "Content Selection Primer",
@@ -5611,5 +5623,25 @@
    ]
   },
   "retired": true
+ },
+ "webcodecs-codec-registry": {
+  "title": "WebCodecs Codec Registry",
+  "link": "https://w3c.github.io/webcodecs/codec_registry.html",
+  "w3c": {
+   "serie": "webcodecs-codec-registry",
+   "shortnames": [
+    "webcodecs-codec-registry"
+   ]
+  }
+ },
+ "webcodecs-avc-codec-registration": {
+  "title": "AVC (H.264) WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/avc_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-avc-codec-registration",
+   "shortnames": [
+    "webcodecs-avc-codec-registration"
+   ]
+  }
  }
 }
