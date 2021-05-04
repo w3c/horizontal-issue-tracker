@@ -1511,7 +1511,14 @@
   }
  },
  "webtransport": {
-  "link": "https://w3c.github.io/webtransport/"
+  "link": "https://w3c.github.io/webtransport/",
+  "title": "WebTransport",
+  "w3c": {
+   "serie": "webtransport",
+   "shortnames": [
+    "webtransport"
+   ]
+  }
  },
  "webxr-hand-input": {
   "link": "https://immersive-web.github.io/webxr-hand-input/",
