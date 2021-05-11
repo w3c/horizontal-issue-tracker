@@ -1498,6 +1498,12 @@
  "visual-viewport": {
   "link": "https://wicg.github.io/visual-viewport/"
  },
+ "webID": {
+  "link": "https://wicg.github.io/WebID/README.html"
+ },
+ "webapidevice": {
+  "link": "https://github.com/WICG/WebApiDevice/blob/main/Explainer.md"
+ },
  "webcodecs": {
   "link": "https://w3c.github.io/webcodecs/",
   "title": "WebCodecs",
@@ -1507,6 +1513,9 @@
     "webcodecs"
    ]
   }
+ },
+ "webgpu": {
+  "link": "https://gpuweb.github.io/gpuweb/"
  },
  "webnn": {
   "link": "https://webmachinelearning.github.io/webnn/",
