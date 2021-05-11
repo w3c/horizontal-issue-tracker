@@ -667,7 +667,13 @@
  },
  "miniapp-manifest": {
   "link": "https://w3c.github.io/miniapp-manifest/",
-  "title": "MiniApp Manifest"
+  "title": "MiniApp Manifest",
+  "w3c": {
+   "serie": "miniapp-manifest",
+   "shortnames": [
+    "miniapp-manifest"
+   ]
+  }
  },
  "miniapp-packaging": {
   "link": "https://w3c.github.io/miniapp-packaging/",
@@ -1492,6 +1498,16 @@
  "visual-viewport": {
   "link": "https://wicg.github.io/visual-viewport/"
  },
+ "webcodecs": {
+  "link": "https://w3c.github.io/webcodecs/",
+  "title": "WebCodecs",
+  "w3c": {
+   "serie": "webcodecs",
+   "shortnames": [
+    "webcodecs"
+   ]
+  }
+ },
  "webnn": {
   "link": "https://webmachinelearning.github.io/webnn/",
   "title": "Web Neural Network API"
@@ -1719,16 +1735,6 @@
  },
  "web-nfc": {
   "link": "https://w3c.github.io/web-nfc/"
- },
- "webcodecs": {
-  "link": "https://w3c.github.io/webcodecs/",
-  "title": "WebCodecs",
-  "w3c": {
-   "serie": "webcodecs",
-   "shortnames": [
-    "webcodecs"
-   ]
-  }
  },
  "webxr-gamepads-module": {
   "link": "https://immersive-web.github.io/webxr-gamepads-module/",
