@@ -1657,6 +1657,16 @@
    ]
   }
  },
+ "css-multicol": {
+  "link": "https://drafts.csswg.org/css-multicol/",
+  "title": "CSS Multi-column Layout",
+  "w3c": {
+   "serie": "css-multicol",
+   "shortnames": [
+    "css-multicol-1"
+   ]
+  }
+ },
  "css-scrollbars": {
   "link": "https://drafts.csswg.org/css-scrollbars/",
   "title": "CSS Scrollbars",
@@ -2038,10 +2048,6 @@
  "css-namespaces": {
   "link": "https://drafts.csswg.org/css-namespaces/",
   "title": "CSS Namespaces"
- },
- "css-multicol": {
-  "link": "https://drafts.csswg.org/css-multicol/",
-  "title": "CSS Multi-column Layout"
  },
  "css-page": {
   "link": "https://drafts.csswg.org/css-page-3/",
