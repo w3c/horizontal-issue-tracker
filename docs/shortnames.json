@@ -311,7 +311,7 @@
  },
  "css-ruby": {
   "link": "https://drafts.csswg.org/css-ruby/",
-  "title": "CSS Ruby Layout",
+  "title": "CSS Ruby Annotation Layout",
   "w3c": {
    "serie": "css-ruby",
    "shortnames": [
@@ -433,7 +433,7 @@
  },
  "dom": {
   "link": "https://dom.spec.whatwg.org/",
-  "title": "DOM",
+  "title": "Document Object Model (DOM)",
   "w3c": {
    "serie": "dom",
    "shortnames": [
@@ -1049,7 +1049,7 @@
  },
  "wcag": {
   "link": "https://w3c.github.io/wcag/guidelines/",
-  "title": "Web Content Accessibility Guidelines",
+  "title": "Web Content Accessibility Guidelines (WCAG)",
   "w3c": {
    "serie": "wcag",
    "shortnames": [
