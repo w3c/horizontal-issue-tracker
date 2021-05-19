@@ -1515,7 +1515,14 @@
   }
  },
  "webgpu": {
-  "link": "https://gpuweb.github.io/gpuweb/"
+  "link": "https://gpuweb.github.io/gpuweb/",
+  "title": "WebGPU",
+  "w3c": {
+   "serie": "webgpu",
+   "shortnames": [
+    "webgpu"
+   ]
+  }
  },
  "webnn": {
   "link": "https://webmachinelearning.github.io/webnn/",
@@ -5670,6 +5677,36 @@
    "serie": "webcodecs-avc-codec-registration",
    "shortnames": [
     "webcodecs-avc-codec-registration"
+   ]
+  }
+ },
+ "wgsl": {
+  "title": "WebGPU Shading Language",
+  "link": "https://gpuweb.github.io/gpuweb/wgsl/",
+  "w3c": {
+   "serie": "wgsl",
+   "shortnames": [
+    "WGSL"
+   ]
+  }
+ },
+ "spoken-html": {
+  "title": "Specification for Spoken Presentation in HTML",
+  "link": "https://w3c.github.io/pronunciation/technical-approach/",
+  "w3c": {
+   "serie": "spoken-html",
+   "shortnames": [
+    "spoken-html"
+   ]
+  }
+ },
+ "wot-usecases": {
+  "title": "Web of Things (WoT): Use Cases and Requirements",
+  "link": "https://w3c.github.io/wot-usecases/",
+  "w3c": {
+   "serie": "wot-usecases",
+   "shortnames": [
+    "wot-usecases"
    ]
   }
  }
