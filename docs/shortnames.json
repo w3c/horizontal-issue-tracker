@@ -291,7 +291,7 @@
  },
  "css-pseudo": {
   "link": "https://drafts.csswg.org/css-pseudo/",
-  "title": "CSS Pseudo-Elements Module",
+  "title": "CSS Pseudo-Elements",
   "w3c": {
    "serie": "css-pseudo",
    "shortnames": [
@@ -406,7 +406,7 @@
  },
  "css2": {
   "link": "https://drafts.csswg.org/css2/",
-  "title": "Cascading Style Sheets",
+  "title": "CSS Snapshots",
   "w3c": {
    "serie": "css",
    "shortnames": [
@@ -433,7 +433,7 @@
  },
  "dom": {
   "link": "https://dom.spec.whatwg.org/",
-  "title": "Document Object Model (DOM)",
+  "title": "Document Object Model",
   "w3c": {
    "serie": "dom",
    "shortnames": [
@@ -526,7 +526,7 @@
  },
  "geolocation-api": {
   "link": "https://w3c.github.io/geolocation-api/",
-  "title": "Geolocation API",
+  "title": "Geolocation API Specification",
   "w3c": {
    "serie": "geolocation-api",
    "shortnames": [
@@ -892,7 +892,7 @@
  },
  "ttml": {
   "link": "https://w3c.github.io/ttml2/",
-  "title": "Timed Text Markup Language (TTML)",
+  "title": "Timed Text Markup Language",
   "w3c": {
    "serie": "ttml",
    "shortnames": [
@@ -992,7 +992,7 @@
  },
  "vehicle-information-api": {
   "link": "https://w3c.github.io/automotive/vehicle_information_api/vehicle_information_api_specification.html",
-  "title": "Vehicle Information API",
+  "title": "Vehicle Information API Specification",
   "w3c": {
    "serie": "vehicle-information-api",
    "shortnames": [
@@ -1094,7 +1094,7 @@
  },
  "webauthn": {
   "link": "https://w3c.github.io/webauthn/",
-  "title": "Web Authentication",
+  "title": "Web Authentication:An API for accessing Public Key Credentials",
   "w3c": {
    "serie": "webauthn",
    "shortnames": [
@@ -1405,7 +1405,7 @@
  },
  "orientation-event": {
   "link": "https://w3c.github.io/deviceorientation/",
-  "title": "DeviceOrientation Event",
+  "title": "DeviceOrientation Event Specification",
   "w3c": {
    "serie": "orientation-event",
    "shortnames": [
@@ -5622,7 +5622,7 @@
   "title": "Audio Output Devices API"
  },
  "dom-views": {
-  "title": "Document Object Model (DOM) Views and Formatting",
+  "title": "Document Object Model (DOM) Views Specification",
   "w3c": {
    "serie": "dom-views",
    "shortnames": [
@@ -5632,7 +5632,7 @@
   "retired": true
  },
  "dom-xpath": {
-  "title": "Document Object Model (DOM) XPath",
+  "title": "Document Object Model (DOM) XPath Specification",
   "w3c": {
    "serie": "dom-xpath",
    "shortnames": [
@@ -5651,7 +5651,7 @@
   }
  },
  "dom-as": {
-  "title": "Document Object Model (DOM) Abstract Schemas",
+  "title": "Document Object Model (DOM) Abstract Schemas Specification",
   "w3c": {
    "serie": "dom-as",
    "shortnames": [
