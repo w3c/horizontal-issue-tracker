@@ -408,7 +408,7 @@
   "link": "https://drafts.csswg.org/css2/",
   "title": "CSS Snapshots",
   "w3c": {
-   "serie": "css",
+   "serie": "CSS",
    "shortnames": [
     "CSS1",
     "CSS21",
@@ -528,7 +528,7 @@
   "link": "https://w3c.github.io/geolocation-api/",
   "title": "Geolocation API Specification",
   "w3c": {
-   "serie": "geolocation-api",
+   "serie": "geolocation-API",
    "shortnames": [
     "geolocation-API",
     "geolocation-API-v2"
@@ -570,7 +570,7 @@
   "link": "https://w3c.github.io/IndexedDB/",
   "title": "Indexed Database API",
   "w3c": {
-   "serie": "indexeddb",
+   "serie": "IndexedDB",
    "shortnames": [
     "IndexedDB",
     "IndexedDB-2",
@@ -860,7 +860,7 @@
   "link": "https://svgwg.org/svg2-draft/",
   "title": "Scalable Vector Graphics (SVG)",
   "w3c": {
-   "serie": "svg",
+   "serie": "SVG",
    "shortnames": [
     "SVG11",
     "SVG12",
@@ -1051,7 +1051,7 @@
   "link": "https://w3c.github.io/wcag/guidelines/",
   "title": "Web Content Accessibility Guidelines (WCAG)",
   "w3c": {
-   "serie": "wcag",
+   "serie": "WCAG",
    "shortnames": [
     "WAI-WEBCONTENT",
     "WCAG20",
@@ -1270,7 +1270,7 @@
   "link": "https://w3c.github.io/FileAPI/",
   "title": "File API",
   "w3c": {
-   "serie": "fileapi",
+   "serie": "FileAPI",
    "shortnames": [
     "FileAPI"
    ]
@@ -1355,7 +1355,7 @@
   "link": "https://w3c.github.io/mathml/",
   "title": "Mathematical Markup Language (MathML)",
   "w3c": {
-   "serie": "mathml",
+   "serie": "MathML",
    "shortnames": [
     "REC-MathML",
     "MathML2",
@@ -1627,7 +1627,7 @@
   "link": "https://w3c.github.io/webcrypto/",
   "title": "Web Cryptography API",
   "w3c": {
-   "serie": "webcryptoapi",
+   "serie": "WebCryptoAPI",
    "shortnames": [
     "WebCryptoAPI"
    ]
@@ -5624,7 +5624,7 @@
  "dom-views": {
   "title": "Document Object Model (DOM) Views Specification",
   "w3c": {
-   "serie": "dom-views",
+   "serie": "DOM-Views",
    "shortnames": [
     "DOM-Level-3-Views"
    ]
@@ -5634,7 +5634,7 @@
  "dom-xpath": {
   "title": "Document Object Model (DOM) XPath Specification",
   "w3c": {
-   "serie": "dom-xpath",
+   "serie": "DOM-XPath",
    "shortnames": [
     "DOM-Level-3-XPath"
    ]
@@ -5653,7 +5653,7 @@
  "dom-as": {
   "title": "Document Object Model (DOM) Abstract Schemas Specification",
   "w3c": {
-   "serie": "dom-as",
+   "serie": "DOM-AS",
    "shortnames": [
     "DOM-Level-3-AS"
    ]
@@ -5684,7 +5684,7 @@
   "title": "WebGPU Shading Language",
   "link": "https://gpuweb.github.io/gpuweb/wgsl/",
   "w3c": {
-   "serie": "wgsl",
+   "serie": "WGSL",
    "shortnames": [
     "WGSL"
    ]
