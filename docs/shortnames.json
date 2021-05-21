@@ -291,7 +291,7 @@
  },
  "css-pseudo": {
   "link": "https://drafts.csswg.org/css-pseudo/",
-  "title": "CSS Pseudo-Elements",
+  "title": "CSS Pseudo-Elements Module",
   "w3c": {
    "serie": "css-pseudo",
    "shortnames": [
@@ -433,7 +433,7 @@
  },
  "dom": {
   "link": "https://dom.spec.whatwg.org/",
-  "title": "Document Object Model",
+  "title": "Document Object Model (DOM)",
   "w3c": {
    "serie": "dom",
    "shortnames": [
@@ -892,7 +892,7 @@
  },
  "ttml": {
   "link": "https://w3c.github.io/ttml2/",
-  "title": "Timed Text Markup Language",
+  "title": "Timed Text Markup Language (TTML)",
   "w3c": {
    "serie": "ttml",
    "shortnames": [
@@ -992,7 +992,7 @@
  },
  "vehicle-information-api": {
   "link": "https://w3c.github.io/automotive/vehicle_information_api/vehicle_information_api_specification.html",
-  "title": "Vehicle Information API Specification",
+  "title": "Vehicle Information API",
   "w3c": {
    "serie": "vehicle-information-api",
    "shortnames": [
@@ -1094,7 +1094,7 @@
  },
  "webauthn": {
   "link": "https://w3c.github.io/webauthn/",
-  "title": "Web Authentication:An API for accessing Public Key Credentials",
+  "title": "Web Authentication",
   "w3c": {
    "serie": "webauthn",
    "shortnames": [
@@ -1405,7 +1405,7 @@
  },
  "orientation-event": {
   "link": "https://w3c.github.io/deviceorientation/",
-  "title": "DeviceOrientation Event Specification",
+  "title": "DeviceOrientation Event",
   "w3c": {
    "serie": "orientation-event",
    "shortnames": [
@@ -5691,7 +5691,7 @@
   }
  },
  "spoken-html": {
-  "title": "Specification for Spoken Presentation in HTML",
+  "title": "Spoken Presentation in HTML",
   "link": "https://w3c.github.io/pronunciation/technical-approach/",
   "w3c": {
    "serie": "spoken-html",
@@ -5707,6 +5707,32 @@
    "serie": "wot-usecases",
    "shortnames": [
     "wot-usecases"
+   ]
+  }
+ },
+ "css": {
+  "title": "Cascading Style Sheets",
+  "w3c": {
+   "serie": "CSS",
+   "shortnames": [
+    "CSS1",
+    "CSS21",
+    "css-2010",
+    "css-2015",
+    "CSS22",
+    "css-2017",
+    "css-2018",
+    "css-2020"
+   ]
+  }
+ },
+ "webcryptoapi": {
+  "title": "Web Cryptography API",
+  "link": "https://w3c.github.io/webcrypto/",
+  "w3c": {
+   "serie": "WebCryptoAPI",
+   "shortnames": [
+    "WebCryptoAPI"
    ]
   }
  }
