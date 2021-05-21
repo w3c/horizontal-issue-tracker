@@ -607,8 +607,27 @@ async function run() {
       }
     }
   })
+  const series = await fetchW3C("specification-series");
+  series.forEach(serie => {
+    serie.shortnameL = serie.shortname.toLowerCase();
+  });
+
 
   for (const [key, value] of Object.entries(dump_shortnames)) {
+    if (value.w3c && value.w3c.serie) {
+      const str = value.w3c.serie;
+      const sw = series.find(s => s.shortnameL === str);
+      if (sw) {
+        if (value.title !== sw.name) {
+          monitor.warn(`Mismatched serie with W3C: ${value.title} !== ${sw.name}`);
+          value.title = sw.name;
+        }
+        if (!value.title) {
+          value.title = sw.name;
+        }
+        value.w3c.serie = sw.shortname;
+      }
+    }
     if (!value.title) {
       monitor.warn(`Missing title for ${key} [${value.link}]`)
     }
