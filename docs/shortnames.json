@@ -279,6 +279,16 @@
    ]
   }
  },
+ "css-multicol": {
+  "link": "https://drafts.csswg.org/css-multicol/",
+  "title": "CSS Multi-column Layout",
+  "w3c": {
+   "serie": "css-multicol",
+   "shortnames": [
+    "css-multicol-1"
+   ]
+  }
+ },
  "css-paint-api": {
   "link": "https://drafts.css-houdini.org/css-paint-api/",
   "title": "CSS Painting API",
@@ -1661,16 +1671,6 @@
    "serie": "css-display",
    "shortnames": [
     "css-display-3"
-   ]
-  }
- },
- "css-multicol": {
-  "link": "https://drafts.csswg.org/css-multicol/",
-  "title": "CSS Multi-column Layout",
-  "w3c": {
-   "serie": "css-multicol",
-   "shortnames": [
-    "css-multicol-1"
    ]
   }
  },
