@@ -1606,6 +1606,9 @@
    ]
   }
  },
+ "contact-picker": {
+  "link": "https://wicg.github.io/contact-api/spec/"
+ },
  "fetch": {
   "link": "https://fetch.spec.whatwg.org/",
   "title": "Fetch",
