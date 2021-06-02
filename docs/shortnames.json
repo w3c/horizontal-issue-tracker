@@ -534,7 +534,7 @@
   "link": "https://drafts.css-houdini.org/font-metrics-api/",
   "title": "Font Metrics API"
  },
- "geolocation-api": {
+ "geolocation": {
   "link": "https://w3c.github.io/geolocation-api/",
   "title": "Geolocation API",
   "w3c": {
