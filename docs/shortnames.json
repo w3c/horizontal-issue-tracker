@@ -538,11 +538,7 @@
   "link": "https://w3c.github.io/geolocation-api/",
   "title": "Geolocation API Specification",
   "w3c": {
-   "serie": "geolocation-API",
-   "shortnames": [
-    "geolocation-API",
-    "geolocation-API-v2"
-   ]
+   "serie": "geolocation-API"
   }
  },
  "html": {
@@ -5736,6 +5732,18 @@
    "serie": "WebCryptoAPI",
    "shortnames": [
     "WebCryptoAPI"
+   ]
+  }
+ },
+ "geolocation": {
+  "title": "Geolocation API",
+  "link": "https://w3c.github.io/geolocation-api/",
+  "w3c": {
+   "serie": "geolocation",
+   "shortnames": [
+    "geolocation-API",
+    "geolocation-API-v2",
+    "geolocation"
    ]
   }
  }
