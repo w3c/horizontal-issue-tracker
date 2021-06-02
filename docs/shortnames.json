@@ -534,6 +534,18 @@
   "link": "https://drafts.css-houdini.org/font-metrics-api/",
   "title": "Font Metrics API"
  },
+ "geolocation-api": {
+  "link": "https://w3c.github.io/geolocation-api/",
+  "title": "Geolocation API",
+  "w3c": {
+   "serie": "geolocation",
+   "shortnames": [
+    "geolocation-API",
+    "geolocation-API-v2",
+    "geolocation"
+   ]
+  }
+ },
  "html": {
   "link": "https://html.spec.whatwg.org/multipage/",
   "title": "HTML",
@@ -5725,18 +5737,6 @@
    "serie": "WebCryptoAPI",
    "shortnames": [
     "WebCryptoAPI"
-   ]
-  }
- },
- "geolocation": {
-  "title": "Geolocation API",
-  "link": "https://w3c.github.io/geolocation-api/",
-  "w3c": {
-   "serie": "geolocation",
-   "shortnames": [
-    "geolocation-API",
-    "geolocation-API-v2",
-    "geolocation"
    ]
   }
  }
