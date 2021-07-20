@@ -1250,6 +1250,9 @@
    ]
   }
  },
+ "clipboard-pickling": {
+  "link": "https://github.com/w3c/editing/blob/gh-pages/docs/clipboard-pickling/explainer.md"
+ },
  "content-index": {
   "link": "https://wicg.github.io/content-index/spec/"
  },
@@ -1459,6 +1462,9 @@
     "proximity"
    ]
   }
+ },
+ "raw-camera-access": {
+  "link": "https://immersive-web.github.io/raw-camera-access/"
  },
  "reporting": {
   "link": "https://w3c.github.io/reporting/",
