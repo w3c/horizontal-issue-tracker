@@ -204,7 +204,8 @@
    "serie": "css-fonts",
    "shortnames": [
     "css-fonts-3",
-    "css-fonts-4"
+    "css-fonts-4",
+    "css-fonts-5"
    ]
   }
  },
@@ -806,6 +807,9 @@
    ]
   }
  },
+ "publ-a11y": {
+  "link": "https://w3c.github.io/publ-a11y/UX-Guide-Metadata/principles/"
+ },
  "push-api": {
   "link": "https://w3c.github.io/push-api/",
   "title": "Push API",
@@ -979,6 +983,18 @@
  },
  "urlpattern": {
   "link": "https://github.com/WICG/urlpattern"
+ },
+ "user-timing": {
+  "link": "https://w3c.github.io/user-timing/",
+  "title": "User Timing",
+  "w3c": {
+   "serie": "user-timing",
+   "shortnames": [
+    "user-timing-1",
+    "user-timing-2",
+    "user-timing-3"
+   ]
+  }
  },
  "vc-data-model": {
   "link": "https://w3c.github.io/vc-data-model/",
@@ -1537,7 +1553,13 @@
  },
  "webnn": {
   "link": "https://webmachinelearning.github.io/webnn/",
-  "title": "Web Neural Network API"
+  "title": "Web Neural Network API",
+  "w3c": {
+   "serie": "webnn",
+   "shortnames": [
+    "webnn"
+   ]
+  }
  },
  "webrtc-extensions": {
   "link": "https://w3c.github.io/webrtc-extensions/",
@@ -1762,6 +1784,9 @@
     "cssom-1"
    ]
   }
+ },
+ "html-sanitizer-api": {
+  "link": "https://wicg.github.io/sanitizer-api/"
  },
  "web-nfc": {
   "link": "https://w3c.github.io/web-nfc/"
@@ -4068,9 +4093,6 @@
  "turtle": {
   "title": "RDF 1.1 Turtle"
  },
- "user-timing": {
-  "title": "User Timing"
- },
  "vibration": {
   "link": "https://w3c.github.io/vibration/",
   "title": "Vibration API"
@@ -5737,6 +5759,46 @@
    "serie": "WebCryptoAPI",
    "shortnames": [
     "WebCryptoAPI"
+   ]
+  }
+ },
+ "audio-eq-cookbook": {
+  "title": "Audio EQ Cookbook",
+  "link": "https://webaudio.github.io/Audio-EQ-Cookbook/audio-eq-cookbook.html",
+  "w3c": {
+   "serie": "audio-eq-cookbook",
+   "shortnames": [
+    "audio-eq-cookbook"
+   ]
+  }
+ },
+ "epub-a11y-eaa-mapping": {
+  "title": "EPUB Accessibility - EU Accessibility Act Mapping",
+  "link": "https://w3c.github.io/epub-specs/epub33/epub-a11y-eaa-mapping/",
+  "w3c": {
+   "serie": "epub-a11y-eaa-mapping",
+   "shortnames": [
+    "epub-a11y-eaa-mapping"
+   ]
+  }
+ },
+ "did-cbor-representation": {
+  "title": "The Plain CBOR Representation v1.0",
+  "link": "https://w3c.github.io/did-cbor-note/",
+  "w3c": {
+   "serie": "did-cbor-representation",
+   "shortnames": [
+    "did-cbor-representation"
+   ]
+  }
+ },
+ "i18n-glossary": {
+  "title": "Internationalization Glossary",
+  "link": "https://w3c.github.io/i18n-glossary/",
+  "w3c": {
+   "serie": "i18n-glossary",
+   "shortnames": [
+    "i18n-glossary"
    ]
   }
  }
