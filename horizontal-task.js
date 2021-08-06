@@ -356,6 +356,8 @@ function findIssue(issue, hr_issues) {
   return found;
 }
 
+let pre2021issue = 0;
+
 // This is the most important function: create an horizontal issue
 // hlabels is the subset of horizontal labels found that are relevant
 async function createHRIssue(issue, hlabels) {
@@ -388,11 +390,13 @@ async function createHRIssue(issue, hlabels) {
     return;
   }
 
-  // the issue got already closed, so we skip it
-  // @@make sure this is what we want
+  // the issue got already closed, so we skip it if it's prior to 2021
   if (issue.state == "closed") {
-    // skip it
-    return;
+    const year = Number.parseInt(issue.created_at.substring(0, 4));
+    if (year <= 2020) {
+      pre2021issue++;
+      return;
+    }
   }
   const shortlabels = findShortlabel(issue);
 
@@ -645,6 +649,7 @@ async function main() {
     return Promise.all(checks);
   }).then(all => {
     // we're done with everything
+    monitor.log(`${pre2021issue} issues were not created since they got closed prior to the year 2021`)
     monitor.log("we're done and it seems nothing broke. Good luck.");
   });
 }
