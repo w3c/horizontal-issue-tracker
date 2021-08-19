@@ -1,72 +1,4 @@
 {
- "css-pseudo": {
-  "link": "https://drafts.csswg.org/css-pseudo/",
-  "title": "CSS Pseudo-Elements Module",
-  "w3c": {
-   "serie": "css-pseudo",
-   "shortnames": [
-    "css-pseudo-4"
-   ]
-  }
- },
- "baggage": {
-  "link": "https://w3c.github.io/baggage/",
-  "title": "Propagation format for distributed trace context: Baggage",
-  "w3c": {
-   "serie": "baggage",
-   "shortnames": [
-    "baggage"
-   ]
-  }
- },
- "wai-aria-practices": {
-  "link": "https://w3c.github.io/aria-practices/",
-  "title": "WAI-ARIA Authoring Practices",
-  "w3c": {
-   "serie": "wai-aria-practices",
-   "shortnames": [
-    "wai-aria-practices",
-    "wai-aria-practices-1.1",
-    "wai-aria-practices-1.2"
-   ]
-  }
- },
- "geolocation": {
-  "link": "https://w3c.github.io/geolocation-api/",
-  "title": "Geolocation API",
-  "w3c": {
-   "serie": "geolocation",
-   "shortnames": [
-    "geolocation-API",
-    "geolocation-API-v2",
-    "geolocation"
-   ]
-  }
- },
- "webxr": {
-  "link": "https://immersive-web.github.io/webxr/",
-  "title": "WebXR Device API",
-  "w3c": {
-   "serie": "webxr",
-   "shortnames": [
-    "webxr"
-   ]
-  }
- },
- "coga-usable": {
-  "link": "https://w3c.github.io/coga/content-usable/",
-  "title": "Making content usable for people with cognitive and learning disabilities",
-  "w3c": {
-   "serie": "coga-usable",
-   "shortnames": [
-    "coga-usable"
-   ]
-  }
- },
- "epub-packages": {
-  "link": "https://www.w3.org/publishing/epub/epub-packages.html",
-  "title": "EPUB Packages"
- },
  "accname": {
   "link": "https://w3c.github.io/accname/",
   "title": "Accessible Name and Description Computation",
@@ -319,6 +251,26 @@
    ]
   }
  },
+ "baggage": {
+  "link": "https://w3c.github.io/baggage/",
+  "title": "Propagation format for distributed trace context: Baggage",
+  "w3c": {
+   "serie": "baggage",
+   "shortnames": [
+    "baggage"
+   ]
+  }
+ },
+ "coga-usable": {
+  "link": "https://w3c.github.io/coga/content-usable/",
+  "title": "Making content usable for people with cognitive and learning disabilities",
+  "w3c": {
+   "serie": "coga-usable",
+   "shortnames": [
+    "coga-usable"
+   ]
+  }
+ },
  "css-align": {
   "link": "https://drafts.csswg.org/css-align/",
   "title": "CSS Box Alignment",
@@ -473,6 +425,16 @@
    "serie": "css-paint-api",
    "shortnames": [
     "css-paint-api-1"
+   ]
+  }
+ },
+ "css-pseudo": {
+  "link": "https://drafts.csswg.org/css-pseudo/",
+  "title": "CSS Pseudo-Elements Module",
+  "w3c": {
+   "serie": "css-pseudo",
+   "shortnames": [
+    "css-pseudo-4"
    ]
   }
  },
@@ -651,6 +613,10 @@
   },
   "retired": true
  },
+ "epub-packages": {
+  "link": "https://www.w3.org/publishing/epub/epub-packages.html",
+  "title": "EPUB Packages"
+ },
  "findtext": {
   "link": "https://w3c.github.io/findtext/",
   "title": "FindText API",
@@ -661,6 +627,18 @@
    ]
   },
   "retired": true
+ },
+ "geolocation": {
+  "link": "https://w3c.github.io/geolocation-api/",
+  "title": "Geolocation API",
+  "w3c": {
+   "serie": "geolocation",
+   "shortnames": [
+    "geolocation-API",
+    "geolocation-API-v2",
+    "geolocation"
+   ]
+  }
  },
  "html": {
   "link": "https://html.spec.whatwg.org/multipage/",
@@ -1094,6 +1072,18 @@
    ]
   }
  },
+ "wai-aria-practices": {
+  "link": "https://w3c.github.io/aria-practices/",
+  "title": "WAI-ARIA Authoring Practices",
+  "w3c": {
+   "serie": "wai-aria-practices",
+   "shortnames": [
+    "wai-aria-practices",
+    "wai-aria-practices-1.1",
+    "wai-aria-practices-1.2"
+   ]
+  }
+ },
  "wcag": {
   "link": "https://w3c.github.io/wcag/guidelines/",
   "title": "Web Content Accessibility Guidelines (WCAG)",
@@ -1212,6 +1202,16 @@
    ]
   }
  },
+ "webxr": {
+  "link": "https://immersive-web.github.io/webxr/",
+  "title": "WebXR Device API",
+  "w3c": {
+   "serie": "webxr",
+   "shortnames": [
+    "webxr"
+   ]
+  }
+ },
  "wot-thing-description": {
   "link": "https://w3c.github.io/wot-thing-description/",
   "title": "Web of Things (WoT) Thing Description",
@@ -1233,26 +1233,6 @@
     "xslt11",
     "xslt20",
     "xslt-30"
-   ]
-  }
- },
- "webxrlayers": {
-  "link": "https://immersive-web.github.io/layers/",
-  "title": "WebXR Layers API",
-  "w3c": {
-   "serie": "webxrlayers",
-   "shortnames": [
-    "webxrlayers-1"
-   ]
-  }
- },
- "screen-wake-lock": {
-  "link": "https://w3c.github.io/screen-wake-lock/",
-  "title": "Screen Wake Lock API",
-  "w3c": {
-   "serie": "screen-wake-lock",
-   "shortnames": [
-    "screen-wake-lock"
    ]
   }
  },
@@ -1587,6 +1567,16 @@
    ]
   }
  },
+ "screen-wake-lock": {
+  "link": "https://w3c.github.io/screen-wake-lock/",
+  "title": "Screen Wake Lock API",
+  "w3c": {
+   "serie": "screen-wake-lock",
+   "shortnames": [
+    "screen-wake-lock"
+   ]
+  }
+ },
  "ScrollToTextFragment": {
   "link": "https://wicg.github.io/scroll-to-text-fragment/",
   "title": "Text Fragments"
@@ -1621,6 +1611,16 @@
    "serie": "webtransport",
    "shortnames": [
     "webtransport"
+   ]
+  }
+ },
+ "webxrlayers": {
+  "link": "https://immersive-web.github.io/layers/",
+  "title": "WebXR Layers API",
+  "w3c": {
+   "serie": "webxrlayers",
+   "shortnames": [
+    "webxrlayers-1"
    ]
   }
  },
@@ -1788,11 +1788,11 @@
    ]
   }
  },
- "cookie-store": {
-  "link": "https://wicg.github.io/cookie-store/"
- },
  "html-sanitizer-api": {
   "link": "https://wicg.github.io/sanitizer-api/"
+ },
+ "cookie-store": {
+  "link": "https://wicg.github.io/cookie-store/"
  },
  "cssom": {
   "link": "https://drafts.csswg.org/cssom/",
