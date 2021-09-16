@@ -10,187 +10,6 @@
    ]
   }
  },
- "css-cascade": {
-  "link": "https://drafts.csswg.org/css-cascade/",
-  "title": "CSS Cascading and Inheritance",
-  "w3c": {
-   "serie": "css-cascade",
-   "shortnames": [
-    "css-cascade-3",
-    "css-cascade-4",
-    "css-cascade-5"
-   ]
-  }
- },
- "epub": {
-  "link": "https://w3c.github.io/epub-specs/epub33/core/",
-  "title": "EPUB",
-  "w3c": {
-   "serie": "epub",
-   "shortnames": [
-    "epub-33"
-   ]
-  }
- },
- "css-sizing": {
-  "link": "https://drafts.csswg.org/css-sizing/",
-  "title": "CSS Box Sizing",
-  "w3c": {
-   "serie": "css-sizing",
-   "shortnames": [
-    "css-sizing-3",
-    "css-sizing-4"
-   ]
-  }
- },
- "css-box": {
-  "link": "https://drafts.csswg.org/css-box/",
-  "title": "CSS Box Model",
-  "w3c": {
-   "serie": "css-box",
-   "shortnames": [
-    "css-box-3",
-    "css-box-4"
-   ]
-  }
- },
- "wai-aria": {
-  "link": "https://w3c.github.io/aria/",
-  "title": "Accessible Rich Internet Applications (WAI-ARIA)",
-  "w3c": {
-   "serie": "wai-aria",
-   "shortnames": [
-    "wai-aria",
-    "wai-aria-1.1",
-    "wai-aria-1.2"
-   ]
-  }
- },
- "css-highlight-api": {
-  "link": "https://drafts.csswg.org/css-highlight-api/",
-  "title": "CSS Custom Highlight API",
-  "w3c": {
-   "serie": "css-highlight-api",
-   "shortnames": [
-    "css-highlight-api-1"
-   ]
-  }
- },
- "open-ui": {
-  "link": "https://open-ui.org/",
-  "title": "Open UI"
- },
- "css-gcpm": {
-  "link": "https://drafts.csswg.org/css-gcpm/",
-  "title": "CSS Generated Content for Paged Media",
-  "w3c": {
-   "serie": "css-gcpm",
-   "shortnames": [
-    "css-gcpm-3"
-   ]
-  }
- },
- "css-line-grid": {
-  "link": "https://drafts.csswg.org/css-line-grid/",
-  "title": "CSS Line Grid",
-  "w3c": {
-   "serie": "css-line-grid",
-   "shortnames": [
-    "css-line-grid-1"
-   ]
-  }
- },
- "css-rhythm": {
-  "link": "https://drafts.csswg.org/css-rhythm/",
-  "title": "CSS Rhythmic Sizing",
-  "w3c": {
-   "serie": "css-rhythm",
-   "shortnames": [
-    "css-rhythm-1"
-   ]
-  }
- },
- "font-metrics-api": {
-  "link": "https://drafts.css-houdini.org/font-metrics-api/",
-  "title": "Font Metrics API"
- },
- "miniapp-packaging": {
-  "link": "https://w3c.github.io/miniapp-packaging/",
-  "title": "MiniApp Packaging"
- },
- "miniapp-manifest": {
-  "link": "https://w3c.github.io/miniapp-manifest/",
-  "title": "MiniApp Manifest",
-  "w3c": {
-   "serie": "miniapp-manifest",
-   "shortnames": [
-    "miniapp-manifest"
-   ]
-  }
- },
- "miniapp-addressing": {
-  "link": "https://w3c.github.io/miniapp-addressing/",
-  "title": "MiniApp URI Scheme"
- },
- "vehicle-data": {
-  "link": "https://w3c.github.io/automotive/vehicle_data/data_spec.html",
-  "title": "Vehicle Data",
-  "w3c": {
-   "serie": "vehicle-data",
-   "shortnames": [
-    "vehicle-data"
-   ]
-  },
-  "retired": true
- },
- "personalization-semantics-content": {
-  "link": "https://w3c.github.io/personalization-semantics/content/",
-  "title": "Personalization Semantics Content",
-  "w3c": {
-   "serie": "personalization-semantics-content",
-   "shortnames": [
-    "personalization-semantics-content-1.0"
-   ]
-  }
- },
- "html-aria": {
-  "link": "https://w3c.github.io/html-aria/",
-  "title": "ARIA in HTML",
-  "w3c": {
-   "serie": "html-aria",
-   "shortnames": [
-    "html-aria"
-   ]
-  }
- },
- "publ-a11y": {
-  "link": "https://w3c.github.io/publ-a11y/UX-Guide-Metadata/principles/"
- },
- "urlpattern": {
-  "link": "https://github.com/WICG/urlpattern"
- },
- "css-multicol": {
-  "link": "https://drafts.csswg.org/css-multicol/",
-  "title": "CSS Multi-column Layout",
-  "w3c": {
-   "serie": "css-multicol",
-   "shortnames": [
-    "css-multicol-1"
-   ]
-  }
- },
- "user-timing": {
-  "link": "https://w3c.github.io/user-timing/",
-  "title": "User Timing",
-  "w3c": {
-   "serie": "user-timing",
-   "shortnames": [
-    "user-timing-1",
-    "user-timing-2",
-    "user-timing-3"
-   ]
-  }
- },
  "activitypub": {
   "link": "https://w3c.github.io/activitypub/",
   "title": "ActivityPub",
@@ -291,6 +110,17 @@
    ]
   }
  },
+ "css-box": {
+  "link": "https://drafts.csswg.org/css-box/",
+  "title": "CSS Box Model",
+  "w3c": {
+   "serie": "css-box",
+   "shortnames": [
+    "css-box-3",
+    "css-box-4"
+   ]
+  }
+ },
  "css-break": {
   "link": "https://drafts.csswg.org/css-break/",
   "title": "CSS Fragmentation",
@@ -299,6 +129,18 @@
    "shortnames": [
     "css-break-3",
     "css-break-4"
+   ]
+  }
+ },
+ "css-cascade": {
+  "link": "https://drafts.csswg.org/css-cascade/",
+  "title": "CSS Cascading and Inheritance",
+  "w3c": {
+   "serie": "css-cascade",
+   "shortnames": [
+    "css-cascade-3",
+    "css-cascade-4",
+    "css-cascade-5"
    ]
   }
  },
@@ -367,6 +209,16 @@
    ]
   }
  },
+ "css-gcpm": {
+  "link": "https://drafts.csswg.org/css-gcpm/",
+  "title": "CSS Generated Content for Paged Media",
+  "w3c": {
+   "serie": "css-gcpm",
+   "shortnames": [
+    "css-gcpm-3"
+   ]
+  }
+ },
  "css-grid": {
   "link": "https://drafts.csswg.org/css-grid/",
   "title": "CSS Grid Layout",
@@ -378,6 +230,16 @@
    ]
   }
  },
+ "css-highlight-api": {
+  "link": "https://drafts.csswg.org/css-highlight-api/",
+  "title": "CSS Custom Highlight API",
+  "w3c": {
+   "serie": "css-highlight-api",
+   "shortnames": [
+    "css-highlight-api-1"
+   ]
+  }
+ },
  "css-inline": {
   "link": "https://drafts.csswg.org/css-inline/",
   "title": "CSS Inline Layout",
@@ -385,6 +247,16 @@
    "serie": "css-inline",
    "shortnames": [
     "css-inline-3"
+   ]
+  }
+ },
+ "css-line-grid": {
+  "link": "https://drafts.csswg.org/css-line-grid/",
+  "title": "CSS Line Grid",
+  "w3c": {
+   "serie": "css-line-grid",
+   "shortnames": [
+    "css-line-grid-1"
    ]
   }
  },
@@ -418,6 +290,16 @@
    ]
   }
  },
+ "css-multicol": {
+  "link": "https://drafts.csswg.org/css-multicol/",
+  "title": "CSS Multi-column Layout",
+  "w3c": {
+   "serie": "css-multicol",
+   "shortnames": [
+    "css-multicol-1"
+   ]
+  }
+ },
  "css-paint-api": {
   "link": "https://drafts.css-houdini.org/css-paint-api/",
   "title": "CSS Painting API",
@@ -438,6 +320,16 @@
    ]
   }
  },
+ "css-rhythm": {
+  "link": "https://drafts.csswg.org/css-rhythm/",
+  "title": "CSS Rhythmic Sizing",
+  "w3c": {
+   "serie": "css-rhythm",
+   "shortnames": [
+    "css-rhythm-1"
+   ]
+  }
+ },
  "css-ruby": {
   "link": "https://drafts.csswg.org/css-ruby/",
   "title": "CSS Ruby Annotation Layout",
@@ -455,6 +347,27 @@
    "serie": "css-scroll-snap",
    "shortnames": [
     "css-scroll-snap-1"
+   ]
+  }
+ },
+ "css-scrollbars": {
+  "link": "https://drafts.csswg.org/css-scrollbars/",
+  "title": "CSS Scrollbars",
+  "w3c": {
+   "serie": "css-scrollbars",
+   "shortnames": [
+    "css-scrollbars-1"
+   ]
+  }
+ },
+ "css-sizing": {
+  "link": "https://drafts.csswg.org/css-sizing/",
+  "title": "CSS Box Sizing",
+  "w3c": {
+   "serie": "css-sizing",
+   "shortnames": [
+    "css-sizing-3",
+    "css-sizing-4"
    ]
   }
  },
@@ -578,7 +491,8 @@
   "w3c": {
    "serie": "dpub-aria",
    "shortnames": [
-    "dpub-aria-1.0"
+    "dpub-aria-1.0",
+    "dpub-aria-1.1"
    ]
   }
  },
@@ -613,6 +527,16 @@
   },
   "retired": true
  },
+ "epub": {
+  "link": "https://w3c.github.io/epub-specs/epub33/core/",
+  "title": "EPUB",
+  "w3c": {
+   "serie": "epub",
+   "shortnames": [
+    "epub-33"
+   ]
+  }
+ },
  "epub-packages": {
   "link": "https://www.w3.org/publishing/epub/epub-packages.html",
   "title": "EPUB Packages"
@@ -627,6 +551,10 @@
    ]
   },
   "retired": true
+ },
+ "font-metrics-api": {
+  "link": "https://drafts.css-houdini.org/font-metrics-api/",
+  "title": "Font Metrics API"
  },
  "geolocation": {
   "link": "https://w3c.github.io/geolocation-api/",
@@ -658,6 +586,16 @@
     "html52",
     "html53",
     "html"
+   ]
+  }
+ },
+ "html-aria": {
+  "link": "https://w3c.github.io/html-aria/",
+  "title": "ARIA in HTML",
+  "w3c": {
+   "serie": "html-aria",
+   "shortnames": [
+    "html-aria"
    ]
   }
  },
@@ -756,6 +694,24 @@
    ]
   }
  },
+ "miniapp-addressing": {
+  "link": "https://w3c.github.io/miniapp-addressing/",
+  "title": "MiniApp URI Scheme"
+ },
+ "miniapp-manifest": {
+  "link": "https://w3c.github.io/miniapp-manifest/",
+  "title": "MiniApp Manifest",
+  "w3c": {
+   "serie": "miniapp-manifest",
+   "shortnames": [
+    "miniapp-manifest"
+   ]
+  }
+ },
+ "miniapp-packaging": {
+  "link": "https://w3c.github.io/miniapp-packaging/",
+  "title": "MiniApp Packaging"
+ },
  "mst-content-hint": {
   "link": "https://w3c.github.io/mst-content-hint/",
   "title": "MediaStreamTrack Content Hints",
@@ -765,6 +721,10 @@
     "mst-content-hint"
    ]
   }
+ },
+ "open-ui": {
+  "link": "https://open-ui.org/",
+  "title": "Open UI"
  },
  "owl-time": {
   "link": "https://w3c.github.io/sdw/time/",
@@ -784,7 +744,8 @@
    "shortnames": [
     "payment-method-basic-card"
    ]
-  }
+  },
+  "retired": true
  },
  "payment-method-id": {
   "link": "https://w3c.github.io/payment-method-id/",
@@ -813,6 +774,16 @@
    "serie": "personalization-semantics",
    "shortnames": [
     "personalization-semantics-1.0"
+   ]
+  }
+ },
+ "personalization-semantics-content": {
+  "link": "https://w3c.github.io/personalization-semantics/content/",
+  "title": "Personalization Semantics Content",
+  "w3c": {
+   "serie": "personalization-semantics-content",
+   "shortnames": [
+    "personalization-semantics-content-1.0"
    ]
   }
  },
@@ -858,6 +829,9 @@
    ]
   }
  },
+ "publ-a11y": {
+  "link": "https://w3c.github.io/publ-a11y/UX-Guide-Metadata/principles/"
+ },
  "push-api": {
   "link": "https://w3c.github.io/push-api/",
   "title": "Push API",
@@ -885,6 +859,16 @@
    "serie": "screen-capture",
    "shortnames": [
     "screen-capture"
+   ]
+  }
+ },
+ "secure-payment-confirmation": {
+  "link": "https://w3c.github.io/secure-payment-confirmation",
+  "title": "Secure Payment Confirmation",
+  "w3c": {
+   "serie": "secure-payment-confirmation",
+   "shortnames": [
+    "secure-payment-confirmation"
    ]
   }
  },
@@ -1029,6 +1013,21 @@
   },
   "retired": true
  },
+ "urlpattern": {
+  "link": "https://github.com/WICG/urlpattern"
+ },
+ "user-timing": {
+  "link": "https://w3c.github.io/user-timing/",
+  "title": "User Timing",
+  "w3c": {
+   "serie": "user-timing",
+   "shortnames": [
+    "user-timing-1",
+    "user-timing-2",
+    "user-timing-3"
+   ]
+  }
+ },
  "vc-data-model": {
   "link": "https://w3c.github.io/vc-data-model/",
   "title": "Verifiable Credentials Data Model",
@@ -1038,6 +1037,17 @@
     "vc-data-model"
    ]
   }
+ },
+ "vehicle-data": {
+  "link": "https://w3c.github.io/automotive/vehicle_data/data_spec.html",
+  "title": "Vehicle Data",
+  "w3c": {
+   "serie": "vehicle-data",
+   "shortnames": [
+    "vehicle-data"
+   ]
+  },
+  "retired": true
  },
  "vehicle-information-api": {
   "link": "https://w3c.github.io/automotive/vehicle_information_api/vehicle_information_api_specification.html",
@@ -1069,6 +1079,18 @@
    "serie": "vocab-duv",
    "shortnames": [
     "vocab-duv"
+   ]
+  }
+ },
+ "wai-aria": {
+  "link": "https://w3c.github.io/aria/",
+  "title": "Accessible Rich Internet Applications (WAI-ARIA)",
+  "w3c": {
+   "serie": "wai-aria",
+   "shortnames": [
+    "wai-aria",
+    "wai-aria-1.1",
+    "wai-aria-1.2"
    ]
   }
  },
@@ -1236,69 +1258,6 @@
    ]
   }
  },
- "system-wake-lock": {
-  "link": "https://w3c.github.io/system-wake-lock/"
- },
- "webrtc-extensions": {
-  "link": "https://w3c.github.io/webrtc-extensions/",
-  "title": "WebRTC Extensions"
- },
- "css-values": {
-  "link": "https://drafts.csswg.org/css-values/",
-  "title": "CSS Values and Units",
-  "w3c": {
-   "serie": "css-values",
-   "shortnames": [
-    "css-values-3",
-    "css-values-4"
-   ]
-  }
- },
- "proximity-sensor": {
-  "link": "https://w3c.github.io/proximity/",
-  "title": "Proximity Sensor",
-  "w3c": {
-   "serie": "proximity",
-   "shortnames": [
-    "proximity"
-   ]
-  }
- },
- "webxr-hand-input": {
-  "link": "https://immersive-web.github.io/webxr-hand-input/",
-  "title": "WebXR Hand Input",
-  "w3c": {
-   "serie": "webxr-hand-input",
-   "shortnames": [
-    "webxr-hand-input-1"
-   ]
-  }
- },
- "storage": {
-  "link": "https://storage.spec.whatwg.org/",
-  "title": "Storage",
-  "w3c": {}
- },
- "css-color-adjust": {
-  "link": "https://drafts.csswg.org/css-color-adjust/",
-  "title": "CSS Color Adjustment",
-  "w3c": {
-   "serie": "css-color-adjust",
-   "shortnames": [
-    "css-color-adjust-1"
-   ]
-  }
- },
- "mediacapture-fromelement": {
-  "link": "https://w3c.github.io/mediacapture-fromelement/",
-  "title": "Media Capture from DOM Elements",
-  "w3c": {
-   "serie": "mediacapture-fromelement",
-   "shortnames": [
-    "mediacapture-fromelement"
-   ]
-  }
- },
  "accelerometer": {
   "link": "https://w3c.github.io/accelerometer/",
   "title": "Accelerometer",
@@ -1319,15 +1278,38 @@
    ]
   }
  },
- "gyroscope": {
-  "link": "https://w3c.github.io/gyroscope/",
-  "title": "Gyroscope",
+ "clipboard-pickling": {
+  "link": "https://github.com/w3c/editing/blob/gh-pages/docs/clipboard-pickling/explainer.md"
+ },
+ "content-index": {
+  "link": "https://wicg.github.io/content-index/spec/"
+ },
+ "crash-reporting": {
+  "link": "https://wicg.github.io/crash-reporting/"
+ },
+ "css-color-adjust": {
+  "link": "https://drafts.csswg.org/css-color-adjust/",
+  "title": "CSS Color Adjustment",
   "w3c": {
-   "serie": "gyroscope",
+   "serie": "css-color-adjust",
    "shortnames": [
-    "gyroscope"
+    "css-color-adjust-1"
    ]
   }
+ },
+ "css-values": {
+  "link": "https://drafts.csswg.org/css-values/",
+  "title": "CSS Values and Units",
+  "w3c": {
+   "serie": "css-values",
+   "shortnames": [
+    "css-values-3",
+    "css-values-4"
+   ]
+  }
+ },
+ "deprecation-reporting": {
+  "link": "https://wicg.github.io/deprecation-reporting/"
  },
  "device-posture": {
   "link": "https://w3c.github.io/device-posture/",
@@ -1339,117 +1321,8 @@
    ]
   }
  },
- "mathml": {
-  "link": "https://w3c.github.io/mathml/",
-  "title": "Mathematical Markup Language (MathML)",
-  "w3c": {
-   "serie": "MathML",
-   "shortnames": [
-    "REC-MathML",
-    "MathML2",
-    "MathML3"
-   ]
-  }
- },
  "file-system-access": {
   "link": "https://wicg.github.io/file-system-access/"
- },
- "floc": {
-  "link": "https://github.com/WICG/floc",
-  "title": "Federated Learning of Cohorts (FLoC)"
- },
- "webnn": {
-  "link": "https://webmachinelearning.github.io/webnn/",
-  "title": "Web Neural Network API",
-  "w3c": {
-   "serie": "webnn",
-   "shortnames": [
-    "webnn"
-   ]
-  }
- },
- "mediasession": {
-  "link": "https://w3c.github.io/mediasession/",
-  "title": "Media Session Standard",
-  "w3c": {
-   "serie": "mediasession",
-   "shortnames": [
-    "mediasession"
-   ]
-  }
- },
- "webxr-hit-test": {
-  "link": "https://immersive-web.github.io/hit-test/"
- },
- "get-installed-related-apps": {
-  "link": "https://wicg.github.io/get-installed-related-apps/spec/"
- },
- "storage-buckets": {
-  "link": "https://wicg.github.io/storage-buckets/"
- },
- "media-capabilities": {
-  "link": "https://w3c.github.io/media-capabilities/",
-  "title": "Media Capabilities",
-  "w3c": {
-   "serie": "media-capabilities",
-   "shortnames": [
-    "media-capabilities"
-   ]
-  }
- },
- "selection-api": {
-  "link": "https://w3c.github.io/selection-api/",
-  "title": "Selection API",
-  "w3c": {
-   "serie": "selection-api",
-   "shortnames": [
-    "selection-api"
-   ]
-  }
- },
- "first-party-sets": {
-  "link": "https://github.com/privacycg/first-party-sets/blob/main/README.md"
- },
- "webcodecs": {
-  "link": "https://w3c.github.io/webcodecs/",
-  "title": "WebCodecs",
-  "w3c": {
-   "serie": "webcodecs",
-   "shortnames": [
-    "webcodecs"
-   ]
-  }
- },
- "webapidevice": {
-  "link": "https://github.com/WICG/WebApiDevice/blob/main/Explainer.md"
- },
- "webgpu": {
-  "link": "https://gpuweb.github.io/gpuweb/",
-  "title": "WebGPU",
-  "w3c": {
-   "serie": "webgpu",
-   "shortnames": [
-    "webgpu"
-   ]
-  }
- },
- "webID": {
-  "link": "https://wicg.github.io/WebID/README.html"
- },
- "raw-camera-access": {
-  "link": "https://immersive-web.github.io/raw-camera-access/"
- },
- "clipboard-pickling": {
-  "link": "https://github.com/w3c/editing/blob/gh-pages/docs/clipboard-pickling/explainer.md"
- },
- "content-index": {
-  "link": "https://wicg.github.io/content-index/spec/"
- },
- "crash-reporting": {
-  "link": "https://wicg.github.io/crash-reporting/"
- },
- "deprecation-reporting": {
-  "link": "https://wicg.github.io/deprecation-reporting/"
  },
  "fileapi": {
   "link": "https://w3c.github.io/FileAPI/",
@@ -1460,6 +1333,13 @@
     "FileAPI"
    ]
   }
+ },
+ "first-party-sets": {
+  "link": "https://github.com/privacycg/first-party-sets/blob/main/README.md"
+ },
+ "floc": {
+  "link": "https://github.com/WICG/floc",
+  "title": "Federated Learning of Cohorts (FLoC)"
  },
  "gamepad": {
   "link": "https://w3c.github.io/gamepad/",
@@ -1491,6 +1371,19 @@
    ]
   }
  },
+ "get-installed-related-apps": {
+  "link": "https://wicg.github.io/get-installed-related-apps/spec/"
+ },
+ "gyroscope": {
+  "link": "https://w3c.github.io/gyroscope/",
+  "title": "Gyroscope",
+  "w3c": {
+   "serie": "gyroscope",
+   "shortnames": [
+    "gyroscope"
+   ]
+  }
+ },
  "hr-time": {
   "link": "https://w3c.github.io/hr-time/",
   "title": "High Resolution Time",
@@ -1515,6 +1408,48 @@
  },
  "intervention-reporting": {
   "link": "https://wicg.github.io/intervention-reporting/"
+ },
+ "mathml": {
+  "link": "https://w3c.github.io/mathml/",
+  "title": "Mathematical Markup Language (MathML)",
+  "w3c": {
+   "serie": "MathML",
+   "shortnames": [
+    "REC-MathML",
+    "MathML2",
+    "MathML3"
+   ]
+  }
+ },
+ "media-capabilities": {
+  "link": "https://w3c.github.io/media-capabilities/",
+  "title": "Media Capabilities",
+  "w3c": {
+   "serie": "media-capabilities",
+   "shortnames": [
+    "media-capabilities"
+   ]
+  }
+ },
+ "mediacapture-fromelement": {
+  "link": "https://w3c.github.io/mediacapture-fromelement/",
+  "title": "Media Capture from DOM Elements",
+  "w3c": {
+   "serie": "mediacapture-fromelement",
+   "shortnames": [
+    "mediacapture-fromelement"
+   ]
+  }
+ },
+ "mediasession": {
+  "link": "https://w3c.github.io/mediasession/",
+  "title": "Media Session Standard",
+  "w3c": {
+   "serie": "mediasession",
+   "shortnames": [
+    "mediasession"
+   ]
+  }
  },
  "mediastream-recording": {
   "link": "https://w3c.github.io/mediacapture-record/",
@@ -1545,6 +1480,19 @@
     "payment-handler"
    ]
   }
+ },
+ "proximity-sensor": {
+  "link": "https://w3c.github.io/proximity/",
+  "title": "Proximity Sensor",
+  "w3c": {
+   "serie": "proximity",
+   "shortnames": [
+    "proximity"
+   ]
+  }
+ },
+ "raw-camera-access": {
+  "link": "https://immersive-web.github.io/raw-camera-access/"
  },
  "reporting": {
   "link": "https://w3c.github.io/reporting/",
@@ -1581,6 +1529,27 @@
   "link": "https://wicg.github.io/scroll-to-text-fragment/",
   "title": "Text Fragments"
  },
+ "selection-api": {
+  "link": "https://w3c.github.io/selection-api/",
+  "title": "Selection API",
+  "w3c": {
+   "serie": "selection-api",
+   "shortnames": [
+    "selection-api"
+   ]
+  }
+ },
+ "storage": {
+  "link": "https://storage.spec.whatwg.org/",
+  "title": "Storage",
+  "w3c": {}
+ },
+ "storage-buckets": {
+  "link": "https://wicg.github.io/storage-buckets/"
+ },
+ "system-wake-lock": {
+  "link": "https://w3c.github.io/system-wake-lock/"
+ },
  "trace-context": {
   "link": "https://w3c.github.io/trace-context/",
   "title": "Trace Context",
@@ -1593,6 +1562,46 @@
  },
  "visual-viewport": {
   "link": "https://wicg.github.io/visual-viewport/"
+ },
+ "webapidevice": {
+  "link": "https://github.com/WICG/WebApiDevice/blob/main/Explainer.md"
+ },
+ "webcodecs": {
+  "link": "https://w3c.github.io/webcodecs/",
+  "title": "WebCodecs",
+  "w3c": {
+   "serie": "webcodecs",
+   "shortnames": [
+    "webcodecs"
+   ]
+  }
+ },
+ "webgpu": {
+  "link": "https://gpuweb.github.io/gpuweb/",
+  "title": "WebGPU",
+  "w3c": {
+   "serie": "webgpu",
+   "shortnames": [
+    "webgpu"
+   ]
+  }
+ },
+ "webID": {
+  "link": "https://wicg.github.io/WebID/README.html"
+ },
+ "webnn": {
+  "link": "https://webmachinelearning.github.io/webnn/",
+  "title": "Web Neural Network API",
+  "w3c": {
+   "serie": "webnn",
+   "shortnames": [
+    "webnn"
+   ]
+  }
+ },
+ "webrtc-extensions": {
+  "link": "https://w3c.github.io/webrtc-extensions/",
+  "title": "WebRTC Extensions"
  },
  "webrtc-stats": {
   "link": "https://w3c.github.io/webrtc-stats/",
@@ -1611,6 +1620,26 @@
    "serie": "webtransport",
    "shortnames": [
     "webtransport"
+   ]
+  }
+ },
+ "webxr-hand-input": {
+  "link": "https://immersive-web.github.io/webxr-hand-input/",
+  "title": "WebXR Hand Input",
+  "w3c": {
+   "serie": "webxr-hand-input",
+   "shortnames": [
+    "webxr-hand-input-1"
+   ]
+  }
+ },
+ "webxr-hit-test": {
+  "link": "https://immersive-web.github.io/hit-test/",
+  "title": "WebXR Hit Test Module",
+  "w3c": {
+   "serie": "webxr-hit-test",
+   "shortnames": [
+    "webxr-hit-test-1"
    ]
   }
  },
@@ -1635,21 +1664,6 @@
    ]
   }
  },
- "wot-discovery": {
-  "link": "https://w3c.github.io/wot-discovery/",
-  "title": "Web of Things (WoT) Discovery",
-  "w3c": {
-   "serie": "wot-discovery",
-   "shortnames": [
-    "wot-discovery"
-   ]
-  }
- },
- "fetch": {
-  "link": "https://fetch.spec.whatwg.org/",
-  "title": "Fetch",
-  "w3c": {}
- },
  "clipboard-apis": {
   "link": "https://w3c.github.io/clipboard-apis/",
   "title": "Clipboard API and events",
@@ -1662,6 +1676,11 @@
  },
  "contact-picker": {
   "link": "https://wicg.github.io/contact-api/spec/"
+ },
+ "fetch": {
+  "link": "https://fetch.spec.whatwg.org/",
+  "title": "Fetch",
+  "w3c": {}
  },
  "openscreenprotocol": {
   "link": "https://w3c.github.io/openscreenprotocol/",
@@ -1695,13 +1714,13 @@
    ]
   }
  },
- "html-aam": {
-  "link": "https://w3c.github.io/html-aam/",
-  "title": "HTML Accessibility API Mappings",
+ "wot-discovery": {
+  "link": "https://w3c.github.io/wot-discovery/",
+  "title": "Web of Things (WoT) Discovery",
   "w3c": {
-   "serie": "html-aam",
+   "serie": "wot-discovery",
    "shortnames": [
-    "html-aam-1.0"
+    "wot-discovery"
    ]
   }
  },
@@ -1716,16 +1735,6 @@
    ]
   }
  },
- "image-resource": {
-  "link": "https://w3c.github.io/image-resource/",
-  "title": "Image Resource",
-  "w3c": {
-   "serie": "image-resource",
-   "shortnames": [
-    "image-resource"
-   ]
-  }
- },
  "css-display": {
   "link": "https://drafts.csswg.org/css-display/",
   "title": "CSS Display",
@@ -1733,16 +1742,6 @@
    "serie": "css-display",
    "shortnames": [
     "css-display-3"
-   ]
-  }
- },
- "css-scrollbars": {
-  "link": "https://drafts.csswg.org/css-scrollbars/",
-  "title": "CSS Scrollbars",
-  "w3c": {
-   "serie": "css-scrollbars",
-   "shortnames": [
-    "css-scrollbars-1"
    ]
   }
  },
@@ -1763,6 +1762,26 @@
    "serie": "filter-effects",
    "shortnames": [
     "filter-effects-1"
+   ]
+  }
+ },
+ "html-aam": {
+  "link": "https://w3c.github.io/html-aam/",
+  "title": "HTML Accessibility API Mappings",
+  "w3c": {
+   "serie": "html-aam",
+   "shortnames": [
+    "html-aam-1.0"
+   ]
+  }
+ },
+ "image-resource": {
+  "link": "https://w3c.github.io/image-resource/",
+  "title": "Image Resource",
+  "w3c": {
+   "serie": "image-resource",
+   "shortnames": [
+    "image-resource"
    ]
   }
  },
@@ -1788,9 +1807,6 @@
    ]
   }
  },
- "html-sanitizer-api": {
-  "link": "https://wicg.github.io/sanitizer-api/"
- },
  "cookie-store": {
   "link": "https://wicg.github.io/cookie-store/"
  },
@@ -1803,6 +1819,9 @@
     "cssom-1"
    ]
   }
+ },
+ "html-sanitizer-api": {
+  "link": "https://wicg.github.io/sanitizer-api/"
  },
  "web-nfc": {
   "link": "https://w3c.github.io/web-nfc/"
@@ -5852,6 +5871,96 @@
    "serie": "mathml-core",
    "shortnames": [
     "mathml-core"
+   ]
+  }
+ },
+ "localizable-manifests": {
+  "title": "Developing Localizable Manifests",
+  "link": "https://w3c.github.io/localizable-manifests",
+  "w3c": {
+   "serie": "localizable-manifests",
+   "shortnames": [
+    "localizable-manifests"
+   ]
+  }
+ },
+ "virtual-keyboard": {
+  "title": "VirtualKeyboard API",
+  "link": "https://w3c.github.io/virtual-keyboard/",
+  "w3c": {
+   "serie": "virtual-keyboard",
+   "shortnames": [
+    "virtual-keyboard"
+   ]
+  }
+ },
+ "did-rubric": {
+  "title": "DID Method Rubric v1.0",
+  "link": "https://w3c.github.io/did-rubric/",
+  "w3c": {
+   "serie": "did-rubric",
+   "shortnames": [
+    "did-rubric"
+   ]
+  }
+ },
+ "did-imp-guide": {
+  "title": "DID Implementation Guide v1.0",
+  "link": "https://w3c.github.io/did-imp-guide/",
+  "w3c": {
+   "serie": "did-imp-guide",
+   "shortnames": [
+    "did-imp-guide"
+   ]
+  }
+ },
+ "css-nesting": {
+  "title": "CSS Nesting Module",
+  "link": "https://drafts.csswg.org/css-nesting/",
+  "w3c": {
+   "serie": "css-nesting",
+   "shortnames": [
+    "css-nesting-1"
+   ]
+  }
+ },
+ "webxr-depth-sensing": {
+  "title": "WebXR Depth Sensing Module",
+  "link": "https://immersive-web.github.io/depth-sensing/",
+  "w3c": {
+   "serie": "webxr-depth-sensing",
+   "shortnames": [
+    "webxr-depth-sensing-1"
+   ]
+  }
+ },
+ "webxr-dom-overlays": {
+  "title": "WebXR DOM Overlays Module",
+  "link": "https://immersive-web.github.io/dom-overlays/",
+  "w3c": {
+   "serie": "webxr-dom-overlays",
+   "shortnames": [
+    "webxr-dom-overlays-1"
+   ]
+  }
+ },
+ "ift": {
+  "title": "Incremental Font Transfer",
+  "link": "https://w3c.github.io/IFT/Overview.html",
+  "w3c": {
+   "serie": "IFT",
+   "shortnames": [
+    "IFT"
+   ]
+  }
+ },
+ "webxr-lighting-estimation": {
+  "title": "WebXR Lighting Estimation API",
+  "link": "https://immersive-web.github.io/lighting-estimation/",
+  "w3c": {
+   "serie": "webxr-lighting-estimation",
+   "shortnames": [
+    "webxr-lighting-estimation-1"
    ]
   }
  }
