@@ -1174,6 +1174,16 @@
    ]
   }
  },
+ "webidl": {
+  "link": "https://heycam.github.io/webidl/",
+  "title": "WebIDL",
+  "w3c": {
+   "serie": "WebIDL",
+   "shortnames": [
+    "WebIDL-1"
+   ]
+  }
+ },
  "webmention": {
   "link": "https://webmention.net/draft/",
   "title": "Webmention",
@@ -1265,6 +1275,16 @@
    "serie": "accelerometer",
    "shortnames": [
     "accelerometer"
+   ]
+  }
+ },
+ "ambient-light": {
+  "link": "https://w3c.github.io/ambient-light/",
+  "title": "Ambient Light Sensor",
+  "w3c": {
+   "serie": "ambient-light",
+   "shortnames": [
+    "ambient-light"
    ]
   }
  },
@@ -1677,6 +1697,9 @@
  "contact-picker": {
   "link": "https://wicg.github.io/contact-api/spec/"
  },
+ "credentialless": {
+  "link": "https://wicg.github.io/credentiallessness/"
+ },
  "fetch": {
   "link": "https://fetch.spec.whatwg.org/",
   "title": "Fetch",
@@ -2003,10 +2026,6 @@
  },
  "accessibility-metrics-report": {
   "title": "Research Report on Web Accessibility Metrics"
- },
- "ambient-light": {
-  "link": "https://w3c.github.io/ambient-light/",
-  "title": "Ambient Light Sensor"
  },
  "capture-scenarios": {
   "title": "MediaStream Capture Scenarios"
@@ -4303,10 +4322,6 @@
  "widgets-reqs": {
   "title": "Requirement For Standardizing Widgets"
  },
- "webidl": {
-  "link": "https://heycam.github.io/webidl/",
-  "title": "WebIDL"
- },
  "vxmlreqs": {
   "title": "Voice Extensible Markup Language (VoiceXML) 3.0 Requirements"
  },
@@ -5961,6 +5976,16 @@
    "serie": "webxr-lighting-estimation",
    "shortnames": [
     "webxr-lighting-estimation-1"
+   ]
+  }
+ },
+ "webrtc-encoded-transform": {
+  "title": "WebRTC Encoded Transform",
+  "link": "https://w3c.github.io/webrtc-encoded-transform/",
+  "w3c": {
+   "serie": "webrtc-encoded-transform",
+   "shortnames": [
+    "webrtc-encoded-transform"
    ]
   }
  }
