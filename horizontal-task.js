@@ -147,7 +147,9 @@ function removeIssueLabel(repo, issue, labelName) {
 // set a label on an issue (both on the JS object and on GH)
 function setIssueLabel(repo, issue, labelNames) {
   issue.labels = (issue.labels || []).concat(labelNames.map(s => { name: s}));
-  return repo.setIssueLabel(issue, labelNames);
+  return repo.setIssueLabel(issue, labelNames).catch(err => {
+    error(issue, `could not set label "${labelNames}" : ${err} `);
+   });
 }
 
 // does the url matches the html URL of a GH repository
