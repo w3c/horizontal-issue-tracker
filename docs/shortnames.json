@@ -1747,6 +1747,16 @@
    ]
   }
  },
+ "wot-profile": {
+  "link": "http://w3c.github.io/wot-profile/",
+  "title": "Web of Things (WoT) Profile",
+  "w3c": {
+   "serie": "wot-profile",
+   "shortnames": [
+    "wot-profile"
+   ]
+  }
+ },
  "css-contain": {
   "link": "https://drafts.csswg.org/css-contain-1/",
   "title": "CSS Containment",
@@ -5620,10 +5630,6 @@
   "link": "https://w3ctag.github.io/design-principles/",
   "title": "Web Platform Design Principles"
  },
- "wot-profile": {
-  "link": "https://w3c.github.io/wot-profile/",
-  "title": "Web of Things (WoT) Profile"
- },
  "merchant-validation": {
   "link": "https://w3c.github.io/merchant-validation/",
   "title": "MerchantValidationEvent interface"
@@ -5986,6 +5992,16 @@
    "serie": "webrtc-encoded-transform",
    "shortnames": [
     "webrtc-encoded-transform"
+   ]
+  }
+ },
+ "saur": {
+  "title": "Synchronization Accessibility User Requirements",
+  "link": "https://w3c.github.io/apa/saur/",
+  "w3c": {
+   "serie": "saur",
+   "shortnames": [
+    "saur"
    ]
   }
  }
