@@ -37,6 +37,7 @@ let uniqRepositories; // initialized in main() at each loop
 
 function resetRepositories() {
   uniqRepositories = new Map();
+  pre2021issue = 0;
 }
 
 // Instantiate a Repository object given a full name
