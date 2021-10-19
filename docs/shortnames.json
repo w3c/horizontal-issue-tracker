@@ -240,6 +240,17 @@
    ]
   }
  },
+ "css-images": {
+  "link": "https://drafts.csswg.org/css-images-3/",
+  "title": "CSS Images",
+  "w3c": {
+   "serie": "css-images",
+   "shortnames": [
+    "css-images-3",
+    "css-images-4"
+   ]
+  }
+ },
  "css-inline": {
   "link": "https://drafts.csswg.org/css-inline/",
   "title": "CSS Inline Layout",
@@ -596,6 +607,16 @@
    "serie": "html-aria",
    "shortnames": [
     "html-aria"
+   ]
+  }
+ },
+ "IFT": {
+  "link": "https://w3c.github.io/IFT/Overview.html",
+  "title": "Incremental Font Transfer",
+  "w3c": {
+   "serie": "IFT",
+   "shortnames": [
+    "IFT"
    ]
   }
  },
@@ -2210,10 +2231,6 @@
  "ct-guidelines": {
   "title": "Guidelines for Web Content Transformation Proxies",
   "retired": true
- },
- "css-images": {
-  "link": "https://drafts.csswg.org/css-images-3/",
-  "title": "CSS Image"
  },
  "css-transitions": {
   "link": "https://drafts.csswg.org/css-transitions/",
@@ -6002,6 +6019,26 @@
    "serie": "saur",
    "shortnames": [
     "saur"
+   ]
+  }
+ },
+ "naur": {
+  "title": "Natural Language Interface Accessibility User Requirements",
+  "link": "https://w3c.github.io/apa/naur/",
+  "w3c": {
+   "serie": "naur",
+   "shortnames": [
+    "naur"
+   ]
+  }
+ },
+ "remote-meetings": {
+  "title": "Accessibility of Remote Meetings",
+  "link": "https://w3c.github.io/apa/remote-meetings",
+  "w3c": {
+   "serie": "remote-meetings",
+   "shortnames": [
+    "remote-meetings"
    ]
   }
  }
