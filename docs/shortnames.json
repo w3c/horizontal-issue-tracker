@@ -610,7 +610,7 @@
    ]
   }
  },
- "IFT": {
+ "ift": {
   "link": "https://w3c.github.io/IFT/Overview.html",
   "title": "Incremental Font Transfer",
   "w3c": {
@@ -1887,6 +1887,16 @@
    "serie": "webxr-gamepads-module",
    "shortnames": [
     "webxr-gamepads-module-1"
+   ]
+  }
+ },
+ "IFT": {
+  "link": "https://w3c.github.io/IFT/Overview.html",
+  "title": "Incremental Font Transfer",
+  "w3c": {
+   "serie": "IFT",
+   "shortnames": [
+    "IFT"
    ]
   }
  },
@@ -5979,16 +5989,6 @@
    "serie": "webxr-dom-overlays",
    "shortnames": [
     "webxr-dom-overlays-1"
-   ]
-  }
- },
- "ift": {
-  "title": "Incremental Font Transfer",
-  "link": "https://w3c.github.io/IFT/Overview.html",
-  "w3c": {
-   "serie": "IFT",
-   "shortnames": [
-    "IFT"
    ]
   }
  },
