@@ -1890,16 +1890,6 @@
    ]
   }
  },
- "IFT": {
-  "link": "https://w3c.github.io/IFT/Overview.html",
-  "title": "Incremental Font Transfer",
-  "w3c": {
-   "serie": "IFT",
-   "shortnames": [
-    "IFT"
-   ]
-  }
- },
  "miniapp-lifecycle": {
   "link": "https://w3c.github.io/miniapp-lifecycle/",
   "title": "MiniApp Lifecycle"
