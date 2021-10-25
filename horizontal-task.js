@@ -463,7 +463,7 @@ async function createHRIssue(issue, hlabels) {
           shortlabels.forEach(clabel => {
             const f = repo_labels.find(l => l.name === clabel);
             if (!f) {
-              request_labels.push(horizontal_repo.setLabel({ name: clabel, color: "#6bc5c6", description: "missing link"})
+              request_labels.push(horizontal_repo.setLabel({ name: clabel, color: "6bc5c6", description: "missing link"})
                 .then(() =>
                   monitor.log(`${horizontal_repo.full_name} got the new label ${clabel}. Update the link?`))
                 .catch(err => {
