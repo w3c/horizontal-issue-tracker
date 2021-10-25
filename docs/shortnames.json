@@ -80,6 +80,9 @@
    ]
   }
  },
+ "canvas-formatted-text": {
+  "link": "https://github.com/WICG/canvas-formatted-text"
+ },
  "coga-usable": {
   "link": "https://w3c.github.io/coga/content-usable/",
   "title": "Making content usable for people with cognitive and learning disabilities",
@@ -422,6 +425,17 @@
    "shortnames": [
     "css-ui-3",
     "css-ui-4"
+   ]
+  }
+ },
+ "css-values": {
+  "link": "https://drafts.csswg.org/css-values/",
+  "title": "CSS Values and Units",
+  "w3c": {
+   "serie": "css-values",
+   "shortnames": [
+    "css-values-3",
+    "css-values-4"
    ]
   }
  },
@@ -818,16 +832,15 @@
    ]
   }
  },
- "pronunciation-gap-analysis": {
+ "pronunciation-gap-analysis-and-use-cases": {
   "link": "https://w3c.github.io/pronunciation/gap-analysis",
-  "title": "Pronunciation Gap Analysis",
+  "title": "Pronunciation Gap Analysis and Use Cases",
   "w3c": {
-   "serie": "pronunciation-gap-analysis",
+   "serie": "pronunciation-gap-analysis-and-use-cases",
    "shortnames": [
-    "pronunciation-gap-analysis"
+    "pronunciation-gap-analysis-and-use-cases"
    ]
-  },
-  "retired": true
+  }
  },
  "pronunciation-use-cases": {
   "link": "https://w3c.github.io/pronunciation/use-cases",
@@ -1335,17 +1348,6 @@
    "serie": "css-color-adjust",
    "shortnames": [
     "css-color-adjust-1"
-   ]
-  }
- },
- "css-values": {
-  "link": "https://drafts.csswg.org/css-values/",
-  "title": "CSS Values and Units",
-  "w3c": {
-   "serie": "css-values",
-   "shortnames": [
-    "css-values-3",
-    "css-values-4"
    ]
   }
  },
@@ -1889,6 +1891,17 @@
     "webxr-gamepads-module-1"
    ]
   }
+ },
+ "pronunciation-gap-analysis": {
+  "link": "https://w3c.github.io/pronunciation/gap-analysis",
+  "title": "Pronunciation Gap Analysis",
+  "w3c": {
+   "serie": "pronunciation-gap-analysis",
+   "shortnames": [
+    "pronunciation-gap-analysis"
+   ]
+  },
+  "retired": true
  },
  "miniapp-lifecycle": {
   "link": "https://w3c.github.io/miniapp-lifecycle/",
@@ -3709,10 +3722,6 @@
  "pronunciation-explainer": {
   "link": "https://w3c.github.io/pronunciation/explainer",
   "title": "Explainer: Improving Spoken Presentation on the Web"
- },
- "pronunciation-gap-analysis-and-use-cases": {
-  "link": "https://w3c.github.io/pronunciation/gap-analysis_and_use-case",
-  "title": "Pronunciation Gap Analysis and Use Cases"
  },
  "raur": {
   "link": "https://w3c.github.io/apa/raur/",
