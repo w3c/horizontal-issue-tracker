@@ -1278,6 +1278,17 @@
    ]
   }
  },
+ "wot-architecture": {
+  "link": "https://w3c.github.io/wot-architecture/",
+  "title": "Web of Things (WoT) Architecture",
+  "w3c": {
+   "serie": "wot-architecture",
+   "shortnames": [
+    "wot-architecture10",
+    "wot-architecture11"
+   ]
+  }
+ },
  "wot-thing-description": {
   "link": "https://w3c.github.io/wot-thing-description/",
   "title": "Web of Things (WoT) Thing Description",
@@ -1693,17 +1704,6 @@
    "serie": "webxrlayers",
    "shortnames": [
     "webxrlayers-1"
-   ]
-  }
- },
- "wot-architecture": {
-  "link": "https://w3c.github.io/wot-architecture/",
-  "title": "Web of Things (WoT) Architecture",
-  "w3c": {
-   "serie": "wot-architecture",
-   "shortnames": [
-    "wot-architecture10",
-    "wot-architecture11"
    ]
   }
  },
