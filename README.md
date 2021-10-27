@@ -15,3 +15,7 @@ Note that, if you set a new one, [validate-repos](https://w3c.github.io/validate
 # node horizontal-task.js
 
 This will create and fix horizontal issues and specification issues as needed
+
+# Dependencies
+
+This tool uses a [GitHub cache](https://github.com/plehegar/github-cache/) to fetch GH resources (due to quota limitations on the GitHub API).
