@@ -8,7 +8,7 @@ The official definition for [horizontal labels](https://w3c.github.io/hr-labels.
 
 This will check and set horizontal labels and teams appropriately for GitHub repositories (or a new one if passed as arguments).
 
-If no arguments, it will fetch the list of repositories to check/set from [validate-repos](https://w3c.github.io/validate-repos/hr-repos.json).
+If no arguments, it will fetch the list of repositories to check/set from [validate-repos](https://w3c.github.io/validate-repos/hr-repos.json), as well as a few selected Community Groups.
 
 Note that, if you set a new one, [validate-repos](https://w3c.github.io/validate-repos/hr-repos.json) can take up to 24 hours to be updated.
 
