@@ -1,4 +1,7 @@
 {
+ "a11y-discov-vocab": {
+  "link": "https://w3c.github.io/a11y-discov-vocab/"
+ },
  "accname": {
   "link": "https://w3c.github.io/accname/",
   "title": "Accessible Name and Description Computation",
@@ -647,7 +650,7 @@
   }
  },
  "input-events": {
-  "link": "https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html",
+  "link": "https://w3c.github.io/input-events/",
   "title": "Input Events",
   "w3c": {
    "serie": "input-events",
@@ -1279,7 +1282,7 @@
   }
  },
  "wot-architecture": {
-  "link": "https://w3c.github.io/wot-architecture/",
+  "link": "http://w3c.github.io/wot-architecture/",
   "title": "Web of Things (WoT) Architecture",
   "w3c": {
    "serie": "wot-architecture",
@@ -6038,6 +6041,26 @@
    "serie": "remote-meetings",
    "shortnames": [
     "remote-meetings"
+   ]
+  }
+ },
+ "epub-ssv": {
+  "title": "EPUB 3 Structural Semantics Vocabulary 1.1",
+  "link": "https://w3c.github.io/epub-specs/epub33/ssv/",
+  "w3c": {
+   "serie": "epub-ssv",
+   "shortnames": [
+    "epub-ssv-11"
+   ]
+  }
+ },
+ "imsc-hrm": {
+  "title": "IMSC Hypothetical Render Model",
+  "link": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html",
+  "w3c": {
+   "serie": "imsc-hrm",
+   "shortnames": [
+    "imsc-hrm"
    ]
   }
  }
