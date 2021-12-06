@@ -748,7 +748,13 @@
  },
  "miniapp-packaging": {
   "link": "https://w3c.github.io/miniapp-packaging/",
-  "title": "MiniApp Packaging"
+  "title": "MiniApp Packaging",
+  "w3c": {
+   "serie": "miniapp-packaging",
+   "shortnames": [
+    "miniapp-packaging"
+   ]
+  }
  },
  "mst-content-hint": {
   "link": "https://w3c.github.io/mst-content-hint/",
@@ -1061,7 +1067,7 @@
    "shortnames": [
     "user-timing-1",
     "user-timing-2",
-    "user-timing-3"
+    "user-timing"
    ]
   }
  },
