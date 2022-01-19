@@ -146,7 +146,8 @@
    "shortnames": [
     "css-cascade-3",
     "css-cascade-4",
-    "css-cascade-5"
+    "css-cascade-5",
+    "css-cascade-6"
    ]
   }
  },
@@ -169,7 +170,8 @@
    "serie": "css-conditional",
    "shortnames": [
     "css-conditional-3",
-    "css-conditional-4"
+    "css-conditional-4",
+    "css-conditional-5"
    ]
   }
  },
@@ -476,7 +478,8 @@
     "CSS22",
     "css-2017",
     "css-2018",
-    "css-2020"
+    "css-2020",
+    "css-2021"
    ]
   }
  },
@@ -634,6 +637,16 @@
    "serie": "IFT",
    "shortnames": [
     "IFT"
+   ]
+  }
+ },
+ "imsc-hrm": {
+  "link": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html",
+  "title": "IMSC Hypothetical Render Model",
+  "w3c": {
+   "serie": "imsc-hrm",
+   "shortnames": [
+    "imsc-hrm"
    ]
   }
  },
@@ -828,6 +841,16 @@
    "serie": "personalization-semantics-content",
    "shortnames": [
     "personalization-semantics-content-1.0"
+   ]
+  }
+ },
+ "png": {
+  "link": "https://w3c.github.io/PNG-spec/",
+  "title": "Portable Network Graphics (PNG)",
+  "w3c": {
+   "serie": "PNG",
+   "shortnames": [
+    "PNG"
    ]
   }
  },
@@ -1288,7 +1311,7 @@
   }
  },
  "wot-architecture": {
-  "link": "http://w3c.github.io/wot-architecture/",
+  "link": "https://w3c.github.io/wot-architecture/",
   "title": "Web of Things (WoT) Architecture",
   "w3c": {
    "serie": "wot-architecture",
@@ -1796,7 +1819,8 @@
    "serie": "css-contain",
    "shortnames": [
     "css-contain-1",
-    "css-contain-2"
+    "css-contain-2",
+    "css-contain-3"
    ]
   }
  },
@@ -1992,10 +2016,12 @@
   "retired": true
  },
  "cdrreqs": {
-  "title": "Compound Document by Reference Use Cases and Requirements"
+  "title": "Compound Document by Reference Use Cases and Requirements",
+  "retired": true
  },
  "cdfreqs": {
-  "title": "Compound Document Use Cases and Requirements"
+  "title": "Compound Document Use Cases and Requirements",
+  "retired": true
  },
  "cdr": {
   "title": "Compound Document by Reference Framework",
@@ -3258,9 +3284,6 @@
  "owl-xmlsyntax": {
   "title": "OWL Web Ontology Language XML Presentation Syntax"
  },
- "png": {
-  "title": "Portable Network Graphics (PNG)"
- },
  "owl-parsing": {
   "title": "OWL Web Ontology Language Parsing OWL in RDF/XML"
  },
@@ -4034,7 +4057,8 @@
   "title": "Synchronized Multimedia Modules based upon SMIL"
  },
  "tvweb-uri-requirements": {
-  "title": "TV Broadcast URI Schemes Requirements"
+  "title": "TV Broadcast URI Schemes Requirements",
+  "retired": true
  },
  "uclp": {
   "title": "Universal Commerce Language and Protocol (UCLP)"
@@ -5836,7 +5860,8 @@
     "CSS22",
     "css-2017",
     "css-2018",
-    "css-2020"
+    "css-2020",
+    "css-2021"
    ]
   }
  },
@@ -6060,13 +6085,124 @@
    ]
   }
  },
- "imsc-hrm": {
-  "title": "IMSC Hypothetical Render Model",
-  "link": "https://w3c.github.io/imsc-hrm/spec/imsc-hrm.html",
+ "wcag-explainer": {
+  "title": "Explainer for W3C Accessibility Guidelines (WCAG)",
+  "link": "https://w3c.github.io/silver/explainer/",
   "w3c": {
-   "serie": "imsc-hrm",
+   "serie": "wcag-explainer",
    "shortnames": [
-    "imsc-hrm"
+    "wcag-3.0-explainer"
+   ]
+  }
+ },
+ "webcodecs-aac-codec-registration": {
+  "title": "AAC WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/aac_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-aac-codec-registration",
+   "shortnames": [
+    "webcodecs-aac-codec-registration"
+   ]
+  }
+ },
+ "webcodecs-alaw-codec-registration": {
+  "title": "A-law PCM WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/alaw_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-alaw-codec-registration",
+   "shortnames": [
+    "webcodecs-alaw-codec-registration"
+   ]
+  }
+ },
+ "webcodecs-av-codec-registration": {
+  "title": "AV1 WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-av-codec-registration",
+   "shortnames": [
+    "webcodecs-av1-codec-registration"
+   ]
+  }
+ },
+ "webcodecs-flac-codec-registration": {
+  "title": "FLAC WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/flac_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-flac-codec-registration",
+   "shortnames": [
+    "webcodecs-flac-codec-registration"
+   ]
+  }
+ },
+ "webcodecs-mp-codec-registration": {
+  "title": "MP3 WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/mp3_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-mp-codec-registration",
+   "shortnames": [
+    "webcodecs-mp3-codec-registration"
+   ]
+  }
+ },
+ "webcodecs-opus-codec-registration": {
+  "title": "Opus WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/opus_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-opus-codec-registration",
+   "shortnames": [
+    "webcodecs-opus-codec-registration"
+   ]
+  }
+ },
+ "webcodecs-pcm-codec-registration": {
+  "title": "Linear PCM WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/pcm_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-pcm-codec-registration",
+   "shortnames": [
+    "webcodecs-pcm-codec-registration"
+   ]
+  }
+ },
+ "webcodecs-ulaw-codec-registration": {
+  "title": "u-law PCM WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/ulaw_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-ulaw-codec-registration",
+   "shortnames": [
+    "webcodecs-ulaw-codec-registration"
+   ]
+  }
+ },
+ "webcodecs-vorbis-codec-registration": {
+  "title": "Vorbis WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/vorbis_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-vorbis-codec-registration",
+   "shortnames": [
+    "webcodecs-vorbis-codec-registration"
+   ]
+  }
+ },
+ "webcodecs-vp-codec-registration": {
+  "title": "VP9 WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/vp9_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-vp-codec-registration",
+   "shortnames": [
+    "webcodecs-vp9-codec-registration",
+    "webcodecs-vp8-codec-registration"
+   ]
+  }
+ },
+ "edit-context": {
+  "title": "EditContext API",
+  "link": "https://w3c.github.io/edit-context/",
+  "w3c": {
+   "serie": "edit-context",
+   "shortnames": [
+    "edit-context"
    ]
   }
  }
