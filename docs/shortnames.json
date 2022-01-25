@@ -1407,6 +1407,16 @@
    ]
   }
  },
+ "epub-rs": {
+  "link": "https://w3c.github.io/epub-specs/epub33/rs/",
+  "title": "EPUB Reading Systems",
+  "w3c": {
+   "serie": "epub-rs",
+   "shortnames": [
+    "epub-rs-33"
+   ]
+  }
+ },
  "file-system-access": {
   "link": "https://wicg.github.io/file-system-access/"
  },
@@ -5693,10 +5703,6 @@
   "link": "https://w3c.github.io/merchant-validation/",
   "title": "MerchantValidationEvent interface"
  },
- "epub-rs": {
-  "link": "https://w3c.github.io/epub-specs/epub33/rs/",
-  "title": "EPUB Reading Systems"
- },
  "epub-overview": {
   "link": "https://w3c.github.io/epub-specs/epub33/overview/",
   "title": "EPUB Overview"
@@ -6203,6 +6209,16 @@
    "serie": "edit-context",
    "shortnames": [
     "edit-context"
+   ]
+  }
+ },
+ "rangerequest": {
+  "title": "Incremental Font Transfer via Range Request",
+  "link": "https://w3c.github.io/IFT/RangeRequest.html",
+  "w3c": {
+   "serie": "RangeRequest",
+   "shortnames": [
+    "RangeRequest"
    ]
   }
  }
