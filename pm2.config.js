@@ -12,7 +12,7 @@ module.exports = {
       },
       error_file : "/var/log/nodejs/horizontal-issue-tracker.err",
       out_file : "/var/log/nodejs/horizontal-issue-tracker.log",
-      "node_args": "--max_old_space_size=800"
+      "node_args": "--max_old_space_size=1000"
     }
   ]
 };
