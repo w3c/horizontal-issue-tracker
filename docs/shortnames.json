@@ -1685,6 +1685,9 @@
    ]
   }
  },
+ "WebHID": {
+  "link": "https://wicg.github.io/webhid/"
+ },
  "webID": {
   "link": "https://wicg.github.io/WebID/README.html"
  },
