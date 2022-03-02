@@ -2,7 +2,9 @@
 const nodemailer = require('nodemailer');
 
 const TOOL_NAME = "horizontal-issue-tracker";
+const FOOTER = "\n\nProduced by https://github.com/w3c/horizontal-issue-tracker";
 
+const exporter = {};
 
 let transporter = nodemailer.createTransport({
     sendmail: true,
@@ -23,13 +25,13 @@ if (process.env.NODE_ENV == 'production') {
 function email(logs) {
   const reducer = (accumulator, currentValue) => accumulator + "\n" + currentValue;
   let mailOptions = {
-    from: `${TOOLNAME} <${SENDER_EMAIL}>`,
+    from: `${TOOL_NAME} <${SENDER_EMAIL}>`,
     to: MAILING_LIST,
-    subject: `[tool] ${TOOLNAME}: logs`,
-    text: logs.reduce(reducer) + "\n\nProduced by https://github.com/w3c/horizontal-issue-tracker"
+    subject: `[tool] ${TOOL_NAME}: logs`,
+    text: logs.reduce(reducer) + FOOTER
   };
 
-  transporter.sendMail(mailOptions, (error, info) => {
+  return transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error(error);
       return sendError(error); // notify plh
@@ -38,14 +40,15 @@ function email(logs) {
   });
 
 }
+exporter.sendLogs = email;
 
 function sendError(error) {
   // if things go wrong, please call the maintainer
   let mailOptions = {
-    from: `${TOOLNAME} <${SENDER_EMAIL}>`,
+    from: `${TOOL_NAME} <${SENDER_EMAIL}>`,
     to: "plh@w3.org",
-    subject: `[tool] ${TOOLNAME}: ${error} (error)`,
-    text: "You might want to look at this JSON object:\n" + JSON.stringify(error, null, " ")
+    subject: `[tool] ${TOOL_NAME}: ${error} (error)`,
+    text: "You might want to look at this JSON object:\n" + JSON.stringify(error, null, " ") + FOOTER
   };
 
   return transporter.sendMail(mailOptions, (error, info) => {
@@ -57,4 +60,24 @@ function sendError(error) {
 
 }
 
-module.exports = email;
+function issueNeedsCare(subject, msg) {
+  // if things go wrong, please call the maintainer
+  let mailOptions = {
+    from: `${TOOL_NAME} <${SENDER_EMAIL}>`,
+    to: "plh@w3.org",
+    subject: `[tool] ${TOOL_NAME}: ${subject} (needs-care)`,
+    text: msg + FOOTER
+  };
+
+  return transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error(error);
+      return sendError(error); // notify plh
+    }
+    console.log('Message sent: %s', info.messageId);
+  });
+
+}
+exporter.issueNeedsCare = issueNeedsCare;
+
+module.exports = exporter;

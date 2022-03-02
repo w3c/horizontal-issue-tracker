@@ -447,7 +447,9 @@ async function createHRIssue(issue, hlabels) {
         labels.push("spec-type-issue");
       }
     }
-    if (shortlabels) labels = labels.concat(shortlabels);
+    if (shortlabels) {
+      labels = labels.concat(shortlabels);
+    }
 
     const horizontal_repo = label.gh;
     log(issue, `creating a new horizontal issue ${horizontal_repo.full_name} ${title} ${labels.join(',')}`);
@@ -481,6 +483,11 @@ async function createHRIssue(issue, hlabels) {
       .then(() => label.gh.createIssue(title, body, labels))
       .then(new_issue => {
         log(new_issue, `is a new horizontal issue for ${issue.html_url}`);
+        if (!shortlabels) {
+          email.issueNeedsCare(`no spec label for ${new_issue.html_url}`,
+            "An issue needs your attention.\n\n"
+            + `No specification label was added to ${new_issue.html_url}`);
+        }
       }).catch(err => {
         console.error(err);
         error(issue, `Something went wrong when creating a new issue in ${label.gh.full_name}: ${err.status} ${err}`);
@@ -664,12 +671,12 @@ function loop() {
 
   main().then(function () {
     if (!config.debug)
-      email(monitor.get_logs());
+      email.sendLogs(monitor.get_logs());
   }).catch(function (err) {
     console.error(err);
     if (!config.debug) {
       monitor.error(`Something went wrong: ${err}`);
-      email(monitor.get_logs());
+      email.sendLogs(monitor.get_logs());
     }
   });
 
