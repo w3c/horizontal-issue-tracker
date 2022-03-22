@@ -750,7 +750,13 @@
  },
  "miniapp-addressing": {
   "link": "https://w3c.github.io/miniapp-addressing/",
-  "title": "MiniApp URI Scheme"
+  "title": "MiniApp Addressing",
+  "w3c": {
+   "serie": "miniapp-addressing",
+   "shortnames": [
+    "miniapp-addressing"
+   ]
+  }
  },
  "miniapp-manifest": {
   "link": "https://w3c.github.io/miniapp-manifest/",
@@ -1324,6 +1330,16 @@
    ]
   }
  },
+ "wot-discovery": {
+  "link": "https://www.w3.org/TR/wot-discovery/",
+  "title": "Web of Things (WoT) Discovery",
+  "w3c": {
+   "serie": "wot-discovery",
+   "shortnames": [
+    "wot-discovery"
+   ]
+  }
+ },
  "wot-thing-description": {
   "link": "https://w3c.github.io/wot-thing-description/",
   "title": "Web of Things (WoT) Thing Description",
@@ -1808,16 +1824,6 @@
    ]
   }
  },
- "wot-discovery": {
-  "link": "https://w3c.github.io/wot-discovery/",
-  "title": "Web of Things (WoT) Discovery",
-  "w3c": {
-   "serie": "wot-discovery",
-   "shortnames": [
-    "wot-discovery"
-   ]
-  }
- },
  "wot-profile": {
   "link": "http://w3c.github.io/wot-profile/",
   "title": "Web of Things (WoT) Profile",
@@ -1911,6 +1917,9 @@
     "picture-in-picture"
    ]
   }
+ },
+ "svg-native": {
+  "link": "https://svgwg.org/specs/svg-native/"
  },
  "cookie-store": {
   "link": "https://wicg.github.io/cookie-store/"
@@ -6236,6 +6245,46 @@
    "serie": "mediacapture-transform",
    "shortnames": [
     "mediacapture-transform"
+   ]
+  }
+ },
+ "vsso": {
+  "title": "VSSo: Vehicle Signal Specification Ontology",
+  "link": "https://w3c.github.io/vsso/",
+  "w3c": {
+   "serie": "vsso",
+   "shortnames": [
+    "vsso"
+   ]
+  }
+ },
+ "vsso-core": {
+  "title": "VSSo Core: Vehicle Signal Specification Core Ontology",
+  "link": "https://w3c.github.io/vsso/",
+  "w3c": {
+   "serie": "vsso-core",
+   "shortnames": [
+    "vsso-core"
+   ]
+  }
+ },
+ "miniapp-widget-req": {
+  "title": "MiniApp Widget Requirements",
+  "link": "https://w3c.github.io/miniapp-widget/req/",
+  "w3c": {
+   "serie": "miniapp-widget-req",
+   "shortnames": [
+    "miniapp-widget-req"
+   ]
+  }
+ },
+ "autoplay-detection": {
+  "title": "Autoplay Policy Detection",
+  "link": "https://w3c.github.io/autoplay/",
+  "w3c": {
+   "serie": "autoplay-detection",
+   "shortnames": [
+    "autoplay-detection"
    ]
   }
  }
