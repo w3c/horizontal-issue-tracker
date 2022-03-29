@@ -1249,6 +1249,16 @@
    ]
   }
  },
+ "webgpu": {
+  "link": "missing link",
+  "title": "WebGPU",
+  "w3c": {
+   "serie": "webgpu",
+   "shortnames": [
+    "webgpu"
+   ]
+  }
+ },
  "webidl": {
   "link": "https://heycam.github.io/webidl/",
   "title": "WebIDL",
@@ -1688,16 +1698,6 @@
    "serie": "webcodecs",
    "shortnames": [
     "webcodecs"
-   ]
-  }
- },
- "webgpu": {
-  "link": "https://gpuweb.github.io/gpuweb/",
-  "title": "WebGPU",
-  "w3c": {
-   "serie": "webgpu",
-   "shortnames": [
-    "webgpu"
    ]
   }
  },
@@ -4319,7 +4319,8 @@
  },
  "vehicle-information-service": {
   "link": "https://w3c.github.io/automotive/vehicle_data/vehicle_information_service.html",
-  "title": "Vehicle Information Service"
+  "title": "Vehicle Information Service",
+  "retired": true
  },
  "typography": {
   "link": "https://w3c.github.io/typography/",
@@ -6285,6 +6286,26 @@
    "serie": "autoplay-detection",
    "shortnames": [
     "autoplay-detection"
+   ]
+  }
+ },
+ "arab-ks-gap": {
+  "title": "Perso-arabic Kashmiri Gap Analysis",
+  "link": "https://w3c.github.io/alreq/gap-analysis/arab-ks-gap.html",
+  "w3c": {
+   "serie": "arab-ks-gap",
+   "shortnames": [
+    "arab-ks-gap"
+   ]
+  }
+ },
+ "arab-ug-gap": {
+  "title": "Uighur Gap Analysis",
+  "link": "https://w3c.github.io/alreq/gap-analysis/arab-ug-gap.html",
+  "w3c": {
+   "serie": "arab-ug-gap",
+   "shortnames": [
+    "arab-ug-gap"
    ]
   }
  }
