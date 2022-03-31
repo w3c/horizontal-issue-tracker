@@ -3741,7 +3741,8 @@
  },
  "preload": {
   "link": "https://w3c.github.io/preload/",
-  "title": "Preload"
+  "title": "Preload",
+  "retired": true
  },
  "requestidlecallback": {
   "link": "https://w3c.github.io/requestidlecallback/",
