@@ -1250,7 +1250,7 @@
   }
  },
  "webgpu": {
-  "link": "missing link",
+  "link": "https://gpuweb.github.io/gpuweb/",
   "title": "WebGPU",
   "w3c": {
    "serie": "webgpu",
@@ -1326,6 +1326,16 @@
    "serie": "webxr",
    "shortnames": [
     "webxr"
+   ]
+  }
+ },
+ "wgsl": {
+  "link": "https://gpuweb.github.io/gpuweb/wgsl/",
+  "title": "WebGPU Shading Language",
+  "w3c": {
+   "serie": "WGSL",
+   "shortnames": [
+    "WGSL"
    ]
   }
  },
@@ -1902,7 +1912,7 @@
   "w3c": {
    "serie": "mediaqueries",
    "shortnames": [
-    "css3-mediaqueries",
+    "mediaqueries-3",
     "mediaqueries-4",
     "mediaqueries-5"
    ]
@@ -5842,16 +5852,6 @@
    ]
   }
  },
- "wgsl": {
-  "title": "WebGPU Shading Language",
-  "link": "https://gpuweb.github.io/gpuweb/wgsl/",
-  "w3c": {
-   "serie": "WGSL",
-   "shortnames": [
-    "WGSL"
-   ]
-  }
- },
  "spoken-html": {
   "title": "Spoken Presentation in HTML",
   "link": "https://w3c.github.io/pronunciation/technical-approach/",
@@ -6307,6 +6307,16 @@
    "serie": "arab-ug-gap",
    "shortnames": [
     "arab-ug-gap"
+   ]
+  }
+ },
+ "mediacapture-region": {
+  "title": "Region Capture",
+  "link": "https://w3c.github.io/mediacapture-region/",
+  "w3c": {
+   "serie": "mediacapture-region",
+   "shortnames": [
+    "mediacapture-region"
    ]
   }
  }
