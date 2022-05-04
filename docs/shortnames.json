@@ -547,8 +547,15 @@
    ]
   }
  },
- "EditContext": {
-  "link": "https://w3c.github.io/editing/docs/EditContext/index.html"
+ "edit-context": {
+  "link": "https://w3c.github.io/edit-context/",
+  "title": "EditContext API",
+  "w3c": {
+   "serie": "edit-context",
+   "shortnames": [
+    "edit-context"
+   ]
+  }
  },
  "encoding": {
   "link": "https://encoding.spec.whatwg.org/",
@@ -1802,6 +1809,9 @@
   "title": "Fetch",
   "w3c": {}
  },
+ "mediacapture-viewport": {
+  "link": "https://w3c.github.io/mediacapture-viewport/"
+ },
  "openscreenprotocol": {
   "link": "https://w3c.github.io/openscreenprotocol/",
   "title": "Open Screen Protocol",
@@ -1821,6 +1831,17 @@
     "pointerevents",
     "pointerevents2",
     "pointerevents3"
+   ]
+  }
+ },
+ "wasm-core": {
+  "link": "https://webassembly.github.io/spec/core/bikeshed/",
+  "title": "WebAssembly Core",
+  "w3c": {
+   "serie": "wasm-core",
+   "shortnames": [
+    "wasm-core-1",
+    "wasm-core-2"
    ]
   }
  },
@@ -1906,6 +1927,17 @@
    ]
   }
  },
+ "media-source": {
+  "link": "https://w3c.github.io/media-source/",
+  "title": "Media Source Extensions™",
+  "w3c": {
+   "serie": "media-source",
+   "shortnames": [
+    "media-source-1",
+    "media-source-2"
+   ]
+  }
+ },
  "mediaqueries": {
   "link": "https://drafts.csswg.org/mediaqueries/",
   "title": "Media Queries",
@@ -1959,6 +1991,9 @@
     "webxr-gamepads-module-1"
    ]
   }
+ },
+ "EditContext": {
+  "link": "https://w3c.github.io/editing/docs/EditContext/index.html"
  },
  "pronunciation-gap-analysis": {
   "link": "https://w3c.github.io/pronunciation/gap-analysis",
@@ -3119,10 +3154,6 @@
  "ldp-ucr": {
   "link": "https://www.w3.org/2012/ldp/hg/ldp-ucr.html",
   "title": "Linked Data Platform Use Cases and Requirements"
- },
- "media-source": {
-  "link": "https://w3c.github.io/media-source/",
-  "title": "Media Source Extensions™"
  },
  "messaging": {
   "link": "https://www.w3.org/2012/sysapps/messaging/",
@@ -4552,10 +4583,6 @@
  "webpayments-overview": {
   "link": "https://w3c.github.io/webpayments-overview/",
   "title": "Web Payments Overview"
- },
- "wasm-core": {
-  "link": "https://webassembly.github.io/spec/core/bikeshed/",
-  "title": "WebAssembly Core"
  },
  "wasm-js-api": {
   "link": "https://webassembly.github.io/spec/js-api/",
@@ -6220,16 +6247,6 @@
    ]
   }
  },
- "edit-context": {
-  "title": "EditContext API",
-  "link": "https://w3c.github.io/edit-context/",
-  "w3c": {
-   "serie": "edit-context",
-   "shortnames": [
-    "edit-context"
-   ]
-  }
- },
  "rangerequest": {
   "title": "Incremental Font Transfer via Range Request",
   "link": "https://w3c.github.io/IFT/RangeRequest.html",
@@ -6317,6 +6334,15 @@
    "serie": "mediacapture-region",
    "shortnames": [
     "mediacapture-region"
+   ]
+  }
+ },
+ "font-rationale": {
+  "title": "Fonts for the Web: Rationale, 1996",
+  "w3c": {
+   "serie": "font-rationale",
+   "shortnames": [
+    "font-rationale"
    ]
   }
  }
