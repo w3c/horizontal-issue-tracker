@@ -765,6 +765,16 @@
    ]
   }
  },
+ "miniapp-lifecycle": {
+  "link": "https://w3c.github.io/miniapp-lifecycle/",
+  "title": "MiniApp Lifecycle",
+  "w3c": {
+   "serie": "miniapp-lifecycle",
+   "shortnames": [
+    "miniapp-lifecycle"
+   ]
+  }
+ },
  "miniapp-manifest": {
   "link": "https://w3c.github.io/miniapp-manifest/",
   "title": "MiniApp Manifest",
@@ -2005,10 +2015,6 @@
    ]
   },
   "retired": true
- },
- "miniapp-lifecycle": {
-  "link": "https://w3c.github.io/miniapp-lifecycle/",
-  "title": "MiniApp Lifecycle"
  },
  "as": {
   "title": "Action Sheets: A Modular Way of Defining Behavior for XML and HTML"
@@ -6343,6 +6349,46 @@
    "serie": "font-rationale",
    "shortnames": [
     "font-rationale"
+   ]
+  }
+ },
+ "capture-handle-identity": {
+  "title": "Capture Handle - Bootstrapping Collaboration when Screensharing",
+  "link": "https://w3c.github.io/mediacapture-handle/identity/",
+  "w3c": {
+   "serie": "capture-handle-identity",
+   "shortnames": [
+    "capture-handle-identity"
+   ]
+  }
+ },
+ "dapt-reqs": {
+  "title": "DAPT Requirements",
+  "link": "https://w3c.github.io/dapt-reqs/",
+  "w3c": {
+   "serie": "dapt-reqs",
+   "shortnames": [
+    "dapt-reqs"
+   ]
+  }
+ },
+ "privacy-principles": {
+  "title": "Privacy Principles",
+  "link": "https://w3ctag.github.io/privacy-principles/",
+  "w3c": {
+   "serie": "privacy-principles",
+   "shortnames": [
+    "privacy-principles"
+   ]
+  }
+ },
+ "ethical-web-principles": {
+  "title": "W3C TAG Ethical Web Principles",
+  "link": "https://w3ctag.github.io/ethical-web-principles/",
+  "w3c": {
+   "serie": "ethical-web-principles",
+   "shortnames": [
+    "ethical-web-principles"
    ]
   }
  }
