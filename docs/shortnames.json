@@ -33,6 +33,9 @@
    ]
   }
  },
+ "adapt": {
+  "link": "https://w3c.github.io/adapt/"
+ },
  "annotation-model": {
   "link": "https://w3c.github.io/web-annotation/",
   "title": "Web Annotation Data Model",
@@ -1296,6 +1299,16 @@
    ]
   }
  },
+ "webnn": {
+  "link": "https://www.w3.org/TR/webnn/",
+  "title": "Web Neural Network API",
+  "w3c": {
+   "serie": "webnn",
+   "shortnames": [
+    "webnn"
+   ]
+  }
+ },
  "webrtc": {
   "link": "https://w3c.github.io/webrtc-pc/",
   "title": "WebRTC: Real-Time Communication Between Browsers",
@@ -1346,6 +1359,26 @@
    ]
   }
  },
+ "webxr-ar-module": {
+  "link": "https://immersive-web.github.io/webxr-ar-module/",
+  "title": "WebXR Augmented Reality",
+  "w3c": {
+   "serie": "webxr-ar-module",
+   "shortnames": [
+    "webxr-ar-module-1"
+   ]
+  }
+ },
+ "webxr-gamepads-module": {
+  "link": "missing link",
+  "title": "WebXR Gamepads",
+  "w3c": {
+   "serie": "webxr-gamepads-module",
+   "shortnames": [
+    "webxr-gamepads-module-1"
+   ]
+  }
+ },
  "wgsl": {
   "link": "https://gpuweb.github.io/gpuweb/wgsl/",
   "title": "WebGPU Shading Language",
@@ -1368,7 +1401,7 @@
   }
  },
  "wot-discovery": {
-  "link": "https://www.w3.org/TR/wot-discovery/",
+  "link": "https://w3c.github.io/wot-discovery/",
   "title": "Web of Things (WoT) Discovery",
   "w3c": {
    "serie": "wot-discovery",
@@ -1667,6 +1700,16 @@
    ]
   }
  },
+ "screen-orientation": {
+  "link": "https://w3c.github.io/screen-orientation/",
+  "title": "The Screen Orientation API",
+  "w3c": {
+   "serie": "screen-orientation",
+   "shortnames": [
+    "screen-orientation"
+   ]
+  }
+ },
  "screen-wake-lock": {
   "link": "https://w3c.github.io/screen-wake-lock/",
   "title": "Screen Wake Lock API",
@@ -1733,16 +1776,6 @@
  },
  "webID": {
   "link": "https://wicg.github.io/WebID/README.html"
- },
- "webnn": {
-  "link": "https://webmachinelearning.github.io/webnn/",
-  "title": "Web Neural Network API",
-  "w3c": {
-   "serie": "webnn",
-   "shortnames": [
-    "webnn"
-   ]
-  }
  },
  "webrtc-extensions": {
   "link": "https://w3c.github.io/webrtc-extensions/",
@@ -1820,7 +1853,14 @@
   "w3c": {}
  },
  "mediacapture-viewport": {
-  "link": "https://w3c.github.io/mediacapture-viewport/"
+  "link": "https://w3c.github.io/mediacapture-viewport/",
+  "title": "Viewport Capture",
+  "w3c": {
+   "serie": "mediacapture-viewport",
+   "shortnames": [
+    "mediacapture-viewport"
+   ]
+  }
  },
  "openscreenprotocol": {
   "link": "https://w3c.github.io/openscreenprotocol/",
@@ -1991,16 +2031,6 @@
  },
  "web-nfc": {
   "link": "https://w3c.github.io/web-nfc/"
- },
- "webxr-gamepads-module": {
-  "link": "https://immersive-web.github.io/webxr-gamepads-module/",
-  "title": "WebXR Gamepads",
-  "w3c": {
-   "serie": "webxr-gamepads-module",
-   "shortnames": [
-    "webxr-gamepads-module-1"
-   ]
-  }
  },
  "EditContext": {
   "link": "https://w3c.github.io/editing/docs/EditContext/index.html"
@@ -4054,10 +4084,6 @@
   "link": "https://www.w3.org/International/docs/ruby/",
   "title": "Use Cases & Exploratory Approaches for Ruby Markup"
  },
- "screen-orientation": {
-  "link": "https://w3c.github.io/screen-orientation/",
-  "title": "Screen Orientation API"
- },
  "shadow-dom": {
   "link": "https://w3c.github.io/webcomponents/spec/shadow/",
   "title": "Shadow DOM",
@@ -4915,10 +4941,6 @@
  "wot-binding-templates": {
   "link": "https://w3c.github.io/wot-binding-templates/",
   "title": "Web of Things (WoT) Protocol Binding Templates"
- },
- "webxr-ar-module": {
-  "link": "https://immersive-web.github.io/webxr-ar-module/",
-  "title": "WebXR Augmented Reality"
  },
  "xaur": {
   "link": "https://w3c.github.io/apa/xaur/",
@@ -6389,6 +6411,26 @@
    "serie": "ethical-web-principles",
    "shortnames": [
     "ethical-web-principles"
+   ]
+  }
+ },
+ "event-timing": {
+  "title": "Event Timing API",
+  "link": "https://w3c.github.io/event-timing",
+  "w3c": {
+   "serie": "event-timing",
+   "shortnames": [
+    "event-timing"
+   ]
+  }
+ },
+ "largest-contentful-paint": {
+  "title": "Largest Contentful Paint",
+  "link": "https://wicg.github.io/largest-contentful-paint",
+  "w3c": {
+   "serie": "largest-contentful-paint",
+   "shortnames": [
+    "largest-contentful-paint"
    ]
   }
  }
