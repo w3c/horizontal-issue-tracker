@@ -106,6 +106,17 @@
    ]
   }
  },
+ "core-aam": {
+  "link": "https://w3c.github.io/core-aam/",
+  "title": "Core Accessibility API Mappings",
+  "w3c": {
+   "serie": "core-aam",
+   "shortnames": [
+    "core-aam-1.1",
+    "core-aam-1.2"
+   ]
+  }
+ },
  "css-align": {
   "link": "https://drafts.csswg.org/css-align/",
   "title": "CSS Box Alignment",
@@ -1312,7 +1323,7 @@
   }
  },
  "webnn": {
-  "link": "https://www.w3.org/TR/webnn/",
+  "link": "https://webmachinelearning.github.io/webnn/",
   "title": "Web Neural Network API",
   "w3c": {
    "serie": "webnn",
@@ -1382,7 +1393,7 @@
   }
  },
  "webxr-gamepads-module": {
-  "link": "missing link",
+  "link": "https://immersive-web.github.io/webxr-gamepads-module/",
   "title": "WebXR Gamepads",
   "w3c": {
    "serie": "webxr-gamepads-module",
@@ -1985,6 +1996,16 @@
    ]
   }
  },
+ "IFT": {
+  "link": "https://w3c.github.io/IFT/Overview.html",
+  "title": "Incremental Font Transfer",
+  "w3c": {
+   "serie": "IFT",
+   "shortnames": [
+    "IFT"
+   ]
+  }
+ },
  "image-resource": {
   "link": "https://w3c.github.io/image-resource/",
   "title": "Image Resource",
@@ -2267,10 +2288,6 @@
  "capability-urls": {
   "link": "https://w3ctag.github.io/capability-urls/",
   "title": "Good Practices for Capability URLs"
- },
- "core-aam": {
-  "link": "https://w3c.github.io/core-aam/",
-  "title": "Core Accessibility API Mappings"
  },
  "activitystreams-vocabulary": {
   "link": "https://w3c.github.io/activitystreams/vocabulary/",
@@ -6449,16 +6466,6 @@
    ]
   }
  },
- "adapt-content": {
-  "title": "WAI-Adapt: Content Module",
-  "link": "https://w3c.github.io/personalization-semantics/content/",
-  "w3c": {
-   "serie": "adapt-content",
-   "shortnames": [
-    "adapt-content"
-   ]
-  }
- },
  "adapt-help": {
   "title": "WAI-Adapt: Help and Support Module",
   "link": "https://w3c.github.io/personalization-semantics/help/",
@@ -6486,6 +6493,16 @@
    "serie": "adapt-requirements",
    "shortnames": [
     "adapt-requirements"
+   ]
+  }
+ },
+ "adapt-content": {
+  "title": "WAI-Adapt: Content Module",
+  "link": "https://w3c.github.io/personalization-semantics/content/",
+  "w3c": {
+   "serie": "adapt-content",
+   "shortnames": [
+    "adapt-content"
    ]
   }
  }
