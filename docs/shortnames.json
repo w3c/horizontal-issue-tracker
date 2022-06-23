@@ -34,7 +34,14 @@
   }
  },
  "adapt": {
-  "link": "https://w3c.github.io/adapt/"
+  "link": "https://w3c.github.io/adapt/",
+  "title": "WAI-Adapt Explainer",
+  "w3c": {
+   "serie": "adapt",
+   "shortnames": [
+    "adapt"
+   ]
+  }
  },
  "annotation-model": {
   "link": "https://w3c.github.io/web-annotation/",
@@ -560,6 +567,16 @@
    ]
   }
  },
+ "editing": {
+  "link": "",
+  "title": "Editing the Web: Detecting the Lost Update Problem Using Unreserved Checkout",
+  "w3c": {
+   "serie": "Editing",
+   "shortnames": [
+    "1999-Editing"
+   ]
+  }
+ },
  "encoding": {
   "link": "https://encoding.spec.whatwg.org/",
   "title": "Encoding",
@@ -857,20 +874,14 @@
   "link": "https://w3c.github.io/personalization-semantics/content/",
   "title": "Personalization Semantics Explainer",
   "w3c": {
-   "serie": "personalization-semantics",
-   "shortnames": [
-    "personalization-semantics-1.0"
-   ]
+   "serie": "personalization-semantics"
   }
  },
  "personalization-semantics-content": {
   "link": "https://w3c.github.io/personalization-semantics/content/",
   "title": "Personalization Semantics Content",
   "w3c": {
-   "serie": "personalization-semantics-content",
-   "shortnames": [
-    "personalization-semantics-content-1.0"
-   ]
+   "serie": "personalization-semantics-content"
   }
  },
  "png": {
@@ -1199,7 +1210,8 @@
     "wai-aria-practices-1.1",
     "wai-aria-practices-1.2"
    ]
-  }
+  },
+  "retired": true
  },
  "wcag": {
   "link": "https://w3c.github.io/wcag/guidelines/",
@@ -1388,6 +1400,9 @@
     "WGSL"
    ]
   }
+ },
+ "wicg-manifest-incubations": {
+  "link": "https://github.com/WICG/manifest-incubations/"
  },
  "wot-architecture": {
   "link": "https://w3c.github.io/wot-architecture/",
@@ -1733,6 +1748,9 @@
     "selection-api"
    ]
   }
+ },
+ "shared-storage": {
+  "link": "https://github.com/pythagoraskitty/shared-storage/"
  },
  "storage": {
   "link": "https://storage.spec.whatwg.org/",
@@ -5222,9 +5240,6 @@
   "title": "Public Identifiers for entity resolution in XHTML",
   "retired": true
  },
- "editing": {
-  "title": "Editing the Web: Detecting the Lost Update Problem Using Unreserved Checkout"
- },
  "wca-terms": {
   "title": "Web Characterization Terminology & Definitions Sheet",
   "retired": true
@@ -6431,6 +6446,46 @@
    "serie": "largest-contentful-paint",
    "shortnames": [
     "largest-contentful-paint"
+   ]
+  }
+ },
+ "adapt-content": {
+  "title": "WAI-Adapt: Content Module",
+  "link": "https://w3c.github.io/personalization-semantics/content/",
+  "w3c": {
+   "serie": "adapt-content",
+   "shortnames": [
+    "adapt-content"
+   ]
+  }
+ },
+ "adapt-help": {
+  "title": "WAI-Adapt: Help and Support Module",
+  "link": "https://w3c.github.io/personalization-semantics/help/",
+  "w3c": {
+   "serie": "adapt-help",
+   "shortnames": [
+    "adapt-help"
+   ]
+  }
+ },
+ "adapt-tools": {
+  "title": "WAI-Adapt: Tools Module",
+  "link": "https://w3c.github.io/personalization-semantics/tools/",
+  "w3c": {
+   "serie": "adapt-tools",
+   "shortnames": [
+    "adapt-tools"
+   ]
+  }
+ },
+ "adapt-requirements": {
+  "title": "Requirements for WAI-Adapt specification",
+  "link": "https://w3c.github.io/personalization-semantics/requirements/",
+  "w3c": {
+   "serie": "adapt-requirements",
+   "shortnames": [
+    "adapt-requirements"
    ]
   }
  }
