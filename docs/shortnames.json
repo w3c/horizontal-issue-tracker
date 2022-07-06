@@ -106,6 +106,9 @@
    ]
   }
  },
+ "content-index": {
+  "link": "https://wicg.github.io/content-index/spec/"
+ },
  "core-aam": {
   "link": "https://w3c.github.io/core-aam/",
   "title": "Core Accessibility API Mappings",
@@ -1224,6 +1227,17 @@
   },
   "retired": true
  },
+ "wasm-core": {
+  "link": "https://webassembly.github.io/spec/core/",
+  "title": "WebAssembly Core",
+  "w3c": {
+   "serie": "wasm-core",
+   "shortnames": [
+    "wasm-core-1",
+    "wasm-core-2"
+   ]
+  }
+ },
  "wcag": {
   "link": "https://w3c.github.io/wcag/guidelines/",
   "title": "Web Content Accessibility Guidelines (WCAG)",
@@ -1436,6 +1450,16 @@
    ]
   }
  },
+ "wot-profile": {
+  "link": "missing link",
+  "title": "Web of Things (WoT) Profile",
+  "w3c": {
+   "serie": "wot-profile",
+   "shortnames": [
+    "wot-profile"
+   ]
+  }
+ },
  "wot-thing-description": {
   "link": "https://w3c.github.io/wot-thing-description/",
   "title": "Web of Things (WoT) Thing Description",
@@ -1492,9 +1516,6 @@
  },
  "clipboard-pickling": {
   "link": "https://github.com/w3c/editing/blob/gh-pages/docs/clipboard-pickling/explainer.md"
- },
- "content-index": {
-  "link": "https://wicg.github.io/content-index/spec/"
  },
  "crash-reporting": {
   "link": "https://wicg.github.io/crash-reporting/"
@@ -1913,17 +1934,6 @@
    ]
   }
  },
- "wasm-core": {
-  "link": "https://webassembly.github.io/spec/core/bikeshed/",
-  "title": "WebAssembly Core",
-  "w3c": {
-   "serie": "wasm-core",
-   "shortnames": [
-    "wasm-core-1",
-    "wasm-core-2"
-   ]
-  }
- },
  "webcrypto": {
   "link": "https://w3c.github.io/webcrypto/",
   "title": "Web Cryptography API",
@@ -1931,16 +1941,6 @@
    "serie": "WebCryptoAPI",
    "shortnames": [
     "WebCryptoAPI"
-   ]
-  }
- },
- "wot-profile": {
-  "link": "http://w3c.github.io/wot-profile/",
-  "title": "Web of Things (WoT) Profile",
-  "w3c": {
-   "serie": "wot-profile",
-   "shortnames": [
-    "wot-profile"
    ]
   }
  },
@@ -6503,6 +6503,26 @@
    "serie": "adapt-content",
    "shortnames": [
     "adapt-content"
+   ]
+  }
+ },
+ "webmachinelearning-ethics": {
+  "title": "Ethical Principles for Web Machine Learning",
+  "link": "https://webmachinelearning.github.io/ethical-webmachinelearning",
+  "w3c": {
+   "serie": "webmachinelearning-ethics",
+   "shortnames": [
+    "webmachinelearning-ethics"
+   ]
+  }
+ },
+ "window-placement": {
+  "title": "Multi-Screen Window Placement",
+  "link": "https://w3c.github.io/window-placement/",
+  "w3c": {
+   "serie": "window-placement",
+   "shortnames": [
+    "window-placement"
    ]
   }
  }
