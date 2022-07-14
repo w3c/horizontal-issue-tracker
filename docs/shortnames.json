@@ -1009,7 +1009,7 @@
   "w3c": {
    "serie": "service-workers",
    "shortnames": [
-    "service-workers-1"
+    "service-workers"
    ]
   }
  },
@@ -6496,16 +6496,6 @@
    ]
   }
  },
- "adapt-content": {
-  "title": "WAI-Adapt: Content Module",
-  "link": "https://w3c.github.io/personalization-semantics/content/",
-  "w3c": {
-   "serie": "adapt-content",
-   "shortnames": [
-    "adapt-content"
-   ]
-  }
- },
  "webmachinelearning-ethics": {
   "title": "Ethical Principles for Web Machine Learning",
   "link": "https://webmachinelearning.github.io/ethical-webmachinelearning",
@@ -6523,6 +6513,16 @@
    "serie": "window-placement",
    "shortnames": [
     "window-placement"
+   ]
+  }
+ },
+ "adapt-content": {
+  "title": "WAI-Adapt: Content Module",
+  "link": "https://w3c.github.io/personalization-semantics/content/",
+  "w3c": {
+   "serie": "adapt-content",
+   "shortnames": [
+    "adapt-content"
    ]
   }
  }
