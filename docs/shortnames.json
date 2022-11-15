@@ -120,6 +120,18 @@
    ]
   }
  },
+ "csp": {
+  "link": "https://w3c.github.io/webappsec-csp/",
+  "title": "Content Security Policy",
+  "w3c": {
+   "serie": "CSP",
+   "shortnames": [
+    "CSP1",
+    "CSP2",
+    "CSP3"
+   ]
+  }
+ },
  "css-align": {
   "link": "https://drafts.csswg.org/css-align/",
   "title": "CSS Box Alignment",
@@ -478,6 +490,16 @@
    ]
   }
  },
+ "css-view-transitions": {
+  "link": "https://drafts.csswg.org/css-view-transitions/",
+  "title": "CSS View Transitions Module Level 1",
+  "w3c": {
+   "serie": "css-view-transitions",
+   "shortnames": [
+    "css-view-transitions-1"
+   ]
+  }
+ },
  "css-writing-modes": {
   "link": "https://drafts.csswg.org/css-writing-modes/",
   "title": "CSS Writing Modes",
@@ -768,6 +790,18 @@
    ]
   }
  },
+ "mediaqueries": {
+  "link": "missing link",
+  "title": "Media Queries",
+  "w3c": {
+   "serie": "mediaqueries",
+   "shortnames": [
+    "mediaqueries-3",
+    "mediaqueries-4",
+    "mediaqueries-5"
+   ]
+  }
+ },
  "microdata": {
   "link": "https://w3c.github.io/microdata/",
   "title": "HTML Microdata",
@@ -880,7 +914,8 @@
   "w3c": {
    "serie": "payment-request",
    "shortnames": [
-    "payment-request"
+    "payment-request",
+    "payment-request-1.1"
    ]
   }
  },
@@ -904,7 +939,8 @@
   "w3c": {
    "serie": "PNG",
    "shortnames": [
-    "PNG"
+    "png-1",
+    "png-3"
    ]
   }
  },
@@ -1035,6 +1071,9 @@
    ]
   }
  },
+ "trace-context-2": {
+  "link": "https://www.w3.org/TR/trace-context-2"
+ },
  "tracking-compliance": {
   "link": "https://www.w3.org/2011/tracking-protection/drafts/tracking-compliance.html",
   "title": "Tracking Compliance and Scope",
@@ -1154,7 +1193,8 @@
   "w3c": {
    "serie": "vc-data-model",
    "shortnames": [
-    "vc-data-model"
+    "vc-data-model-1.1",
+    "vc-data-model-2.0"
    ]
   }
  },
@@ -1179,6 +1219,16 @@
    ]
   },
   "retired": true
+ },
+ "viss-core": {
+  "link": "https://www.w3.org/TR/viss2-core/",
+  "title": "VISS - Core",
+  "w3c": {
+   "serie": "viss-core",
+   "shortnames": [
+    "viss2-core"
+   ]
+  }
  },
  "vocab-dcat": {
   "link": "https://w3c.github.io/dxwg/dcat/",
@@ -1373,6 +1423,16 @@
    "serie": "websub",
    "shortnames": [
     "websub"
+   ]
+  }
+ },
+ "webtransport": {
+  "link": "https://www.w3.org/TR/webtransport/",
+  "title": "WebTransport",
+  "w3c": {
+   "serie": "webtransport",
+   "shortnames": [
+    "webtransport"
    ]
   }
  },
@@ -1649,7 +1709,8 @@
    "shortnames": [
     "REC-MathML",
     "MathML2",
-    "MathML3"
+    "MathML3",
+    "mathml4"
    ]
   }
  },
@@ -1690,6 +1751,16 @@
    "serie": "mediastream-recording",
    "shortnames": [
     "mediastream-recording"
+   ]
+  }
+ },
+ "openscreenprotocol": {
+  "link": "missing link",
+  "title": "Open Screen Protocol",
+  "w3c": {
+   "serie": "openscreenprotocol",
+   "shortnames": [
+    "openscreenprotocol"
    ]
   }
  },
@@ -1743,7 +1814,7 @@
    "serie": "resource-timing",
    "shortnames": [
     "resource-timing-1",
-    "resource-timing-2"
+    "resource-timing"
    ]
   }
  },
@@ -1801,7 +1872,8 @@
   "w3c": {
    "serie": "trace-context",
    "shortnames": [
-    "trace-context-1"
+    "trace-context-1",
+    "trace-context-2"
    ]
   }
  },
@@ -1838,16 +1910,6 @@
    "serie": "webrtc-stats",
    "shortnames": [
     "webrtc-stats"
-   ]
-  }
- },
- "webtransport": {
-  "link": "https://w3c.github.io/webtransport/",
-  "title": "WebTransport",
-  "w3c": {
-   "serie": "webtransport",
-   "shortnames": [
-    "webtransport"
    ]
   }
  },
@@ -1909,16 +1971,6 @@
    "serie": "mediacapture-viewport",
    "shortnames": [
     "mediacapture-viewport"
-   ]
-  }
- },
- "openscreenprotocol": {
-  "link": "https://w3c.github.io/openscreenprotocol/",
-  "title": "Open Screen Protocol",
-  "w3c": {
-   "serie": "openscreenprotocol",
-   "shortnames": [
-    "openscreenprotocol"
    ]
   }
  },
@@ -2024,18 +2076,6 @@
    "shortnames": [
     "media-source-1",
     "media-source-2"
-   ]
-  }
- },
- "mediaqueries": {
-  "link": "https://drafts.csswg.org/mediaqueries/",
-  "title": "Media Queries",
-  "w3c": {
-   "serie": "mediaqueries",
-   "shortnames": [
-    "mediaqueries-3",
-    "mediaqueries-4",
-    "mediaqueries-5"
    ]
   }
  },
@@ -2225,10 +2265,6 @@
  "html-media-capture": {
   "link": "https://w3c.github.io/html-media-capture/",
   "title": "HTML Media Capture"
- },
- "csp": {
-  "link": "https://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-1.0-specification.html",
-  "title": "Content Security Policy"
  },
  "animation-timing": {
   "link": "https://w3c.github.io/animation-timing/",
@@ -2868,7 +2904,8 @@
  },
  "i18n-html-tech-bidi": {
   "link": "https://www.w3.org/International/docs/bp-html-bidi/",
-  "title": "Authoring HTML: Handling Right-to-left Scripts"
+  "title": "Authoring HTML: Handling Right-to-left Scripts",
+  "retired": true
  },
  "i18n-html-tech-char": {
   "title": "Authoring Techniques for XHTML & HTML Internationalization: Characters and Encodings",
@@ -2876,7 +2913,8 @@
  },
  "i18n-html-tech-lang": {
   "link": "https://www.w3.org/International/docs/bp-html-lang/",
-  "title": "Authoring HTML: Language declarations"
+  "title": "Authoring HTML: Language declarations",
+  "retired": true
  },
  "grddl-primer": {
   "title": "GRDDL Primer"
@@ -6026,16 +6064,6 @@
    ]
   }
  },
- "viss-core": {
-  "title": "VISS - Core",
-  "link": "https://github.com/w3c/automotive/blob/gh-pages/spec/VISSv2_Core.html",
-  "w3c": {
-   "serie": "viss-core",
-   "shortnames": [
-    "viss2-core"
-   ]
-  }
- },
  "viss-transport": {
   "title": "VISS -Transport",
   "link": "https://github.com/w3c/automotive/blob/gh-pages/spec/VISSv2_Transport.html",
@@ -6523,6 +6551,126 @@
    "serie": "adapt-content",
    "shortnames": [
     "adapt-content"
+   ]
+  }
+ },
+ "webcodecs-av1-codec-registration": {
+  "title": "AV1 WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-av1-codec-registration",
+   "shortnames": [
+    "webcodecs-av1-codec-registration"
+   ]
+  }
+ },
+ "webcodecs-mp3-codec-registration": {
+  "title": "MP3 WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/mp3_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-mp3-codec-registration",
+   "shortnames": [
+    "webcodecs-mp3-codec-registration"
+   ]
+  }
+ },
+ "webcodecs-vp9-codec-registration": {
+  "title": "VP9 WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/vp9_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-vp9-codec-registration",
+   "shortnames": [
+    "webcodecs-vp9-codec-registration"
+   ]
+  }
+ },
+ "webcodecs-vp8-codec-registration": {
+  "title": "VP8 WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/vp8_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-vp8-codec-registration",
+   "shortnames": [
+    "webcodecs-vp8-codec-registration"
+   ]
+  }
+ },
+ "mathml-media-types": {
+  "title": "MathML Media-type Declarations",
+  "link": "https://w3c.github.io/mathml-docs/mathml-media-types/",
+  "w3c": {
+   "serie": "mathml-media-types",
+   "shortnames": [
+    "mathml-media-types"
+   ]
+  }
+ },
+ "maturity-model": {
+  "title": "W3C Accessibility Maturity Model",
+  "link": "https://w3c.github.io/maturity-model/",
+  "w3c": {
+   "serie": "maturity-model",
+   "shortnames": [
+    "maturity-model"
+   ]
+  }
+ },
+ "webcodecs-hevc-codec-registration": {
+  "title": "HEVC (H.265) WebCodecs Registration",
+  "link": "https://w3c.github.io/webcodecs/hevc_codec_registration.html",
+  "w3c": {
+   "serie": "webcodecs-hevc-codec-registration",
+   "shortnames": [
+    "webcodecs-hevc-codec-registration"
+   ]
+  }
+ },
+ "trusted-types": {
+  "title": "Trusted Types",
+  "link": "https://w3c.github.io/trusted-types/dist/spec/",
+  "w3c": {
+   "serie": "trusted-types",
+   "shortnames": [
+    "trusted-types"
+   ]
+  }
+ },
+ "change-password-url": {
+  "title": "A Well-Known URL for Changing Passwords",
+  "link": "https://w3c.github.io/webappsec-change-password-url/",
+  "w3c": {
+   "serie": "change-password-url",
+   "shortnames": [
+    "change-password-url"
+   ]
+  }
+ },
+ "scroll-animations": {
+  "title": "Scroll-linked Animations",
+  "link": "https://drafts.csswg.org/scroll-animations-1/",
+  "w3c": {
+   "serie": "scroll-animations",
+   "shortnames": [
+    "scroll-animations-1"
+   ]
+  }
+ },
+ "ctaur": {
+  "title": "Collaboration Tools Accessibility User Requirements",
+  "link": "https://w3c.github.io/ctaur/",
+  "w3c": {
+   "serie": "ctaur",
+   "shortnames": [
+    "ctaur"
+   ]
+  }
+ },
+ "vc-data-integrity": {
+  "title": "Verifiable Credential Data Integrity 1.0",
+  "link": "https://w3c.github.io/vc-data-integrity/",
+  "w3c": {
+   "serie": "vc-data-integrity",
+   "shortnames": [
+    "vc-data-integrity"
    ]
   }
  }
