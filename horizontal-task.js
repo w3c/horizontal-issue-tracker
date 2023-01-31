@@ -420,18 +420,26 @@ async function createHRIssue(issue, hlabels) {
     // special handling for i18n
     if (label.category === "i18n") {
       body += "\n"
-        + "\nInstructions:"
+        + "\nInstructions _(delete this line and all following)_:"
         + "\n- check for the following labels, then remove the PENDING label, then delete these instructions"
         + "\n"
-        + "\n- TRACKER & S:...  should be there"
-        + "\n- add ADVICE-REQUESTED if the WG-issue is specifically asking for i18n to advise/comment"
-        + "\n- add NEEDS-ATTENTION if this is an important issue"
+        + "\n- Check that TRACKER & S:... labels are there"
+        + "\n- **Add t:... label(s) to indicate the topic (same as ids in specdev)**"
         + "\n"
-        + "\n- if there's an i18n-*lreq label in the WG repo:"
-        + "\n   -  ...LREQ label(s) should be there"
-        + "\n   - SPEC-TYPE-ISSUE should be there"
-        + "\n   - add TYPE-INFO-REQUEST if a request for script/language expert advice"
-        + "\n    - add I:...  label(s)";
+        + "\n"
+        + "\n- If urgent add:"
+        + "\n- add ADVICE-REQUESTED label if the WG-issue is specifically asking for i18n to advise/comment"
+        + "\n- add NEEDS-ATTENTION label if this is an important issue"
+        + "\n"
+        + "\n- if there's an i18n-*lreq label in the WG repo check for:"
+        + "\n   -  ...LREQ label(s) there should be one or more"
+        + "\n   - SPEC-TYPE-ISSUE label (dark green background) should be there"
+        + "\n   - TYPE-INFO-REQUEST label (red background) if this is a WG-issue that constitutes a request for script/language expert advice"
+        + "\n   - i:... label(s) to indicate the Language Enablement Index category";
+        + "\n"
+        + "\n"
+        + "\n- Delete these instructions before saving the comment."
+        + "\n- Do not remove § from the line with the link!"
     }
     if (label.name === 'i18n-tracker' || label.name === 'i18n-needs-resolution') {
       // https://github.com/w3c/i18n-activity/wiki/Automation-requirements#3-automatic-creation-of-tracker-issues-for-wg-issues-being-tracked
