@@ -355,6 +355,17 @@
    ]
   }
  },
+ "css-overflow": {
+  "link": "missing link",
+  "title": "CSS Overflow",
+  "w3c": {
+   "serie": "css-overflow",
+   "shortnames": [
+    "css-overflow-3",
+    "css-overflow-4"
+   ]
+  }
+ },
  "css-paint-api": {
   "link": "https://drafts.css-houdini.org/css-paint-api/",
   "title": "CSS Painting API",
@@ -525,7 +536,8 @@
     "css-2017",
     "css-2018",
     "css-2020",
-    "css-2021"
+    "css-2021",
+    "css-2022"
    ]
   }
  },
@@ -757,6 +769,16 @@
    "shortnames": [
     "json-ld",
     "json-ld11"
+   ]
+  }
+ },
+ "json-ld-framing": {
+  "link": "https://w3c.github.io/json-ld-framing/",
+  "title": "JSON-LD Framing",
+  "w3c": {
+   "serie": "json-ld-framing",
+   "shortnames": [
+    "json-ld11-framing"
    ]
   }
  },
@@ -998,6 +1020,27 @@
    ]
   }
  },
+ "rdf-canon": {
+  "link": "https://w3c.github.io/rdf-canon/spec/",
+  "title": "RDF Dataset Canonicalization",
+  "w3c": {
+   "serie": "rdf-canon",
+   "shortnames": [
+    "rdf-canon"
+   ]
+  }
+ },
+ "rdf-concepts": {
+  "link": "",
+  "title": "Resource Description Framework (RDF): Concepts and Abstract Syntax",
+  "w3c": {
+   "serie": "rdf-concepts",
+   "shortnames": [
+    "rdf-concepts",
+    "rdf11-concepts"
+   ]
+  }
+ },
  "remote-playback": {
   "link": "https://w3c.github.io/remote-playback/",
   "title": "Remote Playback API",
@@ -1015,6 +1058,16 @@
    "serie": "screen-capture",
    "shortnames": [
     "screen-capture"
+   ]
+  }
+ },
+ "scroll-animations": {
+  "link": "missing link",
+  "title": "Scroll-linked Animations",
+  "w3c": {
+   "serie": "scroll-animations",
+   "shortnames": [
+    "scroll-animations-1"
    ]
   }
  },
@@ -1220,6 +1273,9 @@
   },
   "retired": true
  },
+ "view-transitions": {
+  "link": "missing link"
+ },
  "viss-core": {
   "link": "https://www.w3.org/TR/viss2-core/",
   "title": "VISS - Core",
@@ -1356,6 +1412,9 @@
    ]
   }
  },
+ "webextensions": {
+  "link": "https://github.com/w3c/webextensions"
+ },
  "webgpu": {
   "link": "https://gpuweb.github.io/gpuweb/",
   "title": "WebGPU",
@@ -1489,6 +1548,16 @@
  "wicg-manifest-incubations": {
   "link": "https://github.com/WICG/manifest-incubations/"
  },
+ "window-placement": {
+  "link": "https://www.w3.org/TR/window-placement",
+  "title": "Multi-Screen Window Placement",
+  "w3c": {
+   "serie": "window-placement",
+   "shortnames": [
+    "window-placement"
+   ]
+  }
+ },
  "wot-architecture": {
   "link": "https://w3c.github.io/wot-architecture/",
   "title": "Web of Things (WoT) Architecture",
@@ -1587,6 +1656,18 @@
    "serie": "css-color-adjust",
    "shortnames": [
     "css-color-adjust-1"
+   ]
+  }
+ },
+ "css-contain": {
+  "link": "missing link",
+  "title": "CSS Containment",
+  "w3c": {
+   "serie": "css-contain",
+   "shortnames": [
+    "css-contain-1",
+    "css-contain-2",
+    "css-contain-3"
    ]
   }
  },
@@ -1697,6 +1778,9 @@
     "image-capture"
    ]
   }
+ },
+ "inert": {
+  "link": "missing link"
  },
  "intervention-reporting": {
   "link": "https://wicg.github.io/intervention-reporting/"
@@ -1954,7 +2038,14 @@
   }
  },
  "contact-picker": {
-  "link": "https://wicg.github.io/contact-api/spec/"
+  "link": "https://wicg.github.io/contact-api/spec/",
+  "title": "Contact Picker API",
+  "w3c": {
+   "serie": "contact-picker",
+   "shortnames": [
+    "contact-picker"
+   ]
+  }
  },
  "credentialless": {
   "link": "https://wicg.github.io/credentiallessness/"
@@ -1993,18 +2084,6 @@
    "serie": "WebCryptoAPI",
    "shortnames": [
     "WebCryptoAPI"
-   ]
-  }
- },
- "css-contain": {
-  "link": "https://drafts.csswg.org/css-contain-1/",
-  "title": "CSS Containment",
-  "w3c": {
-   "serie": "css-contain",
-   "shortnames": [
-    "css-contain-1",
-    "css-contain-2",
-    "css-contain-3"
    ]
   }
  },
@@ -2480,10 +2559,6 @@
  "css-transforms": {
   "link": "https://drafts.csswg.org/css-transforms/",
   "title": "CSS Transforms"
- },
- "css-overflow": {
-  "link": "https://drafts.csswg.org/css-overflow-3/",
-  "title": "CSS Overflow"
  },
  "css-shapes": {
   "link": "https://drafts.csswg.org/css-shapes/",
@@ -3353,10 +3428,6 @@
   "link": "https://indieauth.spec.indieweb.org/",
   "title": "IndieAuth"
  },
- "json-ld-framing": {
-  "link": "https://w3c.github.io/json-ld-framing/",
-  "title": "JSON-LD Framing"
- },
  "mini-app-white-paper": {
   "link": "https://w3c.github.io/mini-app-white-paper/",
   "title": "MiniApp Standardization White Paper"
@@ -3685,9 +3756,6 @@
  "qaframe-test": {
   "title": "QA Framework: Test Guidelines",
   "retired": true
- },
- "rdf-concepts": {
-  "title": "Resource Description Framework (RDF): Concepts and Abstract Syntax"
  },
  "rdf-primer": {
   "title": "RDF Primer"
@@ -6010,7 +6078,8 @@
     "css-2017",
     "css-2018",
     "css-2020",
-    "css-2021"
+    "css-2021",
+    "css-2022"
    ]
   }
  },
@@ -6534,16 +6603,6 @@
    ]
   }
  },
- "window-placement": {
-  "title": "Multi-Screen Window Placement",
-  "link": "https://w3c.github.io/window-placement/",
-  "w3c": {
-   "serie": "window-placement",
-   "shortnames": [
-    "window-placement"
-   ]
-  }
- },
  "adapt-content": {
   "title": "WAI-Adapt: Content Module",
   "link": "https://w3c.github.io/personalization-semantics/content/",
@@ -6644,16 +6703,6 @@
    ]
   }
  },
- "scroll-animations": {
-  "title": "Scroll-linked Animations",
-  "link": "https://drafts.csswg.org/scroll-animations-1/",
-  "w3c": {
-   "serie": "scroll-animations",
-   "shortnames": [
-    "scroll-animations-1"
-   ]
-  }
- },
  "ctaur": {
   "title": "Collaboration Tools Accessibility User Requirements",
   "link": "https://w3c.github.io/ctaur/",
@@ -6671,6 +6720,56 @@
    "serie": "vc-data-integrity",
    "shortnames": [
     "vc-data-integrity"
+   ]
+  }
+ },
+ "adapt-symbols": {
+  "title": "WAI-Adapt: Content Module",
+  "link": "https://w3c.github.io/personalization-semantics/content/",
+  "w3c": {
+   "serie": "adapt-symbols",
+   "shortnames": [
+    "adapt-symbols"
+   ]
+  }
+ },
+ "vc-jws": {
+  "title": "JSON Web Signature 2020",
+  "link": "https://w3c.github.io/vc-jws-2020/",
+  "w3c": {
+   "serie": "vc-jws",
+   "shortnames": [
+    "vc-jws-2020"
+   ]
+  }
+ },
+ "aac-registry": {
+  "title": "W3C Alternative and Augmented Communication (AAC) Symbol Registry",
+  "link": "https://w3c.github.io/aac-registry/",
+  "w3c": {
+   "serie": "aac-registry",
+   "shortnames": [
+    "aac-registry"
+   ]
+  }
+ },
+ "compute-pressure": {
+  "title": "Compute Pressure Level 1",
+  "link": "https://w3c.github.io/compute-pressure/",
+  "w3c": {
+   "serie": "compute-pressure",
+   "shortnames": [
+    "compute-pressure"
+   ]
+  }
+ },
+ "web-locks": {
+  "title": "Web Locks API",
+  "link": "https://w3c.github.io/web-locks/",
+  "w3c": {
+   "serie": "web-locks",
+   "shortnames": [
+    "web-locks"
    ]
   }
  }
