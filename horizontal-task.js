@@ -454,6 +454,11 @@ async function createHRIssue(issue, hlabels) {
       if (found) {
         labels.push("spec-type-issue");
       }
+
+      // self_review label
+      if (issue.body && issue.body.indexOf("short review") < 50) {
+        labels.push("self_review");
+      }
     }
     if (shortlabels) {
       labels = labels.concat(shortlabels);
