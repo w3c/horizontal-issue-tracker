@@ -456,7 +456,9 @@ async function createHRIssue(issue, hlabels) {
       }
 
       // self_review label
-      if (issue.body && issue.body.indexOf("short review") < 50) {
+      if (issue.body &&
+        (issue.body.indexOf("short review") < 50
+         && issue.body.indexOf("short review") > -1)) {
         labels.push("self_review");
       }
     }
