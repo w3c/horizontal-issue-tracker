@@ -6766,16 +6766,6 @@
    ]
   }
  },
- "adapt-symbols": {
-  "title": "WAI-Adapt: Content Module",
-  "link": "https://w3c.github.io/personalization-semantics/content/",
-  "w3c": {
-   "serie": "adapt-symbols",
-   "shortnames": [
-    "adapt-symbols"
-   ]
-  }
- },
  "guru-lreq": {
   "title": "Gurmukhi Layout Requirements",
   "link": "https://w3c.github.io/iip/gurmukhi/",
@@ -6793,6 +6783,16 @@
    "serie": "epub-aria-authoring",
    "shortnames": [
     "epub-aria-authoring-11"
+   ]
+  }
+ },
+ "adapt-symbols": {
+  "title": "WAI-Adapt: Content Module",
+  "link": "https://w3c.github.io/personalization-semantics/content/",
+  "w3c": {
+   "serie": "adapt-symbols",
+   "shortnames": [
+    "adapt-symbols"
    ]
   }
  }
