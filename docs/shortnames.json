@@ -106,6 +106,16 @@
    ]
   }
  },
+ "contact-picker": {
+  "link": "https://www.w3.org/TR/contact-picker/",
+  "title": "Contact Picker API",
+  "w3c": {
+   "serie": "contact-picker",
+   "shortnames": [
+    "contact-picker"
+   ]
+  }
+ },
  "content-index": {
   "link": "https://wicg.github.io/content-index/spec/"
  },
@@ -537,7 +547,8 @@
     "css-2018",
     "css-2020",
     "css-2021",
-    "css-2022"
+    "css-2022",
+    "css-2023"
    ]
   }
  },
@@ -1633,6 +1644,16 @@
    ]
   }
  },
+ "autoplay-detection": {
+  "link": "https://w3c.github.io/autoplay/",
+  "title": "Autoplay Policy Detection",
+  "w3c": {
+   "serie": "autoplay-detection",
+   "shortnames": [
+    "autoplay-detection"
+   ]
+  }
+ },
  "battery-status": {
   "link": "https://w3c.github.io/battery/",
   "title": "Battery Status API",
@@ -1645,6 +1666,16 @@
  },
  "clipboard-pickling": {
   "link": "https://github.com/w3c/editing/blob/gh-pages/docs/clipboard-pickling/explainer.md"
+ },
+ "compute-pressure": {
+  "link": "https://w3c.github.io/compute-pressure/",
+  "title": "Compute Pressure Level 1",
+  "w3c": {
+   "serie": "compute-pressure",
+   "shortnames": [
+    "compute-pressure"
+   ]
+  }
  },
  "crash-reporting": {
   "link": "https://wicg.github.io/crash-reporting/"
@@ -2034,16 +2065,6 @@
    "serie": "clipboard-apis",
    "shortnames": [
     "clipboard-apis"
-   ]
-  }
- },
- "contact-picker": {
-  "link": "https://wicg.github.io/contact-api/spec/",
-  "title": "Contact Picker API",
-  "w3c": {
-   "serie": "contact-picker",
-   "shortnames": [
-    "contact-picker"
    ]
   }
  },
@@ -3951,7 +3972,8 @@
  },
  "resource-hints": {
   "link": "https://w3c.github.io/resource-hints/",
-  "title": "Resource Hints"
+  "title": "Resource Hints",
+  "retired": true
  },
  "secure-contexts": {
   "link": "https://w3c.github.io/webappsec-secure-contexts/",
@@ -6079,7 +6101,8 @@
     "css-2018",
     "css-2020",
     "css-2021",
-    "css-2022"
+    "css-2022",
+    "css-2023"
    ]
   }
  },
@@ -6454,16 +6477,6 @@
    ]
   }
  },
- "autoplay-detection": {
-  "title": "Autoplay Policy Detection",
-  "link": "https://w3c.github.io/autoplay/",
-  "w3c": {
-   "serie": "autoplay-detection",
-   "shortnames": [
-    "autoplay-detection"
-   ]
-  }
- },
  "arab-ks-gap": {
   "title": "Perso-arabic Kashmiri Gap Analysis",
   "link": "https://w3c.github.io/alreq/gap-analysis/arab-ks-gap.html",
@@ -6723,16 +6736,6 @@
    ]
   }
  },
- "adapt-symbols": {
-  "title": "WAI-Adapt: Content Module",
-  "link": "https://w3c.github.io/personalization-semantics/content/",
-  "w3c": {
-   "serie": "adapt-symbols",
-   "shortnames": [
-    "adapt-symbols"
-   ]
-  }
- },
  "vc-jws": {
   "title": "JSON Web Signature 2020",
   "link": "https://w3c.github.io/vc-jws-2020/",
@@ -6753,16 +6756,6 @@
    ]
   }
  },
- "compute-pressure": {
-  "title": "Compute Pressure Level 1",
-  "link": "https://w3c.github.io/compute-pressure/",
-  "w3c": {
-   "serie": "compute-pressure",
-   "shortnames": [
-    "compute-pressure"
-   ]
-  }
- },
  "web-locks": {
   "title": "Web Locks API",
   "link": "https://w3c.github.io/web-locks/",
@@ -6770,6 +6763,36 @@
    "serie": "web-locks",
    "shortnames": [
     "web-locks"
+   ]
+  }
+ },
+ "adapt-symbols": {
+  "title": "WAI-Adapt: Content Module",
+  "link": "https://w3c.github.io/personalization-semantics/content/",
+  "w3c": {
+   "serie": "adapt-symbols",
+   "shortnames": [
+    "adapt-symbols"
+   ]
+  }
+ },
+ "guru-lreq": {
+  "title": "Gurmukhi Layout Requirements",
+  "link": "https://w3c.github.io/iip/gurmukhi/",
+  "w3c": {
+   "serie": "guru-lreq",
+   "shortnames": [
+    "guru-lreq"
+   ]
+  }
+ },
+ "epub-aria-authoring": {
+  "title": "EPUB Type to ARIA Role Authoring Guide 1.1",
+  "link": "https://w3c.github.io/epub-specs/epub33/epub-aria-authoring/",
+  "w3c": {
+   "serie": "epub-aria-authoring",
+   "shortnames": [
+    "epub-aria-authoring-11"
    ]
   }
  }
