@@ -24,9 +24,7 @@ config.debug = false;
 
 // to get information out of the W3C API
 function fetchW3C(queryPath) {
-  if (!config.w3capikey) throw new ReferenceError("Missing W3C key")
   const apiURL = new URL(queryPath, W3C_APIURL);
-  apiURL.searchParams.set("apikey", config.w3capikey);
   apiURL.searchParams.set("embed", "1"); // grab everything
   return fetch(apiURL).then(r => r.json()).then(data => {
     if (data.error) return data;
