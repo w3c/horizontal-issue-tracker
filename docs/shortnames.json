@@ -164,7 +164,7 @@
  },
  "css-box": {
   "link": "https://drafts.csswg.org/css-box/",
-  "title": "CSS Box Model",
+  "title": "CSS Box Model Module",
   "w3c": {
    "serie": "css-box",
    "shortnames": [
@@ -513,7 +513,7 @@
  },
  "css-view-transitions": {
   "link": "https://drafts.csswg.org/css-view-transitions/",
-  "title": "CSS View Transitions Module Level 1",
+  "title": "CSS View Transitions Module",
   "w3c": {
    "serie": "css-view-transitions",
    "shortnames": [
@@ -813,6 +813,19 @@
    ]
   }
  },
+ "mathml": {
+  "link": "missing link",
+  "title": "Mathematical Markup Language (MathML)",
+  "w3c": {
+   "serie": "MathML",
+   "shortnames": [
+    "REC-MathML",
+    "MathML2",
+    "MathML3",
+    "mathml4"
+   ]
+  }
+ },
  "mediacapture-streams": {
   "link": "https://w3c.github.io/mediacapture-main/",
   "title": "Media Capture and Streams",
@@ -1042,13 +1055,14 @@
   }
  },
  "rdf-concepts": {
-  "link": "",
+  "link": "missing link",
   "title": "Resource Description Framework (RDF): Concepts and Abstract Syntax",
   "w3c": {
    "serie": "rdf-concepts",
    "shortnames": [
-    "rdf-concepts",
-    "rdf11-concepts"
+    "rdf-concepts-10",
+    "rdf11-concepts",
+    "rdf12-concepts"
    ]
   }
  },
@@ -1251,6 +1265,16 @@
    ]
   }
  },
+ "vc-data-integrity": {
+  "link": "https://w3c.github.io/vc-data-integrity/",
+  "title": "Verifiable Credential Data Integrity",
+  "w3c": {
+   "serie": "vc-data-integrity",
+   "shortnames": [
+    "vc-data-integrity"
+   ]
+  }
+ },
  "vc-data-model": {
   "link": "https://w3c.github.io/vc-data-model/",
   "title": "Verifiable Credentials Data Model",
@@ -1283,9 +1307,6 @@
    ]
   },
   "retired": true
- },
- "view-transitions": {
-  "link": "missing link"
  },
  "viss-core": {
   "link": "https://www.w3.org/TR/viss2-core/",
@@ -1444,7 +1465,8 @@
    "shortnames": [
     "WebIDL-1"
    ]
-  }
+  },
+  "retired": true
  },
  "webmention": {
   "link": "https://webmention.net/draft/",
@@ -1559,13 +1581,13 @@
  "wicg-manifest-incubations": {
   "link": "https://github.com/WICG/manifest-incubations/"
  },
- "window-placement": {
-  "link": "https://www.w3.org/TR/window-placement",
-  "title": "Multi-Screen Window Placement",
+ "window-management": {
+  "link": "https://www.w3.org/TR/window-management/",
+  "title": "Window Management",
   "w3c": {
-   "serie": "window-placement",
+   "serie": "window-management",
    "shortnames": [
-    "window-placement"
+    "window-management"
    ]
   }
  },
@@ -1669,7 +1691,7 @@
  },
  "compute-pressure": {
   "link": "https://w3c.github.io/compute-pressure/",
-  "title": "Compute Pressure Level 1",
+  "title": "Compute Pressure",
   "w3c": {
    "serie": "compute-pressure",
    "shortnames": [
@@ -1816,19 +1838,6 @@
  "intervention-reporting": {
   "link": "https://wicg.github.io/intervention-reporting/"
  },
- "mathml": {
-  "link": "https://w3c.github.io/mathml/",
-  "title": "Mathematical Markup Language (MathML)",
-  "w3c": {
-   "serie": "MathML",
-   "shortnames": [
-    "REC-MathML",
-    "MathML2",
-    "MathML3",
-    "mathml4"
-   ]
-  }
- },
  "media-capabilities": {
   "link": "https://w3c.github.io/media-capabilities/",
   "title": "Media Capabilities",
@@ -1928,7 +1937,6 @@
   "w3c": {
    "serie": "resource-timing",
    "shortnames": [
-    "resource-timing-1",
     "resource-timing"
    ]
   }
@@ -2058,6 +2066,16 @@
    ]
   }
  },
+ "window-placement": {
+  "link": "https://www.w3.org/TR/window-placement",
+  "title": "Multi-Screen Window Placement",
+  "w3c": {
+   "serie": "window-placement",
+   "shortnames": [
+    "window-placement"
+   ]
+  }
+ },
  "clipboard-apis": {
   "link": "https://w3c.github.io/clipboard-apis/",
   "title": "Clipboard API and events",
@@ -2108,6 +2126,16 @@
    ]
   }
  },
+ "c-data-integrity": {
+  "link": "https://w3c.github.io/vc-data-integrity/",
+  "title": "Verifiable Credential Data Integrity",
+  "w3c": {
+   "serie": "vc-data-integrity",
+   "shortnames": [
+    "vc-data-integrity"
+   ]
+  }
+ },
  "css-display": {
   "link": "https://drafts.csswg.org/css-display/",
   "title": "CSS Display",
@@ -2145,16 +2173,6 @@
    "serie": "html-aam",
    "shortnames": [
     "html-aam-1.0"
-   ]
-  }
- },
- "IFT": {
-  "link": "https://w3c.github.io/IFT/Overview.html",
-  "title": "Incremental Font Transfer",
-  "w3c": {
-   "serie": "IFT",
-   "shortnames": [
-    "IFT"
    ]
   }
  },
@@ -2208,8 +2226,34 @@
  "html-sanitizer-api": {
   "link": "https://wicg.github.io/sanitizer-api/"
  },
+ "vc-jose-cose": {
+  "link": "https://w3c.github.io/vc-jose-cose/",
+  "title": "Securing Verifiable Credentials using JOSE and COSE",
+  "w3c": {
+   "serie": "vc-jose-cose",
+   "shortnames": [
+    "vc-jose-cose"
+   ]
+  }
+ },
+ "vc-jwt": {
+  "link": "https://w3c.github.io/vc-jwt/"
+ },
  "web-nfc": {
   "link": "https://w3c.github.io/web-nfc/"
+ },
+ "view-transitions": {
+  "link": "missing link"
+ },
+ "IFT": {
+  "link": "https://w3c.github.io/IFT/Overview.html",
+  "title": "Incremental Font Transfer",
+  "w3c": {
+   "serie": "IFT",
+   "shortnames": [
+    "IFT"
+   ]
+  }
  },
  "EditContext": {
   "link": "https://w3c.github.io/editing/docs/EditContext/index.html"
@@ -3125,7 +3169,8 @@
  },
  "html-imports": {
   "link": "https://w3c.github.io/webcomponents/spec/imports/",
-  "title": "HTML Imports"
+  "title": "HTML Imports",
+  "retired": true
  },
  "html-longdesc": {
   "title": "HTML5 Image Description Extension (longdesc)"
@@ -3632,7 +3677,8 @@
   "retired": true
  },
  "page-visibility": {
-  "title": "Page Visibility"
+  "title": "Page Visibility",
+  "retired": true
  },
  "performance-timeline": {
   "title": "Performance Timeline"
@@ -6137,7 +6183,7 @@
   }
  },
  "did-cbor-representation": {
-  "title": "The Plain CBOR Representation v1.0",
+  "title": "The Plain CBOR Representation",
   "link": "https://w3c.github.io/did-cbor-note/",
   "w3c": {
    "serie": "did-cbor-representation",
@@ -6167,7 +6213,7 @@
   }
  },
  "epub-tts": {
-  "title": "EPUB 3 Text-to-Speech Enhancements 1.0",
+  "title": "EPUB 3 Text-to-Speech Enhancements",
   "link": "https://w3c.github.io/epub-specs/epub33/tts/",
   "w3c": {
    "serie": "epub-tts",
@@ -6307,7 +6353,7 @@
   }
  },
  "epub-ssv": {
-  "title": "EPUB 3 Structural Semantics Vocabulary 1.1",
+  "title": "EPUB 3 Structural Semantics Vocabulary",
   "link": "https://w3c.github.io/epub-specs/epub33/ssv/",
   "w3c": {
    "serie": "epub-ssv",
@@ -6726,16 +6772,6 @@
    ]
   }
  },
- "vc-data-integrity": {
-  "title": "Verifiable Credential Data Integrity 1.0",
-  "link": "https://w3c.github.io/vc-data-integrity/",
-  "w3c": {
-   "serie": "vc-data-integrity",
-   "shortnames": [
-    "vc-data-integrity"
-   ]
-  }
- },
  "vc-jws": {
   "title": "JSON Web Signature 2020",
   "link": "https://w3c.github.io/vc-jws-2020/",
@@ -6777,12 +6813,34 @@
   }
  },
  "epub-aria-authoring": {
-  "title": "EPUB Type to ARIA Role Authoring Guide 1.1",
+  "title": "EPUB Type to ARIA Role Authoring Guide",
   "link": "https://w3c.github.io/epub-specs/epub33/epub-aria-authoring/",
   "w3c": {
    "serie": "epub-aria-authoring",
    "shortnames": [
     "epub-aria-authoring-11"
+   ]
+  }
+ },
+ "rdf-n-quads": {
+  "title": "RDF N-Quads",
+  "link": "https://w3c.github.io/rdf-n-quads/spec/",
+  "w3c": {
+   "serie": "rdf-n-quads",
+   "shortnames": [
+    "rdf11-n-quads",
+    "rdf12-n-quads"
+   ]
+  }
+ },
+ "rdf-n-triples": {
+  "title": "RDF N-Triples",
+  "link": "https://w3c.github.io/rdf-n-triples/spec/",
+  "w3c": {
+   "serie": "rdf-n-triples",
+   "shortnames": [
+    "rdf11-n-triples",
+    "rdf12-n-triples"
    ]
   }
  },
@@ -6793,6 +6851,183 @@
    "serie": "adapt-symbols",
    "shortnames": [
     "adapt-symbols"
+   ]
+  }
+ },
+ "rdf-xml": {
+  "title": "RDF XML Syntax",
+  "link": "https://w3c.github.io/rdf-xml/spec/",
+  "w3c": {
+   "serie": "rdf-xml",
+   "shortnames": [
+    "rdf11-xml",
+    "rdf12-xml"
+   ]
+  }
+ },
+ "sparql-results-xml": {
+  "title": "SPARQL Query Results XML Format",
+  "link": "https://w3c.github.io/sparql-results-xml/spec/",
+  "w3c": {
+   "serie": "sparql-results-xml",
+   "shortnames": [
+    "sparql10-results-xml",
+    "sparql12-results-xml"
+   ]
+  }
+ },
+ "sparql-graph-store-protocol": {
+  "title": "SPARQL Graph Store HTTP Protocol",
+  "link": "https://w3c.github.io/sparql-graph-store-protocol/spec/",
+  "w3c": {
+   "serie": "sparql-graph-store-protocol",
+   "shortnames": [
+    "sparql11-graph-store-protocol",
+    "sparql12-graph-store-protocol"
+   ]
+  }
+ },
+ "rdf-turtle": {
+  "title": "RDF Turtle",
+  "link": "https://w3c.github.io/rdf-turtle/spec/",
+  "w3c": {
+   "serie": "rdf-turtle",
+   "shortnames": [
+    "rdf11-turtle",
+    "rdf12-turtle"
+   ]
+  }
+ },
+ "rdf-trig": {
+  "title": "RDF TriG",
+  "link": "https://w3c.github.io/rdf-trig/spec/",
+  "w3c": {
+   "serie": "rdf-trig",
+   "shortnames": [
+    "rdf11-trig",
+    "rdf12-trig"
+   ]
+  }
+ },
+ "rdf-semantics": {
+  "title": "RDF Semantics",
+  "link": "https://w3c.github.io/rdf-semantics/spec/",
+  "w3c": {
+   "serie": "rdf-semantics",
+   "shortnames": [
+    "rdf10-semantics",
+    "rdf11-semantics",
+    "rdf12-semantics"
+   ]
+  }
+ },
+ "badging": {
+  "title": "Badging API",
+  "link": "https://w3c.github.io/badging/",
+  "w3c": {
+   "serie": "badging",
+   "shortnames": [
+    "badging"
+   ]
+  }
+ },
+ "vc-di-eddsa": {
+  "title": "EdDSA Cryptosuite",
+  "link": "https://w3c.github.io/vc-di-eddsa/",
+  "w3c": {
+   "serie": "vc-di-eddsa",
+   "shortnames": [
+    "vc-di-eddsa"
+   ]
+  }
+ },
+ "vc-di-ecdsa": {
+  "title": "ECDSA Cryptosuite",
+  "link": "https://w3c.github.io/vc-di-ecdsa/",
+  "w3c": {
+   "serie": "vc-di-ecdsa",
+   "shortnames": [
+    "vc-di-ecdsa"
+   ]
+  }
+ },
+ "dapt": {
+  "title": "Dubbing and Audio description Profiles of TTML2",
+  "link": "https://w3c.github.io/dapt/",
+  "w3c": {
+   "serie": "dapt",
+   "shortnames": [
+    "dapt"
+   ]
+  }
+ },
+ "vc-status-list": {
+  "title": "Verifiable Credentials Status List",
+  "link": "https://w3c.github.io/vc-status-list-2021/",
+  "w3c": {
+   "serie": "vc-status-list",
+   "shortnames": [
+    "vc-status-list"
+   ]
+  }
+ },
+ "vc-di-bbs": {
+  "title": "BBS Cryptosuite",
+  "link": "https://w3c.github.io/vc-di-bbs/",
+  "w3c": {
+   "serie": "vc-di-bbs",
+   "shortnames": [
+    "vc-di-bbs"
+   ]
+  }
+ },
+ "vc-json-schema": {
+  "title": "Verifiable Credentials JSON Schema Specification",
+  "link": "https://w3c.github.io/vc-json-schema/",
+  "w3c": {
+   "serie": "vc-json-schema",
+   "shortnames": [
+    "vc-json-schema"
+   ]
+  }
+ },
+ "nkoo-lreq": {
+  "title": "N'Ko Layout Requirements",
+  "link": "https://w3c.github.io/afrlreq/nko/",
+  "w3c": {
+   "serie": "nkoo-lreq",
+   "shortnames": [
+    "nkoo-lreq"
+   ]
+  }
+ },
+ "css-anchor-position": {
+  "title": "CSS Anchor Positioning",
+  "link": "https://drafts.csswg.org/css-anchor-position-1/",
+  "w3c": {
+   "serie": "css-anchor-position",
+   "shortnames": [
+    "css-anchor-position-1"
+   ]
+  }
+ },
+ "kore-gap": {
+  "title": "Korean Layout Gap Analysis",
+  "link": "https://w3c.github.io/klreq/gap-analysis/",
+  "w3c": {
+   "serie": "kore-gap",
+   "shortnames": [
+    "kore-gap"
+   ]
+  }
+ },
+ "w3c-vision": {
+  "title": "Vision for W3C",
+  "link": "https://github.com/w3c/AB-public/tree/main/Vision",
+  "w3c": {
+   "serie": "w3c-vision",
+   "shortnames": [
+    "w3c-vision"
    ]
   }
  }
