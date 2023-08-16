@@ -2126,16 +2126,6 @@
    ]
   }
  },
- "c-data-integrity": {
-  "link": "https://w3c.github.io/vc-data-integrity/",
-  "title": "Verifiable Credential Data Integrity",
-  "w3c": {
-   "serie": "vc-data-integrity",
-   "shortnames": [
-    "vc-data-integrity"
-   ]
-  }
- },
  "css-display": {
   "link": "https://drafts.csswg.org/css-display/",
   "title": "CSS Display",
@@ -4761,7 +4751,8 @@
   "title": "Web MIDI API"
  },
  "vocab-adms": {
-  "title": "Asset Description Metadata Schema (ADMS)"
+  "title": "Asset Description Metadata Schema (ADMS)",
+  "retired": true
  },
  "vocab-regorg": {
   "title": "Registered Organization Vocabulary"
@@ -6844,16 +6835,6 @@
    ]
   }
  },
- "adapt-symbols": {
-  "title": "WAI-Adapt: Content Module",
-  "link": "https://w3c.github.io/personalization-semantics/content/",
-  "w3c": {
-   "serie": "adapt-symbols",
-   "shortnames": [
-    "adapt-symbols"
-   ]
-  }
- },
  "rdf-xml": {
   "title": "RDF XML Syntax",
   "link": "https://w3c.github.io/rdf-xml/spec/",
@@ -7028,6 +7009,16 @@
    "serie": "w3c-vision",
    "shortnames": [
     "w3c-vision"
+   ]
+  }
+ },
+ "adapt-symbols": {
+  "title": "WAI-Adapt: Content Module",
+  "link": "https://w3c.github.io/personalization-semantics/content/",
+  "w3c": {
+   "serie": "adapt-symbols",
+   "shortnames": [
+    "adapt-symbols"
    ]
   }
  }
