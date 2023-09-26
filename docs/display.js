@@ -215,8 +215,8 @@ async function getAllData() {
   buildFilters(repo_labels);
 
   // tally the issues on the page
-  const trs = document.querySelectorAll('tr')
-  document.getElementById('total').textContent = trs.length;
+  // const trs = document.querySelectorAll('tr')
+  // document.getElementById('total').textContent = trs.length;
 
   otherTrackingRepos();
 }
