@@ -2,6 +2,7 @@
 
 "use strict";
 
+const Mail = require("nodemailer/lib/mailer");
 const { Repository, GitHub } = require("./lib/github.js"),
   HorizontalRepositories = require("./lib/horizontal-repositories.js"),
   monitor = require("./lib/monitor.js"),
@@ -23,6 +24,11 @@ function log(issue, msg) {
 
 function error(issue, msg) {
   monitor.error(`${issue.html_url} ${msg}`);
+}
+
+function errorEmail(issue, msg) {
+  monitor.error(`${issue.html_url} ${msg}`);
+  email.issueNeedsCare(issue.html_url, msg);
 }
 
 function warn(issue, msg) {

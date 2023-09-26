@@ -275,6 +275,8 @@ async function run() {
       monitor.warn(`${repo.full_name} : likely inconsistent cache status, refreshing the labels`);
       repo.getLabels(-1).catch(monitor.error);
     } else {
+      console.log(e);
+      if (e.errors) e.errors.forEach(console.log);
       monitor.error(`${repo.full_name} : can't set proper labels. ${e}`);
     }
   }));
@@ -571,6 +573,11 @@ async function run() {
     }
   }
 
+  const series = await fetchW3C("specification-series");
+  series.forEach(serie => {
+    serie.shortnameL = serie.shortname.toLowerCase();
+  });
+
   // if W3C knows about some series, we'll pick it up here
   specifications.forEach(spec => {
     const serie = getSerie(spec);
@@ -578,7 +585,10 @@ async function run() {
       const retired = isSerieRetired(specifications, serie);
       let entry = dump_shortnames[serie];
       if (!entry && !all_series.includes(serie)) {
-          let title = getSerieTitle(specifications, serie);
+          let title = series.find(s => s.shortnameL === serie);
+          if (!title) {
+            monitor.error(`${serie} returns an empty title`);
+          }
           if (title && title.length < 2) {
             // that's way too short for a title
             monitor.error(`Discarding title from ${serie} [${title}] (too short)`);
@@ -605,10 +615,6 @@ async function run() {
       }
     }
   })
-  const series = await fetchW3C("specification-series");
-  series.forEach(serie => {
-    serie.shortnameL = serie.shortname.toLowerCase();
-  });
 
 
   for (const [key, value] of Object.entries(dump_shortnames)) {
