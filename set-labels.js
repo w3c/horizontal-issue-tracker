@@ -241,19 +241,20 @@ async function run() {
   // add a few more repositories, such as the repository template
   repositories = repositories.concat(["w3c/note-respec-repo-template"]);
 
-  const CGs = [ "80485", "87846" ];
+  const CGs = [ "cg/wicg", "cg/immersive-web" ];
   let idx = 0;
   while (idx < CGs.length) {
-    const repos = await fetch(`https://labs.w3.org/github-cache/extra/repos/${CGs[idx++]}`)
+    const CG = CGs[idx++];
+    const repos = await fetch(`https://w3c.github.io/groups/${CG}/repositories.json`)
       .then(res => res.json())
       .then(repos => repos.filter(repo => repo.w3c
         && repo.w3c["repo-type"]
         && repo.w3c["repo-type"].find(t => t === "cg-report")));
 
     repos.forEach(repo => {
-      let name = repo.full_name.toLowerCase();
+      let name = `${repo.owner.login}/${repo.name}`.toLowerCase();
       if (!repositories.find(r => r === name)) {
-        monitor.log(`Adding new WICG repository ${name}`);
+        monitor.log(`Adding new ${CG} repository: ${name}`);
         repositories.push(name);
       }
     });
