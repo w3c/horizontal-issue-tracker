@@ -1286,6 +1286,16 @@
    ]
   }
  },
+ "vc-jose-cose": {
+  "link": "https://w3c.github.io/vc-jose-cose",
+  "title": "Securing Verifiable Credentials using JOSE and COSE",
+  "w3c": {
+   "serie": "vc-jose-cose",
+   "shortnames": [
+    "vc-jose-cose"
+   ]
+  }
+ },
  "vehicle-data": {
   "link": "https://w3c.github.io/automotive/vehicle_data/data_spec.html",
   "title": "Vehicle Data",
@@ -1860,7 +1870,7 @@
  },
  "mediasession": {
   "link": "https://w3c.github.io/mediasession/",
-  "title": "Media Session Standard",
+  "title": "Media Session",
   "w3c": {
    "serie": "mediasession",
    "shortnames": [
@@ -1997,6 +2007,16 @@
    "shortnames": [
     "trace-context-1",
     "trace-context-2"
+   ]
+  }
+ },
+ "vc-di-eddsa": {
+  "link": "https://w3c.github.io/vc-di-eddsa/",
+  "title": "EdDSA Cryptosuite",
+  "w3c": {
+   "serie": "vc-di-eddsa",
+   "shortnames": [
+    "vc-di-eddsa"
    ]
   }
  },
@@ -2187,6 +2207,9 @@
    ]
   }
  },
+ "model-element": {
+  "link": "https://immersive-web.github.io/model-element/"
+ },
  "picture-in-picture": {
   "link": "https://w3c.github.io/picture-in-picture/",
   "title": "Picture-in-Picture",
@@ -2215,16 +2238,6 @@
  },
  "html-sanitizer-api": {
   "link": "https://wicg.github.io/sanitizer-api/"
- },
- "vc-jose-cose": {
-  "link": "https://w3c.github.io/vc-jose-cose/",
-  "title": "Securing Verifiable Credentials using JOSE and COSE",
-  "w3c": {
-   "serie": "vc-jose-cose",
-   "shortnames": [
-    "vc-jose-cose"
-   ]
-  }
  },
  "vc-jwt": {
   "link": "https://w3c.github.io/vc-jwt/"
@@ -6912,16 +6925,6 @@
    ]
   }
  },
- "vc-di-eddsa": {
-  "title": "EdDSA Cryptosuite",
-  "link": "https://w3c.github.io/vc-di-eddsa/",
-  "w3c": {
-   "serie": "vc-di-eddsa",
-   "shortnames": [
-    "vc-di-eddsa"
-   ]
-  }
- },
  "vc-di-ecdsa": {
   "title": "ECDSA Cryptosuite",
   "link": "https://w3c.github.io/vc-di-ecdsa/",
@@ -7019,6 +7022,36 @@
    "serie": "adapt-symbols",
    "shortnames": [
     "adapt-symbols"
+   ]
+  }
+ },
+ "latn-ca-gap": {
+  "title": "Catalan Gap Analysis",
+  "link": "https://w3c.github.io/eurlreq/gap-analysis/latn-ca-gap",
+  "w3c": {
+   "serie": "latn-ca-gap",
+   "shortnames": [
+    "latn-ca-gap"
+   ]
+  }
+ },
+ "webvmt": {
+  "title": "WebVMT: The Web Video Map Tracks Format",
+  "link": "https://w3c.github.io/sdw/proposals/geotagging/webvmt/",
+  "w3c": {
+   "serie": "webvmt",
+   "shortnames": [
+    "webvmt"
+   ]
+  }
+ },
+ "edge-cloud-reqs": {
+  "title": "Client-Edge-Cloud coordination Use Cases and Requirements",
+  "link": "https://w3c.github.io/edge-computing-web-exploration/",
+  "w3c": {
+   "serie": "edge-cloud-reqs",
+   "shortnames": [
+    "edge-cloud-reqs"
    ]
   }
  }
