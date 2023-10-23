@@ -552,6 +552,16 @@
    ]
   }
  },
+ "design-principles": {
+  "link": "https://w3ctag.github.io/design-principles/",
+  "title": "Web Platform Design Principles",
+  "w3c": {
+   "serie": "design-principles",
+   "shortnames": [
+    "design-principles"
+   ]
+  }
+ },
  "did-core": {
   "link": "https://w3c.github.io/did-core/",
   "title": "Decentralized Identifiers (DIDs)",
@@ -1096,6 +1106,9 @@
    ]
   }
  },
+ "scroll-to-text-fragment": {
+  "link": "https://wicg.github.io/scroll-to-text-fragment/"
+ },
  "secure-payment-confirmation": {
   "link": "https://w3c.github.io/secure-payment-confirmation",
   "title": "Secure Payment Confirmation",
@@ -1148,6 +1161,9 @@
     "SVG2"
    ]
   }
+ },
+ "text-autospace": {
+  "link": "missing link"
  },
  "trace-context-2": {
   "link": "https://www.w3.org/TR/trace-context-2"
@@ -1293,6 +1309,16 @@
    "serie": "vc-jose-cose",
    "shortnames": [
     "vc-jose-cose"
+   ]
+  }
+ },
+ "vc-json-schema": {
+  "link": "https://www.w3.org/TR/vc-json-schema/",
+  "title": "Verifiable Credentials JSON Schema Specification",
+  "w3c": {
+   "serie": "vc-json-schema",
+   "shortnames": [
+    "vc-json-schema"
    ]
   }
  },
@@ -1731,6 +1757,16 @@
     "css-contain-1",
     "css-contain-2",
     "css-contain-3"
+   ]
+  }
+ },
+ "dapt": {
+  "link": "https://w3c.github.io/dapt/",
+  "title": "Dubbing and Audio description Profiles of TTML2",
+  "w3c": {
+   "serie": "dapt",
+   "shortnames": [
+    "dapt"
    ]
   }
  },
@@ -5988,10 +6024,6 @@
  "htr": {
   "title": "How EMVCo, FIDO, and W3C Technologies Relate"
  },
- "design-principles": {
-  "link": "https://w3ctag.github.io/design-principles/",
-  "title": "Web Platform Design Principles"
- },
  "merchant-validation": {
   "link": "https://w3c.github.io/merchant-validation/",
   "title": "MerchantValidationEvent interface"
@@ -6935,16 +6967,6 @@
    ]
   }
  },
- "dapt": {
-  "title": "Dubbing and Audio description Profiles of TTML2",
-  "link": "https://w3c.github.io/dapt/",
-  "w3c": {
-   "serie": "dapt",
-   "shortnames": [
-    "dapt"
-   ]
-  }
- },
  "vc-status-list": {
   "title": "Verifiable Credentials Status List",
   "link": "https://w3c.github.io/vc-status-list-2021/",
@@ -6962,16 +6984,6 @@
    "serie": "vc-di-bbs",
    "shortnames": [
     "vc-di-bbs"
-   ]
-  }
- },
- "vc-json-schema": {
-  "title": "Verifiable Credentials JSON Schema Specification",
-  "link": "https://w3c.github.io/vc-json-schema/",
-  "w3c": {
-   "serie": "vc-json-schema",
-   "shortnames": [
-    "vc-json-schema"
    ]
   }
  },
@@ -7015,16 +7027,6 @@
    ]
   }
  },
- "adapt-symbols": {
-  "title": "WAI-Adapt: Content Module",
-  "link": "https://w3c.github.io/personalization-semantics/content/",
-  "w3c": {
-   "serie": "adapt-symbols",
-   "shortnames": [
-    "adapt-symbols"
-   ]
-  }
- },
  "latn-ca-gap": {
   "title": "Catalan Gap Analysis",
   "link": "https://w3c.github.io/eurlreq/gap-analysis/latn-ca-gap",
@@ -7052,6 +7054,36 @@
    "serie": "edge-cloud-reqs",
    "shortnames": [
     "edge-cloud-reqs"
+   ]
+  }
+ },
+ "adapt-symbols": {
+  "title": "WAI-Adapt: Content Module",
+  "link": "https://w3c.github.io/personalization-semantics/content/",
+  "w3c": {
+   "serie": "adapt-symbols",
+   "shortnames": [
+    "adapt-symbols"
+   ]
+  }
+ },
+ "epub-a11y-exemption": {
+  "title": "The EPUB Accessibility exemption property",
+  "link": "https://w3c.github.io/epub-specs/epub33/a11y-exemption/",
+  "w3c": {
+   "serie": "epub-a11y-exemption",
+   "shortnames": [
+    "epub-a11y-exemption"
+   ]
+  }
+ },
+ "rch-explainer": {
+  "title": "RDF Dataset Canonicalization and Hash Working Group — Explainer and Use Cases",
+  "link": "https://w3c.github.io/rch-explainer/",
+  "w3c": {
+   "serie": "rch-explainer",
+   "shortnames": [
+    "rch-explainer"
    ]
   }
  }
