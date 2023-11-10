@@ -646,6 +646,9 @@
    ]
   }
  },
+ "editorial": {
+  "link": "missing link"
+ },
  "encoding": {
   "link": "https://encoding.spec.whatwg.org/",
   "title": "Encoding",
@@ -7057,16 +7060,6 @@
    ]
   }
  },
- "adapt-symbols": {
-  "title": "WAI-Adapt: Content Module",
-  "link": "https://w3c.github.io/personalization-semantics/content/",
-  "w3c": {
-   "serie": "adapt-symbols",
-   "shortnames": [
-    "adapt-symbols"
-   ]
-  }
- },
  "epub-a11y-exemption": {
   "title": "The EPUB Accessibility exemption property",
   "link": "https://w3c.github.io/epub-specs/epub33/a11y-exemption/",
@@ -7084,6 +7077,16 @@
    "serie": "rch-explainer",
    "shortnames": [
     "rch-explainer"
+   ]
+  }
+ },
+ "adapt-symbols": {
+  "title": "WAI-Adapt: Content Module",
+  "link": "https://w3c.github.io/personalization-semantics/content/",
+  "w3c": {
+   "serie": "adapt-symbols",
+   "shortnames": [
+    "adapt-symbols"
    ]
   }
  }
