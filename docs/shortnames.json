@@ -1305,6 +1305,16 @@
    ]
   }
  },
+ "vc-di-bbs": {
+  "link": "https://w3c.github.io/vc-di-bbs/",
+  "title": "BBS Cryptosuite",
+  "w3c": {
+   "serie": "vc-di-bbs",
+   "shortnames": [
+    "vc-di-bbs"
+   ]
+  }
+ },
  "vc-jose-cose": {
   "link": "https://w3c.github.io/vc-jose-cose",
   "title": "Securing Verifiable Credentials using JOSE and COSE",
@@ -6900,7 +6910,7 @@
   "w3c": {
    "serie": "sparql-results-xml",
    "shortnames": [
-    "sparql10-results-xml",
+    "sparql11-results-xml",
     "sparql12-results-xml"
    ]
   }
@@ -6977,16 +6987,6 @@
    "serie": "vc-status-list",
    "shortnames": [
     "vc-status-list"
-   ]
-  }
- },
- "vc-di-bbs": {
-  "title": "BBS Cryptosuite",
-  "link": "https://w3c.github.io/vc-di-bbs/",
-  "w3c": {
-   "serie": "vc-di-bbs",
-   "shortnames": [
-    "vc-di-bbs"
    ]
   }
  },
@@ -7087,6 +7087,16 @@
    "serie": "adapt-symbols",
    "shortnames": [
     "adapt-symbols"
+   ]
+  }
+ },
+ "vc-bitstring-status-list": {
+  "title": "Bitstring Status List",
+  "link": "https://w3c.github.io/vc-bitstring-status-list/",
+  "w3c": {
+   "serie": "vc-bitstring-status-list",
+   "shortnames": [
+    "vc-bitstring-status-list"
    ]
   }
  }
