@@ -7080,16 +7080,6 @@
    ]
   }
  },
- "adapt-symbols": {
-  "title": "WAI-Adapt: Content Module",
-  "link": "https://w3c.github.io/personalization-semantics/content/",
-  "w3c": {
-   "serie": "adapt-symbols",
-   "shortnames": [
-    "adapt-symbols"
-   ]
-  }
- },
  "vc-bitstring-status-list": {
   "title": "Bitstring Status List",
   "link": "https://w3c.github.io/vc-bitstring-status-list/",
@@ -7097,6 +7087,16 @@
    "serie": "vc-bitstring-status-list",
    "shortnames": [
     "vc-bitstring-status-list"
+   ]
+  }
+ },
+ "adapt-symbols": {
+  "title": "WAI-Adapt: Content Module",
+  "link": "https://w3c.github.io/personalization-semantics/content/",
+  "w3c": {
+   "serie": "adapt-symbols",
+   "shortnames": [
+    "adapt-symbols"
    ]
   }
  }
