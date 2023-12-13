@@ -1695,6 +1695,9 @@
    ]
   }
  },
+ "3pcd-exemption-heuristics": {
+  "link": "https://github.com/amaliev/3pcd-exemption-heuristics/blob/main/explainer.md"
+ },
  "accelerometer": {
   "link": "https://w3c.github.io/accelerometer/",
   "title": "Accelerometer",
