@@ -2006,6 +2006,9 @@
    ]
   }
  },
+ "saa-non-cookie-storage": {
+  "link": "https://arichiv.github.io/saa-non-cookie-storage/"
+ },
  "screen-orientation": {
   "link": "https://w3c.github.io/screen-orientation/",
   "title": "The Screen Orientation API",
