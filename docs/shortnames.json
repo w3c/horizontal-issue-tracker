@@ -107,7 +107,7 @@
   }
  },
  "contact-picker": {
-  "link": "https://www.w3.org/TR/contact-picker/",
+  "link": "https://w3c.github.io/contact-picker/",
   "title": "Contact Picker API",
   "w3c": {
    "serie": "contact-picker",
