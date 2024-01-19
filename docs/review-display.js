@@ -19,7 +19,9 @@ const config = {
   extra_labels: ''
 };
 
-const HR_LABELS = fetch("https://w3c.github.io/hr-labels.json").then(res => res.json());
+const HR_LABELS = fetch("https://w3c.github.io/common-labels.json")
+  .then(res => res.json())
+  .then(labels => labels.filter(l => l.repo));
 const SHORTNAMES = fetch("shortnames.json").then(r => r.json());
 
 // parse the URL to update the config
