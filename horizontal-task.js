@@ -141,9 +141,11 @@ function removeIssueLabel(repo, issue, labelName) {
     });
     if (found) {
       issue.labels = new_labels;
-      return repo.removeIssueLabel(issue, {name: labelName } ).catch(err => {
-       error(issue, `could not remove label "${labelName}" : ${err} `);
-      });
+      if (!config.debug) {
+        return repo.removeIssueLabel(issue, {name: labelName } ).catch(err => {
+          error(issue, `could not remove label "${labelName}" : ${err} `);
+        });
+      }
     } else {
       error(issue, `no label ${labelName} found, so it can't be removed`);
     }
@@ -154,9 +156,11 @@ function removeIssueLabel(repo, issue, labelName) {
 // set a label on an issue (both on the JS object and on GH)
 function setIssueLabel(repo, issue, labelNames) {
   issue.labels = (issue.labels || []).concat(labelNames.map(s => { name: s}));
-  return repo.setIssueLabel(issue, labelNames).catch(err => {
-    error(issue, `could not set label "${labelNames}" : ${err} `);
-   });
+  if (!config.debug) {
+    return repo.setIssueLabel(issue, labelNames).catch(err => {
+      error(issue, `could not set label "${labelNames}" : ${err} `);
+    });
+  }
 }
 
 // does the url matches the html URL of a GH repository
@@ -277,7 +281,7 @@ async function checkHRIssues(issues, labels) {
       // issue.hr_label is "needs-resolution" or "tracker" (from getHRIssues)
 
       // first, we're looking to see a proper shortname, if needed
-      if (issue.labels.findIndex(l => l.name.startsWith('s:')) === -1) {
+      if (issue.labels.findIndex(l => l && l.name.startsWith('s:')) === -1) {
         for (const spec_issue of issue.spec_issues) {
           const shortnames = getShortlabel(spec_issue.full_name);
           if (shortnames) {
@@ -484,7 +488,7 @@ async function createHRIssue(issue, hlabels) {
         const request_labels = [];
         if (shortlabels) {
           shortlabels.forEach(clabel => {
-            const f = repo_labels.find(l => l.name === clabel);
+            const f = repo_labels.find(l => l && l.name === clabel);
             if (!f) {
               request_labels.push(horizontal_repo.setLabel({ name: clabel, color: "6bc5c6", description: "missing link"})
                 .then(() =>
@@ -558,7 +562,7 @@ async function checkIssue(issue, labels, all_hr_issues) {
       const repo = createRepository(htmlRepoURL(issue.html_url));
       const repo_labels = repo.getLabels();
       needed.forEach(label => {
-        const f = labels.find(l => l.name === label.name);
+        const f = labels.find(l => l && l.name === label.name);
         if (!f) {
           monitor.warn(`${repo.full_name} is missing horizontal labels! Couldn't find ${label.name}`);
         }

@@ -49,12 +49,14 @@ function fetchW3C(queryPath) {
 const GH = "https://github.com/\([^/]+/[^/]+\)/blob/\([^/]+\)/\(.*\)";
 
 const GH_SHORTNAMES = "https://www.w3.org/PM/horizontal/shortnames.json";
+const GH_REPOSITORIES = "https://w3c.github.io/groups/repositories.json";
 const LOCATION = "https://github.com/w3c/horizontal-issue-tracker/blob/main/docs/shortnames.json";
 const CACHE_FILE = "cache.json";
 const CACHE = fs.readFile(CACHE_FILE).then(JSON.parse);
 
-const TR_COPY = "./w3c_tr.json";
 
+
+const TR_COPY = "./w3c_tr.json"; // used during debug
 // used by getSpecifications to load the list of specifications from W3C
 async function getSpecificationsInternal() {
   return fetchW3C("specifications").then(specs => {
