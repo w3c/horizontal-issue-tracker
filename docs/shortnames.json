@@ -107,7 +107,7 @@
   }
  },
  "contact-picker": {
-  "link": "https://w3c.github.io/contact-picker/",
+  "link": "https://www.w3.org/TR/contact-picker/",
   "title": "Contact Picker API",
   "w3c": {
    "serie": "contact-picker",
@@ -366,7 +366,7 @@
   }
  },
  "css-overflow": {
-  "link": "https://drafts.csswg.org/css-overflow-3/",
+  "link": "missing link",
   "title": "CSS Overflow",
   "w3c": {
    "serie": "css-overflow",
@@ -764,6 +764,9 @@
    ]
   }
  },
+ "infra": {
+  "link": "https://github.com/whatwg/infra"
+ },
  "input-events": {
   "link": "https://w3c.github.io/input-events/",
   "title": "Input Events",
@@ -936,6 +939,16 @@
   "link": "https://open-ui.org/",
   "title": "Open UI"
  },
+ "orientation-event": {
+  "link": "missing link",
+  "title": "DeviceOrientation Event",
+  "w3c": {
+   "serie": "orientation-event",
+   "shortnames": [
+    "orientation-event"
+   ]
+  }
+ },
  "owl-time": {
   "link": "https://w3c.github.io/sdw/time/",
   "title": "Time Ontology in OWL",
@@ -976,20 +989,6 @@
     "payment-request",
     "payment-request-1.1"
    ]
-  }
- },
- "personalization-semantics": {
-  "link": "https://w3c.github.io/personalization-semantics/content/",
-  "title": "Personalization Semantics Explainer",
-  "w3c": {
-   "serie": "personalization-semantics"
-  }
- },
- "personalization-semantics-content": {
-  "link": "https://w3c.github.io/personalization-semantics/content/",
-  "title": "Personalization Semantics Content",
-  "w3c": {
-   "serie": "personalization-semantics-content"
   }
  },
  "png": {
@@ -1154,6 +1153,18 @@
    ]
   }
  },
+ "sparql-query": {
+  "link": "https://w3c.github.io/sparql-query/",
+  "title": "SPARQL Query Language",
+  "w3c": {
+   "serie": "sparql-query",
+   "shortnames": [
+    "sparql10-query",
+    "sparql11-query",
+    "sparql12-query"
+   ]
+  }
+ },
  "svg": {
   "link": "https://svgwg.org/svg2-draft/",
   "title": "Scalable Vector Graphics (SVG)",
@@ -1285,6 +1296,16 @@
    ]
   }
  },
+ "vc-bitstring-status-list": {
+  "link": "https://w3c.github.io/vc-bitstring-status-list",
+  "title": "Bitstring Status List",
+  "w3c": {
+   "serie": "vc-bitstring-status-list",
+   "shortnames": [
+    "vc-bitstring-status-list"
+   ]
+  }
+ },
  "vc-data-integrity": {
   "link": "https://w3c.github.io/vc-data-integrity/",
   "title": "Verifiable Credential Data Integrity",
@@ -1317,7 +1338,7 @@
   }
  },
  "vc-jose-cose": {
-  "link": "https://w3c.github.io/vc-jose-cose",
+  "link": "https://w3c.github.io/vc-jose-cose/",
   "title": "Securing Verifiable Credentials using JOSE and COSE",
   "w3c": {
    "serie": "vc-jose-cose",
@@ -1398,7 +1419,8 @@
    "shortnames": [
     "wai-aria",
     "wai-aria-1.1",
-    "wai-aria-1.2"
+    "wai-aria-1.2",
+    "wai-aria-1.3"
    ]
   }
  },
@@ -1954,16 +1976,6 @@
    ]
   }
  },
- "orientation-event": {
-  "link": "https://w3c.github.io/deviceorientation/",
-  "title": "DeviceOrientation Event",
-  "w3c": {
-   "serie": "orientation-event",
-   "shortnames": [
-    "orientation-event"
-   ]
-  }
- },
  "payment-handler": {
   "link": "https://w3c.github.io/payment-handler",
   "title": "Payment Handler API",
@@ -2100,6 +2112,16 @@
  },
  "webID": {
   "link": "https://wicg.github.io/WebID/README.html"
+ },
+ "webmachinelearning-ethics": {
+  "link": "https://webmachinelearning.github.io/webmachinelearning-ethics/",
+  "title": "Ethical Principles for Web Machine Learning",
+  "w3c": {
+   "serie": "webmachinelearning-ethics",
+   "shortnames": [
+    "webmachinelearning-ethics"
+   ]
+  }
  },
  "webrtc-extensions": {
   "link": "https://w3c.github.io/webrtc-extensions/",
@@ -2298,11 +2320,35 @@
  "html-sanitizer-api": {
   "link": "https://wicg.github.io/sanitizer-api/"
  },
- "vc-jwt": {
-  "link": "https://w3c.github.io/vc-jwt/"
+ "mathml-core": {
+  "link": "https://w3c.github.io/mathml-core/",
+  "title": "MathML Core",
+  "w3c": {
+   "serie": "mathml-core",
+   "shortnames": [
+    "mathml-core"
+   ]
+  }
  },
  "web-nfc": {
   "link": "https://w3c.github.io/web-nfc/"
+ },
+ "personalization-semantics": {
+  "link": "https://w3c.github.io/personalization-semantics/content/",
+  "title": "Personalization Semantics Explainer",
+  "w3c": {
+   "serie": "personalization-semantics"
+  }
+ },
+ "personalization-semantics-content": {
+  "link": "https://w3c.github.io/personalization-semantics/content/",
+  "title": "Personalization Semantics Content",
+  "w3c": {
+   "serie": "personalization-semantics-content"
+  }
+ },
+ "vc-jwt": {
+  "link": "https://w3c.github.io/vc-jwt/"
  },
  "view-transitions": {
   "link": "missing link"
@@ -4309,9 +4355,6 @@
  "sparql-protocol": {
   "title": "SPARQL Protocol"
  },
- "sparql-query": {
-  "title": "SPARQL Query Language"
- },
  "sparql-service-description": {
   "title": "SPARQL Service Description"
  },
@@ -6281,16 +6324,6 @@
    ]
   }
  },
- "mathml-core": {
-  "title": "MathML Core",
-  "link": "https://w3c.github.io/mathml-core/",
-  "w3c": {
-   "serie": "mathml-core",
-   "shortnames": [
-    "mathml-core"
-   ]
-  }
- },
  "localizable-manifests": {
   "title": "Developing Localizable Manifests",
   "link": "https://w3c.github.io/localizable-manifests",
@@ -6711,16 +6744,6 @@
    ]
   }
  },
- "webmachinelearning-ethics": {
-  "title": "Ethical Principles for Web Machine Learning",
-  "link": "https://webmachinelearning.github.io/ethical-webmachinelearning",
-  "w3c": {
-   "serie": "webmachinelearning-ethics",
-   "shortnames": [
-    "webmachinelearning-ethics"
-   ]
-  }
- },
  "adapt-content": {
   "title": "WAI-Adapt: Content Module",
   "link": "https://w3c.github.io/personalization-semantics/content/",
@@ -7090,16 +7113,6 @@
    ]
   }
  },
- "vc-bitstring-status-list": {
-  "title": "Bitstring Status List",
-  "link": "https://w3c.github.io/vc-bitstring-status-list/",
-  "w3c": {
-   "serie": "vc-bitstring-status-list",
-   "shortnames": [
-    "vc-bitstring-status-list"
-   ]
-  }
- },
  "adapt-symbols": {
   "title": "WAI-Adapt: Content Module",
   "link": "https://w3c.github.io/personalization-semantics/content/",
@@ -7107,6 +7120,16 @@
    "serie": "adapt-symbols",
    "shortnames": [
     "adapt-symbols"
+   ]
+  }
+ },
+ "css-viewport": {
+  "title": "CSS Viewport Module",
+  "link": "https://drafts.csswg.org/css-viewport/",
+  "w3c": {
+   "serie": "css-viewport",
+   "shortnames": [
+    "css-viewport-1"
    ]
   }
  }
