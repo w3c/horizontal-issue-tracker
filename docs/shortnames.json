@@ -2247,6 +2247,16 @@
    ]
   }
  },
+ "cssom": {
+  "link": "https://drafts.csswg.org/cssom/",
+  "title": "CSS Object Model (CSSOM)",
+  "w3c": {
+   "serie": "cssom",
+   "shortnames": [
+    "cssom-1"
+   ]
+  }
+ },
  "filter-effects": {
   "link": "https://drafts.fxtf.org/filter-effects/",
   "title": "Filter Effects",
@@ -2306,16 +2316,6 @@
  },
  "cookie-store": {
   "link": "https://wicg.github.io/cookie-store/"
- },
- "cssom": {
-  "link": "https://drafts.csswg.org/cssom/",
-  "title": "CSS Object Model (CSSOM)",
-  "w3c": {
-   "serie": "cssom",
-   "shortnames": [
-    "cssom-1"
-   ]
-  }
  },
  "html-sanitizer-api": {
   "link": "https://wicg.github.io/sanitizer-api/"
@@ -7130,6 +7130,16 @@
    "serie": "css-viewport",
    "shortnames": [
     "css-viewport-1"
+   ]
+  }
+ },
+ "vc-specs-dir": {
+  "title": "VC Specifications Directory",
+  "link": "https://w3c.github.io/vc-specs-dir/",
+  "w3c": {
+   "serie": "vc-specs-dir",
+   "shortnames": [
+    "vc-specs-dir"
    ]
   }
  }
