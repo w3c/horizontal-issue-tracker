@@ -2227,6 +2227,16 @@
    ]
   }
  },
+ "css-anchor-position": {
+  "link": "missing link",
+  "title": "CSS Anchor Positioning",
+  "w3c": {
+   "serie": "css-anchor-position",
+   "shortnames": [
+    "css-anchor-position-1"
+   ]
+  }
+ },
  "css-display": {
   "link": "https://drafts.csswg.org/css-display/",
   "title": "CSS Display",
@@ -7030,16 +7040,6 @@
    "serie": "nkoo-lreq",
    "shortnames": [
     "nkoo-lreq"
-   ]
-  }
- },
- "css-anchor-position": {
-  "title": "CSS Anchor Positioning",
-  "link": "https://drafts.csswg.org/css-anchor-position-1/",
-  "w3c": {
-   "serie": "css-anchor-position",
-   "shortnames": [
-    "css-anchor-position-1"
    ]
   }
  },
