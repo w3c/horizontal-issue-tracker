@@ -1180,6 +1180,9 @@
  "text-autospace": {
   "link": "missing link"
  },
+ "text-spacing": {
+  "link": "missing link"
+ },
  "trace-context-2": {
   "link": "https://www.w3.org/TR/trace-context-2"
  },
@@ -6603,7 +6606,8 @@
    "shortnames": [
     "vsso"
    ]
-  }
+  },
+  "retired": true
  },
  "vsso-core": {
   "title": "VSSo Core: Vehicle Signal Specification Core Ontology",
@@ -6613,7 +6617,8 @@
    "shortnames": [
     "vsso-core"
    ]
-  }
+  },
+  "retired": true
  },
  "miniapp-widget-req": {
   "title": "MiniApp Widget Requirements",
@@ -7142,5 +7147,27 @@
     "vc-specs-dir"
    ]
   }
+ },
+ "viss2-core": {
+  "title": "VISS - Core",
+  "link": "https://github.com/w3c/automotive/blob/gh-pages/spec/VISSv2_Core.html",
+  "w3c": {
+   "serie": "viss2-core",
+   "shortnames": [
+    "viss2-core"
+   ]
+  },
+  "retired": true
+ },
+ "viss2-transport": {
+  "title": "VISS -Transport",
+  "link": "https://github.com/w3c/automotive/blob/gh-pages/spec/VISSv2_Transport.html",
+  "w3c": {
+   "serie": "viss2-transport",
+   "shortnames": [
+    "viss2-transport"
+   ]
+  },
+  "retired": true
  }
 }
