@@ -2170,16 +2170,6 @@
    ]
   }
  },
- "window-placement": {
-  "link": "https://www.w3.org/TR/window-placement",
-  "title": "Multi-Screen Window Placement",
-  "w3c": {
-   "serie": "window-placement",
-   "shortnames": [
-    "window-placement"
-   ]
-  }
- },
  "clipboard-apis": {
   "link": "https://w3c.github.io/clipboard-apis/",
   "title": "Clipboard API and events",
@@ -2345,6 +2335,16 @@
  },
  "web-nfc": {
   "link": "https://w3c.github.io/web-nfc/"
+ },
+ "window-placement": {
+  "link": "https://www.w3.org/TR/window-placement",
+  "title": "Multi-Screen Window Placement",
+  "w3c": {
+   "serie": "window-placement",
+   "shortnames": [
+    "window-placement"
+   ]
+  }
  },
  "personalization-semantics": {
   "link": "https://w3c.github.io/personalization-semantics/content/",
