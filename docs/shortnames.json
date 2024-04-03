@@ -674,6 +674,16 @@
   "link": "https://www.w3.org/publishing/epub/epub-packages.html",
   "title": "EPUB Packages"
  },
+ "ethical-web-principles": {
+  "link": "https://w3ctag.github.io/ethical-web-principles/",
+  "title": "W3C TAG Ethical Web Principles",
+  "w3c": {
+   "serie": "ethical-web-principles",
+   "shortnames": [
+    "ethical-web-principles"
+   ]
+  }
+ },
  "findtext": {
   "link": "https://w3c.github.io/findtext/",
   "title": "FindText API",
@@ -2081,6 +2091,16 @@
    "shortnames": [
     "trace-context-1",
     "trace-context-2"
+   ]
+  }
+ },
+ "vc-di-ecdsa": {
+  "link": "https://w3c.github.io/vc-di-ecdsa/",
+  "title": "ECDSA Cryptosuite",
+  "w3c": {
+   "serie": "vc-di-ecdsa",
+   "shortnames": [
+    "vc-di-ecdsa"
    ]
   }
  },
@@ -6699,16 +6719,6 @@
    ]
   }
  },
- "ethical-web-principles": {
-  "title": "W3C TAG Ethical Web Principles",
-  "link": "https://w3ctag.github.io/ethical-web-principles/",
-  "w3c": {
-   "serie": "ethical-web-principles",
-   "shortnames": [
-    "ethical-web-principles"
-   ]
-  }
- },
  "event-timing": {
   "title": "Event Timing API",
   "link": "https://w3c.github.io/event-timing",
@@ -7015,16 +7025,6 @@
    "serie": "badging",
    "shortnames": [
     "badging"
-   ]
-  }
- },
- "vc-di-ecdsa": {
-  "title": "ECDSA Cryptosuite",
-  "link": "https://w3c.github.io/vc-di-ecdsa/",
-  "w3c": {
-   "serie": "vc-di-ecdsa",
-   "shortnames": [
-    "vc-di-ecdsa"
    ]
   }
  },
