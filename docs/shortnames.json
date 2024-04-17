@@ -7169,5 +7169,15 @@
    ]
   },
   "retired": true
+ },
+ "khmr-lreq": {
+  "title": "Khmer Layout Requirements (Draft)",
+  "link": "https://w3c.github.io/sealreq/khmer/",
+  "w3c": {
+   "serie": "khmr-lreq",
+   "shortnames": [
+    "khmr-lreq"
+   ]
+  }
  }
 }
