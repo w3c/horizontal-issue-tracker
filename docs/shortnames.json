@@ -563,6 +563,16 @@
    ]
   }
  },
+ "device-posture": {
+  "link": "missing link",
+  "title": "Device Posture API",
+  "w3c": {
+   "serie": "device-posture",
+   "shortnames": [
+    "device-posture"
+   ]
+  }
+ },
  "did-core": {
   "link": "https://w3c.github.io/did-core/",
   "title": "Decentralized Identifiers (DIDs)",
@@ -1021,6 +1031,18 @@
     "png-1",
     "png-3",
     "png-2"
+   ]
+  }
+ },
+ "pointerevents": {
+  "link": "https://www.w3.org/TR/pointerevents/ (levels 1, 2, 3...)",
+  "title": "Pointer Events",
+  "w3c": {
+   "serie": "pointerevents",
+   "shortnames": [
+    "pointerevents",
+    "pointerevents2",
+    "pointerevents3"
    ]
   }
  },
@@ -1839,16 +1861,6 @@
  "deprecation-reporting": {
   "link": "https://wicg.github.io/deprecation-reporting/"
  },
- "device-posture": {
-  "link": "https://w3c.github.io/device-posture/",
-  "title": "Device Posture API",
-  "w3c": {
-   "serie": "device-posture",
-   "shortnames": [
-    "device-posture"
-   ]
-  }
- },
  "epub-rs": {
   "link": "https://w3c.github.io/epub-specs/epub33/rs/",
   "title": "EPUB Reading Systems",
@@ -2010,6 +2022,16 @@
    "serie": "payment-handler",
    "shortnames": [
     "payment-handler"
+   ]
+  }
+ },
+ "privacy-principles": {
+  "link": "https://w3ctag.github.io/privacy-principles/",
+  "title": "Privacy Principles",
+  "w3c": {
+   "serie": "privacy-principles",
+   "shortnames": [
+    "privacy-principles"
    ]
   }
  },
@@ -2229,18 +2251,6 @@
    "serie": "mediacapture-viewport",
    "shortnames": [
     "mediacapture-viewport"
-   ]
-  }
- },
- "pointerevents": {
-  "link": "https://w3c.github.io/pointerevents/",
-  "title": "Pointer Events",
-  "w3c": {
-   "serie": "pointerevents",
-   "shortnames": [
-    "pointerevents",
-    "pointerevents2",
-    "pointerevents3"
    ]
   }
  },
@@ -6719,16 +6729,6 @@
    ]
   }
  },
- "privacy-principles": {
-  "title": "Privacy Principles",
-  "link": "https://w3ctag.github.io/privacy-principles/",
-  "w3c": {
-   "serie": "privacy-principles",
-   "shortnames": [
-    "privacy-principles"
-   ]
-  }
- },
  "event-timing": {
   "title": "Event Timing API",
   "link": "https://w3c.github.io/event-timing",
@@ -7217,6 +7217,26 @@
    "serie": "controller-document",
    "shortnames": [
     "controller-document"
+   ]
+  }
+ },
+ "epub-fxl-a11y": {
+  "title": "EPUB Fixed Layout Accessibility",
+  "link": "https://w3c.github.io/epub-specs/epub33/fxl-a11y/",
+  "w3c": {
+   "serie": "epub-fxl-a11y",
+   "shortnames": [
+    "epub-fxl-a11y"
+   ]
+  }
+ },
+ "adlm-lreq": {
+  "title": "Adlam Layout Requirements",
+  "link": "https://w3c.github.io/afrlreq/adlm/",
+  "w3c": {
+   "serie": "adlm-lreq",
+   "shortnames": [
+    "adlm-lreq"
    ]
   }
  }
