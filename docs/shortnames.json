@@ -119,6 +119,16 @@
  "content-index": {
   "link": "https://wicg.github.io/content-index/spec/"
  },
+ "controller-document": {
+  "link": "https://w3c.github.io/controller-document/",
+  "title": "Controller Documents",
+  "w3c": {
+   "serie": "controller-document",
+   "shortnames": [
+    "controller-document"
+   ]
+  }
+ },
  "core-aam": {
   "link": "https://w3c.github.io/core-aam/",
   "title": "Core Accessibility API Mappings",
@@ -712,7 +722,7 @@
  },
  "geolocation": {
   "link": "https://w3c.github.io/geolocation-api/",
-  "title": "Geolocation API",
+  "title": "Geolocation",
   "w3c": {
    "serie": "geolocation",
    "shortnames": [
@@ -7210,16 +7220,6 @@
    ]
   }
  },
- "controller-document": {
-  "title": "Controller Documents",
-  "link": "https://w3c.github.io/vc-controller-document/",
-  "w3c": {
-   "serie": "controller-document",
-   "shortnames": [
-    "controller-document"
-   ]
-  }
- },
  "epub-fxl-a11y": {
   "title": "EPUB Fixed Layout Accessibility",
   "link": "https://w3c.github.io/epub-specs/epub33/fxl-a11y/",
@@ -7237,6 +7237,46 @@
    "serie": "adlm-lreq",
    "shortnames": [
     "adlm-lreq"
+   ]
+  }
+ },
+ "vc-overview": {
+  "title": "Verifiable Credentials Overview",
+  "link": "https://w3c.github.io/vc-overview/",
+  "w3c": {
+   "serie": "vc-overview",
+   "shortnames": [
+    "vc-overview"
+   ]
+  }
+ },
+ "arab-ks-lreq": {
+  "title": "Perso-arabic Kashmiri Layout Requirements",
+  "link": "https://w3c.github.io/alreq/arab-ks/",
+  "w3c": {
+   "serie": "arab-ks-lreq",
+   "shortnames": [
+    "arab-ks-lreq"
+   ]
+  }
+ },
+ "arab-ug-lreq": {
+  "title": "Uighur Layout Requirements",
+  "link": "https://w3c.github.io/alreq/arab-ug/",
+  "w3c": {
+   "serie": "arab-ug-lreq",
+   "shortnames": [
+    "arab-ug-lreq"
+   ]
+  }
+ },
+ "arab-ur-lreq": {
+  "title": "Urdu Layout Requirements",
+  "link": "https://w3c.github.io/alreq/arab-ur/",
+  "w3c": {
+   "serie": "arab-ur-lreq",
+   "shortnames": [
+    "arab-ur-lreq"
    ]
   }
  }
