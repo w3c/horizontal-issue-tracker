@@ -726,8 +726,6 @@
   "w3c": {
    "serie": "geolocation",
    "shortnames": [
-    "geolocation-API",
-    "geolocation-API-v2",
     "geolocation"
    ]
   }
@@ -1437,6 +1435,16 @@
    ]
   },
   "retired": true
+ },
+ "vibration": {
+  "link": "Vibration",
+  "title": "Vibration API",
+  "w3c": {
+   "serie": "vibration",
+   "shortnames": [
+    "vibration"
+   ]
+  }
  },
  "viss-core": {
   "link": "https://www.w3.org/TR/viss2-core/",
@@ -4689,10 +4697,6 @@
  "turtle": {
   "title": "RDF 1.1 Turtle"
  },
- "vibration": {
-  "link": "https://w3c.github.io/vibration/",
-  "title": "Vibration API"
- },
  "task-models": {
   "title": "MBUI - Task Models",
   "retired": true
@@ -6907,7 +6911,8 @@
    "shortnames": [
     "vc-jws-2020"
    ]
-  }
+  },
+  "retired": true
  },
  "aac-registry": {
   "title": "W3C Alternative and Augmented Communication (AAC) Symbol Registry",
@@ -7277,6 +7282,26 @@
    "serie": "arab-ur-lreq",
    "shortnames": [
     "arab-ur-lreq"
+   ]
+  }
+ },
+ "arab-ur-gap": {
+  "title": "Urdu Gap Analysis",
+  "link": "https://w3c.github.io/alreq/gap-analysis/arab-ur-gap.html",
+  "w3c": {
+   "serie": "arab-ur-gap",
+   "shortnames": [
+    "arab-ur-gap"
+   ]
+  }
+ },
+ "webcodecs-video-frame-metadata-registry": {
+  "title": "WebCodecs VideoFrame Metadata Registry",
+  "link": "https://w3c.github.io/webcodecs/video-frame-metadata-registry.html",
+  "w3c": {
+   "serie": "webcodecs-video-frame-metadata-registry",
+   "shortnames": [
+    "webcodecs-video-frame-metadata-registry"
    ]
   }
  }
