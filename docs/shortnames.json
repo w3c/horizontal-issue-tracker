@@ -1054,6 +1054,16 @@
    ]
   }
  },
+ "predefined-counter-styles": {
+  "link": "https://www.w3.org/TR/predefined-counter-styles/",
+  "title": "Ready-made Counter Styles",
+  "w3c": {
+   "serie": "predefined-counter-styles",
+   "shortnames": [
+    "predefined-counter-styles"
+   ]
+  }
+ },
  "presentation-api": {
   "link": "https://w3c.github.io/presentation-api/",
   "title": "Presentation API",
@@ -4173,10 +4183,6 @@
  "respimg-usecases": {
   "link": "https://usecases.responsiveimages.org",
   "title": "Use Cases and Requirements for Standardizing Responsive Images"
- },
- "predefined-counter-styles": {
-  "link": "https://w3c.github.io/predefined-counter-styles/",
-  "title": "Ready-made Counter Styles"
  },
  "resource-priorities": {
   "title": "Resource Priorities",
