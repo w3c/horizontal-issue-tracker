@@ -1031,7 +1031,7 @@
   }
  },
  "png": {
-  "link": "https://w3c.github.io/PNG-spec/",
+  "link": "https://w3c.github.io/png/",
   "title": "Portable Network Graphics (PNG)",
   "w3c": {
    "serie": "PNG",
@@ -1536,6 +1536,17 @@
     "WCAG21",
     "WCAG22",
     "wcag-3.0"
+   ]
+  }
+ },
+ "wcag2ict": {
+  "link": "https://www.w3.org/TR/wcag2ict-22/",
+  "title": "Guidance on Applying WCAG to Non-Web Information and Communications Technologies (WCAG2ICT)",
+  "w3c": {
+   "serie": "wcag2ict",
+   "shortnames": [
+    "wcag2ict-20",
+    "wcag2ict-22"
    ]
   }
  },
@@ -4919,10 +4930,6 @@
  "vocab-people": {
   "title": "Terms for describing people"
  },
- "wcag2ict": {
-  "link": "https://www.w3.org/WAI/GL/wcag2ict/",
-  "title": "Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT)"
- },
  "web-intents": {
   "title": "Web Intents",
   "retired": true
@@ -7308,6 +7315,56 @@
    "serie": "webcodecs-video-frame-metadata-registry",
    "shortnames": [
     "webcodecs-video-frame-metadata-registry"
+   ]
+  }
+ },
+ "latn-lreq": {
+  "title": "Latin Script Resources",
+  "link": "https://w3c.github.io/eurlreq/latn/",
+  "w3c": {
+   "serie": "latn-lreq",
+   "shortnames": [
+    "latn-lreq"
+   ]
+  }
+ },
+ "latn-gap": {
+  "title": "Latin Script Gap Analysis",
+  "link": "https://w3c.github.io/eurlreq/gap-analysis/latn-gap",
+  "w3c": {
+   "serie": "latn-gap",
+   "shortnames": [
+    "latn-gap"
+   ]
+  }
+ },
+ "hebr-lreq": {
+  "title": "Hebrew Script Resources",
+  "link": "https://w3c.github.io/hlreq/hebr/",
+  "w3c": {
+   "serie": "hebr-lreq",
+   "shortnames": [
+    "hebr-lreq"
+   ]
+  }
+ },
+ "arab-lreq": {
+  "title": "Arabic Script Resources",
+  "link": "https://w3c.github.io/alreq/arab/",
+  "w3c": {
+   "serie": "arab-lreq",
+   "shortnames": [
+    "arab-lreq"
+   ]
+  }
+ },
+ "hani-lreq": {
+  "title": "Chinese Script Resources",
+  "link": "https://www.w3.org/International/clreq/resources/",
+  "w3c": {
+   "serie": "hani-lreq",
+   "shortnames": [
+    "hani-lreq"
    ]
   }
  }
