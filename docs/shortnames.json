@@ -7367,5 +7367,15 @@
     "hani-lreq"
    ]
   }
+ },
+ "eme-hdcp-version-registry": {
+  "title": "Encrypted Media Extensions HDCP Version Registry",
+  "link": "https://w3c.github.io/encrypted-media/hdcp-version-registry.html",
+  "w3c": {
+   "serie": "eme-hdcp-version-registry",
+   "shortnames": [
+    "eme-hdcp-version-registry"
+   ]
+  }
  }
 }
