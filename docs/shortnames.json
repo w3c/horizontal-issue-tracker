@@ -432,7 +432,8 @@
   "w3c": {
    "serie": "css-scroll-snap",
    "shortnames": [
-    "css-scroll-snap-1"
+    "css-scroll-snap-1",
+    "css-scroll-snap-2"
    ]
   }
  },
@@ -1162,7 +1163,7 @@
  },
  "scroll-animations": {
   "link": "missing link",
-  "title": "Scroll-linked Animations",
+  "title": "Scroll-driven Animations",
   "w3c": {
    "serie": "scroll-animations",
    "shortnames": [
@@ -2112,7 +2113,7 @@
  },
  "screen-orientation": {
   "link": "https://w3c.github.io/screen-orientation/",
-  "title": "The Screen Orientation API",
+  "title": "Screen Orientation",
   "w3c": {
    "serie": "screen-orientation",
    "shortnames": [
@@ -6053,7 +6054,8 @@
  },
  "latn-nl-gap": {
   "link": "https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap",
-  "title": "Dutch Gap Analysis"
+  "title": "Dutch Gap Analysis",
+  "retired": true
  },
  "elreq-gap": {
   "link": "https://w3c.github.io/elreq/gap-analysis/",
@@ -6069,7 +6071,8 @@
  },
  "latn-hu-gap": {
   "link": "https://w3c.github.io/eurlreq/gap-analysis/latn-hu-gap",
-  "title": "Hungarian Gap Analysis"
+  "title": "Hungarian Gap Analysis",
+  "retired": true
  },
  "alreq-gap": {
   "link": "https://w3c.github.io/alreq/gap-analysis/",
@@ -6200,11 +6203,13 @@
  },
  "latn-de-gap": {
   "link": "https://w3c.github.io/eurlreq/gap-analysis/latn-de-gap",
-  "title": "German Gap Analysis"
+  "title": "German Gap Analysis",
+  "retired": true
  },
  "latn-fr-gap": {
   "link": "https://w3c.github.io/eurlreq/gap-analysis/latn-fr-gap",
-  "title": "French Gap Analysis"
+  "title": "French Gap Analysis",
+  "retired": true
  },
  "nkoo-gap": {
   "link": "https://w3c.github.io/afrlreq/gap-analysis/nkoo-gap",
@@ -6705,7 +6710,8 @@
    "shortnames": [
     "arab-ks-gap"
    ]
-  }
+  },
+  "retired": true
  },
  "arab-ug-gap": {
   "title": "Uighur Gap Analysis",
@@ -6715,7 +6721,8 @@
    "shortnames": [
     "arab-ug-gap"
    ]
-  }
+  },
+  "retired": true
  },
  "mediacapture-region": {
   "title": "Region Capture",
@@ -7114,7 +7121,8 @@
    "shortnames": [
     "latn-ca-gap"
    ]
-  }
+  },
+  "retired": true
  },
  "webvmt": {
   "title": "WebVMT: The Web Video Map Tracks Format",
@@ -7276,7 +7284,8 @@
    "shortnames": [
     "arab-ks-lreq"
    ]
-  }
+  },
+  "retired": true
  },
  "arab-ug-lreq": {
   "title": "Uighur Layout Requirements",
@@ -7286,7 +7295,8 @@
    "shortnames": [
     "arab-ug-lreq"
    ]
-  }
+  },
+  "retired": true
  },
  "arab-ur-lreq": {
   "title": "Urdu Layout Requirements",
@@ -7296,7 +7306,8 @@
    "shortnames": [
     "arab-ur-lreq"
    ]
-  }
+  },
+  "retired": true
  },
  "arab-ur-gap": {
   "title": "Urdu Gap Analysis",
@@ -7306,7 +7317,8 @@
    "shortnames": [
     "arab-ur-gap"
    ]
-  }
+  },
+  "retired": true
  },
  "webcodecs-video-frame-metadata-registry": {
   "title": "WebCodecs VideoFrame Metadata Registry",
@@ -7375,6 +7387,86 @@
    "serie": "eme-hdcp-version-registry",
    "shortnames": [
     "eme-hdcp-version-registry"
+   ]
+  }
+ },
+ "cyrl-lreq": {
+  "title": "Cyrillic Script Resources",
+  "link": "https://w3c.github.io/eurlreq/cyrl/",
+  "w3c": {
+   "serie": "cyrl-lreq",
+   "shortnames": [
+    "cyrl-lreq"
+   ]
+  }
+ },
+ "cyrl-gap": {
+  "title": "Cyrillic Gap Analysis",
+  "link": "https://w3c.github.io/gap-analysis/cyrl-gap",
+  "w3c": {
+   "serie": "cyrl-gap",
+   "shortnames": [
+    "cyrl-gap"
+   ]
+  }
+ },
+ "beng-lreq": {
+  "title": "Bengali Script Resources",
+  "link": "https://w3c.github.io/iip/beng/",
+  "w3c": {
+   "serie": "beng-lreq",
+   "shortnames": [
+    "beng-lreq"
+   ]
+  }
+ },
+ "deva-lreq": {
+  "title": "Devanagari Script Resources",
+  "link": "https://w3c.github.io/iip/deva/",
+  "w3c": {
+   "serie": "deva-lreq",
+   "shortnames": [
+    "deva-lreq"
+   ]
+  }
+ },
+ "ethi-lreq": {
+  "title": "Ethiopic Script Resources",
+  "link": "https://w3c.github.io/elreq/ethi/",
+  "w3c": {
+   "serie": "ethi-lreq",
+   "shortnames": [
+    "ethi-lreq"
+   ]
+  }
+ },
+ "geor-lreq": {
+  "title": "Georgian Script Resources",
+  "link": "https://w3c.github.io/eurlreq/geor/",
+  "w3c": {
+   "serie": "geor-lreq",
+   "shortnames": [
+    "geor-lreq"
+   ]
+  }
+ },
+ "kore-lreq": {
+  "title": "Korean Script Resources",
+  "link": "https://w3c.github.io/klreq/kore/",
+  "w3c": {
+   "serie": "kore-lreq",
+   "shortnames": [
+    "kore-lreq"
+   ]
+  }
+ },
+ "mong-lreq": {
+  "title": "Mongolian Script Resources",
+  "link": "https://w3c.github.io/mlreq/mong/",
+  "w3c": {
+   "serie": "mong-lreq",
+   "shortnames": [
+    "mong-lreq"
    ]
   }
  }
