@@ -1026,8 +1026,7 @@
   "w3c": {
    "serie": "payment-request",
    "shortnames": [
-    "payment-request",
-    "payment-request-1.1"
+    "payment-request"
    ]
   }
  },
@@ -1474,7 +1473,6 @@
    "serie": "vocab-dcat",
    "shortnames": [
     "vocab-dcat-1",
-    "vocab-dcat-2",
     "vocab-dcat-3"
    ]
   }
@@ -7467,6 +7465,106 @@
    "serie": "mong-lreq",
    "shortnames": [
     "mong-lreq"
+   ]
+  }
+ },
+ "grek-lreq": {
+  "title": "Greek Script Resources",
+  "link": "https://w3c.github.io/eurlreq/grek/",
+  "w3c": {
+   "serie": "grek-lreq",
+   "shortnames": [
+    "grek-lreq"
+   ]
+  }
+ },
+ "gujr-lreq": {
+  "title": "Gujarati Script Resources",
+  "link": "https://w3c.github.io/iip/gujr/",
+  "w3c": {
+   "serie": "gujr-lreq",
+   "shortnames": [
+    "gujr-lreq"
+   ]
+  }
+ },
+ "taml-lreq": {
+  "title": "Tamil Script Resources",
+  "link": "https://w3c.github.io/iip/taml/",
+  "w3c": {
+   "serie": "taml-lreq",
+   "shortnames": [
+    "taml-lreq"
+   ]
+  }
+ },
+ "java-lreq": {
+  "title": "Javanese Script Resources",
+  "link": "https://w3c.github.io/sealreq/java/",
+  "w3c": {
+   "serie": "java-lreq",
+   "shortnames": [
+    "java-lreq"
+   ]
+  }
+ },
+ "cher-lreq": {
+  "title": "Cherokee Script Resources",
+  "link": "https://w3c.github.io/amlreq/cher/",
+  "w3c": {
+   "serie": "cher-lreq",
+   "shortnames": [
+    "cher-lreq"
+   ]
+  }
+ },
+ "cans-lreq": {
+  "title": "Canadian Aboriginal Syllabics Script Resources",
+  "link": "https://w3c.github.io/amlreq/cans/",
+  "w3c": {
+   "serie": "cans-lreq",
+   "shortnames": [
+    "cans-lreq"
+   ]
+  }
+ },
+ "osge-lreq": {
+  "title": "Osage Script Resources",
+  "link": "https://w3c.github.io/amlreq/osge/",
+  "w3c": {
+   "serie": "osge-lreq",
+   "shortnames": [
+    "osge-lreq"
+   ]
+  }
+ },
+ "jpan-lreq": {
+  "title": "Japanese Script Resources",
+  "link": "https://w3c.github.io/jlreq/jpan/",
+  "w3c": {
+   "serie": "jpan-lreq",
+   "shortnames": [
+    "jpan-lreq"
+   ]
+  }
+ },
+ "tibt-lreq": {
+  "title": "Tibetan Script Resources",
+  "link": "https://w3c.github.io/tlreq/tibt/",
+  "w3c": {
+   "serie": "tibt-lreq",
+   "shortnames": [
+    "tibt-lreq"
+   ]
+  }
+ },
+ "fedcm": {
+  "title": "Federated Credential Management API",
+  "link": "https://w3c-fedid.github.io/FedCM/",
+  "w3c": {
+   "serie": "fedcm",
+   "shortnames": [
+    "fedcm-1"
    ]
   }
  }
