@@ -508,7 +508,8 @@
    "serie": "css-values",
    "shortnames": [
     "css-values-3",
-    "css-values-4"
+    "css-values-4",
+    "css-values-5"
    ]
   }
  },
@@ -1242,6 +1243,9 @@
   "link": "missing link"
  },
  "text-spacing": {
+  "link": "missing link"
+ },
+ "text-spacing-trim": {
   "link": "missing link"
  },
  "trace-context-2": {
