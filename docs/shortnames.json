@@ -1903,6 +1903,9 @@
  "deprecation-reporting": {
   "link": "https://wicg.github.io/deprecation-reporting/"
  },
+ "digital-credentials": {
+  "link": "https://wicg.github.io/digital-credentials/"
+ },
  "epub-rs": {
   "link": "https://w3c.github.io/epub-specs/epub33/rs/",
   "title": "EPUB Reading Systems",
@@ -1912,6 +1915,9 @@
     "epub-rs-33"
    ]
   }
+ },
+ "fenced-frame": {
+  "link": "https://wicg.github.io/fenced-frame/"
  },
  "file-system-access": {
   "link": "https://wicg.github.io/file-system-access/"
@@ -2296,6 +2302,9 @@
    ]
   }
  },
+ "trust-token-api": {
+  "link": "https://wicg.github.io/trust-token-api/"
+ },
  "webcrypto": {
   "link": "https://w3c.github.io/webcrypto/",
   "title": "Web Cryptography API",
@@ -2305,6 +2314,9 @@
     "WebCryptoAPI"
    ]
   }
+ },
+ "aom": {
+  "link": "http://wicg.github.io/aom/"
  },
  "css-anchor-position": {
   "link": "missing link",
@@ -7569,6 +7581,16 @@
    "serie": "fedcm",
    "shortnames": [
     "fedcm-1"
+   ]
+  }
+ },
+ "vc-extensions": {
+  "title": "Verifiable Credential Extensions",
+  "link": "https://w3c.github.io/vc-extensions/",
+  "w3c": {
+   "serie": "vc-extensions",
+   "shortnames": [
+    "vc-extensions"
    ]
   }
  }
