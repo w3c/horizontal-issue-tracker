@@ -13,6 +13,17 @@
    ]
   }
  },
+ "act-rules-format": {
+  "link": "Accessibility Conformance Testing (ACT) Rules Format",
+  "title": "Accessibility Conformance Testing (ACT) Rules Format",
+  "w3c": {
+   "serie": "act-rules-format",
+   "shortnames": [
+    "act-rules-format-1.0",
+    "act-rules-format-1.1"
+   ]
+  }
+ },
  "activitypub": {
   "link": "https://w3c.github.io/activitypub/",
   "title": "ActivityPub",
@@ -290,7 +301,8 @@
    "serie": "css-grid",
    "shortnames": [
     "css-grid-1",
-    "css-grid-2"
+    "css-grid-2",
+    "css-grid-3"
    ]
   }
  },
@@ -2073,6 +2085,16 @@
    ]
   }
  },
+ "permissions": {
+  "link": "https://w3c.github.io/permissions/",
+  "title": "Permissions",
+  "w3c": {
+   "serie": "permissions",
+   "shortnames": [
+    "permissions"
+   ]
+  }
+ },
  "privacy-principles": {
   "link": "https://w3ctag.github.io/privacy-principles/",
   "title": "Privacy Principles",
@@ -2729,10 +2751,6 @@
  "annotation-html": {
   "link": "https://w3c.github.io/web-annotation/serialization-html-note/",
   "title": "Embedding Web Annotations in HTML"
- },
- "act-rules-format": {
-  "link": "https://w3c.github.io/wcag-act/act-rules-format.html",
-  "title": "Accessibility Conformance Testing (ACT) Rules Format"
  },
  "covjson-overview": {
   "link": "https://w3c.github.io/sdw/coverage-json/",
@@ -3922,10 +3940,6 @@
  "netinfo-usecases": {
   "link": "https://w3c-webmob.github.io/netinfo-usecases/",
   "title": "Review of apps that use network information"
- },
- "permissions": {
-  "link": "https://w3c.github.io/permissions/",
-  "title": "Permissions"
  },
  "motion": {
   "link": "https://drafts.fxtf.org/motion-1/",
