@@ -272,6 +272,9 @@
    ]
   }
  },
+ "css-font": {
+  "link": "missing link"
+ },
  "css-fonts": {
   "link": "https://drafts.csswg.org/css-fonts/",
   "title": "CSS Fonts",
@@ -1566,7 +1569,7 @@
   }
  },
  "web-payments-use-cases": {
-  "link": "https://w3c.github.io/webpayments-ig/latest/use-cases/index.html",
+  "link": "https://dvcs.w3.org/hg/webpayments/raw-file/default/latest/use-cases/index.html",
   "title": "Web Payments Use Cases",
   "w3c": {
    "serie": "web-payments-use-cases",
@@ -2308,6 +2311,9 @@
  },
  "credentialless": {
   "link": "https://wicg.github.io/credentiallessness/"
+ },
+ "document-isolation-policy": {
+  "link": "https://wicg.github.io/document-isolation-policy/"
  },
  "fetch": {
   "link": "https://fetch.spec.whatwg.org/",
