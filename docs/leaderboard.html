@@ -118,13 +118,13 @@
          */
         async function initializeLeaderboard() {
 
-            // Get URL parameters
-            const urlParams = new URLSearchParams(window.location.search);
-            const paramYear = urlParams.get('year') || currentYear;
-    
             // Initialize year dropdown
             const currentYear = new Date().getFullYear();
             const yearDropdown = document.getElementById('year');
+
+            // Get URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const paramYear = urlParams.get('year') || currentYear;
 
             // Set the year dropdown based on parameters
             yearDropdown.value = paramYear;
