@@ -1,60 +1,18 @@
 /* eslint-env browser */
 
 "use strict";
+import { config as confinit, el, id, fetchJSON } from "./Groups/lib/utils.js";
 
 // Define the repository
-const config = {
-  debug: false,
-  ttl: 15,
-};
+const config = confinit({
+  ttl: 15
+});
 
-const SHORTNAMES = fetch("shortnames.json").then(r => r.json());
+const SHORTNAMES = fetchJSON("shortnames.json");
 
-// parse the URL to update the config
-for (const [key, value] of (new URL(window.location)).searchParams) {
-  config[key] = value;
-}
-
-function displayError(text) {
-  const log = document.getElementById('log')
-  const p = document.createElement('p');
-  p.textContent = "ERROR: " + text;
-}
-
-// format a Date, "Aug 21, 2019"
-function formatDate(date) {
-  // date is a date object
-  const options = { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' };
-  return date.toLocaleString('en-US', options);
-}
-
-// create an element easily
-// attrs is object (and optional)
-// content is Element or string
-function domElement(name, attrs, ...content) {
-  const elt = document.createElement(name);
-  const makeChild = c =>(c instanceof Element)?
-    c : (typeof c === 'string')?
-         document.createTextNode(c) : undefined;
-
-  if (attrs) {
-    const c = makeChild(attrs);
-    if (c) {
-      elt.appendChild(c);
-    } else {
-      for (const [name, value] of Object.entries(attrs)) {
-        elt.setAttribute(name, value);
-      }
-    }
-  }
-  for (const child of content) {
-    if (child instanceof Element) {
-      elt.appendChild(child);
-    } else {
-      elt.appendChild(document.createTextNode(child));
-    }
-  }
-  return elt;
+function display_error(err) {
+  id("log").textContent = err;
+  if (config.debug) console.error(err);
 }
 
 // BELOW IS WHERE THINGS STARTS HAPPENING
@@ -69,8 +27,8 @@ function domElement(name, attrs, ...content) {
  * *
  */
 async function getAllData() {
-  const ulData = domElement("ul");
-  const ulReport = domElement("ul");
+  const ulData = el("ul");
+  const ulReport = el("ul");
 
   SHORTNAMES.then(data => {
 
@@ -81,9 +39,9 @@ async function getAllData() {
       if (!value.title) {
         value.title = key;
         if (config.debug && value.link) {
-          ulReport.appendChild(domElement("li", { "id": `report-title-${value.key}` },
-          `No title for `, domElement("code", value.key), ". See ",
-          domElement("a", {
+          ulReport.append(el("li", { "id": `report-title-${value.key}` },
+          `No title for `, el("code", value.key), ". See ",
+          el("a", {
             href: `${value.link}`
           }, value.link)));
         }
@@ -109,8 +67,8 @@ async function getAllData() {
 
     entries.forEach(value => {
       if (config.retired || !value.retired) {
-        ulData.appendChild(domElement("li", { "id": value.key },
-          domElement("a", {
+        ulData.append(el("li", { "id": value.key },
+          el("a", {
             href: `review.html?shortname=${value.key}`
           },
           (value.title)? value.title : value.key
@@ -118,31 +76,31 @@ async function getAllData() {
         ));
       }
       if (config.debug && value.serie && value.key !== value.serie) {
-        ulReport.appendChild(domElement("li", { "id": `report-${value.key}` },
+        ulReport.append(el("li", { "id": `report-${value.key}` },
           `Consider replacing `,
-          domElement("a", {
+          el("a", {
             href: `review.html?shortname=${value.key}`
-          }, domElement("code", value.key)),
-          ` with `, domElement("code", value.serie)
+          }, el("code", value.key)),
+          ` with `, el("code", value.serie)
           ));
       }
       if (config.debug && config.link && !value.link) {
-        ulReport.appendChild(domElement("li", { "id": `report-link-${value.key}` },
-          "No editor's draft link for ", domElement("code", value.key)
+        ulReport.append(el("li", { "id": `report-link-${value.key}` },
+          "No editor's draft link for ", el("code", value.key)
           ));
       }
     });
 
   }).catch(err => {
-    console.error(err)
+    display_error(err)
   });
-  document.getElementById("rawdata").appendChild(ulData);
+  id("rawdata").append(ulData);
   if (config.debug) {
-    document.getElementById("report").appendChild(domElement("h2", "Debug"));
-    document.getElementById("report").appendChild(domElement("p",
+    id("report").append(el("h2", "Debug"));
+    id("report").append(el("p",
     "Edit the file ",
-    domElement("a", { href: "https://github.com/w3c/horizontal-issue-tracker/blob/main/docs/shortnames.json"}, "shortnames.json")));
-    document.getElementById("report").appendChild(ulReport);
+    el("a", { href: "https://github.com/w3c/horizontal-issue-tracker/blob/main/docs/shortnames.json"}, "shortnames.json")));
+    id("report").append(ulReport);
   }
 }
 

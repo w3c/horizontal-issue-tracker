@@ -1,140 +1,30 @@
-/* eslint-env browser */
-
 "use strict";
 
+import { config as confinit, formatDate, el, id, fetchJSON, hrLinkTo, ghRequest } from "./Groups/lib/utils.js";
+
 // Define the repository
-const config = {
+const config = confinit({
   // the horizontal group repository
   repo: 'w3c/i18n-activity',
-  debug: false,
   ttl: 15,
   // the labels to display on the page
   labels: 'pending,needs-resolution,tracker,close?',
   extra_labels: 'advice-requested,needs-review,waiting,deferred'
-};
+});
 
-const HR_LABELS = fetch("https://w3c.github.io/common-labels.json")
-  .then(res => res.json())
+const HR_LABELS = fetchJSON("https://w3c.github.io/common-labels.json")
   .then(labels => labels.filter(l => l.repo));
-const SHORTNAMES = fetch("shortnames.json").then(r => r.json());
+const SHORTNAMES = fetchJSON("shortnames.json");
 
-// parse the URL to update the config
-for (const [key, value] of (new URL(window.location)).searchParams) {
-  config[key] = value;
-}
-
-function displayError(text) {
-  const log = document.getElementById('log')
-  const p = document.createElement('p');
-  p.textContent = "ERROR: " + text;
-}
-
-// format a Date, "Aug 21, 2019"
-function formatDate(date) {
-  // date is a date object
-  const options = { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' };
-  return date.toLocaleString('en-US', options);
-}
-
-// create an element easily
-// attrs is object (and optional)
-// content is Element or string
-function domElement(name, attrs, ...content) {
-  const elt = document.createElement(name);
-  const makeChild = c =>(c instanceof Element)?
-    c : (typeof c === 'string')?
-         document.createTextNode(c) : undefined;
-
-  if (attrs) {
-    const c = makeChild(attrs);
-    if (c) {
-      elt.appendChild(c);
-    } else {
-      for (const [name, value] of Object.entries(attrs)) {
-        elt.setAttribute(name, value);
-      }
-    }
-  }
-  for (const child of content) {
-    if (child instanceof Element) {
-      elt.appendChild(child);
-    } else {
-      elt.appendChild(document.createTextNode(child));
-    }
-  }
-  return elt;
-}
-
-// get the url of the actual issue, if there is a § marker
-function linkTo(issue) {
-  // get the url of the actual issue, if there is a § marker
-  let match = issue.body.match(/§ [^\r\n$]+/g);
-  if (match) {
-    match = match[0].substring(2).trim().split(' ')[0];
-    if (match.indexOf('http') !== 0) {
-      match = undefined;
-    }
-  }
-  if (!match) {
-    match = issue.html_url;
-  }
-  return match;
+function display_error(err) {
+  id("log").textContent = err;
+  if (config.debug) console.error(err);
 }
 
 // might as well do this here, we'll use it as an array later
 config.labels = config.labels.split(',');
 config.extra_labels = config.extra_labels.split(',');
 config.all_labels = [].concat(config.labels, config.extra_labels);
-
-// for the parameters added to GH URLs
-function searchParams(params) {
-  if (!params) return "";
-  let s = [];
-  for (const [key,value] of Object.entries(params)) {
-    s.push(`${key}=${value}`);
-  }
-  return s.join('&');
-}
-
-const GH_CACHE = "https://labs.w3.org/github-cache";
-
-/*
- * Grab GitHub data
- */
-async function ghRequest(url, options) {
-  let data = [];
-  let errorText;
-  try {
-    const response = await fetch(url + '?' + searchParams(options));
-    if (response.ok) {
-      data = await response.json();
-    } else {
-      if (response.status >= 500) {
-        errorText = `cache responded with HTTP '${response.status}'. Try again later.`;
-      } else {
-        errorText = `Unexpected cache response HTTP ${response.status}`;
-      }
-    }
-  } catch (err) {
-    errorText = err.message;
-  }
-  if (errorText) {
-    const error = { url, options, message: errorText };
-    navigator.sendBeacon(`${GH_CACHE}/monitor/beacon`, JSON.stringify({ traceId, error }));
-  }
-  return data;
-}
-
-// telemetry for performance monitoring
-const traceId = (""+Math.random()).substring(2, 18); // for resource correlation
-const rtObserver = new PerformanceObserver(list => {
-  const resources = list.getEntries().filter(entry => entry.name.startsWith(GH_CACHE + '/v3/repos')
-                                                      || entry.name.startsWith("https://api.github.com/"));
-  if (resources.length > 0) {
-    navigator.sendBeacon(`${GH_CACHE}/monitor/beacon`, JSON.stringify({ traceId, resources }));
-  }
-});
-rtObserver.observe({entryTypes: ["resource"]});
 
 // BELOW IS WHERE THINGS STARTS HAPPENING
 
@@ -149,7 +39,7 @@ rtObserver.observe({entryTypes: ["resource"]});
  */
 async function getAllData() {
   const hr_repos = await HR_LABELS;
-  const GH_URL = `${GH_CACHE}/v3/repos/${config.repo}/issues`;
+  const GH_URL = `${config.cache}/v3/repos/${config.repo}/issues`;
   let issues;
   const sections = {};
   const repo_labels = {};
@@ -157,7 +47,7 @@ async function getAllData() {
   const sprefix = 's:';
   const lFilter = l => l.name.startsWith(sprefix);
 
-  console.log(hr_repos.find(r => r.repo === config.repo));
+  // console.log(hr_repos.find(r => r.repo === config.repo));
   config.groupname = (hr_repos.find(r => r.repo === config.repo)).groupname;
 
   for (const a of document.getElementsByClassName('link_repo')) {
@@ -176,7 +66,7 @@ async function getAllData() {
   }); // might as well request the max
 
   // this is for perf testing purposes. a race between github and github-cache
-  fetch(`https://api.github.com/repos/${config.repo}/issues`).catch(console.error);
+  fetchJSON(`https://api.github.com/repos/${config.repo}/issues`).catch(display_error);
 
   issues = await promise_issues;
 
@@ -218,7 +108,7 @@ async function getAllData() {
 
   // tally the issues on the page
   // const trs = document.querySelectorAll('tr')
-  // document.getElementById('total').textContent = trs.length;
+  // id('total').textContent = trs.length;
 
   otherTrackingRepos();
 }
@@ -227,72 +117,72 @@ async function getAllData() {
 function displayRepo(header, short_label, label, issues) {
   // Add a container to put the repository info and issues in
   let table, tr, td, a, updated, toc, span
-  let labelSection = domElement('section',
-    domElement('h2', {id:header},
-    domElement('a', {class:'self-link','aria-label':'§', href:`#${header}`}, ''),
-    domElement('a', {href:`${label.description}`}, header),
+  let labelSection = el('section',
+    el('h2', {id:header},
+    el('a', {class:'self-link','aria-label':'§', href:`#${header}`}, ''),
+    el('a', {href:`${label.description}`}, header),
     " (",
-    domElement('a', {href:`review.html?shortname=${short_label}`}, "filter"),
+    el('a', {href:`review.html?shortname=${short_label}`}, "filter"),
     ")"));
 
-  table = domElement('table');
+  table = el('table');
 
   for (const issue of issues) {
-    tr = domElement('tr');
-    td = domElement('td');
+    tr = el('tr');
+    td = el('td');
 
     for (const label of issue.labels.filter(l => config.all_labels.includes(l.name))) {
       if (label.name == "tracker" || label.name == "needs-resolution") {
-        td.appendChild(domElement('span',
+        td.append(el('span',
           {style: `background-color:#${label.color}`,
             title: label.name, class: 'labels' },
            `${label.name} `));
       }
     }
     //a.href = issueData['html_url']
-    td.appendChild(domElement('a', {href:linkTo(issue),target:'_blank'}, issue.title));
-    tr.appendChild(td);
+    td.append(el('a', {href:hrLinkTo(issue),target:'_blank'}, issue.title));
+    tr.append(td);
 
-    td = domElement('td');
+    td = el('td');
     td.className = 'issueType'
     // find labels
     for (const label of issue.labels.filter(l => config.all_labels.includes(l.name))) {
       if (!(label.name == "tracker" || label.name == "needs-resolution")) {
-        td.appendChild(domElement('span',
+        td.append(el('span',
           {style: `background-color:#${label.color}`,
             title: label.name, class: 'labels'},
            `${label.name} `));
       }
     }
-    tr.appendChild(td);
+    tr.append(td);
 
-    tr.appendChild(domElement('td', {class:'date',title:'Date created'}, formatDate(new Date(issue.created_at))));
+    tr.append(el('td', {class:'date',title:'Date created'}, formatDate(issue.created_at)));
 
-    td = domElement('td',{title:'Issue number in the tracker repo',class:'trackerId'},
-      domElement('a',
+    td = el('td',{title:'Issue number in the tracker repo',class:'trackerId'},
+      el('a',
         {href:`https://github.com/${config.repo}/issues/${issue.number}`,target:'_blank'},
          issue.number));
     //td.textContent = issueData.number
-    tr.appendChild(td)
+    tr.append(td)
 
-    table.appendChild(tr)
+    table.append(tr)
   }
 
-  labelSection.appendChild(table)
+  labelSection.append(table)
   // Add the label header to the DOM
-  document.getElementById("rawdata").appendChild(labelSection)
+  id("rawdata").append(labelSection)
 }
 
 // build our menu
 function buildFilters(repo_labels) {
-  const ul = document.getElementById("filterList");
+  const ul = id("filterList");
 
   function createLi(label) {
-    const span = domElement('span',
+    const span = el('span',
       {class:'labels',style: `background-color:#${label.color}`},
        ` ${String.fromCharCode(160)} `);
-    return domElement('li', {"data-label":`${label.name}`},
-      domElement('a',
+    return el('li', {"data-label":`${label.name}`},
+      el('a',
         {href:'#', title:`${label.description}`, onclick:`filterByLabel('${label.name}')`},
         span, ` ${String.fromCharCode(160)} ${label.name}`));
   }
@@ -300,26 +190,26 @@ function buildFilters(repo_labels) {
   for (const label of config.labels) {
     const gh_label = repo_labels[label];
     if (gh_label) {
-      ul.appendChild(createLi(gh_label));
+      ul.append(createLi(gh_label));
     }
   }
 
-  const clear = domElement('li',
-  domElement('a',{href:"#",title:'Clear all of the filters',onclick:"filterByLabel('clear')"},
-    domElement("span", {class:'labels',style:"background-color: white"},
+  const clear = el('li',
+  el('a',{href:"#",title:'Clear all of the filters',onclick:"filterByLabel('clear')"},
+    el("span", {class:'labels',style:"background-color: white"},
               ` ${String.fromCharCode(160)} `),
     ` ${String.fromCharCode(160)} Clear filter`));
-  ul.appendChild(clear);
+  ul.append(clear);
 
   let internalLine = false;
   for (const extra_label of config.extra_labels) {
     const gh_label = repo_labels[extra_label];
     if (gh_label) {
       if (!internalLine) {
-        ul.appendChild(domElement('li', "Internal group labels:"));
+        ul.append(el('li', "Internal group labels:"));
         internalLine = true;
       }
-      ul.appendChild(createLi(gh_label));
+      ul.append(createLi(gh_label));
     }
   }
 
@@ -327,24 +217,24 @@ function buildFilters(repo_labels) {
 
 // build our menu
 async function otherTrackingRepos() {
-  const ul = document.getElementById("otherReposList");
+  const ul = id("otherReposList");
   const labels = await HR_LABELS;
   const repos = [...new Set(labels.map(l => l.repo))].sort();
   let hr_issues = [];
 
   for (const repo of repos) {
-    const li = domElement('li', domElement('a',{href:`?repo=${repo}`}, ` ${repo}`));
+    const li = el('li', el('a',{href:`?repo=${repo}`}, ` ${repo}`));
     if (config.repo === repo) {
       li.classList.add('selected');
     }
-    ul.appendChild(li);
+    ul.append(li);
   }
 }
 
 // invoke when selecting a filter in the menu
 function filterByLabel(label) {
-  const rawdata = document.getElementById('rawdata');
-  const filterMenu = document.getElementById("filterList");
+  const rawdata = id('rawdata');
+  const filterMenu = id("filterList");
 
   if (config.debug) console.log(`filterByLabel('${label}')`);
 
@@ -363,8 +253,8 @@ function filterByLabel(label) {
   }
   if (label === 'clear') {
     let trsTotal = rawdata.querySelectorAll('tr');
-    document.getElementById('total').textContent = trsTotal.length;
-    document.getElementById("select-label").textContent = '';
+    id('total').textContent = trsTotal.length;
+    id("select-label").textContent = '';
     return; // abort
   }
 
@@ -398,8 +288,8 @@ function filterByLabel(label) {
   let trsTotal = document.querySelectorAll('tr')
   let trs = document.querySelectorAll('tr.hidden')
   let filteredIssues = trsTotal.length - trs.length
-  document.getElementById('total').textContent = filteredIssues;
-  document.getElementById("select-label").textContent = `, with label '${label}'`;
+  id('total').textContent = filteredIssues;
+  id("select-label").textContent = `, with label '${label}'`;
 }
 
 

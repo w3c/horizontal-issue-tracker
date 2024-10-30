@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Specification Review comments</title>
-<meta name="description" content="Lists open issues in an horizontal activity github repository for a given specification" />
+<meta name="description" content="Horizontal board" />
 <link rel="preconnect" href="https://labs.w3.org">
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/base.css" type="text/css" />
 <style>
@@ -71,33 +71,78 @@ h2 > a.self-link::before {
   padding-right: 1ex;
   text-decoration: none;
 }
+.intitle, .indate {
+	font-size: small;
+}
+#log {
+	background: red;
+	color: white;
+}
 </style>
-<script type=module src="shortnames-display.js" defer></script>
+<script type=module src="board-script.js" defer></script>
 
 </head>
 
 <body>
 <div class='head'>
 		<a class='logo' href="https://www.w3.org/"><img src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" alt="W3C" height="48" width="72"></a>
-		<h1>Known specifications</h1>
+		<h1><span id="name"></span> Horizontal Board</h1>
     <hr title="Separator for header">
 </div>
+
+<p id="log"></p>
+
 <nav id="toc">
+<ul>
+	<li>In this page:
 	<ul>
-		<li>
-			<a href='./'>Horizontal issues trackers</a>
-		</li>
+		<li><a href='#reviews'>Review requests</a></li>
+		<li><a href='#charters'>Charter requests</a></li>
+		<li><a href='#tracker'>Horizontal issues</a></li>
 	</ul>
+	</li>
+	<li>
+		Nearby:
+		<ul>
+			<li><a id='nb_leaderboard'>Loading...</a></li>
+			<li><a id='nb_chairboard'>Loading...</a></li>
+			<li><a id='nb_agenda'>Loading...</a></li>
+			<li><a id='nb_issues'>Loading...</a></li>
+		</ul>
+	</li>
+</ul>
 </nav>
 
 <section id='abstract' style='clear: both'>
-  <p>This page lists all specifications known to the horizontal review system.</p>
+  <p></p>
 </section>
 
-<section id="rawdata" aria-live='polite'>
-</section>
-
-<section id="report" aria-live='polite'>
+<section id="updates" aria-live='polite'>
+	<section id="agenda">
+		<h2><a class='self-link' href="#agenda"></a> agenda issues</h2>
+		<div>
+			<p>Loading...</p>
+		</div>
+	</section>
+	<section id="reviews">
+		<h2><a class='self-link' href="#reviews"></a> Review requests <span class='intitle'>(from <a href="" data-filter=''></a>)</span></h2>
+		<div>
+			<p>Loading...</p>
+		</div>
+	</section>
+	<section id="charters">
+		<h2><a class='self-link' href="#charters"></a> Charter requests <span class='intitle'>(from <a href="" data-filter=''></a>)</span></h2>
+		<div>
+			<p>Loading...</p>
+		</div>
+	</section>
+	<section id="tracker">
+		<h2><a class='self-link' href="#tracker"></a> Horizontal issues <span class='intitle'>(from <a href="" data-filter=''></a>)</span></h2>
+		<details>
+			<summary>Loading...</summary>
+			<p>Loading...</p>
+		</details>
+	</section>
 </section>
 
 <footer>
