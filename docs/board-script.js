@@ -88,7 +88,7 @@ async function getCharterReviews() {
  * 4. build the menu for filter labels
  * *
  */
-async function getAllData() {
+async function screen_refresh() {
   getGroup().then(group => {
     id("name").textContent = group.horizontal.groupname;
     id('nb_leaderboard').href = `leaderboard.html?name=${group.horizontal.groupname}`;
@@ -125,7 +125,7 @@ async function getAllData() {
         }
         ul.append(li);
     });
-    elt.querySelector("div p").replaceWith(ul);
+    elt.querySelector("div").firstElementChild.replaceWith(ul);
   }).catch(display_error);
   getCharterReviews().then(async (data) => {
     const g = await HR_CONFIG;
@@ -142,8 +142,9 @@ async function getAllData() {
         )
       );
     })
-    elt.querySelector("div p").replaceWith(ul);
+    elt.querySelector("div").firstElementChild.replaceWith(ul);
   }).catch(display_error);
+
   getTrackerIssues().then(async (data) => {
     const g = await HR_CONFIG;
     const elt = id("tracker");
@@ -154,25 +155,29 @@ async function getAllData() {
     a.textContent = g.repo;
     const nrs = data.filter(i => i.labels.find(l=>l.name==='needs-resolution'));
     nrs.forEach(issue => {
-      const li =
-      el("li", 
-        el("a", {href:issue.html_url},`${issue.title}`)
-      );
+      const li = el("li");
       issue.labels.forEach(label => {
         if (label.name.startsWith('s:')) {
-          li.append(' [')
+          li.append('[')
           li.append(el("a", {
             class:'spec-label',
             href:label.description},
             label.name.substring(2)));
-          li.append(']');
+          li.append('] ');
         }
       });
+      li.append(el("a", {href:issue.hr_url},`${issue.title}`));
+      li.append(" ",
+        el("span", {"class": "intitle"}, "(from ",
+        el("a", {href:issue.html_url},`#${issue.number}`),
+        ")")
+      );
       ul.append(li);
     })
     elt.querySelector("details summary").textContent = `${nrs.length} ${g.groupname} issues with needs-resolution`;
-    elt.querySelector("details p").replaceWith(ul);
-  }).catch(display_error)
+    elt.querySelector("details div").firstElementChild.replaceWith(ul);
+  }).catch(display_error);
+
   getAgendaRequests().then(async (data) => {
     const g = await HR_CONFIG;
     const elt = id("agenda");
@@ -184,13 +189,15 @@ async function getAllData() {
       );
       ul.append(li);
     })
-    elt.querySelector("div p").replaceWith(ul);
+    elt.querySelector("div").firstElementChild.replaceWith(ul);
   }).catch(display_error);
+
+  // 
   HR_COMMON.then(data => {
     const elt = id("others").firstElementChild;
     const commons = new Set();
     data.forEach(entry => commons.add(entry.groupname));
-
+    elt.replaceChildren(); // clear the element content
     commons.forEach(name => {
       elt.append(" [",
         el("a", {href: `?name=${name}`}, name),
@@ -201,4 +208,4 @@ async function getAllData() {
 }
 
 // the script is defer, so just go for it when you're ready
-getAllData().catch(display_error);
+screen_refresh().catch(display_error);
