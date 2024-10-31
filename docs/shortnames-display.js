@@ -1,7 +1,7 @@
 /* eslint-env browser */
 
 "use strict";
-import { config as confinit, el, id, fetchJSON } from "./Groups/lib/utils.js";
+import { config as confinit, el, id, fetchJSON } from "../Groups/lib/utils.js";
 
 // Define the repository
 const config = confinit({

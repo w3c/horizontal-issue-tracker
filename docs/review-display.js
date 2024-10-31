@@ -1,6 +1,6 @@
 "use strict";
 
-import { config as confinit, formatDate, el, id, fetchJSON, hrLinkTo, ghRequest } from "./Groups/lib/utils.js";
+import { config as confinit, formatDate, el, id, fetchJSON, hrLinkTo, ghRequest } from "../Groups/lib/utils.js";
 
 // Define the repository
 const config = confinit({
