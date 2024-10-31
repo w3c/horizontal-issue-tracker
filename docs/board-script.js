@@ -185,7 +185,19 @@ async function getAllData() {
       ul.append(li);
     })
     elt.querySelector("div p").replaceWith(ul);
-  }).catch(display_error)
+  }).catch(display_error);
+  HR_COMMON.then(data => {
+    const elt = id("others").firstElementChild;
+    const commons = new Set();
+    data.forEach(entry => commons.add(entry.groupname));
+
+    commons.forEach(name => {
+      elt.append(" [",
+        el("a", {href: `?name=${name}`}, name),
+        "]"
+      );
+    });
+  }).catch(display_error);
 }
 
 // the script is defer, so just go for it when you're ready
