@@ -283,10 +283,11 @@
                 }
 
                 const userIssuesLink = `https://github.com/${repo}/issues?q=assignee:${user}+closed:${year}-01-01..${year}-12-31+is:closed`;
+                const userHome = `https://github.com/${user}/`
 
                 row.innerHTML = `
                     <td>${rankDisplay}</td>
-                    <td>${user}</td>
+                    <td><a href="${userHome}" target="_blank">${user}</a></td>
                     <td>${count}</td>
                     <td><a href="${userIssuesLink}" target="_blank">Issues</a></td>
 
