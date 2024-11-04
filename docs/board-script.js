@@ -92,13 +92,9 @@ async function screen_refresh() {
   getGroup().then(group => {
     id("name").textContent = group.horizontal.groupname;
     id('nb_leaderboard').href = `leaderboard.html?name=${group.horizontal.groupname}`;
-    id('nb_leaderboard').textContent = "Reviewers Leaderboard";
     id('nb_chairboard').href = `https://www.w3.org/PM/Groups/chairboard.html?gid=${group.identifier}`;
-    id('nb_chairboard').textContent = 'Chair dashboard';
     id('nb_agenda').href = `https://www.w3.org/PM/Groups/agenda.html?gid=${group.identifier}`;
-    id('nb_agenda').textContent = `${group.horizontal.groupname} agenda`;
     id('nb_issues').href = `https://www.w3.org/PM/Groups/issueboard.html?gid=${group.identifier}`;
-    id('nb_issues').textContent = `${group.horizontal.groupname} issues`;
   }).catch(display_error);
   getReviewRequests().then(async (data) => {
     const g = await HR_CONFIG;
@@ -145,42 +141,51 @@ async function screen_refresh() {
     elt.querySelector("div").firstElementChild.replaceWith(ul);
   }).catch(display_error);
 
+  function li_issue(issue) {
+    const li = el("li");
+    issue.labels.forEach(label => {
+      if (label.name.startsWith('s:')) {
+        li.append('[')
+        li.append(el("a", {
+          class:'spec-label',
+          href:label.description},
+          label.name.substring(2)));
+        li.append('] ');
+      }
+    });
+    li.append(el("a", {href:issue.hr_url},`${issue.title}`));
+    li.append(" ",
+      el("span", {"class": "intitle"}, "(from ",
+      el("a", {href:issue.html_url},`#${issue.number}`),
+      ")")
+    );
+    return li;
+  }
   getTrackerIssues().then(async (data) => {
     const g = await HR_CONFIG;
     const elt = id("tracker");
-    const ul = el("ul");
     const a = elt.querySelector("h2 span a");
     let href = `https://github.com/${g["repo"]}/issues`;;
     a.href = href;
     a.textContent = g.repo;
-    const nrs = data.filter(i => i.labels.find(l=>l.name==='needs-resolution'));
-    nrs.forEach(issue => {
-      const li = el("li");
-      issue.labels.forEach(label => {
-        if (label.name.startsWith('s:')) {
-          li.append('[')
-          li.append(el("a", {
-            class:'spec-label',
-            href:label.description},
-            label.name.substring(2)));
-          li.append('] ');
-        }
-      });
-      li.append(el("a", {href:issue.hr_url},`${issue.title}`));
-      li.append(" ",
-        el("span", {"class": "intitle"}, "(from ",
-        el("a", {href:issue.html_url},`#${issue.number}`),
-        ")")
-      );
-      ul.append(li);
-    })
-    elt.querySelector("details summary").textContent = `${nrs.length} ${g.groupname} issues with needs-resolution`;
-    elt.querySelector("details div").firstElementChild.replaceWith(ul);
+    let ul = el("ul");
+    let nrs = data.filter(i => i.labels.find(l=>l.name==='needs-resolution'));
+    nrs.forEach(issue => ul.append(li_issue(issue)));
+    id("label-needs-resolution").querySelector("summary").textContent = `${nrs.length} ${g.groupname} issues with needs-resolution`;
+    id("label-needs-resolution").querySelector("div").firstElementChild.replaceWith(ul);
+    ul = el("ul");
+    nrs = data.filter(i => i.labels.find(l=>l.name==='tracker'));
+    nrs.forEach(issue => ul.append(li_issue(issue)));
+    id("label-tracker").querySelector("summary").textContent = `${nrs.length} ${g.groupname} issues with tracker`;
+    id("label-tracker").querySelector("div").firstElementChild.replaceWith(ul);
   }).catch(display_error);
 
   getAgendaRequests().then(async (data) => {
     const g = await HR_CONFIG;
     const elt = id("agenda");
+    const a = elt.querySelector("h2 span a");
+    let href = `https://www.w3.org/groups/${g.group}/tools/#repositories`;
+    a.href = href;
     const ul = el("ul");
     data.forEach(issue => {
       const li =

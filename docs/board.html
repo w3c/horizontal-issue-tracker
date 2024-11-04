@@ -74,6 +74,9 @@ h2 > a.self-link::before {
 .intitle, .indate {
 	font-size: small;
 }
+#others p {
+	text-align: center;
+}
 #log {
 	background: red;
 	color: white;
@@ -104,10 +107,10 @@ h2 > a.self-link::before {
 	<li>
 		Nearby:
 		<ul>
-			<li><a id='nb_leaderboard'>Loading...</a></li>
-			<li><a id='nb_chairboard'>Loading...</a></li>
-			<li><a id='nb_agenda'>Loading...</a></li>
-			<li><a id='nb_issues'>Loading...</a></li>
+			<li><a id='nb_leaderboard'>Reviewers Leaderboard</a></li>
+			<li><a id='nb_chairboard'>Chair dashboard</a></li>
+			<li><a id='nb_agenda'>Agenda</a></li>
+			<li><a id='nb_issues'>Issues</a></li>
 		</ul>
 	</li>
 </ul>
@@ -119,26 +122,32 @@ h2 > a.self-link::before {
 
 <section id="updates" aria-live='polite'>
 	<section id="agenda">
-		<h2><a class='self-link' href="#agenda"></a> agenda issues</h2>
+		<h2><a class='self-link' href="#agenda"></a> agenda issues <span class='intitle'>(from <a href="">repositories</a>)</h2>
 		<div>
 			<p>Loading...</p>
 		</div>
 	</section>
 	<section id="reviews">
-		<h2><a class='self-link' href="#reviews"></a> Review requests <span class='intitle'>(from <a href="" data-filter=''></a>)</span></h2>
+		<h2><a class='self-link' href="#reviews"></a> Review requests <span class='intitle'>(from <a href=""></a>)</span></h2>
 		<div>
 			<p>Loading...</p>
 		</div>
 	</section>
 	<section id="charters">
-		<h2><a class='self-link' href="#charters"></a> Charter requests <span class='intitle'>(from <a href="" data-filter=''></a>)</span></h2>
+		<h2><a class='self-link' href="#charters"></a> Charter requests <span class='intitle'>(from <a href=""></a>)</span></h2>
 		<div>
 			<p>Loading...</p>
 		</div>
 	</section>
 	<section id="tracker">
-		<h2><a class='self-link' href="#tracker"></a> Horizontal issues <span class='intitle'>(from <a href="" data-filter=''></a>)</span></h2>
-		<details>
+		<h2><a class='self-link' href="#tracker"></a> Horizontal issues <span class='intitle'>(from <a href=""></a>)</span></h2>
+		<details id="label-needs-resolution">
+			<summary>Loading...</summary>
+			<div>
+				<p>Loading...</p>
+			</div>
+		</details>
+		<details id="label-tracker">
 			<summary>Loading...</summary>
 			<div>
 				<p>Loading...</p>
