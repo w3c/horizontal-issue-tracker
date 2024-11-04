@@ -91,6 +91,7 @@ async function getCharterReviews() {
 async function screen_refresh() {
   getGroup().then(group => {
     id("name").textContent = group.horizontal.groupname;
+    document.querySelector("title").textContent = `${group.horizontal.groupname} horizontal board`;
     id('nb_leaderboard').href = `leaderboard.html?name=${group.horizontal.groupname}`;
     id('nb_chairboard').href = `https://www.w3.org/PM/Groups/chairboard.html?gid=${group.identifier}`;
     id('nb_agenda').href = `https://www.w3.org/PM/Groups/agenda.html?gid=${group.identifier}`;
