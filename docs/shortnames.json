@@ -722,6 +722,16 @@
    ]
   }
  },
+ "fedcm": {
+  "link": "https://w3c-fedid.github.io/FedCM",
+  "title": "Federated Credential Management API",
+  "w3c": {
+   "serie": "fedcm",
+   "shortnames": [
+    "fedcm-1"
+   ]
+  }
+ },
  "findtext": {
   "link": "https://w3c.github.io/findtext/",
   "title": "FindText API",
@@ -1043,6 +1053,16 @@
    "serie": "payment-request",
    "shortnames": [
     "payment-request"
+   ]
+  }
+ },
+ "picture-in-picture": {
+  "link": "missing link",
+  "title": "Picture-in-Picture",
+  "w3c": {
+   "serie": "picture-in-picture",
+   "shortnames": [
+    "picture-in-picture"
    ]
   }
  },
@@ -2430,15 +2450,16 @@
  "model-element": {
   "link": "https://immersive-web.github.io/model-element/"
  },
- "picture-in-picture": {
-  "link": "https://w3c.github.io/picture-in-picture/",
-  "title": "Picture-in-Picture",
+ "notifications": {
+  "link": "https://notifications.spec.whatwg.org/",
+  "title": "Web Notifications",
   "w3c": {
-   "serie": "picture-in-picture",
+   "serie": "notifications",
    "shortnames": [
-    "picture-in-picture"
+    "notifications"
    ]
-  }
+  },
+  "retired": true
  },
  "svg-native": {
   "link": "https://svgwg.org/specs/svg-native/"
@@ -3909,10 +3930,6 @@
  "netinfo-api": {
   "link": "https://dvcs.w3.org/hg/dap/raw-file/tip/network-api/Overview.html",
   "title": "Network Information API",
-  "retired": true
- },
- "notifications": {
-  "title": "Web Notifications",
   "retired": true
  },
  "page-visibility": {
@@ -7591,16 +7608,6 @@
    "serie": "tibt-lreq",
    "shortnames": [
     "tibt-lreq"
-   ]
-  }
- },
- "fedcm": {
-  "title": "Federated Credential Management API",
-  "link": "https://w3c-fedid.github.io/FedCM/",
-  "w3c": {
-   "serie": "fedcm",
-   "shortnames": [
-    "fedcm-1"
    ]
   }
  },
