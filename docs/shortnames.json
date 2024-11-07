@@ -885,6 +885,9 @@
    ]
   }
  },
+ "local-font-access": {
+  "link": "https://wicg.github.io/local-font-access/"
+ },
  "low-vision-needs": {
   "link": "https://w3c.github.io/low-vision-a11y-tf/requirements.html",
   "title": "Accessibility Requirements for People with Low Vision",
@@ -1615,7 +1618,8 @@
   "w3c": {
    "serie": "webaudio",
    "shortnames": [
-    "webaudio"
+    "webaudio-1.0",
+    "webaudio-1.1"
    ]
   }
  },
@@ -7618,6 +7622,16 @@
    "serie": "vc-extensions",
    "shortnames": [
     "vc-extensions"
+   ]
+  }
+ },
+ "audio-session": {
+  "title": "Audio Session",
+  "link": "https://w3c.github.io/audio-session/",
+  "w3c": {
+   "serie": "audio-session",
+   "shortnames": [
+    "audio-session"
    ]
   }
  }
