@@ -77,6 +77,14 @@ async function getCharterReviews() {
   return issues;
 }
 
+async function getStrategyIssues() {
+  const grpc = await HR_CONFIG;
+  return ghRequest(`${config.cache}/v3/repos/w3c/strategy/issues`,
+    { ttl: config.ttl,
+       labels: grpc.groupname,
+       fields: "html_url,number,title,labels,created_at"});
+}
+
 // BELOW IS WHERE THINGS STARTS HAPPENING
 
 /*
@@ -124,6 +132,7 @@ async function screen_refresh() {
     });
     elt.querySelector("div").firstElementChild.replaceWith(ul);
   }).catch(display_error);
+
   getCharterReviews().then(async (data) => {
     const g = await HR_CONFIG;
     const elt = id("charters");
@@ -142,6 +151,19 @@ async function screen_refresh() {
     elt.querySelector("div").firstElementChild.replaceWith(ul);
   }).catch(display_error);
 
+  getStrategyIssues().then(async (data) => {
+    const g = await HR_CONFIG;
+    const elt = id("strategy");
+    const a = elt.querySelector("h2 span a");
+    let href = `https://github.com/w3c/strategy/labels/${g.groupname}`;
+    a.href = href;
+    a.textContent = 'w3c/strategy';
+    let ul = el("ul");
+    data.forEach(issue => ul.append(li_issue(issue)));
+    elt.querySelector("summary").textContent = `${data.length} ${g.groupname} strategy issues`;
+    elt.querySelector("div").firstElementChild.replaceWith(ul);
+  }).catch(display_error);
+
   function li_issue(issue) {
     const li = el("li");
     issue.labels.forEach(label => {
@@ -154,7 +176,7 @@ async function screen_refresh() {
         li.append('] ');
       }
     });
-    li.append(el("a", {href:issue.hr_url},`${issue.title}`));
+    li.append(el("a", {href: (issue.hr_url)?issue.hr_url:issue.html_url},`${issue.title}`));
     li.append(" ",
       el("span", {"class": "intitle"}, "(from ",
       el("a", {href:issue.html_url},`#${issue.number}`),
@@ -166,7 +188,7 @@ async function screen_refresh() {
     const g = await HR_CONFIG;
     const elt = id("tracker");
     const a = elt.querySelector("h2 span a");
-    let href = `https://github.com/${g["repo"]}/issues`;;
+    let href = `https://github.com/${g["repo"]}/issues`;
     a.href = href;
     a.textContent = g.repo;
     let ul = el("ul");
