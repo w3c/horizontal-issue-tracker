@@ -798,6 +798,9 @@
    ]
   }
  },
+ "idna-rfc5891bis": {
+  "link": "https://datatracker.ietf.org/doc/draft-klensin-idna-rfc5891bis/"
+ },
  "ift": {
   "link": "https://w3c.github.io/IFT/Overview.html",
   "title": "Incremental Font Transfer",
@@ -994,6 +997,9 @@
    ]
   }
  },
+ "modern-network-unicode": {
+  "link": "https://datatracker.ietf.org/doc/draft-bormann-dispatch-modern-network-unicode/"
+ },
  "mst-content-hint": {
   "link": "https://w3c.github.io/mst-content-hint/",
   "title": "MediaStreamTrack Content Hints",
@@ -1087,9 +1093,10 @@
   "w3c": {
    "serie": "pointerevents",
    "shortnames": [
-    "pointerevents",
+    "pointerevents1",
     "pointerevents2",
-    "pointerevents3"
+    "pointerevents3",
+    "pointerevents4"
    ]
   }
  },
@@ -1110,6 +1117,16 @@
    "serie": "presentation-api",
    "shortnames": [
     "presentation-api"
+   ]
+  }
+ },
+ "privacy-principles": {
+  "link": "missing link",
+  "title": "Privacy Principles",
+  "w3c": {
+   "serie": "privacy-principles",
+   "shortnames": [
+    "privacy-principles"
    ]
   }
  },
@@ -1378,6 +1395,9 @@
     "uievents-key"
    ]
   }
+ },
+ "unichars": {
+  "link": "https://datatracker.ietf.org/doc/draft-bray-unichars/"
  },
  "url": {
   "link": "https://url.spec.whatwg.org/",
@@ -1891,6 +1911,16 @@
    ]
   }
  },
+ "clipboard-apis": {
+  "link": "missing link",
+  "title": "Clipboard API and events",
+  "w3c": {
+   "serie": "clipboard-apis",
+   "shortnames": [
+    "clipboard-apis"
+   ]
+  }
+ },
  "clipboard-pickling": {
   "link": "https://github.com/w3c/editing/blob/gh-pages/docs/clipboard-pickling/explainer.md"
  },
@@ -2122,16 +2152,6 @@
    ]
   }
  },
- "privacy-principles": {
-  "link": "https://w3ctag.github.io/privacy-principles/",
-  "title": "Privacy Principles",
-  "w3c": {
-   "serie": "privacy-principles",
-   "shortnames": [
-    "privacy-principles"
-   ]
-  }
- },
  "proximity-sensor": {
   "link": "https://w3c.github.io/proximity/",
   "title": "Proximity Sensor",
@@ -2320,16 +2340,6 @@
    "serie": "webxrlayers",
    "shortnames": [
     "webxrlayers-1"
-   ]
-  }
- },
- "clipboard-apis": {
-  "link": "https://w3c.github.io/clipboard-apis/",
-  "title": "Clipboard API and events",
-  "w3c": {
-   "serie": "clipboard-apis",
-   "shortnames": [
-    "clipboard-apis"
    ]
   }
  },
@@ -7632,6 +7642,76 @@
    "serie": "audio-session",
    "shortnames": [
     "audio-session"
+   ]
+  }
+ },
+ "did-extensions": {
+  "title": "Decentralized Identifier Extensions",
+  "link": "https://w3c.github.io/did-extensions/",
+  "w3c": {
+   "serie": "did-extensions",
+   "shortnames": [
+    "did-extensions"
+   ]
+  }
+ },
+ "did-extensions-methods": {
+  "title": "DID Methods",
+  "link": "https://w3c.github.io/did-extensions/methods/",
+  "w3c": {
+   "serie": "did-extensions-methods",
+   "shortnames": [
+    "did-extensions-methods"
+   ]
+  }
+ },
+ "did-extensions-properties": {
+  "title": "DID Document Property Extensions",
+  "link": "https://w3c.github.io/did-extensions/properties/",
+  "w3c": {
+   "serie": "did-extensions-properties",
+   "shortnames": [
+    "did-extensions-properties"
+   ]
+  }
+ },
+ "did-extensions-resolution": {
+  "title": "DID Resolution Extensions",
+  "link": "https://w3c.github.io/did-extensions/resolution/",
+  "w3c": {
+   "serie": "did-extensions-resolution",
+   "shortnames": [
+    "did-extensions-resolution"
+   ]
+  }
+ },
+ "webdriver-bidi": {
+  "title": "WebDriver BiDi",
+  "link": "https://w3c.github.io/webdriver-bidi/",
+  "w3c": {
+   "serie": "webdriver-bidi",
+   "shortnames": [
+    "webdriver-bidi"
+   ]
+  }
+ },
+ "gpc": {
+  "title": "Global Privacy Control (GPC)",
+  "link": "https://w3c.github.io/gpc/",
+  "w3c": {
+   "serie": "gpc",
+   "shortnames": [
+    "gpc"
+   ]
+  }
+ },
+ "did-resolution": {
+  "title": "Decentralized Identifier (DID) Resolution and DID URL Dereferencing",
+  "link": "https://w3c.github.io/did-resolution/",
+  "w3c": {
+   "serie": "did-resolution",
+   "shortnames": [
+    "did-resolution"
    ]
   }
  }
