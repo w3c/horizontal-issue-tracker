@@ -386,7 +386,8 @@
   "w3c": {
    "serie": "css-multicol",
    "shortnames": [
-    "css-multicol-1"
+    "css-multicol-1",
+    "css-multicol-2"
    ]
   }
  },
@@ -397,7 +398,8 @@
    "serie": "css-overflow",
    "shortnames": [
     "css-overflow-3",
-    "css-overflow-4"
+    "css-overflow-4",
+    "css-overflow-5"
    ]
   }
  },
@@ -1329,7 +1331,7 @@
   "retired": true
  },
  "translation-api": {
-  "link": "https://github.com/WICG/translation-api"
+  "link": "https://github.com/webmachinelearning/translation-api"
  },
  "ttml": {
   "link": "https://w3c.github.io/ttml2/",
@@ -2396,7 +2398,8 @@
   "w3c": {
    "serie": "css-display",
    "shortnames": [
-    "css-display-3"
+    "css-display-3",
+    "css-display-4"
    ]
   }
  },
@@ -6723,7 +6726,8 @@
    "shortnames": [
     "RangeRequest"
    ]
-  }
+  },
+  "retired": true
  },
  "mediacapture-transform": {
   "title": "MediaStreamTrack Insertable Media Processing using Streams",
@@ -7712,6 +7716,36 @@
    "serie": "did-resolution",
    "shortnames": [
     "did-resolution"
+   ]
+  }
+ },
+ "openscreen-application": {
+  "title": "Open Screen Application Protocol",
+  "link": "https://w3c.github.io/openscreenprotocol/application.html",
+  "w3c": {
+   "serie": "openscreen-application",
+   "shortnames": [
+    "openscreen-application"
+   ]
+  }
+ },
+ "openscreen-network": {
+  "title": "Open Screen Network Protocol",
+  "link": "https://w3c.github.io/openscreenprotocol/network.html",
+  "w3c": {
+   "serie": "openscreen-network",
+   "shortnames": [
+    "openscreen-network"
+   ]
+  }
+ },
+ "css-color-hdr": {
+  "title": "CSS Color HDR Module",
+  "link": "https://drafts.csswg.org/css-color-hdr-1/",
+  "w3c": {
+   "serie": "css-color-hdr",
+   "shortnames": [
+    "css-color-hdr-1"
    ]
   }
  }
