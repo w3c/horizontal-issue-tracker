@@ -606,10 +606,7 @@
   "link": "https://w3c.github.io/did-core/",
   "title": "Decentralized Identifiers (DIDs)",
   "w3c": {
-   "serie": "did-core",
-   "shortnames": [
-    "did-core"
-   ]
+   "serie": "did-core"
   }
  },
  "dom": {
@@ -1657,6 +1654,16 @@
    ]
   }
  },
+ "webcodecs": {
+  "link": "https://www.w3.org/TR/webcodecs",
+  "title": "WebCodecs",
+  "w3c": {
+   "serie": "webcodecs",
+   "shortnames": [
+    "webcodecs"
+   ]
+  }
+ },
  "webdriver": {
   "link": "https://w3c.github.io/webdriver/",
   "title": "WebDriver",
@@ -1913,8 +1920,18 @@
    ]
   }
  },
+ "cid": {
+  "link": "https://w3c.github.io/cid/",
+  "title": "Controller Documents",
+  "w3c": {
+   "serie": "controller-document",
+   "shortnames": [
+    "controller-document"
+   ]
+  }
+ },
  "clipboard-apis": {
-  "link": "missing link",
+  "link": "https://w3c.github.io/clipboard-apis/",
   "title": "Clipboard API and events",
   "w3c": {
    "serie": "clipboard-apis",
@@ -2274,16 +2291,6 @@
  },
  "webapidevice": {
   "link": "https://github.com/WICG/WebApiDevice/blob/main/Explainer.md"
- },
- "webcodecs": {
-  "link": "https://w3c.github.io/webcodecs/",
-  "title": "WebCodecs",
-  "w3c": {
-   "serie": "webcodecs",
-   "shortnames": [
-    "webcodecs"
-   ]
-  }
  },
  "WebHID": {
   "link": "https://wicg.github.io/webhid/"
@@ -7746,6 +7753,27 @@
    "serie": "css-color-hdr",
    "shortnames": [
     "css-color-hdr-1"
+   ]
+  }
+ },
+ "did": {
+  "title": "Decentralized Identifiers (DIDs)",
+  "link": "https://w3c.github.io/did-core/",
+  "w3c": {
+   "serie": "did",
+   "shortnames": [
+    "did-1.0",
+    "did-1.1"
+   ]
+  }
+ },
+ "string-search": {
+  "title": "String Searching",
+  "link": "https://w3c.github.io/string-search/",
+  "w3c": {
+   "serie": "string-search",
+   "shortnames": [
+    "string-search"
    ]
   }
  }
