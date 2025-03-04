@@ -569,7 +569,7 @@
    "serie": "CSS",
    "shortnames": [
     "CSS1",
-    "CSS21",
+    "CSS2",
     "css-2010",
     "css-2015",
     "CSS22",
@@ -578,7 +578,8 @@
     "css-2020",
     "css-2021",
     "css-2022",
-    "css-2023"
+    "css-2023",
+    "css-2024"
    ]
   }
  },
@@ -934,6 +935,9 @@
     "mediaqueries-5"
    ]
   }
+ },
+ "meta": {
+  "link": "missing link"
  },
  "microdata": {
   "link": "https://w3c.github.io/microdata/",
@@ -1924,10 +1928,7 @@
   "link": "https://w3c.github.io/cid/",
   "title": "Controller Documents",
   "w3c": {
-   "serie": "controller-document",
-   "shortnames": [
-    "controller-document"
-   ]
+   "serie": "controller-document"
   }
  },
  "clipboard-apis": {
@@ -6401,7 +6402,7 @@
    "serie": "CSS",
    "shortnames": [
     "CSS1",
-    "CSS21",
+    "CSS2",
     "css-2010",
     "css-2015",
     "CSS22",
@@ -6410,7 +6411,8 @@
     "css-2020",
     "css-2021",
     "css-2022",
-    "css-2023"
+    "css-2023",
+    "css-2024"
    ]
   }
  },
@@ -7756,6 +7758,16 @@
    ]
   }
  },
+ "string-search": {
+  "title": "String Searching",
+  "link": "https://w3c.github.io/string-search/",
+  "w3c": {
+   "serie": "string-search",
+   "shortnames": [
+    "string-search"
+   ]
+  }
+ },
  "did": {
   "title": "Decentralized Identifiers (DIDs)",
   "link": "https://w3c.github.io/did-core/",
@@ -7764,16 +7776,6 @@
    "shortnames": [
     "did-1.0",
     "did-1.1"
-   ]
-  }
- },
- "string-search": {
-  "title": "String Searching",
-  "link": "https://w3c.github.io/string-search/",
-  "w3c": {
-   "serie": "string-search",
-   "shortnames": [
-    "string-search"
    ]
   }
  }
