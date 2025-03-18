@@ -6,7 +6,13 @@ import { config as confinit, el, id, fetchJSON, ghRequest, hrLinkTo } from "../G
 const config = confinit({ttl: 15, name: "privacy" });
 
 function display_error(err) {
-  id("log").textContent = err;
+  if (err.type === 'HttpError') {
+    // it's a fetch error
+    id("log").textContent = "Unable to load ";
+    id("log").append(el("a", { href: err.url }, err.url));
+  } else {
+    id("log").textContent = err;
+  }
   if (config.debug) console.error(err);
 }
 
