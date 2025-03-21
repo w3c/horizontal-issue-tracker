@@ -68,21 +68,6 @@ async function getAgendaRequests() {
     fields: "html_url,title,comments,updated_at,assignee,labels,pull_request,milestone"});
 }
 
-async function getCharterReviews() {
-  const grpc = await HR_CONFIG;
-  const hcomp = `${grpc.groupname} review completed`;
-  const raw_issues = await ghRequest(`${config.cache}/v3/repos/w3c/strategy/issues`,
-    { ttl: config.ttl,
-       labels: "Horizontal%20review%20requested",
-       fields: "html_url,number,title,labels,created_at"});
-  const issues = [];
-  raw_issues.forEach(issue => {
-    const labels = issue.labels.filter(l => l.name === hcomp);
-    if (labels.length === 0) issues.push(issue);
-  });
-  return issues;
-}
-
 async function getStrategyIssues() {
   const grpc = await HR_CONFIG;
   return ghRequest(`${config.cache}/v3/repos/w3c/strategy/issues`,
@@ -136,24 +121,6 @@ async function screen_refresh() {
         }
         ul.append(li);
     });
-    elt.querySelector("div").firstElementChild.replaceWith(ul);
-  }).catch(display_error);
-
-  getCharterReviews().then(async (data) => {
-    const g = await HR_CONFIG;
-    const elt = id("charters");
-    const ul = el("ul");
-    const a = elt.querySelector("h2 span a");
-    let href = `https://github.com/w3c/strategy/issues?q=is%3Aopen+label%3A"Horizontal+review+requested"+-label%3A"${g.groupname}+review+completed"`;
-    a.href = href;
-    a.textContent = "w3c/strategy";
-    data.forEach(issue => {
-      ul.append(
-        el("li", 
-          el("a", {href:issue.html_url},`${issue.title}`)
-        )
-      );
-    })
     elt.querySelector("div").firstElementChild.replaceWith(ul);
   }).catch(display_error);
 
