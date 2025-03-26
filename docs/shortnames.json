@@ -7778,5 +7778,45 @@
     "did-1.1"
    ]
   }
+ },
+ "shacl-core": {
+  "title": "SHACL Core",
+  "link": "https://w3c.github.io/data-shapes/shacl12-core/",
+  "w3c": {
+   "serie": "shacl-core",
+   "shortnames": [
+    "shacl12-core"
+   ]
+  }
+ },
+ "shacl-sparql": {
+  "title": "SHACL SPARQL Extensions",
+  "link": "https://w3c.github.io/data-shapes/shacl12-sparql/",
+  "w3c": {
+   "serie": "shacl-sparql",
+   "shortnames": [
+    "shacl12-sparql"
+   ]
+  }
+ },
+ "css-forms": {
+  "title": "CSS Form Control Styling",
+  "link": "https://drafts.csswg.org/css-forms-1/",
+  "w3c": {
+   "serie": "css-forms",
+   "shortnames": [
+    "css-forms-1"
+   ]
+  }
+ },
+ "content-editable": {
+  "title": "ContentEditable",
+  "link": "https://w3c.github.io/contentEditable/",
+  "w3c": {
+   "serie": "content-editable",
+   "shortnames": [
+    "content-editable"
+   ]
+  }
  }
 }
