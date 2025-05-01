@@ -96,7 +96,7 @@
  },
  "baggage": {
   "link": "https://w3c.github.io/baggage/",
-  "title": "Propagation format for distributed trace context: Baggage",
+  "title": "Propagation format for distributed context: Baggage",
   "w3c": {
    "serie": "baggage",
    "shortnames": [
@@ -704,7 +704,8 @@
   "w3c": {
    "serie": "epub",
    "shortnames": [
-    "epub-33"
+    "epub-33",
+    "epub-34"
    ]
   }
  },
@@ -1993,7 +1994,7 @@
   "link": "https://wicg.github.io/deprecation-reporting/"
  },
  "digital-credentials": {
-  "link": "https://wicg.github.io/digital-credentials/"
+  "link": "https://w3c-fedid.github.io/digital-credentials/"
  },
  "epub-rs": {
   "link": "https://w3c.github.io/epub-specs/epub33/rs/",
@@ -2001,7 +2002,8 @@
   "w3c": {
    "serie": "epub-rs",
    "shortnames": [
-    "epub-rs-33"
+    "epub-rs-33",
+    "epub-rs-34"
    ]
   }
  },
@@ -2136,6 +2138,16 @@
    "serie": "mediastream-recording",
    "shortnames": [
     "mediastream-recording"
+   ]
+  }
+ },
+ "odrl-vocab": {
+  "link": "https://w3c.github.io/poe/vocab/",
+  "title": "ODRL Vocabulary & Expression",
+  "w3c": {
+   "serie": "odrl-vocab",
+   "shortnames": [
+    "odrl-vocab"
    ]
   }
  },
@@ -2381,10 +2393,7 @@
   "link": "https://w3c.github.io/webcrypto/",
   "title": "Web Cryptography API",
   "w3c": {
-   "serie": "WebCryptoAPI",
-   "shortnames": [
-    "WebCryptoAPI"
-   ]
+   "serie": "WebCryptoAPI"
   }
  },
  "aom": {
@@ -3996,10 +4005,6 @@
  "odrl-model": {
   "link": "https://w3c.github.io/poe/model/",
   "title": "ODRL Information Model"
- },
- "odrl-vocab": {
-  "link": "https://w3c.github.io/poe/vocab/",
-  "title": "ODRL Vocabulary & Expression"
  },
  "poe-ucr": {
   "link": "https://w3c.github.io/poe/ucr/",
@@ -7816,6 +7821,27 @@
    "serie": "content-editable",
    "shortnames": [
     "content-editable"
+   ]
+  },
+  "retired": true
+ },
+ "css-gaps": {
+  "title": "CSS Gap Decorations Module",
+  "link": "https://drafts.csswg.org/css-gaps-1/",
+  "w3c": {
+   "serie": "css-gaps",
+   "shortnames": [
+    "css-gaps-1"
+   ]
+  }
+ },
+ "privacy-preserving-attribution": {
+  "title": "Privacy-Preserving Attribution",
+  "link": "https://w3c.github.io/ppa/",
+  "w3c": {
+   "serie": "privacy-preserving-attribution",
+   "shortnames": [
+    "privacy-preserving-attribution"
    ]
   }
  }
