@@ -2376,6 +2376,9 @@
   "title": "Fetch",
   "w3c": {}
  },
+ "manifest-incubations": {
+  "link": "https://wicg.github.io/manifest-incubations/"
+ },
  "mediacapture-viewport": {
   "link": "https://w3c.github.io/mediacapture-viewport/",
   "title": "Viewport Capture",
@@ -7842,6 +7845,16 @@
    "serie": "privacy-preserving-attribution",
    "shortnames": [
     "privacy-preserving-attribution"
+   ]
+  }
+ },
+ "wcag2mobile": {
+  "title": "Guidance on Applying WCAG to Mobile Applications (WCAG2Mobile)",
+  "link": "https://w3c.github.io/matf/",
+  "w3c": {
+   "serie": "wcag2mobile",
+   "shortnames": [
+    "wcag2mobile-22"
    ]
   }
  }
