@@ -626,14 +626,16 @@ async function main() {
       good = false;
       throw new Error(`Failed to retrieve ${repo.full_name}`);
     }
-    if (hr_issues_count > 100 && issues.length <= hr_issues_count - 50) {
-      good = false;
-      throw new Error(`Problem when retrieving horizontal issues. Expected around ${hr_issues_count-50} issues, got ${issues.length}`);
-    }
-    hr_issues_count = issues.length;
     monitor.log(`fetched ${issues.length} horizontal issues from ${repo.full_name}`);
     hr_issues = hr_issues.concat(issues);
   }
+
+  if (hr_issues_count > 100 && hr_issues.length <= hr_issues_count - 50) {
+    good = false;
+    throw new Error(`Problem when retrieving horizontal issues. Expected around ${hr_issues_count-50} issues, got ${hr_issues.length}`);
+  }
+  hr_issues_count = hr_issues.length;
+
   if (!good) {// extra protection but we should never reach this Error
     throw new Error("unreachable statement");
   }
