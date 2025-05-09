@@ -626,9 +626,9 @@ async function main() {
       good = false;
       throw new Error(`Failed to retrieve ${repo.full_name}`);
     }
-    if (hr_issues_count > 100 && issues.length >= hr_issues_count - 50) {
+    if (hr_issues_count > 100 && issues.length <= hr_issues_count - 50) {
       good = false;
-      throw new Error(`Problem when retrieving horizontal issues. Expected at least ${hr_issues_count-50} issues, got ${issues.length}`);
+      throw new Error(`Problem when retrieving horizontal issues. Expected around ${hr_issues_count-50} issues, got ${issues.length}`);
     }
     hr_issues_count = issues.length;
     monitor.log(`fetched ${issues.length} horizontal issues from ${repo.full_name}`);
