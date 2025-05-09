@@ -371,16 +371,11 @@ function findIssue(issue, hr_issues) {
 
 let pre2021issue = 0;
 
-let new_issues_count = 0;
+let new_issues_count = -1;
 
 // This is the most important function: create an horizontal issue
 // hlabels is the subset of horizontal labels found that are relevant
 async function createHRIssue(issue, hlabels) {
-
-  // if we have too many issues to create, we stop here
-  if (++new_issues_count > 10) {
-    throw new Error("Too many issues created in a single run. Please check.");
-  }
 
   // do we have a shortname match?
   function findShortlabel(issue) {
@@ -489,6 +484,11 @@ async function createHRIssue(issue, hlabels) {
       log(issue, `DEBUG mode so abort`);
       return;
     }
+    // if we have too many issues to create, we stop here
+    if (++new_issues_count > 10) {
+      throw new Error(`Too many issues created in a single run ${new_issues_count}. Please check.`);
+    }
+
     all_creation.push(
       // let's check if the shortname labels are there...
       horizontal_repo.getLabels().then(repo_labels => {
