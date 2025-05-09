@@ -371,9 +371,16 @@ function findIssue(issue, hr_issues) {
 
 let pre2021issue = 0;
 
+let new_issues_count = 0;
+
 // This is the most important function: create an horizontal issue
 // hlabels is the subset of horizontal labels found that are relevant
 async function createHRIssue(issue, hlabels) {
+
+  // if we have too many issues to create, we stop here
+  if (++new_issues_count > 10) {
+    throw new Error("Too many issues created in a single run. Please check.");
+  }
 
   // do we have a shortname match?
   function findShortlabel(issue) {
@@ -592,9 +599,16 @@ function fn(n) {
   return new Intl.NumberFormat().format(n);
 }
 
+let hr_issues_count = -1;
+
 async function main() {
   const hr = new HorizontalRepositories();
   const labels = await hr.labels;
+
+  // reset the number of new issues created
+  // this is used to limit the number of issues created in a single run
+  // to avoid flooding the horizontal repositories with issues
+  new_issues_count = 0;
 
   // ###
   // First, check things from the point of view of the horizontal group repositories
@@ -612,6 +626,11 @@ async function main() {
       good = false;
       throw new Error(`Failed to retrieve ${repo.full_name}`);
     }
+    if (hr_issues_count > 100 && issues.length >= hr_issues_count - 50) {
+      good = false;
+      throw new Error(`Problem when retrieving horizontal issues. Expected at least ${hr_issues_count-50} issues, got ${issues.length}`);
+    }
+    hr_issues_count = issues.length;
     monitor.log(`fetched ${issues.length} horizontal issues from ${repo.full_name}`);
     hr_issues = hr_issues.concat(issues);
   }
