@@ -1993,6 +1993,17 @@
  "deprecation-reporting": {
   "link": "https://wicg.github.io/deprecation-reporting/"
  },
+ "did": {
+  "link": "https://w3c.github.io/did/",
+  "title": "Decentralized Identifiers (DIDs)",
+  "w3c": {
+   "serie": "did",
+   "shortnames": [
+    "did-1.0",
+    "did-1.1"
+   ]
+  }
+ },
  "digital-credentials": {
   "link": "https://w3c-fedid.github.io/digital-credentials/"
  },
@@ -2301,6 +2312,9 @@
  },
  "visual-viewport": {
   "link": "https://wicg.github.io/visual-viewport/"
+ },
+ "web_audio_playout": {
+  "link": "https://github.com/WICG/web_audio_playout/"
  },
  "webapidevice": {
   "link": "https://github.com/WICG/WebApiDevice/blob/main/Explainer.md"
@@ -7727,7 +7741,7 @@
   }
  },
  "did-resolution": {
-  "title": "Decentralized Identifier (DID) Resolution and DID URL Dereferencing",
+  "title": "Decentralized Identifier Resolution (DID Resolution)",
   "link": "https://w3c.github.io/did-resolution/",
   "w3c": {
    "serie": "did-resolution",
@@ -7773,17 +7787,6 @@
    "serie": "string-search",
    "shortnames": [
     "string-search"
-   ]
-  }
- },
- "did": {
-  "title": "Decentralized Identifiers (DIDs)",
-  "link": "https://w3c.github.io/did-core/",
-  "w3c": {
-   "serie": "did",
-   "shortnames": [
-    "did-1.0",
-    "did-1.1"
    ]
   }
  },
@@ -7855,6 +7858,16 @@
    "serie": "wcag2mobile",
    "shortnames": [
     "wcag2mobile-22"
+   ]
+  }
+ },
+ "css-mixins": {
+  "title": "CSS Functions and Mixins Module",
+  "link": "https://drafts.csswg.org/css-mixins/",
+  "w3c": {
+   "serie": "css-mixins",
+   "shortnames": [
+    "css-mixins-1"
    ]
   }
  }
