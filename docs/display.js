@@ -21,15 +21,6 @@ function display_error(err) {
   if (config.debug) console.error(err);
 }
 
-if (document.location.host === "w3c.github.io") {
-  display_error("This page is not meant to be viewed on w3c.github.io, but rather on the W3C website.");
-  const slash =document.location.pathname.lastIndexOf('/');
-  // redirect
-  document.location.href= "https://www.w3.org/PM/horizontal"
-    + document.location.pathname.substring(slash)
-    + document.location.search;
-}
-
 // might as well do this here, we'll use it as an array later
 config.labels = config.labels.split(',');
 config.extra_labels = config.extra_labels.split(',');
