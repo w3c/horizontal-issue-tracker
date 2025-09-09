@@ -596,6 +596,16 @@
    ]
   }
  },
+ "dapt": {
+  "link": "https://www.w3.org/TR/dapt/",
+  "title": "Dubbing and Audio description Profiles of TTML2",
+  "w3c": {
+   "serie": "dapt",
+   "shortnames": [
+    "dapt"
+   ]
+  }
+ },
  "design-principles": {
   "link": "https://w3ctag.github.io/design-principles/",
   "title": "Web Platform Design Principles",
@@ -621,6 +631,16 @@
   "title": "Decentralized Identifiers (DIDs)",
   "w3c": {
    "serie": "did-core"
+  }
+ },
+ "did-resolution": {
+  "link": "https://www.w3.org/TR/did-resolution",
+  "title": "Decentralized Identifier Resolution (DID Resolution)",
+  "w3c": {
+   "serie": "did-resolution",
+   "shortnames": [
+    "did-resolution"
+   ]
   }
  },
  "dom": {
@@ -1165,8 +1185,7 @@
    "shortnames": [
     "pronunciation-use-cases"
    ]
-  },
-  "retired": true
+  }
  },
  "pub-manifest": {
   "link": "https://w3c.github.io/pub-manifest/",
@@ -1994,16 +2013,6 @@
    ]
   }
  },
- "dapt": {
-  "link": "https://w3c.github.io/dapt/",
-  "title": "Dubbing and Audio description Profiles of TTML2",
-  "w3c": {
-   "serie": "dapt",
-   "shortnames": [
-    "dapt"
-   ]
-  }
- },
  "deprecation-reporting": {
   "link": "https://wicg.github.io/deprecation-reporting/"
  },
@@ -2444,6 +2453,16 @@
    "serie": "audio-session",
    "shortnames": [
     "audio-session"
+   ]
+  }
+ },
+ "badging": {
+  "link": "https://w3c.github.io/badging/",
+  "title": "Badging API",
+  "w3c": {
+   "serie": "badging",
+   "shortnames": [
+    "badging"
    ]
   }
  },
@@ -7211,16 +7230,6 @@
    ]
   }
  },
- "badging": {
-  "title": "Badging API",
-  "link": "https://w3c.github.io/badging/",
-  "w3c": {
-   "serie": "badging",
-   "shortnames": [
-    "badging"
-   ]
-  }
- },
  "vc-status-list": {
   "title": "Verifiable Credentials Status List",
   "link": "https://w3c.github.io/vc-status-list-2021/",
@@ -7778,16 +7787,6 @@
    ]
   }
  },
- "did-resolution": {
-  "title": "Decentralized Identifier Resolution (DID Resolution)",
-  "link": "https://w3c.github.io/did-resolution/",
-  "w3c": {
-   "serie": "did-resolution",
-   "shortnames": [
-    "did-resolution"
-   ]
-  }
- },
  "openscreen-application": {
   "title": "Open Screen Application Protocol",
   "link": "https://w3c.github.io/openscreenprotocol/application.html",
@@ -7936,6 +7935,36 @@
    "serie": "css-borders",
    "shortnames": [
     "css-borders-4"
+   ]
+  }
+ },
+ "wcag-3.0-explainer": {
+  "title": "Explainer for W3C Accessibility Guidelines (WCAG)",
+  "link": "https://w3c.github.io/wcag3/explainer/",
+  "w3c": {
+   "serie": "wcag-3.0-explainer",
+   "shortnames": [
+    "wcag-3.0-explainer"
+   ]
+  }
+ },
+ "dbsc": {
+  "title": "Device Bound Session Credentials",
+  "link": "https://w3c.github.io/webappsec-dbsc/",
+  "w3c": {
+   "serie": "dbsc",
+   "shortnames": [
+    "dbsc-1"
+   ]
+  }
+ },
+ "passkey-endpoints": {
+  "title": "A Well-Known URL for Relying Party Passkey Endpoints",
+  "link": "https://w3c.github.io/webappsec-passkey-endpoints/",
+  "w3c": {
+   "serie": "passkey-endpoints",
+   "shortnames": [
+    "passkey-endpoints-1"
    ]
   }
  }
