@@ -582,7 +582,8 @@
     "css-2021",
     "css-2022",
     "css-2023",
-    "css-2024"
+    "css-2024",
+    "css-2025"
    ]
   }
  },
@@ -1669,6 +1670,16 @@
    ]
   }
  },
+ "web-sustainability-guidelines": {
+  "link": "https://w3c.github.io/sustainableweb-wsg/",
+  "title": "Web Sustainability Guidelines (WSG)",
+  "w3c": {
+   "serie": "web-sustainability-guidelines",
+   "shortnames": [
+    "web-sustainability-guidelines"
+   ]
+  }
+ },
  "webaudio": {
   "link": "https://webaudio.github.io/web-audio-api/",
   "title": "Web Audio API",
@@ -2502,7 +2513,14 @@
   }
  },
  "css-env": {
-  "link": "missing link"
+  "link": "missing link",
+  "title": "CSS Environment Variables Module",
+  "w3c": {
+   "serie": "css-env",
+   "shortnames": [
+    "css-env-1"
+   ]
+  }
  },
  "css-speech": {
   "link": "https://drafts.csswg.org/css-speech/",
@@ -2513,6 +2531,9 @@
     "css-speech-1"
    ]
   }
+ },
+ "css-view-transition": {
+  "link": "missing link"
  },
  "cssom": {
   "link": "https://drafts.csswg.org/cssom/",
@@ -2543,6 +2564,9 @@
     "html-aam-1.0"
    ]
   }
+ },
+ "html-scoped-focusgroup": {
+  "link": "https://open-ui.org/components/scoped-focusgroup.explainer/"
  },
  "image-resource": {
   "link": "https://w3c.github.io/image-resource/",
@@ -6501,7 +6525,8 @@
     "css-2021",
     "css-2022",
     "css-2023",
-    "css-2024"
+    "css-2024",
+    "css-2025"
    ]
   }
  },
