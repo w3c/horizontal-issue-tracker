@@ -1319,6 +1319,9 @@
    ]
   }
  },
+ "sustainability-guidelines": {
+  "link": "https://www.w3.org/TR/web-sustainability-guidelines"
+ },
  "svg": {
   "link": "https://svgwg.org/svg2-draft/",
   "title": "Scalable Vector Graphics (SVG)",
@@ -1523,6 +1526,9 @@
     "vc-json-schema"
    ]
   }
+ },
+ "vc-render-method": {
+  "link": "https://w3c.github.io/vc-render-method/"
  },
  "vehicle-data": {
   "link": "https://w3c.github.io/automotive/vehicle_data/data_spec.html",
@@ -2486,7 +2492,8 @@
   "w3c": {
    "serie": "css-anchor-position",
    "shortnames": [
-    "css-anchor-position-1"
+    "css-anchor-position-1",
+    "css-anchor-position-2"
    ]
   }
  },
