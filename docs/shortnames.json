@@ -1319,9 +1319,6 @@
    ]
   }
  },
- "sustainability-guidelines": {
-  "link": "https://www.w3.org/TR/web-sustainability-guidelines"
- },
  "svg": {
   "link": "https://svgwg.org/svg2-draft/",
   "title": "Scalable Vector Graphics (SVG)",
@@ -1528,7 +1525,14 @@
   }
  },
  "vc-render-method": {
-  "link": "https://w3c.github.io/vc-render-method/"
+  "link": "https://w3c.github.io/vc-render-method/",
+  "title": "Verifiable Credential Rendering Methods v1.0",
+  "w3c": {
+   "serie": "vc-render-method",
+   "shortnames": [
+    "vc-render-method"
+   ]
+  }
  },
  "vehicle-data": {
   "link": "https://w3c.github.io/automotive/vehicle_data/data_spec.html",
@@ -2642,6 +2646,9 @@
  },
  "web-nfc": {
   "link": "https://w3c.github.io/web-nfc/"
+ },
+ "sustainability-guidelines": {
+  "link": "https://www.w3.org/TR/web-sustainability-guidelines"
  },
  "window-placement": {
   "link": "https://www.w3.org/TR/window-placement",
@@ -7997,6 +8004,16 @@
    "serie": "passkey-endpoints",
    "shortnames": [
     "passkey-endpoints-1"
+   ]
+  }
+ },
+ "vc-confidence-method": {
+  "title": "Confidence Method v1.0",
+  "link": "https://w3c.github.io/vc-confidence-method/",
+  "w3c": {
+   "serie": "vc-confidence-method",
+   "shortnames": [
+    "vc-confidence-method"
    ]
   }
  }
