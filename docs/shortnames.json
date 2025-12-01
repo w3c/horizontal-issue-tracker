@@ -179,7 +179,8 @@
   "w3c": {
    "serie": "css-backgrounds",
    "shortnames": [
-    "css-backgrounds-3"
+    "css-backgrounds-3",
+    "css-backgrounds-4"
    ]
   }
  },
@@ -1919,7 +1920,8 @@
    "serie": "wot-thing-description",
    "shortnames": [
     "wot-thing-description10",
-    "wot-thing-description11"
+    "wot-thing-description11",
+    "wot-thing-description-2.0"
    ]
   }
  },
@@ -5539,7 +5541,8 @@
  },
  "wot-binding-templates": {
   "link": "https://w3c.github.io/wot-binding-templates/",
-  "title": "Web of Things (WoT) Protocol Binding Templates"
+  "title": "Web of Things (WoT) Protocol Binding Templates",
+  "retired": true
  },
  "xaur": {
   "link": "https://w3c.github.io/apa/xaur/",
@@ -8014,6 +8017,36 @@
    "serie": "vc-confidence-method",
    "shortnames": [
     "vc-confidence-method"
+   ]
+  }
+ },
+ "wot-binding-registry": {
+  "title": "Web of Things (WoT) Binding Registry",
+  "link": "https://w3c.github.io/wot-binding-registry/",
+  "w3c": {
+   "serie": "wot-binding-registry",
+   "shortnames": [
+    "wot-binding-registry"
+   ]
+  }
+ },
+ "societal-impact-questionnaire": {
+  "title": "Self-Review Questionnaire: Societal Impact",
+  "link": "https://w3ctag.github.io/societal-impact-questionnaire/",
+  "w3c": {
+   "serie": "societal-impact-questionnaire",
+   "shortnames": [
+    "societal-impact-questionnaire"
+   ]
+  }
+ },
+ "web-user-agents": {
+  "title": "Web User Agents",
+  "link": "https://w3ctag.github.io/user-agents",
+  "w3c": {
+   "serie": "web-user-agents",
+   "shortnames": [
+    "web-user-agents"
    ]
   }
  }
