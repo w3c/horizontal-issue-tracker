@@ -8049,5 +8049,25 @@
     "web-user-agents"
    ]
   }
+ },
+ "attribution": {
+  "title": "Attribution",
+  "link": "https://w3c.github.io/attribution/",
+  "w3c": {
+   "serie": "attribution",
+   "shortnames": [
+    "attribution"
+   ]
+  }
+ },
+ "shacl-rules": {
+  "title": "SHACL Rules",
+  "link": "https://w3c.github.io/data-shapes/shacl12-rules/",
+  "w3c": {
+   "serie": "shacl-rules",
+   "shortnames": [
+    "shacl12-rules"
+   ]
+  }
  }
 }
