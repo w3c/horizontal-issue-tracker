@@ -1382,7 +1382,7 @@
  },
  "ttml-imsc": {
   "link": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html",
-  "title": "TTML Profiles for Internet Media Subtitles and Captions",
+  "title": "IMSC Text Profile",
   "w3c": {
    "serie": "ttml-imsc",
    "shortnames": [
@@ -8067,6 +8067,26 @@
    "serie": "shacl-rules",
    "shortnames": [
     "shacl12-rules"
+   ]
+  }
+ },
+ "rdf-interop": {
+  "title": "RDF Interoperability",
+  "link": "https://w3c.github.io/rdf-interop/spec/",
+  "w3c": {
+   "serie": "rdf-interop",
+   "shortnames": [
+    "rdf12-interop"
+   ]
+  }
+ },
+ "shacl-node-expr": {
+  "title": "SHACL Node Expressions",
+  "link": "https://w3c.github.io/data-shapes/shacl12-node-expr/",
+  "w3c": {
+   "serie": "shacl-node-expr",
+   "shortnames": [
+    "shacl12-node-expr"
    ]
   }
  }
