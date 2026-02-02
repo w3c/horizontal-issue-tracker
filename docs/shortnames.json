@@ -2646,6 +2646,9 @@
    ]
   }
  },
+ "prompt-api": {
+  "link": "https://webmachinelearning.github.io/prompt-api/"
+ },
  "web-nfc": {
   "link": "https://w3c.github.io/web-nfc/"
  },
@@ -8087,6 +8090,46 @@
    "serie": "shacl-node-expr",
    "shortnames": [
     "shacl12-node-expr"
+   ]
+  }
+ },
+ "threat-modeling-guide": {
+  "title": "Threat Modeling Guide",
+  "link": "https://w3c.github.io/threat-modeling-guide/",
+  "w3c": {
+   "serie": "threat-modeling-guide",
+   "shortnames": [
+    "threat-modeling-guide"
+   ]
+  }
+ },
+ "threat-model-decentralized-credentials": {
+  "title": "Threat Model for Decentralized Credentials",
+  "link": "https://w3c.github.io/threat-model-decentralized-credentials/",
+  "w3c": {
+   "serie": "threat-model-decentralized-credentials",
+   "shortnames": [
+    "threat-model-decentralized-credentials"
+   ]
+  }
+ },
+ "ruby-tts-req": {
+  "title": "Text-to-Speech Rendering of Electronic Documents Containing Ruby: User Requirements",
+  "link": "https://w3c.github.io/ruby-tts-req/",
+  "w3c": {
+   "serie": "ruby-tts-req",
+   "shortnames": [
+    "ruby-tts-req"
+   ]
+  }
+ },
+ "security-guidelines-cryptography": {
+  "title": "Cryptography usage in Web Standards",
+  "link": "https://w3c.github.io/security-guidelines-cryptography/",
+  "w3c": {
+   "serie": "security-guidelines-cryptography",
+   "shortnames": [
+    "security-guidelines-cryptography"
    ]
   }
  }
