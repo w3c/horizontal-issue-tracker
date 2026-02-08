@@ -2122,7 +2122,8 @@
    "shortnames": [
     "geolocation-sensor"
    ]
-  }
+  },
+  "retired": true
  },
  "get-installed-related-apps": {
   "link": "https://wicg.github.io/get-installed-related-apps/spec/"
@@ -2618,6 +2619,16 @@
  },
  "svg-native": {
   "link": "https://svgwg.org/specs/svg-native/"
+ },
+ "vc-confidence-method": {
+  "link": "https://w3c.github.io/vc-confidence-method/",
+  "title": "Confidence Method v1.0",
+  "w3c": {
+   "serie": "vc-confidence-method",
+   "shortnames": [
+    "vc-confidence-method"
+   ]
+  }
  },
  "web-animations": {
   "link": "missing link",
@@ -8013,16 +8024,6 @@
    ]
   }
  },
- "vc-confidence-method": {
-  "title": "Confidence Method v1.0",
-  "link": "https://w3c.github.io/vc-confidence-method/",
-  "w3c": {
-   "serie": "vc-confidence-method",
-   "shortnames": [
-    "vc-confidence-method"
-   ]
-  }
- },
  "wot-binding-registry": {
   "title": "Web of Things (WoT) Binding Registry",
   "link": "https://w3c.github.io/wot-binding-registry/",
@@ -8130,6 +8131,56 @@
    "serie": "security-guidelines-cryptography",
    "shortnames": [
     "security-guidelines-cryptography"
+   ]
+  }
+ },
+ "coga-research-modules": {
+  "title": "Cognitive Accessibility Research Modules",
+  "link": "https://w3c.github.io/coga/research-modules/",
+  "w3c": {
+   "serie": "coga-research-modules",
+   "shortnames": [
+    "coga-research-modules"
+   ]
+  }
+ },
+ "coga-voice": {
+  "title": "Cognitive Accessibility Research Modules - Voice Systems and Conversational Interfaces",
+  "link": "https://w3c.github.io/coga/research-modules/Conversational-Voice-Systems.html",
+  "w3c": {
+   "serie": "coga-voice",
+   "shortnames": [
+    "coga-voice"
+   ]
+  }
+ },
+ "coga-wayfinding": {
+  "title": "Cognitive Accessibility Research Modules - Technology Assisted Indoor Navigation / Wayfinding",
+  "link": "https://w3c.github.io/coga/research-modules/Technology-Assisted-Indoor-Navigation-and-Wayfindings.html",
+  "w3c": {
+   "serie": "coga-wayfinding",
+   "shortnames": [
+    "coga-wayfinding"
+   ]
+  }
+ },
+ "coga-safety": {
+  "title": "Cognitive Accessibility Research Modules - Online Safety and Wellbeing (Algorithms and Data)",
+  "link": "https://w3c.github.io/coga/research-modules/Online-Safety-and-Wellbeing.html",
+  "w3c": {
+   "serie": "coga-safety",
+   "shortnames": [
+    "coga-safety"
+   ]
+  }
+ },
+ "coga-sdm": {
+  "title": "Cognitive Accessibility Research Modules - Supported Decision-Making Online",
+  "link": "https://w3c.github.io/coga/research-modules/Supported-Decision-Making.html",
+  "w3c": {
+   "serie": "coga-sdm",
+   "shortnames": [
+    "coga-sdm"
    ]
   }
  }
