@@ -173,6 +173,17 @@
    ]
   }
  },
+ "css-anchor-position": {
+  "link": "missing link",
+  "title": "CSS Anchor Positioning",
+  "w3c": {
+   "serie": "css-anchor-position",
+   "shortnames": [
+    "css-anchor-position-1",
+    "css-anchor-position-2"
+   ]
+  }
+ },
  "css-backgrounds": {
   "link": "https://drafts.csswg.org/css-backgrounds/",
   "title": "CSS Backgrounds and Borders",
@@ -285,6 +296,16 @@
     "css-fonts-3",
     "css-fonts-4",
     "css-fonts-5"
+   ]
+  }
+ },
+ "css-forms": {
+  "link": "missing link",
+  "title": "CSS Form Control Styling",
+  "w3c": {
+   "serie": "css-forms",
+   "shortnames": [
+    "css-forms-1"
    ]
   }
  },
@@ -1277,6 +1298,17 @@
     "rdf-concepts-10",
     "rdf11-concepts",
     "rdf12-concepts"
+   ]
+  }
+ },
+ "rdf-turtle": {
+  "link": "https://w3c.github.io/rdf-turtle/spec/",
+  "title": "RDF Turtle",
+  "w3c": {
+   "serie": "rdf-turtle",
+   "shortnames": [
+    "rdf11-turtle",
+    "rdf12-turtle"
    ]
   }
  },
@@ -2529,17 +2561,6 @@
  "canvas-text-metrics": {
   "link": "https://github.com/Igalia/explainers/blob/main/canvas-formatted-text/text-metrics-additions.md"
  },
- "css-anchor-position": {
-  "link": "missing link",
-  "title": "CSS Anchor Positioning",
-  "w3c": {
-   "serie": "css-anchor-position",
-   "shortnames": [
-    "css-anchor-position-1",
-    "css-anchor-position-2"
-   ]
-  }
- },
  "css-animations": {
   "link": "missing link",
   "title": "CSS Animations",
@@ -2569,16 +2590,6 @@
    "serie": "css-env",
    "shortnames": [
     "css-env-1"
-   ]
-  }
- },
- "css-forms": {
-  "link": "missing link",
-  "title": "CSS Form Control Styling",
-  "w3c": {
-   "serie": "css-forms",
-   "shortnames": [
-    "css-forms-1"
    ]
   }
  },
@@ -7297,17 +7308,6 @@
    "shortnames": [
     "sparql11-graph-store-protocol",
     "sparql12-graph-store-protocol"
-   ]
-  }
- },
- "rdf-turtle": {
-  "title": "RDF Turtle",
-  "link": "https://w3c.github.io/rdf-turtle/spec/",
-  "w3c": {
-   "serie": "rdf-turtle",
-   "shortnames": [
-    "rdf11-turtle",
-    "rdf12-turtle"
    ]
   }
  },
