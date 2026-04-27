@@ -76,6 +76,14 @@ async function getStrategyIssues() {
        fields: "html_url,number,title,labels,created_at"});
 }
 
+async function getCharterRequests() {
+  const grpc = await HR_CONFIG;
+  return ghRequest(`${config.cache}/v3/repos/w3c/strategy/issues`,
+    { ttl: config.ttl,
+       labels: "Horizontal review requested",
+       fields: "html_url,number,title,labels,created_at"});
+}
+
 // BELOW IS WHERE THINGS STARTS HAPPENING
 
 /*
@@ -133,9 +141,21 @@ async function screen_refresh() {
     a.textContent = 'w3c/strategy';
     let ul = el("ul");
     data.forEach(issue => ul.append(li_issue(issue)));
-    elt.querySelector("summary").textContent = `${data.length} ${g.groupname} strategy issues`;
-    elt.querySelector("div").firstElementChild.replaceWith(ul);
+    const stratAll  = id("strat-all");
+    stratAll.querySelector("summary").textContent = `${data.length} ${g.groupname} strategy issues`;
+    stratAll.querySelector("div").firstElementChild.replaceWith(ul);
   }).catch(display_error);
+
+  getCharterRequests().then(async (data) => {
+    const g = await HR_CONFIG;
+    const ul = el("ul");
+    data = data.filter(issue => !issue.labels.find(l => l.name === `${g.groupname} review completed`));
+    data.forEach(issue => ul.append(li_issue(issue)));
+    const charterRequests  = id("charter-requests");
+    charterRequests.querySelector("summary").textContent = `${data.length} ${g.groupname} charter requests`;
+    charterRequests.querySelector("div").firstElementChild.replaceWith(ul);
+  }).catch(display_error);
+
 
   function li_issue(issue) {
     const li = el("li");
