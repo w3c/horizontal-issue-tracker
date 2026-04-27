@@ -148,6 +148,11 @@ async function screen_refresh() {
 
   getCharterRequests().then(async (data) => {
     const g = await HR_CONFIG;
+    const elt = id("charters");
+    const a = elt.querySelector("h2 span a");
+    let href = `https://github.com/w3c/strategy/issues?q=is%3Aissue%20state%3Aopen%20-label%3A%22${g.groupname}%20review%20completed%22%20label%3A%22Horizontal%20review%20requested%22`;
+    a.href = href;
+    a.textContent = 'w3c/strategy';
     const ul = el("ul");
     data = data.filter(issue => !issue.labels.find(l => l.name === `${g.groupname} review completed`));
     data.forEach(issue => ul.append(li_issue(issue)));
