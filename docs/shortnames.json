@@ -1301,6 +1301,28 @@
    ]
   }
  },
+ "rdf-n-quads": {
+  "link": "https://w3c.github.io/rdf-n-quads/spec/",
+  "title": "RDF N-Quads",
+  "w3c": {
+   "serie": "rdf-n-quads",
+   "shortnames": [
+    "rdf11-n-quads",
+    "rdf12-n-quads"
+   ]
+  }
+ },
+ "rdf-trig": {
+  "link": "https://www.w3.org/TR/rdf12-trig/",
+  "title": "RDF TriG",
+  "w3c": {
+   "serie": "rdf-trig",
+   "shortnames": [
+    "rdf11-trig",
+    "rdf12-trig"
+   ]
+  }
+ },
  "rdf-turtle": {
   "link": "https://w3c.github.io/rdf-turtle/spec/",
   "title": "RDF Turtle",
@@ -1559,7 +1581,8 @@
   "w3c": {
    "serie": "vc-data-integrity",
    "shortnames": [
-    "vc-data-integrity"
+    "vc-data-integrity",
+    "vc-data-integrity-1.1"
    ]
   }
  },
@@ -1570,7 +1593,8 @@
    "serie": "vc-data-model",
    "shortnames": [
     "vc-data-model-1.1",
-    "vc-data-model-2.0"
+    "vc-data-model-2.0",
+    "vc-data-model-2.1"
    ]
   }
  },
@@ -1837,6 +1861,9 @@
    ]
   },
   "retired": true
+ },
+ "webmcp": {
+  "link": "https://webmachinelearning.github.io/webmcp/"
  },
  "webmention": {
   "link": "https://webmention.net/draft/",
@@ -2418,7 +2445,8 @@
   "w3c": {
    "serie": "vc-di-ecdsa",
    "shortnames": [
-    "vc-di-ecdsa"
+    "vc-di-ecdsa",
+    "vc-di-ecdsa-1.1"
    ]
   }
  },
@@ -2428,7 +2456,8 @@
   "w3c": {
    "serie": "vc-di-eddsa",
    "shortnames": [
-    "vc-di-eddsa"
+    "vc-di-eddsa",
+    "vc-di-eddsa-1.1"
    ]
   }
  },
@@ -7256,17 +7285,6 @@
    ]
   }
  },
- "rdf-n-quads": {
-  "title": "RDF N-Quads",
-  "link": "https://w3c.github.io/rdf-n-quads/spec/",
-  "w3c": {
-   "serie": "rdf-n-quads",
-   "shortnames": [
-    "rdf11-n-quads",
-    "rdf12-n-quads"
-   ]
-  }
- },
  "rdf-n-triples": {
   "title": "RDF N-Triples",
   "link": "https://w3c.github.io/rdf-n-triples/spec/",
@@ -7308,17 +7326,6 @@
    "shortnames": [
     "sparql11-graph-store-protocol",
     "sparql12-graph-store-protocol"
-   ]
-  }
- },
- "rdf-trig": {
-  "title": "RDF TriG",
-  "link": "https://w3c.github.io/rdf-trig/spec/",
-  "w3c": {
-   "serie": "rdf-trig",
-   "shortnames": [
-    "rdf11-trig",
-    "rdf12-trig"
    ]
   }
  },
@@ -8269,6 +8276,116 @@
    "serie": "llms-standards",
    "shortnames": [
     "llms-standards"
+   ]
+  }
+ },
+ "lws-core": {
+  "title": "Linked Web Storage Protocol",
+  "link": "https://w3c.github.io/lws-protocol/lws10-core/",
+  "w3c": {
+   "serie": "lws-core",
+   "shortnames": [
+    "lws10-core"
+   ]
+  }
+ },
+ "css-image-animation": {
+  "title": "CSS Image Animation Module",
+  "link": "https://drafts.csswg.org/css-image-animation-1/",
+  "w3c": {
+   "serie": "css-image-animation",
+   "shortnames": [
+    "css-image-animation-1"
+   ]
+  }
+ },
+ "vc-barcodes": {
+  "title": "Verifiable Credential Barcodes",
+  "link": "https://w3c.github.io/vc-barcodes/",
+  "w3c": {
+   "serie": "vc-barcodes",
+   "shortnames": [
+    "vc-barcodes-1.0"
+   ]
+  }
+ },
+ "vcalm": {
+  "title": "VCALM",
+  "link": "https://w3c.github.io/vcalm/",
+  "w3c": {
+   "serie": "vcalm",
+   "shortnames": [
+    "vcalm-1.0"
+   ]
+  }
+ },
+ "lws-authn-openid": {
+  "title": "LWS Authentication Suite: OpenID Connect",
+  "link": "https://w3c.github.io/lws-protocol/lws10-authn-openid/",
+  "w3c": {
+   "serie": "lws-authn-openid",
+   "shortnames": [
+    "lws10-authn-openid"
+   ]
+  }
+ },
+ "lws-authn-saml": {
+  "title": "LWS Authentication Suite: SAML",
+  "link": "https://w3c.github.io/lws-protocol/lws10-authn-saml/",
+  "w3c": {
+   "serie": "lws-authn-saml",
+   "shortnames": [
+    "lws10-authn-saml"
+   ]
+  }
+ },
+ "lws-authn-ssi-cid": {
+  "title": "LWS Authentication Suite: Self-signed Identity using Controlled Identifiers",
+  "link": "https://w3c.github.io/lws-protocol/lws10-authn-ssi-cid/",
+  "w3c": {
+   "serie": "lws-authn-ssi-cid",
+   "shortnames": [
+    "lws10-authn-ssi-cid"
+   ]
+  }
+ },
+ "lws-authn-ssi-did-key": {
+  "title": "LWS Authentication Suite: Self-signed Identity using did:key",
+  "link": "https://w3c.github.io/lws-protocol/lws10-authn-ssi-did-key/",
+  "w3c": {
+   "serie": "lws-authn-ssi-did-key",
+   "shortnames": [
+    "lws10-authn-ssi-did-key"
+   ]
+  }
+ },
+ "cbor-ld": {
+  "title": "CBOR-LD",
+  "link": "https://w3c.github.io/cbor-ld/",
+  "w3c": {
+   "serie": "cbor-ld",
+   "shortnames": [
+    "cbor-ld-10"
+   ]
+  }
+ },
+ "long-animation-frames": {
+  "title": "Long Animation Frames API",
+  "link": "https://w3c.github.io/long-animation-frames/",
+  "w3c": {
+   "serie": "long-animation-frames",
+   "shortnames": [
+    "long-animation-frames"
+   ]
+  }
+ },
+ "vc-recognized-entities": {
+  "title": "Recognized Entities",
+  "link": "https://w3c.github.io/vc-recognized-entities/",
+  "w3c": {
+   "serie": "vc-recognized-entities",
+   "shortnames": [
+    "vc-recognized-entities-1.0"
    ]
   }
  }
