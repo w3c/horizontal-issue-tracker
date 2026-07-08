@@ -94,6 +94,16 @@
    ]
   }
  },
+ "attribution": {
+  "link": "Attribution Level 1 (https://www.w3.org/TR/attribution)",
+  "title": "Attribution",
+  "w3c": {
+   "serie": "attribution",
+   "shortnames": [
+    "attribution"
+   ]
+  }
+ },
  "baggage": {
   "link": "https://w3c.github.io/baggage/",
   "title": "Propagation format for distributed context: Baggage",
@@ -311,7 +321,7 @@
  },
  "css-gaps": {
   "link": "missing link",
-  "title": "CSS Gap Decorations Module",
+  "title": "CSS Gaps",
   "w3c": {
    "serie": "css-gaps",
    "shortnames": [
@@ -680,6 +690,16 @@
    ]
   }
  },
+ "digital-credentials": {
+  "link": "missing link",
+  "title": "Digital Credentials",
+  "w3c": {
+   "serie": "digital-credentials",
+   "shortnames": [
+    "digital-credentials"
+   ]
+  }
+ },
  "dom": {
   "link": "https://dom.spec.whatwg.org/",
   "title": "Document Object Model (DOM)",
@@ -980,6 +1000,9 @@
     "json-ld11-framing"
    ]
   }
+ },
+ "json-schema-core": {
+  "link": "https://json-schema.org/draft/2020-12/json-schema-core"
  },
  "ldn": {
   "link": "https://linkedresearch.org/ldn/",
@@ -2153,16 +2176,6 @@
    "shortnames": [
     "did-1.0",
     "did-1.1"
-   ]
-  }
- },
- "digital-credentials": {
-  "link": "https://w3c-fedid.github.io/digital-credentials/",
-  "title": "Digital Credentials",
-  "w3c": {
-   "serie": "digital-credentials",
-   "shortnames": [
-    "digital-credentials"
    ]
   }
  },
@@ -8089,16 +8102,6 @@
    ]
   }
  },
- "attribution": {
-  "title": "Attribution",
-  "link": "https://w3c.github.io/attribution/",
-  "w3c": {
-   "serie": "attribution",
-   "shortnames": [
-    "attribution"
-   ]
-  }
- },
  "shacl-rules": {
   "title": "SHACL Rules",
   "link": "https://w3c.github.io/data-shapes/shacl12-rules/",
@@ -8386,6 +8389,66 @@
    "serie": "vc-recognized-entities",
    "shortnames": [
     "vc-recognized-entities-1.0"
+   ]
+  }
+ },
+ "shacl-ui": {
+  "title": "SHACL User Interfaces",
+  "link": "https://w3c.github.io/data-shapes/shacl12-ui/",
+  "w3c": {
+   "serie": "shacl-ui",
+   "shortnames": [
+    "shacl12-ui"
+   ]
+  }
+ },
+ "threat-model-web": {
+  "title": "Threat Model for the Web",
+  "link": "https://w3c.github.io/threat-model-web/",
+  "w3c": {
+   "serie": "threat-model-web",
+   "shortnames": [
+    "threat-model-web"
+   ]
+  }
+ },
+ "vc-di-quantum-resistant": {
+  "title": "Quantum-Resistant Cryptosuites v1.0",
+  "link": "https://w3c.github.io/vc-di-quantum-resistant/",
+  "w3c": {
+   "serie": "vc-di-quantum-resistant",
+   "shortnames": [
+    "vc-di-quantum-resistant-1.0"
+   ]
+  }
+ },
+ "vc-forgery-defense": {
+  "title": "Verifiable Credential Forgery Defense",
+  "link": "https://w3c.github.io/vc-forgery-defense/",
+  "w3c": {
+   "serie": "vc-forgery-defense",
+   "shortnames": [
+    "vc-forgery-defense-1.0"
+   ]
+  }
+ },
+ "security-disclosure": {
+  "title": "W3C Standards Vulnerability Disclosure & Handling Process and Policy",
+  "link": "https://w3c.github.io/security-disclosure/",
+  "w3c": {
+   "serie": "security-disclosure",
+   "shortnames": [
+    "security-disclosure"
+   ]
+  }
+ },
+ "shacl-profiling": {
+  "title": "SHACL Profiling",
+  "link": "https://w3c.github.io/data-shapes/shacl12-profiling/",
+  "w3c": {
+   "serie": "shacl-profiling",
+   "shortnames": [
+    "shacl12-profiling"
    ]
   }
  }
