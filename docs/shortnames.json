@@ -2603,6 +2603,16 @@
  "canvas-text-metrics": {
   "link": "https://github.com/Igalia/explainers/blob/main/canvas-formatted-text/text-metrics-additions.md"
  },
+ "charmod-norm": {
+  "link": "https://w3c.github.io/charmod-norm/",
+  "title": "Character Model for the World Wide Web: String Matching",
+  "w3c": {
+   "serie": "charmod-norm",
+   "shortnames": [
+    "charmod-norm"
+   ]
+  }
+ },
  "css-animations": {
   "link": "missing link",
   "title": "CSS Animations",
@@ -2611,6 +2621,16 @@
    "shortnames": [
     "css-animations-1",
     "css-animations-2"
+   ]
+  }
+ },
+ "css-color-hdr": {
+  "link": "missing link",
+  "title": "CSS Color HDR Module",
+  "w3c": {
+   "serie": "css-color-hdr",
+   "shortnames": [
+    "css-color-hdr-1"
    ]
   }
  },
@@ -2715,6 +2735,16 @@
    ]
   },
   "retired": true
+ },
+ "string-meta": {
+  "link": "https://w3c.github.io/string-meta/",
+  "title": "Strings on the Web: Language and Direction Metadata",
+  "w3c": {
+   "serie": "string-meta",
+   "shortnames": [
+    "string-meta"
+   ]
+  }
  },
  "svg-native": {
   "link": "https://svgwg.org/specs/svg-native/"
@@ -2885,10 +2915,6 @@
  "charmod-resid": {
   "title": "Character Model for the World Wide Web: Resource Identifiers",
   "retired": true
- },
- "charmod-norm": {
-  "link": "https://w3c.github.io/charmod-norm/",
-  "title": "Character Model for the World Wide Web: String Matching"
  },
  "cselection": {
   "title": "Content Selection for Device Independence (DISelect)",
@@ -6356,10 +6382,6 @@
   "link": "https://w3c.github.io/coga/gap-analysis/",
   "title": "Cognitive Accessibility Roadmap and Gap Analysis"
  },
- "string-meta": {
-  "link": "https://w3c.github.io/string-meta/",
-  "title": "Strings on the Web: Language and Direction Metadata"
- },
  "act-rules-aspects": {
   "link": "https://w3c.github.io/wcag-act/NOTE-act-rules-common-aspects.html",
   "title": "Accessibility Conformance Testing (ACT) Rules: Common Input Aspects"
@@ -7931,16 +7953,6 @@
    ]
   }
  },
- "css-color-hdr": {
-  "title": "CSS Color HDR Module",
-  "link": "https://drafts.csswg.org/css-color-hdr-1/",
-  "w3c": {
-   "serie": "css-color-hdr",
-   "shortnames": [
-    "css-color-hdr-1"
-   ]
-  }
- },
  "string-search": {
   "title": "String Searching",
   "link": "https://w3c.github.io/string-search/",
@@ -8449,6 +8461,36 @@
    "serie": "shacl-profiling",
    "shortnames": [
     "shacl12-profiling"
+   ]
+  }
+ },
+ "css-link-params": {
+  "title": "CSS Linked Parameters Module",
+  "link": "https://drafts.csswg.org/css-link-params/",
+  "w3c": {
+   "serie": "css-link-params",
+   "shortnames": [
+    "css-link-params-1"
+   ]
+  }
+ },
+ "sparql-new": {
+  "title": "What’s New in SPARQL",
+  "link": "https://w3c.github.io/sparql-new/spec/",
+  "w3c": {
+   "serie": "sparql-new",
+   "shortnames": [
+    "sparql12-new"
+   ]
+  }
+ },
+ "lws-vocab": {
+  "title": "Linked Web Storage Vocabulary",
+  "link": "https://w3c.github.io/lws-protocol/lws10-vocab/",
+  "w3c": {
+   "serie": "lws-vocab",
+   "shortnames": [
+    "lws10-vocab"
    ]
   }
  }
