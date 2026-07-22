@@ -238,7 +238,7 @@ async function run() {
 
   let repositories = await tracked_repositories.w3c();
 
-  repositories.concat(await tracked_repositories.extra());
+  repositories = repositories.concat(await tracked_repositories.extra());
 
   // add a few more repositories, such as the repository template
   repositories = repositories.concat(["w3c/note-respec-repo-template"]);
