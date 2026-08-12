@@ -686,7 +686,7 @@
   "w3c": {
    "serie": "did-resolution",
    "shortnames": [
-    "did-resolution"
+    "did-resolution-1.0"
    ]
   }
  },
@@ -1094,7 +1094,8 @@
    "shortnames": [
     "miniapp-addressing"
    ]
-  }
+  },
+  "retired": true
  },
  "miniapp-lifecycle": {
   "link": "https://w3c.github.io/miniapp-lifecycle/",
@@ -1104,7 +1105,8 @@
    "shortnames": [
     "miniapp-lifecycle"
    ]
-  }
+  },
+  "retired": true
  },
  "miniapp-manifest": {
   "link": "https://w3c.github.io/miniapp-manifest/",
@@ -1114,7 +1116,8 @@
    "shortnames": [
     "miniapp-manifest"
    ]
-  }
+  },
+  "retired": true
  },
  "miniapp-packaging": {
   "link": "https://w3c.github.io/miniapp-packaging/",
@@ -1124,7 +1127,8 @@
    "shortnames": [
     "miniapp-packaging"
    ]
-  }
+  },
+  "retired": true
  },
  "modern-network-unicode": {
   "link": "https://datatracker.ietf.org/doc/draft-bormann-dispatch-modern-network-unicode/"
@@ -1648,6 +1652,16 @@
    "serie": "vc-json-schema",
    "shortnames": [
     "vc-json-schema"
+   ]
+  }
+ },
+ "vc-recognized-entities": {
+  "link": "https://www.w3.org/TR/vc-recognized-entities-1.0",
+  "title": "Recognized Entities",
+  "w3c": {
+   "serie": "vc-recognized-entities",
+   "shortnames": [
+    "vc-recognized-entities-1.0"
    ]
   }
  },
@@ -2652,6 +2666,16 @@
    "serie": "css-env",
    "shortnames": [
     "css-env-1"
+   ]
+  }
+ },
+ "css-image-animation": {
+  "link": "missing link",
+  "title": "CSS Image Animation Module",
+  "w3c": {
+   "serie": "css-image-animation",
+   "shortnames": [
+    "css-image-animation-1"
    ]
   }
  },
@@ -4059,7 +4083,8 @@
  },
  "mini-app-white-paper": {
   "link": "https://w3c.github.io/mini-app-white-paper/",
-  "title": "MiniApp Standardization White Paper"
+  "title": "MiniApp Standardization White Paper",
+  "retired": true
  },
  "lpf": {
   "link": "https://w3c.github.io/lpf/",
@@ -7046,7 +7071,8 @@
    "shortnames": [
     "miniapp-widget-req"
    ]
-  }
+  },
+  "retired": true
  },
  "arab-ks-gap": {
   "title": "Perso-arabic Kashmiri Gap Analysis",
@@ -7575,7 +7601,8 @@
   "w3c": {
    "serie": "vc-overview",
    "shortnames": [
-    "vc-overview"
+    "vc-overview-1.0",
+    "vc-overview-1.1"
    ]
   }
  },
@@ -8304,16 +8331,6 @@
    ]
   }
  },
- "css-image-animation": {
-  "title": "CSS Image Animation Module",
-  "link": "https://drafts.csswg.org/css-image-animation-1/",
-  "w3c": {
-   "serie": "css-image-animation",
-   "shortnames": [
-    "css-image-animation-1"
-   ]
-  }
- },
  "vc-barcodes": {
   "title": "Verifiable Credential Barcodes",
   "link": "https://w3c.github.io/vc-barcodes/",
@@ -8391,16 +8408,6 @@
    "serie": "long-animation-frames",
    "shortnames": [
     "long-animation-frames"
-   ]
-  }
- },
- "vc-recognized-entities": {
-  "title": "Recognized Entities",
-  "link": "https://w3c.github.io/vc-recognized-entities/",
-  "w3c": {
-   "serie": "vc-recognized-entities",
-   "shortnames": [
-    "vc-recognized-entities-1.0"
    ]
   }
  },
@@ -8491,6 +8498,26 @@
    "serie": "lws-vocab",
    "shortnames": [
     "lws10-vocab"
+   ]
+  }
+ },
+ "epub-a11y-explain": {
+  "title": "EPUB Accessibility Explainer",
+  "link": "https://w3c.github.io/epub-specs/epub34/a11y-explain/",
+  "w3c": {
+   "serie": "epub-a11y-explain",
+   "shortnames": [
+    "epub-a11y-explain-12"
+   ]
+  }
+ },
+ "furthering-human-rights": {
+  "title": "Further Aligning W3C's Program of Technical Work with Human Rights",
+  "link": "https://w3c.github.io/AB-public/position-statements/furthering-human-rights/",
+  "w3c": {
+   "serie": "furthering-human-rights",
+   "shortnames": [
+    "furthering-human-rights"
    ]
   }
  }
