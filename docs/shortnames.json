@@ -1592,6 +1592,16 @@
    ]
   }
  },
+ "vc-barcodes": {
+  "link": "https://w3c.github.io/vc-barcodes",
+  "title": "Verifiable Credential Barcodes",
+  "w3c": {
+   "serie": "vc-barcodes",
+   "shortnames": [
+    "vc-barcodes-1.0"
+   ]
+  }
+ },
  "vc-bitstring-status-list": {
   "link": "https://w3c.github.io/vc-bitstring-status-list",
   "title": "Bitstring Status List",
@@ -2775,7 +2785,7 @@
  },
  "vc-confidence-method": {
   "link": "https://w3c.github.io/vc-confidence-method/",
-  "title": "Confidence Method v1.0",
+  "title": "Verifiable Credential Confidence Methods",
   "w3c": {
    "serie": "vc-confidence-method",
    "shortnames": [
@@ -8331,16 +8341,6 @@
    ]
   }
  },
- "vc-barcodes": {
-  "title": "Verifiable Credential Barcodes",
-  "link": "https://w3c.github.io/vc-barcodes/",
-  "w3c": {
-   "serie": "vc-barcodes",
-   "shortnames": [
-    "vc-barcodes-1.0"
-   ]
-  }
- },
  "vcalm": {
   "title": "VCALM",
   "link": "https://w3c.github.io/vcalm/",
@@ -8518,6 +8518,16 @@
    "serie": "furthering-human-rights",
    "shortnames": [
     "furthering-human-rights"
+   ]
+  }
+ },
+ "wsg-ir": {
+  "title": "Web Sustainability Guidelines (WSG) Impact Ratings",
+  "link": "https://w3c.github.io/sustainableweb-impact/",
+  "w3c": {
+   "serie": "wsg-ir",
+   "shortnames": [
+    "wsg-ir"
    ]
   }
  }
