@@ -6,7 +6,13 @@ import { config as confinit, el, id, fetchJSON, ghRequest, hrLinkTo } from "../G
 const config = confinit({ttl: 15, name: "privacy" });
 
 function display_error(err) {
-  id("log").textContent = err;
+  if (err.type === 'HttpError') {
+    // it's a fetch error
+    id("log").textContent = "Unable to load ";
+    id("log").append(el("a", { href: err.url }, err.url));
+  } else {
+    id("log").textContent = err;
+  }
   if (config.debug) console.error(err);
 }
 
@@ -62,19 +68,20 @@ async function getAgendaRequests() {
     fields: "html_url,title,comments,updated_at,assignee,labels,pull_request,milestone"});
 }
 
-async function getCharterReviews() {
+async function getStrategyIssues() {
   const grpc = await HR_CONFIG;
-  const hcomp = `${grpc.groupname} review completed`;
-  const raw_issues = await ghRequest(`${config.cache}/v3/repos/w3c/strategy/issues`,
+  return ghRequest(`${config.cache}/v3/repos/w3c/strategy/issues`,
     { ttl: config.ttl,
-       labels: "Horizontal%20review%20requested",
+       labels: grpc.groupname,
        fields: "html_url,number,title,labels,created_at"});
-  const issues = [];
-  raw_issues.forEach(issue => {
-    const labels = issue.labels.filter(l => l.name === hcomp);
-    if (labels.length === 0) issues.push(issue);
-  });
-  return issues;
+}
+
+async function getCharterRequests() {
+  const grpc = await HR_CONFIG;
+  return ghRequest(`${config.cache}/v3/repos/w3c/strategy/issues`,
+    { ttl: config.ttl,
+       labels: "Horizontal review requested",
+       fields: "html_url,number,title,labels,created_at"});
 }
 
 // BELOW IS WHERE THINGS STARTS HAPPENING
@@ -124,23 +131,36 @@ async function screen_refresh() {
     });
     elt.querySelector("div").firstElementChild.replaceWith(ul);
   }).catch(display_error);
-  getCharterReviews().then(async (data) => {
+
+  getStrategyIssues().then(async (data) => {
+    const g = await HR_CONFIG;
+    const elt = id("strategy");
+    const a = elt.querySelector("h2 span a");
+    let href = `https://github.com/w3c/strategy/labels/${g.groupname}`;
+    a.href = href;
+    a.textContent = 'w3c/strategy';
+    let ul = el("ul");
+    data.forEach(issue => ul.append(li_issue(issue)));
+    const stratAll  = id("strat-all");
+    stratAll.querySelector("summary").textContent = `${data.length} ${g.groupname} strategy issues`;
+    stratAll.querySelector("div").firstElementChild.replaceWith(ul);
+  }).catch(display_error);
+
+  getCharterRequests().then(async (data) => {
     const g = await HR_CONFIG;
     const elt = id("charters");
-    const ul = el("ul");
     const a = elt.querySelector("h2 span a");
-    let href = `https://github.com/w3c/strategy/issues?q=is%3Aopen+label%3A"Horizontal+review+requested"+-label%3A"${g.groupname}+review+completed"`;
+    let href = `https://github.com/w3c/strategy/issues?q=is%3Aissue%20state%3Aopen%20-label%3A%22${g.groupname}%20review%20completed%22%20label%3A%22Horizontal%20review%20requested%22`;
     a.href = href;
-    a.textContent = "w3c/strategy";
-    data.forEach(issue => {
-      ul.append(
-        el("li", 
-          el("a", {href:issue.html_url},`${issue.title}`)
-        )
-      );
-    })
-    elt.querySelector("div").firstElementChild.replaceWith(ul);
+    a.textContent = 'w3c/strategy';
+    const ul = el("ul");
+    data = data.filter(issue => !issue.labels.find(l => l.name === `${g.groupname} review completed`));
+    data.forEach(issue => ul.append(li_issue(issue)));
+    const charterRequests  = id("charter-requests");
+    charterRequests.querySelector("summary").textContent = `${data.length} ${g.groupname} charter requests`;
+    charterRequests.querySelector("div").firstElementChild.replaceWith(ul);
   }).catch(display_error);
+
 
   function li_issue(issue) {
     const li = el("li");
@@ -154,7 +174,7 @@ async function screen_refresh() {
         li.append('] ');
       }
     });
-    li.append(el("a", {href:issue.hr_url},`${issue.title}`));
+    li.append(el("a", {href: (issue.hr_url)?issue.hr_url:issue.html_url},`${issue.title}`));
     li.append(" ",
       el("span", {"class": "intitle"}, "(from ",
       el("a", {href:issue.html_url},`#${issue.number}`),
@@ -166,7 +186,7 @@ async function screen_refresh() {
     const g = await HR_CONFIG;
     const elt = id("tracker");
     const a = elt.querySelector("h2 span a");
-    let href = `https://github.com/${g["repo"]}/issues`;;
+    let href = `https://github.com/${g["repo"]}/issues`;
     a.href = href;
     a.textContent = g.repo;
     let ul = el("ul");

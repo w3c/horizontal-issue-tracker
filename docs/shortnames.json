@@ -94,9 +94,19 @@
    ]
   }
  },
+ "attribution": {
+  "link": "Attribution Level 1 (https://www.w3.org/TR/attribution)",
+  "title": "Attribution",
+  "w3c": {
+   "serie": "attribution",
+   "shortnames": [
+    "attribution"
+   ]
+  }
+ },
  "baggage": {
   "link": "https://w3c.github.io/baggage/",
-  "title": "Propagation format for distributed trace context: Baggage",
+  "title": "Propagation format for distributed context: Baggage",
   "w3c": {
    "serie": "baggage",
    "shortnames": [
@@ -173,13 +183,25 @@
    ]
   }
  },
+ "css-anchor-position": {
+  "link": "missing link",
+  "title": "CSS Anchor Positioning",
+  "w3c": {
+   "serie": "css-anchor-position",
+   "shortnames": [
+    "css-anchor-position-1",
+    "css-anchor-position-2"
+   ]
+  }
+ },
  "css-backgrounds": {
   "link": "https://drafts.csswg.org/css-backgrounds/",
   "title": "CSS Backgrounds and Borders",
   "w3c": {
    "serie": "css-backgrounds",
    "shortnames": [
-    "css-backgrounds-3"
+    "css-backgrounds-3",
+    "css-backgrounds-4"
    ]
   }
  },
@@ -275,6 +297,16 @@
  "css-font": {
   "link": "missing link"
  },
+ "css-font-loading": {
+  "link": "missing link",
+  "title": "CSS Font Loading Module",
+  "w3c": {
+   "serie": "css-font-loading",
+   "shortnames": [
+    "css-font-loading-3"
+   ]
+  }
+ },
  "css-fonts": {
   "link": "https://drafts.csswg.org/css-fonts/",
   "title": "CSS Fonts",
@@ -284,6 +316,26 @@
     "css-fonts-3",
     "css-fonts-4",
     "css-fonts-5"
+   ]
+  }
+ },
+ "css-forms": {
+  "link": "missing link",
+  "title": "CSS Form Control Styling",
+  "w3c": {
+   "serie": "css-forms",
+   "shortnames": [
+    "css-forms-1"
+   ]
+  }
+ },
+ "css-gaps": {
+  "link": "missing link",
+  "title": "CSS Gaps",
+  "w3c": {
+   "serie": "css-gaps",
+   "shortnames": [
+    "css-gaps-1"
    ]
   }
  },
@@ -386,7 +438,8 @@
   "w3c": {
    "serie": "css-multicol",
    "shortnames": [
-    "css-multicol-1"
+    "css-multicol-1",
+    "css-multicol-2"
    ]
   }
  },
@@ -397,7 +450,8 @@
    "serie": "css-overflow",
    "shortnames": [
     "css-overflow-3",
-    "css-overflow-4"
+    "css-overflow-4",
+    "css-overflow-5"
    ]
   }
  },
@@ -461,6 +515,12 @@
     "css-scrollbars-1"
    ]
   }
+ },
+ "css-selectors": {
+  "link": "alias for `s:selectors`"
+ },
+ "css-shape": {
+  "link": "missing link"
  },
  "css-sizing": {
   "link": "https://drafts.csswg.org/css-sizing/",
@@ -567,7 +627,7 @@
    "serie": "CSS",
    "shortnames": [
     "CSS1",
-    "CSS21",
+    "CSS2",
     "css-2010",
     "css-2015",
     "CSS22",
@@ -576,7 +636,30 @@
     "css-2020",
     "css-2021",
     "css-2022",
-    "css-2023"
+    "css-2023",
+    "css-2024",
+    "css-2025",
+    "css-2026"
+   ]
+  }
+ },
+ "cssom-view": {
+  "link": "missing link",
+  "title": "CSSOM View",
+  "w3c": {
+   "serie": "cssom-view",
+   "shortnames": [
+    "cssom-view-1"
+   ]
+  }
+ },
+ "dapt": {
+  "link": "https://www.w3.org/TR/dapt/",
+  "title": "Dubbing and Audio description Profiles of TTML2",
+  "w3c": {
+   "serie": "dapt",
+   "shortnames": [
+    "dapt"
    ]
   }
  },
@@ -604,9 +687,26 @@
   "link": "https://w3c.github.io/did-core/",
   "title": "Decentralized Identifiers (DIDs)",
   "w3c": {
-   "serie": "did-core",
+   "serie": "did-core"
+  }
+ },
+ "did-resolution": {
+  "link": "https://www.w3.org/TR/did-resolution",
+  "title": "Decentralized Identifier Resolution (DID Resolution)",
+  "w3c": {
+   "serie": "did-resolution",
    "shortnames": [
-    "did-core"
+    "did-resolution-1.0"
+   ]
+  }
+ },
+ "digital-credentials": {
+  "link": "missing link",
+  "title": "Digital Credentials",
+  "w3c": {
+   "serie": "digital-credentials",
+   "shortnames": [
+    "digital-credentials"
    ]
   }
  },
@@ -704,7 +804,29 @@
   "w3c": {
    "serie": "epub",
    "shortnames": [
-    "epub-33"
+    "epub-33",
+    "epub-34"
+   ]
+  }
+ },
+ "epub-a11y": {
+  "link": "https://w3c.github.io/epub-specs/epub33/a11y/",
+  "title": "EPUB Accessibility",
+  "w3c": {
+   "serie": "epub-a11y",
+   "shortnames": [
+    "epub-a11y-11",
+    "epub-a11y-12"
+   ]
+  }
+ },
+ "epub-anno": {
+  "link": "https://w3c.github.io/epub-specs/epub34/annotations/",
+  "title": "EPUB Annotations",
+  "w3c": {
+   "serie": "epub-anno",
+   "shortnames": [
+    "epub-anno-10"
    ]
   }
  },
@@ -712,9 +834,20 @@
   "link": "https://www.w3.org/publishing/epub/epub-packages.html",
   "title": "EPUB Packages"
  },
+ "epub-rs": {
+  "link": "https://w3c.github.io/epub-specs/epub33/rs/",
+  "title": "EPUB Reading Systems",
+  "w3c": {
+   "serie": "epub-rs",
+   "shortnames": [
+    "epub-rs-33",
+    "epub-rs-34"
+   ]
+  }
+ },
  "ethical-web-principles": {
   "link": "https://w3ctag.github.io/ethical-web-principles/",
-  "title": "W3C TAG Ethical Web Principles",
+  "title": "Ethical Web Principles",
   "w3c": {
    "serie": "ethical-web-principles",
    "shortnames": [
@@ -798,6 +931,9 @@
    ]
   }
  },
+ "idna-rfc5891bis": {
+  "link": "https://datatracker.ietf.org/doc/draft-klensin-idna-rfc5891bis/"
+ },
  "ift": {
   "link": "https://w3c.github.io/IFT/Overview.html",
   "title": "Incremental Font Transfer",
@@ -875,6 +1011,9 @@
    ]
   }
  },
+ "json-schema-core": {
+  "link": "https://json-schema.org/draft/2020-12/json-schema-core"
+ },
  "ldn": {
   "link": "https://linkedresearch.org/ldn/",
   "title": "Linked Data Notifications",
@@ -933,6 +1072,9 @@
    ]
   }
  },
+ "meta": {
+  "link": "missing link"
+ },
  "microdata": {
   "link": "https://w3c.github.io/microdata/",
   "title": "HTML Microdata",
@@ -962,7 +1104,8 @@
    "shortnames": [
     "miniapp-addressing"
    ]
-  }
+  },
+  "retired": true
  },
  "miniapp-lifecycle": {
   "link": "https://w3c.github.io/miniapp-lifecycle/",
@@ -972,7 +1115,8 @@
    "shortnames": [
     "miniapp-lifecycle"
    ]
-  }
+  },
+  "retired": true
  },
  "miniapp-manifest": {
   "link": "https://w3c.github.io/miniapp-manifest/",
@@ -982,7 +1126,8 @@
    "shortnames": [
     "miniapp-manifest"
    ]
-  }
+  },
+  "retired": true
  },
  "miniapp-packaging": {
   "link": "https://w3c.github.io/miniapp-packaging/",
@@ -992,7 +1137,11 @@
    "shortnames": [
     "miniapp-packaging"
    ]
-  }
+  },
+  "retired": true
+ },
+ "modern-network-unicode": {
+  "link": "https://datatracker.ietf.org/doc/draft-bormann-dispatch-modern-network-unicode/"
  },
  "mst-content-hint": {
   "link": "https://w3c.github.io/mst-content-hint/",
@@ -1087,9 +1236,10 @@
   "w3c": {
    "serie": "pointerevents",
    "shortnames": [
-    "pointerevents",
+    "pointerevents1",
     "pointerevents2",
-    "pointerevents3"
+    "pointerevents3",
+    "pointerevents4"
    ]
   }
  },
@@ -1113,6 +1263,16 @@
    ]
   }
  },
+ "privacy-principles": {
+  "link": "missing link",
+  "title": "Privacy Principles",
+  "w3c": {
+   "serie": "privacy-principles",
+   "shortnames": [
+    "privacy-principles"
+   ]
+  }
+ },
  "pronunciation-gap-analysis-and-use-cases": {
   "link": "https://w3c.github.io/pronunciation/gap-analysis",
   "title": "Pronunciation Gap Analysis and Use Cases",
@@ -1131,8 +1291,7 @@
    "shortnames": [
     "pronunciation-use-cases"
    ]
-  },
-  "retired": true
+  }
  },
  "pub-manifest": {
   "link": "https://w3c.github.io/pub-manifest/",
@@ -1176,6 +1335,39 @@
     "rdf-concepts-10",
     "rdf11-concepts",
     "rdf12-concepts"
+   ]
+  }
+ },
+ "rdf-n-quads": {
+  "link": "https://w3c.github.io/rdf-n-quads/spec/",
+  "title": "RDF N-Quads",
+  "w3c": {
+   "serie": "rdf-n-quads",
+   "shortnames": [
+    "rdf11-n-quads",
+    "rdf12-n-quads"
+   ]
+  }
+ },
+ "rdf-trig": {
+  "link": "https://www.w3.org/TR/rdf12-trig/",
+  "title": "RDF TriG",
+  "w3c": {
+   "serie": "rdf-trig",
+   "shortnames": [
+    "rdf11-trig",
+    "rdf12-trig"
+   ]
+  }
+ },
+ "rdf-turtle": {
+  "link": "https://w3c.github.io/rdf-turtle/spec/",
+  "title": "RDF Turtle",
+  "w3c": {
+   "serie": "rdf-turtle",
+   "shortnames": [
+    "rdf11-turtle",
+    "rdf12-turtle"
    ]
   }
  },
@@ -1229,7 +1421,8 @@
    "serie": "selectors",
    "shortnames": [
     "selectors-3",
-    "selectors-4"
+    "selectors-4",
+    "selectors-5"
    ]
   }
  },
@@ -1312,7 +1505,7 @@
   "retired": true
  },
  "translation-api": {
-  "link": "https://github.com/WICG/translation-api"
+  "link": "https://github.com/webmachinelearning/translation-api"
  },
  "ttml": {
   "link": "https://w3c.github.io/ttml2/",
@@ -1327,14 +1520,15 @@
  },
  "ttml-imsc": {
   "link": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html",
-  "title": "TTML Profiles for Internet Media Subtitles and Captions",
+  "title": "IMSC Text Profile",
   "w3c": {
    "serie": "ttml-imsc",
    "shortnames": [
     "ttml-imsc1",
     "ttml-imsc1.0.1",
     "ttml-imsc1.1",
-    "ttml-imsc1.2"
+    "ttml-imsc1.2",
+    "ttml-imsc1.3"
    ]
   }
  },
@@ -1379,6 +1573,9 @@
    ]
   }
  },
+ "unichars": {
+  "link": "https://datatracker.ietf.org/doc/draft-bray-unichars/"
+ },
  "url": {
   "link": "https://url.spec.whatwg.org/",
   "title": "URL",
@@ -1405,6 +1602,16 @@
    ]
   }
  },
+ "vc-barcodes": {
+  "link": "https://w3c.github.io/vc-barcodes",
+  "title": "Verifiable Credential Barcodes",
+  "w3c": {
+   "serie": "vc-barcodes",
+   "shortnames": [
+    "vc-barcodes-1.0"
+   ]
+  }
+ },
  "vc-bitstring-status-list": {
   "link": "https://w3c.github.io/vc-bitstring-status-list",
   "title": "Bitstring Status List",
@@ -1421,7 +1628,8 @@
   "w3c": {
    "serie": "vc-data-integrity",
    "shortnames": [
-    "vc-data-integrity"
+    "vc-data-integrity",
+    "vc-data-integrity-1.1"
    ]
   }
  },
@@ -1432,7 +1640,8 @@
    "serie": "vc-data-model",
    "shortnames": [
     "vc-data-model-1.1",
-    "vc-data-model-2.0"
+    "vc-data-model-2.0",
+    "vc-data-model-2.1"
    ]
   }
  },
@@ -1463,6 +1672,36 @@
    "serie": "vc-json-schema",
    "shortnames": [
     "vc-json-schema"
+   ]
+  }
+ },
+ "vc-recognized-entities": {
+  "link": "https://www.w3.org/TR/vc-recognized-entities-1.0",
+  "title": "Recognized Entities",
+  "w3c": {
+   "serie": "vc-recognized-entities",
+   "shortnames": [
+    "vc-recognized-entities-1.0"
+   ]
+  }
+ },
+ "vc-render-method": {
+  "link": "https://w3c.github.io/vc-render-method/",
+  "title": "Verifiable Credential Rendering Methods v1.0",
+  "w3c": {
+   "serie": "vc-render-method",
+   "shortnames": [
+    "vc-render-method"
+   ]
+  }
+ },
+ "vcalm": {
+  "link": "https://w3c.github.io/vcalm",
+  "title": "VCALM",
+  "w3c": {
+   "serie": "vcalm",
+   "shortnames": [
+    "vcalm-1.0"
    ]
   }
  },
@@ -1612,6 +1851,16 @@
    ]
   }
  },
+ "web-sustainability-guidelines": {
+  "link": "https://w3c.github.io/sustainableweb-wsg/",
+  "title": "Web Sustainability Guidelines (WSG)",
+  "w3c": {
+   "serie": "web-sustainability-guidelines",
+   "shortnames": [
+    "web-sustainability-guidelines"
+   ]
+  }
+ },
  "webaudio": {
   "link": "https://webaudio.github.io/web-audio-api/",
   "title": "Web Audio API",
@@ -1631,7 +1880,18 @@
    "shortnames": [
     "webauthn-1",
     "webauthn-2",
-    "webauthn-3"
+    "webauthn-3",
+    "webauthn-4"
+   ]
+  }
+ },
+ "webcodecs": {
+  "link": "https://www.w3.org/TR/webcodecs",
+  "title": "WebCodecs",
+  "w3c": {
+   "serie": "webcodecs",
+   "shortnames": [
+    "webcodecs"
    ]
   }
  },
@@ -1669,6 +1929,9 @@
    ]
   },
   "retired": true
+ },
+ "webmcp": {
+  "link": "https://webmachinelearning.github.io/webmcp/"
  },
  "webmention": {
   "link": "https://webmention.net/draft/",
@@ -1831,7 +2094,8 @@
    "serie": "wot-thing-description",
    "shortnames": [
     "wot-thing-description10",
-    "wot-thing-description11"
+    "wot-thing-description11",
+    "wot-thing-description-2.0"
    ]
   }
  },
@@ -1891,6 +2155,23 @@
    ]
   }
  },
+ "cid": {
+  "link": "https://w3c.github.io/cid/",
+  "title": "Controller Documents",
+  "w3c": {
+   "serie": "controller-document"
+  }
+ },
+ "clipboard-apis": {
+  "link": "https://w3c.github.io/clipboard-apis/",
+  "title": "Clipboard API and events",
+  "w3c": {
+   "serie": "clipboard-apis",
+   "shortnames": [
+    "clipboard-apis"
+   ]
+  }
+ },
  "clipboard-pickling": {
   "link": "https://github.com/w3c/editing/blob/gh-pages/docs/clipboard-pickling/explainer.md"
  },
@@ -1929,29 +2210,17 @@
    ]
   }
  },
- "dapt": {
-  "link": "https://w3c.github.io/dapt/",
-  "title": "Dubbing and Audio description Profiles of TTML2",
-  "w3c": {
-   "serie": "dapt",
-   "shortnames": [
-    "dapt"
-   ]
-  }
- },
  "deprecation-reporting": {
   "link": "https://wicg.github.io/deprecation-reporting/"
  },
- "digital-credentials": {
-  "link": "https://wicg.github.io/digital-credentials/"
- },
- "epub-rs": {
-  "link": "https://w3c.github.io/epub-specs/epub33/rs/",
-  "title": "EPUB Reading Systems",
+ "did": {
+  "link": "https://w3c.github.io/did/",
+  "title": "Decentralized Identifiers (DIDs)",
   "w3c": {
-   "serie": "epub-rs",
+   "serie": "did",
    "shortnames": [
-    "epub-rs-33"
+    "did-1.0",
+    "did-1.1"
    ]
   }
  },
@@ -2006,7 +2275,8 @@
    "shortnames": [
     "geolocation-sensor"
    ]
-  }
+  },
+  "retired": true
  },
  "get-installed-related-apps": {
   "link": "https://wicg.github.io/get-installed-related-apps/spec/"
@@ -2089,6 +2359,16 @@
    ]
   }
  },
+ "odrl-vocab": {
+  "link": "https://w3c.github.io/poe/vocab/",
+  "title": "ODRL Vocabulary & Expression",
+  "w3c": {
+   "serie": "odrl-vocab",
+   "shortnames": [
+    "odrl-vocab"
+   ]
+  }
+ },
  "opener-storage-partitioning": {
   "link": "https://arichiv.github.io/opener-storage-partitioning/"
  },
@@ -2119,16 +2399,6 @@
    "serie": "permissions",
    "shortnames": [
     "permissions"
-   ]
-  }
- },
- "privacy-principles": {
-  "link": "https://w3ctag.github.io/privacy-principles/",
-  "title": "Privacy Principles",
-  "w3c": {
-   "serie": "privacy-principles",
-   "shortnames": [
-    "privacy-principles"
    ]
   }
  },
@@ -2233,7 +2503,8 @@
   "w3c": {
    "serie": "vc-di-ecdsa",
    "shortnames": [
-    "vc-di-ecdsa"
+    "vc-di-ecdsa",
+    "vc-di-ecdsa-1.1"
    ]
   }
  },
@@ -2243,25 +2514,19 @@
   "w3c": {
    "serie": "vc-di-eddsa",
    "shortnames": [
-    "vc-di-eddsa"
+    "vc-di-eddsa",
+    "vc-di-eddsa-1.1"
    ]
   }
  },
  "visual-viewport": {
   "link": "https://wicg.github.io/visual-viewport/"
  },
+ "web_audio_playout": {
+  "link": "https://github.com/WICG/web_audio_playout/"
+ },
  "webapidevice": {
   "link": "https://github.com/WICG/WebApiDevice/blob/main/Explainer.md"
- },
- "webcodecs": {
-  "link": "https://w3c.github.io/webcodecs/",
-  "title": "WebCodecs",
-  "w3c": {
-   "serie": "webcodecs",
-   "shortnames": [
-    "webcodecs"
-   ]
-  }
  },
  "WebHID": {
   "link": "https://wicg.github.io/webhid/"
@@ -2323,18 +2588,18 @@
    ]
   }
  },
- "clipboard-apis": {
-  "link": "https://w3c.github.io/clipboard-apis/",
-  "title": "Clipboard API and events",
-  "w3c": {
-   "serie": "clipboard-apis",
-   "shortnames": [
-    "clipboard-apis"
-   ]
-  }
- },
  "credentialless": {
   "link": "https://wicg.github.io/credentiallessness/"
+ },
+ "css-image-animation": {
+  "link": "missing link",
+  "title": "CSS Image Animation Module",
+  "w3c": {
+   "serie": "css-image-animation",
+   "shortnames": [
+    "css-image-animation-1"
+   ]
+  }
  },
  "document-isolation-policy": {
   "link": "https://wicg.github.io/document-isolation-policy/"
@@ -2343,6 +2608,9 @@
   "link": "https://fetch.spec.whatwg.org/",
   "title": "Fetch",
   "w3c": {}
+ },
+ "manifest-incubations": {
+  "link": "https://wicg.github.io/manifest-incubations/"
  },
  "mediacapture-viewport": {
   "link": "https://w3c.github.io/mediacapture-viewport/",
@@ -2361,22 +2629,63 @@
   "link": "https://w3c.github.io/webcrypto/",
   "title": "Web Cryptography API",
   "w3c": {
-   "serie": "WebCryptoAPI",
-   "shortnames": [
-    "WebCryptoAPI"
-   ]
+   "serie": "WebCryptoAPI"
   }
  },
  "aom": {
   "link": "http://wicg.github.io/aom/"
  },
- "css-anchor-position": {
-  "link": "missing link",
-  "title": "CSS Anchor Positioning",
+ "audio-session": {
+  "link": "https://w3c.github.io/audio-session/",
+  "title": "Audio Session",
   "w3c": {
-   "serie": "css-anchor-position",
+   "serie": "audio-session",
    "shortnames": [
-    "css-anchor-position-1"
+    "audio-session"
+   ]
+  }
+ },
+ "badging": {
+  "link": "https://w3c.github.io/badging/",
+  "title": "Badging API",
+  "w3c": {
+   "serie": "badging",
+   "shortnames": [
+    "badging"
+   ]
+  }
+ },
+ "canvas-text-metrics": {
+  "link": "https://github.com/Igalia/explainers/blob/main/canvas-formatted-text/text-metrics-additions.md"
+ },
+ "charmod-norm": {
+  "link": "https://w3c.github.io/charmod-norm/",
+  "title": "Character Model for the World Wide Web: String Matching",
+  "w3c": {
+   "serie": "charmod-norm",
+   "shortnames": [
+    "charmod-norm"
+   ]
+  }
+ },
+ "css-animations": {
+  "link": "missing link",
+  "title": "CSS Animations",
+  "w3c": {
+   "serie": "css-animations",
+   "shortnames": [
+    "css-animations-1",
+    "css-animations-2"
+   ]
+  }
+ },
+ "css-color-hdr": {
+  "link": "missing link",
+  "title": "CSS Color HDR Module",
+  "w3c": {
+   "serie": "css-color-hdr",
+   "shortnames": [
+    "css-color-hdr-1"
    ]
   }
  },
@@ -2386,7 +2695,18 @@
   "w3c": {
    "serie": "css-display",
    "shortnames": [
-    "css-display-3"
+    "css-display-3",
+    "css-display-4"
+   ]
+  }
+ },
+ "css-env": {
+  "link": "missing link",
+  "title": "CSS Environment Variables Module",
+  "w3c": {
+   "serie": "css-env",
+   "shortnames": [
+    "css-env-1"
    ]
   }
  },
@@ -2399,6 +2719,9 @@
     "css-speech-1"
    ]
   }
+ },
+ "css-view-transition": {
+  "link": "missing link"
  },
  "cssom": {
   "link": "https://drafts.csswg.org/cssom/",
@@ -2429,6 +2752,9 @@
     "html-aam-1.0"
    ]
   }
+ },
+ "html-scoped-focusgroup": {
+  "link": "https://open-ui.org/components/scoped-focusgroup.explainer/"
  },
  "image-resource": {
   "link": "https://w3c.github.io/image-resource/",
@@ -2465,8 +2791,39 @@
   },
   "retired": true
  },
+ "string-meta": {
+  "link": "https://w3c.github.io/string-meta/",
+  "title": "Strings on the Web: Language and Direction Metadata",
+  "w3c": {
+   "serie": "string-meta",
+   "shortnames": [
+    "string-meta"
+   ]
+  }
+ },
  "svg-native": {
   "link": "https://svgwg.org/specs/svg-native/"
+ },
+ "vc-confidence-method": {
+  "link": "https://w3c.github.io/vc-confidence-method/",
+  "title": "Verifiable Credential Confidence Methods",
+  "w3c": {
+   "serie": "vc-confidence-method",
+   "shortnames": [
+    "vc-confidence-method"
+   ]
+  }
+ },
+ "web-animations": {
+  "link": "missing link",
+  "title": "Web Animations",
+  "w3c": {
+   "serie": "web-animations",
+   "shortnames": [
+    "web-animations-1",
+    "web-animations-2"
+   ]
+  }
  },
  "cookie-store": {
   "link": "https://wicg.github.io/cookie-store/"
@@ -2484,8 +2841,14 @@
    ]
   }
  },
+ "prompt-api": {
+  "link": "https://webmachinelearning.github.io/prompt-api/"
+ },
  "web-nfc": {
   "link": "https://w3c.github.io/web-nfc/"
+ },
+ "sustainability-guidelines": {
+  "link": "https://www.w3.org/TR/web-sustainability-guidelines"
  },
  "window-placement": {
   "link": "https://www.w3.org/TR/window-placement",
@@ -2608,10 +2971,6 @@
   "title": "Character Model for the World Wide Web: Resource Identifiers",
   "retired": true
  },
- "charmod-norm": {
-  "link": "https://w3c.github.io/charmod-norm/",
-  "title": "Character Model for the World Wide Web: String Matching"
- },
  "cselection": {
   "title": "Content Selection for Device Independence (DISelect)",
   "retired": true
@@ -2661,10 +3020,6 @@
   "title": "Cross-Origin Resource Sharing",
   "retired": true
  },
- "css-animations": {
-  "link": "https://drafts.csswg.org/css-animations/",
-  "title": "CSS Animations"
- },
  "2dcontext": {
   "title": "HTML Canvas 2D Context",
   "retired": true
@@ -2691,7 +3046,8 @@
   "title": "Web Application Privacy Best Practices"
  },
  "audioproc": {
-  "title": "Audio Processing API"
+  "title": "Audio Processing API",
+  "retired": true
  },
  "calendar-api": {
   "title": "Calendar API",
@@ -2722,7 +3078,8 @@
  },
  "using-aria": {
   "link": "https://w3c.github.io/using-aria/",
-  "title": "Using ARIA"
+  "title": "Using ARIA",
+  "retired": true
  },
  "contacts-manager-api": {
   "link": "https://www.w3.org/2012/sysapps/contacts-manager-api/",
@@ -2861,10 +3218,6 @@
   "title": "CSS Marquee",
   "retired": true
  },
- "cssom-view": {
-  "link": "https://drafts.csswg.org/cssom-view/",
-  "title": "CSSOM View"
- },
  "ct-guidelines": {
   "title": "Guidelines for Web Content Transformation Proxies",
   "retired": true
@@ -2896,10 +3249,6 @@
  "css-shapes": {
   "link": "https://drafts.csswg.org/css-shapes/",
   "title": "CSS Shapes"
- },
- "css-font-loading": {
-  "link": "https://drafts.csswg.org/css-font-loading/",
-  "title": "CSS Font Loading"
  },
  "csvw-ucr": {
   "link": "https://w3c.github.io/csvw/use-cases-and-requirements/",
@@ -2979,7 +3328,8 @@
   "title": "DrawML"
  },
  "dsig-label": {
-  "title": "PICS Signed Labels (DSig)"
+  "title": "PICS Signed Labels (DSig)",
+  "retired": true
  },
  "ddml": {
   "title": "Document Definition Markup Language (DDML)"
@@ -3760,7 +4110,8 @@
  },
  "mini-app-white-paper": {
   "link": "https://w3c.github.io/mini-app-white-paper/",
-  "title": "MiniApp Standardization White Paper"
+  "title": "MiniApp Standardization White Paper",
+  "retired": true
  },
  "lpf": {
   "link": "https://w3c.github.io/lpf/",
@@ -3917,13 +4268,16 @@
   "title": "OWL 2 Web Ontology Language Document Overview"
  },
  "pics-labels": {
-  "title": "PICS Label Distribution -- Label Syntax and Communication Protocols"
+  "title": "PICS Label Distribution -- Label Syntax and Communication Protocols",
+  "retired": true
  },
  "pics-services": {
-  "title": "PICS Rating Services and Rating Systems -- and Their Machine Readable Descriptions"
+  "title": "PICS Rating Services and Rating Systems -- and Their Machine Readable Descriptions",
+  "retired": true
  },
  "picsrules": {
-  "title": "PICSRules"
+  "title": "PICSRules",
+  "retired": true
  },
  "pointers-in-rdf": {
   "title": "Pointer Methods in RDF"
@@ -3975,10 +4329,6 @@
  "odrl-model": {
   "link": "https://w3c.github.io/poe/model/",
   "title": "ODRL Information Model"
- },
- "odrl-vocab": {
-  "link": "https://w3c.github.io/poe/vocab/",
-  "title": "ODRL Vocabulary & Expression"
  },
  "poe-ucr": {
   "link": "https://w3c.github.io/poe/ucr/",
@@ -5022,10 +5372,6 @@
   "link": "https://dvcs.w3.org/hg/webcrypto-usecases/raw-file/tip/Overview.html",
   "title": "Web Cryptography API Use Cases"
  },
- "web-animations": {
-  "link": "https://drafts.csswg.org/web-animations-1/",
-  "title": "Web Animations"
- },
  "vocab-data-cube-use-cases": {
   "title": "Use Cases and Lessons for the Data Cube Vocabulary"
  },
@@ -5391,7 +5737,8 @@
  },
  "wot-binding-templates": {
   "link": "https://w3c.github.io/wot-binding-templates/",
-  "title": "Web of Things (WoT) Protocol Binding Templates"
+  "title": "Web of Things (WoT) Protocol Binding Templates",
+  "retired": true
  },
  "xaur": {
   "link": "https://w3c.github.io/apa/xaur/",
@@ -6087,10 +6434,6 @@
   "link": "https://w3c.github.io/coga/gap-analysis/",
   "title": "Cognitive Accessibility Roadmap and Gap Analysis"
  },
- "string-meta": {
-  "link": "https://w3c.github.io/string-meta/",
-  "title": "Strings on the Web: Language and Direction Metadata"
- },
  "act-rules-aspects": {
   "link": "https://w3c.github.io/wcag-act/NOTE-act-rules-common-aspects.html",
   "title": "Accessibility Conformance Testing (ACT) Rules: Common Input Aspects"
@@ -6274,10 +6617,6 @@
   "link": "https://w3c.github.io/amlreq/gap-analysis/osge-osa-gap",
   "title": "Osage Gap Analysis"
  },
- "epub-a11y": {
-  "link": "https://w3c.github.io/epub-specs/epub33/a11y/",
-  "title": "EPUB Accessibility"
- },
  "epub-a11y-tech": {
   "link": "https://w3c.github.io/epub-specs/epub33/a11y-tech/",
   "title": "EPUB Accessibility Techniques"
@@ -6381,7 +6720,7 @@
    "serie": "CSS",
    "shortnames": [
     "CSS1",
-    "CSS21",
+    "CSS2",
     "css-2010",
     "css-2015",
     "CSS22",
@@ -6390,7 +6729,10 @@
     "css-2020",
     "css-2021",
     "css-2022",
-    "css-2023"
+    "css-2023",
+    "css-2024",
+    "css-2025",
+    "css-2026"
    ]
   }
  },
@@ -6713,7 +7055,8 @@
    "shortnames": [
     "RangeRequest"
    ]
-  }
+  },
+  "retired": true
  },
  "mediacapture-transform": {
   "title": "MediaStreamTrack Insertable Media Processing using Streams",
@@ -6755,7 +7098,8 @@
    "shortnames": [
     "miniapp-widget-req"
    ]
-  }
+  },
+  "retired": true
  },
  "arab-ks-gap": {
   "title": "Perso-arabic Kashmiri Gap Analysis",
@@ -7029,17 +7373,6 @@
    ]
   }
  },
- "rdf-n-quads": {
-  "title": "RDF N-Quads",
-  "link": "https://w3c.github.io/rdf-n-quads/spec/",
-  "w3c": {
-   "serie": "rdf-n-quads",
-   "shortnames": [
-    "rdf11-n-quads",
-    "rdf12-n-quads"
-   ]
-  }
- },
  "rdf-n-triples": {
   "title": "RDF N-Triples",
   "link": "https://w3c.github.io/rdf-n-triples/spec/",
@@ -7084,28 +7417,6 @@
    ]
   }
  },
- "rdf-turtle": {
-  "title": "RDF Turtle",
-  "link": "https://w3c.github.io/rdf-turtle/spec/",
-  "w3c": {
-   "serie": "rdf-turtle",
-   "shortnames": [
-    "rdf11-turtle",
-    "rdf12-turtle"
-   ]
-  }
- },
- "rdf-trig": {
-  "title": "RDF TriG",
-  "link": "https://w3c.github.io/rdf-trig/spec/",
-  "w3c": {
-   "serie": "rdf-trig",
-   "shortnames": [
-    "rdf11-trig",
-    "rdf12-trig"
-   ]
-  }
- },
  "rdf-semantics": {
   "title": "RDF Semantics",
   "link": "https://w3c.github.io/rdf-semantics/spec/",
@@ -7115,16 +7426,6 @@
     "rdf10-semantics",
     "rdf11-semantics",
     "rdf12-semantics"
-   ]
-  }
- },
- "badging": {
-  "title": "Badging API",
-  "link": "https://w3c.github.io/badging/",
-  "w3c": {
-   "serie": "badging",
-   "shortnames": [
-    "badging"
    ]
   }
  },
@@ -7327,7 +7628,8 @@
   "w3c": {
    "serie": "vc-overview",
    "shortnames": [
-    "vc-overview"
+    "vc-overview-1.0",
+    "vc-overview-1.1"
    ]
   }
  },
@@ -7625,13 +7927,634 @@
    ]
   }
  },
- "audio-session": {
-  "title": "Audio Session",
-  "link": "https://w3c.github.io/audio-session/",
+ "did-extensions": {
+  "title": "Decentralized Identifier Extensions",
+  "link": "https://w3c.github.io/did-extensions/",
   "w3c": {
-   "serie": "audio-session",
+   "serie": "did-extensions",
    "shortnames": [
-    "audio-session"
+    "did-extensions"
+   ]
+  }
+ },
+ "did-extensions-methods": {
+  "title": "DID Methods",
+  "link": "https://w3c.github.io/did-extensions/methods/",
+  "w3c": {
+   "serie": "did-extensions-methods",
+   "shortnames": [
+    "did-extensions-methods"
+   ]
+  }
+ },
+ "did-extensions-properties": {
+  "title": "DID Document Property Extensions",
+  "link": "https://w3c.github.io/did-extensions/properties/",
+  "w3c": {
+   "serie": "did-extensions-properties",
+   "shortnames": [
+    "did-extensions-properties"
+   ]
+  }
+ },
+ "did-extensions-resolution": {
+  "title": "DID Resolution Extensions",
+  "link": "https://w3c.github.io/did-extensions/resolution/",
+  "w3c": {
+   "serie": "did-extensions-resolution",
+   "shortnames": [
+    "did-extensions-resolution"
+   ]
+  }
+ },
+ "webdriver-bidi": {
+  "title": "WebDriver BiDi",
+  "link": "https://w3c.github.io/webdriver-bidi/",
+  "w3c": {
+   "serie": "webdriver-bidi",
+   "shortnames": [
+    "webdriver-bidi"
+   ]
+  }
+ },
+ "gpc": {
+  "title": "Global Privacy Control (GPC)",
+  "link": "https://w3c.github.io/gpc/",
+  "w3c": {
+   "serie": "gpc",
+   "shortnames": [
+    "gpc"
+   ]
+  }
+ },
+ "openscreen-application": {
+  "title": "Open Screen Application Protocol",
+  "link": "https://w3c.github.io/openscreenprotocol/application.html",
+  "w3c": {
+   "serie": "openscreen-application",
+   "shortnames": [
+    "openscreen-application"
+   ]
+  }
+ },
+ "openscreen-network": {
+  "title": "Open Screen Network Protocol",
+  "link": "https://w3c.github.io/openscreenprotocol/network.html",
+  "w3c": {
+   "serie": "openscreen-network",
+   "shortnames": [
+    "openscreen-network"
+   ]
+  }
+ },
+ "string-search": {
+  "title": "String Searching",
+  "link": "https://w3c.github.io/string-search/",
+  "w3c": {
+   "serie": "string-search",
+   "shortnames": [
+    "string-search"
+   ]
+  }
+ },
+ "shacl-core": {
+  "title": "SHACL Core",
+  "link": "https://w3c.github.io/data-shapes/shacl12-core/",
+  "w3c": {
+   "serie": "shacl-core",
+   "shortnames": [
+    "shacl12-core"
+   ]
+  }
+ },
+ "shacl-sparql": {
+  "title": "SHACL SPARQL Extensions",
+  "link": "https://w3c.github.io/data-shapes/shacl12-sparql/",
+  "w3c": {
+   "serie": "shacl-sparql",
+   "shortnames": [
+    "shacl12-sparql"
+   ]
+  }
+ },
+ "content-editable": {
+  "title": "ContentEditable",
+  "link": "https://w3c.github.io/contentEditable/",
+  "w3c": {
+   "serie": "content-editable",
+   "shortnames": [
+    "content-editable"
+   ]
+  },
+  "retired": true
+ },
+ "privacy-preserving-attribution": {
+  "title": "Privacy-Preserving Attribution",
+  "link": "https://w3c.github.io/ppa/",
+  "w3c": {
+   "serie": "privacy-preserving-attribution",
+   "shortnames": [
+    "privacy-preserving-attribution"
+   ]
+  }
+ },
+ "wcag2mobile": {
+  "title": "Guidance on Applying WCAG to Mobile Applications (WCAG2Mobile)",
+  "link": "https://w3c.github.io/matf/",
+  "w3c": {
+   "serie": "wcag2mobile",
+   "shortnames": [
+    "wcag2mobile-22"
+   ]
+  }
+ },
+ "css-mixins": {
+  "title": "CSS Functions and Mixins Module",
+  "link": "https://drafts.csswg.org/css-mixins/",
+  "w3c": {
+   "serie": "css-mixins",
+   "shortnames": [
+    "css-mixins-1"
+   ]
+  }
+ },
+ "explainer-explainer": {
+  "title": "Writing Effective Explainers",
+  "link": "https://w3ctag.github.io/explainer-explainer/",
+  "w3c": {
+   "serie": "explainer-explainer",
+   "shortnames": [
+    "explainer-explainer"
+   ]
+  }
+ },
+ "lws-ucs": {
+  "title": "Linked Web Storage Use Cases",
+  "link": "https://w3c.github.io/lws-ucs/",
+  "w3c": {
+   "serie": "lws-ucs",
+   "shortnames": [
+    "lws-ucs"
+   ]
+  }
+ },
+ "css-borders": {
+  "title": "CSS Borders and Box Decorations Module",
+  "link": "https://drafts.csswg.org/css-borders-4/",
+  "w3c": {
+   "serie": "css-borders",
+   "shortnames": [
+    "css-borders-4"
+   ]
+  }
+ },
+ "wcag-3.0-explainer": {
+  "title": "Explainer for W3C Accessibility Guidelines (WCAG)",
+  "link": "https://w3c.github.io/wcag3/explainer/",
+  "w3c": {
+   "serie": "wcag-3.0-explainer",
+   "shortnames": [
+    "wcag-3.0-explainer"
+   ]
+  }
+ },
+ "dbsc": {
+  "title": "Device Bound Session Credentials",
+  "link": "https://w3c.github.io/webappsec-dbsc/",
+  "w3c": {
+   "serie": "dbsc",
+   "shortnames": [
+    "dbsc-1"
+   ]
+  }
+ },
+ "passkey-endpoints": {
+  "title": "A Well-Known URL for Relying Party Passkey Endpoints",
+  "link": "https://w3c.github.io/webappsec-passkey-endpoints/",
+  "w3c": {
+   "serie": "passkey-endpoints",
+   "shortnames": [
+    "passkey-endpoints-1"
+   ]
+  }
+ },
+ "wot-binding-registry": {
+  "title": "Web of Things (WoT) Binding Registry",
+  "link": "https://w3c.github.io/wot-binding-registry/",
+  "w3c": {
+   "serie": "wot-binding-registry",
+   "shortnames": [
+    "wot-binding-registry"
+   ]
+  }
+ },
+ "societal-impact-questionnaire": {
+  "title": "Self-Review Questionnaire: Societal Impact",
+  "link": "https://w3ctag.github.io/societal-impact-questionnaire/",
+  "w3c": {
+   "serie": "societal-impact-questionnaire",
+   "shortnames": [
+    "societal-impact-questionnaire"
+   ]
+  }
+ },
+ "web-user-agents": {
+  "title": "Web User Agents",
+  "link": "https://w3ctag.github.io/user-agents",
+  "w3c": {
+   "serie": "web-user-agents",
+   "shortnames": [
+    "web-user-agents"
+   ]
+  }
+ },
+ "shacl-rules": {
+  "title": "SHACL Rules",
+  "link": "https://w3c.github.io/data-shapes/shacl12-rules/",
+  "w3c": {
+   "serie": "shacl-rules",
+   "shortnames": [
+    "shacl12-rules"
+   ]
+  }
+ },
+ "rdf-interop": {
+  "title": "RDF Interoperability",
+  "link": "https://w3c.github.io/rdf-interop/spec/",
+  "w3c": {
+   "serie": "rdf-interop",
+   "shortnames": [
+    "rdf12-interop"
+   ]
+  }
+ },
+ "shacl-node-expr": {
+  "title": "SHACL Node Expressions",
+  "link": "https://w3c.github.io/data-shapes/shacl12-node-expr/",
+  "w3c": {
+   "serie": "shacl-node-expr",
+   "shortnames": [
+    "shacl12-node-expr"
+   ]
+  }
+ },
+ "threat-modeling-guide": {
+  "title": "Threat Modeling Guide",
+  "link": "https://w3c.github.io/threat-modeling-guide/",
+  "w3c": {
+   "serie": "threat-modeling-guide",
+   "shortnames": [
+    "threat-modeling-guide"
+   ]
+  }
+ },
+ "threat-model-decentralized-credentials": {
+  "title": "Threat Model for Decentralized Credentials",
+  "link": "https://w3c.github.io/threat-model-decentralized-credentials/",
+  "w3c": {
+   "serie": "threat-model-decentralized-credentials",
+   "shortnames": [
+    "threat-model-decentralized-credentials"
+   ]
+  }
+ },
+ "ruby-tts-req": {
+  "title": "Text-to-Speech Rendering of Electronic Documents Containing Ruby: User Requirements",
+  "link": "https://w3c.github.io/ruby-tts-req/",
+  "w3c": {
+   "serie": "ruby-tts-req",
+   "shortnames": [
+    "ruby-tts-req"
+   ]
+  }
+ },
+ "security-guidelines-cryptography": {
+  "title": "Cryptography usage in Web Standards",
+  "link": "https://w3c.github.io/security-guidelines-cryptography/",
+  "w3c": {
+   "serie": "security-guidelines-cryptography",
+   "shortnames": [
+    "security-guidelines-cryptography"
+   ]
+  }
+ },
+ "coga-research-modules": {
+  "title": "Cognitive Accessibility Research Modules",
+  "link": "https://w3c.github.io/coga/research-modules/",
+  "w3c": {
+   "serie": "coga-research-modules",
+   "shortnames": [
+    "coga-research-modules"
+   ]
+  }
+ },
+ "coga-voice": {
+  "title": "Cognitive Accessibility Research Modules - Voice Systems and Conversational Interfaces",
+  "link": "https://w3c.github.io/coga/research-modules/Conversational-Voice-Systems.html",
+  "w3c": {
+   "serie": "coga-voice",
+   "shortnames": [
+    "coga-voice"
+   ]
+  }
+ },
+ "coga-wayfinding": {
+  "title": "Cognitive Accessibility Research Modules - Technology Assisted Indoor Navigation / Wayfinding",
+  "link": "https://w3c.github.io/coga/research-modules/Technology-Assisted-Indoor-Navigation-and-Wayfindings.html",
+  "w3c": {
+   "serie": "coga-wayfinding",
+   "shortnames": [
+    "coga-wayfinding"
+   ]
+  }
+ },
+ "coga-safety": {
+  "title": "Cognitive Accessibility Research Modules - Online Safety and Wellbeing (Algorithms and Data)",
+  "link": "https://w3c.github.io/coga/research-modules/Online-Safety-and-Wellbeing.html",
+  "w3c": {
+   "serie": "coga-safety",
+   "shortnames": [
+    "coga-safety"
+   ]
+  }
+ },
+ "coga-sdm": {
+  "title": "Cognitive Accessibility Research Modules - Supported Decision-Making Online",
+  "link": "https://w3c.github.io/coga/research-modules/Supported-Decision-Making.html",
+  "w3c": {
+   "serie": "coga-sdm",
+   "shortnames": [
+    "coga-sdm"
+   ]
+  }
+ },
+ "web-based-payment-handler": {
+  "title": "Web-based Payment Handler API",
+  "link": "https://w3c.github.io/web-based-payment-handler/",
+  "w3c": {
+   "serie": "web-based-payment-handler",
+   "shortnames": [
+    "web-based-payment-handler"
+   ]
+  }
+ },
+ "differential-privacy-guidance": {
+  "title": "Considerations for Reviewing Differential Privacy Systems (for Non-Differential Privacy Experts)",
+  "link": "https://w3c.github.io/differential-privacy-guidance/",
+  "w3c": {
+   "serie": "differential-privacy-guidance",
+   "shortnames": [
+    "differential-privacy-guidance"
+   ]
+  }
+ },
+ "epub-anno-vocab": {
+  "title": "EPUB Annotations Vocabulary",
+  "link": "https://w3c.github.io/epub-specs/epub34/annotations-vocab/",
+  "w3c": {
+   "serie": "epub-anno-vocab",
+   "shortnames": [
+    "epub-anno-vocab-10"
+   ]
+  }
+ },
+ "epub-anno-ucr": {
+  "title": "EPUB Annotations Use Cases and Requirements",
+  "link": "https://w3c.github.io/epub-specs/wg-notes/annotations-ucr/",
+  "w3c": {
+   "serie": "epub-anno-ucr",
+   "shortnames": [
+    "epub-anno-ucr"
+   ]
+  }
+ },
+ "yaml-ld": {
+  "title": "YAML-LD",
+  "link": "https://w3c.github.io/yaml-ld/",
+  "w3c": {
+   "serie": "yaml-ld",
+   "shortnames": [
+    "yaml-ld-10"
+   ]
+  }
+ },
+ "llms-standards": {
+  "title": "Use of Large Language Models in Standards Work",
+  "link": "https://w3c.github.io/AB-public/position-statements/llms-standards/",
+  "w3c": {
+   "serie": "llms-standards",
+   "shortnames": [
+    "llms-standards"
+   ]
+  }
+ },
+ "lws-core": {
+  "title": "Linked Web Storage Protocol",
+  "link": "https://w3c.github.io/lws-protocol/lws10-core/",
+  "w3c": {
+   "serie": "lws-core",
+   "shortnames": [
+    "lws10-core"
+   ]
+  }
+ },
+ "lws-authn-openid": {
+  "title": "LWS Authentication Suite: OpenID Connect",
+  "link": "https://w3c.github.io/lws-protocol/lws10-authn-openid/",
+  "w3c": {
+   "serie": "lws-authn-openid",
+   "shortnames": [
+    "lws10-authn-openid"
+   ]
+  }
+ },
+ "lws-authn-saml": {
+  "title": "LWS Authentication Suite: SAML",
+  "link": "https://w3c.github.io/lws-protocol/lws10-authn-saml/",
+  "w3c": {
+   "serie": "lws-authn-saml",
+   "shortnames": [
+    "lws10-authn-saml"
+   ]
+  }
+ },
+ "lws-authn-ssi-cid": {
+  "title": "LWS Authentication Suite: Self-signed Identity using Controlled Identifiers",
+  "link": "https://w3c.github.io/lws-protocol/lws10-authn-ssi-cid/",
+  "w3c": {
+   "serie": "lws-authn-ssi-cid",
+   "shortnames": [
+    "lws10-authn-ssi-cid"
+   ]
+  }
+ },
+ "lws-authn-ssi-did-key": {
+  "title": "LWS Authentication Suite: Self-signed Identity using did:key",
+  "link": "https://w3c.github.io/lws-protocol/lws10-authn-ssi-did-key/",
+  "w3c": {
+   "serie": "lws-authn-ssi-did-key",
+   "shortnames": [
+    "lws10-authn-ssi-did-key"
+   ]
+  }
+ },
+ "cbor-ld": {
+  "title": "CBOR-LD",
+  "link": "https://w3c.github.io/cbor-ld/",
+  "w3c": {
+   "serie": "cbor-ld",
+   "shortnames": [
+    "cbor-ld-10"
+   ]
+  }
+ },
+ "long-animation-frames": {
+  "title": "Long Animation Frames API",
+  "link": "https://w3c.github.io/long-animation-frames/",
+  "w3c": {
+   "serie": "long-animation-frames",
+   "shortnames": [
+    "long-animation-frames"
+   ]
+  }
+ },
+ "shacl-ui": {
+  "title": "SHACL User Interfaces",
+  "link": "https://w3c.github.io/data-shapes/shacl12-ui/",
+  "w3c": {
+   "serie": "shacl-ui",
+   "shortnames": [
+    "shacl12-ui"
+   ]
+  }
+ },
+ "threat-model-web": {
+  "title": "Threat Model for the Web",
+  "link": "https://w3c.github.io/threat-model-web/",
+  "w3c": {
+   "serie": "threat-model-web",
+   "shortnames": [
+    "threat-model-web"
+   ]
+  }
+ },
+ "vc-di-quantum-resistant": {
+  "title": "Quantum-Resistant Cryptosuites v1.0",
+  "link": "https://w3c.github.io/vc-di-quantum-resistant/",
+  "w3c": {
+   "serie": "vc-di-quantum-resistant",
+   "shortnames": [
+    "vc-di-quantum-resistant-1.0"
+   ]
+  }
+ },
+ "vc-forgery-defense": {
+  "title": "Verifiable Credential Forgery Defense",
+  "link": "https://w3c.github.io/vc-forgery-defense/",
+  "w3c": {
+   "serie": "vc-forgery-defense",
+   "shortnames": [
+    "vc-forgery-defense-1.0"
+   ]
+  }
+ },
+ "security-disclosure": {
+  "title": "W3C Standards Vulnerability Disclosure & Handling Process and Policy",
+  "link": "https://w3c.github.io/security-disclosure/",
+  "w3c": {
+   "serie": "security-disclosure",
+   "shortnames": [
+    "security-disclosure"
+   ]
+  }
+ },
+ "shacl-profiling": {
+  "title": "SHACL Profiling",
+  "link": "https://w3c.github.io/data-shapes/shacl12-profiling/",
+  "w3c": {
+   "serie": "shacl-profiling",
+   "shortnames": [
+    "shacl12-profiling"
+   ]
+  }
+ },
+ "css-link-params": {
+  "title": "CSS Linked Parameters Module",
+  "link": "https://drafts.csswg.org/css-link-params/",
+  "w3c": {
+   "serie": "css-link-params",
+   "shortnames": [
+    "css-link-params-1"
+   ]
+  }
+ },
+ "sparql-new": {
+  "title": "What’s New in SPARQL",
+  "link": "https://w3c.github.io/sparql-new/spec/",
+  "w3c": {
+   "serie": "sparql-new",
+   "shortnames": [
+    "sparql12-new"
+   ]
+  }
+ },
+ "lws-vocab": {
+  "title": "Linked Web Storage Vocabulary",
+  "link": "https://w3c.github.io/lws-protocol/lws10-vocab/",
+  "w3c": {
+   "serie": "lws-vocab",
+   "shortnames": [
+    "lws10-vocab"
+   ]
+  }
+ },
+ "epub-a11y-explain": {
+  "title": "EPUB Accessibility Explainer",
+  "link": "https://w3c.github.io/epub-specs/epub34/a11y-explain/",
+  "w3c": {
+   "serie": "epub-a11y-explain",
+   "shortnames": [
+    "epub-a11y-explain-12"
+   ]
+  }
+ },
+ "furthering-human-rights": {
+  "title": "Further Aligning W3C's Program of Technical Work with Human Rights",
+  "link": "https://w3c.github.io/AB-public/position-statements/furthering-human-rights/",
+  "w3c": {
+   "serie": "furthering-human-rights",
+   "shortnames": [
+    "furthering-human-rights"
+   ]
+  }
+ },
+ "wsg-ir": {
+  "title": "Web Sustainability Guidelines (WSG) Impact Ratings",
+  "link": "https://w3c.github.io/sustainableweb-impact/",
+  "w3c": {
+   "serie": "wsg-ir",
+   "shortnames": [
+    "wsg-ir"
+   ]
+  }
+ },
+ "sparql-rl": {
+  "title": "SPARQL RL",
+  "link": "https://w3c.github.io/data-shapes/sparql12-rl/",
+  "w3c": {
+   "serie": "sparql-rl",
+   "shortnames": [
+    "sparql12-rl"
+   ]
+  }
+ },
+ "shacl-inference-rules": {
+  "title": "SHACL Inference Rules",
+  "link": "https://w3c.github.io/data-shapes/shacl12-inference-rules/",
+  "w3c": {
+   "serie": "shacl-inference-rules",
+   "shortnames": [
+    "shacl12-inference-rules"
    ]
   }
  }

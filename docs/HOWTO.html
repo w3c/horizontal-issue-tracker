@@ -1,9 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>HR label cheat sheet</title>
-<meta name="description" content="This document provides hints for use of HR tracker  boards and labels.">
+<meta name="description" content="This document provides hints for use of HR tracker boards and labels.">
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +32,7 @@
 <p>The table describes a set of scenarios, and provides a set of fairly detailed information about what to do given that scenario.</p>
 <table>
 <tr>
-<th>Someone adds a <span class="label tracker">*-tracker</span> label to an issue in a WG repo.</th>
+<th scope="row">Someone adds a <span class="label tracker">*-tracker</span> label to an issue in a WG repo.</th>
 <td><ol>
 <li>The tooling creates a tracker issue in the HR repo, and applies the following labels:  <span class="label pending">pending</span>,  <span class="label spec">s:xxx</span>, <span class="label tracker">tracker</span>.</li>
 <li>The HR group looks at the issue and decides whether it should continue with the <span class="label tracker">tracker</span> label.</li>
@@ -41,7 +41,7 @@
 </ol></td>
 </tr>
 <tr>
-<th>A reviewer comes across an issue during a review and wants to raise it.</th>
+<th scope="row">A reviewer comes across an issue during a review and wants to raise it.</th>
 <td><ol>
 <li>Create a new issue in the HR tracker repo, describing the issue. (There should be some boilerplate instructions.)</li>
 <li>Apply a <span class="label pending">pending</span> label.</li>
@@ -51,7 +51,7 @@
 <p><em>(See an <a href="https://github.com/w3c/i18n-activity/issues/new?assignees=&labels=pending&template=add-a-review-comment--pending-discussion-by-i18n-wg-.md&title=Short_but_informative_title_here">i18n example of boilerplate</a> for new issue.)</em></p></td>
 </tr>
 <tr>
-<th>The HR group has reviewed &amp; approved a new comment.</th>
+<th scope="row">The HR group has reviewed &amp; approved a new comment.</th>
 <td><ol>
 <li>Create a new issue in the WG repo, based on the text reviewed by the HR WG.</li>
 <li>Add a <span class="label needs-resolution">*-needs-resolution</span> label to both the WG repo and HR repo.</li>
@@ -66,7 +66,7 @@
 </ol></td>
 </tr>
 <tr>
-<th>The HR group is satisfied by the resolution of an issue in the WG repo.</th>
+<th scope="row">The HR group is satisfied by the resolution of an issue in the WG repo.</th>
 <td><ol>
 <li>The HR group indicates that it is satisfied in the issue in the WG repo.</li>
 <li>The HR group closes the issue in the HR repo.</li>
@@ -74,7 +74,7 @@
 <p><em>Note that no labels need to be changed or removed. Keeping the needs-resolution or tracker label may be useful later for post-mortems, or for issues that get reopened later, etc.</em></p></td>
 </tr>
 <tr>
-<th>An issue that needs resolution  in the WG repo is closed, but hasn't been closed in the HR repo.</th>
+<th scope="row">An issue that needs resolution  in the WG repo is closed, but hasn't been closed in the HR repo.</th>
 <td><ol>
 <li>The tooling will add a <span class="label close">Close?</span> label to the issue in the HR repo, signalling that the HR group should consider whether the issue is resolved.</li>
 <li>The HR group discusses the current status.</li>
@@ -83,7 +83,7 @@
 </ol></td>
 </tr>
 <tr>
-<th>A tracker issue   in the WG repo is closed, but hasn't been closed in the HR repo.</th>
+<th scope="row">A tracker issue   in the WG repo is closed, but hasn't been closed in the HR repo.</th>
 <td><ol>
 <li>The tooling will add a <span class="label close">Close?</span> label to the issue in the HR repo, signalling that the HR group should consider whether to stop tracking that issue.</li>
 <li>The HR group discusses the current status.</li>
@@ -92,7 +92,7 @@
 </ol></td>
 </tr>
 <tr>
-<th>The spec WG wants to postpone resolution of an issue until the next version.</th>
+<th scope="row">The spec WG wants to postpone resolution of an issue until the next version.</th>
 <td><p><em>If the HR group agrees:</em></p>
 <ol>
 <li>The HR group closes the issue in the HR repo, but adds a <span class="label recycle">Recycle</span> label.</li>
@@ -101,20 +101,20 @@
 </ol></td>
 </tr>
 <tr>
-<th>The HR group decides to change a *-tracker label to *-needs-resolution.</th>
+<th scope="row">The HR group decides to change a *-tracker label to *-needs-resolution.</th>
 <td><ol>
 <li>Make a comment in the WG repo issue to indicate what resolution you are looking for.</li>
 <li>Change the <span class="label tracker">*-tracker</span> label to <span class="label needs-resolution">*-needs-resolution</span> in both the WG and HR repos.</li>
 </ol></td>
 </tr>
 <tr>
-<th>The HR group decides to change a *-needs-resolution issue to *-tracker.</th>
+<th scope="row">The HR group decides to change a *-needs-resolution issue to *-tracker.</th>
 <td><ol>
 <li>Change the <span class="label needs-resolution">*-needs-resolution</span> label to <span class="label tracker">*-tracker</span> in both the WG and HR repos.</li>
 </ol></td>
 </tr>
 <tr>
-<th>The spec WG explicitly asks the HR group to provide specific advice for an issue.</th>
+<th scope="row">The spec WG explicitly asks the HR group to provide specific advice for an issue.</th>
 <td><p>[Optional] This describes what the i18n HG does.</p>
 <ol>
 <li>Add the <span class="label advice-requested">Advice requested</span> label to the issue in the HR repo.</li>
@@ -124,7 +124,7 @@
 <p>There is no tooling at the moment to highlight such direct appeals for help, however, if the HR group is following their notifications and reading the new comments added to the WG repo they should spot these requests.</p></td>
 </tr>
 <tr>
-<th>Someone in the HR group realises that an issue that has been labelled in a WG repo needs urgent attention.</th>
+<th scope="row">Someone in the HR group realises that an issue that has been labelled in a WG repo needs urgent attention.</th>
 <td><p>[Optional] This describes what the i18n HG does.</p>
 <ol>
 <li>Add the <span class="label advice-requested">Needs attention</span> label to the issue in the HR repo.</li>
@@ -133,7 +133,7 @@
 </ol></td>
 </tr>
 <tr>
-<th>The tooling created a tracker issue in the HR repo but there was no <span class="label spec">s:xxx</span> label. This means that the issues don't show up in the 'board'.</th>
+<th scope="row">The tooling created a tracker issue in the HR repo but there was no <span class="label spec">s:xxx</span> label. This means that the issues don't show up in the 'board'.</th>
 <td><p>This sometimes happens because the tool fails to find the shortname for a repo like CSS that has many shortnames. It may also happen if the thing being tracked doesn't have a shortname, such as webex implementations, or CG documents that don't yet have shortnames.</p>
 <ol>
 <li>The new issue will come into the HR repo with a <span class="label pending">pending</span> label, indicating that you need to check is has the appropriate additional labels. While doing that, simply invent a <span class="label spec">s:xxx</span> label in GitHub and assign it to the relevant issue(s) (eg. <span class="label spec">s:webex</span>). The label doesn't have to represent an actual shortname for the board to pick it up. The board will automatically display issues with that label in a new section.</li>
@@ -141,7 +141,7 @@
 </ol></td>
 </tr>
 <tr>
-<th>A spec WG  requests a transition call.</th>
+<th scope="row">A spec WG  requests a transition call.</th>
 <td>
 <p>The spec WG should have checked with the HR group that all issues with a <span class="label needs-resolution">*-needs-resolution</span> label have been resolved, and each issue should describe that resolution. </p>
 <p>The spec WG does NOT need to reach agreement with the HR group for issues that are only marked with a <span class="label tracker">*-tracker</span> label.</p>
