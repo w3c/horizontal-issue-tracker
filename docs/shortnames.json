@@ -297,6 +297,16 @@
  "css-font": {
   "link": "missing link"
  },
+ "css-font-loading": {
+  "link": "missing link",
+  "title": "CSS Font Loading Module",
+  "w3c": {
+   "serie": "css-font-loading",
+   "shortnames": [
+    "css-font-loading-3"
+   ]
+  }
+ },
  "css-fonts": {
   "link": "https://drafts.csswg.org/css-fonts/",
   "title": "CSS Fonts",
@@ -1685,6 +1695,16 @@
    ]
   }
  },
+ "vcalm": {
+  "link": "https://w3c.github.io/vcalm",
+  "title": "VCALM",
+  "w3c": {
+   "serie": "vcalm",
+   "shortnames": [
+    "vcalm-1.0"
+   ]
+  }
+ },
  "vehicle-data": {
   "link": "https://w3c.github.io/automotive/vehicle_data/data_spec.html",
   "title": "Vehicle Data",
@@ -1860,7 +1880,8 @@
    "shortnames": [
     "webauthn-1",
     "webauthn-2",
-    "webauthn-3"
+    "webauthn-3",
+    "webauthn-4"
    ]
   }
  },
@@ -2570,6 +2591,16 @@
  "credentialless": {
   "link": "https://wicg.github.io/credentiallessness/"
  },
+ "css-image-animation": {
+  "link": "missing link",
+  "title": "CSS Image Animation Module",
+  "w3c": {
+   "serie": "css-image-animation",
+   "shortnames": [
+    "css-image-animation-1"
+   ]
+  }
+ },
  "document-isolation-policy": {
   "link": "https://wicg.github.io/document-isolation-policy/"
  },
@@ -2676,16 +2707,6 @@
    "serie": "css-env",
    "shortnames": [
     "css-env-1"
-   ]
-  }
- },
- "css-image-animation": {
-  "link": "missing link",
-  "title": "CSS Image Animation Module",
-  "w3c": {
-   "serie": "css-image-animation",
-   "shortnames": [
-    "css-image-animation-1"
    ]
   }
  },
@@ -3228,10 +3249,6 @@
  "css-shapes": {
   "link": "https://drafts.csswg.org/css-shapes/",
   "title": "CSS Shapes"
- },
- "css-font-loading": {
-  "link": "https://drafts.csswg.org/css-font-loading/",
-  "title": "CSS Font Loading"
  },
  "csvw-ucr": {
   "link": "https://w3c.github.io/csvw/use-cases-and-requirements/",
@@ -8341,16 +8358,6 @@
    ]
   }
  },
- "vcalm": {
-  "title": "VCALM",
-  "link": "https://w3c.github.io/vcalm/",
-  "w3c": {
-   "serie": "vcalm",
-   "shortnames": [
-    "vcalm-1.0"
-   ]
-  }
- },
  "lws-authn-openid": {
   "title": "LWS Authentication Suite: OpenID Connect",
   "link": "https://w3c.github.io/lws-protocol/lws10-authn-openid/",
@@ -8528,6 +8535,26 @@
    "serie": "wsg-ir",
    "shortnames": [
     "wsg-ir"
+   ]
+  }
+ },
+ "sparql-rl": {
+  "title": "SPARQL RL",
+  "link": "https://w3c.github.io/data-shapes/sparql12-rl/",
+  "w3c": {
+   "serie": "sparql-rl",
+   "shortnames": [
+    "sparql12-rl"
+   ]
+  }
+ },
+ "shacl-inference-rules": {
+  "title": "SHACL Inference Rules",
+  "link": "https://w3c.github.io/data-shapes/shacl12-inference-rules/",
+  "w3c": {
+   "serie": "shacl-inference-rules",
+   "shortnames": [
+    "shacl12-inference-rules"
    ]
   }
  }
