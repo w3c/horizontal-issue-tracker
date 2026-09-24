@@ -1618,7 +1618,8 @@
   "w3c": {
    "serie": "vc-bitstring-status-list",
    "shortnames": [
-    "vc-bitstring-status-list"
+    "vc-bitstring-status-list",
+    "vc-bitstring-status-list-1.1"
    ]
   }
  },
@@ -8555,6 +8556,16 @@
    "serie": "shacl-inference-rules",
    "shortnames": [
     "shacl12-inference-rules"
+   ]
+  }
+ },
+ "vc-data-model-threat-model": {
+  "title": "Verifiable Credentials Data Model Threat Model v2.1",
+  "link": "https://w3c.github.io/vc-data-model/threat-model/",
+  "w3c": {
+   "serie": "vc-data-model-threat-model",
+   "shortnames": [
+    "vc-data-model-threat-model-2.1"
    ]
   }
  }
