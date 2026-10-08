@@ -8579,5 +8579,55 @@
    ]
   },
   "retired": true
+ },
+ "vc-recognized-entities-threat-model": {
+  "title": "Recognized Entities Threat Model",
+  "link": "https://w3c.github.io/vc-recognized-entities/threat-model/",
+  "w3c": {
+   "serie": "vc-recognized-entities-threat-model",
+   "shortnames": [
+    "vc-recognized-entities-threat-model-1.0"
+   ]
+  }
+ },
+ "vc-data-integrity-threat-model": {
+  "title": "Data Integrity Threat Model",
+  "link": "https://w3c.github.io/vc-data-integrity/threat-model/",
+  "w3c": {
+   "serie": "vc-data-integrity-threat-model",
+   "shortnames": [
+    "vc-data-integrity-threat-model-1.1"
+   ]
+  }
+ },
+ "vc-barcodes-threat-model": {
+  "title": "Verifiable Credential Barcodes Threat Model",
+  "link": "https://w3c.github.io/vc-barcodes/threat-model/",
+  "w3c": {
+   "serie": "vc-barcodes-threat-model",
+   "shortnames": [
+    "vc-barcodes-threat-model-1.0"
+   ]
+  }
+ },
+ "vc-render-method-threat-model": {
+  "title": "Verifiable Credentials Render Method Threat Model",
+  "link": "https://w3c.github.io/vc-render-method/threat-model/",
+  "w3c": {
+   "serie": "vc-render-method-threat-model",
+   "shortnames": [
+    "vc-render-method-threat-model-1.0"
+   ]
+  }
+ },
+ "vcalm-threat-model": {
+  "title": "VCALM Threat Model",
+  "link": "https://w3c.github.io/vcalm/threat-model/",
+  "w3c": {
+   "serie": "vcalm-threat-model",
+   "shortnames": [
+    "vcalm-threat-model-1.0"
+   ]
+  }
  }
 }
