@@ -1,14 +1,17 @@
 /* eslint-env browser */
 
 "use strict";
-import { config as confinit, el, id, fetchJSON } from "../Groups/lib/utils.js";
+
+import { config as confinit } from '../Groups/lib/config.js';
+import { json } from '../Groups/lib/fetch.js';
+import { e, id } from "../Groups/lib/dom.js";
 
 // Define the repository
 const config = confinit({
   ttl: 15
 });
 
-const SHORTNAMES = fetchJSON("shortnames.json");
+const SHORTNAMES = json("shortnames.json");
 
 function display_error(err) {
   id("log").textContent = err;

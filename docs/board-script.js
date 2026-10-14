@@ -1,6 +1,9 @@
 "use strict";
 
-import { config as confinit, el, id, fetchJSON, ghRequest, hrLinkTo } from "../Groups/lib/utils.js";
+import { config as confinit } from '../Groups/lib/config.js';
+import { json } from '../Groups/lib/fetch.js';
+import { e, id } from "../Groups/lib/dom.js";
+import { github, hrLinkTo } from '../Groups/lib/github.js';
 
 // Define the repository
 const config = confinit({ttl: 15, name: "privacy" });
@@ -9,14 +12,14 @@ function display_error(err) {
   if (err.type === 'HttpError') {
     // it's a fetch error
     id("log").textContent = "Unable to load ";
-    id("log").append(el("a", { href: err.url }, err.url));
+    id("log").append(e("a", { href: err.url }, err.url));
   } else {
     id("log").textContent = err;
   }
   if (config.debug) console.error(err);
 }
 
-const HR_COMMON = fetchJSON("https://w3c.github.io/common-labels.json")
+const HR_COMMON = json("https://w3c.github.io/common-labels.json")
   .then(labels => labels.filter(l => l.repo)) // only the horizontal repo
 
 const HR_CONFIG = HR_COMMON
@@ -32,7 +35,7 @@ const HR_CONFIG = HR_COMMON
 
 async function getGroup() {
   const grpc = await HR_CONFIG;
-  return fetchJSON(`https://api.w3.org/groups/${grpc.group}`).then(data => {
+  return json(`https://api.w3.org/groups/${grpc.group}`).then(data => {
     data.identifier = data._links.self.href.substring('https://api.w3.org/groups/'.length);
     data.horizontal = grpc;
     return data;
@@ -41,7 +44,7 @@ async function getGroup() {
 
 async function getTrackerIssues() {
   const grpc = await HR_CONFIG;
-  return ghRequest(`${config.cache}/v3/repos/${grpc.repo}/issues`, {
+  return github(`${config.cache}/v3/repos/${grpc.repo}/issues`, {
     ttl: config.ttl,
     fields: "html_url,number,title,labels,assignees,body,updated_at,created_at"})
    .then(data => {
@@ -55,14 +58,14 @@ async function getTrackerIssues() {
 
 async function getReviewRequests() {
   const grpc = await HR_CONFIG;
-  return ghRequest(`${config.cache}/v3/repos/${grpc["repo-request"]}/issues`, {
+  return github(`${config.cache}/v3/repos/${grpc["repo-request"]}/issues`, {
     ttl: config.ttl,
     fields: "html_url,number,title,labels,assignees,created_at"});
 }
 
 async function getAgendaRequests() {
   const group = await getGroup();
-  return ghRequest(`${config.cache}/extra/issues/${group.id}`, {
+  return github(`${config.cache}/extra/issues/${group.id}`, {
     ttl: config.ttl,
     search: "agenda",
     fields: "html_url,title,comments,updated_at,assignee,labels,pull_request,milestone"});
@@ -70,7 +73,7 @@ async function getAgendaRequests() {
 
 async function getStrategyIssues() {
   const grpc = await HR_CONFIG;
-  return ghRequest(`${config.cache}/v3/repos/w3c/strategy/issues`,
+  return github(`${config.cache}/v3/repos/w3c/strategy/issues`,
     { ttl: config.ttl,
        labels: grpc.groupname,
        fields: "html_url,number,title,labels,created_at"});
@@ -78,7 +81,7 @@ async function getStrategyIssues() {
 
 async function getCharterRequests() {
   const grpc = await HR_CONFIG;
-  return ghRequest(`${config.cache}/v3/repos/w3c/strategy/issues`,
+  return github(`${config.cache}/v3/repos/w3c/strategy/issues`,
     { ttl: config.ttl,
        labels: "Horizontal review requested",
        fields: "html_url,number,title,labels,created_at"});
@@ -107,20 +110,20 @@ async function screen_refresh() {
   getReviewRequests().then(async (data) => {
     const g = await HR_CONFIG;
     const elt = id("reviews");
-    const ul = el("ul");
+    const ul = e("ul");
     const a = elt.querySelector("h2 span a");
     let href = `https://github.com/${g["repo-request"]}/issues`;
     a.href = href;
     a.textContent = g["repo-request"];
     data.forEach(issue => {
         const li =
-          el("li", 
-            el("a", {href:issue.html_url},`${issue.title}`)
+          e("li",
+            e("a", {href:issue.html_url},`${issue.title}`)
           );
         if (issue.assignees && issue.assignees.length) {
           issue.assignees.forEach(assignee => {
             li.append(' (')
-            li.append(el("a", {href:`https://github.com/${assignee.login}`},
+            li.append(e("a", {href:`https://github.com/${assignee.login}`},
               assignee.login));
             li.append(')');
           });
@@ -139,7 +142,7 @@ async function screen_refresh() {
     let href = `https://github.com/w3c/strategy/labels/${g.groupname}`;
     a.href = href;
     a.textContent = 'w3c/strategy';
-    let ul = el("ul");
+    let ul = e("ul");
     data.forEach(issue => ul.append(li_issue(issue)));
     const stratAll  = id("strat-all");
     stratAll.querySelector("summary").textContent = `${data.length} ${g.groupname} strategy issues`;
@@ -153,7 +156,7 @@ async function screen_refresh() {
     let href = `https://github.com/w3c/strategy/issues?q=is%3Aissue%20state%3Aopen%20-label%3A%22${g.groupname}%20review%20completed%22%20label%3A%22Horizontal%20review%20requested%22`;
     a.href = href;
     a.textContent = 'w3c/strategy';
-    const ul = el("ul");
+    const ul = e("ul");
     data = data.filter(issue => !issue.labels.find(l => l.name === `${g.groupname} review completed`));
     data.forEach(issue => ul.append(li_issue(issue)));
     const charterRequests  = id("charter-requests");
@@ -163,21 +166,21 @@ async function screen_refresh() {
 
 
   function li_issue(issue) {
-    const li = el("li");
+    const li = e("li");
     issue.labels.forEach(label => {
       if (label.name.startsWith('s:')) {
         li.append('[')
-        li.append(el("a", {
+        li.append(e("a", {
           class:'spec-label',
           href:label.description},
           label.name.substring(2)));
         li.append('] ');
       }
     });
-    li.append(el("a", {href: (issue.hr_url)?issue.hr_url:issue.html_url},`${issue.title}`));
+    li.append(e("a", {href: (issue.hr_url)?issue.hr_url:issue.html_url},`${issue.title}`));
     li.append(" ",
-      el("span", {"class": "intitle"}, "(from ",
-      el("a", {href:issue.html_url},`#${issue.number}`),
+      e("span", {"class": "intitle"}, "(from ",
+      e("a", {href:issue.html_url},`#${issue.number}`),
       ")")
     );
     return li;
@@ -189,12 +192,12 @@ async function screen_refresh() {
     let href = `https://github.com/${g["repo"]}/issues`;
     a.href = href;
     a.textContent = g.repo;
-    let ul = el("ul");
+    let ul = e("ul");
     let nrs = data.filter(i => i.labels.find(l=>l.name==='needs-resolution'));
     nrs.forEach(issue => ul.append(li_issue(issue)));
     id("label-needs-resolution").querySelector("summary").textContent = `${nrs.length} ${g.groupname} issues with needs-resolution`;
     id("label-needs-resolution").querySelector("div").firstElementChild.replaceWith(ul);
-    ul = el("ul");
+    ul = e("ul");
     nrs = data.filter(i => i.labels.find(l=>l.name==='tracker'));
     nrs.forEach(issue => ul.append(li_issue(issue)));
     id("label-tracker").querySelector("summary").textContent = `${nrs.length} ${g.groupname} issues with tracker`;
@@ -207,11 +210,11 @@ async function screen_refresh() {
     const a = elt.querySelector("h2 span a");
     let href = `https://www.w3.org/groups/${g.group}/tools/#repositories`;
     a.href = href;
-    const ul = el("ul");
+    const ul = e("ul");
     data.forEach(issue => {
       const li =
-      el("li", 
-        el("a", {href:issue.html_url},`${issue.title}`)
+      e("li", 
+        e("a", {href:issue.html_url},`${issue.title}`)
       );
       ul.append(li);
     })
@@ -226,7 +229,7 @@ async function screen_refresh() {
     elt.replaceChildren(); // clear the element content
     commons.forEach(name => {
       elt.append(" [",
-        el("a", {href: `?name=${name}`}, name),
+        e("a", {href: `?name=${name}`}, name),
         "]"
       );
     });

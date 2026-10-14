@@ -2,7 +2,7 @@
 
 import { config as confinit } from '../Groups/lib/config.js';
 import { formatDate } from '../Groups/lib/date.js';
-import { json } from '../Groups/lib/json.js';
+import { json } from '../Groups/lib/fetch.js';
 import { e, id } from "../Groups/lib/dom.js";
 
 import { github, hrLinkTo } from '../Groups/lib/github.js';

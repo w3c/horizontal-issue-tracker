@@ -1,6 +1,9 @@
 "use strict";
 
-import { config as confinit, formatDate, el, id, fetchJSON, hrLinkTo, ghRequest } from "../Groups/lib/utils.js";
+import { config as confinit } from '../Groups/lib/config.js';
+import { json } from '../Groups/lib/fetch.js';
+import { e, id } from "../Groups/lib/dom.js";
+import { github, hrLinkTo } from '../Groups/lib/github.js';
 
 // Define the repository
 const config = confinit({
@@ -18,9 +21,9 @@ const config = confinit({
   extra_labels: ''
 });
 
-const HR_LABELS = fetchJSON("https://w3c.github.io/common-labels.json")
+const HR_LABELS = json("https://w3c.github.io/common-labels.json")
   .then(labels => labels.filter(l => l.repo));
-const SHORTNAMES = fetchJSON("shortnames.json");
+const SHORTNAMES = json("shortnames.json");
 
 function display_error(err) {
   id("log").textContent = err;
@@ -51,7 +54,7 @@ async function getAllData() {
 
   repos.forEach(repo => {
     const GH_URL = `${config.cache}/v3/repos/${repo}/issues`;
-    ipromises.push(ghRequest(GH_URL, {
+    ipromises.push(github(GH_URL, {
       state: 'all',
       ttl: config.ttl,
       fields: "body,html_url,state,labels,title,created_at,number"
@@ -147,36 +150,36 @@ async function getAllData() {
 function displayRepo(repo, groupname, issues) {
   // Add a container to put the repository info and issues in
   let table, tr, td, a, updated, toc, span
-  let labelSection = el('section',
-    el('h2', {id:repo},
-    el('a', {class:'self-link','aria-label':'§', href:`#${repo}`}, ''),
-    el('a', {href: `https://github.com/${repo}/issues?q=label:s:${config.shortname}`}, groupname)));
+  let labelSection = e('section',
+    e('h2', {id:repo},
+    e('a', {class:'self-link','aria-label':'§', href:`#${repo}`}, ''),
+    e('a', {href: `https://github.com/${repo}/issues?q=label:s:${config.shortname}`}, groupname)));
 
-  table = el('table');
+  table = e('table');
   const open_issues = issues.filter(issue => issue.state === 'open');
   const closed_issues = issues.filter(issue => issue.state === 'closed');
 
   for (const issue of open_issues) {
-    tr = el('tr');
-    td = el('td');
+    tr = e('tr');
+    td = e('td');
 
     for (const label of issue.labels.filter(l => config.all_labels.includes(l.name))) {
       if (label.name == "tracker" || label.name == "needs-resolution") {
         const l = config.labels.find(l => l.name === label.name);
-        td.append(el('span',
+        td.append(e('span',
           {style: `background-color:${l.color}`,
             title: l.name, class: 'labels' },
            `${l.name} `));
       }
     }
     //a.href = issueData['html_url']
-    td.append(el('a', {href:hrLinkTo(issue),target:'_blank'}, issue.title));
+    td.append(e('a', {href:hrLinkTo(issue),target:'_blank'}, issue.title));
     tr.append(td);
 
-    tr.append(el('td', {class:'date',title:'Date created'}, formatDate(new Date(issue.created_at))));
+    tr.append(e('td', {class:'date',title:'Date created'}, formatDate(new Date(issue.created_at))));
 
-    td = el('td',{title:'Issue number in the tracker repo',class:'trackerId'},
-      el('a',
+    td = e('td',{title:'Issue number in the tracker repo',class:'trackerId'},
+      e('a',
         {href:`https://github.com/${repo}/issues/${issue.number}`,target:'_blank'},
          issue.number));
     //td.textContent = issueData.number
@@ -188,14 +191,14 @@ function displayRepo(repo, groupname, issues) {
   if (open_issues.length) {
     labelSection.append(table);
   } else {
-    labelSection.append(el('p', 'No open horizontal issues found.'));
+    labelSection.append(e('p', 'No open horizontal issues found.'));
   }
 
   let plurial = 's';
   let n = closed_issues.length;
   if (n === 1) plurial = '';
   if (n === 0) n = 'No';
-  labelSection.append(el('p', `${n} closed horizontal `,
+  labelSection.append(e('p', `${n} closed horizontal `,
   `issue${plurial} found.`));
 
 
@@ -208,11 +211,11 @@ function buildFilters(repo_labels) {
   const ul = id("filterList");
 
   function createLi(label) {
-    const span = el('span',
+    const span = e('span',
       {class:'labels',style: `background-color:${label.color}`},
        ` ${String.fromCharCode(160)} `);
-    return el('li', {"data-label":`${label.name}`},
-      el('span',
+    return e('li', {"data-label":`${label.name}`},
+      e('span',
         span, ` ${String.fromCharCode(160)} ${label.name}`));
   }
 
@@ -228,7 +231,7 @@ function buildFilters(repo_labels) {
     const gh_label = repo_labels[extra_label];
     if (gh_label) {
       if (!internalLine) {
-        ul.append(el('li', "Internal group labels:"));
+        ul.append(e('li', "Internal group labels:"));
         internalLine = true;
       }
       ul.append(createLi(gh_label));
