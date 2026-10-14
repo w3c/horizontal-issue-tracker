@@ -288,8 +288,10 @@ function filterByLabel(label) {
   let trsTotal = document.querySelectorAll('tr')
   let trs = document.querySelectorAll('tr.hidden')
   let filteredIssues = trsTotal.length - trs.length
-  id('total').textContent = filteredIssues;
-  id("select-label").textContent = `, with label '${label}'`;
+  const total = id('total');
+  if (total) total.textContent = filteredIssues;
+  const selectLabel = id('select-label');
+  if (selectLabel) selectLabel.textContent = `, with label '${label}'`;
 }
 
 window.filterByLabel = filterByLabel;
