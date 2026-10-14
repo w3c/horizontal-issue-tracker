@@ -292,6 +292,7 @@ function filterByLabel(label) {
   id("select-label").textContent = `, with label '${label}'`;
 }
 
+window.filterByLabel = filterByLabel;
 
 // the script is defer, so just go for it when you're ready
 getAllData().then(() => {
