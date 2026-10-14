@@ -23,6 +23,6 @@
     "@octokit/core": "^6.1.6",
     "@octokit/plugin-throttling": "^9.6.1",
     "node-fetch": "^2.7.0",
-    "nodemailer": "^7.0.5"
+    "nodemailer": "^10.1.1"
   }
 }
