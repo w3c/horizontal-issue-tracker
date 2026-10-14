@@ -1,6 +1,11 @@
 "use strict";
 
-import { config as confinit, formatDate, el, id, fetchJSON, hrLinkTo, ghRequest } from "../Groups/lib/utils.js";
+import { config as confinit } from '../Groups/lib/config.js';
+import { formatDate } from '../Groups/lib/date.js';
+import { json } from '../Groups/lib/json.js';
+import { e, id } from "../Groups/lib/dom.js";
+
+import { github, hrLinkTo } from '../Groups/lib/github.js';
 
 // Define the repository
 const config = confinit({
@@ -12,9 +17,9 @@ const config = confinit({
   extra_labels: 'advice-requested,needs-review,waiting,deferred'
 });
 
-const HR_LABELS = fetchJSON("https://w3c.github.io/common-labels.json")
+const HR_LABELS = json("https://w3c.github.io/common-labels.json")
   .then(labels => labels.filter(l => l.repo));
-const SHORTNAMES = fetchJSON("shortnames.json");
+const SHORTNAMES = json("shortnames.json");
 
 function display_error(err) {
   id("log").textContent = err;
@@ -60,13 +65,13 @@ async function getAllData() {
   }
 
   // here we go, request the open issues
-  const promise_issues = ghRequest(GH_URL, {
+  const promise_issues = github(GH_URL, {
     ttl: config.ttl,
     fields: "body,html_url,labels,title,created_at,number"
   }); // might as well request the max
 
   // this is for perf testing purposes. a race between github and github-cache
-  fetchJSON(`https://api.github.com/repos/${config.repo}/issues`).catch(display_error);
+  json(`https://api.github.com/repos/${config.repo}/issues`).catch(display_error);
 
   issues = await promise_issues;
 
@@ -117,38 +122,38 @@ async function getAllData() {
 function displayRepo(header, short_label, label, issues) {
   // Add a container to put the repository info and issues in
   let table, tr, td, a, updated, toc, span
-  let labelSection = el('section',
-    el('h2', {id:header},
-    el('a', {class:'self-link','aria-label':'§', href:`#${header}`}, ''),
-    el('a', {href:`${label.description}`}, header),
+  let labelSection = e('section',
+    e('h2', {id:header},
+    e('a', {class:'self-link','aria-label':'§', href:`#${header}`}, ''),
+    e('a', {href:`${label.description}`}, header),
     " (",
-    el('a', {href:`review.html?shortname=${short_label}`}, "filter"),
+    e('a', {href:`review.html?shortname=${short_label}`}, "filter"),
     ")"));
 
-  table = el('table');
+  table = e('table');
 
   for (const issue of issues) {
-    tr = el('tr');
-    td = el('td');
+    tr = e('tr');
+    td = e('td');
 
     for (const label of issue.labels.filter(l => config.all_labels.includes(l.name))) {
       if (label.name == "tracker" || label.name == "needs-resolution") {
-        td.append(el('span',
+        td.append(e('span',
           {style: `background-color:#${label.color}`,
             title: label.name, class: 'labels' },
            `${label.name} `));
       }
     }
     //a.href = issueData['html_url']
-    td.append(el('a', {href:hrLinkTo(issue),target:'_blank'}, issue.title));
+    td.append(e('a', {href:hrLinkTo(issue),target:'_blank'}, issue.title));
     tr.append(td);
 
-    td = el('td');
+    td = e('td');
     td.className = 'issueType'
     // find labels
     for (const label of issue.labels.filter(l => config.all_labels.includes(l.name))) {
       if (!(label.name == "tracker" || label.name == "needs-resolution")) {
-        td.append(el('span',
+        td.append(e('span',
           {style: `background-color:#${label.color}`,
             title: label.name, class: 'labels'},
            `${label.name} `));
@@ -156,10 +161,10 @@ function displayRepo(header, short_label, label, issues) {
     }
     tr.append(td);
 
-    tr.append(el('td', {class:'date',title:'Date created'}, formatDate(issue.created_at)));
+    tr.append(e('td', {class:'date',title:'Date created'}, formatDate(issue.created_at)));
 
-    td = el('td',{title:'Issue number in the tracker repo',class:'trackerId'},
-      el('a',
+    td = e('td',{title:'Issue number in the tracker repo',class:'trackerId'},
+      e('a',
         {href:`https://github.com/${config.repo}/issues/${issue.number}`,target:'_blank'},
          issue.number));
     //td.textContent = issueData.number
@@ -178,11 +183,11 @@ function buildFilters(repo_labels) {
   const ul = id("filterList");
 
   function createLi(label) {
-    const span = el('span',
+    const span = e('span',
       {class:'labels',style: `background-color:#${label.color}`},
        ` ${String.fromCharCode(160)} `);
-    return el('li', {"data-label":`${label.name}`},
-      el('a',
+    return e('li', {"data-label":`${label.name}`},
+      e('a',
         {href:'#', title:`${label.description}`, onclick:`filterByLabel('${label.name}')`},
         span, ` ${String.fromCharCode(160)} ${label.name}`));
   }
@@ -194,9 +199,9 @@ function buildFilters(repo_labels) {
     }
   }
 
-  const clear = el('li',
-  el('a',{href:"#",title:'Clear all of the filters',onclick:"filterByLabel('clear')"},
-    el("span", {class:'labels',style:"background-color: white"},
+  const clear = e('li',
+  e('a',{href:"#",title:'Clear all of the filters',onclick:"filterByLabel('clear')"},
+    e("span", {class:'labels',style:"background-color: white"},
               ` ${String.fromCharCode(160)} `),
     ` ${String.fromCharCode(160)} Clear filter`));
   ul.append(clear);
@@ -206,7 +211,7 @@ function buildFilters(repo_labels) {
     const gh_label = repo_labels[extra_label];
     if (gh_label) {
       if (!internalLine) {
-        ul.append(el('li', "Internal group labels:"));
+        ul.append(e('li', "Internal group labels:"));
         internalLine = true;
       }
       ul.append(createLi(gh_label));
@@ -223,7 +228,7 @@ async function otherTrackingRepos() {
   let hr_issues = [];
 
   for (const repo of repos) {
-    const li = el('li', el('a',{href:`?repo=${repo}`}, ` ${repo}`));
+    const li = e('li', e('a',{href:`?repo=${repo}`}, ` ${repo}`));
     if (config.repo === repo) {
       li.classList.add('selected');
     }
