@@ -30,8 +30,8 @@ function display_error(err) {
  * *
  */
 async function getAllData() {
-  const ulData = el("ul");
-  const ulReport = el("ul");
+  const ulData = e("ul");
+  const ulReport = e("ul");
 
   SHORTNAMES.then(data => {
 
@@ -42,9 +42,9 @@ async function getAllData() {
       if (!value.title) {
         value.title = key;
         if (config.debug && value.link) {
-          ulReport.append(el("li", { "id": `report-title-${value.key}` },
-          `No title for `, el("code", value.key), ". See ",
-          el("a", {
+          ulReport.append(e("li", { "id": `report-title-${value.key}` },
+          `No title for `, e("code", value.key), ". See ",
+          e("a", {
             href: `${value.link}`
           }, value.link)));
         }
@@ -70,8 +70,8 @@ async function getAllData() {
 
     entries.forEach(value => {
       if (config.retired || !value.retired) {
-        ulData.append(el("li", { "id": value.key },
-          el("a", {
+        ulData.append(e("li", { "id": value.key },
+          e("a", {
             href: `review.html?shortname=${value.key}`
           },
           (value.title)? value.title : value.key
@@ -79,17 +79,17 @@ async function getAllData() {
         ));
       }
       if (config.debug && value.serie && value.key !== value.serie) {
-        ulReport.append(el("li", { "id": `report-${value.key}` },
+        ulReport.append(e("li", { "id": `report-${value.key}` },
           `Consider replacing `,
-          el("a", {
+          e("a", {
             href: `review.html?shortname=${value.key}`
-          }, el("code", value.key)),
-          ` with `, el("code", value.serie)
+          }, e("code", value.key)),
+          ` with `, e("code", value.serie)
           ));
       }
       if (config.debug && config.link && !value.link) {
-        ulReport.append(el("li", { "id": `report-link-${value.key}` },
-          "No editor's draft link for ", el("code", value.key)
+        ulReport.append(e("li", { "id": `report-link-${value.key}` },
+          "No editor's draft link for ", e("code", value.key)
           ));
       }
     });
@@ -99,10 +99,10 @@ async function getAllData() {
   });
   id("rawdata").append(ulData);
   if (config.debug) {
-    id("report").append(el("h2", "Debug"));
-    id("report").append(el("p",
+    id("report").append(e("h2", "Debug"));
+    id("report").append(e("p",
     "Edit the file ",
-    el("a", { href: "https://github.com/w3c/horizontal-issue-tracker/blob/main/docs/shortnames.json"}, "shortnames.json")));
+    e("a", { href: "https://github.com/w3c/horizontal-issue-tracker/blob/main/docs/shortnames.json"}, "shortnames.json")));
     id("report").append(ulReport);
   }
 }
