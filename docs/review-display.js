@@ -4,6 +4,7 @@ import { config as confinit } from '../Groups/lib/config.js';
 import { json } from '../Groups/lib/fetch.js';
 import { e, id } from "../Groups/lib/dom.js";
 import { github, hrLinkTo } from '../Groups/lib/github.js';
+import { formatDate } from '../Groups/lib/date.js';
 
 // Define the repository
 const config = confinit({
@@ -176,7 +177,7 @@ function displayRepo(repo, groupname, issues) {
     td.append(e('a', {href:hrLinkTo(issue),target:'_blank'}, issue.title));
     tr.append(td);
 
-    tr.append(e('td', {class:'date',title:'Date created'}, formatDate(new Date(issue.created_at))));
+    tr.append(e('td', {class:'date',title:'Date created'}, formatDate(issue.created_at)));
 
     td = e('td',{title:'Issue number in the tracker repo',class:'trackerId'},
       e('a',
