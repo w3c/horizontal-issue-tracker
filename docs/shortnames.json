@@ -117,6 +117,13 @@
  "canvas-formatted-text": {
   "link": "https://github.com/WICG/canvas-formatted-text"
  },
+ "cid": {
+  "link": "https://w3c.github.io/cid/",
+  "title": "Controller Documents",
+  "w3c": {
+   "serie": "controller-document"
+  }
+ },
  "coga-usable": {
   "link": "https://w3c.github.io/coga/content-usable/",
   "title": "Making content usable for people with cognitive and learning disabilities",
@@ -139,16 +146,6 @@
  },
  "content-index": {
   "link": "https://wicg.github.io/content-index/spec/"
- },
- "controller-document": {
-  "link": "https://w3c.github.io/controller-document/",
-  "title": "Controller Documents",
-  "w3c": {
-   "serie": "controller-document",
-   "shortnames": [
-    "controller-document"
-   ]
-  }
  },
  "core-aam": {
   "link": "https://w3c.github.io/core-aam/",
@@ -2156,13 +2153,6 @@
    ]
   }
  },
- "cid": {
-  "link": "https://w3c.github.io/cid/",
-  "title": "Controller Documents",
-  "w3c": {
-   "serie": "controller-document"
-  }
- },
  "clipboard-apis": {
   "link": "https://w3c.github.io/clipboard-apis/",
   "title": "Clipboard API and events",
@@ -2847,6 +2837,16 @@
  },
  "web-nfc": {
   "link": "https://w3c.github.io/web-nfc/"
+ },
+ "controller-document": {
+  "link": "https://w3c.github.io/controller-document/",
+  "title": "Controller Documents",
+  "w3c": {
+   "serie": "controller-document",
+   "shortnames": [
+    "controller-document"
+   ]
+  }
  },
  "sustainability-guidelines": {
   "link": "https://www.w3.org/TR/web-sustainability-guidelines"
