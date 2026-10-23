@@ -3583,7 +3583,8 @@
  },
  "device-memory": {
   "link": "https://w3c.github.io/device-memory/",
-  "title": "Device Memory"
+  "title": "Device Memory",
+  "retired": true
  },
  "dx-prof": {
   "link": "https://w3c.github.io/dxwg/prof/",
@@ -4103,7 +4104,8 @@
  },
  "longtasks": {
   "link": "https://w3c.github.io/longtasks/",
-  "title": "Long Tasks API"
+  "title": "Long Tasks API",
+  "retired": true
  },
  "indieauth": {
   "link": "https://indieauth.spec.indieweb.org/",
@@ -8627,6 +8629,26 @@
    "serie": "vcalm-threat-model",
    "shortnames": [
     "vcalm-threat-model-1.0"
+   ]
+  }
+ },
+ "user-agents": {
+  "title": "User Agents",
+  "link": "https://w3ctag.github.io/user-agents",
+  "w3c": {
+   "serie": "user-agents",
+   "shortnames": [
+    "user-agents"
+   ]
+  }
+ },
+ "animation-triggers": {
+  "title": "Animation Triggers",
+  "link": "https://drafts.csswg.org/animation-triggers-1/",
+  "w3c": {
+   "serie": "animation-triggers",
+   "shortnames": [
+    "animation-triggers-1"
    ]
   }
  }
