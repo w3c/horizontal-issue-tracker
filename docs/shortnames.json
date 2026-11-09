@@ -1411,6 +1411,16 @@
    ]
   }
  },
+ "selection-api": {
+  "link": "missing link",
+  "title": "Selection API",
+  "w3c": {
+   "serie": "selection-api",
+   "shortnames": [
+    "selection-api"
+   ]
+  }
+ },
  "selectors": {
   "link": "https://drafts.csswg.org/selectors/",
   "title": "Selectors",
@@ -1848,6 +1858,9 @@
     "web-share"
    ]
   }
+ },
+ "web-speech": {
+  "link": "https://webaudio.github.io/web-speech-api/"
  },
  "web-sustainability-guidelines": {
   "link": "https://w3c.github.io/sustainableweb-wsg/",
@@ -2452,16 +2465,6 @@
  "ScrollToTextFragment": {
   "link": "https://wicg.github.io/scroll-to-text-fragment/",
   "title": "Text Fragments"
- },
- "selection-api": {
-  "link": "https://w3c.github.io/selection-api/",
-  "title": "Selection API",
-  "w3c": {
-   "serie": "selection-api",
-   "shortnames": [
-    "selection-api"
-   ]
-  }
  },
  "shared-storage": {
   "link": "https://github.com/pythagoraskitty/shared-storage/"
