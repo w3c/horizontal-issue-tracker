@@ -1453,6 +1453,16 @@
    ]
   }
  },
+ "shacl-ui": {
+  "link": "https://w3c.github.io/data-shapes/shacl12-ui/",
+  "title": "SHACL User Interfaces",
+  "w3c": {
+   "serie": "shacl-ui",
+   "shortnames": [
+    "shacl12-ui"
+   ]
+  }
+ },
  "sparql-query": {
   "link": "https://w3c.github.io/sparql-query/",
   "title": "SPARQL Query Language",
@@ -8421,16 +8431,6 @@
    "serie": "long-animation-frames",
    "shortnames": [
     "long-animation-frames"
-   ]
-  }
- },
- "shacl-ui": {
-  "title": "SHACL User Interfaces",
-  "link": "https://w3c.github.io/data-shapes/shacl12-ui/",
-  "w3c": {
-   "serie": "shacl-ui",
-   "shortnames": [
-    "shacl12-ui"
    ]
   }
  },
